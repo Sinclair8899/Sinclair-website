@@ -1,4 +1,5 @@
-baseURL = 'https://sinclairhuang.org/'
+
+baseURL = 'https://sinclair8899.github.io/Sinclair-website/'
 languageCode = 'en-us'
 title = 'Dr. Sinclair Huang - Research & Publications'
 theme = 'PaperMod'
