@@ -30,3 +30,4 @@ theme = 'PaperMod'
   name = 'About'
   url = '/about/'
   weight = 4
+publishDir = "docs"
