@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Introduction on Dr. Sinclair Huang - Research &amp; Publications</title>
+    <link>https://sinclairhuang.org/tags/introduction/</link>
+    <description>Recent content in Introduction on Dr. Sinclair Huang - Research &amp; Publications</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sinclairhuang.org/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to My Research Portfolio</title>
+      <link>https://sinclairhuang.org/posts/welcome/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/posts/welcome/</guid>
+      <description>&lt;p&gt;Welcome to my professional research website. This platform showcases my academic work, publications, and ongoing research projects.&lt;/p&gt;
+&lt;h2 id=&#34;current-focus&#34;&gt;Current Focus&lt;/h2&gt;
+&lt;p&gt;I am currently working on several research initiatives:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;AI Semiconductor Valuation&lt;/strong&gt; - Comprehensive analysis using GEE regression and Random Forest methodologies&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Precision Oncology&lt;/strong&gt; - Exploring AlphaFold 3 applications in drug discovery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Carbon Black Industry&lt;/strong&gt; - Strategic optimization for high-value applications&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Stay tuned for updates on publications and research findings.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
