@@ -24,9 +24,22 @@ My research interests lie at the intersection of artificial intelligence, biotec
 ### Current Work
 
 I am currently working on several research initiatives:
+
 - AI Semiconductor Valuation - Comprehensive analysis using GEE regression and Random Forest methodologies
 - Precision Oncology - Exploring AlphaFold 3 applications in drug discovery
 - Carbon Black Industry - Strategic optimization for high-value applications
+
+### Research Interests
+
+- **AI Semiconductors**: Quantitative valuation analysis of 95 global companies
+- **Precision Oncology**: AlphaFold 3 applications in drug discovery
+- **Industry Analysis**: Carbon black manufacturing optimization
+
+### Publications
+
+Active contributor to Medium with technical content bridging industry knowledge and academic rigor.
+
+**ORCID**: 0009-0007-8173-5672
 
 ---
 
