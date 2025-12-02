@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sinclairhuang.org/about/</loc>
-    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sinclairhuang.org/</loc>
     <lastmod>2025-11-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -22,6 +19,8 @@
   </url><url>
     <loc>https://sinclairhuang.org/posts/welcome/</loc>
     <lastmod>2025-11-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/about/</loc>
   </url><url>
     <loc>https://sinclairhuang.org/categories/</loc>
   </url><url>
