@@ -1,4 +1,4 @@
-
+≠
 baseURL = 'https://sinclair8899.github.io/Sinclair-website/'
 title = 'Dr. Sinclair Huang, EDBA - Research & Consulting'
 theme = 'PaperMod'
@@ -31,3 +31,9 @@ theme = 'PaperMod'
   url = '/about/'
   weight = 4
 publishDir = "docs"
+
+[params]
+  homeInfoParams = {}
+
+[params.profileMode]
+  enabled = false
