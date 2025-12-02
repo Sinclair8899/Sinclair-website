@@ -17,7 +17,7 @@ With over 30 years of cross-industry experience spanning Taiwan's electronics, b
 My research interests lie at the intersection of artificial intelligence, biotechnology, and industrial optimization:
 
 - **AI & Drug Discovery**: Exploring AlphaFold 3 applications in precision medicine and targeted therapeutics
-- **Semiconductor Industry Analysis**: AI-driven valuation models and competitive intelligence
+- **Semiconductor Industry Analysis**: AI-driven valuation models and competitive intelligence  
 - **Carbon Black Industry**: Strategic optimization and process innovation
 - **Precision Oncology**: Leveraging computational approaches for cancer treatment
 
@@ -45,15 +45,18 @@ Active contributor to Medium with technical content bridging industry knowledge 
 
 ## 📱 Quick Connect
 
-Scan the QR code to quickly visit my website:
-
-<div style="text-align: center; margin: 2em 0;">
-  <img src="/images/sinclair-qr.png" alt="sinclairhuang.org QR Code" style="max-width: 200px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;">
+<div style="display: flex; align-items: flex-start; gap: 3em; margin: 2em 0;">
+  <div style="flex: 1;">
+    <p><strong>Scan the QR code to quickly visit my website:</strong></p>
+    <img src="/images/sinclair-qr.png" alt="sinclairhuang.org QR Code" style="max-width: 200px; border: 1px solid #ddd; padding: 10px; border-radius: 8px; margin-top: 1em;">
+    <p style="text-align: center; color: #666; font-size: 0.9em; margin-top: 0.5em;">
+      <strong>sinclairhuang.org</strong>
+    </p>
+  </div>
+  <div style="flex: 1;">
+    <img src="/images/sinclair-photo.jpg" alt="Dr. Sinclair Huang" style="max-width: 300px; width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  </div>
 </div>
-
-<p style="text-align: center; color: #666; font-size: 0.9em;">
-📱 <strong>sinclairhuang.org</strong>
-</p>
 
 ### Digital Contact
 
