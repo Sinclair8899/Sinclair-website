@@ -1,39 +1,36 @@
-≠
-baseURL = 'https://sinclair8899.github.io/Sinclair-website/'
+baseURL = 'https://sinclairhuang.org/'
+languageCode = 'en-us'
 title = 'Dr. Sinclair Huang, EDBA - Research & Consulting'
 theme = 'PaperMod'
-
-[params]
-  author = 'Dr. Po-Sung (Sinclair) Huang'
-  description = 'Professional research website featuring publications, projects, and academic work'
-  
-[params.homeInfoParams]
-  Title = "Welcome to My Research Portfolio"
-  Content = "Exploring AI semiconductors, precision oncology, and carbon black industry optimization"
-
-[[menu.main]]
-  name = 'Home'
-  url = '/'
-  weight = 1
-  
-[[menu.main]]
-  name = 'Publications'
-  url = '/publications/'
-  weight = 2
-  
-[[menu.main]]
-  name = 'Projects'
-  url = '/projects/'
-  weight = 3
-  
-[[menu.main]]
-  name = 'About'
-  url = '/about/'
-  weight = 4
 publishDir = "docs"
 
 [params]
-  homeInfoParams = {}
+author = 'Dr. Po-Sung (Sinclair) Huang'
+description = 'Professional research website featuring publications, projects, and academic work'
+
+[params.homeInfoParams]
+Title = "Welcome to My Research Portfolio"
+Content = "Exploring AI semiconductors, precision oncology, and carbon black industry optimization"
 
 [params.profileMode]
-  enabled = false
+enabled = false
+
+[[menu.main]]
+name = 'Home'
+url = '/'
+weight = 1
+
+[[menu.main]]
+name = 'Publications'
+url = '/publications/'
+weight = 2
+
+[[menu.main]]
+name = 'Projects'
+url = '/projects/'
+weight = 3
+
+[[menu.main]]
+name = 'About'
+url = '/about/'
+weight = 4
