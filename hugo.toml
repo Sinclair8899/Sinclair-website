@@ -1,7 +1,7 @@
 
 baseURL = 'https://sinclair8899.github.io/Sinclair-website/'
 languageCode = 'en-us'
-title = 'Dr. Sinclair Huang, EDBA - Research title = 'Dr. Sinclair Huang - Research & Publications' Consulting'
+title = 'Dr. Sinclair Huang, EDBA - Research title = 'Dr. Sinclair Huang, EDBA - Research title = 'Dr. Sinclair Huang - Research & Publications' Consulting' Consulting'
 theme = 'PaperMod'
 
 [params]
