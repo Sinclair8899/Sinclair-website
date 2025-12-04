@@ -47,11 +47,11 @@ Active contributor to Medium with technical content bridging industry knowledge 
 
 **Scan the QR code to visit my website:**
 
-![QR Code](../images/sinclair-qr.png)
+![QR Code](/images/sinclair-qr.png)
 
 **Dr. Sinclair Huang:**
 
-![Dr. Sinclair Huang](../images/sinclair-photo.PNG)
+![Dr. Sinclair Huang](/images/sinclair-photo.PNG)
 
 ### Digital Contact
 
