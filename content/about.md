@@ -54,7 +54,7 @@ Active contributor to Medium with technical content bridging industry knowledge 
     </p>
   </div>
   <div style="flex: 1;">
-    <img src="/images/sinclair-photo.jpg" alt="Dr. Sinclair Huang" style="max-width: 300px; width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <img src="/images/sinclair-photo.PNG" alt="Dr. Sinclair Huang" style="max-width: 300px; width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   </div>
 </div>
 
