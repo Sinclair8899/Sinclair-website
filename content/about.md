@@ -41,8 +41,6 @@ Active contributor to Medium with technical content bridging industry knowledge 
 
 **ORCID**: 0009-0007-8173-5672
 
----
-
 ## Quick Connect
 
 **Scan the QR code to visit my website:**
