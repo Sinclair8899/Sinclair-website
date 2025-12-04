@@ -43,20 +43,15 @@ Active contributor to Medium with technical content bridging industry knowledge 
 
 ---
 
-## 📱 Quick Connect
+## Quick Connect
 
-<div style="display: flex; align-items: flex-start; gap: 3em; margin: 2em 0;">
-  <div style="flex: 1;">
-    <p><strong>Scan the QR code to quickly visit my website:</strong></p>
-    <img src="/images/sinclair-qr.png" alt="sinclairhuang.org QR Code" style="max-width: 200px; border: 1px solid #ddd; padding: 10px; border-radius: 8px; margin-top: 1em;">
-    <p style="text-align: center; color: #666; font-size: 0.9em; margin-top: 0.5em;">
-      <strong>sinclairhuang.org</strong>
-    </p>
-  </div>
-  <div style="flex: 1;">
-    <img src="/images/sinclair-photo.PNG" alt="Dr. Sinclair Huang" style="max-width: 300px; width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  </div>
-</div>
+**Scan the QR code to visit my website:**
+
+![QR Code](../images/sinclair-qr.png)
+
+**Dr. Sinclair Huang:**
+
+![Dr. Sinclair Huang](../images/sinclair-photo.PNG)
 
 ### Digital Contact
 
