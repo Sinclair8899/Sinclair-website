@@ -39,20 +39,13 @@ I am currently working on several research initiatives:
 
 Active contributor to Medium with technical content bridging industry knowledge and academic rigor.
 
-**ORCID**: 0009-0007-8173-5672
+**ORCID**: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
 
-## Quick Connect
+### Contact & Connect
 
-**Scan the QR code to visit my website:**
+- 🌐 **Website**: [sinclairhuang.org](https://sinclairhuang.org)
+- 🔬 **ORCID**: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)  
+- 📝 **Medium**: [@sinclairhuang](https://medium.com/@sinclairhuang)
+- 📧 **Email**: research@sinclairhuang.org
 
-![QR Code](/images/sinclair-qr.png)
-
-**Dr. Sinclair Huang:**
-
-![Dr. Sinclair Huang](/images/sinclair-photo.PNG)
-
-### Digital Contact
-
-- 🌐 Website: [sinclairhuang.org](https://sinclairhuang.org)
-- 🔬 ORCID: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
-- 📝 Medium: [@sinclairhuang](https://medium.com/@sinclairhuang)
+**QR Code**: Visit [sinclairhuang.org/images/sinclair-qr.png](https://sinclairhuang.org/images/sinclair-qr.png) to view the QR code
