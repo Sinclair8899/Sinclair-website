@@ -14,10 +14,10 @@ With over 30 years of cross-industry experience spanning Taiwan's electronics, b
 
 ### Research Focus
 
-- AI & Drug Discovery
-- Semiconductor Industry Analysis
-- Carbon Black Industry
-- Precision Oncology
+- AI & Drug Discovery: Exploring AlphaFold 3 applications in precision medicine and targeted therapeutics
+- Semiconductor Industry Analysis: AI-driven valuation models and competitive intelligence
+- Carbon Black Industry: Strategic optimization and process innovation
+- Precision Oncology: Leveraging computational approaches for cancer treatment
 
 ### Research Interests
 
@@ -33,6 +33,7 @@ ORCID: 0009-0007-8173-5672
 
 ### Contact
 
-Website: sinclairhuang.org
-
-Email: research@sinclairhuang.org
+- Website: [sinclairhuang.org](https://sinclairhuang.org)
+- Email: [research@sinclairhuang.org](mailto:research@sinclairhuang.org)
+- ORCID: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
+- Medium: [@sinclairhuang](https://medium.com/@sinclairhuang)

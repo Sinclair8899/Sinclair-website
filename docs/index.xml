@@ -9,6 +9,30 @@
     <lastBuildDate>Sat, 29 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sinclairhuang.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About Dr. Sinclair Huang</title>
+      <link>https://sinclairhuang.org/about/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/about/</guid>
+      <description>&lt;h2 id=&#34;professional-background&#34;&gt;Professional Background&lt;/h2&gt;
+&lt;p&gt;Dr. Po-Sung (Sinclair) Huang serves as Special Advisor to the Chairman at Continental Carbon Co., Ltd. and is currently an EDBA candidate at HEC Liège, Belgium.&lt;/p&gt;
+&lt;p&gt;With over 30 years of cross-industry experience spanning Taiwan&amp;rsquo;s electronics, biotechnology, and chemical industries, Dr. Huang specializes in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Competitive intelligence analysis&lt;/li&gt;
+&lt;li&gt;Independent research&lt;/li&gt;
+&lt;li&gt;AI semiconductor valuation&lt;/li&gt;
+&lt;li&gt;Precision oncology applications&lt;/li&gt;
+&lt;li&gt;Carbon black industry optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;research-interests&#34;&gt;Research Interests&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AI Semiconductors&lt;/strong&gt;: Quantitative valuation analysis of 95 global companies&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Precision Oncology&lt;/strong&gt;: AlphaFold 3 applications in drug discovery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry Analysis&lt;/strong&gt;: Carbon black manufacturing optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;
+&lt;p&gt;Active contributor to Medium with technical content bridging industry knowledge and academic rigor.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Welcome to My Research Portfolio</title>
       <link>https://sinclairhuang.org/posts/welcome/</link>
       <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
@@ -22,32 +46,6 @@
 &lt;li&gt;&lt;strong&gt;Carbon Black Industry&lt;/strong&gt; - Strategic optimization for high-value applications&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Stay tuned for updates on publications and research findings.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://sinclairhuang.org/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/about/</guid>
-      <description>&lt;h2 id=&#34;dr-po-sung-sinclair-huang&#34;&gt;Dr. Po-Sung (Sinclair) Huang&lt;/h2&gt;
-&lt;p&gt;Executive Doctorate of Business Administration (EDBA), HEC Liège&lt;/p&gt;
-&lt;p&gt;Special Advisor to the Chairman, Continental Carbon Co., Ltd.&lt;/p&gt;
-&lt;h3 id=&#34;professional-background&#34;&gt;Professional Background&lt;/h3&gt;
-&lt;p&gt;With over 30 years of cross-industry experience spanning Taiwan&amp;rsquo;s electronics, biotechnology, and chemical industries, I bring a unique blend of technical expertise and strategic insight to address complex business challenges.&lt;/p&gt;
-&lt;h3 id=&#34;research-focus&#34;&gt;Research Focus&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;AI &amp;amp; Drug Discovery&lt;/li&gt;
-&lt;li&gt;Semiconductor Industry Analysis&lt;/li&gt;
-&lt;li&gt;Carbon Black Industry&lt;/li&gt;
-&lt;li&gt;Precision Oncology&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;research-interests&#34;&gt;Research Interests&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;AI Semiconductors: Quantitative valuation analysis of 95 global companies&lt;/li&gt;
-&lt;li&gt;Precision Oncology: AlphaFold 3 applications in drug discovery&lt;/li&gt;
-&lt;li&gt;Industry Analysis: Carbon black manufacturing optimization&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;publications&#34;&gt;Publications&lt;/h3&gt;
-&lt;p&gt;Active contributor to Medium with technical content bridging industry knowledge and academic rigor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Consulting Services</title>
