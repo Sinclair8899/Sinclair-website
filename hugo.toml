@@ -1,19 +1,25 @@
 baseURL = 'https://sinclairhuang.org/'
 languageCode = 'en-us'
-title = 'Dr. Sinclair Huang, EDBA - Research & Consulting'
+title = 'Sinclair Huang - Research & Consulting'
 theme = 'PaperMod'
 publishDir = "docs"
 
 [params]
-author = 'Dr. Po-Sung (Sinclair) Huang'
-description = 'Professional research website featuring publications, projects, and academic work'
+author = 'Dr. Sinclair Huang, EDBA (HEC Liège)'
+description = 'AI × Protein × Healing — Research in semiconductors, precision oncology, and industry optimization'
 
 [params.homeInfoParams]
-Title = "Welcome to My Research Portfolio"
-Content = "Exploring AI semiconductors, precision oncology, and carbon black industry optimization"
+Title = "Sinclair Huang"
+Content = "AI × Protein × Healing — The AF³ Series"
 
 [params.profileMode]
 enabled = false
+
+# 允許 HTML 渲染（這是關鍵！）
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [[menu.main]]
 name = 'Home'
