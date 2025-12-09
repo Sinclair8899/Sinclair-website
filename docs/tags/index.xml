@@ -22,5 +22,40 @@
       <guid>https://sinclairhuang.org/tags/research/</guid>
       <description></description>
     </item>
+    <item>
+      <title>AI</title>
+      <link>https://sinclairhuang.org/tags/ai/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AlphaFold</title>
+      <link>https://sinclairhuang.org/tags/alphafold/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/alphafold/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drug Discovery</title>
+      <link>https://sinclairhuang.org/tags/drug-discovery/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/drug-discovery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag1</title>
+      <link>https://sinclairhuang.org/tags/tag1/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/tag1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag2</title>
+      <link>https://sinclairhuang.org/tags/tag2/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/tag2/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
