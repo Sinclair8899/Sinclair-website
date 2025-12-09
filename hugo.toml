@@ -15,7 +15,7 @@ Content = "AI × Protein × Healing — The AF³ Series"
 [params.profileMode]
 enabled = false
 
-# 允許 HTML 渲染（這是關鍵！）
+# 允许 HTML 渲染
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -37,6 +37,11 @@ url = '/projects/'
 weight = 3
 
 [[menu.main]]
+name = 'Blog'
+url = '/blog/'
+weight = 4
+
+[[menu.main]]
 name = 'About'
 url = '/about/'
-weight = 4
+weight = 5
