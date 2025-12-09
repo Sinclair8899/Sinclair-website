@@ -14,10 +14,15 @@ With over 30 years of cross-industry experience spanning Taiwan's electronics, b
 
 ### Research Focus
 
-- AI & Drug Discovery: Exploring AlphaFold 3 applications in precision medicine and targeted therapeutics
-- Semiconductor Industry Analysis: AI-driven valuation models and competitive intelligence
-- Carbon Black Industry: Strategic optimization and process innovation
-- Precision Oncology: Leveraging computational approaches for cancer treatment
+My research centers on three core areas:
+
+- **AI Semiconductors**: Quantitative valuation analysis of 95 global AI semiconductor companies, examining market positioning, technological capabilities, and competitive dynamics in the rapidly evolving AI chip landscape
+- **Precision Oncology**: Exploring AlphaFold 3 applications in drug discovery, focusing on how protein structure prediction advances therapeutic development and personalized cancer treatment approaches  
+- **Industry Optimization**: Carbon black manufacturing optimization through process innovation and operational excellence
+
+### Current Work
+
+As Special Advisor to the Chairman at Continental Carbon Co., Ltd., I combine strategic advisory with hands-on research, bridging academic inquiry and practical business applications across technology-intensive industries.
 
 ### Research Interests
 
@@ -30,6 +35,25 @@ With over 30 years of cross-industry experience spanning Taiwan's electronics, b
 Active contributor to Medium with technical content bridging industry knowledge and academic rigor.
 
 ORCID: 0009-0007-8173-5672
+
+---
+
+## 📱 Quick Connect
+
+<div style="display: flex; align-items: flex-start; gap: 40px; margin: 2em 0;">
+  <div style="flex: 0 0 auto;">
+    <p style="margin: 0 0 10px 0; font-weight: 600;">Scan to visit my website:</p>
+    <img src="/images/sinclair-qr.png" alt="sinclairhuang.org QR Code" style="width: 200px; height: 200px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;">
+    <p style="text-align: center; margin: 10px 0 0 0; color: #666; font-size: 0.9em;">
+      📱 <strong>sinclairhuang.org</strong>
+    </p>
+  </div>
+  
+  <div style="flex: 0 0 auto;">
+    <p style="margin: 0 0 10px 0; font-weight: 600;">Dr. Sinclair Huang:</p>
+    <img src="/images/sinclair-photo.PNG" alt="Dr. Sinclair Huang" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #ddd; border-radius: 8px;">
+  </div>
+</div>
 
 ### Contact
 
