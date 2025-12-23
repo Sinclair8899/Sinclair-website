@@ -4,18 +4,48 @@
     <title>Sinclair Huang - Research &amp; Consulting</title>
     <link>https://sinclairhuang.org/</link>
     <description>Recent content on Sinclair Huang - Research &amp; Consulting</description>
-    <generator>Hugo -- 0.123.7</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sinclairhuang.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Dr. Sinclair Huang</title>
+      <link>https://sinclairhuang.org/about/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/about/</guid>
+      <description>&lt;h2 id=&#34;professional-background&#34;&gt;Professional Background&lt;/h2&gt;
+&lt;p&gt;Dr. Po-Sung (Sinclair) Huang serves as Special Advisor to the Chairman at Continental Carbon Co., Ltd. and is currently an EDBA candidate at HEC Liège, Belgium.&lt;/p&gt;
+&lt;p&gt;With over 30 years of cross-industry experience spanning Taiwan&amp;rsquo;s electronics, biotechnology, and chemical industries, Dr. Huang specializes in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Competitive intelligence analysis&lt;/li&gt;
+&lt;li&gt;Independent research&lt;/li&gt;
+&lt;li&gt;AI semiconductor valuation&lt;/li&gt;
+&lt;li&gt;Precision oncology applications&lt;/li&gt;
+&lt;li&gt;Carbon black industry optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;research-interests&#34;&gt;Research Interests&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AI Semiconductors&lt;/strong&gt;: Quantitative valuation analysis of 95 global companies&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Precision Oncology&lt;/strong&gt;: AlphaFold 3 applications in drug discovery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry Analysis&lt;/strong&gt;: Carbon black manufacturing optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;
+&lt;p&gt;Active contributor to Medium with technical content bridging industry knowledge and academic rigor.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Welcome to My Research Portfolio</title>
       <link>https://sinclairhuang.org/posts/welcome/</link>
       <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/posts/welcome/</guid>
-      <description>Welcome to my professional research website. This platform showcases my academic work, publications, and ongoing research projects.
-Current Focus I am currently working on several research initiatives:
-AI Semiconductor Valuation - Comprehensive analysis using GEE regression and Random Forest methodologies Precision Oncology - Exploring AlphaFold 3 applications in drug discovery Carbon Black Industry - Strategic optimization for high-value applications Stay tuned for updates on publications and research findings.</description>
+      <description>&lt;p&gt;Welcome to my professional research website. This platform showcases my academic work, publications, and ongoing research projects.&lt;/p&gt;
+&lt;h2 id=&#34;current-focus&#34;&gt;Current Focus&lt;/h2&gt;
+&lt;p&gt;I am currently working on several research initiatives:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;AI Semiconductor Valuation&lt;/strong&gt; - Comprehensive analysis using GEE regression and Random Forest methodologies&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Precision Oncology&lt;/strong&gt; - Exploring AlphaFold 3 applications in drug discovery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Carbon Black Industry&lt;/strong&gt; - Strategic optimization for high-value applications&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Stay tuned for updates on publications and research findings.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AlphaFold 3 and the Future of Drug Discovery</title>
@@ -29,18 +59,7 @@ AI Semiconductor Valuation - Comprehensive analysis using GEE regression and Ran
       <link>https://sinclairhuang.org/blog/thoughts/yyyy-mm-dd-title/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/blog/thoughts/yyyy-mm-dd-title/</guid>
-      <description>Your content here&amp;hellip;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://sinclairhuang.org/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/about/</guid>
-      <description>Sinclair Huang Executive Doctorate of Business Administration (EDBA), HEC Liège
-Special Advisor to the Chairman, Continental Carbon Co., Ltd.
-Professional Background With over 30 years of cross-industry experience spanning Taiwan&amp;rsquo;s electronics, biotechnology, and chemical industries, I bring a unique blend of technical expertise and strategic insight to address complex business challenges.
-Research Focus My research centers on three core areas:
-AI Semiconductors: Quantitative valuation analysis of 95 global AI semiconductor companies, examining market positioning, technological capabilities, and competitive dynamics in the rapidly evolving AI chip landscape Precision Oncology: Exploring AlphaFold 3 applications in drug discovery, focusing on how protein structure prediction advances therapeutic development and personalized cancer treatment approaches Industry Optimization: Carbon black manufacturing optimization through process innovation and operational excellence Current Work As Special Advisor to the Chairman at Continental Carbon Co.</description>
+      <description>&lt;p&gt;Your content here&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Consulting Services</title>

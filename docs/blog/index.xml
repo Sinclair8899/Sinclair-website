@@ -4,7 +4,7 @@
     <title>Blog &amp; Insights on Sinclair Huang - Research &amp; Consulting</title>
     <link>https://sinclairhuang.org/blog/</link>
     <description>Recent content in Blog &amp; Insights on Sinclair Huang - Research &amp; Consulting</description>
-    <generator>Hugo -- 0.123.7</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sinclairhuang.org/blog/index.xml" rel="self" type="application/rss+xml" />
@@ -20,7 +20,7 @@
       <link>https://sinclairhuang.org/blog/thoughts/yyyy-mm-dd-title/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/blog/thoughts/yyyy-mm-dd-title/</guid>
-      <description>Your content here&amp;hellip;</description>
+      <description>&lt;p&gt;Your content here&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
