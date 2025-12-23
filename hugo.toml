@@ -5,7 +5,7 @@ theme = 'PaperMod'
 publishDir = "docs"
 
 [params]
-author = 'Dr. Sinclair Huang, EDBA (HEC Liège)'
+author = 'Sinclair Huang, EDBA (HEC Liège)'
 description = 'AI × Protein × Healing — Research in semiconductors, precision oncology, and industry optimization'
 
 [params.homeInfoParams]
