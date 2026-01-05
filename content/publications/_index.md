@@ -35,11 +35,28 @@ A comprehensive exploration of how AI is revolutionizing our understanding of li
 
 <div style="background: #fff; border: 1px solid #e1e4e8; padding: 1.5em; border-radius: 8px;">
 
+### 🎓 Doctoral Dissertation
+
+**Industrial Competitiveness and Innovation: A Comprehensive Analysis of Globally Engaged Taiwan-Listed Companies**
+
+*Huang, Po-Sung (Sinclair) (2025)*
+Executive Doctorate in Business Administration, HEC Liège – Management School, University of Liège
+
+Taiwan's electronics industry, pivotal to its economic and global competitiveness, faces challenges from rapid technological advancements, shifting markets, and intensified competition. This dissertation provides a comprehensive analysis of globally engaged Taiwan-listed companies.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17718665.svg)](https://doi.org/10.5281/zenodo.17718665)
+
+**[📄 View on Zenodo →](https://zenodo.org/records/17718665)**
+
+</div>
+
+<div style="background: #fff; border: 1px solid #e1e4e8; padding: 1.5em; border-radius: 8px;">
+
 ### Zenodo Research Repository
 
 Comprehensive research datasets, preprints, and supplementary materials with DOI registration.
 
-**[🔬 View Research Outputs on Zenodo →](https://zenodo.org/users/sinclairhuang)**
+**[🔬 View All Research Outputs on Zenodo →](https://zenodo.org/users/sinclairhuang)**
 
 </div>
 
