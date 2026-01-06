@@ -52,11 +52,19 @@ Taiwan's electronics industry, pivotal to its economic and global competitivenes
 
 <div style="background: #fff; border: 1px solid #e1e4e8; padding: 1.5em; border-radius: 8px;">
 
-### Zenodo Research Repository
+### Zenodo Preprints
 
-Comprehensive research datasets, preprints, and supplementary materials with DOI registration.
+**Burnout as a Loss of Reversibility Across Biological Scales**
 
-**[🔬 View All Research Outputs on Zenodo →](https://zenodo.org/users/sinclairhuang)**
+*Huang, P.-S. (Sinclair) (2026)* | Preprint
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18164211.svg)](https://doi.org/10.5281/zenodo.18164211)
+
+**[📄 View on Zenodo →](https://doi.org/10.5281/zenodo.18164211)**
+
+---
+
+**[🔬 View All Research Outputs on Zenodo →](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Huang%2C%20Po-Sung%28Sinclair%29%22&l=list&p=1&s=10&sort=bestmatch)**
 
 </div>
 
