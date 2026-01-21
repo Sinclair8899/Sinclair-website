@@ -1,0 +1,74 @@
+baseURL: "https://sinclairhuang.org/"
+languageCode: "zh-tw"
+title: "Sinclair Huang - Research & Insights"
+theme: "PaperMod"
+
+# 啟用中英文支援
+defaultContentLanguage: "zh-tw"
+defaultContentLanguageInSubdir: false
+
+# 菜單配置
+menu:
+  main:
+    - identifier: research
+      name: Research
+      url: /research/
+      weight: 10
+    - identifier: insights
+      name: Industry Insights
+      url: /insights/
+      weight: 20
+    - identifier: notes
+      name: Research Notes
+      url: /notes/
+      weight: 30
+    - identifier: news
+      name: News Digest
+      url: /news/
+      weight: 40
+
+# 輸出格式
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  section:
+    - HTML
+    - RSS
+
+# 分類系統
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+# PaperMod 主題參數
+params:
+  env: production
+  title: "Sinclair Huang"
+  description: "Independent Researcher | Semiconductor Industry Analysis"
+  author: "Sinclair Huang"
+  
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  
+  # 首頁資訊
+  homeInfoParams:
+    Title: "歡迎 Welcome"
+    Content: "半導體產業分析 | AI技術研究 | 精準醫療觀察"
+  
+  # 社交連結
+  socialIcons:
+    - name: email
+      url: "mailto:research@sinclairhuang.org"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/sinclairhuang/"
+    - name: orcid
+      url: "https://orcid.org/YOUR-ORCID-ID"
