@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Po-Sung (Sinclair) Huang</title>
-    <link>//localhost:62324/publications/</link>
+    <link>/publications/</link>
     <description>Recent content in Publications on Po-Sung (Sinclair) Huang</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:62324/publications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

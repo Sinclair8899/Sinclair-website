@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog &amp; Insights on Po-Sung (Sinclair) Huang</title>
-    <link>//localhost:62324/blog/</link>
+    <link>/blog/</link>
     <description>Recent content in Blog &amp; Insights on Po-Sung (Sinclair) Huang</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:62324/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AlphaFold 3 and the Future of Drug Discovery</title>
-      <link>//localhost:62324/blog/thoughts/2024-12-first-thought/</link>
+      <link>/blog/thoughts/2024-12-first-thought/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:62324/blog/thoughts/2024-12-first-thought/</guid>
+      <guid>/blog/thoughts/2024-12-first-thought/</guid>
       <description>Quick thoughts on how AlphaFold 3 is transforming molecular medicine</description>
     </item>
     <item>
       <title>Your Title</title>
-      <link>//localhost:62324/blog/thoughts/yyyy-mm-dd-title/</link>
+      <link>/blog/thoughts/yyyy-mm-dd-title/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:62324/blog/thoughts/yyyy-mm-dd-title/</guid>
+      <guid>/blog/thoughts/yyyy-mm-dd-title/</guid>
       <description>&lt;p&gt;Your content here&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>

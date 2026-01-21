@@ -1,57 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>產業分析 on Sinclair Huang - Research &amp; Consulting</title>
-    <link>https://sinclairhuang.org/tags/%E7%94%A2%E6%A5%AD%E5%88%86%E6%9E%90/</link>
-    <description>Recent content in 產業分析 on Sinclair Huang - Research &amp; Consulting</description>
-    <generator>Hugo -- 0.152.2</generator>
-    <language>en-us</language>
+    <title>產業分析 on Po-Sung (Sinclair) Huang</title>
+    <link>//localhost:62324/tags/%E7%94%A2%E6%A5%AD%E5%88%86%E6%9E%90/</link>
+    <description>Recent content in 產業分析 on Po-Sung (Sinclair) Huang</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Wed, 21 Jan 2026 23:11:35 +0800</lastBuildDate>
-    <atom:link href="https://sinclairhuang.org/tags/%E7%94%A2%E6%A5%AD%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:62324/tags/%E7%94%A2%E6%A5%AD%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2025 AI晶片產業趨勢</title>
-      <link>https://sinclairhuang.org/insights/2025-ai-chip-trends/</link>
+      <link>//localhost:62324/insights/2025-ai-chip-trends/</link>
       <pubDate>Wed, 21 Jan 2026 23:11:35 +0800</pubDate>
-      <guid>https://sinclairhuang.org/insights/2025-ai-chip-trends/</guid>
-      <description>&lt;h2 id=&#34;產業概況&#34;&gt;產業概況&lt;/h2&gt;
-&lt;p&gt;隨著生成式 AI、大型語言模型（LLM）與資料中心算力需求持續成長，AI 晶片已成為半導體產業中最具戰略價值的細分市場之一。&lt;br&gt;
-2025 年，全球 AI 晶片市場規模預期將持續擴張，主要動能來自雲端服務供應商（CSP）、超大規模資料中心（Hyperscalers）與企業級 AI 應用部署。&lt;/p&gt;
-&lt;p&gt;從供應鏈角度觀察，先進製程、先進封裝與高頻寬記憶體（HBM）已成為影響產能與交付節奏的三大關鍵瓶頸。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;關鍵趨勢&#34;&gt;關鍵趨勢&lt;/h2&gt;
-&lt;h3 id=&#34;1-nvidia-持續領先&#34;&gt;1. NVIDIA 持續領先&lt;/h3&gt;
-&lt;p&gt;NVIDIA 仍是目前 AI 加速器市場的主導者。&lt;br&gt;
-H100 與新一代 H200 系列產品，搭配 NVLink 與 CUDA 生態系，已形成高度黏著的軟硬體整合平台。&lt;/p&gt;
-&lt;p&gt;在大型資料中心與雲端訓練市場，NVIDIA 的市佔率仍維持壓倒性優勢，短期內尚難出現結構性替代者。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;2-amd-急起直追&#34;&gt;2. AMD 急起直追&lt;/h3&gt;
-&lt;p&gt;AMD 的 MI300 系列在效能與能耗比方面展現明顯進步，並開始獲得部分雲端服務供應商採用。&lt;/p&gt;
-&lt;p&gt;雖然在軟體生態系與開發者工具鏈成熟度上仍落後 NVIDIA，但在價格競爭力與供應彈性方面具備一定吸引力。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;3-中國自主研發加速&#34;&gt;3. 中國自主研發加速&lt;/h3&gt;
-&lt;p&gt;在出口管制與地緣政治影響下，中國加速推動本土 AI 晶片自主研發。&lt;/p&gt;
-&lt;p&gt;儘管在先進製程、HBM 供應與系統整合能力方面仍存在技術差距，但在特定應用場景（如推論、邊緣 AI）已逐步形成替代方案。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;投資建議&#34;&gt;投資建議&lt;/h2&gt;
-&lt;p&gt;從產業鏈角度觀察，AI 晶片成長動能並不僅來自晶片設計公司本身，還擴散至多個上游與周邊環節：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;先進封裝技術&lt;/strong&gt;：&lt;br&gt;
-CoWoS、Chiplet 與 2.5D / 3D 封裝需求快速上升，成為產能瓶頸核心。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;AI 加速器設計&lt;/strong&gt;：&lt;br&gt;
-除 NVIDIA、AMD 外，雲端服務供應商的自研晶片（如 TPU、Trainium）亦值得關注。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;高頻寬記憶體（HBM）&lt;/strong&gt;：&lt;br&gt;
-HBM3 與 HBM3E 已成為 AI 系統關鍵元件，供應緊張情況短期內難以緩解。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;結論&#34;&gt;結論&lt;/h2&gt;
-&lt;p&gt;2025 年 AI 晶片產業仍處於高成長階段，但產業競爭格局正在逐步多元化。&lt;br&gt;
-NVIDIA 的領先地位短期內難以撼動，AMD 與本土替代方案則持續縮小差距。&lt;/p&gt;</description>
+      <guid>//localhost:62324/insights/2025-ai-chip-trends/</guid>
+      <description>&lt;h2 id=&#34;產業概況&#34;&gt;產業概況&lt;/h2&gt;&#xA;&lt;p&gt;隨著生成式 AI、大型語言模型（LLM）與資料中心算力需求持續成長，AI 晶片已成為半導體產業中最具戰略價值的細分市場之一。&lt;br&gt;&#xA;2025 年，全球 AI 晶片市場規模預期將持續擴張，主要動能來自雲端服務供應商（CSP）、超大規模資料中心（Hyperscalers）與企業級 AI 應用部署。&lt;/p&gt;&#xA;&lt;p&gt;從供應鏈角度觀察，先進製程、先進封裝與高頻寬記憶體（HBM）已成為影響產能與交付節奏的三大關鍵瓶頸。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;關鍵趨勢&#34;&gt;關鍵趨勢&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-nvidia-持續領先&#34;&gt;1. NVIDIA 持續領先&lt;/h3&gt;&#xA;&lt;p&gt;NVIDIA 仍是目前 AI 加速器市場的主導者。&lt;br&gt;&#xA;H100 與新一代 H200 系列產品，搭配 NVLink 與 CUDA 生態系，已形成高度黏著的軟硬體整合平台。&lt;/p&gt;&#xA;&lt;p&gt;在大型資料中心與雲端訓練市場，NVIDIA 的市佔率仍維持壓倒性優勢，短期內尚難出現結構性替代者。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;2-amd-急起直追&#34;&gt;2. AMD 急起直追&lt;/h3&gt;&#xA;&lt;p&gt;AMD 的 MI300 系列在效能與能耗比方面展現明顯進步，並開始獲得部分雲端服務供應商採用。&lt;/p&gt;&#xA;&lt;p&gt;雖然在軟體生態系與開發者工具鏈成熟度上仍落後 NVIDIA，但在價格競爭力與供應彈性方面具備一定吸引力。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;3-中國自主研發加速&#34;&gt;3. 中國自主研發加速&lt;/h3&gt;&#xA;&lt;p&gt;在出口管制與地緣政治影響下，中國加速推動本土 AI 晶片自主研發。&lt;/p&gt;&#xA;&lt;p&gt;儘管在先進製程、HBM 供應與系統整合能力方面仍存在技術差距，但在特定應用場景（如推論、邊緣 AI）已逐步形成替代方案。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;投資建議&#34;&gt;投資建議&lt;/h2&gt;&#xA;&lt;p&gt;從產業鏈角度觀察，AI 晶片成長動能並不僅來自晶片設計公司本身，還擴散至多個上游與周邊環節：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;先進封裝技術&lt;/strong&gt;：&lt;br&gt;&#xA;CoWoS、Chiplet 與 2.5D / 3D 封裝需求快速上升，成為產能瓶頸核心。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;AI 加速器設計&lt;/strong&gt;：&lt;br&gt;&#xA;除 NVIDIA、AMD 外，雲端服務供應商的自研晶片（如 TPU、Trainium）亦值得關注。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;高頻寬記憶體（HBM）&lt;/strong&gt;：&lt;br&gt;&#xA;HBM3 與 HBM3E 已成為 AI 系統關鍵元件，供應緊張情況短期內難以緩解。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;結論&#34;&gt;結論&lt;/h2&gt;&#xA;&lt;p&gt;2025 年 AI 晶片產業仍處於高成長階段，但產業競爭格局正在逐步多元化。&lt;br&gt;&#xA;NVIDIA 的領先地位短期內難以撼動，AMD 與本土替代方案則持續縮小差距。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

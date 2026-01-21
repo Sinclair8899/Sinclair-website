@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AlphaFold on Po-Sung (Sinclair) Huang</title>
-    <link>//localhost:62324/tags/alphafold/</link>
-    <description>Recent content in AlphaFold on Po-Sung (Sinclair) Huang</description>
+    <title>Drug Discovery on Po-Sung (Sinclair) Huang</title>
+    <link>/tags/drug-discovery/</link>
+    <description>Recent content in Drug Discovery on Po-Sung (Sinclair) Huang</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:62324/tags/alphafold/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/drug-discovery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AlphaFold 3 and the Future of Drug Discovery</title>
-      <link>//localhost:62324/blog/thoughts/2024-12-first-thought/</link>
+      <link>/blog/thoughts/2024-12-first-thought/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:62324/blog/thoughts/2024-12-first-thought/</guid>
+      <guid>/blog/thoughts/2024-12-first-thought/</guid>
       <description>Quick thoughts on how AlphaFold 3 is transforming molecular medicine</description>
     </item>
   </channel>
