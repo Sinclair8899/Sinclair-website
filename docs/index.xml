@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Home on Sinclair Huang - Research &amp; Consulting</title>
-    <link>http://localhost:53103/</link>
+    <link>https://sinclairhuang.org/</link>
     <description>Recent content in Home on Sinclair Huang - Research &amp; Consulting</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Jan 2026 23:11:35 +0800</lastBuildDate>
-    <atom:link href="http://localhost:53103/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sinclairhuang.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2025 AI晶片產業趨勢</title>
-      <link>http://localhost:53103/insights/2025-ai-chip-trends/</link>
+      <link>https://sinclairhuang.org/insights/2025-ai-chip-trends/</link>
       <pubDate>Wed, 21 Jan 2026 23:11:35 +0800</pubDate>
-      <guid>http://localhost:53103/insights/2025-ai-chip-trends/</guid>
+      <guid>https://sinclairhuang.org/insights/2025-ai-chip-trends/</guid>
       <description>&lt;h2 id=&#34;產業概況&#34;&gt;產業概況&lt;/h2&gt;
 &lt;p&gt;隨著生成式 AI、大型語言模型（LLM）與資料中心算力需求持續成長，AI 晶片已成為半導體產業中最具戰略價值的細分市場之一。&lt;br&gt;
 2025 年，全球 AI 晶片市場規模預期將持續擴張，主要動能來自雲端服務供應商（CSP）、超大規模資料中心（Hyperscalers）與企業級 AI 應用部署。&lt;/p&gt;
@@ -54,17 +54,10 @@ HBM3 與 HBM3E 已成為 AI 系統關鍵元件，供應緊張情況短期內難�
 NVIDIA 的領先地位短期內難以撼動，AMD 與本土替代方案則持續縮小差距。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>2025 Semiconductor Trends</title>
-      <link>http://localhost:53103/insights/2025-semiconductor-trends/</link>
-      <pubDate>Wed, 21 Jan 2026 22:23:42 +0800</pubDate>
-      <guid>http://localhost:53103/insights/2025-semiconductor-trends/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Welcome to My Research Portfolio</title>
-      <link>http://localhost:53103/posts/welcome/</link>
+      <link>https://sinclairhuang.org/posts/welcome/</link>
       <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53103/posts/welcome/</guid>
+      <guid>https://sinclairhuang.org/posts/welcome/</guid>
       <description>&lt;p&gt;Welcome to my professional research website. This platform showcases my academic work, publications, and ongoing research projects.&lt;/p&gt;
 &lt;h2 id=&#34;current-focus&#34;&gt;Current Focus&lt;/h2&gt;
 &lt;p&gt;I am currently working on several research initiatives:&lt;/p&gt;
@@ -77,23 +70,23 @@ NVIDIA 的領先地位短期內難以撼動，AMD 與本土替代方案則持續
     </item>
     <item>
       <title>AlphaFold 3 and the Future of Drug Discovery</title>
-      <link>http://localhost:53103/blog/thoughts/2024-12-first-thought/</link>
+      <link>https://sinclairhuang.org/blog/thoughts/2024-12-first-thought/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53103/blog/thoughts/2024-12-first-thought/</guid>
+      <guid>https://sinclairhuang.org/blog/thoughts/2024-12-first-thought/</guid>
       <description>Quick thoughts on how AlphaFold 3 is transforming molecular medicine</description>
     </item>
     <item>
       <title>Your Title</title>
-      <link>http://localhost:53103/blog/thoughts/yyyy-mm-dd-title/</link>
+      <link>https://sinclairhuang.org/blog/thoughts/yyyy-mm-dd-title/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53103/blog/thoughts/yyyy-mm-dd-title/</guid>
+      <guid>https://sinclairhuang.org/blog/thoughts/yyyy-mm-dd-title/</guid>
       <description>&lt;p&gt;Your content here&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:53103/about/</link>
+      <link>https://sinclairhuang.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53103/about/</guid>
+      <guid>https://sinclairhuang.org/about/</guid>
       <description>&lt;h2 id=&#34;sinclair-huang&#34;&gt;Sinclair Huang&lt;/h2&gt;
 &lt;p&gt;Executive Doctorate of Business Administration (EDBA), HEC Liège&lt;/p&gt;
 &lt;p&gt;Special Advisor to the Chairman, Continental Carbon Co., Ltd.&lt;/p&gt;
@@ -111,9 +104,9 @@ NVIDIA 的領先地位短期內難以撼動，AMD 與本土替代方案則持續
     </item>
     <item>
       <title>Consulting Services</title>
-      <link>http://localhost:53103/consulting/</link>
+      <link>https://sinclairhuang.org/consulting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53103/consulting/</guid>
+      <guid>https://sinclairhuang.org/consulting/</guid>
       <description>Strategic advisory in AI, biotechnology, and competitive intelligence</description>
     </item>
   </channel>

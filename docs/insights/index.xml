@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Insights on Sinclair Huang - Research &amp; Consulting</title>
-    <link>http://localhost:53103/insights/</link>
+    <link>https://sinclairhuang.org/insights/</link>
     <description>Recent content in Insights on Sinclair Huang - Research &amp; Consulting</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Jan 2026 23:11:35 +0800</lastBuildDate>
-    <atom:link href="http://localhost:53103/insights/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sinclairhuang.org/insights/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2025 AI晶片產業趨勢</title>
-      <link>http://localhost:53103/insights/2025-ai-chip-trends/</link>
+      <link>https://sinclairhuang.org/insights/2025-ai-chip-trends/</link>
       <pubDate>Wed, 21 Jan 2026 23:11:35 +0800</pubDate>
-      <guid>http://localhost:53103/insights/2025-ai-chip-trends/</guid>
+      <guid>https://sinclairhuang.org/insights/2025-ai-chip-trends/</guid>
       <description>&lt;h2 id=&#34;產業概況&#34;&gt;產業概況&lt;/h2&gt;
 &lt;p&gt;隨著生成式 AI、大型語言模型（LLM）與資料中心算力需求持續成長，AI 晶片已成為半導體產業中最具戰略價值的細分市場之一。&lt;br&gt;
 2025 年，全球 AI 晶片市場規模預期將持續擴張，主要動能來自雲端服務供應商（CSP）、超大規模資料中心（Hyperscalers）與企業級 AI 應用部署。&lt;/p&gt;
@@ -52,13 +52,6 @@ HBM3 與 HBM3E 已成為 AI 系統關鍵元件，供應緊張情況短期內難�
 &lt;h2 id=&#34;結論&#34;&gt;結論&lt;/h2&gt;
 &lt;p&gt;2025 年 AI 晶片產業仍處於高成長階段，但產業競爭格局正在逐步多元化。&lt;br&gt;
 NVIDIA 的領先地位短期內難以撼動，AMD 與本土替代方案則持續縮小差距。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2025 Semiconductor Trends</title>
-      <link>http://localhost:53103/insights/2025-semiconductor-trends/</link>
-      <pubDate>Wed, 21 Jan 2026 22:23:42 +0800</pubDate>
-      <guid>http://localhost:53103/insights/2025-semiconductor-trends/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
