@@ -44,3 +44,6 @@ weight = 5
 name = 'News'
 url = '/news/'
 weight = 6
+
+[markup.goldmark.renderer]
+unsafe = true
