@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tag2 on Po-Sung (Sinclair) Huang</title>
-    <link>//localhost:62324/tags/tag2/</link>
-    <description>Recent content in Tag2 on Po-Sung (Sinclair) Huang</description>
-    <generator>Hugo</generator>
-    <language>en</language>
+    <title>Tag2 on Sinclair Huang - Research &amp; Consulting</title>
+    <link>https://sinclairhuang.org/tags/tag2/</link>
+    <description>Recent content in Tag2 on Sinclair Huang - Research &amp; Consulting</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
     <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:62324/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sinclairhuang.org/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Your Title</title>
-      <link>//localhost:62324/blog/thoughts/yyyy-mm-dd-title/</link>
+      <link>https://sinclairhuang.org/blog/thoughts/yyyy-mm-dd-title/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:62324/blog/thoughts/yyyy-mm-dd-title/</guid>
+      <guid>https://sinclairhuang.org/blog/thoughts/yyyy-mm-dd-title/</guid>
       <description>&lt;p&gt;Your content here&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
