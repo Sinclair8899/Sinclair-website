@@ -2,26 +2,50 @@
 title: "About"
 ---
 
-## Sinclair Huang
+## Po-Sung (Sinclair) Huang (黃柏松)
 
-Executive Doctorate of Business Administration (EDBA), HEC Liège
+**Independent Researcher | Executive Advisor**  
+**PhD (EDBA, HEC Liège) | Taiwan**
+
+Po-Sung (Sinclair) Huang (黃柏松) is an independent researcher and executive advisor with a PhD (EDBA) from HEC Liège. His research focuses on AI-driven industrial competitiveness in semiconductors, advanced materials, and AI-enabled biological systems research.
+
+## Professional Background
 
 Special Advisor to the Chairman, Continental Carbon Co., Ltd.
 
-### Professional Background
-
 With over 30 years of cross-industry experience spanning Taiwan's electronics, biotechnology, and chemical industries, I bring a unique blend of technical expertise and strategic insight to address complex business challenges.
 
-### Research Focus
+## Research Focus
 
-My research interests lie at the intersection of artificial intelligence and industrial optimization:
+My research centers on three core areas:
 
-- **AI Semiconductors**: Quantitative valuation analysis and competitive intelligence
-- **AI-enabled biological systems modeling**: Exploring structure-function relationships for research applications (non-clinical, non-medical)
-- **Advanced Materials**: Carbon black industry optimization
+- **AI Semiconductors**: Quantitative valuation analysis of 95 global AI semiconductor companies
+- **AI-enabled biological systems modeling**: Exploring structure–function relationships and AI-assisted molecular reasoning for research and industrial applications (non-clinical, non-medical)
+- **Industry Optimization**: Carbon black manufacturing optimization
 
-### Contact
+## Research Areas
 
-- Website: sinclairhuang.org
-- Email: research@sinclairhuang.org
-- ORCID: 0009-0007-8173-5672
+### Semiconductor Industry Analysis
+AI technology valuation and infrastructure monitoring
+
+### Advanced Materials Strategy
+Carbon black industry optimization and competitive intelligence
+
+### Biotech & AI Futures
+AI-enabled biological systems modeling and life-science research (non-clinical, non-medical)
+
+### Industrial Competitiveness
+Cross-industry analysis and strategic advisory
+
+## Publications
+
+Active contributor to Medium with technical content bridging industry knowledge and academic rigor.
+
+**ORCID**: 0009-0007-8173-5672
+
+## Contact
+
+- **Website**: [sinclairhuang.org](https://sinclairhuang.org)
+- **Email**: [research@sinclairhuang.org](mailto:research@sinclairhuang.org)
+- **ORCID**: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
+- **Medium**: [@sinclairhuang](https://medium.com/@sinclairhuang)
