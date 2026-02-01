@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-## Dr. Po-Sung (Sinclair) Huang
+## Sinclair Huang
 
 Executive Doctorate of Business Administration (EDBA), HEC Liège
 
@@ -48,8 +48,8 @@ Active contributor to Medium with technical content bridging industry knowledge 
   </div>
   
   <div style="flex: 0 0 auto;">
-    <p style="margin: 0 0 10px 0; font-weight: 600;">Dr. Sinclair Huang:</p>
-    <img src="/images/sinclair-photo.PNG" alt="Dr. Sinclair Huang" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #ddd; border-radius: 8px;">
+    <p style="margin: 0 0 10px 0; font-weight: 600;">Sinclair Huang:</p>
+    <img src="/images/sinclair-photo.PNG" alt="Sinclair Huang" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #ddd; border-radius: 8px;">
   </div>
 </div>
 
