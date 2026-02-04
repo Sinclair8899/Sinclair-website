@@ -11,15 +11,15 @@ Po-Sung (Sinclair) Huang (黃柏松) is an independent researcher and executive 
 
 ## Professional Background
 
+**Current Position**  
 Special Advisor to the Chairman, Continental Carbon Co., Ltd.
 
-With over 30 years of cross-industry experience spanning Taiwan's electronics, biotechnology, and chemical industries, I bring a unique blend of technical expertise and strategic insight to address complex business challenges.
+**Experience**  
+With over 30 years of cross-industry experience spanning Taiwan's electronics, biotechnology, and chemical industries.
 
 ## Research Focus
 
-My research centers on three core areas:
-
-- **AI Semiconductors**: Quantitative valuation analysis of 95 global AI semiconductor companies
+- **AI Semiconductors**: Quantitative valuation analysis of 95 global companies
 - **AI-enabled biological systems modeling**: Exploring structure–function relationships and AI-assisted molecular reasoning for research and industrial applications (non-clinical, non-medical)
 - **Industry Optimization**: Carbon black manufacturing optimization
 
@@ -39,13 +39,10 @@ Cross-industry analysis and strategic advisory
 
 ## Publications
 
-Active contributor to Medium with technical content bridging industry knowledge and academic rigor.
-
 **ORCID**: 0009-0007-8173-5672
 
 ## Contact
 
-- **Website**: [sinclairhuang.org](https://sinclairhuang.org)
-- **Email**: [research@sinclairhuang.org](mailto:research@sinclairhuang.org)
-- **ORCID**: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
-- **Medium**: [@sinclairhuang](https://medium.com/@sinclairhuang)
+- Website: [sinclairhuang.org](https://sinclairhuang.org)
+- Email: research@sinclairhuang.org
+- ORCID: 0009-0007-8173-5672

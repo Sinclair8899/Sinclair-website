@@ -5,4 +5,4 @@ description: "Research notes, thoughts, and insights on AI, biotech, and industr
 
 ## Latest Thoughts & Research Notes
 
-Short-form insights on AI semiconductors, precision oncology, and industry optimization.
+Short-form insights on AI semiconductors, AI-enabled biological systems research, and industry optimization.
