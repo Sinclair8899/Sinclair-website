@@ -1,11 +1,18 @@
+import os
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinclair Huang - AI & Industrial Strategy</title>
-    
+# 定義檔案路徑
+HOME_FILE = 'docs/index.html'
+ABOUT_DIR = 'docs/about'
+ABOUT_FILE = os.path.join(ABOUT_DIR, 'index.html')
+
+# 確保目錄存在
+if not os.path.exists(ABOUT_DIR):
+    os.makedirs(ABOUT_DIR)
+
+# ==========================================
+# 1. 設定共用 CSS (讓網站風格一致)
+# ==========================================
+COMMON_STYLE = """
 <style>
     :root {
         --primary: #2c3e50;
@@ -51,13 +58,12 @@
         nav .links a { margin: 0 10px; }
     }
 </style>
+"""
 
-</head>
-<body>
-
-    
+# 導航欄 HTML (共用)
+NAV_HTML = """
 <nav>
-    <div class="logo"><a href="../index.html">Sinclair Huang</a></div>
+    <div class="logo"><a href="/docs/index.html">Sinclair Huang</a></div>
     <div class="links">
         <a href="../index.html">Home</a>
         <a href="../about/index.html">Research Profile</a>
@@ -66,7 +72,23 @@
         <a href="../news/index.html">News</a>
     </div>
 </nav>
+""".replace('/docs/index.html', '../index.html') # 修正相對路徑
 
+# ==========================================
+# 2. 生成首頁 (HOME)
+# ==========================================
+home_html = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinclair Huang - AI & Industrial Strategy</title>
+    {COMMON_STYLE}
+</head>
+<body>
+
+    {NAV_HTML}
 
     <section class="hero">
         <h1>Sinclair Huang, PhD (EDBA)</h1>
@@ -106,3 +128,95 @@
 
 </body>
 </html>
+"""
+
+# ==========================================
+# 3. 生成 RESEARCH PROFILE 頁 (ABOUT)
+# ==========================================
+about_html = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Profile - Sinclair Huang</title>
+    {COMMON_STYLE}
+</head>
+<body>
+
+    {NAV_HTML}
+
+    <div class="profile-header">
+        <h1>Research Profile</h1>
+        <p style="color: #ccc; max-width: 600px; margin: 20px auto 0;">Independent Researcher & Industrial Strategist</p>
+    </div>
+
+    <section>
+        <div class="profile-section">
+            <h2>Research Statement</h2>
+            <p style="font-size: 1.25em; line-height: 1.8; color: #333;">
+                I study the industrial transformation driven by artificial intelligence, focusing on how value is shifting from software-centric digital models toward physical infrastructure, manufacturing capabilities, and real-world deployment systems.
+            </p>
+            <p>My work integrates academic research with decades of industrial leadership experience.</p>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 50px 0;">
+
+        <div class="profile-section">
+            <h2>Research Areas</h2>
+            <dl class="profile-list">
+                <dt>Physical AI Economics</dt>
+                <dd>The structural transition from intangible AI value to physical capability-driven value.</dd>
+
+                <dt>Semiconductor Capability Amplification</dt>
+                <dd>How equipment, process innovation, and supply chains determine strategic advantage.</dd>
+
+                <dt>AI in Scientific Discovery</dt>
+                <dd>Applications of AI in molecular biology, drug discovery, and industrial science.</dd>
+            </dl>
+        </div>
+
+        <div class="profile-section">
+            <h2>Professional Background</h2>
+            <ul style="list-style: none; padding: 0; font-size: 1.1em; line-height: 2;">
+                <li>🎓 <strong>PhD (Executive DBA)</strong>, HEC Liège</li>
+                <li>🏭 <strong>Former President</strong>, Global carbon materials industry</li>
+                <li>💼 <strong>Advisor</strong>, Board-level industrial strategy consultant</li>
+            </ul>
+        </div>
+
+        <div class="profile-section" style="background: #f8f9fa; padding: 40px; border-radius: 8px;">
+            <h2>Collaboration</h2>
+            <p>Open to collaboration in research, policy dialogue, and industrial strategy.</p>
+            <p><a href="mailto:contact@sinclairhuang.org" style="color: var(--accent); font-weight: bold;">Get in touch &rarr;</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sinclair Huang. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+"""
+
+# 寫入檔案
+with open(HOME_FILE, 'w', encoding='utf-8') as f:
+    f.write(home_html)
+print(f"✅ 首頁已更新: {HOME_FILE}")
+
+with open(ABOUT_FILE, 'w', encoding='utf-8') as f:
+    f.write(about_html)
+print(f"✅ Research Profile 頁面已建立: {ABOUT_FILE}")
+
+# 順便修正其他頁面的導航連結 (Publications, Blog, News 也要能連回來)
+# 這是一個小腳本，用來確保所有頁面的 Menu 連結都是一致的
+def update_nav_links(file_path):
+    if not os.path.exists(file_path): return
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # 簡單的替換邏輯：如果有舊的導航，試著統一更新 (這裡僅做簡單檢查，避免覆蓋太複雜的邏輯)
+    # 更好的方式是我們下次統一用 Python 生成所有頁面，目前先不更動其他頁面以免出錯
+    pass
+
