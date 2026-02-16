@@ -1,4 +1,10 @@
+import os
 
+# 目標檔案
+INDEX_FILE = 'docs/index.html'
+
+# 您的規劃內容 (HTML + CSS)
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -226,3 +232,10 @@
 
 </body>
 </html>
+"""
+
+# 寫入檔案
+with open(INDEX_FILE, 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("🎉 首頁 (index.html) 已根據您的新設計完全重寫！")
