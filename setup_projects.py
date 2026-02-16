@@ -1,11 +1,17 @@
+import os
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Programs - Sinclair Huang</title>
-    
+# 定義檔案路徑
+PROJECTS_DIR = 'docs/projects'
+PROJECTS_FILE = os.path.join(PROJECTS_DIR, 'index.html')
+
+# 確保目錄存在
+if not os.path.exists(PROJECTS_DIR):
+    os.makedirs(PROJECTS_DIR)
+
+# ==========================================
+# CSS 樣式 (保持與全站一致，並增加 Projects 專用樣式)
+# ==========================================
+STYLE = """
 <style>
     :root {
         --primary: #2c3e50;
@@ -67,7 +73,19 @@
         .project-card { padding: 25px; }
     }
 </style>
+"""
 
+# ==========================================
+# 頁面內容
+# ==========================================
+html_content = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Programs - Sinclair Huang</title>
+    {STYLE}
 </head>
 <body>
 
@@ -204,3 +222,10 @@
 
 </body>
 </html>
+"""
+
+# 寫入檔案
+with open(PROJECTS_FILE, 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print(f"🎉 Projects 頁面已建立：{PROJECTS_FILE}")
