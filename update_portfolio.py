@@ -1,11 +1,17 @@
+import os
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Portfolio - Sinclair Huang</title>
-    
+# 定義檔案路徑
+PROJECTS_DIR = 'docs/projects'
+PROJECTS_FILE = os.path.join(PROJECTS_DIR, 'index.html')
+
+# 確保目錄存在
+if not os.path.exists(PROJECTS_DIR):
+    os.makedirs(PROJECTS_DIR)
+
+# ==========================================
+# CSS 樣式 (針對 Portfolio 優化)
+# ==========================================
+STYLE = """
 <style>
     :root {
         --primary: #2c3e50;
@@ -85,7 +91,19 @@
         .item-card { padding: 20px; }
     }
 </style>
+"""
 
+# ==========================================
+# 頁面內容
+# ==========================================
+html_content = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Portfolio - Sinclair Huang</title>
+    {STYLE}
 </head>
 <body>
 
@@ -197,3 +215,10 @@
 
 </body>
 </html>
+"""
+
+# 寫入檔案
+with open(PROJECTS_FILE, 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print(f"🎉 Research Portfolio 頁面已更新：{PROJECTS_FILE}")
