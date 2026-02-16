@@ -24,21 +24,18 @@ def publish():
         print(f"❌ 找不到草稿檔案：{DRAFT_FILE}")
         return
 
-    # === 修改重點：增加 Big5 相容性 ===
     content = ""
     try:
-        # 先嘗試用 UTF-8 讀取
         with open(DRAFT_FILE, 'r', encoding='utf-8') as f:
             content = f.read()
     except UnicodeDecodeError:
-        print("⚠️ 偵測到非 UTF-8 編碼，嘗試切換至 Big5 (繁體中文) 模式讀取...")
+        print("⚠️ 偵測到非 UTF-8 編碼，嘗試切換至 Big5 模式...")
         try:
             with open(DRAFT_FILE, 'r', encoding='big5') as f:
                 content = f.read()
         except Exception as e:
-            print(f"❌ 仍然無法讀取檔案，請確認檔案是否為純文字檔。錯誤：{e}")
+            print(f"❌ 無法讀取檔案：{e}")
             return
-    # =================================
 
     title = input("請輸入文章標題 (Title): ").strip()
     if not title:
@@ -96,31 +93,38 @@ def update_index(title, filename, date):
         soup = BeautifulSoup(f, 'html.parser')
 
     section_title = None
+    # 搜尋現有的 Insights 標題
     for h in soup.find_all(['h2', 'h3']):
         if 'Insight' in h.get_text() or 'Blog' in h.get_text() or 'Analysis' in h.get_text():
             section_title = h
             break
     
+    # 如果找不到，建立新的區塊
     if not section_title:
         print("⚠️  正在建立新的 'Latest Insights' 區塊...")
-        pub_list = soup.find('ul', {'id': 'publications-list'})
-        if not pub_list:
-            target = soup.find('body')
-        else:
-            target = pub_list.find_next_sibling() or pub_list.parent
-        
         new_h2 = soup.new_tag('h2')
         new_h2.string = "Latest Insights & Analysis"
         new_ul = soup.new_tag('ul', id='insights-list')
         
+        # 嘗試定位 Publications 列表
+        pub_list = soup.find('ul', {'id': 'publications-list'})
+        
         if pub_list:
             pub_list.insert_after(new_ul)
             pub_list.insert_after(new_h2)
-            section_title = new_h2
         else:
-            soup.body.insert(0, new_ul)
-            soup.body.insert(0, new_h2)
+            # 找不到 Publications，就插在 body 最前面
+            if soup.body:
+                soup.body.insert(0, new_ul)
+                soup.body.insert(0, new_h2)
+            else:
+                soup.append(new_h2)
+                soup.append(new_ul)
+        
+        # === 關鍵修正：確保這裡有賦值 ===
+        section_title = new_h2 
 
+    # 找到列表容器
     container = section_title.find_next('ul')
     if not container:
         container = soup.new_tag('ul')
@@ -137,6 +141,8 @@ def update_index(title, filename, date):
 
     new_li.append(link)
     new_li.append(date_span)
+    
+    # 插入到最前面
     container.insert(0, new_li)
 
     with open(INDEX_FILE, 'w', encoding='utf-8') as f:
