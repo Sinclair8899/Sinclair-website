@@ -1,4 +1,9 @@
+import os
 
+HOME_FILE = 'docs/index.html'
+
+# 這是之前的完整首頁代碼，但這次加入了圖片區塊
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,3 +126,10 @@
 
 </body>
 </html>
+"""
+
+with open(HOME_FILE, 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print(f"🎉 首頁已更新！圖片連結已加入: {HOME_FILE}")
+print("⚠️ 請記得確認 docs 資料夾內有 'ai-stack.jpg' 這張圖片！")
