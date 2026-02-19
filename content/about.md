@@ -1,6 +1,8 @@
 ---
+description: "Po-Sung (Sinclair) Huang (黃柏松)  Independent Researcher | Executive Advisor   PhD (EDBA, HEC Liège) |..."
 title: "About"
 ---
+
 
 ## Po-Sung (Sinclair) Huang (黃柏松)
 

@@ -1,6 +1,8 @@
 ---
+description: "Latest Industry News  <div style="margin: 2rem 0;"   <h2 style="color: 1e293b; border-bottom: 2px so..."
 title: "Industry News"
 ---
+
 
 # Latest Industry News
 

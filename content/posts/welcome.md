@@ -1,9 +1,11 @@
 ---
+description: "Welcome to my professional research website. This platform showcases my academic work, publications,..."
 title: "Welcome to My Research Portfolio"
 date: 2025-11-29
 draft: false
 tags: ["research", "introduction"]
 ---
+
 
 Welcome to my professional research website. This platform showcases my academic work, publications, and ongoing research projects.
 

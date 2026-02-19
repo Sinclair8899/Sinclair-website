@@ -1,7 +1,9 @@
 ---
+description: "Academic Publications   SSRN Working Papers   Policy-Conditioned Dynamic Capabilities and AI-Driven ..."
 title: "Publications"
 date: 2025-01-21
 ---
+
 
 ## Academic Publications
 

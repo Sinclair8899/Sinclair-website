@@ -1,6 +1,8 @@
 ---
+description: "Sinclair Huang  Executive Doctorate of Business Administration (EDBA), HEC Liège  Special Advisor to..."
 title: "About"
 ---
+
 
 ## Sinclair Huang
 

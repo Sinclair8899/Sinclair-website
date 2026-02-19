@@ -1,6 +1,8 @@
 ---
+description: "Independent Researcher in AI-Driven Industrial Competitiveness  Welcome to my research platform expl..."
 title: "Home"
 ---
+
 
 # Independent Researcher in AI-Driven Industrial Competitiveness
 
