@@ -15,63 +15,16 @@ Content = "Independent research and executive advisory on AI-driven industrial c
 [params.profileMode]
 enabled = false
 
-[[menu.main]]
-name = 'Home'
-url = '/'
-weight = 1
 
-[[menu.main]]
-name = 'Publications'
-url = '/publications/'
-weight = 2
 
-[[menu.main]]
-name = 'Projects'
-url = '/projects/'
-weight = 3
 
-[[menu.main]]
-name = 'Blog'
-url = '/blog/'
-weight = 4
 
-[[menu.main]]
-name = 'About'
-url = '/about/'
-weight = 5
 
-[[menu.main]]
-name = 'News'
-url = '/news/'
-weight = 6
 
 [markup.goldmark.renderer]
 unsafe = true
 
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 10
-  [[menu.main]]
-    name = "Publications"
-    url = "/publications"
-    weight = 20
-  [[menu.main]]
-    name = "Research Projects"
-    url = "/projects"
-    weight = 30
-  [[menu.main]]
-    name = "Data & Resources"
-    url = "/data"
-    weight = 40
-  [[menu.main]]
-    name = "Insights"
-    url = "/posts"
-    weight = 50
-  [[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 60
+
 
 [menu]
   [[menu.main]]
@@ -83,14 +36,10 @@ unsafe = true
     url = "/publications"
     weight = 20
   [[menu.main]]
-    name = "Data & Resources"
+    name = "Data"
     url = "/data"
-    weight = 40
-  [[menu.main]]
-    name = "Insights"
-    url = "/posts"
-    weight = 50
+    weight = 30
   [[menu.main]]
     name = "About"
     url = "/about"
-    weight = 60
+    weight = 40
