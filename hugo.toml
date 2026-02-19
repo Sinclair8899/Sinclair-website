@@ -1,16 +1,16 @@
 baseURL = "https://sinclairhuang.org/"
 languageCode = "en-us"
-title = "Sinclair Huang"
+title = "Sinclair Huang, PhD (EDBA)"
 theme = "PaperMod"
 
 [params]
     env = "production"
-    title = "Sinclair Huang, PhD (EDBA)"
-    description = "Researching AI-Driven Industrial Competitiveness & Capital Markets"
+    title = "Sinclair Huang"
+    description = "AI, Physical Infrastructure, and Capital Markets Researcher"
     
     [params.homeInfoParams]
         Title = "Sinclair Huang, PhD (EDBA)"
-        Content = "Independent Researcher | Special Advisor at Continental Carbon. Focusing on AI, Semiconductors, and Biotech Infrastructure. [2026.02.18 Updated]"
+        Content = "Researcher at the intersection of AI, Infrastructure, and Capital Markets. Special Advisor at Continental Carbon."
 
 [menu]
   [[menu.main]]
@@ -18,6 +18,10 @@ theme = "PaperMod"
     url = "/publications"
     weight = 10
   [[menu.main]]
-    name = "Research Profile"
-    url = "/about"
+    name = "Data & Resources"
+    url = "/data"
     weight = 20
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 30
