@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Blog &amp; Insights on Sinclair Huang, PhD (EDBA)</title>
+    <title>Blog &amp; Insights on Sinclair Huang - Research &amp; Consulting</title>
     <link>https://sinclairhuang.org/blog/</link>
-    <description>Recent content in Blog &amp; Insights on Sinclair Huang, PhD (EDBA)</description>
+    <description>Recent content in Blog &amp; Insights on Sinclair Huang - Research &amp; Consulting</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
@@ -13,7 +13,14 @@
       <link>https://sinclairhuang.org/blog/thoughts/2024-12-first-thought/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/blog/thoughts/2024-12-first-thought/</guid>
-      <description>A brief observation from my research: AlphaFold 3&amp;#39;s ability to predict protein-ligand interactions i...</description>
+      <description>Quick thoughts on how AlphaFold 3 is transforming molecular medicine</description>
+    </item>
+    <item>
+      <title>Your Title</title>
+      <link>https://sinclairhuang.org/blog/thoughts/yyyy-mm-dd-title/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/thoughts/yyyy-mm-dd-title/</guid>
+      <description>&lt;p&gt;Your content here&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

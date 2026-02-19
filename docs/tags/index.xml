@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on Sinclair Huang, PhD (EDBA)</title>
+    <title>Tags on Sinclair Huang - Research &amp; Consulting</title>
     <link>https://sinclairhuang.org/tags/</link>
-    <description>Recent content in Tags on Sinclair Huang, PhD (EDBA)</description>
+    <description>Recent content in Tags on Sinclair Huang - Research &amp; Consulting</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Jan 2026 23:11:35 +0800</lastBuildDate>
@@ -55,6 +55,20 @@
       <link>https://sinclairhuang.org/tags/drug-discovery/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/tags/drug-discovery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag1</title>
+      <link>https://sinclairhuang.org/tags/tag1/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/tag1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag2</title>
+      <link>https://sinclairhuang.org/tags/tag2/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/tag2/</guid>
       <description></description>
     </item>
   </channel>
