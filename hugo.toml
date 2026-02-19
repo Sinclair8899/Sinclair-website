@@ -1,45 +1,23 @@
-baseURL = 'https://sinclairhuang.org/'
-languageCode = 'en-us'
-title = 'Sinclair Huang - Research & Consulting'
-theme = 'PaperMod'
-publishDir = "docs"
+baseURL = "https://sinclairhuang.org/"
+languageCode = "en-us"
+title = "Sinclair Huang"
+theme = "PaperMod"
 
 [params]
-author = 'Po-Sung (Sinclair) Huang'
-description = 'Independent researcher and executive advisor'
-
-[params.homeInfoParams]
-Title = "Po-Sung (Sinclair) Huang"
-Content = "Independent research and executive advisory on AI-driven industrial competitiveness.\n\nPhD (EDBA, HEC Liège) | Taiwan"
-
-[params.profileMode]
-enabled = false
-
-
-
-
-
-
-
-[markup.goldmark.renderer]
-unsafe = true
-
-
+    env = "production"
+    title = "Sinclair Huang, PhD (EDBA)"
+    description = "Researching AI-Driven Industrial Competitiveness & Capital Markets"
+    
+    [params.homeInfoParams]
+        Title = "Sinclair Huang, PhD (EDBA)"
+        Content = "Independent Researcher | Special Advisor at Continental Carbon. Focusing on AI, Semiconductors, and Biotech Infrastructure. [2026.02.18 Updated]"
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 10
-  [[menu.main]]
     name = "Publications"
     url = "/publications"
-    weight = 20
+    weight = 10
   [[menu.main]]
-    name = "Data"
-    url = "/data"
-    weight = 30
-  [[menu.main]]
-    name = "About"
+    name = "Research Profile"
     url = "/about"
-    weight = 40
+    weight = 20
