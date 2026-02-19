@@ -48,7 +48,6 @@ weight = 6
 [markup.goldmark.renderer]
 unsafe = true
 
-[menu]
   [[menu.main]]
     name = "Home"
     url = "/"
@@ -61,6 +60,28 @@ unsafe = true
     name = "Research Projects"
     url = "/projects"
     weight = 30
+  [[menu.main]]
+    name = "Data & Resources"
+    url = "/data"
+    weight = 40
+  [[menu.main]]
+    name = "Insights"
+    url = "/posts"
+    weight = 50
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 60
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications"
+    weight = 20
   [[menu.main]]
     name = "Data & Resources"
     url = "/data"
