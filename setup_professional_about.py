@@ -1,4 +1,7 @@
----
+import os
+
+def create_about():
+    about_content = """---
 title: "About Sinclair Huang"
 description: "Academic Researcher & Strategic Advisor at the intersection of AI, Capital Markets, and Industrial Infrastructure."
 ---
@@ -36,3 +39,16 @@ Beyond academia, I provide strategic counsel to global firms in the electronics,
 * **Preprints**: [SSRN](https://ssrn.com/abstract=5843722), [Research Square](https://doi.org/10.21203/rs.3.rs-8774255/v1)
 * **Open Data**: [Zenodo](https://doi.org/10.5281/zenodo.18437953)
 * **Contact**: [sinclair@sinclairhuang.org](mailto:sinclair@sinclairhuang.org)
+"""
+
+    path = 'content/about.md'
+    # 確保 content 目錄存在
+    if not os.path.exists('content'):
+        os.makedirs('content')
+        
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(about_content)
+    print(f"✅ 專業簡介已成功建立於: {path}")
+
+if __name__ == "__main__":
+    create_about()
