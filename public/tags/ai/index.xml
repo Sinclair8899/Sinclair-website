@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI on Sinclair Huang, PhD (EDBA)</title>
+    <link>https://sinclairhuang.org/tags/ai/</link>
+    <description>Recent content in AI on Sinclair Huang, PhD (EDBA)</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sinclairhuang.org/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AlphaFold 3 and the Future of Drug Discovery</title>
+      <link>https://sinclairhuang.org/blog/thoughts/2024-12-first-thought/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/thoughts/2024-12-first-thought/</guid>
+      <description>A brief observation from my research: AlphaFold 3&amp;#39;s ability to predict protein-ligand interactions i...</description>
+    </item>
+  </channel>
+</rss>
