@@ -1,65 +1,53 @@
 ---
-description: "Po-Sung (Sinclair) Huang (黃柏松)  Independent Researcher | Executive Advisor   PhD (EDBA, HEC Liège) |..."
 title: "About"
 ---
 
+## Dr. Po-Sung (Sinclair) Huang
 
-## Po-Sung (Sinclair) Huang (黃柏松)
+Executive Doctorate of Business Administration (EDBA), HEC Liège
 
-**Independent Researcher | Executive Advisor**  
-**PhD (EDBA, HEC Liège) | Taiwan**
-
-Po-Sung (Sinclair) Huang (黃柏松) is an independent researcher and executive advisor with a PhD (EDBA) from HEC Liège. His research focuses on AI-driven industrial competitiveness in semiconductors, advanced materials, and AI-enabled biological systems research.
-
-## Professional Background
-
-**Current Position**  
 Special Advisor to the Chairman, Continental Carbon Co., Ltd.
 
-**Experience**  
+### Professional Background
+
 With over 30 years of cross-industry experience spanning Taiwan's electronics, biotechnology, and chemical industries, I bring a unique blend of technical expertise and strategic insight to address complex business challenges.
 
-## Research Focus
+### Research Focus
 
-My research centers on three core areas:
-
-- **AI Semiconductors**: Quantitative valuation analysis of 95 global AI semiconductor companies, examining market positioning, technological capabilities, and competitive dynamics in the rapidly evolving AI chip landscape
+My research interests lie at the intersection of artificial intelligence, biotechnology, and industrial optimization:
 
 - **AI-enabled biological systems modeling**: Exploring structure–function relationships and AI-assisted molecular reasoning for research and industrial applications (non-clinical, non-medical)
+- **Semiconductor Industry Analysis**: AI-driven valuation models and competitive intelligence  
+- **Carbon Black Industry**: Strategic optimization and process innovation
 
-- **Industry Optimization**: Carbon black manufacturing optimization through process innovation and operational excellence
+### Current Work
 
-## Research Areas
+I am currently working on several research initiatives:
 
-### Semiconductor Industry Analysis
-AI technology valuation and infrastructure monitoring
+- AI Semiconductor Valuation - Comprehensive analysis using GEE regression and Random Forest methodologies
+- AI-enabled biological systems modeling - Exploring structure–function relationships and AI-assisted molecular reasoning for research and industrial applications (non-clinical, non-medical)
+- Carbon Black Industry - Strategic optimization for high-value applications
 
-### Advanced Materials Strategy
-Carbon black industry optimization and competitive intelligence
+### Research Areas
 
-### Biotech & AI Futures
+**AI Semiconductors & Technology**  
+Quantitative valuation analysis and competitive intelligence frameworks for global AI chip manufacturers
+
+**Biotech & AI Futures**  
 AI-enabled biological systems modeling and life-science research (non-clinical, non-medical)
 
-### Industrial Competitiveness
-Cross-industry analysis and strategic advisory
+**Industrial Optimization**  
+Carbon black manufacturing process optimization and strategic market analysis
 
-## Publications
+### Publications
 
 Active contributor to Medium with technical content bridging industry knowledge and academic rigor.
 
-**Research Platforms**
-- SSRN: [Author Profile](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5843722)
-- Zenodo: [Author Profile](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Huang%2C%20Po-Sung%22)
-- Research Square: [Author Profile](https://www.researchsquare.com/profile/po-sung-sinclair-huang)
-- ORCID: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
+**ORCID**: 0009-0007-8173-5672
 
-## Contact
+### Contact
 
-- **Website**: [sinclairhuang.org](https://sinclairhuang.org)
-- **Email**: [research@sinclairhuang.org](mailto:research@sinclairhuang.org)
+- **Website**: sinclairhuang.org
+- **Email**: research@sinclairhuang.org
 - **ORCID**: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
 - **Medium**: [@sinclairhuang](https://medium.com/@sinclairhuang)
-
----
-
-*Note: Research involving biological systems is conducted at a computational and conceptual level and does not constitute clinical or medical practice.*
