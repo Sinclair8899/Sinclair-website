@@ -1,14 +1,19 @@
 ---
-description: "Sinclair Huang  Executive Doctorate of Business Administration (EDBA), HEC Liège  Special Advisor to..."
+description: "Sinclair Huang — Independent Researcher in AI, Infrastructure, and Capital Markets. EDBA, HEC Liège. Special Advisor at Continental Carbon."
 title: "About"
 ---
-
 
 ## Sinclair Huang
 
 Executive Doctorate of Business Administration (EDBA), HEC Liège
 
 Special Advisor to the Chairman, Continental Carbon Co., Ltd.
+
+Sinclair Huang is an independent researcher specializing in the intersection of artificial intelligence (AI), physical infrastructure, and capital markets. He holds an EDBA from HEC Liège (Management School of the University of Liège, Belgium). His research focuses on how multinational enterprises in emerging markets maintain competitive advantage through AI-driven decision models and global strategic positioning.
+
+Sinclair Huang 是一位專注於人工智慧（AI）、實體基礎設施與資本市場交叉領域的研究員。他擁有 HEC Liège（列日大學管理學院）的企業管理高階博士學位（EDBA）。其研究重點在於新興市場跨國企業如何透過 AI 驅動的決策模型與全球佈局維持競爭優勢。
+
+---
 
 ### Professional Background
 
@@ -18,46 +23,27 @@ With over 30 years of cross-industry experience spanning Taiwan's electronics, b
 
 My research centers on three core areas:
 
-- **AI Semiconductors**: Quantitative valuation analysis of 95 global AI semiconductor companies, examining market positioning, technological capabilities, and competitive dynamics in the rapidly evolving AI chip landscape
-- **Precision Oncology**: Exploring AlphaFold 3 applications in drug discovery, focusing on how protein structure prediction advances therapeutic development and personalized cancer treatment approaches
-- **Industry Optimization**: Carbon black manufacturing optimization through process innovation and operational excellence
+**AI & Semiconductor Valuation** — Developing frameworks for analyzing competitive positioning and market dynamics of AI chip companies in an era of rapid technological change.
 
-### Current Work
+**Industrial Strategy** — Examining how artificial intelligence is transforming traditional manufacturing sectors and creating new paradigms for competitive advantage.
 
-As Special Advisor to the Chairman at Continental Carbon Co., Ltd., I combine strategic advisory with hands-on research, bridging academic inquiry and practical business applications across technology-intensive industries.
+**AI-Enabled Biological Systems Modeling** — Exploring AI applications in life-science research at a computational and conceptual level (non-clinical, non-medical).
 
-### Research Interests
+---
 
-- AI Semiconductors: Quantitative valuation analysis of 95 global companies
-- Precision Oncology: AlphaFold 3 applications in drug discovery
-- Industry Analysis: Carbon black manufacturing optimization
+### Research Platforms
 
-### Publications
-
-Active contributor to Medium with technical content bridging industry knowledge and academic rigor.
-
-**ORCID**: 0009-0007-8173-5672
-
-## 📱 Quick Connect
-
-<div style="display: flex; align-items: flex-start; gap: 40px; margin: 2em 0;">
-  <div style="flex: 0 0 auto;">
-    <p style="margin: 0 0 10px 0; font-weight: 600;">Scan to visit my website:</p>
-    <img src="/images/sinclair-qr.png" alt="sinclairhuang.org QR Code" style="width: 200px; height: 200px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;">
-    <p style="text-align: center; margin: 10px 0 0 0; color: #666; font-size: 0.9em;">
-      📱 <strong>sinclairhuang.org</strong>
-    </p>
-  </div>
-  
-  <div style="flex: 0 0 auto;">
-    <p style="margin: 0 0 10px 0; font-weight: 600;">Sinclair Huang:</p>
-    <img src="/images/sinclair-photo.PNG" alt="Sinclair Huang" style="width: 200px; height: 200px; object-fit: cover; border: 1px solid #ddd; border-radius: 8px;">
-  </div>
-</div>
+- **SSRN**: [Author Profile](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5843722)
+- **Zenodo**: [Author Profile](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Huang%2C%20Po-Sung%22)
+- **Research Square**: [Author Profile](https://www.researchsquare.com/profile/po-sung-sinclair-huang)
+- **ORCID**: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
 
 ### Contact
 
-- Website: [sinclairhuang.org](https://sinclairhuang.org)
-- Email: [research@sinclairhuang.org](mailto:research@sinclairhuang.org)
-- ORCID: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
-- Medium: [@sinclairhuang](https://medium.com/@sinclairhuang)
+- **Website**: [sinclairhuang.org](https://sinclairhuang.org)
+- **Email**: [research@sinclairhuang.org](mailto:research@sinclairhuang.org)
+- **Medium**: [@sinclairhuang](https://medium.com/@sinclairhuang)
+
+---
+
+*Note: Research involving biological systems is conducted at a computational and conceptual level and does not constitute clinical or medical practice.*
