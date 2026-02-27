@@ -6,3 +6,5 @@
 # OS
 .DS_Store
 Thumbs.db
+ed25519
+ed25519.pub
