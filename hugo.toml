@@ -15,17 +15,33 @@ theme = "PaperMod"
 
 [menu]
   [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Research Profile"
+    url = "/about"
+    weight = 2
+  [[menu.main]]
     name = "Publications"
     url = "/publications"
-    weight = 10
+    weight = 3
   [[menu.main]]
-    name = "Data & Resources"
-    url = "/data"
-    weight = 20
+    name = "Research Portfolio"
+    url = "/projects"
+    weight = 4
   [[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 30
+    name = "Blog"
+    url = "/blog"
+    weight = 5
+  [[menu.main]]
+    name = "News"
+    url = "/news"
+    weight = 6
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 7
 
 [markup.goldmark.renderer]
   unsafe = true
