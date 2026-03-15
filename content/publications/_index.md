@@ -19,6 +19,17 @@ Examining infrastructure-based leading indicators as predictive signals for tech
 
 ---
 
+#### AI-Driven Value Redistribution in Semiconductor Supply Chains: Evidence from ChatGPT's Impact on U.S. and Taiwan Markets
+
+*Huang, Po-Sung (Sinclair)* (2026) | SSRN Working Paper No. 6241778
+*Posted: February 15, 2026*
+
+Examining how AI-driven disruptions, particularly following ChatGPT's emergence, have restructured value distribution across semiconductor supply chains in U.S. and Taiwan markets.
+
+**[View on SSRN →](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6241778)**
+
+---
+
 #### AI, Information Depth, and the Collapse of Shallow Signal Predictability: Evidence from a 40-Year Structural Break in Equity Markets
 
 *Huang, Po-Sung (Sinclair)* (2026) | SSRN Working Paper No. 6195878
@@ -30,11 +41,12 @@ Analyzing how AI-driven information processing has restructured equity market si
 
 ---
 
-#### Architectural Trade-Offs in Vision-Only FSD and Sensor-Fusion Chip Design
+#### Architectural Trade-Offs in Vision-Only FSD and Sensor-Fusion Chip Design: Memory Bandwidth, Cache Capacity, and Competitive Dynamics in Autonomous Driving Semiconductors
 
 *Huang, Po-Sung (Sinclair)* (2026) | SSRN Working Paper No. 6184459
+*Posted: February 6, 2026*
 
-Comparative analysis of vision-only versus sensor-fusion architectures in autonomous driving chip design.
+Comparative analysis of vision-only versus sensor-fusion architectures in autonomous driving chip design, examining memory bandwidth constraints and cache capacity trade-offs.
 
 **[View on SSRN →](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6184459)**
 
@@ -100,6 +112,19 @@ Exploring dopamine signaling, AlphaFold 3, and receptor plasticity in biological
 
 ---
 
+## Latest Insights (Medium)
+
+#### EP5: The Valuation Trap — Why Patent Quantity No Longer Drives Market Value
+
+*Huang, Po-Sung (Sinclair)* (2026) | Medium
+*Published: March 2026*
+
+Why citation-weighted patent quality — not raw patent counts — drives market valuation in the intangible economy. Executive summary of SSRN Working Paper No. 6157046.
+
+**[Read on Medium →](https://medium.com/@sinclairhuang/ep5-the-valuation-trap-why-patent-quantity-no-longer-drives-market-value-9258043c6afe)**
+
+---
+
 ## Research Platforms
 
 - **Research Square**: [Author Profile](https://www.researchsquare.com/profile/po-sung-sinclair-huang)
@@ -110,4 +135,4 @@ Exploring dopamine signaling, AlphaFold 3, and receptor plasticity in biological
 
 ---
 
-*Last updated: February 2026*
+*Last updated: March 2026*

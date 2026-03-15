@@ -40,4 +40,18 @@ Analyzing innovation pathways and strategic positioning in specialty chemicals a
 
 ---
 
-*Po-Sung (Sinclair) Huang holds a PhD (EDBA) from HEC Liège and serves as Special Advisor to the Chairman at Continental Carbon Co., Ltd. With 30+ years of experience across Taiwan's electronics, biotechnology, and chemical industries, he publishes research on SSRN, Zenodo, Research Square, and Medium.*
+---
+
+## About Me
+
+Sinclair Huang 是一位專注於人工智慧（AI）、實體基礎設施與資本市場交叉領域的獨立研究員與企業顧問。他擁有 HEC Liège（列日大學管理學院）的企業管理高階博士學位 (EDBA)，在台灣電子、生技與化工產業擁有逾 30 年跨產業高階管理經驗，目前擔任大陸炭素股份有限公司董事長特別顧問。
+
+其研究重點涵蓋 AI 驅動的價值重分配、半導體策略，以及實體基礎設施指標如何重塑現代產業競爭優勢，研究成果發表於 SSRN、Zenodo、Research Square 及 Medium。
+
+---
+
+Sinclair Huang is an independent researcher and executive advisor specializing in the intersection of Artificial Intelligence, physical infrastructure, and capital markets. He holds an Executive Doctorate in Business Administration (EDBA) from HEC Liège, with over 30 years of cross-industry leadership experience across Taiwan's electronics, biotechnology, and chemical sectors.
+
+Currently serving as Special Advisor to the Chairman at Continental Carbon Co., Ltd., his research focuses on AI-driven value redistribution, semiconductor strategy, and infrastructure-led indicators reshaping industrial competitiveness. His work is published through SSRN, Zenodo, Research Square, and Medium.
+
+[View Publications →](/publications/) | [ORCID: 0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
