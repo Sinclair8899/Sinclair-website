@@ -9,9 +9,7 @@ theme = "PaperMod"
     title = "Sinclair Huang"
     description = "AI, Physical Infrastructure, and Capital Markets Researcher"
     
-    [params.homeInfoParams]
-        Title = "Sinclair Huang, PhD (EDBA)"
-        Content = """Sinclair Huang 是一位專注於人工智慧（AI）、實體基礎設施與資本市場交叉領域的獨立研究員與企業顧問。他擁有 HEC Liège 的企業管理高階博士學位 (EDBA)，在台灣電子、生技與化工產業擁有逾 30 年跨產業高階管理經驗，目前擔任大陸炭素股份有限公司董事長特別顧問。<br><br>Sinclair Huang is an independent researcher and executive advisor specializing in AI, physical infrastructure, and capital markets. He holds an EDBA from HEC Liège, with 30+ years of cross-industry leadership in Taiwan's electronics, biotechnology, and chemical sectors. Currently Special Advisor to the Chairman at Continental Carbon Co., Ltd., his research is published through SSRN, Zenodo, and Research Square."""
+
 
 [menu]
   [[menu.main]]
