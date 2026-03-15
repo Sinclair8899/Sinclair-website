@@ -1,3 +1,4 @@
+publishDir = "docs"
 baseURL = "https://sinclairhuang.org/"
 languageCode = "en-us"
 title = "Sinclair Huang, PhD (EDBA)"
