@@ -1,0 +1,78 @@
+import pandas as pd
+import reuests
+import time
+
+def fetch_patent_data(company_name):
+    # 💡 進入 OpenAlex 快速通關車道：帶入您的專屬研究信箱
+    headers = {
+        'User-Agent': 'mailto:research@sinclairhuang.org'
+    }
+    
+    # 設定檢索條件：2015-2024 年間、與該巨頭相關的「專利 (patent)」
+    url = "https://api.openalex.org/works"
+    params = {
+        "search": company_name,
+        "filter": "type:patent,publication_year:2015-2024",
+        "per-page": 50, # 抓取最具影響力的前 50 篇核心專利來計算前向引用
+        "sort": "cited_by_count:desc"
+    }
+    
+    try:
+        response = requests.get(url, params=params, headers=headers)
+        if response.status_code == 200:
+            data = response.json()
+            # 1. 取得核心專利總數
+            total_patents = data.get('meta', {}).get('count', 0)
+            
+            # 2. 計算前向引用總數 (Forward Citations)
+            results = data.get('results', [])
+            total_citations = sum(work.get('cited_by_count', 0) for work in results)
+            
+            return total_patents, total_citations
+        else:
+            return 0, 0
+    except Exception as e:
+        return 0, 0
+
+def run_patent_agent(csv_filename):
+    print("🚀 啟動「專利探勘虛擬助理 (Patent Scout Agent)」...")
+    
+    try:
+        df = pd.read_csv(csv_filename)
+    except Exception as e:
+        print(f"❌ 讀取失敗。請確認資料夾內是否有 {csv_filename} 這個檔案！")
+        return
+        
+    print(f"📂 成功載入 {len(df)} 家巨頭名單，準備連線全球專利開源庫 OpenAlex...")
+    
+    patent_counts = []
+    citation_counts = []
+    
+    for index, row in df.iterrows():
+        # 讀取公司名稱
+        company = row.get('Matched_Company') or row.get('Clinical_Sponsor')
+        if pd.isna(company):
+            patent_counts.append(0)
+            citation_counts.append(0)
+            continue
+            
+        print(f"\n🔍 正在探勘 {company} 的專利護城河...")
+        patents, citations = fetch_patent_data(company)
+        
+        print(f"   ↳ 🛡️ 找到 {patents} 項核心專利，產生了 {citations} 次高價值前向引用！")
+        patent_counts.append(patents)
+        citation_counts.append(citations)
+        
+        # 禮貌性延遲 1 秒，確保與學術伺服器保持良好連線
+        time.sleep(1)
+        
+    # 將專利數據與您的財務市值數據完美縫合
+    df['Core_Patents_15_24'] = patent_counts
+    df['Forward_Citations'] = citation_counts
+    
+    output_filename = "biotech_valuation_master.csv"
+    df.to_csv(output_filename, index=False, encoding='utf-8-sig')
+    print(f"\n🏆 探勘完成！包含市值與專利深度的「生技估值重定價總表」已儲存為 {output_filename}")
+
+# 啟動助理！
+run_patent_agent("investable_biotech_list_Final.csv")
