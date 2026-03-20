@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sinclairhuang.org/blog/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinclairhuang.org/tags/ai/</loc>
     <lastmod>2026-03-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,9 +15,6 @@
     <lastmod>2026-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/biotech/</loc>
-    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/blog/</loc>
     <lastmod>2026-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/brand/</loc>
@@ -24,9 +27,6 @@
     <lastmod>2026-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/drug-discovery/</loc>
-    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/</loc>
     <lastmod>2026-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/interface-control-brand-power/</loc>
