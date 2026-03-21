@@ -6,8 +6,15 @@
     <description>Recent content in AI on Sinclair Huang, HEC Liège, Executive DBA</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sinclairhuang.org/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Bottleneck Nobody Is Pricing In: Where AI Compute Really Breaks</title>
+      <link>https://sinclairhuang.org/blog/bottleneck-nobody-is-pricing-in/</link>
+      <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/bottleneck-nobody-is-pricing-in/</guid>
+      <description>Every layer that looks solved hides another constraint beneath it. A deep look at CoWoS, HBM, and ABF substrate — the three physical bottlenecks shaping AI infrastructure.</description>
+    </item>
     <item>
       <title>AI Drug Discovery Is Not Just About Speed</title>
       <link>https://sinclairhuang.org/blog/ai-drug-discovery-speed/</link>

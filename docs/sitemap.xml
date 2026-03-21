@@ -2,14 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sinclairhuang.org/tags/ai/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinclairhuang.org/blog/</loc>
     <lastmod>2026-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/</loc>
     <lastmod>2026-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinclairhuang.org/tags/ai/</loc>
-    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+    <loc>https://sinclairhuang.org/tags/infrastructure/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/investment/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/semiconductors/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/supply-chain/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/bottleneck-nobody-is-pricing-in/</loc>
+    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/ai-drug-discovery-speed/</loc>
     <lastmod>2026-03-20T00:00:00+00:00</lastmod>
@@ -35,17 +53,11 @@
     <loc>https://sinclairhuang.org/tags/platform-power/</loc>
     <lastmod>2026-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinclairhuang.org/tags/</loc>
-    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sinclairhuang.org/tags/trust/</loc>
     <lastmod>2026-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/trust-before-efficiency/</loc>
     <lastmod>2026-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/infrastructure/</loc>
-    <lastmod>2026-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/insights/infrastructure-led-indicators/</loc>
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
@@ -57,9 +69,6 @@
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/leading-indicators/</loc>
-    <lastmod>2026-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/semiconductors/</loc>
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/ssrn/</loc>

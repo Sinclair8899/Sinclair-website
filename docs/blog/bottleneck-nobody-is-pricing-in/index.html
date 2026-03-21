@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The Bottleneck Nobody Is Pricing In: Where AI Compute Really Breaks | Sinclair Huang, HEC Liège, Executive DBA</title>
+<meta name="keywords" content="AI, Semiconductors, Supply Chain, Infrastructure, Investment">
+<meta name="description" content="Every layer that looks solved hides another constraint beneath it. A deep look at CoWoS, HBM, and ABF substrate — the three physical bottlenecks shaping AI infrastructure.">
+<meta name="author" content="">
+<link rel="canonical" href="https://sinclairhuang.org/blog/bottleneck-nobody-is-pricing-in/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sinclairhuang.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sinclairhuang.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sinclairhuang.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sinclairhuang.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sinclairhuang.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://sinclairhuang.org/blog/bottleneck-nobody-is-pricing-in/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google" content="notranslate">
+
+<meta property="og:url" content="https://sinclairhuang.org/blog/bottleneck-nobody-is-pricing-in/">
+  <meta property="og:site_name" content="Sinclair Huang, HEC Liège, Executive DBA">
+  <meta property="og:title" content="The Bottleneck Nobody Is Pricing In: Where AI Compute Really Breaks">
+  <meta property="og:description" content="Every layer that looks solved hides another constraint beneath it. A deep look at CoWoS, HBM, and ABF substrate — the three physical bottlenecks shaping AI infrastructure.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-03-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-21T00:00:00+00:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Semiconductors">
+    <meta property="article:tag" content="Supply Chain">
+    <meta property="article:tag" content="Infrastructure">
+    <meta property="article:tag" content="Investment">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Bottleneck Nobody Is Pricing In: Where AI Compute Really Breaks">
+<meta name="twitter:description" content="Every layer that looks solved hides another constraint beneath it. A deep look at CoWoS, HBM, and ABF substrate — the three physical bottlenecks shaping AI infrastructure.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog \u0026 Insights",
+      "item": "https://sinclairhuang.org/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The Bottleneck Nobody Is Pricing In: Where AI Compute Really Breaks",
+      "item": "https://sinclairhuang.org/blog/bottleneck-nobody-is-pricing-in/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Bottleneck Nobody Is Pricing In: Where AI Compute Really Breaks",
+  "name": "The Bottleneck Nobody Is Pricing In: Where AI Compute Really Breaks",
+  "description": "Every layer that looks solved hides another constraint beneath it. A deep look at CoWoS, HBM, and ABF substrate — the three physical bottlenecks shaping AI infrastructure.",
+  "keywords": [
+    "AI", "Semiconductors", "Supply Chain", "Infrastructure", "Investment"
+  ],
+  "articleBody": "Every layer that looks solved hides another constraint beneath it.\n§1 The Illusion of Infinite Compute The headlines say NVIDIA is winning. The hyperscalers are spending. The models are getting bigger.\nBut the real question is not where demand is going. It is where compute, physically, can still be built fast enough to meet it.\nThe harder answer requires tracing the full physical stack — from silicon wafer, through memory stack, through packaging interposer, through substrate material — and asking at each layer: can this actually scale at the speed the demand curve requires?\nThe answer, at every layer, is the same: not yet, and not linearly.\nTSMC said as much in its 2025 Q2 earnings call. The framing was not “we have solved CoWoS supply.” The framing was that the company is “working to narrow the supply-demand gap” — present tense, ongoing. Demand is scaling faster than the ecosystem that must physically deliver it.\nThis piece maps three layers of that gap. Each one is real. Each one has a different resolution timeline. And at least one of them is almost entirely absent from mainstream investor conversation.\n§2 CoWoS: The Integration Layer That Cannot Be Rushed Most coverage of AI infrastructure treats packaging as a backend afterthought — something that happens after the real engineering is done. This framing is wrong, and it is costing analysts real insight.\nCoWoS — Chip on Wafer on Substrate — is not a packaging step. It is, as TSMC’s own technical documentation states, the integration platform designed specifically for AI and ultra-high performance computing applications. What CoWoS does is physically bond logic chiplets and HBM memory together on a large-area silicon interposer, at densities and interconnect speeds that no other approach currently matches at production scale.\nThis is why you cannot simply “open another line.”\nA conventional packaging facility and a CoWoS facility share almost nothing in terms of equipment, process know-how, or yield management. The interposer itself must be manufactured at leading-edge fab precision. The bonding of HBM stacks to logic dies at scale, with acceptable yield, is a process that took years to develop and cannot be transferred quickly.\nConsider what TSMC’s own actions imply: in its 1Q25 earnings call, TSMC stated it was working to double CoWoS capacity through 2025. Doubling is an aggressive posture. It is also, read carefully, an admission of how tight the baseline was. The company has since announced additional advanced packaging capacity in Arizona — but the operative word remains additional, not sufficient. Its language through 2025 and into 2026 consistently signals a gap, not a clearing.\nCoWoS is not merely a backend packaging step; it is the integration layer that turns AI silicon into a shippable system product.\nFor investors: CoWoS capacity is the near-term gating factor on how many H100/B200-class systems actually ship in any given quarter. Revenue recognition at NVIDIA, and utilization rates at hyperscalers, are both downstream of this constraint.\n§3 HBM: This Is Not a Memory Story. It Is a Capacity Allocation Story. High Bandwidth Memory is where most supply chain analysis stops when it goes deeper than CoWoS. But even here, the standard narrative — “SK Hynix is ahead, Samsung is catching up, Micron is entering” — understates the structural rigidity of what is actually happening.\nCurrent market structure: SK Hynix holds approximately 57% of HBM supply. Samsung holds approximately 22%. These figures describe not a competitive market but a functional duopoly with a strong leader. And that leader — SK Hynix — remains NVIDIA’s primary HBM supplier.\nThe reason this structure does not change quickly has nothing to do with ambition or capital. It has to do with physics and process.\nHBM3E involves stacking multiple DRAM dies with through-silicon vias at tolerances where yield management is genuinely difficult. Qualification cycles with end customers like NVIDIA are not formalities — they are multi-quarter processes involving thermal validation, signal integrity testing, and system-level burn-in. A new entrant or a trailing supplier does not simply “catch up” by building more fab capacity. They catch up by surviving the qualification gauntlet, which takes time that market demand does not pause for.\nMore structurally: the SK Group chairman was quoted as stating that HBM is extremely wafer-intensive, that wafer shortages could persist to 2030, and that building new wafer capacity takes four to five years. The current wafer shortage already exceeds 20%.\nRead that again: four to five years to bring new wafer capacity online, against a demand curve that is re-accelerating every six months.\nHBM is not just a memory story; it is a capacity-allocation story across wafers, yields, validation, and customer trust.\nSamsung’s response — moving toward longer-term supply agreements to lock in AI memory customers — confirms that this is no longer a spot-market dynamic. It is a platform supply competition, and the positions being established now will persist for years.\n§4 Substrate and Materials: The Constraint Nobody Is Writing About This is the layer that separates supply chain analysis from supply chain understanding.\nEvery CoWoS package, every advanced AI accelerator, requires an ABF substrate — a laminate built using Ajinomoto Build-up Film as its core dielectric material. Ajinomoto holds more than 95% share of the global market for insulating films used in high-performance semiconductors. That figure is not a rounding error. It is the supply structure.\nThe material is not a commodity input — it requires controlled-environment manufacturing, multi-layer lamination at precise specifications, and ongoing process development as chip packages grow more complex.\nAnd they are growing more complex. The AI era is not just consuming more substrate area; it is requiring substrate at specifications that are harder to manufacture and that fewer facilities can produce.\nAjinomoto has announced plans to invest at least ¥25 billion in additional ABF capacity by 2030. That investment figure is both reassuring and revealing: reassuring because it signals commitment, revealing because a 2030 investment horizon implies that the company itself does not expect this to be a near-term resolved constraint.\nThe market often overestimates flexibility at the chip-design layer and underestimates rigidity at the materials-and-substrate layer.\nFor researchers tracking supply chain dependency concentration: ABF is arguably the single highest-concentration chokepoint in the entire AI infrastructure stack. It receives a fraction of the analytical attention that TSMC or SK Hynix receive.\n§5 The Resolution Timeline: Who Clears First, Who Doesn’t For investors and operators, the actionable question is not whether these bottlenecks exist — they do — but when each one resolves, and what that resolution sequence implies.\nCoWoS: earliest to ease, but not soon. The gap is narrowing. But “narrowing” through 2026 still means constrained. This is the bottleneck most likely to show meaningful relief in the 2026–2027 window.\nHBM: structurally tight through the decade. The SK Group chairman’s statement about wafer shortage persisting to 2030, combined with four-to-five-year lead times for new wafer capacity, makes this the hardest constraint to reason around optimistically. SK Hynix’s position will remain dominant; Micron’s entry adds optionality but not near-term volume.\nSubstrate and materials: the most underappreciated source of delay. Ajinomoto’s 2030 investment plan describes a constraint that is intensifying in technical difficulty even as capacity nominally expands. This is not a bottleneck that resolves when a new factory opens — it resolves when the full materials-qualification-manufacturing chain matures at the next node of complexity.\nCoWoS may ease first. HBM may remain structurally tight longer. Substrate and material constraints may be the most underappreciated source of future delay.\nFor investors: The non-obvious beneficiaries sit at the layers least discussed — advanced packaging equipment suppliers, specialty substrate manufacturers, and any company that successfully develops an ABF alternative or a competing interposer material.\nFor supply chain operators: The three metrics worth tracking are CoWoS lead times, HBM allocation terms, and ABF capacity announcements out of Ajinomoto.\nThe compute is real. The demand is real. But between the architecture and the datacenter floor, there is a physical world that scales on its own timeline — and right now, that timeline is slower than the one being priced into the market.\n",
+  "wordCount" : "1341",
+  "inLanguage": "en",
+  "datePublished": "2026-03-21T00:00:00Z",
+  "dateModified": "2026-03-21T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sinclairhuang.org/blog/bottleneck-nobody-is-pricing-in/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sinclair Huang, HEC Liège, Executive DBA",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sinclairhuang.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sinclairhuang.org/" accesskey="h" title="Sinclair Huang, HEC Liège, Executive DBA (Alt + H)">Sinclair Huang, HEC Liège, Executive DBA</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sinclairhuang.org/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/about" title="Research Profile">
+                    <span>Research Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/publications" title="Publications">
+                    <span>Publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/projects" title="Research Portfolio">
+                    <span>Research Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/news" title="News">
+                    <span>News</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      The Bottleneck Nobody Is Pricing In: Where AI Compute Really Breaks
+    </h1>
+    <div class="post-description">
+      Every layer that looks solved hides another constraint beneath it. A deep look at CoWoS, HBM, and ABF substrate — the three physical bottlenecks shaping AI infrastructure.
+    </div>
+    <div class="post-meta"><span title='2026-03-21 00:00:00 +0000 UTC'>March 21, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Every layer that looks solved hides another constraint beneath it.</p>
+<h2 id="1-the-illusion-of-infinite-compute">§1 The Illusion of Infinite Compute<a hidden class="anchor" aria-hidden="true" href="#1-the-illusion-of-infinite-compute">#</a></h2>
+<p>The headlines say NVIDIA is winning. The hyperscalers are spending. The models are getting bigger.</p>
+<p>But the real question is not where demand is going. It is where compute, physically, can still be built fast enough to meet it.</p>
+<p>The harder answer requires tracing the full physical stack — from silicon wafer, through memory stack, through packaging interposer, through substrate material — and asking at each layer: can this actually scale at the speed the demand curve requires?</p>
+<p>The answer, at every layer, is the same: not yet, and not linearly.</p>
+<p>TSMC said as much in its 2025 Q2 earnings call. The framing was not &ldquo;we have solved CoWoS supply.&rdquo; The framing was that the company is &ldquo;working to narrow the supply-demand gap&rdquo; — present tense, ongoing. Demand is scaling faster than the ecosystem that must physically deliver it.</p>
+<p>This piece maps three layers of that gap. Each one is real. Each one has a different resolution timeline. And at least one of them is almost entirely absent from mainstream investor conversation.</p>
+<h2 id="2-cowos-the-integration-layer-that-cannot-be-rushed">§2 CoWoS: The Integration Layer That Cannot Be Rushed<a hidden class="anchor" aria-hidden="true" href="#2-cowos-the-integration-layer-that-cannot-be-rushed">#</a></h2>
+<p>Most coverage of AI infrastructure treats packaging as a backend afterthought — something that happens after the real engineering is done. This framing is wrong, and it is costing analysts real insight.</p>
+<p>CoWoS — Chip on Wafer on Substrate — is not a packaging step. It is, as TSMC&rsquo;s own technical documentation states, the integration platform designed specifically for AI and ultra-high performance computing applications. What CoWoS does is physically bond logic chiplets and HBM memory together on a large-area silicon interposer, at densities and interconnect speeds that no other approach currently matches at production scale.</p>
+<p>This is why you cannot simply &ldquo;open another line.&rdquo;</p>
+<p>A conventional packaging facility and a CoWoS facility share almost nothing in terms of equipment, process know-how, or yield management. The interposer itself must be manufactured at leading-edge fab precision. The bonding of HBM stacks to logic dies at scale, with acceptable yield, is a process that took years to develop and cannot be transferred quickly.</p>
+<p>Consider what TSMC&rsquo;s own actions imply: in its 1Q25 earnings call, TSMC stated it was working to double CoWoS capacity through 2025. Doubling is an aggressive posture. It is also, read carefully, an admission of how tight the baseline was. The company has since announced additional advanced packaging capacity in Arizona — but the operative word remains <em>additional</em>, not <em>sufficient</em>. Its language through 2025 and into 2026 consistently signals a gap, not a clearing.</p>
+<blockquote>
+<p>CoWoS is not merely a backend packaging step; it is the integration layer that turns AI silicon into a shippable system product.</p>
+</blockquote>
+<p>For investors: CoWoS capacity is the near-term gating factor on how many H100/B200-class systems actually ship in any given quarter. Revenue recognition at NVIDIA, and utilization rates at hyperscalers, are both downstream of this constraint.</p>
+<h2 id="3-hbm-this-is-not-a-memory-story-it-is-a-capacity-allocation-story">§3 HBM: This Is Not a Memory Story. It Is a Capacity Allocation Story.<a hidden class="anchor" aria-hidden="true" href="#3-hbm-this-is-not-a-memory-story-it-is-a-capacity-allocation-story">#</a></h2>
+<p>High Bandwidth Memory is where most supply chain analysis stops when it goes deeper than CoWoS. But even here, the standard narrative — &ldquo;SK Hynix is ahead, Samsung is catching up, Micron is entering&rdquo; — understates the structural rigidity of what is actually happening.</p>
+<p>Current market structure: SK Hynix holds approximately 57% of HBM supply. Samsung holds approximately 22%. These figures describe not a competitive market but a functional duopoly with a strong leader. And that leader — SK Hynix — remains NVIDIA&rsquo;s primary HBM supplier.</p>
+<p>The reason this structure does not change quickly has nothing to do with ambition or capital. It has to do with physics and process.</p>
+<p>HBM3E involves stacking multiple DRAM dies with through-silicon vias at tolerances where yield management is genuinely difficult. Qualification cycles with end customers like NVIDIA are not formalities — they are multi-quarter processes involving thermal validation, signal integrity testing, and system-level burn-in. A new entrant or a trailing supplier does not simply &ldquo;catch up&rdquo; by building more fab capacity. They catch up by surviving the qualification gauntlet, which takes time that market demand does not pause for.</p>
+<p>More structurally: the SK Group chairman was quoted as stating that HBM is extremely wafer-intensive, that wafer shortages could persist to 2030, and that building new wafer capacity takes four to five years. The current wafer shortage already exceeds 20%.</p>
+<p>Read that again: four to five years to bring new wafer capacity online, against a demand curve that is re-accelerating every six months.</p>
+<blockquote>
+<p>HBM is not just a memory story; it is a capacity-allocation story across wafers, yields, validation, and customer trust.</p>
+</blockquote>
+<p>Samsung&rsquo;s response — moving toward longer-term supply agreements to lock in AI memory customers — confirms that this is no longer a spot-market dynamic. It is a platform supply competition, and the positions being established now will persist for years.</p>
+<h2 id="4-substrate-and-materials-the-constraint-nobody-is-writing-about">§4 Substrate and Materials: The Constraint Nobody Is Writing About<a hidden class="anchor" aria-hidden="true" href="#4-substrate-and-materials-the-constraint-nobody-is-writing-about">#</a></h2>
+<p>This is the layer that separates supply chain analysis from supply chain understanding.</p>
+<p>Every CoWoS package, every advanced AI accelerator, requires an ABF substrate — a laminate built using Ajinomoto Build-up Film as its core dielectric material. Ajinomoto holds more than 95% share of the global market for insulating films used in high-performance semiconductors. That figure is not a rounding error. It is the supply structure.</p>
+<p>The material is not a commodity input — it requires controlled-environment manufacturing, multi-layer lamination at precise specifications, and ongoing process development as chip packages grow more complex.</p>
+<p>And they are growing more complex. The AI era is not just consuming more substrate area; it is requiring substrate at specifications that are harder to manufacture and that fewer facilities can produce.</p>
+<p>Ajinomoto has announced plans to invest at least ¥25 billion in additional ABF capacity by 2030. That investment figure is both reassuring and revealing: reassuring because it signals commitment, revealing because a 2030 investment horizon implies that the company itself does not expect this to be a near-term resolved constraint.</p>
+<blockquote>
+<p>The market often overestimates flexibility at the chip-design layer and underestimates rigidity at the materials-and-substrate layer.</p>
+</blockquote>
+<p>For researchers tracking supply chain dependency concentration: ABF is arguably the single highest-concentration chokepoint in the entire AI infrastructure stack. It receives a fraction of the analytical attention that TSMC or SK Hynix receive.</p>
+<h2 id="5-the-resolution-timeline-who-clears-first-who-doesnt">§5 The Resolution Timeline: Who Clears First, Who Doesn&rsquo;t<a hidden class="anchor" aria-hidden="true" href="#5-the-resolution-timeline-who-clears-first-who-doesnt">#</a></h2>
+<p>For investors and operators, the actionable question is not whether these bottlenecks exist — they do — but when each one resolves, and what that resolution sequence implies.</p>
+<p><strong>CoWoS:</strong> earliest to ease, but not soon. The gap is narrowing. But &ldquo;narrowing&rdquo; through 2026 still means constrained. This is the bottleneck most likely to show meaningful relief in the 2026–2027 window.</p>
+<p><strong>HBM:</strong> structurally tight through the decade. The SK Group chairman&rsquo;s statement about wafer shortage persisting to 2030, combined with four-to-five-year lead times for new wafer capacity, makes this the hardest constraint to reason around optimistically. SK Hynix&rsquo;s position will remain dominant; Micron&rsquo;s entry adds optionality but not near-term volume.</p>
+<p><strong>Substrate and materials:</strong> the most underappreciated source of delay. Ajinomoto&rsquo;s 2030 investment plan describes a constraint that is intensifying in technical difficulty even as capacity nominally expands. This is not a bottleneck that resolves when a new factory opens — it resolves when the full materials-qualification-manufacturing chain matures at the next node of complexity.</p>
+<blockquote>
+<p>CoWoS may ease first. HBM may remain structurally tight longer. Substrate and material constraints may be the most underappreciated source of future delay.</p>
+</blockquote>
+<p>For investors: The non-obvious beneficiaries sit at the layers least discussed — advanced packaging equipment suppliers, specialty substrate manufacturers, and any company that successfully develops an ABF alternative or a competing interposer material.</p>
+<p>For supply chain operators: The three metrics worth tracking are CoWoS lead times, HBM allocation terms, and ABF capacity announcements out of Ajinomoto.</p>
+<p>The compute is real. The demand is real. But between the architecture and the datacenter floor, there is a physical world that scales on its own timeline — and right now, that timeline is slower than the one being priced into the market.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://sinclairhuang.org/tags/ai/">AI</a></li>
+      <li><a href="https://sinclairhuang.org/tags/semiconductors/">Semiconductors</a></li>
+      <li><a href="https://sinclairhuang.org/tags/supply-chain/">Supply Chain</a></li>
+      <li><a href="https://sinclairhuang.org/tags/infrastructure/">Infrastructure</a></li>
+      <li><a href="https://sinclairhuang.org/tags/investment/">Investment</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://sinclairhuang.org/">Sinclair Huang, HEC Liège, Executive DBA</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
