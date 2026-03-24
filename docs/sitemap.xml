@@ -2,28 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sinclairhuang.org/tags/abf/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinclairhuang.org/tags/ai/</loc>
-    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/</loc>
-    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/cowos/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/hbm/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/</loc>
-    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/semiconductors/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/supply-chain/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/taiwan/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/cowos-hbm-abf-explainer/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/infrastructure/</loc>
     <lastmod>2026-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/investment/</loc>
-    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/semiconductors/</loc>
-    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/supply-chain/</loc>
-    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/</loc>
     <lastmod>2026-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/bottleneck-nobody-is-pricing-in/</loc>

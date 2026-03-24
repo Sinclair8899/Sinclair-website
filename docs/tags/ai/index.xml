@@ -6,8 +6,15 @@
     <description>Recent content in AI on Sinclair Huang, HEC Liège, Executive DBA</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sinclairhuang.org/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Are CoWoS, HBM, and ABF - And Why Do They Matter So Much in the AI Era?</title>
+      <link>https://sinclairhuang.org/blog/cowos-hbm-abf-explainer/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/cowos-hbm-abf-explainer/</guid>
+      <description>A plain-language walkthrough of CoWoS, HBM, and ABF — what they actually are, why they are always mentioned together, and how they map onto Taiwan&amp;#39;s role in the global AI supply chain.</description>
+    </item>
     <item>
       <title>The Bottleneck Nobody Is Pricing In: Where AI Compute Really Breaks</title>
       <link>https://sinclairhuang.org/blog/bottleneck-nobody-is-pricing-in/</link>

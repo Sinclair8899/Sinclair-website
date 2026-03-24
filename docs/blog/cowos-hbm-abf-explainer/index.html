@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>What Are CoWoS, HBM, and ABF - And Why Do They Matter So Much in the AI Era? | Sinclair Huang, HEC Liège, Executive DBA</title>
+<meta name="keywords" content="AI, Semiconductors, HBM, CoWoS, ABF, Supply Chain, Taiwan">
+<meta name="description" content="A plain-language walkthrough of CoWoS, HBM, and ABF — what they actually are, why they are always mentioned together, and how they map onto Taiwan&#39;s role in the global AI supply chain.">
+<meta name="author" content="">
+<link rel="canonical" href="https://sinclairhuang.org/blog/cowos-hbm-abf-explainer/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sinclairhuang.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sinclairhuang.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sinclairhuang.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sinclairhuang.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sinclairhuang.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://sinclairhuang.org/blog/cowos-hbm-abf-explainer/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google" content="notranslate">
+
+<meta property="og:url" content="https://sinclairhuang.org/blog/cowos-hbm-abf-explainer/">
+  <meta property="og:site_name" content="Sinclair Huang, HEC Liège, Executive DBA">
+  <meta property="og:title" content="What Are CoWoS, HBM, and ABF - And Why Do They Matter So Much in the AI Era?">
+  <meta property="og:description" content="A plain-language walkthrough of CoWoS, HBM, and ABF — what they actually are, why they are always mentioned together, and how they map onto Taiwan&#39;s role in the global AI supply chain.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-03-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-24T00:00:00+00:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Semiconductors">
+    <meta property="article:tag" content="HBM">
+    <meta property="article:tag" content="CoWoS">
+    <meta property="article:tag" content="ABF">
+    <meta property="article:tag" content="Supply Chain">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="What Are CoWoS, HBM, and ABF - And Why Do They Matter So Much in the AI Era?">
+<meta name="twitter:description" content="A plain-language walkthrough of CoWoS, HBM, and ABF — what they actually are, why they are always mentioned together, and how they map onto Taiwan&#39;s role in the global AI supply chain.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog \u0026 Insights",
+      "item": "https://sinclairhuang.org/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "What Are CoWoS, HBM, and ABF - And Why Do They Matter So Much in the AI Era?",
+      "item": "https://sinclairhuang.org/blog/cowos-hbm-abf-explainer/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "What Are CoWoS, HBM, and ABF - And Why Do They Matter So Much in the AI Era?",
+  "name": "What Are CoWoS, HBM, and ABF - And Why Do They Matter So Much in the AI Era?",
+  "description": "A plain-language walkthrough of CoWoS, HBM, and ABF — what they actually are, why they are always mentioned together, and how they map onto Taiwan's role in the global AI supply chain.",
+  "keywords": [
+    "AI", "Semiconductors", "HBM", "CoWoS", "ABF", "Supply Chain", "Taiwan"
+  ],
+  "articleBody": "Why is everyone suddenly talking about CoWoS, HBM, and ABF whenever AI, NVIDIA, or AI servers come up? Many people know they are important, but still get stuck the first time they run into these terms.\nThis essay is a plain‑language walkthrough of what they actually are, why they are always mentioned together, and how they map onto Taiwan’s role in the global AI supply chain.\nWhen Google, Amazon, and Tesla are all designing their own chips, is Taiwan’s manufacturing ecosystem still structurally important — or just enjoying a temporary window?\nTo answer that, we have to go from GPUs to memory, to advanced packaging, to high‑end substrates, and see what it actually takes for AI compute to become physical, shippable infrastructure.\nFrom GPU to HBM, CoWoS, and ABF Any time you hear about NVIDIA, AI servers, or “scaling up compute,” you almost always see three acronyms show up: CoWoS, HBM, and ABF.\nPeople sense these are critical, but often still ask very reasonable questions:\nIsn’t CoWoS just “packaging”? How is a high‑end substrate different from a regular PCB? How many layers of substrates up to now? Can Taiwan actually produce HBM? If Google, Amazon, and Tesla all design their own chips, doesn’t that mean the advantage of Taiwan’s supply chain is just temporary? These are good questions, because AI compute doesn’t become real just because you have a GPU. It takes an entire stack working together.\nIf we use a simple analogy:\nThe GPU is the brain. HBM is ultra‑high‑speed short‑term memory. CoWoS is the integration technology that tightly connects the brain to that memory. ABF and substrates are the structural base that carries the whole complex system. Once you internalise that sentence, you already have the big picture.\n1. What is HBM? HBM stands for High Bandwidth Memory. You can think of it as the ultra‑fast data warehouse sitting right next to an AI chip.\nTraining and running AI models means constantly moving huge amounts of data. If memory bandwidth cannot keep up, even the most powerful GPU will sit idle waiting for data. HBM is therefore not just about having more capacity; what really matters is:\nExtremely high data transfer rates (multi‑hundred GB/s per stack, moving toward \u003e1 TB/s) Very wide I/O interfaces (thousands of bits) TSV‑stacked DRAM dies with very short internal distances Architected for high‑performance computing workloads In other words, HBM’s job is to keep the GPU from waiting around.\nIf the GPU is the brain, HBM is the ultra‑fast working memory sitting right beside it. No matter how strong your brain is, if working memory is too slow, overall performance gets bottlenecked.\nCommercial HBM production today remains heavily concentrated in just a few DRAM players. Recent market data puts SK Hynix at roughly the mid‑50%–60% range of HBM market share, with Samsung and Micron making up most of the rest — a very concentrated market rather than a broad, commoditised one.\nFor investors: a concentrated HBM market with multi‑year qualification cycles suggests sustained pricing power and relatively visible capex paths for leading vendors, but also the risk of a classic “super‑cycle then correction” once capacity finally catches up.\n2. What is CoWoS? CoWoS is an advanced packaging technology. The acronym stands for Chip on Wafer on Substrate.\nIf HBM is high‑bandwidth memory, then CoWoS is the way you tightly, densely, and at very high speed integrate the GPU with that HBM.\nCoWoS usually involves:\nLarge silicon interposers approaching multi‑reticle sizes Thousands to tens of thousands of micro‑bumps between the GPU and HBM stacks Very fine line/space routing on the interposer to carry wide, high‑speed interfaces Even if HBM is fast on paper, if you don’t connect it to the GPU closely enough, with high‑density wiring and efficient signal paths, you cannot unlock that performance in the real system. CoWoS is not “just wrapping chips.” Its value is enabling GPU and HBM to operate as one coherent high‑performance system.\nWithout CoWoS, it is very hard to fully integrate the performance of the GPU and HBM.\nTSMC explicitly positions CoWoS as an AI/HPC integration platform under its 3DFabric portfolio. On recent earnings calls, TSMC has discussed aggressive efforts to expand CoWoS capacity — in some cases nearly doubling capacity over 2025–2027 — yet demand from NVIDIA and custom AI ASICs still keeps the line effectively sold out.\nFor investors: when AI accelerator deployment is gated more by CoWoS slots than by GPU tape‑outs, part of the value capture shifts from GPU vendors toward those who control advanced packaging and associated substrate capacity.\n3. What is ABF / a Substrate? ABF stands for Ajinomoto Build‑up Film — an insulating build‑up film material used in high‑end package substrates.\nReturning to our analogy:\nGPU = brain HBM = ultra‑fast working memory CoWoS = high‑complexity integration technology ABF / substrate = the structural base that carries this entire complex system As packaging becomes more complex, wiring becomes denser, and signal integrity more demanding, the materials and substrates underneath have to be upgraded as well. Modern AI/HPC substrates use multiple build‑up layers, single‑digit‑micron line/space, and careful CTE/warpage control to keep very large packages within spec.\nABF is not a trivial material — it is one of the foundations that determine whether high‑end packages can be manufactured reliably at all.\nAjinomoto’s share in high‑performance semiconductor insulating films is above 90–95%, and the company has announced multi‑year investment plans — on the order of tens of billions of yen — to expand ABF production through 2030.\nFor investors: concentrated material supply, long equipment lead times, and package‑specific substrate designs mean that “invisible” ABF bottlenecks can decide who actually ships AI hardware on time — and at what margin.\n4. Why Are These Three Always Discussed Together? Because in the AI era, they are not three isolated topics. They form one tightly coupled system:\nHBM determines whether data can be delivered to the GPU fast enough. CoWoS determines whether the GPU and HBM can be integrated at very high density and bandwidth. ABF / substrates determine whether that complex package can be mechanically and electrically supported in volume. The real question is therefore not any single component, but: Can the entire AI chip system be built reliably and at scale?\nThat is why you can no longer talk about AI compute just by looking at the GPU chip itself. You have to think about memory, packaging, substrates, and materials. A bottleneck at any layer can delay shipments and cap actual delivered performance.\n5. One‑Sentence Summary Without HBM, the GPU cannot be fed fast enough. Without CoWoS, the GPU and HBM cannot be tightly integrated. Without ABF / high‑end substrates, the entire complex package cannot be mechanically or electrically supported.\nCoWoS, HBM, and ABF matter not because they are fashionable buzzwords, but because together they decide whether AI compute can physically land in data centres and devices.\nFrequently Asked Questions Q1. “Isn’t CoWoS just packaging? Why is everyone treating it like such a big deal?”\nYou can say yes — CoWoS is an advanced packaging technology — but it is very different from the intuitive idea of “put the die in a package and protect it.” Traditional packaging is more about protecting the chip and getting signals off‑chip into a PCB. CoWoS, by contrast, uses a large silicon interposer with very fine line/space, thousands of micro‑bumps, and tight power/signal constraints to tie together one or more large logic dies and multiple HBM stacks.\nCoWoS looks like packaging on the surface, but in practice, it is the core integration technology for AI chip systems.\nQ2. “What’s the difference between a package substrate and a regular PCB?”\nA regular PCB connects various components on the board, usually with line/space in the tens of microns. A high‑end package substrate sits directly under the chip package and has to handle far higher I/O density, single‑digit‑micron line/space, tight impedance control, and tougher warpage targets.\nA PCB is the road network of an electronic system. A high‑end substrate is the ultra‑precise interchange right under the chip package. Q3. “How many layers are high‑end substrates at now?”\nThe more important trend is that AI/HPC substrates are moving toward more build‑up layers (into the mid‑20s and beyond), finer line/space in the single‑digit‑micron range, larger body sizes to accommodate multi‑chiplet and multi‑HBM packages, and higher I/O counts. It is not just “making more layers,” but making the whole stack significantly more difficult from a process‑control and yield‑management standpoint.\nQ4. “Can Taiwan produce HBM?”\nTaiwan is not one of the “big three” branded HBM suppliers today, but it is a central manufacturing and integration base in the HBM ecosystem — strong in leading‑edge foundry, CoWoS packaging, high‑end ABF substrates, OSAT and test. That means you can get exposure to the HBM build‑out not only through memory names, but also via foundry, advanced packaging, testing, and substrate companies.\nQ5. “Why can’t just anyone start making HBM?”\nBecause HBM isn’t “just memory.” The hard parts include stacking multiple DRAM dies with TSVs at acceptable yields, managing heat and power density in very tall stacks, and passing strict, time‑consuming qualification with major GPU vendors. The real barrier is: process technology + yield management + long customer qualification cycles + accumulated system‑level experience.\nExtended Question: If Google, Amazon, and Tesla Design Their Own Chips, Does Taiwan Still Matter? “Designing your own chip” usually means defining your own architecture and optimising it for your workload. It does not automatically mean you control leading‑edge wafer manufacturing, CoWoS at scale, HBM supply, high‑end ABF substrates, or high‑volume ramp experience.\nDesign rights can decentralise. The manufacturing ecosystem is much harder to clone.\nA more accurate framing:\nOver the visible medium term, Taiwan remains one of the hardest‑to‑replace cores of the AI supply chain, especially where leading‑edge wafers, HBM‑class memory integration, CoWoS, and ABF substrates intersect.\nA more realistic scenario is that Taiwan gradually shifts from “the” absolute centre to one of the dominant centres — still with outsized influence in key bottleneck steps.\nFor investors: the key trade is not “own anything with ‘AI’ in the ticker.” It is to identify which parts of the stack remain structurally scarce — leading‑edge wafers, HBM, CoWoS, ABF — and which companies can convert that scarcity into sustainable returns on heavy capex, without over‑building into the next down‑cycle.\nNote: None of this is a guarantee that “anything tied to HBM/CoWoS/ABF will automatically make money.” These are structural lenses for thinking about risk, capacity, and where bargaining power might reside — not stock recommendations or investment advice.\n",
+  "wordCount" : "1750",
+  "inLanguage": "en",
+  "datePublished": "2026-03-24T00:00:00Z",
+  "dateModified": "2026-03-24T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sinclairhuang.org/blog/cowos-hbm-abf-explainer/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sinclair Huang, HEC Liège, Executive DBA",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sinclairhuang.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sinclairhuang.org/" accesskey="h" title="Sinclair Huang, HEC Liège, Executive DBA (Alt + H)">Sinclair Huang, HEC Liège, Executive DBA</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sinclairhuang.org/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/about" title="Research Profile">
+                    <span>Research Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/publications" title="Publications">
+                    <span>Publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/projects" title="Research Portfolio">
+                    <span>Research Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/news" title="News">
+                    <span>News</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      What Are CoWoS, HBM, and ABF - And Why Do They Matter So Much in the AI Era?
+    </h1>
+    <div class="post-description">
+      A plain-language walkthrough of CoWoS, HBM, and ABF — what they actually are, why they are always mentioned together, and how they map onto Taiwan&#39;s role in the global AI supply chain.
+    </div>
+    <div class="post-meta"><span title='2026-03-24 00:00:00 +0000 UTC'>March 24, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Why is everyone suddenly talking about CoWoS, HBM, and ABF whenever AI, NVIDIA, or AI servers come up? Many people know they are important, but still get stuck the first time they run into these terms.</p>
+<p>This essay is a plain‑language walkthrough of what they actually are, why they are always mentioned together, and how they map onto Taiwan&rsquo;s role in the global AI supply chain.</p>
+<p>When Google, Amazon, and Tesla are all designing their own chips, is Taiwan&rsquo;s manufacturing ecosystem still structurally important — or just enjoying a temporary window?</p>
+<p>To answer that, we have to go from GPUs to memory, to advanced packaging, to high‑end substrates, and see what it actually takes for AI compute to become physical, shippable infrastructure.</p>
+<hr>
+<h2 id="from-gpu-to-hbm-cowos-and-abf">From GPU to HBM, CoWoS, and ABF<a hidden class="anchor" aria-hidden="true" href="#from-gpu-to-hbm-cowos-and-abf">#</a></h2>
+<p>Any time you hear about NVIDIA, AI servers, or &ldquo;scaling up compute,&rdquo; you almost always see three acronyms show up: CoWoS, HBM, and ABF.</p>
+<p>People sense these are critical, but often still ask very reasonable questions:</p>
+<ul>
+<li>Isn&rsquo;t CoWoS just &ldquo;packaging&rdquo;?</li>
+<li>How is a high‑end substrate different from a regular PCB?</li>
+<li>How many layers of substrates up to now?</li>
+<li>Can Taiwan actually produce HBM?</li>
+<li>If Google, Amazon, and Tesla all design their own chips, doesn&rsquo;t that mean the advantage of Taiwan&rsquo;s supply chain is just temporary?</li>
+</ul>
+<p>These are good questions, because AI compute doesn&rsquo;t become real just because you have a GPU. It takes an entire stack working together.</p>
+<p>If we use a simple analogy:</p>
+<ul>
+<li>The GPU is the brain.</li>
+<li>HBM is ultra‑high‑speed short‑term memory.</li>
+<li>CoWoS is the integration technology that tightly connects the brain to that memory.</li>
+<li>ABF and substrates are the structural base that carries the whole complex system.</li>
+</ul>
+<p>Once you internalise that sentence, you already have the big picture.</p>
+<hr>
+<h2 id="1-what-is-hbm">1. What is HBM?<a hidden class="anchor" aria-hidden="true" href="#1-what-is-hbm">#</a></h2>
+<p>HBM stands for High Bandwidth Memory. You can think of it as the ultra‑fast data warehouse sitting right next to an AI chip.</p>
+<p>Training and running AI models means constantly moving huge amounts of data. If memory bandwidth cannot keep up, even the most powerful GPU will sit idle waiting for data. HBM is therefore not just about having more capacity; what really matters is:</p>
+<ul>
+<li>Extremely high data transfer rates (multi‑hundred GB/s per stack, moving toward &gt;1 TB/s)</li>
+<li>Very wide I/O interfaces (thousands of bits)</li>
+<li>TSV‑stacked DRAM dies with very short internal distances</li>
+<li>Architected for high‑performance computing workloads</li>
+</ul>
+<p>In other words, HBM&rsquo;s job is to keep the GPU from waiting around.</p>
+<p>If the GPU is the brain, HBM is the ultra‑fast working memory sitting right beside it. No matter how strong your brain is, if working memory is too slow, overall performance gets bottlenecked.</p>
+<p>Commercial HBM production today remains heavily concentrated in just a few DRAM players. Recent market data puts SK Hynix at roughly the mid‑50%–60% range of HBM market share, with Samsung and Micron making up most of the rest — a very concentrated market rather than a broad, commoditised one.</p>
+<blockquote>
+<p><strong>For investors:</strong> a concentrated HBM market with multi‑year qualification cycles suggests sustained pricing power and relatively visible capex paths for leading vendors, but also the risk of a classic &ldquo;super‑cycle then correction&rdquo; once capacity finally catches up.</p>
+</blockquote>
+<hr>
+<h2 id="2-what-is-cowos">2. What is CoWoS?<a hidden class="anchor" aria-hidden="true" href="#2-what-is-cowos">#</a></h2>
+<p>CoWoS is an advanced packaging technology. The acronym stands for Chip on Wafer on Substrate.</p>
+<p>If HBM is high‑bandwidth memory, then CoWoS is the way you tightly, densely, and at very high speed integrate the GPU with that HBM.</p>
+<p>CoWoS usually involves:</p>
+<ul>
+<li>Large silicon interposers approaching multi‑reticle sizes</li>
+<li>Thousands to tens of thousands of micro‑bumps between the GPU and HBM stacks</li>
+<li>Very fine line/space routing on the interposer to carry wide, high‑speed interfaces</li>
+</ul>
+<p>Even if HBM is fast on paper, if you don&rsquo;t connect it to the GPU closely enough, with high‑density wiring and efficient signal paths, you cannot unlock that performance in the real system. CoWoS is not &ldquo;just wrapping chips.&rdquo; Its value is enabling GPU and HBM to operate as one coherent high‑performance system.</p>
+<blockquote>
+<p>Without CoWoS, it is very hard to fully integrate the performance of the GPU and HBM.</p>
+</blockquote>
+<p>TSMC explicitly positions CoWoS as an AI/HPC integration platform under its 3DFabric portfolio. On recent earnings calls, TSMC has discussed aggressive efforts to expand CoWoS capacity — in some cases nearly doubling capacity over 2025–2027 — yet demand from NVIDIA and custom AI ASICs still keeps the line effectively sold out.</p>
+<blockquote>
+<p><strong>For investors:</strong> when AI accelerator deployment is gated more by CoWoS slots than by GPU tape‑outs, part of the value capture shifts from GPU vendors toward those who control advanced packaging and associated substrate capacity.</p>
+</blockquote>
+<hr>
+<h2 id="3-what-is-abf--a-substrate">3. What is ABF / a Substrate?<a hidden class="anchor" aria-hidden="true" href="#3-what-is-abf--a-substrate">#</a></h2>
+<p>ABF stands for Ajinomoto Build‑up Film — an insulating build‑up film material used in high‑end package substrates.</p>
+<p>Returning to our analogy:</p>
+<ul>
+<li>GPU = brain</li>
+<li>HBM = ultra‑fast working memory</li>
+<li>CoWoS = high‑complexity integration technology</li>
+<li>ABF / substrate = the structural base that carries this entire complex system</li>
+</ul>
+<p>As packaging becomes more complex, wiring becomes denser, and signal integrity more demanding, the materials and substrates underneath have to be upgraded as well. Modern AI/HPC substrates use multiple build‑up layers, single‑digit‑micron line/space, and careful CTE/warpage control to keep very large packages within spec.</p>
+<p>ABF is not a trivial material — it is one of the foundations that determine whether high‑end packages can be manufactured reliably at all.</p>
+<p>Ajinomoto&rsquo;s share in high‑performance semiconductor insulating films is above 90–95%, and the company has announced multi‑year investment plans — on the order of tens of billions of yen — to expand ABF production through 2030.</p>
+<blockquote>
+<p><strong>For investors:</strong> concentrated material supply, long equipment lead times, and package‑specific substrate designs mean that &ldquo;invisible&rdquo; ABF bottlenecks can decide who actually ships AI hardware on time — and at what margin.</p>
+</blockquote>
+<hr>
+<h2 id="4-why-are-these-three-always-discussed-together">4. Why Are These Three Always Discussed Together?<a hidden class="anchor" aria-hidden="true" href="#4-why-are-these-three-always-discussed-together">#</a></h2>
+<p>Because in the AI era, they are not three isolated topics. They form one tightly coupled system:</p>
+<ul>
+<li><strong>HBM</strong> determines whether data can be delivered to the GPU fast enough.</li>
+<li><strong>CoWoS</strong> determines whether the GPU and HBM can be integrated at very high density and bandwidth.</li>
+<li><strong>ABF / substrates</strong> determine whether that complex package can be mechanically and electrically supported in volume.</li>
+</ul>
+<p>The real question is therefore not any single component, but: <em>Can the entire AI chip system be built reliably and at scale?</em></p>
+<p>That is why you can no longer talk about AI compute just by looking at the GPU chip itself. You have to think about memory, packaging, substrates, and materials. A bottleneck at any layer can delay shipments and cap actual delivered performance.</p>
+<hr>
+<h2 id="5-onesentence-summary">5. One‑Sentence Summary<a hidden class="anchor" aria-hidden="true" href="#5-onesentence-summary">#</a></h2>
+<p>Without HBM, the GPU cannot be fed fast enough. Without CoWoS, the GPU and HBM cannot be tightly integrated. Without ABF / high‑end substrates, the entire complex package cannot be mechanically or electrically supported.</p>
+<p>CoWoS, HBM, and ABF matter not because they are fashionable buzzwords, but because together they decide whether AI compute can physically land in data centres and devices.</p>
+<hr>
+<h2 id="frequently-asked-questions">Frequently Asked Questions<a hidden class="anchor" aria-hidden="true" href="#frequently-asked-questions">#</a></h2>
+<p><strong>Q1. &ldquo;Isn&rsquo;t CoWoS just packaging? Why is everyone treating it like such a big deal?&rdquo;</strong></p>
+<p>You can say yes — CoWoS is an advanced packaging technology — but it is very different from the intuitive idea of &ldquo;put the die in a package and protect it.&rdquo; Traditional packaging is more about protecting the chip and getting signals off‑chip into a PCB. CoWoS, by contrast, uses a large silicon interposer with very fine line/space, thousands of micro‑bumps, and tight power/signal constraints to tie together one or more large logic dies and multiple HBM stacks.</p>
+<p><em>CoWoS looks like packaging on the surface, but in practice, it is the core integration technology for AI chip systems.</em></p>
+<hr>
+<p><strong>Q2. &ldquo;What&rsquo;s the difference between a package substrate and a regular PCB?&rdquo;</strong></p>
+<p>A regular PCB connects various components on the board, usually with line/space in the tens of microns. A high‑end package substrate sits directly under the chip package and has to handle far higher I/O density, single‑digit‑micron line/space, tight impedance control, and tougher warpage targets.</p>
+<ul>
+<li>A PCB is the road network of an electronic system.</li>
+<li>A high‑end substrate is the ultra‑precise interchange right under the chip package.</li>
+</ul>
+<hr>
+<p><strong>Q3. &ldquo;How many layers are high‑end substrates at now?&rdquo;</strong></p>
+<p>The more important trend is that AI/HPC substrates are moving toward more build‑up layers (into the mid‑20s and beyond), finer line/space in the single‑digit‑micron range, larger body sizes to accommodate multi‑chiplet and multi‑HBM packages, and higher I/O counts. It is not just &ldquo;making more layers,&rdquo; but making the whole stack significantly more difficult from a process‑control and yield‑management standpoint.</p>
+<hr>
+<p><strong>Q4. &ldquo;Can Taiwan produce HBM?&rdquo;</strong></p>
+<p>Taiwan is not one of the &ldquo;big three&rdquo; branded HBM suppliers today, but it is a central manufacturing and integration base in the HBM ecosystem — strong in leading‑edge foundry, CoWoS packaging, high‑end ABF substrates, OSAT and test. That means you can get exposure to the HBM build‑out not only through memory names, but also via foundry, advanced packaging, testing, and substrate companies.</p>
+<hr>
+<p><strong>Q5. &ldquo;Why can&rsquo;t just anyone start making HBM?&rdquo;</strong></p>
+<p>Because HBM isn&rsquo;t &ldquo;just memory.&rdquo; The hard parts include stacking multiple DRAM dies with TSVs at acceptable yields, managing heat and power density in very tall stacks, and passing strict, time‑consuming qualification with major GPU vendors. The real barrier is: <em>process technology + yield management + long customer qualification cycles + accumulated system‑level experience.</em></p>
+<hr>
+<h2 id="extended-question-if-google-amazon-and-tesla-design-their-own-chips-does-taiwan-still-matter">Extended Question: If Google, Amazon, and Tesla Design Their Own Chips, Does Taiwan Still Matter?<a hidden class="anchor" aria-hidden="true" href="#extended-question-if-google-amazon-and-tesla-design-their-own-chips-does-taiwan-still-matter">#</a></h2>
+<p>&ldquo;Designing your own chip&rdquo; usually means defining your own architecture and optimising it for your workload. It does not automatically mean you control leading‑edge wafer manufacturing, CoWoS at scale, HBM supply, high‑end ABF substrates, or high‑volume ramp experience.</p>
+<p><em>Design rights can decentralise. The manufacturing ecosystem is much harder to clone.</em></p>
+<p>A more accurate framing:</p>
+<blockquote>
+<p>Over the visible medium term, Taiwan remains one of the hardest‑to‑replace cores of the AI supply chain, especially where leading‑edge wafers, HBM‑class memory integration, CoWoS, and ABF substrates intersect.</p>
+</blockquote>
+<p>A more realistic scenario is that Taiwan gradually shifts from &ldquo;the&rdquo; absolute centre to one of the dominant centres — still with outsized influence in key bottleneck steps.</p>
+<blockquote>
+<p><strong>For investors:</strong> the key trade is not &ldquo;own anything with &lsquo;AI&rsquo; in the ticker.&rdquo; It is to identify which parts of the stack remain structurally scarce — leading‑edge wafers, HBM, CoWoS, ABF — and which companies can convert that scarcity into sustainable returns on heavy capex, without over‑building into the next down‑cycle.</p>
+</blockquote>
+<hr>
+<p><em>Note: None of this is a guarantee that &ldquo;anything tied to HBM/CoWoS/ABF will automatically make money.&rdquo; These are structural lenses for thinking about risk, capacity, and where bargaining power might reside — not stock recommendations or investment advice.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://sinclairhuang.org/tags/ai/">AI</a></li>
+      <li><a href="https://sinclairhuang.org/tags/semiconductors/">Semiconductors</a></li>
+      <li><a href="https://sinclairhuang.org/tags/hbm/">HBM</a></li>
+      <li><a href="https://sinclairhuang.org/tags/cowos/">CoWoS</a></li>
+      <li><a href="https://sinclairhuang.org/tags/abf/">ABF</a></li>
+      <li><a href="https://sinclairhuang.org/tags/supply-chain/">Supply Chain</a></li>
+      <li><a href="https://sinclairhuang.org/tags/taiwan/">Taiwan</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://sinclairhuang.org/">Sinclair Huang, HEC Liège, Executive DBA</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
