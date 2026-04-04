@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Sinclair Huang, HEC Liège, Executive DBA</title>
-    <link>https://sinclairhuang.org/posts/</link>
-    <description>Recent content in Posts on Sinclair Huang, HEC Liège, Executive DBA</description>
+    <title>AI Compute Supply Chain on Sinclair Huang, HEC Liège, Executive DBA</title>
+    <link>https://sinclairhuang.org/categories/ai-compute-supply-chain/</link>
+    <description>Recent content in AI Compute Supply Chain on Sinclair Huang, HEC Liège, Executive DBA</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sinclairhuang.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sinclairhuang.org/categories/ai-compute-supply-chain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings</title>
       <link>https://sinclairhuang.org/posts/ai-supply-chain-part3-sec-filings/</link>
@@ -21,13 +21,6 @@
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/posts/ai-supply-chain-part2-power-map/</guid>
       <description>From TSMC to SK Hynix to Ajinomoto — who holds pricing power, and who is just riding the narrative?</description>
-    </item>
-    <item>
-      <title>Welcome to My Research Portfolio</title>
-      <link>https://sinclairhuang.org/posts/welcome/</link>
-      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/posts/welcome/</guid>
-      <description>Welcome to my professional research website. This platform showcases my academic work, publications,...</description>
     </item>
   </channel>
 </rss>
