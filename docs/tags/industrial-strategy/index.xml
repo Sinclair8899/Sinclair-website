@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Industrial Strategy on Sinclair Huang, HEC Liège, Executive DBA</title>
+    <link>https://sinclairhuang.org/tags/industrial-strategy/</link>
+    <description>Recent content in Industrial Strategy on Sinclair Huang, HEC Liège, Executive DBA</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sinclairhuang.org/tags/industrial-strategy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beyond the GPU: What the AI Infrastructure Buildout Means for the Real Economy</title>
+      <link>https://sinclairhuang.org/blog/ai-supply-chain-part5-industrial-transformation/</link>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/ai-supply-chain-part5-industrial-transformation/</guid>
+      <description>From compute bottlenecks to industrial consequences — where value may actually concentrate through 2030.</description>
+    </item>
+  </channel>
+</rss>
