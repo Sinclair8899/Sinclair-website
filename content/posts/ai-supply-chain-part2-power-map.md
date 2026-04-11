@@ -2,10 +2,8 @@
 title: "The Real AI Supply Chain: A Power Map Beyond the GPU"
 date: 2026-04-02
 draft: false
-tags: ["semiconductors", "supply-chain", "TSMC", "SK Hynix", "Ajinomoto", "AI infrastructure", "investing"]
-categories: ["Research", "AI Compute Supply Chain"]
+tags: ["Semiconductors", "Supply Chain", "TSMC", "SK Hynix", "Ajinomoto", "AI Infrastructure", "Investing"]
 description: "From TSMC to SK Hynix to Ajinomoto — who holds pricing power, and who is just riding the narrative?"
-series: ["AI Compute Supply Chain"]
 ---
 
 *Series: AI Compute Supply Chain | Part 2 of 5*
