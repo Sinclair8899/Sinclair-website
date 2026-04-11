@@ -6,8 +6,15 @@
     <description>Recent content in Home on Sinclair Huang, HEC Liège, Executive DBA</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sinclairhuang.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stress-Testing the Moat: Four Threats That Could Rewrite the AI Supply Chain</title>
+      <link>https://sinclairhuang.org/blog/ai-supply-chain-part4-stress-test/</link>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/ai-supply-chain-part4-stress-test/</guid>
+      <description>TurboQuant, HBM demand reversal, geopolitics, and glass substrates — not a doomsday scenario, but a disciplined analysis.</description>
+    </item>
     <item>
       <title>How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings</title>
       <link>https://sinclairhuang.org/blog/ai-supply-chain-part3-sec-filings/</link>
@@ -84,27 +91,6 @@
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/blog/thoughts/2024-12-first-thought/</guid>
       <description>A brief observation from my research: AlphaFold 3&amp;#39;s ability to predict protein-ligand interactions i...</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://sinclairhuang.org/blog/ai-supply-chain-part4-stress-test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/blog/ai-supply-chain-part4-stress-test/</guid>
-      <description>&lt;h1 id=&#34;article-4--stress-testing-the-moat-four-threats-that-could-rewrite-the-ai-supply-chain&#34;&gt;Article 4 | Stress-Testing the Moat: Four Threats That Could Rewrite the AI Supply Chain&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Subtitle:&lt;/strong&gt; TurboQuant, HBM demand reversal, geopolitics, and glass substrates — not a doomsday scenario, but a disciplined analysis.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Series:&lt;/strong&gt; AI Compute Supply Chain | Part 4 of 5
-&lt;strong&gt;Author:&lt;/strong&gt; Sinclair Huang | &lt;a href=&#34;https://sinclairhuang.org&#34;&gt;sinclairhuang.org&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;!-- ============================================================
-     COVER IMAGE
-     File: cover_article4.png
-     Spec: See Image Specification Sheet
-     Caption: Four pressure vectors. Four clocks already ticking.
-              Not every moat lasts forever — but the question
-              is whether you know which one breaks first.
-     ============================================================ --&gt;
-&lt;p&gt;&lt;img alt=&#34;Cover: Stress-Testing the AI Supply Chain Moat&#34; loading=&#34;lazy&#34; src=&#34;cover_article4.png&#34;&gt;
-&lt;em&gt;Four pressure vectors. Four clocks already ticking. The question is not whether these moats will last forever — it&amp;rsquo;s whether you know which one breaks first.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>

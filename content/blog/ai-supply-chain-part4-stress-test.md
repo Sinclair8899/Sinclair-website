@@ -1,3 +1,11 @@
+---
+title: "Stress-Testing the Moat: Four Threats That Could Rewrite the AI Supply Chain"
+date: 2026-04-11
+draft: false
+tags: ["Semiconductors", "Supply Chain", "TSMC", "SK Hynix", "AI Infrastructure", "Investing", "Geopolitics"]
+description: "TurboQuant, HBM demand reversal, geopolitics, and glass substrates — not a doomsday scenario, but a disciplined analysis."
+---
+
 # Article 4 | Stress-Testing the Moat: Four Threats That Could Rewrite the AI Supply Chain
 
 **Subtitle:** TurboQuant, HBM demand reversal, geopolitics, and glass substrates — not a doomsday scenario, but a disciplined analysis.
