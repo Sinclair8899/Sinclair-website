@@ -1,9 +1,9 @@
 ---
-title: "The Real AI Supply Chain: A Power Map Beyond the GPU"
+title: "How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings"
 date: 2026-04-04
 draft: false
-tags: ["Semiconductors", "Supply Chain", "TSMC", "SK Hynix", "Ajinomoto", "AI Infrastructure", "Investing"]
-description: "From TSMC to SK Hynix to Ajinomoto — who holds pricing power, and who is just riding the narrative?"
+tags: ["Semiconductors", "TSMC", "SK Hynix", "Micron", "SEC Filings", "AI Infrastructure", "Investing"]
+description: "Customer prepayments, HBM margin structure, capital expenditure intensity — the numbers say more than the narratives do."
 ---
 
 *Series: AI Compute Supply Chain | Part 3 of 5*
