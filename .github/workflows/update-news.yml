@@ -1,0 +1,121 @@
+name: Weekly News Update
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'  # Every Monday at 2am UTC (10am Taiwan)
+  workflow_dispatch:       # Allow manual trigger
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Generate news content
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 << 'PYEOF'
+          import anthropic
+          from datetime import datetime
+
+          client = anthropic.Anthropic()
+
+          today = datetime.now().strftime("%B %Y")
+
+          prompt = f"""You are updating a news page for Sinclair Huang's research website (sinclairhuang.org).
+          
+          Generate a news.md Hugo page with the LATEST developments (as of {today}) in:
+          1. AI & Semiconductors (focus: TSMC, HBM, CoWoS, AI chips, supply chain)
+          2. Biotechnology (focus: AI drug discovery, AlphaFold, precision medicine)
+          
+          Use this EXACT format and structure (Hugo front matter + HTML content):
+
+          ---
+          description: "Latest Industry News"
+          title: "Industry News"
+          ---
+
+          # Latest Industry News
+
+          *Last updated: {today}*
+
+          <div style="margin: 2rem 0;">
+            <h2 style="color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-bottom: 1rem;">AI & Semiconductors</h2>
+            
+            [3-4 news items in this format:]
+            <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
+              <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
+                <a href="[REAL URL]" target="_blank" style="color: #1e40af; text-decoration: none;">[HEADLINE]</a>
+              </div>
+              <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">[SOURCE] • {today}</div>
+              <div style="color: #334155; line-height: 1.6;">[2-3 sentence summary with your analytical perspective]</div>
+            </div>
+          </div>
+
+          <div style="margin: 2rem 0;">
+            <h2 style="color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-bottom: 1rem;">Biotechnology</h2>
+            [2-3 news items in same format, with border-left color #16a34a]
+          </div>
+
+          <div style="margin: 3rem 0; padding: 1.5rem; background: #fef3c7; border-radius: 8px;">
+            <h3 style="color: #92400e; margin-bottom: 1rem;">📰 News Sources</h3>
+            <p style="color: #78350f; line-height: 1.8;">
+              For the latest updates, visit:<br>
+              • <a href="https://news.google.com/search?q=semiconductor+AI+chip" target="_blank" style="color: #1e40af;">Google News - Semiconductors & AI</a><br>
+              • <a href="https://news.google.com/search?q=biotechnology+drug+discovery" target="_blank" style="color: #1e40af;">Google News - Biotechnology</a><br>
+              • <a href="https://www.reuters.com/technology/" target="_blank" style="color: #1e40af;">Reuters Technology</a><br>
+              • <a href="https://www.bloomberg.com/technology" target="_blank" style="color: #1e40af;">Bloomberg Technology</a>
+            </p>
+          </div>
+
+          Use real, recent news with accurate URLs. Add brief analytical commentary in Sinclair's voice (supply chain, pricing power, industrial strategy perspective).
+          Return ONLY the complete file content, nothing else."""
+
+          response = client.messages.create(
+              model="claude-sonnet-4-20250514",
+              max_tokens=4000,
+              tools=[{"type": "web_search_20250305", "name": "web_search"}],
+              messages=[{"role": "user", "content": prompt}]
+          )
+
+          # Extract text content
+          content = ""
+          for block in response.content:
+              if block.type == "text":
+                  content += block.text
+
+          with open("content/news.md", "w") as f:
+              f.write(content)
+
+          print("news.md updated successfully")
+          PYEOF
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.152.2'
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --destination docs
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add content/news.md docs/
+          git diff --staged --quiet || git commit -m "Auto-update news $(date +'%Y-%m-%d')"
+          git push
