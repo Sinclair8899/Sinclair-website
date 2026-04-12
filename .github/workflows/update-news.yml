@@ -31,7 +31,8 @@ jobs:
           import anthropic
           from datetime import datetime
 
-          client = anthropic.Anthropic()
+          import os
+          client = anthropic.Anthropic(api_key=os.environ["SINCLAIR_API_KEY"])
 
           today = datetime.now().strftime("%B %Y")
 
