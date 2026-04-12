@@ -25,14 +25,13 @@ jobs:
 
       - name: Generate news content
         env:
-          SINCLAIR_API_KEY: ${{ secrets.SINCLAIR_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           python3 << 'PYEOF'
           import anthropic
           from datetime import datetime
 
-          import os
-          client = anthropic.Anthropic(api_key=os.environ["SINCLAIR_API_KEY"])
+          client = anthropic.Anthropic()
 
           today = datetime.now().strftime("%B %Y")
 
