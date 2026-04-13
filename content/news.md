@@ -12,17 +12,17 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic" target="_blank" style="color: #1e40af; text-decoration: none;">The AI code wars are heating up</a>
+      <a href="https://www.theverge.com/games/910815/rockstar-games-says-hack-will-have-no-impact" target="_blank" style="color: #1e40af; text-decoration: none;">Rockstar Games says hack will have ‘no impact’</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the AI coding and vibe-coding booms, follow David Pierce. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback</div>
+    <div style="color: #334155; line-height: 1.6;">Rockstar confirmed on Saturday that some of its data was compromised in a breach of a third-party provider. The group ShinyHunters claimed responsibility, saying it had gained access to the company's Snowflake instances (a cloud-hosting provider popu</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/tech/910061/ricoh-gr-iv-monochrome-review" target="_blank" style="color: #1e40af; text-decoration: none;">Allow me to explain why I love this camera that can’t shoot color</a>
+      <a href="https://www.theverge.com/tech/910537/hisense-ur9-rgb-led-tv-review" target="_blank" style="color: #1e40af; text-decoration: none;">The Hisense UR9 is a great first shot against OLED’s bow</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">I love black-and-white photography. I also adore compact cameras you can always have by your side. So I'm a total mark for the Ricoh GR IV Monochrome, a fixed-lens camera that can't zoom and can't record color - at all. It's a formula that makes the </div>
+    <div style="color: #334155; line-height: 1.6;">RGB LED TVs have been the talk of the TV world this year, with models coming from all the manufacturers, and the first one of 2026 is here - the Hisense UR9. It's the first look at the viability of the new backlight technology outside of demo rooms, </div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
