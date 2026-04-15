@@ -1,6 +1,6 @@
 ---
 title: "AI Was Never Sudden: A 30-Year View on the Great Repricing of Human Talent"
-date: 2026-04-16
+date: 2026-04-15
 draft: false
 tags: ["AI", "Future of Work", "Technology", "Society", "Industrial Strategy"]
 description: "From dBase and enterprise systems to generative AI — a 30-year view on automation now reaching human cognitive work itself."

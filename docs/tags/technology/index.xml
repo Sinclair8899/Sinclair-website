@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Technology on Sinclair Huang, HEC Liège, Executive DBA</title>
+    <link>https://sinclairhuang.org/tags/technology/</link>
+    <description>Recent content in Technology on Sinclair Huang, HEC Liège, Executive DBA</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sinclairhuang.org/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Was Never Sudden: A 30-Year View on the Great Repricing of Human Talent</title>
+      <link>https://sinclairhuang.org/blog/ai-was-never-sudden/</link>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/ai-was-never-sudden/</guid>
+      <description>From dBase and enterprise systems to generative AI — a 30-year view on automation now reaching human cognitive work itself.</description>
+    </item>
+  </channel>
+</rss>
