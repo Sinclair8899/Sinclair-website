@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ai-Drug-Discovery on Sinclair Huang, HEC Liège, Executive DBA</title>
+    <link>https://sinclairhuang.org/tags/ai-drug-discovery/</link>
+    <description>Recent content in Ai-Drug-Discovery on Sinclair Huang, HEC Liège, Executive DBA</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sinclairhuang.org/tags/ai-drug-discovery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title># From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era</title>
+      <link>https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/</guid>
+      <description>*AlphaFold helped us predict what proteins look like. The next wave of models is starting to address something harder: how proteins move, switch states, and perform functions over time.**By Po-Sung(Si</description>
+    </item>
+  </channel>
+</rss>

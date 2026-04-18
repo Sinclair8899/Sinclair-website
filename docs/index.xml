@@ -9,6 +9,13 @@
     <lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sinclairhuang.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title># Why Jobs Are No Longer Enough in the AI Economy</title>
+      <link>https://sinclairhuang.org/blog/2026-04-17-why-jobs-are-no-longer-enough-in-the-ai-economy/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-04-17-why-jobs-are-no-longer-enough-in-the-ai-economy/</guid>
+      <description>*Work, ownership, and the new architecture of economic security*By Po-Sung(Sinclair) HuangFor decades, people believed that working hard was enough.In the AI era, that assumption is quietly breaking.N</description>
+    </item>
+    <item>
       <title>Why Jobs Are No Longer Enough in the AI Economy</title>
       <link>https://sinclairhuang.org/blog/why-jobs-are-no-longer-enough/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
@@ -16,11 +23,25 @@
       <description>Work, ownership, and the new architecture of economic security in the AI era.</description>
     </item>
     <item>
+      <title># AI Was Never Sudden: A 30-Year View on the Great Repricing of Human Talent</title>
+      <link>https://sinclairhuang.org/blog/2026-04-15-ai-was-never-sudden-a-30-year-view-on-the-great-repricing-of/</link>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-04-15-ai-was-never-sudden-a-30-year-view-on-the-great-repricing-of/</guid>
+      <description>From early data systems and process automation to generative AI, technology did not arrive as a sudden rupture. It has been moving steadily toward human cognitive work for decades.From dBase and enter</description>
+    </item>
+    <item>
       <title>AI Was Never Sudden: A 30-Year View on the Great Repricing of Human Talent</title>
       <link>https://sinclairhuang.org/blog/ai-was-never-sudden/</link>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/blog/ai-was-never-sudden/</guid>
       <description>From dBase and enterprise systems to generative AI — a 30-year view on automation now reaching human cognitive work itself.</description>
+    </item>
+    <item>
+      <title># Beyond the GPU: What the AI Infrastructure Buildout Means for the Real Economy</title>
+      <link>https://sinclairhuang.org/blog/2026-04-11-beyond-the-gpu-what-the-ai-infrastructure-buildout-means-for/</link>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-04-11-beyond-the-gpu-what-the-ai-infrastructure-buildout-means-for/</guid>
+      <description>From compute bottlenecks to industrial consequences.*From compute bottlenecks to industrial consequences — where value may actually concentrate through 2030***Series:** AI Compute Supply Chain | Part </description>
     </item>
     <item>
       <title>Beyond the GPU: What the AI Infrastructure Buildout Means for the Real Economy</title>
@@ -37,6 +58,20 @@
       <description>TurboQuant, HBM demand reversal, geopolitics, and glass substrates — not a doomsday scenario, but a disciplined analysis.</description>
     </item>
     <item>
+      <title>Article 4 | Stress-Testing the Moat: Four Threats That Could Rewrite the AI Supply Chain</title>
+      <link>https://sinclairhuang.org/blog/2026-04-07-article-4-stress-testing-the-moat-four-threats-that-could-re/</link>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-04-07-article-4-stress-testing-the-moat-four-threats-that-could-re/</guid>
+      <description>Four pressure vectors. Four clocks are already ticking.The question is not whether these moats will last forever — It’s whether you know which one breaks first.TurboQuant, HBM demand reversal, geopoli</description>
+    </item>
+    <item>
+      <title>When AI Starts Predicting the Next Scientific Question</title>
+      <link>https://sinclairhuang.org/blog/2026-04-05-when-ai-starts-predicting-the-next-scientific-question/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-04-05-when-ai-starts-predicting-the-next-scientific-question/</guid>
+      <description>AI may not just accelerate science. It may begin to shape which questions emerge first.A new study in Nature Machine Intelligence suggests AI may do more than summarise knowledge or accelerate discove</description>
+    </item>
+    <item>
       <title>How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings</title>
       <link>https://sinclairhuang.org/blog/ai-supply-chain-part3-sec-filings/</link>
       <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
@@ -44,11 +79,46 @@
       <description>Customer prepayments, HBM margin structure, capital expenditure intensity — the numbers say more than the narratives do.</description>
     </item>
     <item>
+      <title># Article 3 | How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings</title>
+      <link>https://sinclairhuang.org/blog/2026-04-02-article-3-how-deep-is-the-moat-reading-tsmc-sk-hynix-and-mic/</link>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-04-02-article-3-how-deep-is-the-moat-reading-tsmc-sk-hynix-and-mic/</guid>
+      <description>Three regulatory filings. Three financial moats.Customer prepayments, HBM margin structure, capital expenditure intensity — the numbers say more than the narratives do.**Series:** AI Compute Supply Ch</description>
+    </item>
+    <item>
       <title>The Real AI Supply Chain: A Power Map Beyond the GPU</title>
       <link>https://sinclairhuang.org/blog/ai-supply-chain-part2-power-map/</link>
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/blog/ai-supply-chain-part2-power-map/</guid>
       <description>From TSMC to SK Hynix to Ajinomoto — who holds pricing power, and who is just riding the narrative?</description>
+    </item>
+    <item>
+      <title>Why Real Breakthroughs Are Not One Person’s Victory</title>
+      <link>https://sinclairhuang.org/blog/2026-04-02-why-real-breakthroughs-are-not-one-persons-victory/</link>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-04-02-why-real-breakthroughs-are-not-one-persons-victory/</guid>
+      <description>Real breakthroughs are often not one person’s victory. Discovery often emerges in parallel.What EDM Reveals About the Twin Structure of Scientific InnovationEDM is not just a better academic metric. I</description>
+    </item>
+    <item>
+      <title># Article 2 | The Real AI Supply Chain: A Power Map Beyond the GPU</title>
+      <link>https://sinclairhuang.org/blog/2026-04-01-article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gp/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-04-01-article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gp/</guid>
+      <description>The AI compute supply chain: three layers, three chokepoints, one power map.From TSMC to SK Hynix to Ajinomoto — who holds pricing power, and who is just riding the narrative?**Series:** AI Compute Su</description>
+    </item>
+    <item>
+      <title># From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era</title>
+      <link>https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/</guid>
+      <description>*AlphaFold helped us predict what proteins look like. The next wave of models is starting to address something harder: how proteins move, switch states, and perform functions over time.**By Po-Sung(Si</description>
+    </item>
+    <item>
+      <title>Why 156,000 Citations Can Be Worth Less Than 18,700 in Biopharma</title>
+      <link>https://sinclairhuang.org/blog/2026-03-25-why-156000-citations-can-be-worth-less-than-18700-in-biophar/</link>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-03-25-why-156000-citations-can-be-worth-less-than-18700-in-biophar/</guid>
+      <description>The figure reflects the paper’s methodology and sample construction; citation values are most comparable within each sub-sample.A new working paper suggests that markets often reward narrative clarity</description>
     </item>
     <item>
       <title>What Are CoWoS, HBM, and ABF - And Why Do They Matter So Much in the AI Era?</title>

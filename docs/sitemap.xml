@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sinclairhuang.org/blog/2026-04-17-why-jobs-are-no-longer-enough-in-the-ai-economy/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinclairhuang.org/tags/ai/</loc>
     <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -32,7 +35,16 @@
     <loc>https://sinclairhuang.org/blog/why-jobs-are-no-longer-enough/</loc>
     <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-04-15-ai-was-never-sudden-a-30-year-view-on-the-great-repricing-of/</loc>
+    <lastmod>2026-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/accountability/</loc>
+    <lastmod>2026-04-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinclairhuang.org/blog/ai-was-never-sudden/</loc>
+    <lastmod>2026-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/automation/</loc>
     <lastmod>2026-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/industrial-strategy/</loc>
@@ -44,6 +56,9 @@
     <loc>https://sinclairhuang.org/tags/technology/</loc>
     <lastmod>2026-04-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-04-11-beyond-the-gpu-what-the-ai-infrastructure-buildout-means-for/</loc>
+    <lastmod>2026-04-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinclairhuang.org/tags/ai-infrastructure/</loc>
     <lastmod>2026-04-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -51,6 +66,12 @@
     <lastmod>2026-04-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/geopolitics/</loc>
+    <lastmod>2026-04-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/industialstrategy/</loc>
+    <lastmod>2026-04-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/infrastructure/</loc>
     <lastmod>2026-04-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/investing/</loc>
@@ -71,6 +92,27 @@
     <loc>https://sinclairhuang.org/tags/tsmc/</loc>
     <lastmod>2026-04-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-04-07-article-4-stress-testing-the-moat-four-threats-that-could-re/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/artificial-intelligence/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/ai-for-science/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/innovation/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/knowledge-discovery/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/research/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-04-05-when-ai-starts-predicting-the-next-scientific-question/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinclairhuang.org/blog/ai-supply-chain-part3-sec-filings/</loc>
     <lastmod>2026-04-04T00:00:00+00:00</lastmod>
   </url><url>
@@ -80,11 +122,62 @@
     <loc>https://sinclairhuang.org/tags/sec-filings/</loc>
     <lastmod>2026-04-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-04-02-article-3-how-deep-is-the-moat-reading-tsmc-sk-hynix-and-mic/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinclairhuang.org/tags/ajinomoto/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/bibliometrics/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/science/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/scientific-discovery/</loc>
     <lastmod>2026-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/ai-supply-chain-part2-power-map/</loc>
     <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-04-02-why-real-breakthroughs-are-not-one-persons-victory/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-04-01-article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gp/</loc>
+    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/</loc>
+    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/ai-drug-discovery/</loc>
+    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/alphafold/</loc>
+    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/proteinai/</loc>
+    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/proteindynamics/</loc>
+    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/vibegen/</loc>
+    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/biopharma/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/capital-markets/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/knowledge-spillover/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/valuation/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-03-25-why-156000-citations-can-be-worth-less-than-18700-in-biophar/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/abf/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
@@ -100,9 +193,6 @@
   </url><url>
     <loc>https://sinclairhuang.org/blog/cowos-hbm-abf-explainer/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/infrastructure/</loc>
-    <lastmod>2026-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/investment/</loc>
     <lastmod>2026-03-21T00:00:00+00:00</lastmod>
@@ -179,17 +269,11 @@
     <loc>https://sinclairhuang.org/posts/</loc>
     <lastmod>2025-11-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinclairhuang.org/tags/research/</loc>
-    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sinclairhuang.org/posts/welcome/</loc>
     <lastmod>2025-11-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/publications/</loc>
     <lastmod>2025-01-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/alphafold/</loc>
-    <lastmod>2024-12-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/thoughts/2024-12-first-thought/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>

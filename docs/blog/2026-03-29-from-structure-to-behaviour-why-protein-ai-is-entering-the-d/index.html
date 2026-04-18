@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title># From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era | Sinclair Huang, HEC Liège, Executive DBA</title>
+<meta name="keywords" content="vibegen, ai-drug-discovery, proteindynamics, proteinai, alphafold">
+<meta name="description" content="*AlphaFold helped us predict what proteins look like. The next wave of models is starting to address something harder: how proteins move, switch states, and perform functions over time.**By Po-Sung(Si">
+<meta name="author" content="">
+<link rel="canonical" href="https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sinclairhuang.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sinclairhuang.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sinclairhuang.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sinclairhuang.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sinclairhuang.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google" content="notranslate">
+
+<meta property="og:url" content="https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/">
+  <meta property="og:site_name" content="Sinclair Huang, HEC Liège, Executive DBA">
+  <meta property="og:title" content="# From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era">
+  <meta property="og:description" content="*AlphaFold helped us predict what proteins look like. The next wave of models is starting to address something harder: how proteins move, switch states, and perform functions over time.**By Po-Sung(Si">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-03-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-29T00:00:00+00:00">
+    <meta property="article:tag" content="Vibegen">
+    <meta property="article:tag" content="Ai-Drug-Discovery">
+    <meta property="article:tag" content="Proteindynamics">
+    <meta property="article:tag" content="Proteinai">
+    <meta property="article:tag" content="AlphaFold">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="# From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era">
+<meta name="twitter:description" content="*AlphaFold helped us predict what proteins look like. The next wave of models is starting to address something harder: how proteins move, switch states, and perform functions over time.**By Po-Sung(Si">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog \u0026 Insights",
+      "item": "https://sinclairhuang.org/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "# From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era",
+      "item": "https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "# From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era",
+  "name": "# From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era",
+  "description": "*AlphaFold helped us predict what proteins look like. The next wave of models is starting to address something harder: how proteins move, switch states, and perform functions over time.**By Po-Sung(Si",
+  "keywords": [
+    "vibegen", "ai-drug-discovery", "proteindynamics", "proteinai", "alphafold"
+  ],
+  "articleBody": "AlphaFold helped us predict what proteins look like. The next wave of models is starting to address something harder: how proteins move, switch states, and perform functions over time.*\nBy Po-Sung(Sinclair) Huang\nAlphaFold changed protein science by helping researchers predict what proteins look like with unprecedented scale and accuracy. But proteins do not function as frozen objects. They bend, vibrate, open pockets, switch conformations, and transmit signals across time.\nThat is why the next frontier after structure may be something more difficult and more consequential: behaviour.\nTwo recent lines of work point in that direction. At MIT, VibeGen treats protein motion itself as a design target rather than simply predicting a final fold.[web:2][web:5] At Arizona State University (ASU), a new method focuses on dramatically accelerating the mapping of slow, large-scale protein motion that is often inaccessible in conventional simulations, including systems like HIV-1 protease and KRAS.[web:16][web:18][web:14] Taken together, these efforts suggest that protein AI is beginning to move beyond static structure and toward dynamic behaviour.\nThis is not just a technical upgrade. It is a shift in what the field is trying to optimise.\n## AlphaFold Solved Structure. Biology Still Lives in Motion.AlphaFold’s achievement was to make protein structure prediction far more accessible and reliable than before, answering a decades‑old question: given a sequence, what 3D structure is likely to emerge? That achievement remains foundational. But a precise static structure is still only one frame of a much larger process. Many biologically important events are dynamic rather than static: binding pockets open and close, flexible regions reshape interaction surfaces, and allosteric effects propagate through subtle conformational shifts.\nA structure may be accurate and still fail to capture the behaviour that actually matters for function, regulation, or druggability. That is the gap this next generation of work is starting to address.\n## VibeGen: Designing Proteins for Motion, Not Just ShapeThe most interesting thing about MIT’s VibeGen is not simply that it uses generative AI. What matters is that it changes the design objective, explicitly targeting vibrational and bending characteristics instead of only a final fold. In many earlier protein‑AI workflows, the logic remained structurally centred: predict a structure from sequence, infer likely function from that structure, and hope the function holds under realistic biochemical conditions. VibeGen pushes in a different direction by treating targeted dynamics as constraints and using one model to propose candidate sequences while another evaluates whether the resulting proteins exhibit the desired motion, in an iterative loop.\nThat distinction matters. This is not merely a better predictor; it is closer to a behaviour-conditioned design system. It also suggests a broader change in protein engineering: moving from understanding natural proteins to actively searching the space of possible functional behaviours.\nMIT also highlights functional degeneracy: different sequences and folds may satisfy similar motion targets.[web:2] If that idea continues to hold up, the implication is profound — evolution may have discovered only a subset of workable solutions, and AI could open access to a much larger design space beyond what biology happened to explore.\n## ASU: Making Protein Dynamics Computationally TractableIf MIT represents design for dynamics, ASU represents faster mapping of dynamics. According to ASU’s reports and a Science Advances paper, their method can infer slow, large‑scale protein motions from relatively short simulations, reducing workflows that traditionally took weeks or months to less than a day on modern supercomputers. Their test cases include HIV‑1 protease and KRAS, systems where functionally important motions involve flap opening, cryptic pocket exposure, and long‑timescale transitions that are difficult to sample with conventional molecular dynamics.[web:18][web:23] In practice, many drug discovery problems are not blocked because the structure is unknown; they are blocked because dynamics is poorly characterised.\nMethods that lower the cost of exploring slow conformational behaviour do not solve the entire problem, but they do change the economics of asking better questions. They make it more realistic to investigate cryptic pockets, transition pathways, and behaviorally relevant states at scale.\n## This Is Not Post‑AlphaFold. It Is the Next Layer on Top of AlphaFold.It would be a mistake to frame these approaches as replacements for AlphaFold. A better interpretation is that several complementary layers are now emerging: AlphaFold helps us see what proteins are likely to look like.[web:1] Dynamics‑mapping methods help us understand how proteins move across states.[web:16][web:18] Behaviour-conditioned generative models may help us design what proteins do. These are not mutually exclusive paradigms; they are increasingly interdependent. AlphaFold remains foundational because static structure still matters enormously, but if the field’s centre of gravity moves from structure alone toward structure + dynamics + function, then the future of protein AI will be shaped by who can connect structure to motion, and motion to useful intervention.\nRecent work, such as ProTDyn, accepted at ICLR 2026 as a protein foundation model integrating conformational ensemble generation and multiscale dynamics modelling, reinforces this trajectory.\n## Protein Design Is Becoming a Higher‑Dimensional Search ProblemThe underlying optimisation problem is changing in a specific way. Static structure prediction is already difficult, but dynamic behaviour design is harder, because once motion enters the objective function, the search space expands dramatically to include transitions, flexibility, ensembles, low‑frequency modes, and functions under changing environmental conditions. That means protein design starts to look less like a conventional wet‑lab trial‑and‑error problem and more like a compute‑driven search problem: more simulation, more iterative generation and evaluation, more dependence on integrated model loops, and more value in robust validation infrastructure.\nThis is also where industrial implications emerge. Dynamics‑aware design is likely to be more compute‑intensive than structure‑only prediction, shifting bottlenecks away from isolated model quality and toward the broader compute + model + validation loop.[web:16] Advantage may accrue to closed‑loop platforms that integrate foundation models, generative design, physical simulation, and experimental validation, rather than to standalone algorithms.\nIn a structure-centred regime, the goal is often to identify binders. In a dynamics-centred regime, the goal increasingly becomes to control opening, switching, flexibility, or allosteric communication — especially for difficult targets where relevant biology is hidden in motion rather than obvious from a static surface.\nSome of the stronger claims in this space, such as Isomorphic Labs’ reported IsoDDE performance gains over AlphaFold 3 on dynamics‑relevant benchmarks, should still be interpreted cautiously until they appear in peer‑reviewed literature.\n## A Wider Trend, but Evidence Should Be Graded CarefullyMIT and ASU should not be treated as isolated curiosities; they appear to be part of a broader movement toward dynamics‑aware protein modelling.[web:1][web:16] At the same time, the field is young, and real‑world impact depends on experimental validation, robustness across targets, and integration into end‑to‑end discovery pipelines. There is already enough here to justify serious attention, but not yet enough to declare definitive winners. It is better to see this as the emergence of a new objective function — behaviour — rather than as a single breakthrough tool.\n## What Changes When the Objective Function ChangesThe most important way to interpret this moment is not simply that AI keeps getting better. It is that protein AI is changing what it is trying to solve. For the last several years, the defining question was largely structural: Can we predict the correct fold?\nNow the question is becoming more functional: Can we model, map, and eventually design the behaviours that make proteins work?\nThat is a deeper transition than a benchmark improvement. It suggests that the next stage of protein AI will be less about describing molecules and more about controlling molecular behaviour, with consequences for drug discovery, synthetic biology, regenerative medicine, biomaterials, and the industrial structure of AI‑driven biology itself.[web:1][web:25]\n## ConclusionAlphaFold helped the world see proteins more clearly.[web:1] This new wave of work suggests that the next generation of systems may help us do something more ambitious: understand how proteins behave — and eventually design that behaviour on purpose. That is the real significance of this shift. It is not simply that protein AI is becoming more impressive, but that it may be moving from structure prediction to behaviour design. And that is where the next frontier begins.\n## Author NoteSinclair Huang is an academic researcher and strategic advisor working at the intersection of biotechnology, AI‑driven drug discovery, and the broader AI economy. With an EDBA from HEC Liège and prior experience in multinational high‑tech pharmaceutical companies as well as multiple segments of the electronics industry, Sinclair focuses on how AI reshapes R\u0026D, industry structure, and value capture in life sciences and adjacent tech sectors. Based in Taipei, they write about protein AI, gene therapy, semiconductor‑bio convergence, and the future of AI‑native R\u0026D workflows. ## References1. MIT / VibeGen — Agentic end‑to‑end de novo protein design for tailored dynamics using a language‑diffusion model (preprint and press materials). ASU — Fast sampling of protein conformational dynamics (Science Advances) and ASU news release on understanding protein motion for drug design. ProTDyn — Protein foundation model for conformational ensembles and multiscale dynamics, ICLR 2026 acceptance announcements. IsoDDE — Isomorphic Labs public technical claims and commentary on surpassing AlphaFold 3 benchmarks. Background on protein conformational dynamics and normal‑mode analysis. ## Further Reading- MIT News — Designing proteins by their motion, not just their shape. https://www.google.com/search?q=https://news.mit.edu/2026/mit-engineers-design-proteins-their-motion-not-just-shape-0326 ASU News — Understanding protein motion could greatly aid new drug design. https://news.asu.edu/20260327-science-and-technology-understanding-protein-motion-could-greatly-aid-new-drug-design Reviews on protein dynamics and conformational changes using molecular dynamics and principal component analysis. https://www.mdpi.com/2673-6411/5/3/32 https://experiments.springernature.com/articles/10.1007/978-1-4939-1465-4_12 Classic work on HIV‑1 protease conformational dynamics and resistance mechanisms.https://pmc.ncbi.nlm.nih.gov/articles/PMC3248522/ https://pmc.ncbi.nlm.nih.gov/articles/PMC2384161/ https://d-nb.info/1176492004/34 ## DisclaimerThis article is for informational and educational purposes only. It summarises research and public technical claims available as of March 2026 and does not represent medical, regulatory, or investment advice. Readers should consult original peer‑reviewed publications and professional advisors before making decisions related to drug development, clinical strategy, or financial investments. All figures in this article are concept illustrations generated and edited by the author using AI tools (e.g., Gemini), inspired by but not copied from original figures in the cited works. All diagrams and cover art were generated using AI for conceptual illustration purposes. ## Hashtags#ProteinAI #AlphaFold #VibeGen #ProteinDynamics #AIDrugDiscovery #Biotech #ComputationalBiology #MachineLearning #DrugDesign ",
+  "wordCount" : "1663",
+  "inLanguage": "en",
+  "datePublished": "2026-03-29T00:00:00Z",
+  "dateModified": "2026-03-29T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sinclair Huang, HEC Liège, Executive DBA",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sinclairhuang.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sinclairhuang.org/" accesskey="h" title="Sinclair Huang, HEC Liège, Executive DBA (Alt + H)">Sinclair Huang, HEC Liège, Executive DBA</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sinclairhuang.org/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/about" title="Research Profile">
+                    <span>Research Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/publications" title="Publications">
+                    <span>Publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/projects" title="Research Portfolio">
+                    <span>Research Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/news" title="News">
+                    <span>News</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      # From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era
+    </h1>
+    <div class="post-description">
+      *AlphaFold helped us predict what proteins look like. The next wave of models is starting to address something harder: how proteins move, switch states, and perform functions over time.**By Po-Sung(Si
+    </div>
+    <div class="post-meta"><span title='2026-03-29 00:00:00 +0000 UTC'>March 29, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><em>AlphaFold helped us predict what proteins look like. The next wave of models is starting to address something harder: how proteins move, switch states, and perform functions over time.</em>*</p>
+<p>By Po-Sung(Sinclair) Huang</p>
+<p>AlphaFold changed protein science by helping researchers predict what proteins look like with unprecedented scale and accuracy. But proteins do not function as frozen objects. They bend, vibrate, open pockets, switch conformations, and transmit signals across time.</p>
+<p>That is why the next frontier after structure may be something more difficult and more consequential: behaviour.</p>
+<p>Two recent lines of work point in that direction. At MIT, VibeGen treats protein motion itself as a design target rather than simply predicting a final fold.[web:2][web:5] At Arizona State University (ASU), a new method focuses on dramatically accelerating the mapping of slow, large-scale protein motion that is often inaccessible in conventional simulations, including systems like HIV-1 protease and KRAS.[web:16][web:18][web:14] Taken together, these efforts suggest that protein AI is beginning to move beyond static structure and toward dynamic behaviour.</p>
+<p>This is not just a technical upgrade. It is a shift in what the field is trying to optimise.</p>
+<h4 id="-alphafold-solved-structure-biology-still-lives-inmotionalphafolds-achievement-was-to-make-protein-structure-prediction-far-more-accessible-and-reliable-than-before-answering-a-decadesold-question-given-a-sequence-what-3d-structure-is-likely-to-emerge-that-achievement-remains-foundational">## AlphaFold Solved Structure. Biology Still Lives in Motion.AlphaFold’s achievement was to make protein structure prediction far more accessible and reliable than before, answering a decades‑old question: given a sequence, what 3D structure is likely to emerge? That achievement remains foundational.<a hidden class="anchor" aria-hidden="true" href="#-alphafold-solved-structure-biology-still-lives-inmotionalphafolds-achievement-was-to-make-protein-structure-prediction-far-more-accessible-and-reliable-than-before-answering-a-decadesold-question-given-a-sequence-what-3d-structure-is-likely-to-emerge-that-achievement-remains-foundational">#</a></h4>
+<p>But a precise static structure is still only one frame of a much larger process. Many biologically important events are dynamic rather than static: binding pockets open and close, flexible regions reshape interaction surfaces, and allosteric effects propagate through subtle conformational shifts.</p>
+<p>A structure may be accurate and still fail to capture the behaviour that actually matters for function, regulation, or druggability. That is the gap this next generation of work is starting to address.</p>
+<h4 id="-vibegen-designing-proteins-for-motion-not-justshapethe-most-interesting-thing-about-mits-vibegen-is-not-simply-that-it-uses-generative-ai-what-matters-is-that-it-changes-the-design-objective-explicitly-targeting-vibrational-and-bending-characteristics-instead-of-only-a-finalfold">## VibeGen: Designing Proteins for Motion, Not Just ShapeThe most interesting thing about MIT’s VibeGen is not simply that it uses generative AI. What matters is that it changes the design objective, explicitly targeting vibrational and bending characteristics instead of only a final fold.<a hidden class="anchor" aria-hidden="true" href="#-vibegen-designing-proteins-for-motion-not-justshapethe-most-interesting-thing-about-mits-vibegen-is-not-simply-that-it-uses-generative-ai-what-matters-is-that-it-changes-the-design-objective-explicitly-targeting-vibrational-and-bending-characteristics-instead-of-only-a-finalfold">#</a></h4>
+<p>In many earlier protein‑AI workflows, the logic remained structurally centred: predict a structure from sequence, infer likely function from that structure, and hope the function holds under realistic biochemical conditions. VibeGen pushes in a different direction by treating targeted dynamics as constraints and using one model to propose candidate sequences while another evaluates whether the resulting proteins exhibit the desired motion, in an iterative loop.</p>
+<p>That distinction matters. This is not merely a better predictor; it is closer to a behaviour-conditioned design system. It also suggests a broader change in protein engineering: moving from understanding natural proteins to actively searching the space of possible functional behaviours.</p>
+<p>MIT also highlights functional degeneracy: different sequences and folds may satisfy similar motion targets.[web:2] If that idea continues to hold up, the implication is profound — evolution may have discovered only a subset of workable solutions, and AI could open access to a much larger design space beyond what biology happened to explore.</p>
+<h4 id="-asu-making-protein-dynamics-computationally-tractableif-mit-represents-design-for-dynamics-asu-represents-faster-mapping-of-dynamics-according-to-asus-reports-and-a-science-advances-paper-their-method-can-infer-slow-largescale-protein-motions-from-relatively-short-simulations-reducing-workflows-that-traditionally-took-weeks-or-months-to-less-than-a-day-on-modern-supercomputers">## ASU: Making Protein Dynamics Computationally TractableIf MIT represents design for dynamics, ASU represents faster mapping of dynamics. According to ASU’s reports and a <em>Science Advances</em> paper, their method can infer slow, large‑scale protein motions from relatively short simulations, reducing workflows that traditionally took weeks or months to less than a day on modern supercomputers.<a hidden class="anchor" aria-hidden="true" href="#-asu-making-protein-dynamics-computationally-tractableif-mit-represents-design-for-dynamics-asu-represents-faster-mapping-of-dynamics-according-to-asus-reports-and-a-science-advances-paper-their-method-can-infer-slow-largescale-protein-motions-from-relatively-short-simulations-reducing-workflows-that-traditionally-took-weeks-or-months-to-less-than-a-day-on-modern-supercomputers">#</a></h4>
+<p>Their test cases include HIV‑1 protease and KRAS, systems where functionally important motions involve flap opening, cryptic pocket exposure, and long‑timescale transitions that are difficult to sample with conventional molecular dynamics.[web:18][web:23] In practice, many drug discovery problems are not blocked because the structure is unknown; they are blocked because dynamics is poorly characterised.</p>
+<p>Methods that lower the cost of exploring slow conformational behaviour do not solve the entire problem, but they do change the economics of asking better questions. They make it more realistic to investigate cryptic pockets, transition pathways, and behaviorally relevant states at scale.</p>
+<h4 id="-this-is-not-postalphafold-it-is-the-next-layer-on-top-of-alphafoldit-would-be-a-mistake-to-frame-these-approaches-as-replacements-for-alphafold-a-better-interpretation-is-that-several-complementary-layers-are-now-emerging">## This Is Not Post‑AlphaFold. It Is the Next Layer on Top of AlphaFold.It would be a mistake to frame these approaches as replacements for AlphaFold. A better interpretation is that several complementary layers are now emerging:<a hidden class="anchor" aria-hidden="true" href="#-this-is-not-postalphafold-it-is-the-next-layer-on-top-of-alphafoldit-would-be-a-mistake-to-frame-these-approaches-as-replacements-for-alphafold-a-better-interpretation-is-that-several-complementary-layers-are-now-emerging">#</a></h4>
+<ul>
+<li>AlphaFold helps us see what proteins are likely to look like.[web:1]</li>
+<li>Dynamics‑mapping methods help us understand how proteins move across states.[web:16][web:18]</li>
+<li>Behaviour-conditioned generative models may help us design what proteins do.</li>
+</ul>
+<p>These are not mutually exclusive paradigms; they are increasingly interdependent. AlphaFold remains foundational because static structure still matters enormously, but if the field’s centre of gravity moves from structure alone toward structure + dynamics + function, then the future of protein AI will be shaped by who can connect structure to motion, and motion to useful intervention.</p>
+<p>Recent work, such as ProTDyn, accepted at ICLR 2026 as a protein foundation model integrating conformational ensemble generation and multiscale dynamics modelling, reinforces this trajectory.</p>
+<h4 id="-protein-design-is-becoming-a-higherdimensional-searchproblemthe-underlying-optimisation-problem-is-changing-in-a-specific-way-static-structure-prediction-is-already-difficult-but-dynamic-behaviour-design-is-harder-because-once-motion-enters-the-objective-function-the-search-space-expands-dramatically-to-include-transitions-flexibility-ensembles-lowfrequency-modes-and-functions-under-changing-environmental-conditions">## Protein Design Is Becoming a Higher‑Dimensional Search ProblemThe underlying optimisation problem is changing in a specific way. Static structure prediction is already difficult, but dynamic behaviour design is harder, because once motion enters the objective function, the search space expands dramatically to include transitions, flexibility, ensembles, low‑frequency modes, and functions under changing environmental conditions.<a hidden class="anchor" aria-hidden="true" href="#-protein-design-is-becoming-a-higherdimensional-searchproblemthe-underlying-optimisation-problem-is-changing-in-a-specific-way-static-structure-prediction-is-already-difficult-but-dynamic-behaviour-design-is-harder-because-once-motion-enters-the-objective-function-the-search-space-expands-dramatically-to-include-transitions-flexibility-ensembles-lowfrequency-modes-and-functions-under-changing-environmental-conditions">#</a></h4>
+<p>That means protein design starts to look less like a conventional wet‑lab trial‑and‑error problem and more like a compute‑driven search problem: more simulation, more iterative generation and evaluation, more dependence on integrated model loops, and more value in robust validation infrastructure.</p>
+<p>This is also where industrial implications emerge. Dynamics‑aware design is likely to be more compute‑intensive than structure‑only prediction, shifting bottlenecks away from isolated model quality and toward the broader compute + model + validation loop.[web:16] Advantage may accrue to closed‑loop platforms that integrate foundation models, generative design, physical simulation, and experimental validation, rather than to standalone algorithms.</p>
+<p>In a structure-centred regime, the goal is often to identify binders. In a dynamics-centred regime, the goal increasingly becomes to control opening, switching, flexibility, or allosteric communication — especially for difficult targets where relevant biology is hidden in motion rather than obvious from a static surface.</p>
+<p>Some of the stronger claims in this space, such as Isomorphic Labs’ reported IsoDDE performance gains over AlphaFold 3 on dynamics‑relevant benchmarks, should still be interpreted cautiously until they appear in peer‑reviewed literature.</p>
+<h4 id="-a-wider-trend-but-evidence-should-be-graded-carefullymit-and-asu-should-not-be-treated-as-isolated-curiosities-they-appear-to-be-part-of-a-broader-movement-toward-dynamicsaware-protein-modellingweb1web16-at-the-same-time-the-field-is-young-and-realworld-impact-depends-on-experimental-validation-robustness-across-targets-and-integration-into-endtoend-discovery-pipelines">## A Wider Trend, but Evidence Should Be Graded CarefullyMIT and ASU should not be treated as isolated curiosities; they appear to be part of a broader movement toward dynamics‑aware protein modelling.[web:1][web:16] At the same time, the field is young, and real‑world impact depends on experimental validation, robustness across targets, and integration into end‑to‑end discovery pipelines.<a hidden class="anchor" aria-hidden="true" href="#-a-wider-trend-but-evidence-should-be-graded-carefullymit-and-asu-should-not-be-treated-as-isolated-curiosities-they-appear-to-be-part-of-a-broader-movement-toward-dynamicsaware-protein-modellingweb1web16-at-the-same-time-the-field-is-young-and-realworld-impact-depends-on-experimental-validation-robustness-across-targets-and-integration-into-endtoend-discovery-pipelines">#</a></h4>
+<p>There is already enough here to justify serious attention, but not yet enough to declare definitive winners. It is better to see this as the emergence of a new objective function — behaviour — rather than as a single breakthrough tool.</p>
+<h4 id="-what-changes-when-the-objective-functionchangesthe-most-important-way-to-interpret-this-moment-is-not-simply-that-ai-keeps-getting-better-it-is-that-protein-ai-is-changing-what-it-is-trying-tosolve">## What Changes When the Objective Function ChangesThe most important way to interpret this moment is not simply that AI keeps getting better. It is that protein AI is changing what it is trying to solve.<a hidden class="anchor" aria-hidden="true" href="#-what-changes-when-the-objective-functionchangesthe-most-important-way-to-interpret-this-moment-is-not-simply-that-ai-keeps-getting-better-it-is-that-protein-ai-is-changing-what-it-is-trying-tosolve">#</a></h4>
+<p>For the last several years, the defining question was largely structural:
+Can we predict the correct fold?</p>
+<p>Now the question is becoming more functional:
+Can we model, map, and eventually design the behaviours that make proteins work?</p>
+<p>That is a deeper transition than a benchmark improvement. It suggests that the next stage of protein AI will be less about describing molecules and more about controlling molecular behaviour, with consequences for drug discovery, synthetic biology, regenerative medicine, biomaterials, and the industrial structure of AI‑driven biology itself.[web:1][web:25]</p>
+<h4 id="-conclusionalphafold-helped-the-world-see-proteins-more-clearlyweb1-this-new-wave-of-work-suggests-that-the-next-generation-of-systems-may-help-us-do-something-more-ambitious-understand-how-proteins-behaveand-eventually-design-that-behaviour-onpurpose">## ConclusionAlphaFold helped the world see proteins more clearly.[web:1] This new wave of work suggests that the next generation of systems may help us do something more ambitious: understand how proteins behave — and eventually design that behaviour on purpose.<a hidden class="anchor" aria-hidden="true" href="#-conclusionalphafold-helped-the-world-see-proteins-more-clearlyweb1-this-new-wave-of-work-suggests-that-the-next-generation-of-systems-may-help-us-do-something-more-ambitious-understand-how-proteins-behaveand-eventually-design-that-behaviour-onpurpose">#</a></h4>
+<p>That is the real significance of this shift. It is not simply that protein AI is becoming more impressive, but that it may be moving from structure prediction to behaviour design. And that is where the next frontier begins.</p>
+<h4 id="-authornotesinclair-huang-is-an-academic-researcher-and-strategic-advisor-working-at-the-intersection-of-biotechnology-aidriven-drug-discovery-and-the-broader-ai-economy-with-an-edba-from-hec-liège-and-prior-experience-in-multinational-hightech-pharmaceutical-companies-as-well-as-multiple-segments-of-the-electronics-industry-sinclair-focuses-on-how-ai-reshapes-rd-industry-structure-and-value-capture-in-life-sciences-and-adjacent-tech-sectors-based-in-taipei-they-write-about-protein-ai-gene-therapy-semiconductorbio-convergence-and-the-future-of-ainative-rd-workflows">## Author NoteSinclair Huang is an academic researcher and strategic advisor working at the intersection of biotechnology, AI‑driven drug discovery, and the broader AI economy. With an EDBA from HEC Liège and prior experience in multinational high‑tech pharmaceutical companies as well as multiple segments of the electronics industry, Sinclair focuses on how AI reshapes R&amp;D, industry structure, and value capture in life sciences and adjacent tech sectors. Based in Taipei, they write about protein AI, gene therapy, semiconductor‑bio convergence, and the future of AI‑native R&amp;D workflows.<a hidden class="anchor" aria-hidden="true" href="#-authornotesinclair-huang-is-an-academic-researcher-and-strategic-advisor-working-at-the-intersection-of-biotechnology-aidriven-drug-discovery-and-the-broader-ai-economy-with-an-edba-from-hec-liège-and-prior-experience-in-multinational-hightech-pharmaceutical-companies-as-well-as-multiple-segments-of-the-electronics-industry-sinclair-focuses-on-how-ai-reshapes-rd-industry-structure-and-value-capture-in-life-sciences-and-adjacent-tech-sectors-based-in-taipei-they-write-about-protein-ai-gene-therapy-semiconductorbio-convergence-and-the-future-of-ainative-rd-workflows">#</a></h4>
+<h4 id="-references1-mit--vibegenagentic-endtoend-de-novo-protein-design-for-tailored-dynamics-using-a-languagediffusion-model-preprint-and-press-materials">## References1. MIT / VibeGen — Agentic end‑to‑end de novo protein design for tailored dynamics using a language‑diffusion model (preprint and press materials).<a hidden class="anchor" aria-hidden="true" href="#-references1-mit--vibegenagentic-endtoend-de-novo-protein-design-for-tailored-dynamics-using-a-languagediffusion-model-preprint-and-press-materials">#</a></h4>
+<ol start="2">
+<li>ASU — Fast sampling of protein conformational dynamics (<em>Science Advances</em>) and ASU news release on understanding protein motion for drug design.</li>
+<li>ProTDyn — Protein foundation model for conformational ensembles and multiscale dynamics, ICLR 2026 acceptance announcements.</li>
+<li>IsoDDE — Isomorphic Labs public technical claims and commentary on surpassing AlphaFold 3 benchmarks.</li>
+<li>Background on protein conformational dynamics and normal‑mode analysis.</li>
+</ol>
+<h4 id="-furtherreading--mit-newsdesigning-proteins-by-their-motion-not-just-their-shape-httpswwwgooglecomsearchqhttpsnewsmitedu2026mit-engineers-design-proteins-their-motion-not-just-shape-0326">## Further Reading- MIT News — Designing proteins by their motion, not just their shape. <a href="https://www.google.com/search?q=https://news.mit.edu/2026/mit-engineers-design-proteins-their-motion-not-just-shape-0326">https://www.google.com/search?q=https://news.mit.edu/2026/mit-engineers-design-proteins-their-motion-not-just-shape-0326</a><a hidden class="anchor" aria-hidden="true" href="#-furtherreading--mit-newsdesigning-proteins-by-their-motion-not-just-their-shape-httpswwwgooglecomsearchqhttpsnewsmitedu2026mit-engineers-design-proteins-their-motion-not-just-shape-0326">#</a></h4>
+<ul>
+<li>ASU News — Understanding protein motion could greatly aid new drug design. <a href="https://news.asu.edu/20260327-science-and-technology-understanding-protein-motion-could-greatly-aid-new-drug-design">https://news.asu.edu/20260327-science-and-technology-understanding-protein-motion-could-greatly-aid-new-drug-design</a></li>
+<li>Reviews on protein dynamics and conformational changes using molecular dynamics and principal component analysis. <a href="https://www.mdpi.com/2673-6411/5/3/32">https://www.mdpi.com/2673-6411/5/3/32</a> <a href="https://experiments.springernature.com/articles/10.1007/978-1-4939-1465-4_12">https://experiments.springernature.com/articles/10.1007/978-1-4939-1465-4_12</a></li>
+<li>Classic work on HIV‑1 protease conformational dynamics and resistance mechanisms.<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3248522/">https://pmc.ncbi.nlm.nih.gov/articles/PMC3248522/</a> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2384161/">https://pmc.ncbi.nlm.nih.gov/articles/PMC2384161/</a> <a href="https://d-nb.info/1176492004/34">https://d-nb.info/1176492004/34</a></li>
+</ul>
+<h4 id="-disclaimerthis-article-is-for-informational-and-educational-purposes-only-it-summarises-research-and-public-technical-claims-available-as-of-march-2026-and-does-not-represent-medical-regulatory-or-investment-advice-readers-should-consult-original-peerreviewed-publications-and-professional-advisors-before-making-decisions-related-to-drug-development-clinical-strategy-or-financial-investments-all-figures-in-this-article-are-concept-illustrations-generated-and-edited-by-the-author-using-ai-tools-eg-gemini-inspired-by-but-not-copied-from-original-figures-in-the-cited-works-all-diagrams-and-cover-art-were-generated-using-ai-for-conceptual-illustration-purposes">## Disclaimer<em>This article is for informational and educational purposes only. It summarises research and public technical claims available as of March 2026 and does not represent medical, regulatory, or investment advice. Readers should consult original peer‑reviewed publications and professional advisors before making decisions related to drug development, clinical strategy, or financial investments. All figures in this article are concept illustrations generated and edited by the author using AI tools (e.g., Gemini), inspired by but not copied from original figures in the cited works. All diagrams and cover art were generated using AI for conceptual illustration purposes.</em><a hidden class="anchor" aria-hidden="true" href="#-disclaimerthis-article-is-for-informational-and-educational-purposes-only-it-summarises-research-and-public-technical-claims-available-as-of-march-2026-and-does-not-represent-medical-regulatory-or-investment-advice-readers-should-consult-original-peerreviewed-publications-and-professional-advisors-before-making-decisions-related-to-drug-development-clinical-strategy-or-financial-investments-all-figures-in-this-article-are-concept-illustrations-generated-and-edited-by-the-author-using-ai-tools-eg-gemini-inspired-by-but-not-copied-from-original-figures-in-the-cited-works-all-diagrams-and-cover-art-were-generated-using-ai-for-conceptual-illustration-purposes">#</a></h4>
+<h4 id="-hashtagsproteinai-alphafold-vibegen-proteindynamics-aidrugdiscovery-biotech-computationalbiology-machinelearning-drugdesign">## Hashtags#ProteinAI #AlphaFold #VibeGen #ProteinDynamics #AIDrugDiscovery #Biotech #ComputationalBiology #MachineLearning #DrugDesign<a hidden class="anchor" aria-hidden="true" href="#-hashtagsproteinai-alphafold-vibegen-proteindynamics-aidrugdiscovery-biotech-computationalbiology-machinelearning-drugdesign">#</a></h4>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://sinclairhuang.org/tags/vibegen/">Vibegen</a></li>
+      <li><a href="https://sinclairhuang.org/tags/ai-drug-discovery/">Ai-Drug-Discovery</a></li>
+      <li><a href="https://sinclairhuang.org/tags/proteindynamics/">Proteindynamics</a></li>
+      <li><a href="https://sinclairhuang.org/tags/proteinai/">Proteinai</a></li>
+      <li><a href="https://sinclairhuang.org/tags/alphafold/">AlphaFold</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://sinclairhuang.org/">Sinclair Huang, HEC Liège, Executive DBA</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
