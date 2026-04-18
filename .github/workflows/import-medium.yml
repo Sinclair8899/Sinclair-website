@@ -1,0 +1,44 @@
+name: Auto-Import Medium Articles
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'  # Every Monday at 3am UTC (11am Taiwan)
+  workflow_dispatch:
+
+jobs:
+  import-medium:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install feedparser requests
+
+      - name: Import new Medium articles
+        run: python3 .github/scripts/import_medium.py
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.152.2'
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --destination docs
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add content/blog/ docs/
+          git diff --staged --quiet || git commit -m "Auto-import Medium articles $(date +'%Y-%m-%d')"
+          git push
