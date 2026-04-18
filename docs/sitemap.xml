@@ -230,9 +230,6 @@
     <loc>https://sinclairhuang.org/posts/welcome/</loc>
     <lastmod>2025-11-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinclairhuang.org/publications/</loc>
-    <lastmod>2025-01-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sinclairhuang.org/blog/thoughts/2024-12-first-thought/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -245,5 +242,7 @@
     <loc>https://sinclairhuang.org/news/</loc>
   </url><url>
     <loc>https://sinclairhuang.org/projects/</loc>
+  </url><url>
+    <loc>https://sinclairhuang.org/publications/</loc>
   </url>
 </urlset>
