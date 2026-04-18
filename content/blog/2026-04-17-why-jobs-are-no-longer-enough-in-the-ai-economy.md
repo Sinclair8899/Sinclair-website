@@ -1,5 +1,5 @@
 ---
-title: "# Why Jobs Are No Longer Enough in the AI Economy"
+title: "Why Jobs Are No Longer Enough in the AI Economy"
 date: 2026-04-17
 draft: false
 tags: ["ai", "future-of-work", "inequality", "economic-security", "ownership"]

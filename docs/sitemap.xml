@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sinclairhuang.org/blog/2026-04-17-why-jobs-are-no-longer-enough-in-the-ai-economy/</loc>
-    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sinclairhuang.org/tags/ai/</loc>
     <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -29,10 +26,13 @@
     <loc>https://sinclairhuang.org/tags/</loc>
     <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinclairhuang.org/blog/2026-04-15-ai-was-never-sudden-a-30-year-view-on-the-great-repricing-of/</loc>
-    <lastmod>2026-04-15T00:00:00+00:00</lastmod>
+    <loc>https://sinclairhuang.org/blog/2026-04-17-why-jobs-are-no-longer-enough-in-the-ai-economy/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/accountability/</loc>
+    <lastmod>2026-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-04-15-ai-was-never-sudden-a-30-year-view-on-the-great-repricing-of/</loc>
     <lastmod>2026-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/automation/</loc>
@@ -104,13 +104,13 @@
     <loc>https://sinclairhuang.org/blog/2026-04-01-article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gp/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/</loc>
-    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sinclairhuang.org/tags/ai-drug-discovery/</loc>
     <lastmod>2026-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/alphafold/</loc>
+    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/</loc>
     <lastmod>2026-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/proteinai/</loc>

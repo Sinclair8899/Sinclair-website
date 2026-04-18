@@ -1,5 +1,5 @@
 ---
-title: "# Beyond the GPU: What the AI Infrastructure Buildout Means for the Real Economy"
+title: "Beyond the GPU: What the AI Infrastructure Buildout Means for the Real Economy"
 date: 2026-04-11
 draft: false
 tags: ["industialstrategy", "semiconductors", "supply-chain", "ai", "infrastructure"]

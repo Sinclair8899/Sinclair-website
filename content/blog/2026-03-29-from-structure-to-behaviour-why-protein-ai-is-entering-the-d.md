@@ -1,5 +1,5 @@
 ---
-title: "# From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era"
+title: "From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era"
 date: 2026-03-29
 draft: false
 tags: ["vibegen", "ai-drug-discovery", "proteindynamics", "proteinai", "alphafold"]

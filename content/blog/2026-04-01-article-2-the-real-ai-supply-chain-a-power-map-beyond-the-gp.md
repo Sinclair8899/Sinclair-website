@@ -1,5 +1,5 @@
 ---
-title: "# Article 2 | The Real AI Supply Chain: A Power Map Beyond the GPU"
+title: "Article 2 | The Real AI Supply Chain: A Power Map Beyond the GPU"
 date: 2026-04-01
 draft: false
 tags: ["artificial-intelligence", "semiconductors", "sk-hynix", "supply-chain", "tsmc"]

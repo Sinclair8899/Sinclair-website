@@ -1,5 +1,5 @@
 ---
-title: "# Article 3 | How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings"
+title: "Article 3 | How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings"
 date: 2026-04-02
 draft: false
 tags: ["artificial-intelligence", "micron", "semiconductors", "tsmc", "supply-chain"]
