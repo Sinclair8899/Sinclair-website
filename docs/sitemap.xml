@@ -233,8 +233,6 @@
     <loc>https://sinclairhuang.org/blog/thoughts/2024-12-first-thought/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinclairhuang.org/about/</loc>
-  </url><url>
     <loc>https://sinclairhuang.org/consulting/</loc>
   </url><url>
     <loc>https://sinclairhuang.org/data/</loc>
@@ -244,5 +242,7 @@
     <loc>https://sinclairhuang.org/projects/</loc>
   </url><url>
     <loc>https://sinclairhuang.org/publications/</loc>
+  </url><url>
+    <loc>https://sinclairhuang.org/about/</loc>
   </url>
 </urlset>

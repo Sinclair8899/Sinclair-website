@@ -142,13 +142,6 @@
       <description>A brief observation from my research: AlphaFold 3&amp;#39;s ability to predict protein-ligand interactions i...</description>
     </item>
     <item>
-      <title>About</title>
-      <link>https://sinclairhuang.org/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/about/</guid>
-      <description>Po-Sung (Sinclair) Huang 黃柏松 — Independent Researcher in AI, Infrastructure, and Capital Markets. EDBA, HEC Liège. ORCID: 0009-0007-8173-5672</description>
-    </item>
-    <item>
       <title>Consulting Services</title>
       <link>https://sinclairhuang.org/consulting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -169,6 +162,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/news/</guid>
       <description>Latest Industry News</description>
+    </item>
+    <item>
+      <title>Research Profile</title>
+      <link>https://sinclairhuang.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/about/</guid>
+      <description>Senior industry executive, independent researcher, and advisor with over 30 years of cross-industry leadership experience.</description>
     </item>
   </channel>
 </rss>

@@ -1,63 +1,71 @@
 ---
-description: "Po-Sung (Sinclair) Huang 黃柏松 — Independent Researcher in AI, Infrastructure, and Capital Markets. EDBA, HEC Liège. ORCID: 0009-0007-8173-5672"
-title: "About"
+title: "Research Profile"
+description: "Senior industry executive, independent researcher, and advisor with over 30 years of cross-industry leadership experience."
 ---
 
-## Po-Sung (Sinclair) Huang｜黃柏松
+## About
 
-**Executive Doctorate of Business Administration (EDBA), HEC Liège**
+Po-Sung (Sinclair) Huang is a senior industry executive, independent researcher, and advisor with over 30 years of cross-industry leadership experience spanning materials, chemicals, electronics, and life sciences.
 
-Special Advisor to the Chairman, Continental Carbon Co., Ltd.
+Throughout his career, he has served in senior roles including CFO, Executive Vice President, and General Manager in publicly listed companies. His experience has been shaped by the intersection of finance, strategy, operations, technology, and industrial transformation, with long exposure to cross-border management and complex decision-making in highly competitive environments.
 
----
+He holds an Executive Doctorate in Business Administration (EDBA) from HEC Liège. His current work focuses on AI, semiconductors, advanced materials, industrial competitiveness, and capital allocation. Rather than approaching AI primarily as a model-building discipline, his research examines how AI reshapes industrial structure, value distribution, and strategic positioning in the real economy.
 
-Sinclair Huang is an independent researcher specializing in the intersection of artificial intelligence (AI), physical infrastructure, and capital markets. He holds an EDBA from HEC Liège (Management School of the University of Liège, Belgium). His research focuses on how multinational enterprises in emerging markets maintain competitive advantage through AI-driven decision models and global strategic positioning.
-
-Sinclair Huang（黃柏松）是一位專注於人工智慧（AI）、實體基礎設施與資本市場交叉領域的研究員。他擁有 HEC Liège（列日大學管理學院）的企業管理高階博士學位（EDBA）。其研究重點在於新興市場跨國企業如何透過 AI 驅動的決策模型與全球佈局維持競爭優勢。
-
----
-
-### Professional Background
-
-With over 30 years of cross-industry experience spanning Taiwan's electronics, biotechnology, and chemical industries, I bring a unique blend of technical expertise and strategic insight to address complex business challenges.
-
-### Research Focus
-
-My research centers on three core areas:
-
-**AI & Semiconductor Valuation** — Developing frameworks for analyzing competitive positioning and market dynamics of AI chip companies in an era of rapid technological change.
-
-**Industrial Strategy** — Examining how artificial intelligence is transforming traditional manufacturing sectors and creating new paradigms for competitive advantage.
-
-**AI-Enabled Biological Systems Modeling** — Exploring AI applications in life-science research at a computational and conceptual level (non-clinical, non-medical).
+Through writing, research platforms, and long-term knowledge-building initiatives, he is developing a body of work that connects technical understanding, managerial judgment, and strategic insight.
 
 ---
 
-### Research Identity
+## Professional Background
+
+With over three decades of experience across multiple industries, Huang brings a rare combination of executive leadership, strategic finance, operational judgment, and industrial perspective.
+
+His career has included senior leadership responsibilities in publicly listed companies, where he worked across financial management, business transformation, organizational integration, and long-cycle industrial strategy. This background continues to inform his current research and advisory perspective.
+
+---
+
+## Research Focus
+
+His current research centers on four closely connected areas:
+
+**AI, Industrial Structure, and Capital Allocation**
+Understanding how AI changes value distribution, competitive dynamics, and investment logic across industries.
+
+**Semiconductors and Infrastructure Strategy**
+Examining the role of compute, packaging, supply-chain bottlenecks, and industrial capacity in shaping the AI economy.
+
+**Advanced Materials and Industrial Transformation**
+Studying how materials innovation, manufacturing capability, and process economics interact with broader industrial change.
+
+**AI-Enabled Biological Systems Modeling**
+Exploring computational and conceptual applications of AI in life-science research in non-clinical, non-medical contexts.
+
+---
+
+## Research Identity
 
 | | |
 |---|---|
 | **Full Name** | Po-Sung (Sinclair) Huang｜黃柏松 |
+| **Degree** | Executive Doctorate in Business Administration (EDBA), HEC Liège |
 | **ORCID** | [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672) |
-| **Research Email** | [research@sinclairhuang.org](mailto:research@sinclairhuang.org) |
-| **Contact Email** | [sinclairhuang@gmail.com](mailto:sinclairhuang@gmail.com) |
+| **Research Email** | research@sinclairhuang.org |
+| **Contact Email** | sinclairhuang@gmail.com |
 
----
-
-### Research Platforms
-
-- **SSRN**: [Author Profile](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5843722)
-- **Zenodo**: [Author Profile](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Huang%2C%20Po-Sung%22)
-- **Research Square**: [Author Profile](https://www.researchsquare.com/profile/po-sung-sinclair-huang)
-- **ORCID**: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
-- **Medium**: [@sinclairhuang](https://medium.com/@sinclairhuang)
-
-### Contact
-
-- **Website**: [sinclairhuang.org](https://sinclairhuang.org)
-- **Research Email**: [research@sinclairhuang.org](mailto:research@sinclairhuang.org)
-- **Medium**: [@sinclairhuang](https://medium.com/@sinclairhuang)
-
----
+**Research Platforms:** [SSRN](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1044018) · [Zenodo](https://zenodo.org/search?q=sinclair+huang) · [Research Square](https://www.researchsquare.com/) · [ORCID](https://orcid.org/0009-0007-8173-5672) · [Medium](https://medium.com/@sinclairhuang)
 
 *Note: Research involving biological systems is conducted at a computational and conceptual level and does not constitute clinical or medical practice.*
+
+---
+
+## 關於我
+
+黃柏松（Po-Sung / Sinclair Huang）是一位資深產業經營者、獨立研究者與產業顧問，擁有逾三十年橫跨材料、化工、電子與生命科學等領域的高階管理與跨產業經驗。
+
+其職涯歷任上市公司財務長、執行副總與總經理，長期工作於財務、策略、營運、技術與產業轉型的交會點，並累積了跨國管理、複雜決策與高度競爭環境中的實務判斷。
+
+他擁有比利時 HEC Liège 企業管理高階博士學位（EDBA）。目前的研究與寫作聚焦於 AI、半導體、先進材料、產業競爭力與資本配置。
+
+透過寫作、研究平台與長期知識建構計畫，他正逐步發展一套連結技術理解、管理判斷與策略洞察的知識體系。
+
+**研究主軸：** AI 與產業結構｜半導體與基礎設施策略｜先進材料與產業轉型｜AI 賦能的生物系統建模
+
