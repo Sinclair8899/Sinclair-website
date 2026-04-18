@@ -1,57 +1,48 @@
 ---
-description: "Independent Researcher in AI-Driven Industrial Competitiveness  Welcome to my research platform expl..."
 title: "Home"
+description: "Senior Industry Executive, Independent Researcher, and Industry Advisor working at the intersection of AI, semiconductors, advanced materials, industrial transformation, and capital markets."
 ---
 
+# Po-Sung (Sinclair) Huang
+### Senior Industry Executive | Independent Researcher | Industry Advisor | Knowledge Builder
 
-# Independent Researcher in AI-Driven Industrial Competitiveness
+*Working at the intersection of AI, semiconductors, advanced materials, industrial transformation, and capital markets.*
 
-Welcome to my research platform exploring the intersection of artificial intelligence, industrial strategy, and emerging technologies.
+---
 
-## Research Focus
+## About
 
-My work centers on understanding how AI is reshaping competitive dynamics across **semiconductors, advanced materials, and AI-enabled biological systems research**. Through quantitative analysis and industry insights, I examine the strategic implications of AI-driven transformation for businesses and industries.
+Po-Sung (Sinclair) Huang is a senior industry executive, independent researcher, and advisor with over 30 years of cross-industry leadership experience spanning materials, chemicals, electronics, and life sciences.
 
-### Core Research Areas
+Throughout his career, he has served in senior roles including CFO, Executive Vice President, and General Manager in publicly listed companies, working at the intersection of finance, strategy, operations, technology, and industrial transformation. His experience has been shaped by complex industrial environments, cross-border management, and long-cycle strategic decision-making.
 
-**AI & Semiconductor Valuation**  
-Developing frameworks for analyzing competitive positioning and market dynamics of AI chip companies in an era of rapid technological change.
+Today, his work focuses on AI, semiconductors, advanced materials, and industrial value migration. Through research, writing, advisory work, and knowledge-building initiatives, he is developing a long-term platform that connects technical understanding, managerial judgment, and strategic insight.
 
-**Industrial Strategy**  
-Examining how artificial intelligence is transforming traditional manufacturing sectors and creating new paradigms for competitive advantage.
+His current direction emphasizes knowledge transfer: translating real-world executive experience into frameworks for managers, engineers, students, and future industry leaders.
 
-**Biotech & AI Integration**  
-Exploring AI-enabled biological systems modeling and life-science research applications in industrial contexts (non-clinical, non-medical).
+---
 
-**Materials Innovation**  
-Analyzing innovation pathways and strategic positioning in specialty chemicals and advanced materials industries.
+## Strategic Profile
+
+**Industrial Leadership**
+Extensive leadership experience across publicly listed companies, with responsibilities spanning finance, strategy, operations, and organizational management. Brings a practical understanding of decision-making under uncertainty in complex industrial environments.
+
+**Technology & Semiconductor Strategy**
+Participated in strategic initiatives related to semiconductors and advanced manufacturing within large-scale industrial organizations, including capability-building, long-term positioning, and technology-linked investment thinking.
+
+**AI, Capital & Industrial Transformation**
+Current research focuses on how AI reshapes industrial structure, value distribution, and capital allocation. The emphasis is not on model engineering itself, but on understanding how AI changes competitive dynamics in the real economy.
 
 ---
 
 ## Selected Work
 
-- **Multi-Target Gene Therapy for Osteoarthritis: A Computational Framework** – Research Square (2026) | [DOI: 10.21203/rs.3.rs-8774255/v1](https://doi.org/10.21203/rs.3.rs-8774255/v1)
+- **The Architecture of Leverage: Competitive Moats in the AI Compute Supply Chain** – SSRN (2026) | [Working Paper No. 6504361](https://ssrn.com/abstract=6504361)
+- **Patent Topology as a Leading Indicator of AI Drug Discovery Asset Valuation** – SSRN (2026) | [Working Paper No. 6487218](https://ssrn.com/abstract=6487218)
+- **The Innovation Premium Multiplier: How Markets Price Scientific Knowledge in Global Biopharma** – SSRN (2026) | [Working Paper No. 6468118](https://ssrn.com/abstract=6468118)
+- **Infrastructure-Led Leading Indicators in Technology Investment Cycles** – SSRN (2026) | [Working Paper No. 6285318](https://ssrn.com/abstract=6285318)
+- **Patent Quality vs. Quantity in the Intangible Economy** – Zenodo (2026) | [DOI: 10.5281/zenodo.18437953](https://doi.org/10.5281/zenodo.18437953)
 
-- **Patent Quality vs Quantity in Intangible Economy** – Zenodo (2026) | [DOI: 10.5281/zenodo.18437953](https://doi.org/10.5281/zenodo.18437953)
-
-- **Policy-Conditioned Dynamic Capabilities and AI-Driven Valuation** – SSRN (2025) | [Working Paper No. 5843722](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5843722)
-
-- **AI Semiconductor Valuation Dataset (95 global firms)** – Quantitative analysis using GEE regression and Random Forest models
-
----
+[View All Publications →](/publications/) | [ORCID: 0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
 
 ---
-
-## About Me
-
-Sinclair Huang 是一位專注於人工智慧（AI）、實體基礎設施與資本市場交叉領域的獨立研究員與企業顧問。他擁有 HEC Liège（列日大學管理學院）的企業管理高階博士學位 (EDBA)，在台灣電子、生技與化工產業擁有逾 30 年跨產業高階管理經驗，目前擔任大陸炭素股份有限公司董事長特別顧問。
-
-其研究重點涵蓋 AI 驅動的價值重分配、半導體策略，以及實體基礎設施指標如何重塑現代產業競爭優勢，研究成果發表於 SSRN、Zenodo、Research Square 及 Medium。
-
----
-
-Sinclair Huang is an independent researcher and executive advisor specializing in the intersection of Artificial Intelligence, physical infrastructure, and capital markets. He holds an Executive Doctorate in Business Administration (EDBA) from HEC Liège, with over 30 years of cross-industry leadership experience across Taiwan's electronics, biotechnology, and chemical sectors.
-
-Currently serving as Special Advisor to the Chairman at Continental Carbon Co., Ltd., his research focuses on AI-driven value redistribution, semiconductor strategy, and infrastructure-led indicators reshaping industrial competitiveness. His work is published through SSRN, Zenodo, Research Square, and Medium.
-
-[View Publications →](/publications/) | [ORCID: 0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
