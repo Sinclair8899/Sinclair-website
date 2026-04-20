@@ -12,17 +12,24 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/games/910815/rockstar-games-says-hack-will-have-no-impact" target="_blank" style="color: #1e40af; text-decoration: none;">Rockstar Games says hack will have ‘no impact’</a>
+      <a href="https://www.theverge.com/tech/914723/vercel-hacked" target="_blank" style="color: #1e40af; text-decoration: none;">Cloud development platform Vercel was hacked</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Rockstar confirmed on Saturday that some of its data was compromised in a breach of a third-party provider. The group ShinyHunters claimed responsibility, saying it had gained access to the company's Snowflake instances (a cloud-hosting provider popu</div>
+    <div style="color: #334155; line-height: 1.6;">Vercel, a major development platform that hosts and deploys web apps, was compromised, and the hackers are attempting to sell stolen data. A person claiming to be a member of ShinyHunters, which was behind the recent hack of Rockstar Games, posted so</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/tech/910537/hisense-ur9-rgb-led-tv-review" target="_blank" style="color: #1e40af; text-decoration: none;">The Hisense UR9 is a great first shot against OLED’s bow</a>
+      <a href="https://www.theverge.com/gadgets/913989/nothing-cmf-noise-canceling-headphone-pro-spring-sale-deal" target="_blank" style="color: #1e40af; text-decoration: none;">Nothing’s modular CMF Headphone Pro are down to their lowest price to date</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">RGB LED TVs have been the talk of the TV world this year, with models coming from all the manufacturers, and the first one of 2026 is here - the Hisense UR9. It's the first look at the viability of the new backlight technology outside of demo rooms, </div>
+    <div style="color: #334155; line-height: 1.6;">Over the past several years, Nothing’s budget-centric subsidiary, CMF, has built a reputation for producing attractive, inexpensive products with features often reserved for gadgets that cost twice the price. The CMF Headphone Pro — the company’s fir</div>
+  </div>
+  <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
+    <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
+      <a href="https://arstechnica.com/security/2026/04/russia-friendly-exchange-says-western-special-service-behind-15-million-cyberattack/" target="_blank" style="color: #1e40af; text-decoration: none;">US-sanctioned currency exchange says $15 million heist done by &quot;unfriendly states&quot;</a>
+    </div>
+    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • April 2026</div>
+    <div style="color: #334155; line-height: 1.6;">Grinex says needed hacking resources "available exclusively to ... unfriendly states."</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
@@ -31,13 +38,6 @@ title: "Industry News"
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • April 2026</div>
     <div style="color: #334155; line-height: 1.6;">The viral AI agentic tool let attackers silently gain admin unauthenticated access.</div>
   </div>
-  <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
-    <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/" target="_blank" style="color: #1e40af; text-decoration: none;">New Rowhammer attacks give complete control of machines running Nvidia GPUs</a>
-    </div>
-    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">GDDRHammer, GeForge and GPUBreach hammer GPU memory in ways that hijack the CPU.</div>
-  </div>
 </div>
 
 <div style="margin: 2rem 0;">
@@ -45,17 +45,17 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-01207-2" target="_blank" style="color: #1e40af; text-decoration: none;">Daily briefing: A treatment to reverse cellular ageing is about to be tested in people</a>
+      <a href="https://www.nature.com/articles/d41586-026-01014-9" target="_blank" style="color: #1e40af; text-decoration: none;">Magnetic muon measurements and gene-therapy advances win US$3 million Breakthrough prizes</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 09 April 2026; doi:10.1038/d41586-026-01207-2‘Partial reprogramming’, which winds back a cell’s biological clock, could enter clinical trials later this year. Plus, a single DNA tweak can make female mice grow testes and why</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 18 April 2026; doi:10.1038/d41586-026-01014-9This year’s winners include hundreds of physicists across more than 30 institutions.</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-01108-4" target="_blank" style="color: #1e40af; text-decoration: none;">One woman, three autoimmune diseases: CAR-T therapy vanquishes ultra-rare disease trio</a>
+      <a href="https://www.nature.com/articles/d41586-026-01213-4" target="_blank" style="color: #1e40af; text-decoration: none;">Ageing could prime women for autoimmune disorders</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 09 April 2026; doi:10.1038/d41586-026-01108-4Fourteen months after treatment with engineered immune cells, the recipient has no symptoms and doesn’t need to take medication.</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 16 April 2026; doi:10.1038/d41586-026-01213-4Study of gene expression also finds age-related increases in men’s vulnerability to certain cancers.</div>
   </div>
 </div>
 
