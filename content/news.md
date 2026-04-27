@@ -12,31 +12,31 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/tech/914723/vercel-hacked" target="_blank" style="color: #1e40af; text-decoration: none;">Cloud development platform Vercel was hacked</a>
+      <a href="https://www.theverge.com/gadgets/918544/skylight-15-inch-smart-calendar-2-mothers-day-deal-2026-sale" target="_blank" style="color: #1e40af; text-decoration: none;">Skylight’s 15-inch smart calendar is down to its lowest price to date</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Vercel, a major development platform that hosts and deploys web apps, was compromised, and the hackers are attempting to sell stolen data. A person claiming to be a member of ShinyHunters, which was behind the recent hack of Rockstar Games, posted so</div>
+    <div style="color: #334155; line-height: 1.6;">When you’re juggling more than just your own calendar, staying organized can be overwhelming. Fortunately, the Skylight Calendar 2 can help simplify things by syncing multiple calendars in a single spot, and now through May 7th, it’s available direct</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/gadgets/913989/nothing-cmf-noise-canceling-headphone-pro-spring-sale-deal" target="_blank" style="color: #1e40af; text-decoration: none;">Nothing’s modular CMF Headphone Pro are down to their lowest price to date</a>
+      <a href="https://www.theverge.com/tech/918797/switched-to-linux-dont-miss-windows" target="_blank" style="color: #1e40af; text-decoration: none;">After three months on Linux, I don’t miss Windows at all</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Over the past several years, Nothing’s budget-centric subsidiary, CMF, has built a reputation for producing attractive, inexpensive products with features often reserved for gadgets that cost twice the price. The CMF Headphone Pro — the company’s fir</div>
+    <div style="color: #334155; line-height: 1.6;">In January I finally made good on my threat/promise to install Linux on my desktop. I wanted to see how far I could get using a Linux PC as my main computer without doing a bunch of research beforehand or troubleshooting afterwards. Since then I have</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://arstechnica.com/security/2026/04/russia-friendly-exchange-says-western-special-service-behind-15-million-cyberattack/" target="_blank" style="color: #1e40af; text-decoration: none;">US-sanctioned currency exchange says $15 million heist done by &quot;unfriendly states&quot;</a>
+      <a href="https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/" target="_blank" style="color: #1e40af; text-decoration: none;">Why are top university websites serving porn? It comes down to shoddy housekeeping.</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Grinex says needed hacking resources "available exclusively to ... unfriendly states."</div>
+    <div style="color: #334155; line-height: 1.6;">Hundreds of subdomains from dozens of universities have been hijacked by scammers.</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/" target="_blank" style="color: #1e40af; text-decoration: none;">OpenClaw gives users yet another reason to be freaked out about security</a>
+      <a href="https://arstechnica.com/security/2026/04/microsoft-issues-emergency-update-for-macos-and-linux-asp-net-threat/" target="_blank" style="color: #1e40af; text-decoration: none;">Microsoft issues emergency update for macOS and Linux ASP.NET threat</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">The viral AI agentic tool let attackers silently gain admin unauthenticated access.</div>
+    <div style="color: #334155; line-height: 1.6;">When authentication fails, things can go very, very wrong.</div>
   </div>
 </div>
 
@@ -45,17 +45,10 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-01014-9" target="_blank" style="color: #1e40af; text-decoration: none;">Magnetic muon measurements and gene-therapy advances win US$3 million Breakthrough prizes</a>
+      <a href="https://www.nature.com/articles/d41586-026-01296-z" target="_blank" style="color: #1e40af; text-decoration: none;">How your heartbeat could keep cancer at bay</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 18 April 2026; doi:10.1038/d41586-026-01014-9This year’s winners include hundreds of physicists across more than 30 institutions.</div>
-  </div>
-  <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
-    <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-01213-4" target="_blank" style="color: #1e40af; text-decoration: none;">Ageing could prime women for autoimmune disorders</a>
-    </div>
-    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 16 April 2026; doi:10.1038/d41586-026-01213-4Study of gene expression also finds age-related increases in men’s vulnerability to certain cancers.</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 23 April 2026; doi:10.1038/d41586-026-01296-zPressure on the heart as it pumps blood stops cancer cells from multiplying in mouse hearts.</div>
   </div>
 </div>
 
