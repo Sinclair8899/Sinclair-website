@@ -5,38 +5,38 @@ title: "Industry News"
 
 # Latest Industry News
 
-*Last updated: April 2026*
+*Last updated: May 2026*
 
 <div style="margin: 2rem 0;">
   <h2 style="color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-bottom: 1rem;">AI &amp; Semiconductors</h2>
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/gadgets/918544/skylight-15-inch-smart-calendar-2-mothers-day-deal-2026-sale" target="_blank" style="color: #1e40af; text-decoration: none;">Skylight’s 15-inch smart calendar is down to its lowest price to date</a>
+      <a href="https://www.theverge.com/games/922840/reggie-fils-aime-amazon-nintendo-illegal" target="_blank" style="color: #1e40af; text-decoration: none;">Reggie Fils-Aimé says Amazon once asked Nintendo to break the law</a>
     </div>
-    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">When you’re juggling more than just your own calendar, staying organized can be overwhelming. Fortunately, the Skylight Calendar 2 can help simplify things by syncing multiple calendars in a single spot, and now through May 7th, it’s available direct</div>
+    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • May 2026</div>
+    <div style="color: #334155; line-height: 1.6;">Way back in the DS days, Nintendo decided to stop selling to Amazon. During a recent lecture at NYU, former Nintendo of America President Reggie Fils-Aim&#233; said it was because Amazon was seeking preferential treatment that would have hurt its rel</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/tech/918797/switched-to-linux-dont-miss-windows" target="_blank" style="color: #1e40af; text-decoration: none;">After three months on Linux, I don’t miss Windows at all</a>
+      <a href="https://www.theverge.com/gadgets/922616/shokz-openrun-pro-2-bone-conduction-headphones-mothers-day-deal-sale" target="_blank" style="color: #1e40af; text-decoration: none;">Shokz’s bassy OpenRun Pro 2 are $40 off thanks to a new Mother’s Day promo</a>
     </div>
-    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">In January I finally made good on my threat/promise to install Linux on my desktop. I wanted to see how far I could get using a Linux PC as my main computer without doing a bunch of research beforehand or troubleshooting afterwards. Since then I have</div>
+    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • May 2026</div>
+    <div style="color: #334155; line-height: 1.6;">If you’re looking to pick up a pair of open-ear headphones for yourself — or your mom — Shokz is running a Mother’s Day sale. Now through May 10th, the company’s best pair of bone conduction headphones, the OpenRun Pro 2, are available from Amazon, B</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/" target="_blank" style="color: #1e40af; text-decoration: none;">Why are top university websites serving porn? It comes down to shoddy housekeeping.</a>
+      <a href="https://arstechnica.com/security/2026/04/as-the-most-severe-linux-threat-in-years-surfaces-the-world-scrambles/" target="_blank" style="color: #1e40af; text-decoration: none;">The most severe Linux threat to surface in years catches the world flat-footed</a>
     </div>
-    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Hundreds of subdomains from dozens of universities have been hijacked by scammers.</div>
+    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • May 2026</div>
+    <div style="color: #334155; line-height: 1.6;">CopyFail threatens multi-tenant servers, CI/CD work flows, Kubernetes containers, and more.</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://arstechnica.com/security/2026/04/microsoft-issues-emergency-update-for-macos-and-linux-asp-net-threat/" target="_blank" style="color: #1e40af; text-decoration: none;">Microsoft issues emergency update for macOS and Linux ASP.NET threat</a>
+      <a href="https://arstechnica.com/information-technology/2026/04/why-a-recent-supply-chain-attack-singled-out-security-firms-checkmarx-and-bitwarden/" target="_blank" style="color: #1e40af; text-decoration: none;">Why a recent supply-chain attack singled out security firms Checkmarx and Bitwarden</a>
     </div>
-    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">When authentication fails, things can go very, very wrong.</div>
+    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • May 2026</div>
+    <div style="color: #334155; line-height: 1.6;">Security firms find themselves especially exposed.</div>
   </div>
 </div>
 
@@ -45,10 +45,17 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-01296-z" target="_blank" style="color: #1e40af; text-decoration: none;">How your heartbeat could keep cancer at bay</a>
+      <a href="https://www.nature.com/articles/d41586-026-01290-5" target="_blank" style="color: #1e40af; text-decoration: none;">The news is not all bad: five inspiring science stories to lift your mood</a>
     </div>
-    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • April 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 23 April 2026; doi:10.1038/d41586-026-01296-zPressure on the heart as it pumps blood stops cancer cells from multiplying in mouse hearts.</div>
+    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • May 2026</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 01 May 2026; doi:10.1038/d41586-026-01290-5Species recovery, cancer-preventing vaccines and progress in developing renewable-energy sources are just some of the positive developments that have happened this year so far.</div>
+  </div>
+  <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
+    <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
+      <a href="https://www.nature.com/articles/d41586-026-01353-7" target="_blank" style="color: #1e40af; text-decoration: none;">Blood test hints at breast-tumour response to treatment</a>
+    </div>
+    <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • May 2026</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 30 April 2026; doi:10.1038/d41586-026-01353-7A biomarker shows which people with certain types of breast cancer are more likely to respond to an immune-based therapy.</div>
   </div>
 </div>
 
