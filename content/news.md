@@ -12,17 +12,17 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/gadgets/924281/cricut-joy-2-smart-cutting-machine-printer-hands-on" target="_blank" style="color: #1e40af; text-decoration: none;">Cricut’s $99 craft cutting machine helped me feel creative again</a>
+      <a href="https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats" target="_blank" style="color: #1e40af; text-decoration: none;">Revamped Siri will reportedly offer auto-deleting chats</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • May 2026</div>
-    <div style="color: #334155; line-height: 1.6;">I've always been skeptical of products that claim to help you lead a more creative life. But one recently won me over. I've spent three weeks with the Cricut Joy 2, a smart cutting and drawing machine that made it easy for me to get back into making </div>
+    <div style="color: #334155; line-height: 1.6;">Apple is hoping that its record on privacy can be the differentiator on the AI front, and maybe even buy it a little slack as it continues to lag behind the competition. According to Bloomberg's Mark Gurman, the more chatbot-like Siri set to debut in</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/gadgets/926942/dyson-360-vis-nav-robot-vacuum-woot-dust-busting-deals-sale" target="_blank" style="color: #1e40af; text-decoration: none;">Dyson’s powerful 360 Vis Nav robovac is down to $279.99 for a limited time</a>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/932203/university-of-arizona-students-boo-eric-schmidt-ai-commencement" target="_blank" style="color: #1e40af; text-decoration: none;">University of Arizona students boo Eric Schmidt’s AI cheerleading during commencement</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • May 2026</div>
-    <div style="color: #334155; line-height: 1.6;">If you’re tired of running your vacuum multiple times just to get the dirt and debris out of the carpets in your living room, Dyson’s 360 Vis Nav is worth a look. It’s one of the more powerful robot vacuums currently available, and now through May 11</div>
+    <div style="color: #334155; line-height: 1.6;">Former Google CEO Eric Schmidt delivered the commencement address at the University of Arizona on Friday. And, as his speech veered into talk of AI, he was repeatedly drowned out by boos. AI is already a contentious topic, and it's not surprising tha</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
@@ -45,17 +45,17 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-01447-2" target="_blank" style="color: #1e40af; text-decoration: none;">‘Undruggable’ cancer proteins meet their match</a>
+      <a href="https://www.nature.com/articles/d41586-026-01503-x" target="_blank" style="color: #1e40af; text-decoration: none;">Bespoke DNA vaccine offers hope for treatment of notorious brain cancer</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • May 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 08 May 2026; doi:10.1038/d41586-026-01447-2People with a deadly form of pancreatic cancer survive longer on a drug that blocks the activity of a family of mutant proteins.</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 15 May 2026; doi:10.1038/d41586-026-01503-xThe personalized treatment encourages the immune system to attack the tumours called glioblastomas.</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-01449-0" target="_blank" style="color: #1e40af; text-decoration: none;">Three mental-health claims from RFK’s wellness movement: what scientists say</a>
+      <a href="https://www.nature.com/articles/d41586-026-01549-x" target="_blank" style="color: #1e40af; text-decoration: none;">Does the PSA test for prostate cancer save lives? New data reverse gold-standard findings</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • May 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 08 May 2026; doi:10.1038/d41586-026-01449-0The Make America Healthy Again movement asserts that over-prescription of drugs for mental-health conditions is rife in the United States.</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 14 May 2026; doi:10.1038/d41586-026-01549-xHealth-evidence reviewers reverse recommendation on a blood test that detects a biomarker of a common cancer after decades of controversy.</div>
   </div>
 </div>
 
