@@ -12,31 +12,31 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats" target="_blank" style="color: #1e40af; text-decoration: none;">Revamped Siri will reportedly offer auto-deleting chats</a>
+      <a href="https://www.theverge.com/entertainment/936860/robert-moor-on-trails-book-review" target="_blank" style="color: #1e40af; text-decoration: none;">On Trails is a wandering tale that blends hiking, science, and history</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • May 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Apple is hoping that its record on privacy can be the differentiator on the AI front, and maybe even buy it a little slack as it continues to lag behind the competition. According to Bloomberg's Mark Gurman, the more chatbot-like Siri set to debut in</div>
+    <div style="color: #334155; line-height: 1.6;">Hiking is one of life's great joys. Turning off the screens and stepping out into nature for an extended period of time, perhaps even several days, is rejuvenating. Unfortunately, as someone with two young kids and a bad back, I'm not really able to </div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/ai-artificial-intelligence/932203/university-of-arizona-students-boo-eric-schmidt-ai-commencement" target="_blank" style="color: #1e40af; text-decoration: none;">University of Arizona students boo Eric Schmidt’s AI cheerleading during commencement</a>
+      <a href="https://www.theverge.com/gadgets/936610/apple-macbook-air-m5-memorial-day-2026-deal-sale" target="_blank" style="color: #1e40af; text-decoration: none;">Apple’s latest MacBook Air is $200 off in both sizes for Memorial Day</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • May 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Former Google CEO Eric Schmidt delivered the commencement address at the University of Arizona on Friday. And, as his speech veered into talk of AI, he was repeatedly drowned out by boos. AI is already a contentious topic, and it's not surprising tha</div>
+    <div style="color: #334155; line-height: 1.6;">If you’re looking for a laptop that’ll still perform well several years from now, Apple’s latest MacBook Air is hard to beat. Now, in particular, is a good time to pick one up, as you can currently buy the 13-inch MacBook Air at Amazon in the run-up </div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/" target="_blank" style="color: #1e40af; text-decoration: none;">Mozilla says 271 vulnerabilities found by Mythos have &quot;almost no false positives&quot;</a>
+      <a href="https://arstechnica.com/security/2026/05/texas-ag-sues-meta-over-claims-that-whatsapp-doesnt-provide-end-to-end-encryption/" target="_blank" style="color: #1e40af; text-decoration: none;">Texas AG sues Meta over claims that WhatsApp doesn't provide end-to-end encryption</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • May 2026</div>
-    <div style="color: #334155; line-height: 1.6;">The developer of Firefox says it has "completely bought in" on AI-assisted bug discovery.</div>
+    <div style="color: #334155; line-height: 1.6;">Critics note a lack of factual support in lawsuit filed by US Senate candidate.</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://arstechnica.com/security/2026/05/widely-used-daemon-tools-disk-app-backdoored-in-monthlong-supply-chain-attack/" target="_blank" style="color: #1e40af; text-decoration: none;">Widely used Daemon Tools disk app backdoored in monthlong supply-chain attack</a>
+      <a href="https://arstechnica.com/information-technology/2026/05/a-hacker-group-is-poisoning-open-source-code-at-an-unprecedented-scale/" target="_blank" style="color: #1e40af; text-decoration: none;">A hacker group is poisoning open source code at an unprecedented scale</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • May 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Daemon Tools users: It's time to check your machines for stealthy infections, stat.</div>
+    <div style="color: #334155; line-height: 1.6;">GitHub is just the latest victim of TeamPCP, a gang that has carried out a spree of software supply chain attacks.</div>
   </div>
 </div>
 
@@ -45,17 +45,17 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-01503-x" target="_blank" style="color: #1e40af; text-decoration: none;">Bespoke DNA vaccine offers hope for treatment of notorious brain cancer</a>
+      <a href="https://www.nature.com/articles/s41586-026-10656-8" target="_blank" style="color: #1e40af; text-decoration: none;">De novo design of miniproteins targeting GPCRs</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • May 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 15 May 2026; doi:10.1038/d41586-026-01503-xThe personalized treatment encourages the immune system to attack the tumours called glioblastomas.</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 21 May 2026; doi:10.1038/s41586-026-10656-8De novo design of miniproteins targeting GPCRs</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-01549-x" target="_blank" style="color: #1e40af; text-decoration: none;">Does the PSA test for prostate cancer save lives? New data reverse gold-standard findings</a>
+      <a href="https://www.nature.com/articles/d41586-026-01593-7" target="_blank" style="color: #1e40af; text-decoration: none;">Did a boy’s life-saving gene therapy cause his brain tumour?</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • May 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 14 May 2026; doi:10.1038/d41586-026-01549-xHealth-evidence reviewers reverse recommendation on a blood test that detects a biomarker of a common cancer after decades of controversy.</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 21 May 2026; doi:10.1038/d41586-026-01593-7Genetic sleuthing uncovers a rare case of cancer caused by a virus administered as part of a child’s treatment for a genetic disorder.</div>
   </div>
 </div>
 
