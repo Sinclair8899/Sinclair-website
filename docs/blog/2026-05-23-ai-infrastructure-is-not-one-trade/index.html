@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI Infrastructure Is Not One Trade | Sinclair Huang, HEC Liège, Executive DBA</title>
+<meta name="keywords" content="data-center, advanced-packaging, power-infrastructure, ai-infrastructure, semiconductors">
+<meta name="description" content="## Product exposure, process-control exposure, and the physical bottlenecks behind the AI capex wave*AI Infrastructure Notes | Part 3**Sinclair Huang*A reader recently left a comment on my ABF substra">
+<meta name="author" content="">
+<link rel="canonical" href="https://sinclairhuang.org/blog/2026-05-23-ai-infrastructure-is-not-one-trade/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sinclairhuang.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sinclairhuang.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sinclairhuang.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sinclairhuang.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sinclairhuang.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://sinclairhuang.org/blog/2026-05-23-ai-infrastructure-is-not-one-trade/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google" content="notranslate">
+
+<meta property="og:url" content="https://sinclairhuang.org/blog/2026-05-23-ai-infrastructure-is-not-one-trade/">
+  <meta property="og:site_name" content="Sinclair Huang, HEC Liège, Executive DBA">
+  <meta property="og:title" content="AI Infrastructure Is Not One Trade">
+  <meta property="og:description" content="## Product exposure, process-control exposure, and the physical bottlenecks behind the AI capex wave*AI Infrastructure Notes | Part 3**Sinclair Huang*A reader recently left a comment on my ABF substra">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-05-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-23T00:00:00+00:00">
+    <meta property="article:tag" content="Data-Center">
+    <meta property="article:tag" content="Advanced-Packaging">
+    <meta property="article:tag" content="Power-Infrastructure">
+    <meta property="article:tag" content="Ai-Infrastructure">
+    <meta property="article:tag" content="Semiconductors">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI Infrastructure Is Not One Trade">
+<meta name="twitter:description" content="## Product exposure, process-control exposure, and the physical bottlenecks behind the AI capex wave*AI Infrastructure Notes | Part 3**Sinclair Huang*A reader recently left a comment on my ABF substra">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog \u0026 Insights",
+      "item": "https://sinclairhuang.org/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "AI Infrastructure Is Not One Trade",
+      "item": "https://sinclairhuang.org/blog/2026-05-23-ai-infrastructure-is-not-one-trade/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI Infrastructure Is Not One Trade",
+  "name": "AI Infrastructure Is Not One Trade",
+  "description": "## Product exposure, process-control exposure, and the physical bottlenecks behind the AI capex wave*AI Infrastructure Notes | Part 3**Sinclair Huang*A reader recently left a comment on my ABF substra",
+  "keywords": [
+    "data-center", "advanced-packaging", "power-infrastructure", "ai-infrastructure", "semiconductors"
+  ],
+  "articleBody": "Product exposure, process-control exposure, and the physical bottlenecks behind the AI capex wave AI Infrastructure Notes | Part 3\nSinclair Huang\nA reader recently left a comment on my ABF substrate piece that stayed with me.\nHis point was simple: CoWoS and HBM get most of the attention, but substrate materials often sit below the level where many equity models even begin.\nI think that observation captures a broader problem in AI infrastructure analysis.\nThe market usually prices the visible bottleneck first.\nGPUs are visible. HBM is visible. CoWoS is visible. CPO is becoming visible. Liquid cooling is visible. Power equipment is becoming visible.\nBut the durable constraint often sits one layer lower.\nNot always in the branded product. Not always in the headline technology. Not always in the part of the supply chain with the cleanest narrative.\nSometimes it sits in substrate material qualification.\nSometimes in CMP.\nSometimes in hybrid bonding.\nSometimes in metrology.\nSometimes, in liquid-cooling reliability.\nSometimes in utility interconnection.\nSometimes in the boring field-service problem that only appears after the system leaves the factory.\nThat is why I do not think AI infrastructure should be analysed as one trade.\nIt is a sequence of constraints.\nAnd the most important question is not:\nIs this company exposed to AI?\nThe better question is:\nWhich constraint layer does it actually control?\nThe 60-second version AI capex is no longer only a GPU story.\nIt is moving into networking, optical interconnect, advanced packaging, substrates, cooling, power delivery, grid infrastructure, and manufacturing process control.\nBut not all AI infrastructure exposure is the same.\nI think it is useful to separate the three types.\nProduct exposure is the easiest to see. These are the visible things the market can narrate: servers, optical modules, switch ASICs, cooling units, power shelves, racks, cables, cabinets, and equipment boxes.\nProcess-control exposure is harder to see. It sits inside the manufacturing windows that decide yield: ABF substrate complexity, fine-line routing, warpage control, CoWoS process stability, SiN waveguide loss, Cu-Cu hybrid bonding, CMP, inspection, metrology, and reliability qualification.\nInfrastructure exposure is slower and often underestimated. It includes data-centre power, substations, transformers, grid interconnection, cooling deployment, field service, energy availability, permitting, and physical construction bottlenecks.\nThe market tends to price product exposure first because it is easier to explain.\nBut the bottleneck often migrates toward process-control exposure and infrastructure exposure, because those are the layers where time, yield, qualification, and physical deployment cannot be compressed easily.\nSo the due diligence question should change.\nDo not only ask:\nWho sells into AI?\nAsk:\nWho controls the bottleneck that prevents AI infrastructure from scaling?\nWhat the “AI infrastructure trade” gets wrong There is nothing wrong with saying that AI infrastructure is a powerful industrial and investment theme.\nIt is.\nThe problem starts when the entire theme gets compressed into one label.\nA server assembler, an optical-module supplier, a substrate manufacturer, a CMP tool vendor, a liquid-cooling integrator, a transformer manufacturer, and a utility-facing data-centre developer may all be connected to AI capex.\nBut they are not exposed to the same constraint.\nThey do not have the same margin structure.\nThey do not face the same qualification cycle.\nThey do not scale on the same clock.\nThey do not fail in the same way.\nThe market likes simple categories:\nAI servers.\nOptical communication.\nAdvanced packaging.\nLiquid cooling.\nPower infrastructure.\nThose categories are useful as a first screen.\nThey are not enough for real analysis.\nThe more useful framework is to ask what kind of exposure each company has.\nIs it selling a visible product into the capex cycle?\nIs it controlling a narrow process window that determines yield?\nOr is it sitting inside a slow physical infrastructure constraint that cannot be solved by simply placing a larger purchase order?\nThose are very different businesses.\nThey may all benefit from AI.\nBut they are not the same trade.\n1. Product exposure: easiest to see, easiest to over-narrate Product exposure is where the market usually starts.\nThis includes servers, racks, switch ASICs, optical modules, transceivers, cooling units, CDUs, power shelves, cables, cabinets, and other visible pieces of the AI data-centre buildout.\nProduct exposure is attractive because it is easy to understand.\nIf hyperscalers build more AI clusters, they need more hardware.\nIf clusters get larger, they need more networking.\nIf rack power rises, they need more cooling.\nIf data centres grow, they need more power equipment.\nThis is the part of the story that can be explained quickly in a chart or a news headline.\nThat does not make it wrong.\nIt just makes it incomplete.\nThe risk with product exposure is that the market often confuses shipping into the theme with controlling the bottleneck.\nA company may sell a product into the AI infrastructure and still have weak pricing power.\nA company may grow revenue quickly and still compete in a modular, replaceable, or customer-concentrated part of the stack.\nA company may be close to the customer but far from the real constraint.\nThat is why I would not stop at the question:\nDoes this company have AI exposure?\nI would ask:\nIs the product scarce because it is technically hard, operationally hard, qualification-limited, supply-constrained, or simply in temporary demand?\nThose are different answers.\nAnd they lead to different conclusions.\n2. Process-control exposure: where the visible story becomes manufacturing reality Process-control exposure is harder to see because it often sits below the product layer.\nIt is not always the part that appears in the headline.\nIt is the part that determines whether the headline can be produced at yield.\nThis is where I think many AI infrastructure discussions are still too shallow.\nThe market sees CoWoS capacity.\nBut beneath that are process stability, warpage, bumping, substrate availability, thermal-mechanical reliability, inspection, and yield learning.\nThe market sees HBM.\nBut beneath that are stacking TSVs, thermal limits, test complexity, packaging integration, and supply-chain coordination.\nThe market sees CPO.\nBut beneath that are SiN waveguide loss, optical-grade CMP, Cu-Cu hybrid bonding, Ge photodetector dark current, metrology, reliability, and package-level yield.\nThe market sees ABF substrates.\nBut beneath that are material qualification, fine-line / fine-space capability, layer count, warpage control, laser drilling, plating uniformity, inspection, and long customer qualification cycles.\nThese are not cosmetic details.\nThey are the places where volume plans either become production or remain roadmap language.\nThis is why process-control exposure can be more valuable than it looks.\nIt does not always announce itself with a clean AI product name.\nIt may appear as equipment, materials, consumables, inspection, metrology, process integration, reliability testing, or a supplier with deep manufacturing history.\nThe market often underprices this layer because it is difficult to narrate.\nIt is easier to say:\nThis company sells optical modules.\nIt is harder to say:\nThis company controls the process window that allows an optical engine to yield at scale.\nBut the second statement may matter more.\nABF is a good example of the hidden layer ABF substrates are a useful example because they sit below several more visible AI narratives.\nWhen investors discuss AI accelerators, they usually talk about GPUs, HBM, advanced packaging, and sometimes CoWoS.\nThat is reasonable.\nThose are visible bottlenecks.\nBut the substrate layer is where the package becomes physically routable, mechanically stable, and manufacturable.\nAs package complexity rises, substrate requirements do not just scale linearly.\nRouting density increases.\nLayer count rises.\nWarpage becomes harder to control.\nThermal-mechanical stress matters more.\nReliability windows tighten.\nInspection and yield become more important.\nIn other words, the substrate does not become important because it is a fashionable AI component.\nIt becomes important because the rest of the system is asking it to absorb more complexity.\nThat is a different kind of importance.\nIt is not the most visible layer.\nBut it can become one of the layers that decides whether the visible layer scales.\nThis is the pattern I think repeats across AI infrastructure.\nThe market first finds the named product.\nThen the constraint moves into the process layer underneath it.\nCPO is another example: not optics alone, but a manufacturing window CPO is often framed as optics moving closer to the switch ASIC because copper is running out of room.\nThat framing is directionally right.\nBut it is incomplete.\nThe harder question is whether the manufacturing window survives.\nSiN waveguide loss is not just an optical-design problem.\nIt depends on deposition, film quality, sidewall roughness, top-surface roughness, CMP, annealing, and wafer-scale variation.\nCu-Cu hybrid bonding is not just a packaging slogan.\nIt depends on BEOL copper, Cu recess control, surface oxidation, void suppression, bonding yield, and interface reliability.\nGe photodetector dark current is not just a detector-spec problem.\nIt depends on epitaxy, implant damage, threading dislocations, anneal history, and BEOL thermal budget.\nEach module may look mature by itself.\nThe difficulty appears when all of them have to coexist inside one manufacturable package.\nThat is why I think CPO should not be analysed only as:\nWho has optical exposure?\nThe better question is:\nWho controls the process window that the optical story depends on?\nThis is the difference between product exposure and process-control exposure.\nProduct exposure tells you who is near the narrative.\nProcess-control exposure tells you who may control the yield.\n3. Infrastructure exposure: the slow clock The third category is infrastructure exposure.\nThis is the slowest and often the most misunderstood.\nAI data centres do not scale only by ordering more chips.\nThey require power, land, grid connection, substations, transformers, cooling systems, construction labour, water or liquid-cooling infrastructure, permits, and operational reliability.\nSome of these constraints move on a semiconductor clock.\nMany do not.\nA chip roadmap may move in quarters.\nA packaging capacity expansion may move in years.\nA grid interconnection, substation buildout, transformer procurement cycle, or site-level power upgrade may move on an even slower clock.\nThis matters because AI infrastructure is increasingly a power-delivery and heat-removal problem.\nThe bottleneck does not always remain inside the chip.\nIt can migrate outward.\nFrom GPU allocation to advanced packaging.\nFrom advanced packaging to substrates.\nFrom substrates to networking.\nFrom networking to cooling.\nFrom cooling to power delivery.\nFrom power delivery to grid connection.\nAt each stage, the market looks for a new product category.\nBut the real question is again:\nWhich constraint layer is hardest to expand?\nThat is where the value may concentrate.\nCooling is not just a product category Liquid cooling is another example where the first-order market narrative can be too simple.\nThe product story is easy.\nHigher rack power creates more heat.\nMore heat requires liquid cooling.\nTherefore, cooling suppliers benefit.\nThat is directionally right.\nBut it is not enough.\nThe harder questions are operational.\nHow reliable are the connectors?\nHow is leakage detected?\nHow is field service handled?\nWho owns maintenance risk?\nHow does the cooling loop behave under partial load, failure, or maintenance?\nHow does the cooling architecture interact with facility design, rack layout, power density, and customer qualification?\nA cold plate or CDU can be a product.\nA deployed liquid-cooling system is an operating environment.\nThose are not the same thing.\nThis is why I would separate product exposure from execution exposure.\nThe market may first reward the product label.\nBut long-term value may depend on reliability, serviceability, integration know-how, and the ability to support large-scale deployments without unacceptable field failure.\nAgain, the bottleneck moves from the visible object to the system that makes the object usable.\nPower infrastructure is where AI becomes least abstract Power is the least abstract layer of AI infrastructure.\nA model can be discussed in parameters.\nA GPU cluster can be discussed in tokens or FLOPS.\nA data centre eventually has to be discussed in megawatts.\nOnce the conversation reaches power, software language stops being enough.\nThe constraints become physical.\nTransformers.\nSubstations.\nSwitchgear.\nCables.\nUPS systems.\nPower distribution.\nGrid interconnection.\nGeneration availability.\nUtility planning.\nConstruction timelines.\nThis is why I think the AI infrastructure story is gradually moving from compute scarcity to delivered-power scarcity.\nThat does not mean chips stop mattering.\nIt means the system constraint expands.\nA data centre full of accelerators is not useful if it cannot receive enough reliable power, remove enough heat, and connect enough network capacity.\nAt this layer, the relevant clock is slower.\nThe market can revise a capex narrative in one day.\nA utility interconnection queue cannot always move on that same schedule.\nThat time mismatch is part of the bottleneck.\nA practical due diligence framework When I look at any AI infrastructure company, I now try to ask five questions.\nThe first is:\nWhat kind of exposure is this?\nIs it product exposure, process-control exposure, infrastructure exposure, or some combination of the three?\nThe second is:\nWhat exactly becomes scarce?\nIs it units, yield, qualification capacity, engineering talent, equipment availability, material supply, permitting, field-service capacity, or power connection?\nThe third is:\nWhat is the clock speed of the constraint?\nCan it be expanded in quarters, years, or decades?\nThe fourth is:\nWhere does failure show up?\nDoes the failure appear as device performance, package yield, field reliability, customer qualification delay, power unavailability, or margin compression?\nThe fifth is:\nWho has the right to say no?\nThis is the most important question.\nA true bottleneck is not merely a supplier that benefits from demand.\nA true bottleneck is a layer where the system cannot move faster unless that layer works.\nThat is where pricing power, strategic importance, and durability can appear.\nWhat this means for investors For investors, the temptation is to sort companies into AI winners and non-AI companies.\nI think that is too crude.\nThe better segmentation is:\nNarrative exposure: the company is close to a market theme and may move when the theme is hot.\nRevenue exposure: the company actually ships products into AI-related demand.\nBottleneck exposure: the company controls a constraint that limits how fast the system can scale.\nThese are not the same.\nA company can have strong narrative exposure but weak bottleneck control.\nA company can have visible revenue exposure but limited pricing power.\nA company can have modest visibility but deep process-control importance.\nThe market usually finds narrative exposure first.\nThen it looks for revenue exposure.\nOnly later does it understand bottleneck exposure.\nThat sequence creates both opportunity and risk.\nIt can overprice companies that are easy to narrate.\nIt can underprice companies that sit inside boring but necessary process or infrastructure layers.\nSo the question is not:\nWhich stock is an AI infrastructure stock?\nThe question is:\nWhich company controls a constraint that the AI buildout cannot bypass?\nThat is a much harder question.\nBut it is also the more useful one.\nWhat this means for operators For operators, the lesson is different.\nThe AI infrastructure stack is becoming too interconnected for single-module optimisation.\nA packaging decision can affect substrate stress.\nA substrate decision can affect signal integrity and reliability.\nA networking architecture can affect optical requirements.\nAn optical integration decision can affect thermal budget and metrology.\nA rack-power decision can affect cooling and facility design.\nA cooling decision can affect reliability and service operations.\nA data-centre site decision can affect power availability and deployment schedule.\nThe old boundaries are still useful for organising teams.\nThey are less useful for understanding where the system breaks.\nThis is why cross-module thinking is becoming more valuable.\nThe most important people in the AI infrastructure stack may not be the ones who know one module perfectly.\nThey may be the ones who can see how a small tolerance problem in one layer becomes a system-level constraint somewhere else.\nWhat would make this framework wrong? A useful framework should have failure conditions.\nThe first would be a broad AI capex slowdown.\nIf hyperscaler spending slows materially, many product-exposure layers would feel the impact quickly. In that case, the market may stop caring about downstream bottlenecks and return to a simpler demand-cycle view.\nThe second would be faster standardisation.\nIf certain AI infrastructure components become modular, commoditised, and interchangeable faster than expected, product exposure may matter less and margin pressure may arrive earlier.\nThe third would be process-window expansion.\nIf manufacturing learning, equipment improvement, design simplification, or architectural shifts make certain process-control problems easier, then the bottleneck may move elsewhere.\nThe fourth would be substitution.\nIf one architecture avoids a constraint that another architecture depends on, the bottleneck may not disappear; it may migrate.\nThe fifth would be policy or power-market changes.\nGrid access, energy availability, permitting, and regional incentives can shift the infrastructure layer in ways that are not purely technical.\nThat is why I do not think this framework should be used as a static map.\nIt is a way to ask better questions as the bottleneck moves.\nThe boring questions are usually the useful ones The more I study AI infrastructure, the more I think the least glamorous questions are often the most revealing.\nWhat does the substrate yield map look like?\nHow long does material qualification take?\nWhere does warpage show up?\nWhich process step controls the defect Pareto?\nWhat does the CMP distribution look like across the wafer?\nHow is void inspection done after bonding?\nWhat happens when the cooling system fails in the field?\nWho owns the service call?\nHow long is the transformer lead time?\nWhich site can actually receive power?\nThese questions are not as exciting as asking which model will win or which chip is fastest.\nBut they are closer to the physical truth of the AI buildout.\nAI infrastructure is not one trade.\nIt is not one product category.\nIt is not one supply chain.\nIt is a sequence of bottlenecks that migrate as the system scales.\nThe market prices the visible layer first.\nThe edge is often in finding the layer beneath it.\nFurther reading/topic areas For readers who want to go deeper, I would start with these topic areas:\nAdvanced packaging capacity, CoWoS, and HBM integration.\nABF substrate materials, fine-line routing, warpage, and reliability.\nCPO and silicon photonics process integration.\nCu-Cu hybrid bonding, CMP, and wafer-level metrology.\nLiquid cooling reliability, field service, and data-centre deployment.\nPower delivery, substations, transformers, and grid interconnection.\nAI data-centre rack architecture, 800VDC discussions, and facility-level power design.\nSemiconductor equipment and materials suppliers that sit inside process-control bottlenecks.\nSelected references and background sources These references are not meant to be a complete bibliography. They are public background sources and technical starting points for readers who want to explore the layers discussed above.\nTSMC 3DFabric — advanced packaging technologies including SoIC, CoWoS, and InFO\nTSMC Advanced Packaging Services\nMicron HBM4 technical overview\nApplied Materials — Hybrid Bonding\nApplied Materials — Heterogeneous Design and Advanced Packaging\nOIF — Implementation Agreements\nOIF — Co-Packaging Framework Document\nOpen Compute Project — Cooling Environments\nOpen Compute Project — OAI System Liquid Cooling Guidelines\nLawrence Berkeley National Laboratory — 2024 United States Data Centre Energy Usage Report\nUptime Institute — Global Data Centre Survey Results 2025\nAuthor note I write about AI infrastructure, semiconductor manufacturing, and supply-chain bottlenecks from the perspective of process integration and value distribution. My goal is not to turn every technical constraint into an investment thesis. It is to understand where the system loses the ability to move faster. That usually requires looking below the most visible product layer. All views are my own.\nDisclaimer This article is for research and educational purposes only. It is not investment advice, financial advice, technical qualification advice, legal advice, or a recommendation to buy or sell any security.\nThe analysis is based on publicly available information, non-confidential technical context, and my personal analysis and opinions. It does not rely on proprietary, confidential, or material non-public information.\nAny company, technology, or process mentioned may have internal capabilities, production data, or design choices that are not publicly disclosed. Actual production specifications may differ across vendors, process generations, and customer programs.\nErrors or omissions are my own. Corrections with public references are welcome.\nDisclosure No company mentioned in this article has reviewed, sponsored, approved, or compensated me for this work.\nI may currently hold, and may buy or sell, securities of companies mentioned in this article or in the broader AI infrastructure and semiconductor ecosystem at any time without further notice.\nNothing in this article constitutes investment advice, a financial recommendation, or a solicitation to buy or sell any security. Readers should conduct their own due diligence.\nHashtags #AI Infrastructure#Semiconductors#Advanced Packaging#Data Centers#Power Infrastructure\n",
+  "wordCount" : "3386",
+  "inLanguage": "en",
+  "datePublished": "2026-05-23T00:00:00Z",
+  "dateModified": "2026-05-23T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sinclairhuang.org/blog/2026-05-23-ai-infrastructure-is-not-one-trade/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sinclair Huang, HEC Liège, Executive DBA",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sinclairhuang.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sinclairhuang.org/" accesskey="h" title="Sinclair Huang, HEC Liège, Executive DBA (Alt + H)">Sinclair Huang, HEC Liège, Executive DBA</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sinclairhuang.org/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/about" title="Research Profile">
+                    <span>Research Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/publications" title="Publications">
+                    <span>Publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/projects" title="Research Portfolio">
+                    <span>Research Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/news" title="News">
+                    <span>News</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      AI Infrastructure Is Not One Trade
+    </h1>
+    <div class="post-description">
+      ## Product exposure, process-control exposure, and the physical bottlenecks behind the AI capex wave*AI Infrastructure Notes | Part 3**Sinclair Huang*A reader recently left a comment on my ABF substra
+    </div>
+    <div class="post-meta"><span title='2026-05-23 00:00:00 +0000 UTC'>May 23, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="product-exposure-process-control-exposure-and-the-physical-bottlenecks-behind-the-ai-capexwave">Product exposure, process-control exposure, and the physical bottlenecks behind the AI capex wave<a hidden class="anchor" aria-hidden="true" href="#product-exposure-process-control-exposure-and-the-physical-bottlenecks-behind-the-ai-capexwave">#</a></h2>
+<p><strong>AI Infrastructure Notes | Part 3</strong></p>
+<p><strong>Sinclair Huang</strong></p>
+<p>A reader recently left a comment on my ABF substrate piece that stayed with me.</p>
+<p>His point was simple: CoWoS and HBM get most of the attention, but substrate materials often sit below the level where many equity models even begin.</p>
+<p>I think that observation captures a broader problem in AI infrastructure analysis.</p>
+<p>The market usually prices the visible bottleneck first.</p>
+<p>GPUs are visible. HBM is visible. CoWoS is visible. CPO is becoming visible. Liquid cooling is visible. Power equipment is becoming visible.</p>
+<p>But the durable constraint often sits one layer lower.</p>
+<p>Not always in the branded product. Not always in the headline technology. Not always in the part of the supply chain with the cleanest narrative.</p>
+<p>Sometimes it sits in substrate material qualification.</p>
+<p>Sometimes in CMP.</p>
+<p>Sometimes in hybrid bonding.</p>
+<p>Sometimes in metrology.</p>
+<p>Sometimes, in liquid-cooling reliability.</p>
+<p>Sometimes in utility interconnection.</p>
+<p>Sometimes in the boring field-service problem that only appears after the system leaves the factory.</p>
+<p>That is why I do not think AI infrastructure should be analysed as one trade.</p>
+<p>It is a sequence of constraints.</p>
+<p>And the most important question is not:</p>
+<p><strong><strong>Is this company exposed to AI?</strong></strong></p>
+<p>The better question is:</p>
+<p><strong><strong>Which constraint layer does it actually control?</strong></strong></p>
+<h2 id="the-60-second-version">The 60-second version<a hidden class="anchor" aria-hidden="true" href="#the-60-second-version">#</a></h2>
+<p>AI capex is no longer only a GPU story.</p>
+<p>It is moving into networking, optical interconnect, advanced packaging, substrates, cooling, power delivery, grid infrastructure, and manufacturing process control.</p>
+<p>But not all AI infrastructure exposure is the same.</p>
+<p>I think it is useful to separate the three types.</p>
+<p><strong><strong>Product exposure</strong></strong> is the easiest to see. These are the visible things the market can narrate: servers, optical modules, switch ASICs, cooling units, power shelves, racks, cables, cabinets, and equipment boxes.</p>
+<p><strong><strong>Process-control exposure</strong></strong> is harder to see. It sits inside the manufacturing windows that decide yield: ABF substrate complexity, fine-line routing, warpage control, CoWoS process stability, SiN waveguide loss, Cu-Cu hybrid bonding, CMP, inspection, metrology, and reliability qualification.</p>
+<p><strong><strong>Infrastructure exposure</strong></strong> is slower and often underestimated. It includes data-centre power, substations, transformers, grid interconnection, cooling deployment, field service, energy availability, permitting, and physical construction bottlenecks.</p>
+<p>The market tends to price product exposure first because it is easier to explain.</p>
+<p>But the bottleneck often migrates toward process-control exposure and infrastructure exposure, because those are the layers where time, yield, qualification, and physical deployment cannot be compressed easily.</p>
+<p>So the due diligence question should change.</p>
+<p>Do not only ask:</p>
+<p><strong><strong>Who sells into AI?</strong></strong></p>
+<p>Ask:</p>
+<p><strong><strong>Who controls the bottleneck that prevents AI infrastructure from scaling?</strong></strong></p>
+<h2 id="what-the-ai-infrastructure-trade-getswrong">What the “AI infrastructure trade” gets wrong<a hidden class="anchor" aria-hidden="true" href="#what-the-ai-infrastructure-trade-getswrong">#</a></h2>
+<p>There is nothing wrong with saying that AI infrastructure is a powerful industrial and investment theme.</p>
+<p>It is.</p>
+<p>The problem starts when the entire theme gets compressed into one label.</p>
+<p>A server assembler, an optical-module supplier, a substrate manufacturer, a CMP tool vendor, a liquid-cooling integrator, a transformer manufacturer, and a utility-facing data-centre developer may all be connected to AI capex.</p>
+<p>But they are not exposed to the same constraint.</p>
+<p>They do not have the same margin structure.</p>
+<p>They do not face the same qualification cycle.</p>
+<p>They do not scale on the same clock.</p>
+<p>They do not fail in the same way.</p>
+<p>The market likes simple categories:</p>
+<p>AI servers.</p>
+<p>Optical communication.</p>
+<p>Advanced packaging.</p>
+<p>Liquid cooling.</p>
+<p>Power infrastructure.</p>
+<p>Those categories are useful as a first screen.</p>
+<p>They are not enough for real analysis.</p>
+<p>The more useful framework is to ask what kind of exposure each company has.</p>
+<p>Is it selling a visible product into the capex cycle?</p>
+<p>Is it controlling a narrow process window that determines yield?</p>
+<p>Or is it sitting inside a slow physical infrastructure constraint that cannot be solved by simply placing a larger purchase order?</p>
+<p>Those are very different businesses.</p>
+<p>They may all benefit from AI.</p>
+<p>But they are not the same trade.</p>
+<h2 id="1-product-exposure-easiest-to-see-easiest-to-over-narrate">1. Product exposure: easiest to see, easiest to over-narrate<a hidden class="anchor" aria-hidden="true" href="#1-product-exposure-easiest-to-see-easiest-to-over-narrate">#</a></h2>
+<p>Product exposure is where the market usually starts.</p>
+<p>This includes servers, racks, switch ASICs, optical modules, transceivers, cooling units, CDUs, power shelves, cables, cabinets, and other visible pieces of the AI data-centre buildout.</p>
+<p>Product exposure is attractive because it is easy to understand.</p>
+<p>If hyperscalers build more AI clusters, they need more hardware.</p>
+<p>If clusters get larger, they need more networking.</p>
+<p>If rack power rises, they need more cooling.</p>
+<p>If data centres grow, they need more power equipment.</p>
+<p>This is the part of the story that can be explained quickly in a chart or a news headline.</p>
+<p>That does not make it wrong.</p>
+<p>It just makes it incomplete.</p>
+<p>The risk with product exposure is that the market often confuses <strong><strong>shipping into the theme</strong></strong> with <strong><strong>controlling the bottleneck</strong></strong>.</p>
+<p>A company may sell a product into the AI infrastructure and still have weak pricing power.</p>
+<p>A company may grow revenue quickly and still compete in a modular, replaceable, or customer-concentrated part of the stack.</p>
+<p>A company may be close to the customer but far from the real constraint.</p>
+<p>That is why I would not stop at the question:</p>
+<p><strong><strong>Does this company have AI exposure?</strong></strong></p>
+<p>I would ask:</p>
+<p><strong><strong>Is the product scarce because it is technically hard, operationally hard, qualification-limited, supply-constrained, or simply in temporary demand?</strong></strong></p>
+<p>Those are different answers.</p>
+<p>And they lead to different conclusions.</p>
+<h2 id="2-process-control-exposure-where-the-visible-story-becomes-manufacturing-reality">2. Process-control exposure: where the visible story becomes manufacturing reality<a hidden class="anchor" aria-hidden="true" href="#2-process-control-exposure-where-the-visible-story-becomes-manufacturing-reality">#</a></h2>
+<p>Process-control exposure is harder to see because it often sits below the product layer.</p>
+<p>It is not always the part that appears in the headline.</p>
+<p>It is the part that determines whether the headline can be produced at yield.</p>
+<p>This is where I think many AI infrastructure discussions are still too shallow.</p>
+<p>The market sees CoWoS capacity.</p>
+<p>But beneath that are process stability, warpage, bumping, substrate availability, thermal-mechanical reliability, inspection, and yield learning.</p>
+<p>The market sees HBM.</p>
+<p>But beneath that are stacking TSVs, thermal limits, test complexity, packaging integration, and supply-chain coordination.</p>
+<p>The market sees CPO.</p>
+<p>But beneath that are SiN waveguide loss, optical-grade CMP, Cu-Cu hybrid bonding, Ge photodetector dark current, metrology, reliability, and package-level yield.</p>
+<p>The market sees ABF substrates.</p>
+<p>But beneath that are material qualification, fine-line / fine-space capability, layer count, warpage control, laser drilling, plating uniformity, inspection, and long customer qualification cycles.</p>
+<p>These are not cosmetic details.</p>
+<p>They are the places where volume plans either become production or remain roadmap language.</p>
+<p>This is why process-control exposure can be more valuable than it looks.</p>
+<p>It does not always announce itself with a clean AI product name.</p>
+<p>It may appear as equipment, materials, consumables, inspection, metrology, process integration, reliability testing, or a supplier with deep manufacturing history.</p>
+<p>The market often underprices this layer because it is difficult to narrate.</p>
+<p>It is easier to say:</p>
+<p><strong><strong>This company sells optical modules.</strong></strong></p>
+<p>It is harder to say:</p>
+<p><strong><strong>This company controls the process window that allows an optical engine to yield at scale.</strong></strong></p>
+<p>But the second statement may matter more.</p>
+<h2 id="abf-is-a-good-example-of-the-hiddenlayer">ABF is a good example of the hidden layer<a hidden class="anchor" aria-hidden="true" href="#abf-is-a-good-example-of-the-hiddenlayer">#</a></h2>
+<p>ABF substrates are a useful example because they sit below several more visible AI narratives.</p>
+<p>When investors discuss AI accelerators, they usually talk about GPUs, HBM, advanced packaging, and sometimes CoWoS.</p>
+<p>That is reasonable.</p>
+<p>Those are visible bottlenecks.</p>
+<p>But the substrate layer is where the package becomes physically routable, mechanically stable, and manufacturable.</p>
+<p>As package complexity rises, substrate requirements do not just scale linearly.</p>
+<p>Routing density increases.</p>
+<p>Layer count rises.</p>
+<p>Warpage becomes harder to control.</p>
+<p>Thermal-mechanical stress matters more.</p>
+<p>Reliability windows tighten.</p>
+<p>Inspection and yield become more important.</p>
+<p>In other words, the substrate does not become important because it is a fashionable AI component.</p>
+<p>It becomes important because the rest of the system is asking it to absorb more complexity.</p>
+<p>That is a different kind of importance.</p>
+<p>It is not the most visible layer.</p>
+<p>But it can become one of the layers that decides whether the visible layer scales.</p>
+<p>This is the pattern I think repeats across AI infrastructure.</p>
+<p>The market first finds the named product.</p>
+<p>Then the constraint moves into the process layer underneath it.</p>
+<h2 id="cpo-is-another-example-not-optics-alone-but-a-manufacturing-window">CPO is another example: not optics alone, but a manufacturing window<a hidden class="anchor" aria-hidden="true" href="#cpo-is-another-example-not-optics-alone-but-a-manufacturing-window">#</a></h2>
+<p>CPO is often framed as optics moving closer to the switch ASIC because copper is running out of room.</p>
+<p>That framing is directionally right.</p>
+<p>But it is incomplete.</p>
+<p>The harder question is whether the manufacturing window survives.</p>
+<p>SiN waveguide loss is not just an optical-design problem.</p>
+<p>It depends on deposition, film quality, sidewall roughness, top-surface roughness, CMP, annealing, and wafer-scale variation.</p>
+<p>Cu-Cu hybrid bonding is not just a packaging slogan.</p>
+<p>It depends on BEOL copper, Cu recess control, surface oxidation, void suppression, bonding yield, and interface reliability.</p>
+<p>Ge photodetector dark current is not just a detector-spec problem.</p>
+<p>It depends on epitaxy, implant damage, threading dislocations, anneal history, and BEOL thermal budget.</p>
+<p>Each module may look mature by itself.</p>
+<p>The difficulty appears when all of them have to coexist inside one manufacturable package.</p>
+<p>That is why I think CPO should not be analysed only as:</p>
+<p><strong><strong>Who has optical exposure?</strong></strong></p>
+<p>The better question is:</p>
+<p><strong><strong>Who controls the process window that the optical story depends on?</strong></strong></p>
+<p>This is the difference between product exposure and process-control exposure.</p>
+<p>Product exposure tells you who is near the narrative.</p>
+<p>Process-control exposure tells you who may control the yield.</p>
+<h2 id="3-infrastructure-exposure-the-slowclock">3. Infrastructure exposure: the slow clock<a hidden class="anchor" aria-hidden="true" href="#3-infrastructure-exposure-the-slowclock">#</a></h2>
+<p>The third category is infrastructure exposure.</p>
+<p>This is the slowest and often the most misunderstood.</p>
+<p>AI data centres do not scale only by ordering more chips.</p>
+<p>They require power, land, grid connection, substations, transformers, cooling systems, construction labour, water or liquid-cooling infrastructure, permits, and operational reliability.</p>
+<p>Some of these constraints move on a semiconductor clock.</p>
+<p>Many do not.</p>
+<p>A chip roadmap may move in quarters.</p>
+<p>A packaging capacity expansion may move in years.</p>
+<p>A grid interconnection, substation buildout, transformer procurement cycle, or site-level power upgrade may move on an even slower clock.</p>
+<p>This matters because AI infrastructure is increasingly a power-delivery and heat-removal problem.</p>
+<p>The bottleneck does not always remain inside the chip.</p>
+<p>It can migrate outward.</p>
+<p>From GPU allocation to advanced packaging.</p>
+<p>From advanced packaging to substrates.</p>
+<p>From substrates to networking.</p>
+<p>From networking to cooling.</p>
+<p>From cooling to power delivery.</p>
+<p>From power delivery to grid connection.</p>
+<p>At each stage, the market looks for a new product category.</p>
+<p>But the real question is again:</p>
+<p><strong><strong>Which constraint layer is hardest to expand?</strong></strong></p>
+<p>That is where the value may concentrate.</p>
+<h2 id="cooling-is-not-just-a-productcategory">Cooling is not just a product category<a hidden class="anchor" aria-hidden="true" href="#cooling-is-not-just-a-productcategory">#</a></h2>
+<p>Liquid cooling is another example where the first-order market narrative can be too simple.</p>
+<p>The product story is easy.</p>
+<p>Higher rack power creates more heat.</p>
+<p>More heat requires liquid cooling.</p>
+<p>Therefore, cooling suppliers benefit.</p>
+<p>That is directionally right.</p>
+<p>But it is not enough.</p>
+<p>The harder questions are operational.</p>
+<p>How reliable are the connectors?</p>
+<p>How is leakage detected?</p>
+<p>How is field service handled?</p>
+<p>Who owns maintenance risk?</p>
+<p>How does the cooling loop behave under partial load, failure, or maintenance?</p>
+<p>How does the cooling architecture interact with facility design, rack layout, power density, and customer qualification?</p>
+<p>A cold plate or CDU can be a product.</p>
+<p>A deployed liquid-cooling system is an operating environment.</p>
+<p>Those are not the same thing.</p>
+<p>This is why I would separate product exposure from execution exposure.</p>
+<p>The market may first reward the product label.</p>
+<p>But long-term value may depend on reliability, serviceability, integration know-how, and the ability to support large-scale deployments without unacceptable field failure.</p>
+<p>Again, the bottleneck moves from the visible object to the system that makes the object usable.</p>
+<h2 id="power-infrastructure-is-where-ai-becomes-leastabstract">Power infrastructure is where AI becomes least abstract<a hidden class="anchor" aria-hidden="true" href="#power-infrastructure-is-where-ai-becomes-leastabstract">#</a></h2>
+<p>Power is the least abstract layer of AI infrastructure.</p>
+<p>A model can be discussed in parameters.</p>
+<p>A GPU cluster can be discussed in tokens or FLOPS.</p>
+<p>A data centre eventually has to be discussed in megawatts.</p>
+<p>Once the conversation reaches power, software language stops being enough.</p>
+<p>The constraints become physical.</p>
+<p>Transformers.</p>
+<p>Substations.</p>
+<p>Switchgear.</p>
+<p>Cables.</p>
+<p>UPS systems.</p>
+<p>Power distribution.</p>
+<p>Grid interconnection.</p>
+<p>Generation availability.</p>
+<p>Utility planning.</p>
+<p>Construction timelines.</p>
+<p>This is why I think the AI infrastructure story is gradually moving from compute scarcity to delivered-power scarcity.</p>
+<p>That does not mean chips stop mattering.</p>
+<p>It means the system constraint expands.</p>
+<p>A data centre full of accelerators is not useful if it cannot receive enough reliable power, remove enough heat, and connect enough network capacity.</p>
+<p>At this layer, the relevant clock is slower.</p>
+<p>The market can revise a capex narrative in one day.</p>
+<p>A utility interconnection queue cannot always move on that same schedule.</p>
+<p>That time mismatch is part of the bottleneck.</p>
+<h2 id="a-practical-due-diligence-framework">A practical due diligence framework<a hidden class="anchor" aria-hidden="true" href="#a-practical-due-diligence-framework">#</a></h2>
+<p>When I look at any AI infrastructure company, I now try to ask five questions.</p>
+<p>The first is:</p>
+<p><strong><strong>What kind of exposure is this?</strong></strong></p>
+<p>Is it product exposure, process-control exposure, infrastructure exposure, or some combination of the three?</p>
+<p>The second is:</p>
+<p><strong><strong>What exactly becomes scarce?</strong></strong></p>
+<p>Is it units, yield, qualification capacity, engineering talent, equipment availability, material supply, permitting, field-service capacity, or power connection?</p>
+<p>The third is:</p>
+<p><strong><strong>What is the clock speed of the constraint?</strong></strong></p>
+<p>Can it be expanded in quarters, years, or decades?</p>
+<p>The fourth is:</p>
+<p><strong><strong>Where does failure show up?</strong></strong></p>
+<p>Does the failure appear as device performance, package yield, field reliability, customer qualification delay, power unavailability, or margin compression?</p>
+<p>The fifth is:</p>
+<p><strong><strong>Who has the right to say no?</strong></strong></p>
+<p>This is the most important question.</p>
+<p>A true bottleneck is not merely a supplier that benefits from demand.</p>
+<p>A true bottleneck is a layer where the system cannot move faster unless that layer works.</p>
+<p>That is where pricing power, strategic importance, and durability can appear.</p>
+<h2 id="what-this-means-for-investors">What this means for investors<a hidden class="anchor" aria-hidden="true" href="#what-this-means-for-investors">#</a></h2>
+<p>For investors, the temptation is to sort companies into AI winners and non-AI companies.</p>
+<p>I think that is too crude.</p>
+<p>The better segmentation is:</p>
+<p><strong><strong>Narrative exposure</strong></strong>: the company is close to a market theme and may move when the theme is hot.</p>
+<p><strong><strong>Revenue exposure</strong></strong>: the company actually ships products into AI-related demand.</p>
+<p><strong><strong>Bottleneck exposure</strong></strong>: the company controls a constraint that limits how fast the system can scale.</p>
+<p>These are not the same.</p>
+<p>A company can have strong narrative exposure but weak bottleneck control.</p>
+<p>A company can have visible revenue exposure but limited pricing power.</p>
+<p>A company can have modest visibility but deep process-control importance.</p>
+<p>The market usually finds narrative exposure first.</p>
+<p>Then it looks for revenue exposure.</p>
+<p>Only later does it understand bottleneck exposure.</p>
+<p>That sequence creates both opportunity and risk.</p>
+<p>It can overprice companies that are easy to narrate.</p>
+<p>It can underprice companies that sit inside boring but necessary process or infrastructure layers.</p>
+<p>So the question is not:</p>
+<p><strong><strong>Which stock is an AI infrastructure stock?</strong></strong></p>
+<p>The question is:</p>
+<p><strong><strong>Which company controls a constraint that the AI buildout cannot bypass?</strong></strong></p>
+<p>That is a much harder question.</p>
+<p>But it is also the more useful one.</p>
+<h2 id="what-this-means-for-operators">What this means for operators<a hidden class="anchor" aria-hidden="true" href="#what-this-means-for-operators">#</a></h2>
+<p>For operators, the lesson is different.</p>
+<p>The AI infrastructure stack is becoming too interconnected for single-module optimisation.</p>
+<p>A packaging decision can affect substrate stress.</p>
+<p>A substrate decision can affect signal integrity and reliability.</p>
+<p>A networking architecture can affect optical requirements.</p>
+<p>An optical integration decision can affect thermal budget and metrology.</p>
+<p>A rack-power decision can affect cooling and facility design.</p>
+<p>A cooling decision can affect reliability and service operations.</p>
+<p>A data-centre site decision can affect power availability and deployment schedule.</p>
+<p>The old boundaries are still useful for organising teams.</p>
+<p>They are less useful for understanding where the system breaks.</p>
+<p>This is why cross-module thinking is becoming more valuable.</p>
+<p>The most important people in the AI infrastructure stack may not be the ones who know one module perfectly.</p>
+<p>They may be the ones who can see how a small tolerance problem in one layer becomes a system-level constraint somewhere else.</p>
+<h2 id="what-would-make-this-framework-wrong">What would make this framework wrong?<a hidden class="anchor" aria-hidden="true" href="#what-would-make-this-framework-wrong">#</a></h2>
+<p>A useful framework should have failure conditions.</p>
+<p>The first would be a broad AI capex slowdown.</p>
+<p>If hyperscaler spending slows materially, many product-exposure layers would feel the impact quickly. In that case, the market may stop caring about downstream bottlenecks and return to a simpler demand-cycle view.</p>
+<p>The second would be faster standardisation.</p>
+<p>If certain AI infrastructure components become modular, commoditised, and interchangeable faster than expected, product exposure may matter less and margin pressure may arrive earlier.</p>
+<p>The third would be process-window expansion.</p>
+<p>If manufacturing learning, equipment improvement, design simplification, or architectural shifts make certain process-control problems easier, then the bottleneck may move elsewhere.</p>
+<p>The fourth would be substitution.</p>
+<p>If one architecture avoids a constraint that another architecture depends on, the bottleneck may not disappear; it may migrate.</p>
+<p>The fifth would be policy or power-market changes.</p>
+<p>Grid access, energy availability, permitting, and regional incentives can shift the infrastructure layer in ways that are not purely technical.</p>
+<p>That is why I do not think this framework should be used as a static map.</p>
+<p>It is a way to ask better questions as the bottleneck moves.</p>
+<h2 id="the-boring-questions-are-usually-the-usefulones">The boring questions are usually the useful ones<a hidden class="anchor" aria-hidden="true" href="#the-boring-questions-are-usually-the-usefulones">#</a></h2>
+<p>The more I study AI infrastructure, the more I think the least glamorous questions are often the most revealing.</p>
+<p>What does the substrate yield map look like?</p>
+<p>How long does material qualification take?</p>
+<p>Where does warpage show up?</p>
+<p>Which process step controls the defect Pareto?</p>
+<p>What does the CMP distribution look like across the wafer?</p>
+<p>How is void inspection done after bonding?</p>
+<p>What happens when the cooling system fails in the field?</p>
+<p>Who owns the service call?</p>
+<p>How long is the transformer lead time?</p>
+<p>Which site can actually receive power?</p>
+<p>These questions are not as exciting as asking which model will win or which chip is fastest.</p>
+<p>But they are closer to the physical truth of the AI buildout.</p>
+<p>AI infrastructure is not one trade.</p>
+<p>It is not one product category.</p>
+<p>It is not one supply chain.</p>
+<p>It is a sequence of bottlenecks that migrate as the system scales.</p>
+<p>The market prices the visible layer first.</p>
+<p>The edge is often in finding the layer beneath it.</p>
+<h2 id="further-readingtopic-areas">Further reading/topic areas<a hidden class="anchor" aria-hidden="true" href="#further-readingtopic-areas">#</a></h2>
+<p>For readers who want to go deeper, I would start with these topic areas:</p>
+<ol>
+<li>
+<p>Advanced packaging capacity, CoWoS, and HBM integration.</p>
+</li>
+<li>
+<p>ABF substrate materials, fine-line routing, warpage, and reliability.</p>
+</li>
+<li>
+<p>CPO and silicon photonics process integration.</p>
+</li>
+<li>
+<p>Cu-Cu hybrid bonding, CMP, and wafer-level metrology.</p>
+</li>
+<li>
+<p>Liquid cooling reliability, field service, and data-centre deployment.</p>
+</li>
+<li>
+<p>Power delivery, substations, transformers, and grid interconnection.</p>
+</li>
+<li>
+<p>AI data-centre rack architecture, 800VDC discussions, and facility-level power design.</p>
+</li>
+<li>
+<p>Semiconductor equipment and materials suppliers that sit inside process-control bottlenecks.</p>
+</li>
+</ol>
+<h2 id="selected-references-and-background-sources">Selected references and background sources<a hidden class="anchor" aria-hidden="true" href="#selected-references-and-background-sources">#</a></h2>
+<p>These references are not meant to be a complete bibliography. They are public background sources and technical starting points for readers who want to explore the layers discussed above.</p>
+<ol>
+<li>
+<p><a href="%5Bhttps://3dfabric.tsmc.com/english/dedicatedFoundry/technology/3DFabric.htm%5D(https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/3DFabric.htm)">TSMC 3DFabric — advanced packaging technologies including SoIC, CoWoS, and InFO</a></p>
+</li>
+<li>
+<p><a href="%5Bhttps://www.tsmc.com/english/dedicatedFoundry/services/advanced-packaging%5D(https://www.tsmc.com/english/dedicatedFoundry/services/advanced-packaging)">TSMC Advanced Packaging Services</a></p>
+</li>
+<li>
+<p><a href="%5Bhttps://tw.micron.com/products/memory/hbm/hbm4%5D(https://tw.micron.com/products/memory/hbm/hbm4)">Micron HBM4 technical overview</a></p>
+</li>
+<li>
+<p><a href="%5Bhttps://www.appliedmaterials.com/us/en/semiconductor/markets-and-inflections/heterogeneous-integration/hybrid-bonding.html%5D(https://www.appliedmaterials.com/us/en/semiconductor/markets-and-inflections/heterogeneous-integration/hybrid-bonding.html)">Applied Materials — Hybrid Bonding</a></p>
+</li>
+<li>
+<p><a href="%5Bhttps://www.appliedmaterials.com/us/en/blog/blog-posts/heterogeneous-design-and-advanced-packaging-enable-advances-in-ppact-even-as-classic-moores-law-scaling-slows.html%5D(https://www.appliedmaterials.com/us/en/blog/blog-posts/heterogeneous-design-and-advanced-packaging-enable-advances-in-ppact-even-as-classic-moores-law-scaling-slows.html)">Applied Materials — Heterogeneous Design and Advanced Packaging</a></p>
+</li>
+<li>
+<p><a href="%5Bhttps://www.oiforum.com/technical-work/implementation-agreements-ias/%5D(https://www.oiforum.com/technical-work/implementation-agreements-ias/)">OIF — Implementation Agreements</a></p>
+</li>
+<li>
+<p><a href="%5Bhttps://www.oiforum.com/wp-content/uploads/OIF-Co-Packaging-FD-01.0.pdf%5D(https://www.oiforum.com/wp-content/uploads/OIF-Co-Packaging-FD-01.0.pdf)">OIF — Co-Packaging Framework Document</a></p>
+</li>
+<li>
+<p><a href="%5Bhttps://www.opencompute.org/community/cooling-environments%5D(https://www.opencompute.org/community/cooling-environments)">Open Compute Project — Cooling Environments</a></p>
+</li>
+<li>
+<p><a href="%5Bhttps://www.opencompute.org/documents/oai-system-liquid-cooling-guidelines-in-ocp-template-mar-3-2023-update-pdf%5D(https://www.opencompute.org/documents/oai-system-liquid-cooling-guidelines-in-ocp-template-mar-3-2023-update-pdf)">Open Compute Project — OAI System Liquid Cooling Guidelines</a></p>
+</li>
+<li>
+<p><a href="%5Bhttps://eta.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report%5D(https://eta.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report)">Lawrence Berkeley National Laboratory — 2024 United States Data Centre Energy Usage Report</a></p>
+</li>
+<li>
+<p><a href="%5Bhttps://uptimeinstitute.com/resources/research-and-reports/uptime-institute-global-data-center-survey-results-2025%5D(https://uptimeinstitute.com/resources/research-and-reports/uptime-institute-global-data-center-survey-results-2025)">Uptime Institute — Global Data Centre Survey Results 2025</a></p>
+</li>
+</ol>
+<h2 id="authornote">Author note<a hidden class="anchor" aria-hidden="true" href="#authornote">#</a></h2>
+<p>I write about AI infrastructure, semiconductor manufacturing, and supply-chain bottlenecks from the perspective of process integration and value distribution. My goal is not to turn every technical constraint into an investment thesis. It is to understand where the system loses the ability to move faster. That usually requires looking below the most visible product layer. All views are my own.</p>
+<h2 id="disclaimer">Disclaimer<a hidden class="anchor" aria-hidden="true" href="#disclaimer">#</a></h2>
+<p>This article is for research and educational purposes only. It is not investment advice, financial advice, technical qualification advice, legal advice, or a recommendation to buy or sell any security.</p>
+<p>The analysis is based on publicly available information, non-confidential technical context, and my personal analysis and opinions. It does not rely on proprietary, confidential, or material non-public information.</p>
+<p>Any company, technology, or process mentioned may have internal capabilities, production data, or design choices that are not publicly disclosed. Actual production specifications may differ across vendors, process generations, and customer programs.</p>
+<p>Errors or omissions are my own. Corrections with public references are welcome.</p>
+<h2 id="disclosure">Disclosure<a hidden class="anchor" aria-hidden="true" href="#disclosure">#</a></h2>
+<p>No company mentioned in this article has reviewed, sponsored, approved, or compensated me for this work.</p>
+<p>I may currently hold, and may buy or sell, securities of companies mentioned in this article or in the broader AI infrastructure and semiconductor ecosystem at any time without further notice.</p>
+<p>Nothing in this article constitutes investment advice, a financial recommendation, or a solicitation to buy or sell any security. Readers should conduct their own due diligence.</p>
+<h2 id="hashtags">Hashtags<a hidden class="anchor" aria-hidden="true" href="#hashtags">#</a></h2>
+<p>#AI Infrastructure#Semiconductors#Advanced Packaging#Data Centers#Power Infrastructure</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://sinclairhuang.org/tags/data-center/">Data-Center</a></li>
+      <li><a href="https://sinclairhuang.org/tags/advanced-packaging/">Advanced-Packaging</a></li>
+      <li><a href="https://sinclairhuang.org/tags/power-infrastructure/">Power-Infrastructure</a></li>
+      <li><a href="https://sinclairhuang.org/tags/ai-infrastructure/">Ai-Infrastructure</a></li>
+      <li><a href="https://sinclairhuang.org/tags/semiconductors/">Semiconductors</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://sinclairhuang.org/">Sinclair Huang, HEC Liège, Executive DBA</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
