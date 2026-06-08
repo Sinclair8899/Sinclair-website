@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sinclairhuang.org/blog/2026-06-06-ai-needs-a-place-to-land/</loc>
+    <lastmod>2026-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/artificial-intelligence/</loc>
+    <lastmod>2026-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/</loc>
+    <lastmod>2026-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/</loc>
+    <lastmod>2026-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/robotics/</loc>
+    <lastmod>2026-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/semiconductors/</loc>
+    <lastmod>2026-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/</loc>
+    <lastmod>2026-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/taiwan/</loc>
+    <lastmod>2026-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/venture-capital/</loc>
+    <lastmod>2026-06-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinclairhuang.org/tags/advanced-packaging/</loc>
     <lastmod>2026-05-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,22 +38,10 @@
     <loc>https://sinclairhuang.org/tags/ai-infrastructure/</loc>
     <lastmod>2026-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinclairhuang.org/blog/</loc>
-    <lastmod>2026-05-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sinclairhuang.org/tags/data-center/</loc>
     <lastmod>2026-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinclairhuang.org/</loc>
-    <lastmod>2026-05-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sinclairhuang.org/tags/power-infrastructure/</loc>
-    <lastmod>2026-05-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/semiconductors/</loc>
-    <lastmod>2026-05-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/</loc>
     <lastmod>2026-05-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/ai-infrastruture/</loc>
@@ -105,9 +120,6 @@
     <lastmod>2026-04-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/2026-04-07-article-4-stress-testing-the-moat-four-threats-that-could-re/</loc>
-    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/artificial-intelligence/</loc>
     <lastmod>2026-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/sk-hynix/</loc>
@@ -192,9 +204,6 @@
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/hbm/</loc>
-    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/taiwan/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/cowos-hbm-abf-explainer/</loc>
