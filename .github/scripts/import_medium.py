@@ -1,4 +1,5 @@
 import feedparser
+import requests
 import os
 import re
 import json
@@ -68,7 +69,13 @@ def extract_tags(entry):
 
 def process_feed(source_name, feed_url, imported):
     print(f"Fetching {source_name} RSS: {feed_url}")
-    feed = feedparser.parse(feed_url)
+    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"}
+    try:
+        resp = requests.get(feed_url, headers=headers, timeout=30)
+        feed = feedparser.parse(resp.content)
+    except Exception as e:
+        print(f"Error fetching {source_name}: {e}")
+        feed = feedparser.parse(feed_url)
     if not feed.entries:
         print(f"No entries found in {source_name} RSS feed")
         return 0
