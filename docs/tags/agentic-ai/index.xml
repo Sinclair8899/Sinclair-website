@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Robotics on Sinclair Huang, HEC Liège, Executive DBA</title>
-    <link>https://sinclairhuang.org/tags/robotics/</link>
-    <description>Recent content in Robotics on Sinclair Huang, HEC Liège, Executive DBA</description>
+    <title>Agentic-Ai on Sinclair Huang, HEC Liège, Executive DBA</title>
+    <link>https://sinclairhuang.org/tags/agentic-ai/</link>
+    <description>Recent content in Agentic-Ai on Sinclair Huang, HEC Liège, Executive DBA</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sinclairhuang.org/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sinclairhuang.org/tags/agentic-ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Is Getting a Ticker, an Agent, and a Body</title>
       <link>https://sinclairhuang.org/blog/2026-06-08-ai-is-getting-a-ticker-an-agent-and-a-body/</link>
       <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/blog/2026-06-08-ai-is-getting-a-ticker-an-agent-and-a-body/</guid>
       <description>Why the second AI revolution may be bigger — and riskier — than the firstSinclair HuangAI Infrastructure Notes｜Article 5*Field Note v4 — updated with GTC Taipei and statistical-science reference mater</description>
-    </item>
-    <item>
-      <title>AI Needs a Place to Land</title>
-      <link>https://sinclairhuang.org/blog/2026-06-06-ai-needs-a-place-to-land/</link>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/blog/2026-06-06-ai-needs-a-place-to-land/</guid>
-      <description>## COMPUTEX 2026 and Taiwan’s shift from supply chain to co-design and deployment marketplace*AI Infrastructure Notes｜Article 4*Sinclair HuangField Note v4 — updated with GTC Taipei and statistical-sc</description>
     </item>
   </channel>
 </rss>
