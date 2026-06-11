@@ -72,7 +72,9 @@ def process_feed(source_name, feed_url, imported):
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"}
     try:
         resp = requests.get(feed_url, headers=headers, timeout=30)
+        print(f"  HTTP status: {resp.status_code}, content length: {len(resp.content)}")
         feed = feedparser.parse(resp.content)
+        print(f"  Parsed entries: {len(feed.entries)}, feed title: {feed.feed.get('title', 'N/A')}")
     except Exception as e:
         print(f"Error fetching {source_name}: {e}")
         feed = feedparser.parse(feed_url)
