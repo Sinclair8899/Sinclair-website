@@ -7,7 +7,6 @@ from datetime import datetime, timedelta
 
 SOURCES = [
     ("Medium", "https://medium.com/feed/@sinclairhuang"),
-    ("Substack", "https://sinclairhuang.substack.com/feed"),
 ]
 BLOG_DIR = "content/blog"
 IMPORTED_LOG = ".github/scripts/imported_medium.json"
