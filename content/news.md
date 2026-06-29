@@ -12,31 +12,31 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/tech/953285/polymarket-fake-viral-video-bets" target="_blank" style="color: #1e40af; text-decoration: none;">Polymarket reportedly paid people to post fake videos of themselves placing bets</a>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity" target="_blank" style="color: #1e40af; text-decoration: none;">China’s Z.ai claims it can match Mythos on cybersecurity</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • June 2026</div>
-    <div style="color: #334155; line-height: 1.6;">According to a Wall Street Journal investigation, Polymarket has been paying people to film themselves placing fake bets and celebrating fake wins on social media. WSJ identified over 1,100 deceptive clips and talked to creators who, despite not stat</div>
+    <div style="color: #334155; line-height: 1.6;">China's Zhipu AI (Z.ai) released its open-weight GLM-5.2, and some researchers have claimed that it matches Mythos in certain bug-finding and cybersecurity scenarios. While GLM lags behind models from Anthropic and OpenAI in other, more general tasks</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/podcast/953275/roomba-robot-vacuum-version-history" target="_blank" style="color: #1e40af; text-decoration: none;">How Roomba started a robot revolution</a>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine" target="_blank" style="color: #1e40af; text-decoration: none;">Suno launches Spark incubator program to feed independent artists to its AI machine</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • June 2026</div>
-    <div style="color: #334155; line-height: 1.6;">If you had a Roomba, especially in the early days of the robot vacuum, it was in many ways a fairly unsophisticated machine. It would just bump around your house, looking for something to suck up, until its battery died or its (way too small) tank fi</div>
+    <div style="color: #334155; line-height: 1.6;">Suno has ambitions to be more than just a toy to churn out AI slop, it also wants to be a streaming destination and to break new artists. Spark is their new incubator program for independent artists that provides grants, mentorship, and marketing sup</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/" target="_blank" style="color: #1e40af; text-decoration: none;">Tesco moving 40,000 server workloads off VMware amid Broadcom's “abusive conduct”</a>
+      <a href="https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/" target="_blank" style="color: #1e40af; text-decoration: none;">Notion killing Skiff-influenced email app since most users use AI agents instead</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • June 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Tesco claimed Broadcom hiked its VMware prices by about 175 percent in UK court filings.</div>
+    <div style="color: #334155; line-height: 1.6;">Notion is "going all in on using agents to run your inbox."</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what/" target="_blank" style="color: #1e40af; text-decoration: none;">&quot;Dangerous&quot; AI models are coming no matter what</a>
+      <a href="https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments/" target="_blank" style="color: #1e40af; text-decoration: none;">Oracle’s 21,000 layoffs help drive its debt-fueled AI investments</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • June 2026</div>
-    <div style="color: #334155; line-height: 1.6;">AI models with advanced hacking capabilities will soon be the norm.</div>
+    <div style="color: #334155; line-height: 1.6;">Oracle is spending billions on data center infrastructure to support AI.</div>
   </div>
 </div>
 
@@ -45,17 +45,17 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-01963-1" target="_blank" style="color: #1e40af; text-decoration: none;">Briefing Chat: Testosterone and sperm might get a boost from obesity drugs</a>
+      <a href="https://www.nature.com/articles/d41586-026-01899-6" target="_blank" style="color: #1e40af; text-decoration: none;">How long-term dietary cholesterol can slow down its own clearance by liver cells</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • June 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 19 June 2026; doi:10.1038/d41586-026-01963-1Nature staff discuss preliminary data on the effects of GLP-1 drugs on male fertility, plus a two-year trial of a brain–computer interface.</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 25 June 2026; doi:10.1038/d41586-026-01899-6Cholesterol carried by low-density lipoprotein (LDL) drives heart disease and is cleared by liver cells expressing the receptor LDLR. A cell-signalling mechanism has been discovere</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-01925-7" target="_blank" style="color: #1e40af; text-decoration: none;">Stem cells banish severe autoimmune disease for 15 years</a>
+      <a href="https://www.nature.com/articles/d41586-026-01987-7" target="_blank" style="color: #1e40af; text-decoration: none;">AI tool spots antibiotics that fight drug-resistant gonorrhoea</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • June 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 19 June 2026; doi:10.1038/d41586-026-01925-7Two people were the first to receive the therapy for a condition that damages the spinal cord and optic nerve.</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 24 June 2026; doi:10.1038/d41586-026-01987-7The bacterium Neisseria gonorrhoeae has evolved resistance to most antibiotics used to treat it, but a machine-learning screen reveals potential therapies.</div>
   </div>
 </div>
 
