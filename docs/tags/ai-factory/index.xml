@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Physical-Ai on Sinclair Huang, HEC Liège, Executive DBA</title>
-    <link>https://sinclairhuang.org/tags/physical-ai/</link>
-    <description>Recent content in Physical-Ai on Sinclair Huang, HEC Liège, Executive DBA</description>
+    <title>Ai-Factory on Sinclair Huang, HEC Liège, Executive DBA</title>
+    <link>https://sinclairhuang.org/tags/ai-factory/</link>
+    <description>Recent content in Ai-Factory on Sinclair Huang, HEC Liège, Executive DBA</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sinclairhuang.org/tags/physical-ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sinclairhuang.org/tags/ai-factory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI 需求沒有消失，但價格開始接受壓力測試</title>
       <link>https://sinclairhuang.org/blog/2026-06-29-ai/</link>
       <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/blog/2026-06-29-ai/</guid>
       <description>A Taiwan supply-chain note on sovereign AI, physical AI, power, quantum — and valuation stressSinclair2026–06–29本文以中文寫作，從台灣供應鏈、市場情緒與個人現場觀察出發，觀察 AI需求、資本支出、實體部署與估值壓力之間的拉扯。Written in Chinese, from a Taiw</description>
-    </item>
-    <item>
-      <title>AI Is Getting a Ticker, an Agent, and a Body</title>
-      <link>https://sinclairhuang.org/blog/2026-06-08-ai-is-getting-a-ticker-an-agent-and-a-body/</link>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/blog/2026-06-08-ai-is-getting-a-ticker-an-agent-and-a-body/</guid>
-      <description>Why the second AI revolution may be bigger — and riskier — than the firstSinclair HuangAI Infrastructure Notes｜Article 5*Field Note v4 — updated with GTC Taipei and statistical-science reference mater</description>
     </item>
   </channel>
 </rss>

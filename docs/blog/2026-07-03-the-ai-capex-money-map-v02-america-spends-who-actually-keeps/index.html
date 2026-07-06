@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin? | Sinclair Huang, HEC Liège, Executive DBA</title>
+<meta name="keywords" content="ai-capex, semiconductors, ai, hbm, cowos">
+<meta name="description" content="The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?From $650B to HBM, CoWoS and power — mapping who gets paid, who keeps margin, and when the bottlenecks move.Most people are ">
+<meta name="author" content="">
+<link rel="canonical" href="https://sinclairhuang.org/blog/2026-07-03-the-ai-capex-money-map-v02-america-spends-who-actually-keeps/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sinclairhuang.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sinclairhuang.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sinclairhuang.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sinclairhuang.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sinclairhuang.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://sinclairhuang.org/blog/2026-07-03-the-ai-capex-money-map-v02-america-spends-who-actually-keeps/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google" content="notranslate">
+
+
+
+<meta property="og:url" content="https://sinclairhuang.org/blog/2026-07-03-the-ai-capex-money-map-v02-america-spends-who-actually-keeps/">
+  <meta property="og:site_name" content="Sinclair Huang, HEC Liège, Executive DBA">
+  <meta property="og:title" content="The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?">
+  <meta property="og:description" content="The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?From $650B to HBM, CoWoS and power — mapping who gets paid, who keeps margin, and when the bottlenecks move.Most people are ">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-07-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-07-03T00:00:00+00:00">
+    <meta property="article:tag" content="Ai-Capex">
+    <meta property="article:tag" content="Semiconductors">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="HBM">
+    <meta property="article:tag" content="CoWoS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?">
+<meta name="twitter:description" content="The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?From $650B to HBM, CoWoS and power — mapping who gets paid, who keeps margin, and when the bottlenecks move.Most people are ">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog \u0026 Insights",
+      "item": "https://sinclairhuang.org/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?",
+      "item": "https://sinclairhuang.org/blog/2026-07-03-the-ai-capex-money-map-v02-america-spends-who-actually-keeps/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?",
+  "name": "The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?",
+  "description": "The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?From $650B to HBM, CoWoS and power — mapping who gets paid, who keeps margin, and when the bottlenecks move.Most people are ",
+  "keywords": [
+    "ai-capex", "semiconductors", "ai", "hbm", "cowos"
+  ],
+  "articleBody": "The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?#### From $650B to HBM, CoWoS and power — mapping who gets paid, who keeps margin, and when the bottlenecks move.Most people are asking whether AI is a bubble. It is an important question, but not a very operational one. A better one is:\nOf all the AI capex US hyperscalers are spending, whose revenue, whose margin, and whose moat does it actually end up in?\nThis is not an investment-bank BOM model precise to every cable and connector. It is a public-data v0.2 map. The goal is not false precision — it is to separate three things that usually get blurred together: where capex becomes revenue, where revenue becomes margin, and when the bottlenecks ease. Because the answer to each is rarely the same set of companies.\n1. AI capex is not one number — it is a set of pipesReuters, citing Bridgewater, estimates that Alphabet, Amazon, Meta and Microsoft will invest roughly US$650B in AI infrastructure in 2026, up from about US$410B in 2025. One clarification up front: this is the Big Four figure. It excludes Oracle, Stargate, neoclouds like CoreWeave, xAI, and every non-US operator. So $650B is a floor for four companies, not a whole-market total. The money does not spread evenly. It splits into pipes with very different characteristics. This is the first mutually exclusive system layer (illustrative scenario, sums to 100%):\nThe key point: equipment and materials (ASML, AMAT, TEL, Advantest…) are not inside this $650B. That is TSMC’s and SK Hynix’s capex — second-order supplier spend, a different denominator. Adding it into hyperscaler spend is the double-counting error v0.1 made, and that many market charts still make.\n2. Open the box: the cost centre has moved from logic to HBM + packagingOpen the “Compute Systems” pipe, and you find the most counterintuitive structural shift of this cycle. Using Epoch AI’s B200 BOM model as a reference: B200 variable manufacturing cost is roughly US$5,700–7,300 (central ~US$6,400), of which HBM + advanced packaging together account for about two-thirds. A clean 100% stack looks like this:\nThis chart answers an investment question, not an engineering one: when a hyperscaler pays for an accelerator, where do the physical dollars go? Nvidia captures IP and platform margin at the top — but the real dollars inside the box flow heavily to SK Hynix (HBM) and TSMC (packaging). “Who can ship an AI accelerator?” stopped being a logic-die question long ago; it is now a joint constraint of memory allocation, CoWoS, substrate and test.\n3. A detail most people skip: chip margin ≠ realised marginNvidia sits on the highest margin in the chain. True. But if you anchor to a single peak quarter, you get an overly rosy picture. FY2026 Q4 GAAP / non-GAAP gross margin: 75.0% / 75.2%\nFY2026 full year: 71.1% / 71.3%\nEpoch, taking a ~$30,000–40,000 sale price against a ~$6,400 build cost, implies a chip-level gross margin near 82% — but it also notes that most Blackwell revenue comes from server and rack-scale systems, so **** realised margin at the system level runs below the chip level.****\nSo “Nvidia’s margin is high” has to be said in three layers: chip, platform, system. That is the discipline of the whole map — ****revenue flows down the chain; margin does not. ****Standing where revenue passes through is not the same as keeping the margin.\n4. The bottleneck clock: not “is it scarce” but “when does it ease”The usual piece lists CoWoS, HBM, liquid cooling and power as bottlenecks. That is useless for investing. Useful research asks four more things: how tight now? Worsening or easing? Will the new supply be eaten by next-gen demand? And what happens to the margin when it eases? CoWoS / advanced packaging: TrendForce estimates TSMC’s 2026 monthly capacity could reach 120k–140k wafers; adding 50k–60k of new OSAT capacity, industry total could approach 200k/month, narrowing the supply-demand gap from ~20% toward 10%. But ” gap narrowing” is not “bottleneck gone.” If Rubin / ASIC package area keeps growing, the constraint simply moves from wafer count to package area, yield and equipment — and the high end can stay tight into 2028–2029.\nHBM: SK Hynix says 2026 output is already sold out; a genuine bottleneck. But it is still memory — if the 2027–2028 expansion lands all at once, watch for a structural shortage reverting to a memory cycle. A counterintuitive signal worth stating plainly: in 2025, HBM share was ~61% SK Hynix, with Micron at ~21% now ahead of Samsung at ~17%. Same memory giants — yet qualification, yield and customer allocation created a gap wide enough that SK Hynix’s market value briefly passed Samsung’s. (Note: full-year snapshot; quarterly shares fluctuate.) Power / liquid cooling / site: the most underrated pipe, and the likeliest next bottleneck. The rack-power trajectory: legacy cloud 10–20kW → GB200 NVL72 ~120–132kW → 2027+ Rubin / Kyber scenarios of 300–700kW (the NVL576 “Kyber” rack is publicly discussed near ~600kW) → the industry already talks about 1MW-class. When per-rack power jumps an order of magnitude, the constraint migrates from chip and package outward to CDU, cold plate, UQD, HVDC, BBU, transformers, grid permits and construction. This is a deployment-speed bottleneck, not just a semiconductor-supply one.\nBottlenecks migrate: chip → package → memory → power/site. Whoever bets on the last bottleneck often discovers they’re mispositioned exactly when it eases, and margin normalises.\n5. The real divide: revenue capture ≠ margin captureZoom out to the national level, and the same rule amplifies: the layer collecting the most revenue is not necessarily the one keeping the most margin. In Taiwan, that is not an abstraction — it is a gross-margin staircase visible on Q1 2026 filings. All four of these companies stand at the collection point of the same Nvidia-driven capex flow: TSMC’s Q1 gross margin was 66.2%; liquid-cooling leader AVC posted a record 29.77% (server + networking now ~66.4% of revenue); Hon Hai 6.2%; Quanta 4.78%. The same hyperscaler dollar passes through four companies, and the margin retained differs by more than an order of magnitude (66.2% vs 4.78% — roughly 14×).\nThe gap is not effort; it is the physics of the business model. A full AI rack now carries a seven-figure USD price tag, and under the electronics industry’s buy-and-sell rules, the ODM pays out of its own pocket for the most expensive silicon in the box — GPUs, HBM — then assembles, ships, and waits for acceptance before collecting. The better business gets, the more cash it consumes: exploding revenue and strained operating cash flow are two faces of the same model.\nHow real is the strain? Watch what the companies themselves are doing, not what any analyst says. On its Q1 2026 call, Quanta said it is negotiating with customers to shift new projects to a consignment model — customers supplying the key components — explicitly “to relieve operating cash and gross margin” pressure. Hon Hai’s 6.2% Q1 margin was itself helped by some server programs already running on consignment. Wistron is planning a rights issue / GDR of up to 250 million shares, earmarked for overseas procurement, working capital, and bank-loan repayment. When an industry starts collectively rewriting its transaction model and tapping capital markets for working capital, that tells you more honestly than any spreadsheet: the money flows through here — it does not stay here.\nOne more ground-level detail from the same quarter shows how platform-transition risk surfaces in Taiwan first: NVIDIA revised Rubin’s vapour-chamber cooling (from a dual-piece to a single-piece design), which rattled Taiwan thermal names (Jentech hit limit-down). Hon Hai flagged the cooling-design change as a shipment-cadence item to monitor — though FII said at Computex that Rubin remains on track for H2 2026, so treat this as a cadence risk, not a confirmed delay. The point is not whether one quarter slips: it is that a single component redesign can move an entire rack’s schedule — the on-the-ground version of the Bottleneck Clock’s “server/rack integration is tightest during platform transitions,” and why suppliers concentrated in a single spec react so violently to a single design-change rumour.\n(The margin, consignment and financing details above come from Q1 2026 filings and earnings calls. The Rubin cooling-design item is treated here through market reporting and company responses: a cadence risk to monitor, not a confirmed delay.)\n6. The disaggregation signal: ASIC and the re-pricing of MediaTekIf you want one case to test the whole map, take a custom ASIC. Counterpoint projects MediaTek could take ~26% of AI ASIC server-compute shipments by 2028, near 5 million units — second only to Broadcom, roughly a tenfold jump from ~400k units in 2026. The market is re-pricing MediaTek not for the letters “AI,” but for a chain of assumptions that must be validated:\nAI ASIC is not a Broadcom-only turnkey business;\nHyperscalers are willing to unbundle compute die, I/O, HBM procurement and packaging integration;\nMediaTek’s role is more than an I/O die — per Google Cloud Next 2026 coverage, Google split its eighth-generation TPU into two architectures, with Broadcom leading the training variant (TPU 8t “Sunfish”) and MediaTek the inference variant (TPU 8i “Zebrafish”), while supply-chain reports point to a second US CSP program whose customer remains unconfirmed;\nThis is not a one-off design service but a custom-silicon platform with generational continuity and margin stickiness;\nCoWoS / HBM / TSMC allocation can support the shipment curve.\nBut here is the non-consensus risk, and it maps straight back to the US column in Section 5: if Google keeps pulling more design and HBM-procurement control in-house, one goal may be to strip out middleman markup. That would stress-test Broadcom’s turnkey margin — the market reads Google’s TPU supply-chain split as a weakening of sole-supplier economics — and it is a double-edged sword for MediaTek. You may win the volume and a design role, but if the customer captures the procurement and integration spread itself, the ” durable margin” assumption deserves a question mark. The market is pricing units; what you should watch is margin and customer concentration.\nBy mid-2026, the assumption chain has started producing checkable readings — and the three layers of evidence carry different weight, worth keeping separate:\nCompany-confirmed (hardest): on its Q1 call, MediaTek doubled its 2026 AI ASIC revenue guidance from US$1B to ~US$2B (first hyperscaler program ~$2B landing in Q4 2026), said a second program is targeted for production by end-2027, and put its cloud-ASIC TAM at ~US$70–80B by 2027 with a 10–15% share target. When a business goes from “story” to “explicit guidance,” that is management’s own stamp.\nSupply-chain-visible (next): sell-side capacity work on ASE points to MediaTek’s TPU v8 and Amazon’s Trainium 3 ramping meaningfully in final test next year — the validation signal surfacing, as this piece argued it would, in Taiwan’s packaging-and-test scheduling before it surfaces in a US analyst report.\nSell-side re-modelling (reference, not fact): sell-side numbers moved up through 2026 (a verifiable Goldman note from April modelled 2027 AI-ASIC revenue ≈ US$12.3B, ~39% of revenue). More bullish 2027/2028 figures circulating in the market (≈US$20B/US$52B, 49%/69% of revenue) could not be independently verified against a primary July note and should be treated as sell-side chatter, not fact. A Street high-end target near NT$10,000 exists (broker estimate; specific attribution unconfirmed). These are estimates, not evidence; what they pin down is which set of assumptions the market is now pricing.\nAnd on the margin line, even the bulls concede the point: sell-side generally models the next-generation program’s ASP higher but gross margin ” roughly maintained” — i.e. cost pass-through, not expansion — with at least one broker calling it slightly gross-margin dilutive, and operating leverage doing the work. In other words — the volume story is being confirmed; the margin story is still sitting the exam. That is precisely the cell of this money map you keep watching.\n7. In the last week of June, the whole story rehearsed itself in TaipeiStart with temperature. On the same MediaTek, you can read three different thermometers in Taipei at once. Foreign brokers are building assumption-chain models and raising targets. Front-line analysts on local finance shows mostly call the five-digit target “impossible” — not because they are bearish, but because ASIC competition is crowded: unless MediaTek genuinely takes Broadcom-class high-value orders, or its design capability and cost structure both clear the bar, these remain high-uncertainty assumptions. And in the same week, MediaTek became not only an analyst-model story but a retail-attention story: a local influencer’s one-lot trade made national news. That matters less as a trading anecdote than as a signal — when a stock becomes entertainment news, part of the price is no longer money flow; it is amplification. Then, the last week of June staged my deepest doubt about this story, live. The link I trust least has never been on the supply side — it is at the far end of the loop: somebody has to pay at the end of a price-hike chain. On June 25, multiple outlets reported that Apple, citing memory and storage cost inflation, raised Mac/iPad prices (~11–36%), with Apple quoted as having “never seen component prices rise so much in so short a time.” This matters less because of Apple itself than because it exposes the end of the supply-chain price hike: even the strongest brand cannot absorb every upstream cost dollar indefinitely. The next day, the market repriced that risk chain: the Taiex fell 1,683 points (third-largest single-day point drop on record), foreign investors sold ~NT$143B in one session, and MediaTek itself hit limit-down (3,880). That basic economic loop does not stop applying because the theme is called AI — and the first row it strikes back at is the market cap of the AI supply chain itself.\nThe second half of the week is just as worth recording: five days later the market rebounded, the influencer exited with a ~NT$460k profit, and the day after that, a foreign broker raised MediaTek’s target again. On the way down, Taiwan’s heavily ETF-ized passive bid and dip-buying caught the fall; on the way up, narrative did the lifting. Part of today’s price is money flow; part of it is dream. The whole point of this map is to help you separate the two.\nOne honest closing note: the counter-signal to assumption five (that capacity can support the shipment curve) — concrete crowding-out between ASIC programs and Nvidia orders at the packaging-and-test layer — is something I have not yet heard on the ground. That may mean allocation still has slack, or that the signal simply hasn’t surfaced. I treat it as an alarm clock that hasn’t rung: the day it does is the day this story moves from “volume being confirmed” to “capacity and margin grinding against each other.”\n8. Instead of guessing direction, build a tracking disciplineThis map does not hand you a “what to buy.” It hands you a set of indicators to keep updating: CoWoS: TSMC monthly capacity, OSAT ramp, package area, yield, equipment lead time.\nHBM: pricing, long-term agreements, stack mix, SK/Samsung/Micron capex each, DRAM/NAND displacement.\nPower/site: transformer lead time, HVDC/BBU adoption, grid permits, construction progress.\nServer/rack: shipments, burn-in test time, ODM margin, inventory, customer concentration.\nASIC: Google TPU, Meta MTIA, AWS Trainium volumes, and the Broadcom / MediaTek / Marvell pipeline.\nOnly one rule: keep what a vendor says (“sold out,” “in volume”) separate from what a filing confirms. The first is direction; only the second is evidence.\nAppendix: Regional Margin Capture MapThe piece is called a Money Map, so it should close on a summary of national margin capture. America spends, and Asia builds — but the margin each region retains is completely different: One line: **** This map is not a stock list. It tells you whether a company stands at the collection point or merely next to the market’s amplifier.****\nConclusion: money flow doesn’t lie; bottlenecks decide who keeps the marginAI FOMO isn’t necessarily wrong. But long-run returns aren’t decided by buying the letters “AI” — they’re decided by whether the company you back stands at the collection point of this capex flow, or merely next to the market’s amplifier. \u003e Money flow doesn’t lie. Bottlenecks decide who actually keeps the margin.\nModel boundary: This is not a full investment-bank BOM model down to every cable, connector or construction material. It is a public-data v0.2 map of AI capex flows, margin capture and bottleneck timing. The goal is not false precision — it is to avoid double counting, separate direct hyperscaler spend from second-order supplier capex, and ask which layers actually retain margin.\nAuthorSinclair Huang Research notes on AI infrastructure, semiconductors, supply chains, and technology strategy.\nReferences / Data Anchors1. Bridgewater Associates — US Big Four 2026 AI infrastructure investment expected around US$650B versus US$410B in 2025. Epoch AI — B200 variable manufacturing cost estimate and HBM + advanced packaging cost share.\nNVIDIA — FY2026 revenue and gross-margin disclosures.\nTrendForce — TSMC CoWoS capacity and supply-demand-gap estimates.\nCounterpoint Research — MediaTek AI ASIC server-compute shipment forecast.\nTSMC Investor Relations — Q1 2026 gross margin and quarterly results.\nGoogle Cloud / industry coverage — TPU 8t and TPU 8i architecture split.\nPublic company filings, earnings calls, and market reporting for Taiwan ODM, thermal, ASIC, and market-data sections.\nData / Source Notes (14 items) and an Extended Source Log (21 items) are maintained with the working draft; the Chinese full version is published on Substack / Vocus (方格子).\nFurther Reading / Tracking List- CoWoS: TSMC monthly capacity, OSAT ramp, package area, yield, equipment lead time. HBM: pricing, long-term agreements, stack mix, SK Hynix / Samsung / Micron capex, DRAM / NAND displacement.\nPower/site: transformer lead time, HVDC / BBU adoption, grid permits, construction progress.\nServer/rack: ODM margin, burn-in test time, inventory, customer concentration, consignment share.\nASIC: Google TPU, AWS Trainium, Meta MTIA, and the Broadcom / MediaTek / Marvell pipeline.\nDisclaimerThis is research and industry analysis, not investment advice. Figures are drawn from public data, industry reports, media reporting and v0.2 directional estimates, and should be continuously updated against filings, monthly revenue, earnings calls, orders, pricing, lead times, gross margin and capacity progress. Items marked as sell-side estimates or unverified should be treated as estimates, not facts. Hashtags#AI #Semiconductors #AICapex #HBM #CoWoS #TSMC #MediaTek #Nvidia #SupplyChain #Taiwan #ASIC #DataCenters #Investing This article was originally published on Medium. Read the full version with charts and figures →\n",
+  "wordCount" : "3068",
+  "inLanguage": "en",
+  "datePublished": "2026-07-03T00:00:00Z",
+  "dateModified": "2026-07-03T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sinclairhuang.org/blog/2026-07-03-the-ai-capex-money-map-v02-america-spends-who-actually-keeps/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sinclair Huang, HEC Liège, Executive DBA",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sinclairhuang.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sinclairhuang.org/" accesskey="h" title="Sinclair Huang, HEC Liège, Executive DBA (Alt + H)">Sinclair Huang, HEC Liège, Executive DBA</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sinclairhuang.org/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/about" title="Research Profile">
+                    <span>Research Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/publications" title="Publications">
+                    <span>Publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/projects" title="Research Portfolio">
+                    <span>Research Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/news" title="News">
+                    <span>News</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?
+    </h1>
+    <div class="post-description">
+      The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?From $650B to HBM, CoWoS and power — mapping who gets paid, who keeps margin, and when the bottlenecks move.Most people are 
+    </div>
+    <div class="post-meta"><span title='2026-07-03 00:00:00 +0000 UTC'>July 3, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h3 id="the-ai-capex-money-map-v02america-spends-who-actually-keeps-themargin-from-650b-to-hbm-cowos-and-powermapping-who-gets-paid-who-keeps-margin-and-when-the-bottlenecks-movemost-people-are-asking-whether-ai-is-a-bubble-it-is-an-important-question-but-not-a-very-operational-one">The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?#### From $650B to HBM, CoWoS and power — mapping who gets paid, who keeps margin, and when the bottlenecks move.Most people are asking whether AI is a bubble. It is an important question, but not a very operational one.<a hidden class="anchor" aria-hidden="true" href="#the-ai-capex-money-map-v02america-spends-who-actually-keeps-themargin-from-650b-to-hbm-cowos-and-powermapping-who-gets-paid-who-keeps-margin-and-when-the-bottlenecks-movemost-people-are-asking-whether-ai-is-a-bubble-it-is-an-important-question-but-not-a-very-operational-one">#</a></h3>
+<p>A better one is:</p>
+<p><strong><strong>Of all the AI capex US hyperscalers are spending, whose revenue, whose margin, and whose moat does it actually end up in?</strong></strong></p>
+<p>This is not an investment-bank BOM model precise to every cable and connector. It is a public-data <strong><strong>v0.2 map</strong></strong>. The goal is not false precision — it is to separate three things that usually get blurred together: <strong><strong>where capex becomes revenue, where revenue becomes margin, and when the bottlenecks ease.</strong></strong> Because the answer to each is rarely the same set of companies.</p>
+<h4 id="1-ai-capex-is-not-one-numberit-is-a-set-ofpipesreuters-citing-bridgewater-estimates-that-alphabet-amazon-meta-and-microsoft-will-invest-roughly-us650b-in-ai-infrastructure-in-2026-up-from-about-us410b-in-2025-one-clarification-up-front-this-is-the-big-four-figure-it-excludes-oracle-stargate-neoclouds-like-coreweave-xai-and-every-non-us-operator-so-650b-is-a-floor-for-four-companies-not-a-whole-market-total">1. AI capex is not one number — it is a set of pipesReuters, citing Bridgewater, estimates that Alphabet, Amazon, Meta and Microsoft will invest roughly <strong><strong>US$650B</strong></strong> in AI infrastructure in 2026, up from about US$410B in 2025. One clarification up front: this is the <strong><strong>Big Four</strong></strong> figure. It excludes Oracle, Stargate, neoclouds like CoreWeave, xAI, and every non-US operator. So $650B is a <strong><strong>floor</strong></strong> for four companies, not a whole-market total.<a hidden class="anchor" aria-hidden="true" href="#1-ai-capex-is-not-one-numberit-is-a-set-ofpipesreuters-citing-bridgewater-estimates-that-alphabet-amazon-meta-and-microsoft-will-invest-roughly-us650b-in-ai-infrastructure-in-2026-up-from-about-us410b-in-2025-one-clarification-up-front-this-is-the-big-four-figure-it-excludes-oracle-stargate-neoclouds-like-coreweave-xai-and-every-non-us-operator-so-650b-is-a-floor-for-four-companies-not-a-whole-market-total">#</a></h4>
+<p>The money does not spread evenly. It splits into pipes with very different characteristics. This is the first mutually exclusive system layer (illustrative scenario, sums to 100%):</p>
+<p>The key point: equipment and materials (ASML, AMAT, TEL, Advantest…) are <strong><strong>not</strong></strong> inside this $650B. That is TSMC’s and SK Hynix’s capex — second-order supplier spend, a different denominator. Adding it into hyperscaler spend is the double-counting error v0.1 made, and that many market charts still make.</p>
+<h4 id="2-open-the-box-the-cost-centre-has-moved-from-logic-to-hbm--packagingopen-the-compute-systems-pipe-and-you-find-the-most-counterintuitive-structural-shift-of-thiscycle">2. Open the box: the cost centre has moved from logic to HBM + packagingOpen the “Compute Systems” pipe, and you find the most counterintuitive structural shift of this cycle.<a hidden class="anchor" aria-hidden="true" href="#2-open-the-box-the-cost-centre-has-moved-from-logic-to-hbm--packagingopen-the-compute-systems-pipe-and-you-find-the-most-counterintuitive-structural-shift-of-thiscycle">#</a></h4>
+<p>Using Epoch AI’s B200 BOM model as a reference: B200 variable manufacturing cost is roughly US$5,700–7,300 (central ~US$6,400), of which <strong><strong>HBM + advanced packaging together account for about two-thirds.</strong></strong> A clean 100% stack looks like this:</p>
+<p>This chart answers an investment question, not an engineering one: <strong><strong>when a hyperscaler pays for an accelerator, where do the physical dollars go?</strong></strong> Nvidia captures IP and platform margin at the top — but the real dollars inside the box flow heavily to <strong><strong>SK Hynix (HBM) and TSMC (packaging)</strong></strong>. “Who can ship an AI accelerator?” stopped being a logic-die question long ago; it is now a joint constraint of memory allocation, CoWoS, substrate and test.</p>
+<h4 id="3-a-detail-most-people-skip-chip-margin--realisedmarginnvidia-sits-on-the-highest-margin-in-the-chain-true-but-if-you-anchor-to-a-single-peak-quarter-you-get-an-overly-rosypicture">3. A detail most people skip: chip margin ≠ realised marginNvidia sits on the highest margin in the chain. True. But if you anchor to a single peak quarter, you get an overly rosy picture.<a hidden class="anchor" aria-hidden="true" href="#3-a-detail-most-people-skip-chip-margin--realisedmarginnvidia-sits-on-the-highest-margin-in-the-chain-true-but-if-you-anchor-to-a-single-peak-quarter-you-get-an-overly-rosypicture">#</a></h4>
+<ul>
+<li>
+<p>FY2026 <strong><strong>Q4</strong></strong> GAAP / non-GAAP gross margin: <strong><strong>75.0% / 75.2%</strong></strong></p>
+</li>
+<li>
+<p>FY2026 <strong><strong>full year</strong></strong>: <strong><strong>71.1% / 71.3%</strong></strong></p>
+</li>
+<li>
+<p>Epoch, taking a ~$30,000–40,000 sale price against a ~$6,400 build cost, implies a <strong><strong>chip-level</strong></strong> gross margin near 82% — but it also notes that most Blackwell revenue comes from server and rack-scale systems, so **** realised margin at the system level runs below the chip level.****</p>
+</li>
+</ul>
+<p>So “Nvidia’s margin is high” has to be said in three layers: chip, platform, system. That is the discipline of the whole map — ****revenue flows down the chain; margin does not. ****Standing where revenue passes through is not the same as keeping the margin.</p>
+<h4 id="4-the-bottleneck-clock-not-is-it-scarce-but-when-does-iteasethe-usual-piece-lists-cowos-hbm-liquid-cooling-and-power-as-bottlenecks-that-is-useless-for-investing-useful-research-asks-four-more-things-how-tight-now-worsening-or-easing-will-the-new-supply-be-eaten-by-next-gen-demand-and-what-happens-to-the-margin-when-iteases">4. The bottleneck clock: not “is it scarce” but “when does it ease”The usual piece lists CoWoS, HBM, liquid cooling and power as bottlenecks. That is useless for investing. Useful research asks four more things: how tight now? Worsening or easing? Will the new supply be eaten by next-gen demand? And what happens to the margin when it eases?<a hidden class="anchor" aria-hidden="true" href="#4-the-bottleneck-clock-not-is-it-scarce-but-when-does-iteasethe-usual-piece-lists-cowos-hbm-liquid-cooling-and-power-as-bottlenecks-that-is-useless-for-investing-useful-research-asks-four-more-things-how-tight-now-worsening-or-easing-will-the-new-supply-be-eaten-by-next-gen-demand-and-what-happens-to-the-margin-when-iteases">#</a></h4>
+<p><strong><strong>CoWoS / advanced packaging:</strong></strong> TrendForce estimates TSMC’s 2026 monthly capacity could reach 120k–140k wafers; adding 50k–60k of new OSAT capacity, industry total could approach 200k/month, narrowing the supply-demand gap from ~20% toward 10%. But <strong><strong>” gap narrowing” is not “bottleneck gone.”</strong></strong> If Rubin / ASIC package area keeps growing, the constraint simply moves from wafer count to package area, yield and equipment — and the high end can stay tight into 2028–2029.</p>
+<ul>
+<li><strong><strong>HBM:</strong></strong> SK Hynix says 2026 output is already sold out; a genuine bottleneck. But it is still memory — if the 2027–2028 expansion lands all at once, watch for a structural shortage reverting to a memory cycle. A counterintuitive signal worth stating plainly: in 2025, HBM share was ~61% SK Hynix, with <strong><strong>Micron at ~21% now ahead of Samsung at ~17%.</strong></strong> Same memory giants — yet qualification, yield and customer allocation created a gap wide enough that SK Hynix’s market value briefly passed Samsung’s. (Note: full-year snapshot; quarterly shares fluctuate.)</li>
+</ul>
+<p><strong><strong>Power / liquid cooling / site:</strong></strong> the most underrated pipe, and the likeliest <strong><strong>next</strong></strong> bottleneck. The rack-power trajectory: legacy cloud 10–20kW → GB200 NVL72 ~120–132kW → 2027+ Rubin / Kyber scenarios of 300–700kW (the NVL576 “Kyber” rack is publicly discussed near ~600kW) → the industry already talks about 1MW-class. When per-rack power jumps an order of magnitude, the constraint migrates from chip and package outward to CDU, cold plate, UQD, HVDC, BBU, transformers, grid permits and construction. <strong><strong>This is a deployment-speed bottleneck, not just a semiconductor-supply one.</strong></strong></p>
+<p>Bottlenecks migrate: chip → package → memory → power/site. Whoever bets on the <strong>last</strong> bottleneck often discovers they’re mispositioned exactly when it eases, and margin normalises.</p>
+<h4 id="5-the-real-divide-revenue-capture--margincapturezoom-out-to-the-national-level-and-the-same-rule-amplifies-the-layer-collecting-the-most-revenue-is-not-necessarily-the-one-keeping-the-most-margin">5. The real divide: revenue capture ≠ margin captureZoom out to the national level, and the same rule amplifies: <strong><strong>the layer collecting the most revenue is not necessarily the one keeping the most margin.</strong></strong><a hidden class="anchor" aria-hidden="true" href="#5-the-real-divide-revenue-capture--margincapturezoom-out-to-the-national-level-and-the-same-rule-amplifies-the-layer-collecting-the-most-revenue-is-not-necessarily-the-one-keeping-the-most-margin">#</a></h4>
+<p>In Taiwan, that is not an abstraction — it is a gross-margin staircase visible on Q1 2026 filings. All four of these companies stand at the collection point of the same Nvidia-driven capex flow: TSMC’s Q1 gross margin was 66.2%; liquid-cooling leader AVC posted a record 29.77% (server + networking now ~66.4% of revenue); Hon Hai 6.2%; Quanta 4.78%. <strong><strong>The same hyperscaler dollar passes through four companies, and the margin retained differs by more than an order of magnitude</strong></strong> (66.2% vs 4.78% — roughly 14×).</p>
+<p>The gap is not effort; it is the physics of the business model. A full AI rack now carries a seven-figure USD price tag, and under the electronics industry’s buy-and-sell rules, the ODM pays out of its own pocket for the most expensive silicon in the box — GPUs, HBM — then assembles, ships, and waits for acceptance before collecting. The better business gets, the more cash it consumes: <strong><strong>exploding revenue and strained operating cash flow are two faces of the same model.</strong></strong></p>
+<p>How real is the strain? Watch what the companies themselves are doing, not what any analyst says. On its Q1 2026 call, Quanta said it is negotiating with customers to shift new projects to a <strong><strong>consignment model — customers supplying the key components — explicitly “to relieve operating cash and gross margin” pressure.</strong></strong> Hon Hai’s 6.2% Q1 margin was itself helped by some server programs already running on consignment. Wistron is planning a rights issue / GDR of up to 250 million shares, earmarked for overseas procurement, working capital, and bank-loan repayment. <strong><strong>When an industry starts collectively rewriting its transaction model and tapping capital markets for working capital, that tells you more honestly than any spreadsheet: the money flows through here — it does not stay here.</strong></strong></p>
+<p>One more ground-level detail from the same quarter shows how platform-transition risk surfaces in Taiwan first: NVIDIA revised Rubin’s vapour-chamber cooling (from a dual-piece to a single-piece design), which rattled Taiwan thermal names (Jentech hit limit-down). Hon Hai flagged the cooling-design change as a shipment-cadence item <strong><strong>to monitor</strong></strong> — though FII said at Computex that Rubin remains on track for H2 2026, so treat this as a cadence risk, not a confirmed delay. The point is not whether one quarter slips: it is that <strong><strong>a single component redesign can move an entire rack’s schedule</strong></strong> — the on-the-ground version of the Bottleneck Clock’s “server/rack integration is tightest during platform transitions,” and why suppliers concentrated in a single spec react so violently to a single design-change rumour.</p>
+<p><strong>(The margin, consignment and financing details above come from Q1 2026 filings and earnings calls. The Rubin cooling-design item is treated here through market reporting and company responses: a cadence risk to monitor, not a confirmed delay.)</strong></p>
+<h4 id="6-the-disaggregation-signal-asic-and-the-re-pricing-ofmediatekif-you-want-one-case-to-test-the-whole-map-take-a-customasic">6. The disaggregation signal: ASIC and the re-pricing of MediaTekIf you want one case to test the whole map, take a custom ASIC.<a hidden class="anchor" aria-hidden="true" href="#6-the-disaggregation-signal-asic-and-the-re-pricing-ofmediatekif-you-want-one-case-to-test-the-whole-map-take-a-customasic">#</a></h4>
+<p>Counterpoint projects MediaTek could take ~<strong><strong>26% of AI ASIC server-compute shipments by 2028, near 5 million units</strong></strong> — second only to Broadcom, roughly a tenfold jump from ~400k units in 2026. The market is re-pricing MediaTek not for the letters “AI,” but for a chain of assumptions that <strong><strong>must be validated</strong></strong>:</p>
+<ol>
+<li>
+<p>AI ASIC is not a Broadcom-only turnkey business;</p>
+</li>
+<li>
+<p>Hyperscalers are willing to unbundle compute die, I/O, HBM procurement and packaging integration;</p>
+</li>
+<li>
+<p>MediaTek’s role is more than an I/O die — per Google Cloud Next 2026 coverage, Google split its eighth-generation TPU into two architectures, with <strong><strong>Broadcom leading the training variant (TPU 8t “Sunfish”) and MediaTek the inference variant (TPU 8i “Zebrafish”)</strong></strong>, while supply-chain reports point to a second US CSP program whose customer remains unconfirmed;</p>
+</li>
+<li>
+<p>This is not a one-off design service but a custom-silicon platform with generational continuity and margin stickiness;</p>
+</li>
+<li>
+<p>CoWoS / HBM / TSMC allocation can support the shipment curve.</p>
+</li>
+</ol>
+<p>But here is the non-consensus risk, and it maps straight back to the US column in Section 5: <strong><strong>if Google keeps pulling more design and HBM-procurement control in-house, one goal may be to strip out middleman markup.</strong></strong> That would stress-test Broadcom’s turnkey margin — the market reads Google’s TPU supply-chain split as a weakening of sole-supplier economics — and it is a double-edged sword for MediaTek. You may win the volume and a design role, but if the customer captures the procurement and integration spread itself, the <strong><strong>” durable margin” assumption deserves a question mark.</strong></strong> The market is pricing units; what you should watch is margin and customer concentration.</p>
+<p>By mid-2026, the assumption chain has started producing checkable readings — and the three layers of evidence carry different weight, worth keeping separate:</p>
+<p><strong><strong>Company-confirmed (hardest):</strong></strong> on its Q1 call, MediaTek <strong><strong>doubled its 2026 AI ASIC revenue guidance from US$1B to ~US$2B</strong></strong> (first hyperscaler program ~$2B landing in Q4 2026), said a second program is targeted for production by end-2027, and put its cloud-ASIC TAM at ~US$70–80B by 2027 with a 10–15% share target. When a business goes from “story” to “explicit guidance,” that is management’s own stamp.</p>
+<p><strong><strong>Supply-chain-visible (next):</strong></strong> sell-side capacity work on ASE points to <strong><strong>MediaTek’s TPU v8 and Amazon’s Trainium 3 ramping meaningfully in final test next year</strong></strong> — the validation signal surfacing, as this piece argued it would, in Taiwan’s packaging-and-test scheduling before it surfaces in a US analyst report.</p>
+<p><strong><strong>Sell-side re-modelling (reference, not fact):</strong></strong> sell-side numbers moved up through 2026 (a verifiable Goldman note from April modelled 2027 AI-ASIC revenue ≈ US$12.3B, ~39% of revenue). More bullish 2027/2028 figures circulating in the market (≈US$20B/US$52B, 49%/69% of revenue) <strong><strong>could not be independently verified against a primary July note and should be treated as sell-side chatter, not fact.</strong></strong> A Street high-end target near NT$10,000 exists (broker estimate; specific attribution unconfirmed). These are estimates, not evidence; what they pin down is <strong>which set of assumptions the market is now pricing.</strong></p>
+<p>And on the margin line, even the bulls concede the point: sell-side generally models the next-generation program’s ASP higher but gross margin <strong><strong>” roughly maintained”</strong></strong> — i.e. cost pass-through, not expansion — with at least one broker calling it <strong><strong>slightly gross-margin dilutive</strong></strong>, and operating leverage doing the work. In other words — <strong><strong>the volume story is being confirmed; the margin story is still sitting the exam.</strong></strong> That is precisely the cell of this money map you keep watching.</p>
+<h4 id="7-in-the-last-week-of-june-the-whole-story-rehearsed-itself-intaipeistart-with-temperature-on-the-same-mediatek-you-can-read-three-different-thermometers-in-taipei-at-once-foreign-brokers-are-building-assumption-chain-models-and-raising-targets-front-line-analysts-on-local-finance-shows-mostly-call-the-five-digit-target-impossiblenot-because-they-are-bearish-but-because-asic-competition-is-crowded-unless-mediatek-genuinely-takes-broadcom-class-high-value-orders-or-its-design-capability-and-cost-structure-both-clear-the-bar-these-remain-high-uncertainty-assumptions-and-in-the-same-week-mediatek-became-not-only-an-analyst-model-story-but-a-retail-attention-story-a-local-influencers-one-lot-trade-made-national-news-that-matters-less-as-a-trading-anecdote-than-as-a-signalwhen-a-stock-becomes-entertainment-news-part-of-the-price-is-no-longer-money-flow-it-is-amplification">7. In the last week of June, the whole story rehearsed itself in TaipeiStart with temperature. On the same MediaTek, you can read three different thermometers in Taipei at once. Foreign brokers are building assumption-chain models and raising targets. Front-line analysts on local finance shows mostly call the five-digit target “impossible” — not because they are bearish, but because ASIC competition is crowded: unless MediaTek genuinely takes Broadcom-class high-value orders, or its design capability and cost structure both clear the bar, these remain high-uncertainty assumptions. And in the same week, MediaTek became not only an analyst-model story but a retail-attention story: a local influencer’s <strong>one-lot</strong> trade made national news. That matters less as a trading anecdote than as a signal — <strong><strong>when a stock becomes entertainment news, part of the price is no longer money flow; it is amplification.</strong></strong><a hidden class="anchor" aria-hidden="true" href="#7-in-the-last-week-of-june-the-whole-story-rehearsed-itself-intaipeistart-with-temperature-on-the-same-mediatek-you-can-read-three-different-thermometers-in-taipei-at-once-foreign-brokers-are-building-assumption-chain-models-and-raising-targets-front-line-analysts-on-local-finance-shows-mostly-call-the-five-digit-target-impossiblenot-because-they-are-bearish-but-because-asic-competition-is-crowded-unless-mediatek-genuinely-takes-broadcom-class-high-value-orders-or-its-design-capability-and-cost-structure-both-clear-the-bar-these-remain-high-uncertainty-assumptions-and-in-the-same-week-mediatek-became-not-only-an-analyst-model-story-but-a-retail-attention-story-a-local-influencers-one-lot-trade-made-national-news-that-matters-less-as-a-trading-anecdote-than-as-a-signalwhen-a-stock-becomes-entertainment-news-part-of-the-price-is-no-longer-money-flow-it-is-amplification">#</a></h4>
+<p>Then, the last week of June staged my deepest doubt about this story, live. The link I trust least has never been on the supply side — it is at the far end of the loop: <strong><strong>somebody has to pay at the end of a price-hike chain.</strong></strong> On June 25, multiple outlets reported that Apple, citing memory and storage cost inflation, raised Mac/iPad prices (~11–36%), with Apple quoted as having “never seen component prices rise so much in so short a time.” This matters less because of Apple itself than because it exposes the <strong><strong>end</strong></strong> of the supply-chain price hike: even the strongest brand cannot absorb every upstream cost dollar indefinitely. The next day, the market repriced that risk chain: the Taiex fell 1,683 points (third-largest single-day point drop on record), foreign investors sold ~NT$143B in one session, and MediaTek itself hit limit-down (3,880). <strong><strong>That basic economic loop does not stop applying because the theme is called AI — and the first row it strikes back at is the market cap of the AI supply chain itself.</strong></strong></p>
+<p>The second half of the week is just as worth recording: five days later the market rebounded, the influencer exited with a ~NT$460k profit, and the day after that, a foreign broker raised MediaTek’s target again. On the way down, Taiwan’s heavily ETF-ized passive bid and dip-buying caught the fall; on the way up, narrative did the lifting. <strong><strong>Part of today’s price is money flow; part of it is dream. The whole point of this map is to help you separate the two.</strong></strong></p>
+<p>One honest closing note: the counter-signal to assumption five (that capacity can support the shipment curve) — concrete crowding-out between ASIC programs and Nvidia orders at the packaging-and-test layer — is something I have <strong>not</strong> yet heard on the ground. That may mean allocation still has slack, or that the signal simply hasn’t surfaced. I treat it as an alarm clock that hasn’t rung: the day it does is the day this story moves from “volume being confirmed” to “capacity and margin grinding against each other.”</p>
+<h4 id="8-instead-of-guessing-direction-build-a-tracking-disciplinethis-map-does-not-hand-you-a-what-to-buy-it-hands-you-a-set-of-indicators-to-keep-updating">8. Instead of guessing direction, build a tracking disciplineThis map does not hand you a “what to buy.” It hands you a set of indicators to keep updating:<a hidden class="anchor" aria-hidden="true" href="#8-instead-of-guessing-direction-build-a-tracking-disciplinethis-map-does-not-hand-you-a-what-to-buy-it-hands-you-a-set-of-indicators-to-keep-updating">#</a></h4>
+<ul>
+<li>
+<p><strong><strong>CoWoS:</strong></strong> TSMC monthly capacity, OSAT ramp, package area, yield, equipment lead time.</p>
+</li>
+<li>
+<p><strong><strong>HBM:</strong></strong> pricing, long-term agreements, stack mix, SK/Samsung/Micron capex each, DRAM/NAND displacement.</p>
+</li>
+<li>
+<p><strong><strong>Power/site:</strong></strong> transformer lead time, HVDC/BBU adoption, grid permits, construction progress.</p>
+</li>
+<li>
+<p><strong><strong>Server/rack:</strong></strong> shipments, burn-in test time, ODM margin, inventory, customer concentration.</p>
+</li>
+<li>
+<p><strong><strong>ASIC:</strong></strong> Google TPU, Meta MTIA, AWS Trainium volumes, and the Broadcom / MediaTek / Marvell pipeline.</p>
+</li>
+</ul>
+<p>Only one rule: <strong><strong>keep what a vendor says (“sold out,” “in volume”) separate from what a filing confirms.</strong></strong> The first is direction; only the second is evidence.</p>
+<h4 id="appendix-regional-margin-capturemapthe-piece-is-called-a-money-map-so-it-should-close-on-a-summary-of-national-margin-capture-america-spends-and-asia-buildsbut-the-margin-each-region-retains-is-completely-different">Appendix: Regional Margin Capture MapThe piece is called a Money Map, so it should close on a summary of national margin capture. America spends, and Asia builds — but the margin each region retains is completely different:<a hidden class="anchor" aria-hidden="true" href="#appendix-regional-margin-capturemapthe-piece-is-called-a-money-map-so-it-should-close-on-a-summary-of-national-margin-capture-america-spends-and-asia-buildsbut-the-margin-each-region-retains-is-completely-different">#</a></h4>
+<p>One line: **** This map is not a stock list. It tells you whether a company stands at the collection point or merely next to the market’s amplifier.****</p>
+<h4 id="conclusion-money-flow-doesnt-lie-bottlenecks-decide-who-keeps-themarginai-fomo-isnt-necessarily-wrong-but-long-run-returns-arent-decided-by-buying-the-letters-aitheyre-decided-by-whether-the-company-you-back-stands-at-the-collection-point-of-this-capex-flow-or-merely-next-to-the-markets-amplifier">Conclusion: money flow doesn’t lie; bottlenecks decide who keeps the marginAI FOMO isn’t necessarily wrong. But long-run returns aren’t decided by buying the letters “AI” — they’re decided by whether the company you back stands at the <strong><strong>collection point</strong></strong> of this capex flow, or merely next to the market’s <strong><strong>amplifier.</strong></strong><a hidden class="anchor" aria-hidden="true" href="#conclusion-money-flow-doesnt-lie-bottlenecks-decide-who-keeps-themarginai-fomo-isnt-necessarily-wrong-but-long-run-returns-arent-decided-by-buying-the-letters-aitheyre-decided-by-whether-the-company-you-back-stands-at-the-collection-point-of-this-capex-flow-or-merely-next-to-the-markets-amplifier">#</a></h4>
+<p>&gt; <strong><strong>Money flow doesn’t lie. Bottlenecks decide who actually keeps the margin.</strong></strong></p>
+<p><strong><strong>Model boundary:</strong></strong> This is not a full investment-bank BOM model down to every cable, connector or construction material. It is a public-data v0.2 map of AI capex flows, margin capture and bottleneck timing. The goal is not false precision — it is to avoid double counting, separate direct hyperscaler spend from second-order supplier capex, and ask which layers actually retain margin.</p>
+<h4 id="authorsinclair-huang">Author<strong>Sinclair Huang</strong><a hidden class="anchor" aria-hidden="true" href="#authorsinclair-huang">#</a></h4>
+<p>Research notes on AI infrastructure, semiconductors, supply chains, and technology strategy.</p>
+<h4 id="references--dataanchors1-bridgewater-associatesus-big-four-2026-ai-infrastructure-investment-expected-around-us650b-versus-us410b-in2025">References / Data Anchors1. <a href="https://www.bridgewater.com/understanding-ais-more-dangerous-phase-content-ctd">Bridgewater Associates</a> — US Big Four 2026 AI infrastructure investment expected around US$650B versus US$410B in 2025.<a hidden class="anchor" aria-hidden="true" href="#references--dataanchors1-bridgewater-associatesus-big-four-2026-ai-infrastructure-investment-expected-around-us650b-versus-us410b-in2025">#</a></h4>
+<ol start="2">
+<li>
+<p><a href="https://epoch.ai/data-insights/b200-cost-breakdown">Epoch AI</a> — B200 variable manufacturing cost estimate and HBM + advanced packaging cost share.</p>
+</li>
+<li>
+<p><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026">NVIDIA</a> — FY2026 revenue and gross-margin disclosures.</p>
+</li>
+<li>
+<p><a href="https://www.trendforce.com/news/2026/06/15/news-tsmc-cowos-supply-demand-gap-reportedly-seen-narrowing-from-20-to-10-by-end-2026-as-capacity-expands/">TrendForce</a> — TSMC CoWoS capacity and supply-demand-gap estimates.</p>
+</li>
+<li>
+<p><a href="https://counterpointresearch.com/en/insights/MediaTek-to-Contribute-1-in-4-AI-ASIC-Server-Compute-Shipments-in-2028">Counterpoint Research</a> — MediaTek AI ASIC server-compute shipment forecast.</p>
+</li>
+<li>
+<p><a href="https://investor.tsmc.com/english/quarterly-results/2026/q1">TSMC Investor Relations</a> — Q1 2026 gross margin and quarterly results.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive">Google Cloud</a> / industry coverage — TPU 8t and TPU 8i architecture split.</p>
+</li>
+<li>
+<p>Public company filings, earnings calls, and market reporting for Taiwan ODM, thermal, ASIC, and market-data sections.</p>
+</li>
+</ol>
+<p><strong>Data / Source Notes (14 items) and an Extended Source Log (21 items) are maintained with the working draft; the Chinese full version is published on Substack / Vocus (方格子).</strong></p>
+<h4 id="further-reading--trackinglist--cowos-tsmc-monthly-capacity-osat-ramp-package-area-yield-equipment-leadtime">Further Reading / Tracking List- CoWoS: TSMC monthly capacity, OSAT ramp, package area, yield, equipment lead time.<a hidden class="anchor" aria-hidden="true" href="#further-reading--trackinglist--cowos-tsmc-monthly-capacity-osat-ramp-package-area-yield-equipment-leadtime">#</a></h4>
+<ul>
+<li>
+<p>HBM: pricing, long-term agreements, stack mix, SK Hynix / Samsung / Micron capex, DRAM / NAND displacement.</p>
+</li>
+<li>
+<p>Power/site: transformer lead time, HVDC / BBU adoption, grid permits, construction progress.</p>
+</li>
+<li>
+<p>Server/rack: ODM margin, burn-in test time, inventory, customer concentration, consignment share.</p>
+</li>
+<li>
+<p>ASIC: Google TPU, AWS Trainium, Meta MTIA, and the Broadcom / MediaTek / Marvell pipeline.</p>
+</li>
+</ul>
+<h4 id="disclaimerthis-is-research-and-industry-analysis-not-investment-advice-figures-are-drawn-from-public-data-industry-reports-media-reporting-and-v02-directional-estimates-and-should-be-continuously-updated-against-filings-monthly-revenue-earnings-calls-orders-pricing-lead-times-gross-margin-and-capacity-progress-items-marked-as-sell-side-estimates-or-unverified-should-be-treated-as-estimates-notfacts">DisclaimerThis is research and industry analysis, not investment advice. Figures are drawn from public data, industry reports, media reporting and v0.2 directional estimates, and should be continuously updated against filings, monthly revenue, earnings calls, orders, pricing, lead times, gross margin and capacity progress. Items marked as sell-side estimates or unverified should be treated as estimates, not facts.<a hidden class="anchor" aria-hidden="true" href="#disclaimerthis-is-research-and-industry-analysis-not-investment-advice-figures-are-drawn-from-public-data-industry-reports-media-reporting-and-v02-directional-estimates-and-should-be-continuously-updated-against-filings-monthly-revenue-earnings-calls-orders-pricing-lead-times-gross-margin-and-capacity-progress-items-marked-as-sell-side-estimates-or-unverified-should-be-treated-as-estimates-notfacts">#</a></h4>
+<h4 id="hashtagsai-semiconductors-aicapex-hbm-cowos-tsmc-mediatek-nvidia-supplychain-taiwan-asic-datacenters-investing">Hashtags#AI #Semiconductors #AICapex #HBM #CoWoS #TSMC #MediaTek #Nvidia #SupplyChain #Taiwan #ASIC #DataCenters #Investing<a hidden class="anchor" aria-hidden="true" href="#hashtagsai-semiconductors-aicapex-hbm-cowos-tsmc-mediatek-nvidia-supplychain-taiwan-asic-datacenters-investing">#</a></h4>
+<hr>
+<p><em>This article was originally published on Medium. <a href="https://medium.com/@sinclairhuang/the-ai-capex-money-map-v0-2-america-spends-who-actually-keeps-the-margin-995fbcc60ea9?source=rss-1f713d63bb6a------2">Read the full version with charts and figures →</a></em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://sinclairhuang.org/tags/ai-capex/">Ai-Capex</a></li>
+      <li><a href="https://sinclairhuang.org/tags/semiconductors/">Semiconductors</a></li>
+      <li><a href="https://sinclairhuang.org/tags/ai/">AI</a></li>
+      <li><a href="https://sinclairhuang.org/tags/hbm/">HBM</a></li>
+      <li><a href="https://sinclairhuang.org/tags/cowos/">CoWoS</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://sinclairhuang.org/">Sinclair Huang, HEC Liège, Executive DBA</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

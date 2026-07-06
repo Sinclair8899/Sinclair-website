@@ -6,20 +6,76 @@
     <description>Recent content in Tags on Sinclair Huang, HEC Liège, Executive DBA</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sinclairhuang.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ai-Infrastructure</title>
-      <link>https://sinclairhuang.org/tags/ai-infrastructure/</link>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/tags/ai-infrastructure/</guid>
+      <title>AI</title>
+      <link>https://sinclairhuang.org/tags/ai/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ai-Capex</title>
+      <link>https://sinclairhuang.org/tags/ai-capex/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/ai-capex/</guid>
       <description></description>
     </item>
     <item>
       <title>CoWoS</title>
       <link>https://sinclairhuang.org/tags/cowos/</link>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/tags/cowos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HBM</title>
+      <link>https://sinclairhuang.org/tags/hbm/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/hbm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Semiconductors</title>
+      <link>https://sinclairhuang.org/tags/semiconductors/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/semiconductors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ai-Factory</title>
+      <link>https://sinclairhuang.org/tags/ai-factory/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/ai-factory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ai-Infrastructure</title>
+      <link>https://sinclairhuang.org/tags/ai-infrastructure/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/ai-infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Physical-Ai</title>
+      <link>https://sinclairhuang.org/tags/physical-ai/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/physical-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sovereign-Ai</title>
+      <link>https://sinclairhuang.org/tags/sovereign-ai/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/sovereign-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Supply-Chain-Stress-Test</title>
+      <link>https://sinclairhuang.org/tags/supply-chain-stress-test/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/tags/supply-chain-stress-test/</guid>
       <description></description>
     </item>
     <item>
@@ -30,20 +86,6 @@
       <description></description>
     </item>
     <item>
-      <title>HBM</title>
-      <link>https://sinclairhuang.org/tags/hbm/</link>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/tags/hbm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Semiconductors</title>
-      <link>https://sinclairhuang.org/tags/semiconductors/</link>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/tags/semiconductors/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Agentic-Ai</title>
       <link>https://sinclairhuang.org/tags/agentic-ai/</link>
       <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
@@ -51,24 +93,10 @@
       <description></description>
     </item>
     <item>
-      <title>AI</title>
-      <link>https://sinclairhuang.org/tags/ai/</link>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/tags/ai/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Ai-Ipo</title>
       <link>https://sinclairhuang.org/tags/ai-ipo/</link>
       <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/tags/ai-ipo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Physical-Ai</title>
-      <link>https://sinclairhuang.org/tags/physical-ai/</link>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/tags/physical-ai/</guid>
       <description></description>
     </item>
     <item>
