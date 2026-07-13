@@ -12,31 +12,31 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep" target="_blank" style="color: #1e40af; text-decoration: none;">Some of the nation’s rich are letting AI teach their kids</a>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/964539/lorde-says-ray-ban-meta-ai-glasses-are-not-sexy" target="_blank" style="color: #1e40af; text-decoration: none;">Lorde says Ray-Ban Meta AI glasses are ‘not sexy’</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • July 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Most Americans don't trust AI. It's proven that it doesn't know what safe toppings for pizza are. People don't even want to listen to AI music. But none of that matters for some of America's wealthy, who are turning to AI to teach their kids instead </div>
+    <div style="color: #334155; line-height: 1.6;">Lorde was performing at the Real Cool Festival in Madrid on Thursday and took some time during her set to speak out against AI glasses. While she didn't specify any brands in particular, it's likely she was taking a shot at festival sponsor Ray-Ban, </div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.theverge.com/gadgets/960838/grand-theft-auto-gta-6-vi-preorder-editions-buy" target="_blank" style="color: #1e40af; text-decoration: none;">Where to preorder Grand Theft Auto VI</a>
+      <a href="https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra" target="_blank" style="color: #1e40af; text-decoration: none;">Apple’s failed self-driving car program left a legacy of powerful AI chips</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">The Verge • July 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Rockstar's long-awaited Grand Theft Auto VI is launching November 19th, 2026 for PlayStation 5 and Xbox Series S/X consoles. The game will be available digitally at launch, with physical cases containing codes, not discs, so your options for preorder</div>
+    <div style="color: #334155; line-height: 1.6;">Apple's self-driving car program never really got off the ground, but it may have been what made the company's chips the powerful AI performers they are. Early in the development of the self-driving platform, Apple realized that it would need powerfu</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/" target="_blank" style="color: #1e40af; text-decoration: none;">New attack provides one more reason why AI browsers are a bad idea</a>
+      <a href="https://arstechnica.com/security/2026/07/high-severity-guest-vm-escape-is-1-of-2-linux-vulnerabilities-to-surface-this-week/" target="_blank" style="color: #1e40af; text-decoration: none;">Google pays $250K for Linux vulnerability allowing guest VM escapes</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • July 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Telling an LLM that 2 + 2 = 5 is enough to make it follow forbidden instructions.</div>
+    <div style="color: #334155; line-height: 1.6;">Both vulnerabilities allow untrusted users to gain root privileges.</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/" target="_blank" style="color: #1e40af; text-decoration: none;">Notion killing Skiff-influenced email app since most users use AI agents instead</a>
+      <a href="https://arstechnica.com/science/2026/07/us-rare-earths-flow-to-asia-as-domestic-demand-is-slow-to-emerge/" target="_blank" style="color: #1e40af; text-decoration: none;">US rare earths flow to Asia as domestic demand is slow to emerge</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Ars Technica • July 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Notion is "going all in on using agents to run your inbox."</div>
+    <div style="color: #334155; line-height: 1.6;">Miners backed by Trump admin sell to Japan, South Korea despite push to develop domestic supply chain.</div>
   </div>
 </div>
 
@@ -45,17 +45,17 @@ title: "Industry News"
 
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/d41586-026-02108-0" target="_blank" style="color: #1e40af; text-decoration: none;">Daily briefing: ‘Cyborg’ cockroaches breathe underwater with printed suit</a>
+      <a href="https://www.nature.com/articles/d41586-026-02177-1" target="_blank" style="color: #1e40af; text-decoration: none;">Daily briefing: Mutation lets octopuses make proteins with precision</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • July 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 02 July 2026; doi:10.1038/d41586-026-02108-0The insects could explore underwater for up to three hours. Plus, fake cancer studies rake in the citations and how scientists can build trust by recognizing their biases.</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 09 July 2026; doi:10.1038/d41586-026-02177-1A break in these octopuses’ protein-making machinery boosts their accuracy. Plus, a Nobel-prizewinner has left the United States for China and the effects of microgravity on the br</div>
   </div>
   <div style="margin: 1rem 0; padding: 1rem; border-left: 3px solid #16a34a; background: #f8fafc; border-radius: 0 8px 8px 0;">
     <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">
-      <a href="https://www.nature.com/articles/s41586-026-10621-5" target="_blank" style="color: #1e40af; text-decoration: none;">Harmonizing standards and resources for the medical genome</a>
+      <a href="https://www.nature.com/articles/s41586-026-10796-x" target="_blank" style="color: #1e40af; text-decoration: none;">In vivo feasibility study of humanoid robots in surgery</a>
     </div>
     <div style="font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem;">Nature News • July 2026</div>
-    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 01 July 2026; doi:10.1038/s41586-026-10621-5This Perspective examines the challenges and opportunities of genomic sequencing across multiple clinical applications, including genetic therapies, and calls for the establishment</div>
+    <div style="color: #334155; line-height: 1.6;">Nature, Published online: 08 July 2026; doi:10.1038/s41586-026-10796-xA systematic evaluation shows that contemporary humanoid robots can perform laparoscopic surgical tasks through teleoperation, highlighting both their promise and key technical cha</div>
   </div>
 </div>
 
