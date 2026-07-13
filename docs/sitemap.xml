@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sinclairhuang.org/blog/</loc>
+    <lastmod>2026-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/elder-care/</loc>
+    <lastmod>2026-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/embodied-ai/</loc>
+    <lastmod>2026-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/</loc>
+    <lastmod>2026-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/human-in-the-loop/</loc>
+    <lastmod>2026-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/physical-ai/</loc>
+    <lastmod>2026-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/robotics/</loc>
+    <lastmod>2026-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/tags/</loc>
+    <lastmod>2026-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-07-11-when-ai-leaves-the-screen-will-we-need-a-worker-a-caregiver/</loc>
+    <lastmod>2026-07-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sinclairhuang.org/tags/ai/</loc>
     <lastmod>2026-07-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/ai-capex/</loc>
-    <lastmod>2026-07-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/blog/</loc>
     <lastmod>2026-07-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/cowos/</loc>
@@ -17,13 +41,7 @@
     <loc>https://sinclairhuang.org/tags/hbm/</loc>
     <lastmod>2026-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sinclairhuang.org/</loc>
-    <lastmod>2026-07-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sinclairhuang.org/tags/semiconductors/</loc>
-    <lastmod>2026-07-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/</loc>
     <lastmod>2026-07-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/2026-07-03-the-ai-capex-money-map-v02-america-spends-who-actually-keeps/</loc>
@@ -36,9 +54,6 @@
     <lastmod>2026-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/ai-infrastructure/</loc>
-    <lastmod>2026-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/physical-ai/</loc>
     <lastmod>2026-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/sovereign-ai/</loc>
@@ -60,9 +75,6 @@
     <lastmod>2026-06-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/tags/ai-ipo/</loc>
-    <lastmod>2026-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/tags/robotics/</loc>
     <lastmod>2026-06-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/2026-06-06-ai-needs-a-place-to-land/</loc>
