@@ -1,0 +1,52 @@
+name: Daily Market Brief
+
+on:
+  schedule:
+    # 21:30 UTC on weekdays — after the US close, before Asia opens.
+    - cron: '30 21 * * 1-5'
+  workflow_dispatch:
+
+# Prevent this job from racing the other content workflows onto main.
+concurrency:
+  group: site-content-push
+  cancel-in-progress: false
+
+jobs:
+  market-brief:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch market data and generate brief
+        run: python3 .github/scripts/update_market_brief.py
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.152.2'
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --destination docs
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/market_brief.json docs
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📈 Daily market brief $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+          fi

@@ -1,0 +1,150 @@
+{{- define "main" }}
+{{/* Read from assets/, not data/: the daily_crawl workflow writes a .md into
+     data/ which breaks Hugo's data loader for the whole site. */}}
+{{- $d := false }}
+{{- with resources.Get "market_brief.json" }}{{ $d = . | transform.Unmarshal }}{{ end }}
+
+<style>
+  .mb-meta{color:var(--secondary);font-size:.82rem;margin:-.4rem 0 1.6rem}
+  .mb-meta .sep{margin:0 .4rem}
+  .mb-tag{display:inline-block;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--secondary);border:1px solid var(--border);border-radius:3px;padding:.03rem .4rem;
+    vertical-align:middle;margin-left:.4rem}
+  .mb-eyebrow{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--secondary);
+    margin:2.2rem 0 .7rem;font-weight:600}
+  .mb-brief{border-left:3px solid var(--border);padding:.1rem 0 .1rem 1.1rem;margin:0}
+  .mb-brief p{margin:.6rem 0}
+  .mb-lens{color:var(--secondary)}
+  .mb-wrap{overflow-x:auto}
+  .mb-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.9rem}
+  .mb-table th{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--secondary);
+    font-weight:600;text-align:right;padding:.45rem .55rem;border-bottom:1px solid var(--border)}
+  .mb-table th:first-child{text-align:left;padding-left:0}
+  .mb-table td{padding:.5rem .55rem;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap}
+  .mb-table td:first-child{text-align:left;padding-left:0}
+  .mb-code{color:var(--secondary);font-size:.76rem;margin-left:.35rem}
+  .mb-up{color:#1a7f4b}.mb-down{color:#b3403a}.mb-flat{color:var(--secondary)}
+  .dark .mb-up{color:#4cc38a}.dark .mb-down{color:#e5726b}
+  .mb-basket{display:flex;justify-content:space-between;gap:.8rem;padding:.8rem 0;
+    border-bottom:1px solid var(--border);align-items:baseline;flex-wrap:wrap}
+  .mb-basket .nm{font-weight:600}
+  .mb-basket .nm .zh{font-weight:400;color:var(--secondary);margin-left:.4rem;font-size:.86rem}
+  .mb-basket .chg{font-variant-numeric:tabular-nums}
+  .mb-basket .note{flex:1 1 100%;color:var(--secondary);font-size:.86rem;margin-top:.1rem}
+  .mb-members{margin-top:.5rem}
+  .mb-members summary{cursor:pointer;font-size:.8rem;color:var(--secondary);
+    display:inline-block;padding:.1rem 0;list-style:revert}
+  .mb-members summary:hover{color:var(--primary)}
+  .mb-members summary:focus-visible{outline:2px solid var(--primary);outline-offset:2px;border-radius:2px}
+  .mb-members[open] summary{margin-bottom:.35rem}
+  .mb-mtable{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;
+    font-size:.82rem;margin:.2rem 0 .3rem}
+  .mb-mtable td{padding:.28rem .5rem;border-bottom:1px solid var(--border);
+    text-align:right;white-space:nowrap}
+  .mb-mtable td:first-child{text-align:left;padding-left:0;white-space:normal;color:var(--content)}
+  .mb-mtable tr:last-child td{border-bottom:none}
+  .mb-mnote{font-size:.72rem;color:var(--secondary);margin:.1rem 0 .2rem}
+  .mb-foot{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--border);
+    color:var(--secondary);font-size:.78rem;line-height:1.65}
+  .mb-warn{color:#b3403a;font-size:.78rem;margin-top:.6rem}
+</style>
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- with .Params.subtitle }}<p class="post-description">{{ . }}</p>{{ end }}
+  </header>
+
+  {{- if $d }}
+  <p class="mb-meta">
+    {{ $d.date }}<span class="sep">·</span>收盤後自動生成<span class="mb-tag">auto</span>
+  </p>
+
+  <div class="post-content">
+    {{ .Content }}
+
+    <div class="mb-eyebrow">今日摘要 Summary</div>
+    <blockquote class="mb-brief">
+      {{- with $d.summary.facts }}<p>{{ delimit . " " }}</p>{{ end }}
+      {{- with $d.summary.lens }}<p class="mb-lens"><strong>研究視角</strong> — {{ . }}</p>{{ end }}
+    </blockquote>
+
+    {{- with $d.indices }}
+    <div class="mb-eyebrow">主要指數 Indices</div>
+    <div class="mb-wrap">
+      <table class="mb-table">
+        <thead><tr><th>指數</th><th>收盤</th><th>1D</th><th>1W</th><th>距月線</th><th>距季線</th></tr></thead>
+        <tbody>
+          {{- range . }}
+          <tr>
+            <td>{{ .name }}<span class="mb-code">{{ .code }}</span></td>
+            <td>{{ lang.FormatNumber 0 .last }}</td>
+            <td class="{{ if eq .d1 nil }}mb-flat{{ else if gt .d1 0.0 }}mb-up{{ else if lt .d1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
+              {{ if eq .d1 nil }}—{{ else }}{{ if gt .d1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .d1 }}%{{ end }}</td>
+            <td class="{{ if eq .w1 nil }}mb-flat{{ else if gt .w1 0.0 }}mb-up{{ else if lt .w1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
+              {{ if eq .w1 nil }}—{{ else }}{{ if gt .w1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .w1 }}%{{ end }}</td>
+            <td class="{{ if eq .ma20_gap nil }}mb-flat{{ else if gt .ma20_gap 0.0 }}mb-up{{ else if lt .ma20_gap 0.0 }}mb-down{{ else }}mb-flat{{ end }}"
+                {{ with .ma20 }}title="月線 {{ lang.FormatNumber 0 . }}"{{ end }}>
+              {{ if eq .ma20_gap nil }}—{{ else }}{{ if gt .ma20_gap 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .ma20_gap }}%{{ end }}</td>
+            <td class="{{ if eq .ma60_gap nil }}mb-flat{{ else if gt .ma60_gap 0.0 }}mb-up{{ else if lt .ma60_gap 0.0 }}mb-down{{ else }}mb-flat{{ end }}"
+                {{ with .ma60 }}title="季線 {{ lang.FormatNumber 0 . }}"{{ end }}>
+              {{ if eq .ma60_gap nil }}—{{ else }}{{ if gt .ma60_gap 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .ma60_gap }}%{{ end }}</td>
+          </tr>
+          {{- end }}
+        </tbody>
+      </table>
+    </div>
+    {{- end }}
+
+    {{- with $d.baskets }}
+    <div class="mb-eyebrow">研究籃子 Research Baskets</div>
+    {{- range . }}
+    <div class="mb-basket">
+      <span class="nm">{{ .name }}<span class="zh">{{ .zh }}</span></span>
+      <span class="chg {{ if gt .d1 0.0 }}mb-up{{ else if lt .d1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
+        {{ if gt .d1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .d1 }}%</span>
+      <span class="note">
+        {{- with .note }}{{ . }}<br>{{ end }}
+        {{ .count }} 檔成分 · 漲 {{ .advancers }} / 跌 {{ .decliners }}
+        {{- with .w1 }} · 週 {{ if gt . 0.0 }}+{{ end }}{{ lang.FormatNumber 1 . }}%{{ end }}
+        · 相關論述:<a href="{{ .thesis_url }}">{{ .thesis }}</a>
+        {{- with .members }}
+        <details class="mb-members">
+          <summary>成分股與當日表現</summary>
+          <table class="mb-mtable">
+            <tbody>
+              {{- range . }}
+              <tr>
+                <td>{{ .label }}<span class="mb-code">{{ .ticker }}</span></td>
+                <td class="{{ if gt .d1 0.0 }}mb-up{{ else if lt .d1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
+                  {{ if gt .d1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .d1 }}%</td>
+                <td class="{{ if eq .w1 nil }}mb-flat{{ else if gt .w1 0.0 }}mb-up{{ else if lt .w1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
+                  {{ if eq .w1 nil }}—{{ else }}{{ if gt .w1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .w1 }}%{{ end }}</td>
+              </tr>
+              {{- end }}
+            </tbody>
+          </table>
+          <p class="mb-mnote">等權重平均,非市值加權。成分為研究用途之固定名單,不定期檢視。</p>
+        </details>
+        {{- end }}
+      </span>
+    </div>
+    {{- end }}
+    {{- end }}
+
+    <p class="mb-foot">
+      本頁於每個交易日收盤後由自動管線生成:數值由管線計算,「研究視角」段落僅以已發表論述之框架描述當日型態,不構成新的因果主張。
+      內容為研究性質整理,<strong>不構成投資建議</strong>。資料來源為公開市場收盤價,可能有延遲或誤差。
+      {{- with $d.summary.warnings }}
+      <span class="mb-warn">資料警示:{{ delimit . ";" }}</span>
+      {{- end }}
+    </p>
+  </div>
+  {{- else }}
+  <div class="post-content">
+    {{ .Content }}
+    <p><em>市場資料尚未生成。管線首次執行後,此處會顯示當日摘要。</em></p>
+  </div>
+  {{- end }}
+</article>
+{{- end }}

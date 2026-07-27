@@ -37,9 +37,17 @@ theme = "PaperMod"
     url = "/news"
     weight = 6
   [[menu.main]]
+    name = "Market Brief"
+    url = "/market-brief"
+    weight = 7
+  [[menu.main]]
+    name = "Advisory"
+    url = "/advisory"
+    weight = 8
+  [[menu.main]]
     name = "Contact"
     url = "/contact"
-    weight = 7
+    weight = 9
 
 [markup.goldmark.renderer]
   unsafe = true
