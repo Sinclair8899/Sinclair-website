@@ -31,6 +31,8 @@ jobs:
 
       - name: Refresh constraint indicators
         # Slow-moving; a failure here must not block the daily price brief.
+        env:
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
         run: python3 .github/scripts/update_indicators.py || echo "indicators unchanged"
 
       - name: Setup Hugo

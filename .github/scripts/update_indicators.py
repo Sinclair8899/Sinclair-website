@@ -39,6 +39,14 @@ EPOCH_CSV = "https://epoch.ai/data/epochdb/notable_ai_models.csv"
 EPOCH_ATTRIBUTION = "Epoch AI, “Notable AI Models” (CC BY 4.0)"
 EPOCH_URL = "https://epoch.ai/data/notable-ai-models"
 
+EIA_API = "https://api.eia.gov/v2/electricity/retail-sales/data/"
+EIA_ATTRIBUTION = "U.S. Energy Information Administration, Electricity Retail Sales (public domain)"
+EIA_URL = "https://www.eia.gov/electricity/data.php"
+
+NDC_DATASET_API = "https://data.gov.tw/api/v2/rest/dataset/6099"
+NDC_ATTRIBUTION = "國家發展委員會「景氣指標及燈號」(政府資料開放授權條款第1版)"
+NDC_URL = "https://data.gov.tw/dataset/6099"
+
 
 def fetch_text(url: str, timeout: int = 60) -> str | None:
     try:
@@ -48,6 +56,187 @@ def fetch_text(url: str, timeout: int = 60) -> str | None:
     except Exception as exc:  # noqa: BLE001 - reported, never fatal
         print(f"  fetch failed {url}: {exc}", file=sys.stderr)
         return None
+
+
+def fetch_json(url: str, params: list[tuple[str, str]], timeout: int = 60):
+    """GET with repeated query keys (EIA v2 uses data[0]=, facets[x][]= style)."""
+    import urllib.parse
+    query = urllib.parse.urlencode(params)
+    try:
+        req = urllib.request.Request(f"{url}?{query}", headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return json.load(resp)
+    except Exception as exc:  # noqa: BLE001
+        print(f"  fetch failed {url}: {exc}", file=sys.stderr)
+        return None
+
+
+def us_electricity(api_key: str) -> dict | None:
+    """Annual US electricity sales to ultimate customers, all sectors.
+
+    US electricity demand was roughly flat for about fifteen years. Whether it
+    is now inflecting upward is the single most load-bearing empirical question
+    for the "power is the next binding constraint" branch -- and unlike an
+    announcement pipeline, this series is metered reality.
+    """
+    payload = fetch_json(EIA_API, [
+        ("api_key", api_key),
+        ("frequency", "annual"),
+        ("data[0]", "sales"),
+        ("facets[stateid][]", "US"),
+        ("facets[sectorid][]", "ALL"),
+        ("sort[0][column]", "period"),
+        ("sort[0][direction]", "asc"),
+        ("length", "5000"),
+    ])
+    if not payload:
+        return None
+    if "error" in payload:
+        print(f"  EIA error: {payload['error']}", file=sys.stderr)
+        return None
+
+    rows = (payload.get("response") or {}).get("data") or []
+    by_year: dict[int, float] = {}
+    for row in rows:
+        period, sales = row.get("period"), row.get("sales")
+        if period is None or sales in (None, ""):
+            continue
+        try:
+            by_year[int(period)] = by_year.get(int(period), 0.0) + float(sales)
+        except (TypeError, ValueError):
+            continue
+    if len(by_year) < 5:
+        return None
+
+    current_year = datetime.now(timezone.utc).year
+    years = sorted(y for y in by_year if y >= current_year - 15)
+    # EIA publishes the current year only partially; never let it set a trend.
+    series = [{"year": y, "twh": round(by_year[y] / 1000.0, 1), "partial": y >= current_year}
+              for y in years]
+    complete = [s for s in series if not s["partial"]]
+    if len(complete) < 5:
+        return None
+
+    latest = complete[-1]
+    base = complete[-6] if len(complete) >= 6 else complete[0]
+    span = latest["year"] - base["year"]
+    cagr = None
+    if span > 0 and base["twh"] > 0:
+        cagr = round(((latest["twh"] / base["twh"]) ** (1.0 / span) - 1.0) * 100.0, 2)
+    prior = complete[-2] if len(complete) >= 2 else None
+    yoy = round((latest["twh"] - prior["twh"]) / prior["twh"] * 100.0, 2) if prior and prior["twh"] else None
+
+    if cagr is None:
+        trend = "資料不足以判斷趨勢。"
+    elif cagr < 0.3:
+        trend = f"近 {span} 年年均成長僅 {cagr}%,大致延續長期持平的型態"
+    elif cagr < 1.0:
+        trend = f"近 {span} 年年均成長 {cagr}%,略高於過去十餘年的持平狀態"
+    else:
+        trend = f"近 {span} 年年均成長 {cagr}%,明顯脫離過去十餘年的持平型態"
+    if yoy is not None:
+        trend += f";最近一年年增 {yoy}%。"
+    else:
+        trend += "。"
+
+    partial = next((s for s in series if s["partial"]), None)
+    caveat = f"({partial['year']} 年資料未完整,未納入趨勢判斷。)" if partial else ""
+
+    return {
+        "series": series,
+        "latest_year": latest["year"],
+        "latest_twh": latest["twh"],
+        "cagr": cagr,
+        "note": (trend + "美國電力需求在過去約十五年幾乎零成長;它是否正在轉折向上,"
+                 "是《After Memory》中「電力成為下一個約束」那條分支最關鍵的實測變數——"
+                 "這是電表量到的事實,不是興建計畫的宣告。" + caveat),
+    }
+
+
+def taiwan_leading() -> dict | None:
+    """Taiwan NDC composite leading index (detrended).
+
+    Deliberately reports the index's own data month, not today's date: the
+    open dataset lags the NDC press release by several months, and presenting a
+    stale reading as current would be worse than omitting it.
+    """
+    import zipfile
+
+    meta = fetch_json(NDC_DATASET_API, [])
+    if not meta:
+        return None
+    result = meta.get("result", meta)
+    url = next((d.get("resourceDownloadUrl") for d in (result.get("distribution") or [])
+                if d.get("resourceDownloadUrl")), None)
+    if not url:
+        return None
+
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=90) as resp:
+            blob = resp.read()
+        archive = zipfile.ZipFile(io.BytesIO(blob))
+        raw = archive.read("景氣指標與燈號.csv")
+    except Exception as exc:  # noqa: BLE001
+        print(f"  NDC fetch failed: {exc}", file=sys.stderr)
+        return None
+
+    text = None
+    for encoding in ("utf-8-sig", "big5", "cp950", "utf-8"):
+        try:
+            text = raw.decode(encoding)
+            break
+        except Exception:  # noqa: BLE001
+            continue
+    if not text:
+        return None
+
+    rows = list(csv.DictReader(io.StringIO(text)))
+    key = "領先指標不含趨勢指數"
+    points = []
+    for row in rows:
+        period, value = (row.get("Date") or "").strip(), (row.get(key) or "").strip()
+        if len(period) != 6 or not value:
+            continue
+        try:
+            points.append((period, float(value)))
+        except ValueError:
+            continue
+    if len(points) < 24:
+        return None
+
+    points.sort()
+    tail = points[-24:]
+    latest_period, latest_value = tail[-1]
+    prior = next((v for p, v in reversed(tail[:-1]) if p == _shift_month(latest_period, -6)), None)
+    change6 = round(latest_value - prior, 2) if prior else None
+
+    if change6 is None:
+        trend = "近期變動資料不足。"
+    elif change6 > 0.5:
+        trend = f"近六個月上升 {change6} 點,方向偏擴張"
+    elif change6 < -0.5:
+        trend = f"近六個月下降 {abs(change6)} 點,方向偏收縮"
+    else:
+        trend = "近六個月大致持平"
+
+    return {
+        "data_period": latest_period,
+        "latest_value": round(latest_value, 1),
+        "change6": change6,
+        "series": [{"period": p, "value": round(v, 1)} for p, v in tail[::2]],
+        "note": (f"{trend}。國發會領先指標(不含趨勢)由外銷訂單、實質M1B、股價指數、受僱員工淨進入率、"
+                 f"建築物開工樓地板面積、實質半導體設備進口值與製造業營業氣候測驗點七項構成,"
+                 f"其中半導體設備進口值直接對應台灣先進產能的資本支出。"
+                 f"※ 政府開放資料的更新落後於國發會新聞稿,本欄資料月份為 "
+                 f"{latest_period[:4]}年{int(latest_period[4:]):02d}月,非當月數值。"),
+    }
+
+
+def _shift_month(period: str, delta: int) -> str:
+    year, month = int(period[:4]), int(period[4:])
+    total = year * 12 + (month - 1) + delta
+    return f"{total // 12:04d}{total % 12 + 1:02d}"
 
 
 def month_key(date_str: str) -> str | None:
@@ -250,6 +439,47 @@ def main() -> int:
             })
     else:
         warnings.append("Epoch AI 資料取得失敗,指標未更新")
+
+    eia_key = os.environ.get("EIA_API_KEY", "").strip()
+    if eia_key:
+        power = us_electricity(eia_key)
+        if power:
+            indicators.append({
+                "key": "us_electricity",
+                "title": "美國電力需求",
+                "subtitle": "US electricity sales to ultimate customers",
+                "headline": f"{power['latest_year']} 年 {power['latest_twh']:,.0f} TWh",
+                "note": power["note"],
+                "series": [{"label": str(s["year"]), "value": s["twh"],
+                            "count": None, "partial": s["partial"]}
+                           for s in power["series"]],
+                "value_unit": "TWh",
+                "source": EIA_ATTRIBUTION,
+                "source_url": EIA_URL,
+            })
+        else:
+            warnings.append("EIA 電力資料取得失敗")
+    else:
+        print("  EIA_API_KEY not set; skipping power indicator")
+
+    taiwan = taiwan_leading()
+    if taiwan:
+        period = taiwan["data_period"]
+        indicators.append({
+            "key": "tw_leading",
+            "title": "台灣景氣領先指標",
+            "subtitle": "Taiwan NDC leading index (detrended)",
+            "headline": f"{period[:4]}年{int(period[4:]):02d}月 {taiwan['latest_value']}",
+            "note": taiwan["note"],
+            "series": [{"label": f"{s['period'][2:4]}/{s['period'][4:]}", "value": s["value"],
+                        "count": None, "partial": False}
+                       for s in taiwan["series"]],
+            "value_unit": "指數(不含趨勢)",
+            "source": NDC_ATTRIBUTION,
+            "source_url": NDC_URL,
+        })
+    else:
+        warnings.append("國發會景氣指標取得失敗")
 
     if not indicators:
         print("ERROR: no indicators produced; leaving previous file in place", file=sys.stderr)
