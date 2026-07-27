@@ -1,0 +1,109 @@
+{
+  "generated_utc": "2026-07-27T07:53:17Z",
+  "date": "2026-07-27",
+  "indicators": [
+    {
+      "key": "frontier_compute",
+      "title": "前沿模型訓練算力",
+      "subtitle": "Frontier training compute",
+      "headline": "2025 年公布上限 10^26.7 FLOP",
+      "note": "以完整年度計算至 2025 年:近三年前沿訓練算力約以每年 0.75 個數量級的速度成長。前沿算力若走平,代表效率與蒸餾這類「壓縮」正在追上規模擴張——這正是《Bandwidth Thesis》要讀者盯的那條分支,而非任何單日價格。(2026 年資料尚未完整,且訓練算力估計常於發表後數月才補齊,因此未納入趨勢判斷。)",
+      "series": [
+        {
+          "label": "2018",
+          "value": 21.94,
+          "count": 24,
+          "partial": false
+        },
+        {
+          "label": "2019",
+          "value": 23.03,
+          "count": 38,
+          "partial": false
+        },
+        {
+          "label": "2020",
+          "value": 23.5,
+          "count": 33,
+          "partial": false
+        },
+        {
+          "label": "2021",
+          "value": 24.31,
+          "count": 62,
+          "partial": false
+        },
+        {
+          "label": "2022",
+          "value": 24.44,
+          "count": 60,
+          "partial": false
+        },
+        {
+          "label": "2023",
+          "value": 25.7,
+          "count": 65,
+          "partial": false
+        },
+        {
+          "label": "2024",
+          "value": 25.58,
+          "count": 46,
+          "partial": false
+        },
+        {
+          "label": "2025",
+          "value": 26.7,
+          "count": 39,
+          "partial": false
+        },
+        {
+          "label": "2026",
+          "value": 25.59,
+          "count": 11,
+          "partial": true
+        }
+      ],
+      "value_unit": "log₁₀ FLOP",
+      "source": "Epoch AI, “Notable AI Models” (CC BY 4.0)",
+      "source_url": "https://epoch.ai/data/notable-ai-models"
+    },
+    {
+      "key": "compute_diffusion",
+      "title": "前沿規模的擴散",
+      "subtitle": "Organisations reaching 1e25 FLOP",
+      "headline": "2025 年有 6 個機構達到此規模",
+      "note": "達到 1e25 FLOP 訓練規模的機構數量,反映前沿能力的擴散速度。擴散越快,該規模本身可收取的租金越薄。(2026 年資料尚未完整,僅供參考。)",
+      "series": [
+        {
+          "label": "2023",
+          "value": 3,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "2024",
+          "value": 6,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "2025",
+          "value": 6,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "2026",
+          "value": 1,
+          "count": null,
+          "partial": true
+        }
+      ],
+      "value_unit": "機構數",
+      "source": "Epoch AI, “Notable AI Models” (CC BY 4.0)",
+      "source_url": "https://epoch.ai/data/notable-ai-models"
+    }
+  ],
+  "warnings": []
+}

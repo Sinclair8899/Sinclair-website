@@ -29,6 +29,10 @@ jobs:
       - name: Fetch market data and generate brief
         run: python3 .github/scripts/update_market_brief.py
 
+      - name: Refresh constraint indicators
+        # Slow-moving; a failure here must not block the daily price brief.
+        run: python3 .github/scripts/update_indicators.py || echo "indicators unchanged"
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -42,7 +46,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add data/market_brief.json docs
+          git add assets/market_brief.json assets/indicators.json docs
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

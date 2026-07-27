@@ -3,6 +3,8 @@
      data/ which breaks Hugo's data loader for the whole site. */}}
 {{- $d := false }}
 {{- with resources.Get "market_brief.json" }}{{ $d = . | transform.Unmarshal }}{{ end }}
+{{- $ind := false }}
+{{- with resources.Get "indicators.json" }}{{ $ind = . | transform.Unmarshal }}{{ end }}
 
 <style>
   .mb-meta{color:var(--secondary);font-size:.82rem;margin:-.4rem 0 1.6rem}
@@ -44,6 +46,24 @@
   .mb-mtable td:first-child{text-align:left;padding-left:0;white-space:normal;color:var(--content)}
   .mb-mtable tr:last-child td{border-bottom:none}
   .mb-mnote{font-size:.72rem;color:var(--secondary);margin:.1rem 0 .2rem}
+  .mb-indintro{color:var(--secondary);font-size:.88rem;margin:0 0 1rem}
+  .mb-ind{padding:1rem 0;border-bottom:1px solid var(--border)}
+  .mb-ind-head{display:flex;justify-content:space-between;gap:.8rem;align-items:baseline;flex-wrap:wrap}
+  .mb-ind-head .nm{font-weight:600}
+  .mb-ind-head .zh{font-weight:400;color:var(--secondary);margin-left:.4rem;font-size:.84rem}
+  .mb-ind-val{font-variant-numeric:tabular-nums;font-size:.9rem;color:var(--secondary)}
+  .mb-bars{display:flex;align-items:flex-end;gap:.4rem;height:74px;margin:.9rem 0 .3rem;
+    padding-bottom:1.1rem;position:relative}
+  .mb-bar{flex:1 1 0;display:flex;flex-direction:column;justify-content:flex-end;
+    align-items:center;height:100%;position:relative;min-width:0}
+  .mb-bar-fill{width:100%;max-width:34px;background:var(--secondary);opacity:.55;border-radius:1px}
+  .mb-bar.is-partial .mb-bar-fill{opacity:.22;
+    background:repeating-linear-gradient(45deg,var(--secondary),var(--secondary) 2px,transparent 2px,transparent 4px)}
+  .mb-bar-lab{position:absolute;bottom:-1.1rem;font-size:.64rem;color:var(--secondary);
+    font-variant-numeric:tabular-nums;white-space:nowrap}
+  .mb-ind-unit{font-size:.7rem;color:var(--secondary);margin:.15rem 0 .5rem}
+  .mb-ind-note{font-size:.86rem;color:var(--secondary);margin:.4rem 0 .3rem}
+  .mb-ind-src{font-size:.74rem;color:var(--secondary);margin:.2rem 0 0}
   .mb-foot{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--border);
     color:var(--secondary);font-size:.78rem;line-height:1.65}
   .mb-warn{color:#b3403a;font-size:.78rem;margin-top:.6rem}
@@ -131,6 +151,37 @@
     </div>
     {{- end }}
     {{- end }}
+
+    {{- with $ind }}{{ with .indicators }}
+    <div class="mb-eyebrow">約束指標 Constraint Indicators<span class="mb-tag">緩慢變動</span></div>
+    <p class="mb-indintro">價格每天動,約束不會。這一節追蹤的是論述真正依賴的變數——變化以年計,但決定其他一切。</p>
+    {{- range . }}
+    {{- $ind_item := . }}
+    <div class="mb-ind">
+      <div class="mb-ind-head">
+        <span class="nm">{{ .title }}<span class="zh">{{ .subtitle }}</span></span>
+        <span class="mb-ind-val">{{ .headline }}</span>
+      </div>
+      {{- with .series }}
+      {{- $max := -9e99 }}{{ $min := 9e99 }}
+      {{- range . }}{{ if gt .value $max }}{{ $max = .value }}{{ end }}{{ if lt .value $min }}{{ $min = .value }}{{ end }}{{ end }}
+      {{- $span := sub $max $min }}{{ if le $span 0.0 }}{{ $span = 1.0 }}{{ end }}
+      <div class="mb-bars">
+        {{- range . }}
+        <div class="mb-bar{{ if .partial }} is-partial{{ end }}"
+             title="{{ .label }}: {{ .value }} {{ $ind_item.value_unit }}{{ if .partial }} (未完整){{ end }}">
+          <span class="mb-bar-fill" style="height:{{ math.Round (add 12.0 (mul (div (sub .value $min) $span) 76.0)) }}%"></span>
+          <span class="mb-bar-lab">{{ .label }}{{ if .partial }}*{{ end }}</span>
+        </div>
+        {{- end }}
+      </div>
+      <p class="mb-ind-unit">縱軸:{{ $ind_item.value_unit }}{{ range . }}{{ if .partial }} · *{{ .label }} 年度尚未完整,未納入趨勢判斷{{ end }}{{ end }}</p>
+      {{- end }}
+      <p class="mb-ind-note">{{ .note }}</p>
+      <p class="mb-ind-src">資料來源:<a href="{{ .source_url }}" rel="noopener">{{ .source }}</a></p>
+    </div>
+    {{- end }}
+    {{- end }}{{ end }}
 
     <p class="mb-foot">
       本頁於每個交易日收盤後由自動管線生成:數值由管線計算,「研究視角」段落僅以已發表論述之框架描述當日型態,不構成新的因果主張。
