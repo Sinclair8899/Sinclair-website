@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 
 SOURCES = [
     ("Medium", "https://medium.com/feed/@sinclairhuang"),
+    ("Substack", "https://sinclairhuang.substack.com/feed"),
 ]
 BLOG_DIR = "content/blog"
 IMPORTED_LOG = ".github/scripts/imported_medium.json"
@@ -51,11 +52,44 @@ def html_to_markdown(html):
     return html.strip()
 
 def title_to_slug(title):
+    """Build a URL slug, keeping CJK characters.
+
+    Stripping every non-ASCII character collapsed every Chinese title to the
+    same slug (e.g. both "AI離開螢幕之後…" and "從結構到行為…" became "ai"),
+    so Chinese posts collided with each other and with the existing
+    2026-06-29-ai.md. The site already serves CJK URLs (e.g. /categories/半導體/),
+    so keeping those characters is both safe and more meaningful.
+    """
     slug = title.lower()
-    slug = re.sub(r'[^a-z0-9\s-]', '', slug)
+    # keep ASCII alphanumerics, whitespace, hyphens, and CJK ideographs
+    slug = re.sub(r'[^a-z0-9\s\-㐀-䶿一-鿿豈-﫿]', '', slug)
     slug = re.sub(r'\s+', '-', slug.strip())
     slug = re.sub(r'-+', '-', slug)
     return slug[:60].rstrip('-')
+
+def find_existing_by_slug(slug):
+    """Return an existing post with this slug under ANY date, or None.
+
+    Cross-posting means the same article arrives from both Medium and Substack
+    under different URLs and often a different publication date. Matching on
+    "{date}-{slug}.md" alone therefore lets a same-day repost through as a
+    duplicate post. Matching on the slug regardless of date closes that hole.
+    """
+    # A very short slug is not distinctive enough to prove two posts are the
+    # same article; blocking on it would silently drop legitimate new posts.
+    if not slug or len(slug) < 8 or not os.path.isdir(BLOG_DIR):
+        return None
+    for name in os.listdir(BLOG_DIR):
+        if not name.endswith('.md'):
+            continue
+        stem = name[:-3]
+        # strip a leading YYYY-MM-DD- date prefix, if present
+        body = re.sub(r'^\d{4}-\d{2}-\d{2}-', '', stem)
+        # tolerate Finder-style " 2" copy suffixes already present in the repo
+        body = re.sub(r' \d+$', '', body)
+        if body == slug:
+            return name
+    return None
 
 def extract_tags(entry):
     tags = []
@@ -111,6 +145,11 @@ def process_feed(source_name, feed_url, imported):
         filepath = os.path.join(BLOG_DIR, filename)
         if os.path.exists(filepath):
             print(f"File exists: {filename}")
+            imported.append(link)
+            continue
+        existing = find_existing_by_slug(slug)
+        if existing:
+            print(f"Cross-post of an existing article, skipping: {title} (already at {existing})")
             imported.append(link)
             continue
         title_escaped = title.replace('"', '\\"')
