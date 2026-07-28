@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-27T22:34:57Z",
-  "date": "2026-07-27",
+  "generated_utc": "2026-07-28T22:34:39Z",
+  "date": "2026-07-28",
   "indicators": [
     {
       "key": "frontier_compute",
@@ -205,9 +205,91 @@
       "value_unit": "TWh",
       "source": "U.S. Energy Information Administration, Electricity Retail Sales (public domain)",
       "source_url": "https://www.eia.gov/electricity/data.php"
+    },
+    {
+      "key": "tw_leading",
+      "title": "台灣景氣領先指標",
+      "subtitle": "Taiwan NDC leading index (detrended)",
+      "headline": "2026年06月 104.2",
+      "note": "近六個月上升 1.85 點,方向偏擴張。國發會領先指標(不含趨勢)由外銷訂單、實質M1B、股價指數、受僱員工淨進入率、建築物開工樓地板面積、實質半導體設備進口值與製造業營業氣候測驗點七項構成,其中半導體設備進口值直接對應台灣先進產能的資本支出。※ 政府開放資料的更新落後於國發會新聞稿,本欄資料月份為 2026年06月,非當月數值。",
+      "series": [
+        {
+          "label": "24/07",
+          "value": 103.0,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "24/09",
+          "value": 102.7,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "24/11",
+          "value": 102.4,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "25/01",
+          "value": 102.0,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "25/03",
+          "value": 100.7,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "25/05",
+          "value": 99.6,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "25/07",
+          "value": 99.5,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "25/09",
+          "value": 100.5,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "25/11",
+          "value": 101.9,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "26/01",
+          "value": 102.5,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "26/03",
+          "value": 102.6,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "26/05",
+          "value": 103.6,
+          "count": null,
+          "partial": false
+        }
+      ],
+      "value_unit": "指數(不含趨勢)",
+      "source": "國家發展委員會「景氣指標及燈號」(政府資料開放授權條款第1版)",
+      "source_url": "https://data.gov.tw/dataset/6099"
     }
   ],
-  "warnings": [
-    "國發會景氣指標取得失敗"
-  ]
+  "warnings": []
 }
