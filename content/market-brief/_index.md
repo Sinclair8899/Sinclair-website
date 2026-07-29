@@ -1,6 +1,6 @@
 ---
-title: "Research × Markets — Daily Brief"
-subtitle: "研究視角的市場日報:用已發表的論點,每天讀一次市場。"
+title: "研究 × 市場 — 每日簡報"
+subtitle: "Research × Markets — Daily Brief · 研究視角的市場日報:用已發表的論點,每天讀一次市場。"
 description: "A daily end-of-day read of global indices and research baskets (AI infrastructure, semiconductors/HBM, robotics & autonomy, biotech × AI), framed by published working papers rather than price action alone."
 ---
 

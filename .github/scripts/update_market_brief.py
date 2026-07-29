@@ -11,6 +11,9 @@ writes a Markdown file into data/ which makes Hugo's data loader fail outright.
 
 Design rules that matter here:
   * End-of-day only. This is an observation page, not a live ticker.
+  * Intraday high/low is used only to describe the completed session
+    ("盤中一度跌破年線,收盤收復") -- never to publish a mid-session state,
+    which could be falsified by the close.
   * The generated prose states what moved. It never invents causation --
     interpretation is bounded to phrasing templates tied to published theses.
   * Any symbol that fails to fetch is dropped and reported in `warnings`,
@@ -27,7 +30,8 @@ import urllib.request
 from datetime import datetime, timezone
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Sinclair-website-brief/1.0"
-CHART = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=6mo&interval=1d"
+# range=2y because the 240-session 年線 needs ~1 year of sessions plus buffer.
+CHART = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=2y&interval=1d"
 
 INDICES = [
     ("^SOX", "費城半導體", "SOX"),
@@ -48,6 +52,7 @@ BASKETS = [
     {
         "key": "ai_infra",
         "name": "AI Infrastructure",
+        "zh_short": "AI 基礎設施",
         "zh": "算力・電力・互連",
         "note": "涵蓋加速器、網通互連,以及供電與散熱——即論述中「較難壓縮」的那幾層。",
         "members": [
@@ -64,6 +69,7 @@ BASKETS = [
     {
         "key": "semis_hbm",
         "name": "Semiconductors / HBM",
+        "zh_short": "半導體/HBM",
         "zh": "半導體・記憶體・先進封裝",
         "note": "涵蓋晶圓代工、設備與記憶體——記憶體約束是否鬆動,主要看這一籃。",
         "members": [
@@ -81,6 +87,7 @@ BASKETS = [
     {
         "key": "robotics",
         "name": "Robotics & Autonomy",
+        "zh_short": "機器人與自主",
         "zh": "機器人・自駕・無人機",
         "note": "涵蓋工業機器人、致動與自主系統——實體 AI 的執行端。",
         "members": [
@@ -97,6 +104,7 @@ BASKETS = [
     {
         "key": "bio_ai",
         "name": "Biotech × AI",
+        "zh_short": "生技×AI",
         "zh": "生技×AI・結構預測生態",
         "note": "涵蓋 AI 驅動藥物發現與其上游工具——AlphaFold 之後的價值落點在哪。",
         "members": [
@@ -113,23 +121,34 @@ BASKETS = [
 
 
 def fetch_series(symbol: str, retries: int = 3):
-    """Return (closes, meta) for a symbol, or (None, None) after retries."""
+    """Return (closes, day_high, day_low) for a symbol, or None after retries.
+
+    day_high/day_low are the latest completed session's range. Close-only data
+    hides sessions like "broke below the yearly line intraday, recovered by the
+    close", so the range of the last bar is kept; either may be None if the
+    feed omits it.
+    """
     url = CHART.format(sym=urllib.parse.quote(symbol, safe=""))
     for attempt in range(retries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=15) as resp:
                 payload = json.load(resp)
-            result = payload["chart"]["result"][0]
-            closes = [c for c in result["indicators"]["quote"][0]["close"] if c is not None]
+            quote = payload["chart"]["result"][0]["indicators"]["quote"][0]
+            closes = [c for c in quote["close"] if c is not None]
             if len(closes) < 2:
                 raise ValueError("not enough closes")
-            return closes, result.get("meta", {})
+            last_i = max(i for i, c in enumerate(quote["close"]) if c is not None)
+            highs = quote.get("high") or []
+            lows = quote.get("low") or []
+            day_high = highs[last_i] if last_i < len(highs) else None
+            day_low = lows[last_i] if last_i < len(lows) else None
+            return closes, day_high, day_low
         except Exception:
             if attempt == retries - 1:
-                return None, None
+                return None
             time.sleep(1.5 * (attempt + 1))
-    return None, None
+    return None
 
 
 def pct(new: float, old: float):
@@ -150,14 +169,15 @@ def move(closes):
 
 
 def moving_averages(closes):
-    """Position relative to the 20- and 60-session averages.
+    """Position relative to the 20-, 60-, 120- and 240-session averages.
 
-    Taiwanese and regional investors read indices against 月線 (20-session) and
-    季線 (60-session), so the level alone is less informative than whether the
-    index sits above or below those lines.
+    Taiwanese and regional investors read indices against 月線 (20-session),
+    季線 (60-session), 半年線 (120-session) and 年線 (240-session), so the
+    level alone is less informative than whether the index sits above or
+    below those lines.
     """
     out = {}
-    for label, window in (("ma20", 20), ("ma60", 60)):
+    for label, window in (("ma20", 20), ("ma60", 60), ("ma120", 120), ("ma240", 240)):
         if len(closes) >= window:
             avg = sum(closes[-window:]) / window
             out[label] = round(avg, 2)
@@ -166,6 +186,25 @@ def moving_averages(closes):
             out[label] = None
             out[label + "_gap"] = None
     return out
+
+
+def intraday_ma_event(index):
+    """Describe a session whose close and intraday range straddle a key MA.
+
+    Longest line wins (a 年線 event outranks a 月線 one), and the penetration
+    must exceed 0.1% so hairline crossings never reach the prose. This is a
+    statement about a completed session, not a trend claim.
+    """
+    high, low, close = index.get("day_high"), index.get("day_low"), index["last"]
+    for label, key in (("年線", "ma240"), ("半年線", "ma120"), ("季線", "ma60"), ("月線", "ma20")):
+        ma = index.get(key)
+        if not ma:
+            continue
+        if close > ma and low is not None and low <= ma * 0.999:
+            return f"{index['name']}盤中一度跌破{label},收盤收復"
+        if close < ma and high is not None and high >= ma * 1.001:
+            return f"{index['name']}盤中一度站上{label},收盤未能守住"
+    return None
 
 
 def describe(value, up="上漲", down="下跌", flat="持平", threshold=0.05):
@@ -221,18 +260,27 @@ def build_summary(indices, baskets, warnings):
         else:
             facts.append(f"{len(with_ma)} 個追蹤指數中,{len(below)} 個位於月線之下({'、'.join(i['name'] for i in below[:4])}{'等' if len(below) > 4 else ''})。")
 
+    # Sessions whose intraday range crossed a key MA but closed back on the
+    # other side -- invisible in close-only numbers, yet exactly the days
+    # readers ask about. Capped at 3 so a whipsaw day doesn't flood the prose.
+    events = [e for e in (intraday_ma_event(i) for i in indices) if e]
+    if events:
+        facts.append(";".join(events[:3]) + "。")
+
     ranked = sorted([b for b in baskets if b["d1"] is not None], key=lambda b: b["d1"], reverse=True)
     if ranked:
         top, bottom = ranked[0], ranked[-1]
+        # Prose uses the Chinese short names; the English basket names stay in
+        # the basket section where they render as secondary labels.
         if top["key"] == bottom["key"]:
-            facts.append(f"{top['name']}{describe(top['d1'])}。")
+            facts.append(f"{top['zh_short']}{describe(top['d1'])}。")
         elif top["d1"] < -0.05:
             # Everything is down: rank by damage, not by "strength".
-            facts.append(f"研究籃子全數收低,{bottom['name']}跌幅最大({describe(bottom['d1'])}),{top['name']}跌幅最小({describe(top['d1'])})。")
+            facts.append(f"研究籃子全數收低,{bottom['zh_short']}跌幅最大({describe(bottom['d1'])}),{top['zh_short']}跌幅最小({describe(top['d1'])})。")
         elif bottom["d1"] > 0.05:
-            facts.append(f"研究籃子全數收高,{top['name']}漲幅最大({describe(top['d1'])}),{bottom['name']}漲幅最小({describe(bottom['d1'])})。")
+            facts.append(f"研究籃子全數收高,{top['zh_short']}漲幅最大({describe(top['d1'])}),{bottom['zh_short']}漲幅最小({describe(bottom['d1'])})。")
         else:
-            facts.append(f"研究籃子中,{top['name']}表現最強({describe(top['d1'])}),{bottom['name']}最弱({describe(bottom['d1'])})。")
+            facts.append(f"研究籃子中,{top['zh_short']}表現最強({describe(top['d1'])}),{bottom['zh_short']}最弱({describe(bottom['d1'])})。")
 
     lens = None
     infra = next((b for b in baskets if b["key"] == "ai_infra"), None)
@@ -263,28 +311,36 @@ def main() -> int:
 
     indices = []
     for symbol, name, code in INDICES:
-        closes, _ = fetch_series(symbol)
-        if not closes:
+        series = fetch_series(symbol)
+        if not series:
             warnings.append(f"指數 {code} 取得失敗,已略過")
             continue
-        indices.append({"name": name, "code": code, **move(closes), **moving_averages(closes)})
+        closes, day_high, day_low = series
+        indices.append({"name": name, "code": code,
+                        "day_high": None if day_high is None else round(day_high, 2),
+                        "day_low": None if day_low is None else round(day_low, 2),
+                        **move(closes), **moving_averages(closes)})
 
     baskets = []
     for spec in BASKETS:
         moves, members, missing = [], [], []
         for ticker, label in spec["members"]:
-            closes, _ = fetch_series(ticker)
-            if not closes:
+            series = fetch_series(ticker)
+            if not series:
                 missing.append(ticker)
                 continue
+            closes = series[0]
             m = move(closes)
             if m["d1"] is None:
                 continue
             moves.append(m)
             # Constituents are published so the basket number is auditable
-            # rather than a black box the reader has to take on trust.
+            # rather than a black box the reader has to take on trust. The
+            # per-member 年線 gap turns "many stocks broke their yearly line"
+            # from an impression into a countable statement.
             members.append({"ticker": ticker, "label": label,
-                            "d1": m["d1"], "w1": m["w1"]})
+                            "d1": m["d1"], "w1": m["w1"],
+                            "ma240_gap": moving_averages(closes).get("ma240_gap")})
         if missing:
             warnings.append(f"{spec['name']} 缺少成分:{', '.join(missing)}")
         if not moves:
@@ -294,7 +350,8 @@ def main() -> int:
         w1_vals = [m["w1"] for m in moves if m["w1"] is not None]
         members.sort(key=lambda x: x["d1"], reverse=True)
         baskets.append({
-            "key": spec["key"], "name": spec["name"], "zh": spec["zh"],
+            "key": spec["key"], "name": spec["name"],
+            "zh_short": spec["zh_short"], "zh": spec["zh"],
             "note": spec.get("note", ""),
             "thesis": spec["thesis"], "thesis_url": spec["thesis_url"],
             "count": len(moves),
@@ -302,6 +359,8 @@ def main() -> int:
             "w1": round(sum(w1_vals) / len(w1_vals), 2) if w1_vals else None,
             "advancers": sum(1 for m in moves if m["d1"] > 0),
             "decliners": sum(1 for m in moves if m["d1"] < 0),
+            "below_ma240": sum(1 for mm in members
+                               if mm["ma240_gap"] is not None and mm["ma240_gap"] < 0),
             "members": members,
         })
 

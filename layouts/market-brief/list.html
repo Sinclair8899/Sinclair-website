@@ -93,7 +93,7 @@
     <div class="mb-eyebrow">主要指數 Indices</div>
     <div class="mb-wrap">
       <table class="mb-table">
-        <thead><tr><th>指數</th><th>收盤</th><th>1D</th><th>1W</th><th>距月線</th><th>距季線</th></tr></thead>
+        <thead><tr><th>指數</th><th>收盤</th><th>1D</th><th>1W</th><th>距月線</th><th>距季線</th><th>距半年線</th><th>距年線</th></tr></thead>
         <tbody>
           {{- range . }}
           <tr>
@@ -109,6 +109,12 @@
             <td class="{{ if eq .ma60_gap nil }}mb-flat{{ else if gt .ma60_gap 0.0 }}mb-up{{ else if lt .ma60_gap 0.0 }}mb-down{{ else }}mb-flat{{ end }}"
                 {{ with .ma60 }}title="季線 {{ lang.FormatNumber 0 . }}"{{ end }}>
               {{ if eq .ma60_gap nil }}—{{ else }}{{ if gt .ma60_gap 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .ma60_gap }}%{{ end }}</td>
+            <td class="{{ if eq .ma120_gap nil }}mb-flat{{ else if gt .ma120_gap 0.0 }}mb-up{{ else if lt .ma120_gap 0.0 }}mb-down{{ else }}mb-flat{{ end }}"
+                {{ with .ma120 }}title="半年線 {{ lang.FormatNumber 0 . }}"{{ end }}>
+              {{ if eq .ma120_gap nil }}—{{ else }}{{ if gt .ma120_gap 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .ma120_gap }}%{{ end }}</td>
+            <td class="{{ if eq .ma240_gap nil }}mb-flat{{ else if gt .ma240_gap 0.0 }}mb-up{{ else if lt .ma240_gap 0.0 }}mb-down{{ else }}mb-flat{{ end }}"
+                {{ with .ma240 }}title="年線 {{ lang.FormatNumber 0 . }}"{{ end }}>
+              {{ if eq .ma240_gap nil }}—{{ else }}{{ if gt .ma240_gap 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .ma240_gap }}%{{ end }}</td>
           </tr>
           {{- end }}
         </tbody>
@@ -120,19 +126,24 @@
     <div class="mb-eyebrow">研究籃子 Research Baskets</div>
     {{- range . }}
     <div class="mb-basket">
-      <span class="nm">{{ .name }}<span class="zh">{{ .zh }}</span></span>
+      {{/* Chinese-first for the boss-reader audience; the English basket name
+           drops to a secondary label. `or` keeps pre-zh_short JSON rendering. */}}
+      {{- $primary := or .zh_short .name }}
+      <span class="nm">{{ $primary }}{{ if ne $primary .name }}<span class="zh">{{ .name }}</span>{{ end }}</span>
       <span class="chg {{ if gt .d1 0.0 }}mb-up{{ else if lt .d1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
         {{ if gt .d1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .d1 }}%</span>
       <span class="note">
         {{- with .note }}{{ . }}<br>{{ end }}
         {{ .count }} 檔成分 · 漲 {{ .advancers }} / 跌 {{ .decliners }}
         {{- with .w1 }} · 週 {{ if gt . 0.0 }}+{{ end }}{{ lang.FormatNumber 1 . }}%{{ end }}
+        {{- with .below_ma240 }} · {{ . }} 檔位於年線之下{{ end }}
         · 相關論述:<a href="{{ .thesis_url }}">{{ .thesis }}</a>
         {{- with .members }}
         <details class="mb-members">
           <summary>成分股與當日表現</summary>
           <table class="mb-mtable">
             <tbody>
+              <tr><td></td><td class="mb-code">1D</td><td class="mb-code">1W</td><td class="mb-code">距年線</td></tr>
               {{- range . }}
               <tr>
                 <td>{{ .label }}<span class="mb-code">{{ .ticker }}</span></td>
@@ -140,6 +151,8 @@
                   {{ if gt .d1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .d1 }}%</td>
                 <td class="{{ if eq .w1 nil }}mb-flat{{ else if gt .w1 0.0 }}mb-up{{ else if lt .w1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
                   {{ if eq .w1 nil }}—{{ else }}{{ if gt .w1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .w1 }}%{{ end }}</td>
+                <td class="{{ if eq .ma240_gap nil }}mb-flat{{ else if gt .ma240_gap 0.0 }}mb-up{{ else if lt .ma240_gap 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
+                  {{ if eq .ma240_gap nil }}—{{ else }}{{ if gt .ma240_gap 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .ma240_gap }}%{{ end }}</td>
               </tr>
               {{- end }}
             </tbody>
