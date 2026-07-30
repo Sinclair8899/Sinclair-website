@@ -33,6 +33,17 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Sinclai
 # range=2y because the 240-session 年線 needs ~1 year of sessions plus buffer.
 CHART = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=2y&interval=1d"
 
+# Macro pricing variables: facts-only rows, no generated interpretation.
+# `kind` picks the display unit -- yields move in basis points, VIX in points,
+# the rest in percent -- so the page never shows a meaningless "%" on a yield.
+MACRO = [
+    ("^TNX", "美債 10 年殖利率", "US10Y", "yield"),
+    ("DX-Y.NYB", "美元指數", "DXY", "price"),
+    ("TWD=X", "美元兌台幣", "USDTWD", "price"),
+    ("GC=F", "黃金期貨", "GOLD", "price"),
+    ("^VIX", "VIX 波動率", "VIX", "points"),
+]
+
 INDICES = [
     ("^SOX", "費城半導體", "SOX"),
     ("^IXIC", "Nasdaq", "IXIC"),
@@ -188,6 +199,38 @@ def moving_averages(closes):
     return out
 
 
+def drawdown_52w(closes):
+    """Drawdown from the 52-week (252-session) closing high, in percent (<= 0).
+
+    Based on closes, not intraday highs, to stay consistent with every other
+    number on the page. This is what turns "many AI stocks halved" from an
+    impression into a countable statement.
+    """
+    high = max(closes[-252:])
+    return round((closes[-1] - high) / high * 100.0, 2)
+
+
+def macro_row(name, code, kind, closes):
+    """One macro table row with display strings preformatted per unit kind."""
+    last, prev = closes[-1], closes[-2]
+    week = closes[-6] if len(closes) >= 6 else None
+    if kind == "yield":
+        value = f"{last:.2f}%"
+        d1 = f"{(last - prev) * 100:+.0f} bp"
+        w1 = None if week is None else f"{(last - week) * 100:+.0f} bp"
+    elif kind == "points":
+        value = f"{last:.1f}"
+        d1 = f"{last - prev:+.1f}"
+        w1 = None if week is None else f"{last - week:+.1f}"
+    else:
+        value = f"{last:,.2f}"
+        d1 = f"{pct(last, prev):+.1f}%"
+        w1 = None if week is None else f"{pct(last, week):+.1f}%"
+    return {"name": name, "code": code, "value": value, "d1": d1, "w1": w1,
+            "sign": 1 if last > prev else (-1 if last < prev else 0),
+            "wsign": 0 if week is None else (1 if last > week else (-1 if last < week else 0))}
+
+
 def intraday_ma_event(index):
     """Describe a session whose close and intraday range straddle a key MA.
 
@@ -319,7 +362,16 @@ def main() -> int:
         indices.append({"name": name, "code": code,
                         "day_high": None if day_high is None else round(day_high, 2),
                         "day_low": None if day_low is None else round(day_low, 2),
+                        "dd52": drawdown_52w(closes),
                         **move(closes), **moving_averages(closes)})
+
+    macro = []
+    for symbol, name, code, kind in MACRO:
+        series = fetch_series(symbol)
+        if not series:
+            warnings.append(f"宏觀變數 {code} 取得失敗,已略過")
+            continue
+        macro.append(macro_row(name, code, kind, series[0]))
 
     baskets = []
     for spec in BASKETS:
@@ -340,6 +392,7 @@ def main() -> int:
             # from an impression into a countable statement.
             members.append({"ticker": ticker, "label": label,
                             "d1": m["d1"], "w1": m["w1"],
+                            "dd52": drawdown_52w(closes),
                             "ma240_gap": moving_averages(closes).get("ma240_gap")})
         if missing:
             warnings.append(f"{spec['name']} 缺少成分:{', '.join(missing)}")
@@ -361,6 +414,7 @@ def main() -> int:
             "decliners": sum(1 for m in moves if m["d1"] < 0),
             "below_ma240": sum(1 for mm in members
                                if mm["ma240_gap"] is not None and mm["ma240_gap"] < 0),
+            "halved": sum(1 for mm in members if mm["dd52"] <= -50.0),
             "members": members,
         })
 
@@ -368,11 +422,33 @@ def main() -> int:
         print("ERROR: no market data could be fetched; leaving previous brief in place", file=sys.stderr)
         return 1
 
+    # FCN knock-in stress PROXY, tied to "When Winning Streaks Mislead".
+    # Typical FCN knock-in barriers sit at 55-65% of the initial fixing, but
+    # each contract's fixing is private -- so publish drawdown-band counts,
+    # never a claim about actual deliveries. Members are deduped across
+    # baskets so one ticker is counted once.
+    seen = {}
+    for b in baskets:
+        for mm in b["members"]:
+            seen.setdefault(mm["ticker"], mm)
+    stressed = sorted((mm for mm in seen.values() if mm["dd52"] <= -35.0),
+                      key=lambda mm: mm["dd52"])
+    fcn = {
+        "tracked": len(seen),
+        "dd35": len(stressed),
+        "dd45": sum(1 for mm in stressed if mm["dd52"] <= -45.0),
+        "dd50": sum(1 for mm in stressed if mm["dd52"] <= -50.0),
+        "stressed": [{"ticker": mm["ticker"], "label": mm["label"], "dd52": mm["dd52"]}
+                     for mm in stressed],
+    }
+
     out = {
         "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "indices": indices,
+        "macro": macro,
         "baskets": baskets,
+        "fcn": fcn,
         "summary": build_summary(indices, baskets, warnings),
     }
 
@@ -381,7 +457,8 @@ def main() -> int:
     with open(data_path, "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=2)
 
-    print(f"wrote {data_path}: {len(indices)} indices, {len(baskets)} baskets, {len(warnings)} warnings")
+    print(f"wrote {data_path}: {len(indices)} indices, {len(macro)} macro, "
+          f"{len(baskets)} baskets, {len(warnings)} warnings")
     for w in warnings:
         print(f"  warning: {w}")
     return 0

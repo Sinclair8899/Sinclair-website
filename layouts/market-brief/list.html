@@ -93,7 +93,7 @@
     <div class="mb-eyebrow">主要指數 Indices</div>
     <div class="mb-wrap">
       <table class="mb-table">
-        <thead><tr><th>指數</th><th>收盤</th><th>1D</th><th>1W</th><th>距月線</th><th>距季線</th><th>距半年線</th><th>距年線</th></tr></thead>
+        <thead><tr><th>指數</th><th>收盤</th><th>1D</th><th>1W</th><th>距月線</th><th>距季線</th><th>距半年線</th><th>距年線</th><th title="距 52 週收盤高點">距高點</th></tr></thead>
         <tbody>
           {{- range . }}
           <tr>
@@ -115,11 +115,33 @@
             <td class="{{ if eq .ma240_gap nil }}mb-flat{{ else if gt .ma240_gap 0.0 }}mb-up{{ else if lt .ma240_gap 0.0 }}mb-down{{ else }}mb-flat{{ end }}"
                 {{ with .ma240 }}title="年線 {{ lang.FormatNumber 0 . }}"{{ end }}>
               {{ if eq .ma240_gap nil }}—{{ else }}{{ if gt .ma240_gap 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .ma240_gap }}%{{ end }}</td>
+            <td class="{{ if eq .dd52 nil }}mb-flat{{ else if lt .dd52 0.0 }}mb-down{{ else }}mb-flat{{ end }}" title="距 52 週收盤高點">
+              {{ if eq .dd52 nil }}—{{ else }}{{ lang.FormatNumber 1 .dd52 }}%{{ end }}</td>
           </tr>
           {{- end }}
         </tbody>
       </table>
     </div>
+    {{- end }}
+
+    {{- with $d.macro }}
+    <div class="mb-eyebrow">宏觀變數 Macro</div>
+    <div class="mb-wrap">
+      <table class="mb-table">
+        <thead><tr><th>項目</th><th>數值</th><th>1D</th><th>1W</th></tr></thead>
+        <tbody>
+          {{- range . }}
+          <tr>
+            <td>{{ .name }}<span class="mb-code">{{ .code }}</span></td>
+            <td>{{ .value }}</td>
+            <td class="{{ if gt .sign 0 }}mb-up{{ else if lt .sign 0 }}mb-down{{ else }}mb-flat{{ end }}">{{ .d1 }}</td>
+            <td class="{{ if gt .wsign 0 }}mb-up{{ else if lt .wsign 0 }}mb-down{{ else }}mb-flat{{ end }}">{{ if .w1 }}{{ .w1 }}{{ else }}—{{ end }}</td>
+          </tr>
+          {{- end }}
+        </tbody>
+      </table>
+    </div>
+    <p class="mb-indintro">利率、美元與波動率是所有久期資產的定價分母。此處只列事實,不做判讀;顏色僅表示數值方向,不代表好壞。</p>
     {{- end }}
 
     {{- with $d.baskets }}
@@ -137,13 +159,14 @@
         {{ .count }} 檔成分 · 漲 {{ .advancers }} / 跌 {{ .decliners }}
         {{- with .w1 }} · 週 {{ if gt . 0.0 }}+{{ end }}{{ lang.FormatNumber 1 . }}%{{ end }}
         {{- with .below_ma240 }} · {{ . }} 檔位於年線之下{{ end }}
+        {{- with .halved }} · {{ . }} 檔回撤逾 50%{{ end }}
         · 相關論述:<a href="{{ .thesis_url }}">{{ .thesis }}</a>
         {{- with .members }}
         <details class="mb-members">
           <summary>成分股與當日表現</summary>
           <table class="mb-mtable">
             <tbody>
-              <tr><td></td><td class="mb-code">1D</td><td class="mb-code">1W</td><td class="mb-code">距年線</td></tr>
+              <tr><td></td><td class="mb-code">1D</td><td class="mb-code">1W</td><td class="mb-code">距年線</td><td class="mb-code">距高點</td></tr>
               {{- range . }}
               <tr>
                 <td>{{ .label }}<span class="mb-code">{{ .ticker }}</span></td>
@@ -153,6 +176,8 @@
                   {{ if eq .w1 nil }}—{{ else }}{{ if gt .w1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .w1 }}%{{ end }}</td>
                 <td class="{{ if eq .ma240_gap nil }}mb-flat{{ else if gt .ma240_gap 0.0 }}mb-up{{ else if lt .ma240_gap 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
                   {{ if eq .ma240_gap nil }}—{{ else }}{{ if gt .ma240_gap 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .ma240_gap }}%{{ end }}</td>
+                <td class="{{ if eq .dd52 nil }}mb-flat{{ else if lt .dd52 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
+                  {{ if eq .dd52 nil }}—{{ else }}{{ lang.FormatNumber 1 .dd52 }}%{{ end }}</td>
               </tr>
               {{- end }}
             </tbody>
@@ -163,6 +188,15 @@
       </span>
     </div>
     {{- end }}
+    {{- end }}
+
+    {{- with $d.fcn }}
+    <div class="mb-eyebrow">FCN 接股壓力 Knock-in Stress<span class="mb-tag">代理指標</span></div>
+    <p class="mb-indintro">典型 FCN 的 knock-in 障礙多設在期初價的 55–65%,但每張合約的期初點位是私有資訊——此欄以「距 52 週高點的回撤幅度」作為壓力<strong>區間代理</strong>,不是實際接股統計。相關論述:<a href="/blog/">When Winning Streaks Mislead</a>——長期無接股紀錄不代表低風險,狀態轉換才是主要定價變數。</p>
+    <p>
+      追蹤 {{ .tracked }} 檔成分股中,<strong>{{ .dd35 }}</strong> 檔回撤逾 35%(進入典型接股壓力區),{{ .dd45 }} 檔逾 45%,{{ .dd50 }} 檔腰斬。
+      {{- with .stressed }}<br>壓力區名單:{{ range $i, $s := . }}{{ if $i }}、{{ end }}{{ index (split $s.label " · ") 0 }}({{ lang.FormatNumber 0 $s.dd52 }}%){{ end }}。{{ end }}
+    </p>
     {{- end }}
 
     {{- with $ind }}{{ with .indicators }}
