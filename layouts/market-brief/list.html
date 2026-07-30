@@ -190,13 +190,16 @@
     {{- end }}
     {{- end }}
 
+    {{/* Neutral headline by design: the boss-reader audience includes people
+         who just took FCN deliveries, so the product name stays out of the
+         (screenshot-able) title and lives in the caveated note below. */}}
     {{- with $d.fcn }}
-    <div class="mb-eyebrow">FCN 接股壓力 Knock-in Stress<span class="mb-tag">代理指標</span></div>
-    <p class="mb-indintro">典型 FCN 的 knock-in 障礙多設在期初價的 55–65%,但每張合約的期初點位是私有資訊——此欄以「距 52 週高點的回撤幅度」作為壓力<strong>區間代理</strong>,不是實際接股統計。相關論述:<a href="/blog/">When Winning Streaks Mislead</a>——長期無接股紀錄不代表低風險,狀態轉換才是主要定價變數。</p>
+    <div class="mb-eyebrow">深度回撤觀察 Deep Drawdown Watch<span class="mb-tag">代理指標</span></div>
     <p>
-      追蹤 {{ .tracked }} 檔成分股中,<strong>{{ .dd35 }}</strong> 檔回撤逾 35%(進入典型接股壓力區),{{ .dd45 }} 檔逾 45%,{{ .dd50 }} 檔腰斬。
-      {{- with .stressed }}<br>壓力區名單:{{ range $i, $s := . }}{{ if $i }}、{{ end }}{{ index (split $s.label " · ") 0 }}({{ lang.FormatNumber 0 $s.dd52 }}%){{ end }}。{{ end }}
+      追蹤 {{ .tracked }} 檔成分股中,<strong>{{ .dd35 }}</strong> 檔距 52 週高點回撤逾 35%,{{ .dd45 }} 檔逾 45%,{{ .dd50 }} 檔逾 50%。
+      {{- with .stressed }}<br>回撤逾 35% 名單:{{ range $i, $s := . }}{{ if $i }}、{{ end }}{{ index (split $s.label " · ") 0 }}({{ lang.FormatNumber 0 $s.dd52 }}%){{ end }}。{{ end }}
     </p>
+    <p class="mb-indintro">註:此回撤區間正是典型 FCN 的 knock-in 障礙所在(多設於期初價的 55–65%;各合約期初點位為私有資訊,本欄為區間代理,非實際接股統計)。相關論述:<a href="/blog/">When Winning Streaks Mislead</a>——長期無接股紀錄不代表低風險,狀態轉換才是主要定價變數。</p>
     {{- end }}
 
     {{- with $ind }}{{ with .indicators }}
