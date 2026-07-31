@@ -1,56 +1,99 @@
 ---
 title: "Advisory"
-description: "顧問與合作 — 早期合作條件從寬,重點是題目品質與互相學習。Advisory engagements at the intersection of AI, semiconductors, robotics, and biotech × AI."
+description: "Independent advisory for boards, executive teams, and investors navigating AI infrastructure, semiconductors, supply chains, and capital allocation."
+aliases:
+  - /contact/
+  - /consulting/
 ---
 
-## 顧問與合作
+<p style="text-align: right; font-size: 0.9rem;"><a href="#english">English</a> | <a href="#chinese">中文</a></p>
 
-我在找好題目,不是案量。
+<a id="english"></a>
 
-三十年在材料、化工與半導體產業的營運與策略歷練,加上獨立研究者的第二身分——研究成果以預印本形式發表於 SSRN 與 Research Square。我的工作範圍在 AI 基礎設施、半導體供應鏈、機器人與自主系統、生技×AI 的交界,尤其是**技術路線與資本市場互相定價的那一層**。
+More than three decades of operating and strategic experience across Taiwan's industrial and technology sectors — including electronics, chemicals, materials, and biotechnology — now applied to high-stakes decisions in AI infrastructure, semiconductors, supply chains, and capital allocation. I advise boards, executive teams, and investors who need independent judgment grounded in operating reality and supported by rigorous research.
+
+## Who This Is For
+
+**Boards and executive teams** in industrial, materials, and technology companies facing decisions they cannot outsource: how AI reshapes their supply chain position, where to commit capital, and which capabilities to build versus buy. I have worked on the operating side of these decisions for more than thirty years, including advisory work at the chairman and senior-executive level in Taiwan's materials industry.
+
+**Investors and institutions** — private equity, venture, and institutional teams that need supply-chain-grounded diligence on AI infrastructure, semiconductors, and advanced materials. Public research and broker coverage provide the visible picture; operating experience helps identify the assumptions, constraints, and execution risks that the models may miss.
+
+## How We Can Work Together
+
+<a id="retainer"></a>
+### 1. Advisory Retainer
+
+Ongoing counsel to a chairman, board, or executive team: a regular monthly cadence covering AI transition strategy, supply chain positioning, and major capital decisions — plus direct access when time-sensitive questions arise. Discreet, and bilingual across English- and Mandarin-speaking contexts.
+
+<a id="projects"></a>
+### 2. Project Engagements
+
+Defined-scope work over four to eight weeks: technology and supply chain due diligence for investment decisions, market-entry assessment for firms entering Asian supply chains, or deep structural analysis of a specific segment — AI compute, HBM and advanced packaging, advanced materials, or industrial robotics. Deliverables are a written report and a working session with your team.
+
+<a id="briefings"></a>
+### 3. Briefings & Workshops
+
+Closed-door board briefings, executive workshops, and speaking engagements. A focused two-hour session on how the AI compute supply chain actually works — and what it means for your company or portfolio — can help a leadership team establish a common view of the opportunity, constraints, and decisions ahead.
+
+## Why This Perspective
+
+Many advisers bring analytical frameworks without having carried operating responsibility. Many experienced executives, meanwhile, leave little published work through which their judgment can be examined. My work brings the two together: more than thirty years across Taiwan's electronics, chemicals, materials, and biotechnology industries, combined with a continuing body of published research that prospective clients can examine before we ever speak.
+
+- **Research** — the [AI compute supply chain research](/publications/), selected working papers on [SSRN](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1044018), and openly archived research on [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Huang%2C%20Po-Sung%28Sinclair%29%22&l=list&p=1&s=10&sort=bestmatch). ORCID: [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
+- **Education** — Executive Doctorate in Business Administration (EDBA), HEC Liège
+- **Experience** — 30+ years in Taiwan's electronics, chemicals, materials, and biotechnology industries, spanning operations, corporate strategy, and senior-level advisory
+
+<a id="start"></a>
+## Start a Conversation
+
+The best first step is a short note describing your situation — a decision you are facing, a diligence question, or a briefing you are considering. I reply personally, and an initial conversation carries no obligation.
+
+**Email: [research@sinclairhuang.org](mailto:research@sinclairhuang.org)**
+**LinkedIn: [Po-Sung (Sinclair) Huang](https://www.linkedin.com/in/po-sung-sinclair-h-53b33533/)**
+
+*Because I work directly on each engagement, I take on only a limited number at any one time. If your timeline is tight, please say so in your note.*
 
 ---
 
-### 合作形式
+<a id="chinese"></a>
 
-**Sparring Session|快評對談**
-*90 分鐘 · 線上*
-對你正在做的判斷提供外部壓力測試:投資決策前的反方觀點、技術路線的第二意見、供應鏈假設的快速檢核。
+# 顧問服務
 
-**Deep-Dive|專題研究**
-*2–6 週 · 書面交付*
-一份帶證據等級標記的研究備忘錄:瓶頸分析、技術成熟度評估、競爭定位。方法與我公開發表的論文相同——每個關鍵數字標示來源與可信度,推論與事實分層呈現。
+三十餘年橫跨台灣工業與科技領域的營運及策略經驗——包括電子、化工、材料與生技產業——如今聚焦於 AI 基礎設施、半導體、供應鏈與資本配置等牽動長期發展的重大決策。我協助董事會、經營團隊與投資人,取得立足營運現實、並以嚴謹研究為基礎的獨立判斷。
 
-**Ongoing Advisory|長期顧問**
-*按季 · 持續合作*
-作為團隊的外部研究夥伴,持續追蹤你所在領域的約束變化,在決策節點提供判斷。
+## 服務對象
 
----
+**面臨 AI 轉型的企業董事會與經營層** — 供應鏈定位如何被 AI 改寫、資本該投向何處、能力該自建或外購。這些決策無法外包;而我在營運端與董事層級決策桌上工作三十餘年,包括在台灣材料產業擔任董事長及高階經營層顧問。
 
-### 早期合作,條件從寬
+**投資機構與法人** — 需要「供應鏈實地視角」的私募、創投與機構團隊,針對 AI 基礎設施、半導體與先進材料進行盡職調查。公開研究與券商報告呈現的是檯面上的圖像;營運經驗協助辨識模型可能忽略的假設、限制條件與執行風險。
 
-對我有學習價值的好題目,首次合作我刻意把費用門檻設得很低。我看重的是題目品質與互相成長,不是初期收費。
+## 合作方式
 
-**什麼算是好題目:**後面有真實的決策;有可驗證的技術或供應鏈環節;做完之後雙方都會更清楚一些事情。
+### 1. 顧問委任
 
-如果你的題目屬於這一類,直接說明情況即可——我們可以從一次對談開始,再決定要不要往下走。
+董事長、董事會或經營團隊的常態顧問:每月定期對談,涵蓋 AI 轉型策略、供應鏈定位與重大資本決策,並在重大議題或時效性決策出現時,提供直接討論與研判。重視保密,可在中英文環境中工作。
 
----
+### 2. 專案研究
 
-### 服務範圍
+四至八週的單題深度工作:投資決策的技術與供應鏈盡職調查、外商進入亞洲供應鏈的市場評估、或特定領域的產業結構分析——AI 算力、HBM 與先進封裝、先進材料、工業機器人。交付形式為書面報告加一場與貴團隊的工作會議。
 
-我的貢獻在**策略、判斷與商業決策**層次,而非技術實作、軟體開發、AI 模型工程或營運執行。我帶來的是產業與策略視角,而非技術交付。
+### 3. 簡報與工作坊
 
----
+董事會閉門簡報、高階主管工作坊與演講。一場兩小時的深度簡報——AI 算力供應鏈的真實運作方式,以及它對貴公司或投資組合的意義——可協助經營團隊對機會、限制條件與後續決策建立共同認知。
 
-### 開始對話
+## 我的獨特視角
 
-先從一次 **30 分鐘的免費初談**開始,了解你的情況並評估彼此是否合適。無需事前準備,帶著你正在思考的問題或決策來談即可。
+許多顧問擅長分析框架,卻未曾真正承擔營運責任;許多資深經營者有深厚經驗,卻少有可供外界檢視的研究與論述。我的工作結合兩者:三十餘年橫跨台灣電子、化工、材料與生技產業的實務經驗,以及持續公開發表、可在合作前先行檢驗的研究成果。
 
-來信時若能簡短說明你的角色、所屬組織,以及正在思考的問題,會讓初步交流更有價值。
+- **研究成果** — [AI 算力供應鏈研究](/publications/)、[SSRN 工作論文](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1044018)、[Zenodo 公開學術研究](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Huang%2C%20Po-Sung%28Sinclair%29%22&l=list&p=1&s=10&sort=bestmatch)。ORCID:[0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
+- **學歷** — 列日高等商學院(HEC Liège)高階企業管理博士(EDBA)
+- **經歷** — 三十餘年台灣電子、化工、材料與生技產業資歷,橫跨營運、企業策略與高階經營層顧問
 
-📧 **[research@sinclairhuang.org](mailto:research@sinclairhuang.org)**
+## 開始對話
 
-🔗 **[LinkedIn](https://www.linkedin.com/in/po-sung-sinclair-h-53b33533/)**
+最好的第一步,是簡短說明您的情境——正在面對的決策、盡職調查的疑問,或考慮安排的簡報。來信由我本人回覆,初步對話不涉及任何義務。
 
-*每一封認真的來訊,我都會親自閱讀。*
+**Email:[research@sinclairhuang.org](mailto:research@sinclairhuang.org)**
+**LinkedIn:[Po-Sung (Sinclair) Huang](https://www.linkedin.com/in/po-sung-sinclair-h-53b33533/)**
+
+*由於每項委託皆由我本人直接參與,同一時期我僅承接有限數量的案件,以維持工作深度。若時程緊迫,請於來信中註明。*
