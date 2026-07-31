@@ -47,7 +47,7 @@ jobs:
           extended: true
 
       - name: Build Hugo site
-        run: hugo --destination docs
+        run: hugo --cleanDestinationDir --destination docs
 
       - name: Commit and push
         run: |
