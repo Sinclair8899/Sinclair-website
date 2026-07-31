@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/news-1/"
 title: "研究 × 新聞 — 每日精選"
 subtitle: "Research × News — Daily Digest · 用研究框架過濾的科技新聞:只留下對論述重要的,每天更新。"
 description: "A daily digest of technology and biotech news, selected and summarized in Traditional Chinese through the lens of the site's research areas: AI infrastructure, semiconductors/HBM, robotics & autonomy, and biotech × AI."

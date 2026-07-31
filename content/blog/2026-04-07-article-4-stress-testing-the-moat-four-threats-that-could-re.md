@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/blog/ai-supply-chain-part4-stress-test/"
 title: "Article 4 | Stress-Testing the Moat: Four Threats That Could Rewrite the AI Supply Chain"
 date: 2026-04-07
 draft: false

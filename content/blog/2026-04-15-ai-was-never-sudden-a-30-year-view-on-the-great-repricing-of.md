@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/blog/ai-was-never-sudden/"
 title: "AI Was Never Sudden: A 30-Year View on the Great Repricing of Human Talent"
 date: 2026-04-15
 draft: false

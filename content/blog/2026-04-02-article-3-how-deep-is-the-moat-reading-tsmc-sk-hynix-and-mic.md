@@ -1,4 +1,7 @@
 ---
+aliases:
+  - "/blog/ai-supply-chain-part3-sec-filings/"
+  - "/posts/ai-supply-chain-part3-sec-filings/"
 title: "Article 3 | How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings"
 date: 2026-04-02
 draft: false

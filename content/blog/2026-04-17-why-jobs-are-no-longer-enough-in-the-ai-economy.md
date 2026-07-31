@@ -1,4 +1,6 @@
 ---
+aliases:
+  - "/blog/why-jobs-are-no-longer-enough/"
 title: "Why Jobs Are No Longer Enough in the AI Economy"
 date: 2026-04-17
 draft: false

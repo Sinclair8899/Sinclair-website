@@ -1,4 +1,7 @@
 ---
+aliases:
+  - "/blog/ai-supply-chain-part2-power-map/"
+  - "/posts/ai-supply-chain-part2-power-map/"
 title: "Article 2 | The Real AI Supply Chain: A Power Map Beyond the GPU"
 date: 2026-04-01
 draft: false

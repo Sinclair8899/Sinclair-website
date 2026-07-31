@@ -1,8 +1,10 @@
 ---
+aliases:
+  - "/blog/ai-supply-chain-part5-industrial-transformation/"
 title: "Beyond the GPU: What the AI Infrastructure Buildout Means for the Real Economy"
 date: 2026-04-11
 draft: false
-tags: ["industialstrategy", "semiconductors", "supply-chain", "ai", "infrastructure"]
+tags: ["industrial-strategy", "semiconductors", "supply-chain", "ai", "infrastructure"]
 description: "From compute bottlenecks to industrial consequences.*From compute bottlenecks to industrial consequences — where value may actually concentrate through 2030***Series:** AI Compute Supply Chain | Part "
 canonical: "https://medium.com/@sinclairhuang/beyond-the-gpu-what-the-ai-infrastructure-buildout-means-for-the-real-economy-e2881ee379e6?source=rss-1f713d63bb6a------2"
 ---
