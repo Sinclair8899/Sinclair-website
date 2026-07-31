@@ -1,0 +1,75 @@
+{{- define "main" }}
+{{/* Reads assets/news_daily.json (written by the daily workflow). Lives in
+     assets/, not data/, for the same reason as market_brief.json. */}}
+{{- $d := false }}
+{{- with resources.Get "news_daily.json" }}{{ $d = . | transform.Unmarshal }}{{ end }}
+
+<style>
+  .nw-meta{color:var(--secondary);font-size:.82rem;margin:-.4rem 0 1.6rem}
+  .nw-meta .sep{margin:0 .4rem}
+  .nw-tag{display:inline-block;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--secondary);border:1px solid var(--border);border-radius:3px;padding:.03rem .4rem;
+    vertical-align:middle;margin-left:.4rem}
+  .nw-eyebrow{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--secondary);
+    margin:2.2rem 0 .7rem;font-weight:600}
+  .nw-card{padding:.9rem 0;border-bottom:1px solid var(--border)}
+  .nw-head{display:flex;gap:.55rem;align-items:baseline}
+  .nw-favicon{width:16px;height:16px;border-radius:3px;flex:0 0 16px;align-self:center;opacity:.9}
+  .nw-title{font-weight:600;line-height:1.5}
+  .nw-title a{color:var(--primary);text-decoration:none}
+  .nw-title a:hover{text-decoration:underline}
+  .nw-src{color:var(--secondary);font-size:.78rem;margin:.25rem 0 0 calc(16px + .55rem)}
+  .nw-sum{color:var(--content);line-height:1.7;margin:.35rem 0 0 calc(16px + .55rem)}
+  .nw-rel{color:var(--secondary);font-size:.84rem;margin:.25rem 0 0 calc(16px + .55rem)}
+  .nw-orig{color:var(--secondary);font-size:.78rem;margin:.15rem 0 0 calc(16px + .55rem);font-style:italic}
+  .nw-foot{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--border);
+    color:var(--secondary);font-size:.78rem;line-height:1.65}
+</style>
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- with .Params.subtitle }}<p class="post-description">{{ . }}</p>{{ end }}
+  </header>
+
+  {{- if $d }}
+  <p class="nw-meta">
+    {{ $d.date }}<span class="sep">·</span>每日自動生成<span class="nw-tag">auto</span>
+  </p>
+
+  <div class="post-content">
+    {{ .Content }}
+
+    {{- range $d.categories }}
+    <div class="nw-eyebrow">{{ .name }}</div>
+    {{- range .items }}
+    <div class="nw-card">
+      <div class="nw-head">
+        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain={{ .host }}&sz=32" alt="" loading="lazy">
+        <span class="nw-title"><a href="{{ .url }}" rel="noopener" target="_blank">{{ .title_zh }}</a></span>
+      </div>
+      <p class="nw-src">{{ .source }}{{ with .published }} · {{ substr . 0 10 }}{{ end }}</p>
+      <p class="nw-sum">{{ .summary_zh }}</p>
+      {{- with .relevance }}<p class="nw-rel">相關領域:{{ . }}</p>{{ end }}
+      <p class="nw-orig">{{ .title }}</p>
+    </div>
+    {{- end }}
+    {{- end }}
+
+    <p class="nw-foot">
+      本頁每日由自動管線生成:標題與連結屬原出版者所有,中文標題為翻譯,摘要為 AI 依來源標題與摘要生成的事實性概述,
+      不轉載內文、不加入未見於來源的推論。「相關領域」僅標注與本站研究主題的對應,不構成投資建議。
+      選題由模型依研究相關性判斷,可能有遺漏;完整報導請點連結閱讀原文。
+      {{- with $d.warnings }}
+      <br>資料警示:{{ delimit . ";" }}
+      {{- end }}
+    </p>
+  </div>
+  {{- else }}
+  <div class="post-content">
+    {{ .Content }}
+    <p><em>新聞資料尚未生成。管線首次執行後,此處會顯示當日精選。</em></p>
+  </div>
+  {{- end }}
+</article>
+{{- end }}

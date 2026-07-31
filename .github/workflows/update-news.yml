@@ -1,12 +1,19 @@
-name: Weekly News Update
+name: Daily Research News
 
 on:
   schedule:
-    - cron: '0 2 * * 1'
+    # 21:50 UTC daily — 20 min after the market brief so the two content
+    # workflows never race each other onto main. News runs weekends too.
+    - cron: '50 21 * * *'
   workflow_dispatch:
 
+# Same group as update-market-brief.yml: serializes pushes to main.
+concurrency:
+  group: site-content-push
+  cancel-in-progress: false
+
 jobs:
-  update-news:
+  research-news:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -21,10 +28,17 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install feedparser requests
+        run: pip install feedparser anthropic
 
-      - name: Generate news from RSS
-        run: python3 .github/scripts/update_news.py
+      - name: Generate research news digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "ANTHROPIC_API_KEY secret not set; skipping news generation."
+            exit 0
+          fi
+          python3 .github/scripts/update_news.py
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -39,6 +53,11 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add content/news.md docs/
-          git diff --staged --quiet || git commit -m "Auto-update news $(date +'%Y-%m-%d')"
-          git push
+          git add assets/news_daily.json docs
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📰 Daily research news $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+          fi
