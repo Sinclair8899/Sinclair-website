@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Copper Is Running Out of Room. But Light Has a Manufacturing Problem. | Sinclair Huang, HEC Liège, Executive DBA</title>
+<meta name="keywords" content="silicon-photonics, ai-infrastruture, advanced-packaging, semiconductors, manufacturing">
+<meta name="description" content="## Why CPO is not an optics story — it is a process-integration story.*AI Infrastructure Notes | Part 2**Sinclair Huang*Everyone says AI needs more bandwidth.That part is true.As AI clusters scale fro">
+<meta name="author" content="">
+<link rel="canonical" href="https://sinclairhuang.org/blog/2026-05-07-copper-is-running-out-of-room-but-light-has-a-manufacturing/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sinclairhuang.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sinclairhuang.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sinclairhuang.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sinclairhuang.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sinclairhuang.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://sinclairhuang.org/blog/2026-05-07-copper-is-running-out-of-room-but-light-has-a-manufacturing/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google" content="notranslate">
+
+<meta property="og:url" content="https://sinclairhuang.org/blog/2026-05-07-copper-is-running-out-of-room-but-light-has-a-manufacturing/">
+  <meta property="og:site_name" content="Sinclair Huang, HEC Liège, Executive DBA">
+  <meta property="og:title" content="Copper Is Running Out of Room. But Light Has a Manufacturing Problem.">
+  <meta property="og:description" content="## Why CPO is not an optics story — it is a process-integration story.*AI Infrastructure Notes | Part 2**Sinclair Huang*Everyone says AI needs more bandwidth.That part is true.As AI clusters scale fro">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-05-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-07T00:00:00+00:00">
+    <meta property="article:tag" content="Silicon-Photonics">
+    <meta property="article:tag" content="Ai-Infrastruture">
+    <meta property="article:tag" content="Advanced-Packaging">
+    <meta property="article:tag" content="Semiconductors">
+    <meta property="article:tag" content="Manufacturing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Copper Is Running Out of Room. But Light Has a Manufacturing Problem.">
+<meta name="twitter:description" content="## Why CPO is not an optics story — it is a process-integration story.*AI Infrastructure Notes | Part 2**Sinclair Huang*Everyone says AI needs more bandwidth.That part is true.As AI clusters scale fro">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog \u0026 Insights",
+      "item": "https://sinclairhuang.org/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Copper Is Running Out of Room. But Light Has a Manufacturing Problem.",
+      "item": "https://sinclairhuang.org/blog/2026-05-07-copper-is-running-out-of-room-but-light-has-a-manufacturing/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Copper Is Running Out of Room. But Light Has a Manufacturing Problem.",
+  "name": "Copper Is Running Out of Room. But Light Has a Manufacturing Problem.",
+  "description": "## Why CPO is not an optics story — it is a process-integration story.*AI Infrastructure Notes | Part 2**Sinclair Huang*Everyone says AI needs more bandwidth.That part is true.As AI clusters scale fro",
+  "keywords": [
+    "silicon-photonics", "ai-infrastruture", "advanced-packaging", "semiconductors", "manufacturing"
+  ],
+  "articleBody": "Why CPO is not an optics story — it is a process-integration story. AI Infrastructure Notes | Part 2\nSinclair Huang\nEveryone says AI needs more bandwidth.\nThat part is true.\nAs AI clusters scale from thousands of accelerators to tens of thousands, and then toward million-GPU-scale systems, the network stops being a background layer. It becomes part of the compute fabric itself. Copper reaches its distance, power, and signal-integrity limits. Optical interconnect moves closer to the switch ASIC. Co-packaged optics becomes the logical next step.\nThat is the easy part of the story.\nThe harder question is not whether light is useful.\nThe harder question is whether the manufacturing window survives.\nIn March 2025, NVIDIA announced Spectrum-X Photonics and Quantum-X Photonics, its co-packaged-optics networking switches for large-scale AI factories. TSMC has also said its COUPE-on-substrate CPO solution begins production in 2026. Broadcom has announced Tomahawk 6 Davisson, a 102.4-Tbps Ethernet switch with co-packaged optics.\nThe industry narrative is now clear: light is moving closer to the ASIC.\nBut CPO is not being delayed by a lack of optical physics. SiN waveguides, Cu-Cu bonding, and Ge photodetectors are all well-understood individually. The real problem appears when they must coexist inside one package, under BEOL-compatible thermal budgets, wafer-scale variation, and production-yield requirements.\nThat makes CPO a process-integration story, not an optics story.\nWhile developing a training curriculum on advanced semiconductor manufacturing — and after working through recent literature and conversations with engineers who actually run these processes — I kept seeing the same pattern:\nThe bottleneck is not a single missing invention.\nIt is the collision of mature process modules at the integration boundary.\nThis article focuses on three failure modes that will decide whether CPO actually ships at scale:\nSiN waveguide propagation-loss drift\nEIC-PIC Cu-Cu hybrid-bonding voids\nGe photodetector dark-current drift\nThere is another real CPO issue I am deliberately bracketing here: laser-source integration and thermal management. Whether the industry standardises around external laser sources, co-packaged laser sources, or some hybrid approach remains a major architecture debate. Lasers are heat-sensitive, and that problem deserves its own article.\nBut even if the laser is kept outside the package, the PIC/EIC manufacturing stack still has to survive the three process windows below. That is why I focus here on the manufacturing failure modes inside the optical path and the EIC-PIC integration boundary.\nThe 60-second version \u003e CPO is often described as “optics replacing copper.”\n\u003e That is directionally right, but incomplete.\n\u003e The manufacturing problem is more specific:\n\u003e CPO requires FEOL-grade process quality under a BEOL thermal budget.\n\u003e That conflict appears in three places:\n\u003e SiN waveguides want low-loss, high-temperature film quality, but BEOL integration pushes them toward lower-temperature PECVD plus post-processing.\n\u003e Cu-Cu hybrid bonding uses BEOL copper technology, but requires near-atomic-level surface control, especially around Cu recess and wafer-scale bonding yield.\n\u003e Ge photodetectors want high-quality epitaxy and annealing, but BEOL-compatible integration caps the thermal budget below the temperatures that normally produce the best detector performance.\n\u003e So the real CPO question is not:\n\u003e Can optics beat copper?\n\u003e It is:\n\u003e Can thin-film deposition, CMP, BEOL metallization, ion implantation, Ge epitaxy, and hybrid bonding be co-optimised inside one manufacturable window?\n\u003e That is why the integration-control point becomes uniquely valuable.\n\u003e The physics did not suddenly change. The tolerance budget did.\nA different way to read the CPO headlines The market reaction to CPO has been swift.\nIDTechEx forecasts the co-packaged-optics market to exceed $20 billion by 2036, growing at a 37% CAGR from 2026 to 2036. NVIDIA and Broadcom are pulling CPO into the centre of AI networking roadmaps. Foundry roadmaps now contain CPO line items that did not exist in the mainstream conversation only a short time ago.\nIn public markets, “CPO exposure” is quickly becoming a narrative in itself. But a lot of that conversation still stops at roadmaps and TAM. Very little of it asks where the actual manufacturing windows are tightest.\nThat is the gap I kept noticing while reading the NVIDIA, Broadcom, and foundry roadmaps: the slides tell you where bandwidth is going, but they rarely tell you which tolerance budget hurts first.\nRead the headlines, and the story sounds clean:\nCopper runs out of room.\nLight moves closer to the chip.\nPhotons beat electrons.\nProblem solved.\nBut when those slides are decomposed into actual unit-process steps, the bottlenecks are not purely optical.\nThey sit at the boundary between process modules that each look solved on paper: thin-film deposition, CMP, ion implantation, BEOL metallization, hybrid bonding, and Ge epitaxy.\nEach module has decades of engineering maturity.\nThe difficulty is forcing all of them to coexist under one CPO thermal, optical, electrical, and yield budget.\nThat is when tolerances collapse by one to two orders of magnitude.\nA simple example captures the whole issue.\nIn conventional BEOL Cu damascene, post-CMP surface roughness of Rq ≈ 1–2 nm can be excellent. Current flowing through copper does not meaningfully care about that scale of surface variation.\nBut if a SiN waveguide is placed near or above that copper-integrated stack, the same surface starts interacting with telecom-wavelength light. What is invisible noise to electrons can become measurable dB/cm loss to photons. The exact magnitude depends on roughness amplitude, correlation length, sidewall versus top-surface contributions, mode overlap, waveguide geometry, and cladding design.\nThe point is not a single number.\nThe point is that the same manufactured surface receives two different verdicts from two different physical systems.\nThat is the CPO problem.\nFailure Mode #1: Drift in SiN waveguide propagation loss Where thin-film deposition and CMP jointly decide the fate of a single optical path Key window: SiN waveguide loss is not just a design variable. In reported foundry-compatible flows, it is strongly tied to film quality, CMP roughness, correlation length, and post-processing. The practical target is optical-grade roughness, not ordinary BEOL planarity.\nThe first leg of a CPO optical path is often a SiN waveguide. Its quality directly sets the optical power budget.\nA typical CPO optical engine may start with finite laser launch power, then lose margin through modulation, routing, coupling, and detection. Every additional dB of insertion loss is a direct hit on system reliability and energy efficiency.\nSiN waveguide propagation loss has three main sources:\nIntrinsic material absorption, including Si-H and N-H bond absorption\nSurface and sidewall scattering, especially relevant at telecom wavelengths\nGeometric non-uniformity from lithography and etch\nThe second source is where process integration becomes decisive.\nScattering loss is not fixed by optics alone. It is strongly shaped by the deposition recipe, the post-deposition anneal, the CMP process, and the roughness correlation length left behind by the manufacturing flow.\nA 2023 study of foundry-compatible deposited SiN showed how large the process delta can be. PECVD SiN without CMP showed a loss above 10 dB/cm, while PECVD plus CMP brought a loss below 1 dB/cm. With additional annealing, the reported loss could fall further, reaching 0.28 dB/cm with RTA and 0.06 dB/cm with furnace annealing in the reported flow.\nThe takeaway is simple:\nGoing from “PECVD as deposited” to “PECVD plus CMP plus anneal” can buy roughly two orders of magnitude in optical loss.\nBut that improvement is not free.\nEvery extra 1 dB of link loss requires about 26% more optical launch power, because 10^(0.1) ≈ 1.26. More optical power means more heat, more thermal drift, and more reliability pressure.\nThis is why waveguide roughness is not a cosmetic metric.\nIt is a system-level power and reliability variable.\nThe thermal-budget conflict LPCVD SiN can produce dense, high-quality films at around 780°C. That high temperature helps drive out hydrogen-related bonds and improves film quality.\nBut 780°C is incompatible with a BEOL copper environment.\nPECVD SiN can be deposited at roughly 300–400°C, making it BEOL-compatible. But PECVD films typically carry higher hydrogen content, lower density, higher stress, and stronger dependence on deposition microstructure and post-processing.\nThis is the first core CPO conflict:\nThe optical layer wants high-temperature film quality. The package integration stack allows only low-temperature processing.\nThe practical industry answer is PECVD plus post-processing:\nLow-temperature deposition → CMP planarization → low-thermal-budget anneal.\nThe process window is narrow because the result depends on multiple tools that historically were not optimised as one optical system.\nWhy CMP becomes the hinge In standard BEOL copper CMP, the objective is planarity and residue removal. Rq below 1 nm is already high-end work.\nBut SiN waveguide CMP moves toward optical-grade flatness. The draft process targets discussed in the literature and engineering conversations are closer to Rq \u003c 0.3 nm, with sidewall roughness, correlation length, and particles all contributing to loss.\nThat implies three simultaneous requirements:\nSmaller abrasive particle size\nLower scratch generation during pad conditioning\nNear-zero post-CMP particle contamination\nThis is CMP being asked to behave like optical polishing, but at semiconductor wafer throughput.\nThat combination is the hard part.\nFailure Mode #2: Voids at the EIC-PIC Cu-Cu hybrid-bonding interface Where BEOL copper damascene recess control determines CPO’s electro-optical conversion fate Key window: the Cu surface cannot simply be “flat.” In reported hybrid-bonding experiments, the useful recess window sits in the few-nanometer range: too shallow risks Cu protrusion and failed dielectric bonding; too deep risks insufficient Cu contact and void formation after anneal.\nTSMC COUPE’s important manufacturing idea is not simply that it uses silicon photonics. It is that the electronic IC and photonic IC can be brought extremely close together through advanced 3D integration.\nThis interface matters because photonic chips need area, while electronic drivers and SerDes circuits benefit from advanced logic nodes. A long copper path between them defeats much of the energy and latency benefit.\nThat is why wafer-scale EIC-PIC hybrid bonding becomes a key CPO control point.\nThe problem is that hybrid bonding turns copper from “just a conductor” into a structural and electro-optical interface.\nThe counterintuitive Cu recess window The critical pre-step in hybrid bonding is CMP.\nThe wafer surface contains both dielectric and exposed copper. Before bonding, the dielectric surfaces must make intimate contact. During annealing, copper expands upward and completes the electrical connection.\nThat means the copper must sit slightly below the dielectric surface before bonding.\nToo high, and the dielectric surfaces cannot bond properly.\nToo low, and the copper does not make good contact after annealing.\nIn the cited bonding literature, the practical optimal window is only a few nanometers wide: Cu recess around 3–5 nm, with failure modes appearing when recess becomes too shallow or too deep.\nThat is the second core CPO conflict:\nHybrid bonding uses BEOL copper, but demands FEOL-grade surface precision.\nConventional copper damascene CMP can tolerate a wider process window. CPO hybrid bonding tightens the problem dramatically because the target must be hit across a large number of pads on a 300 mm wafer.\nThis is not only a resistance issue.\nIt is a yield issue.\nAnd in CPO, yield compounds brutally.\nFor illustration, if a package integrates 36 optical paths and each path has a 99% yield, the package-level yield is 0.99³⁶, or about 70%, before counting any other package defect.\nThat is why a “small” per-element process miss becomes a system-level manufacturing problem.\nThe other hidden failure points Cu recess is only the first issue.\nCopper surface oxidation can introduce a thin CuO layer before bonding. A low-temperature anneal may not fully remove that interface layer, raising resistance and weakening the bond.\nInterface voids can appear due to grain structure, non-uniform bonding, local contamination, or thermal cycling. Voids are not just electrical defects. They are stress concentrators.\nCTE mismatch between the EIC, PIC, dielectric layers, and metal stack creates long-term reliability risk.\nElectromigration also changes the meaning at a hybrid-bonding interface. The interface is not a conventional continuous copper line; it is a non-native Cu-Cu interface that may behave differently under high current density and thermal stress.\nIn older BEOL thinking, copper was evaluated mainly as a current path.\nIn CPO, copper becomes an electro-optical integration surface.\nThat is a different standard.\nFailure Mode #3: Dark-current drift in Ge photodetectors Where ion implantation and defect management decide whether the optical signal can be heard Key window: the detector must simultaneously hit dark-current, responsivity, bandwidth, and BEOL thermal-budget targets. That is hard because the best Ge material quality usually wants more temperature than the BEOL stack is willing to give.\nAfter light travels through the waveguide and crosses the integrated optical path, it must be converted back into an electrical signal.\nThat conversion is typically done with Ge or SiGe photodetectors.\nGe is attractive because silicon does not absorb telecom wavelengths efficiently, while germanium can absorb 1310 nm and 1550 nm light and remains Group IV, making it more CMOS-compatible than III-V materials such as InGaAs.\nBut the defining metric is not just responsivity.\nIt is dark current.\nDark current is the current that flows even when no light is present. It raises the noise floor, reduces sensitivity, and consumes optical-link margin.\nThe lattice-mismatch problem Ge-on-Si has a fundamental materials problem: the lattice mismatch between Ge and Si is about 4.2%.\nThat mismatch generates threading dislocations during epitaxy. Each dislocation can act as a recombination centre and contribute to dark current.\nTypical threading-dislocation-density ranges can vary by orders of magnitude depending on the epitaxy and anneal process. In broad terms, unoptimized epi can sit around 1⁰⁸–1⁰⁹ cm⁻², optimised SiGe buffer and cyclic anneal flows can move toward 1⁰⁶–1⁰⁷ cm⁻², and leading research demonstrations can push below 1⁰⁵ cm⁻².\nThat is why the detector problem is not purely optical.\nIt is materials and defect engineering.\nIon implantation versus in-situ doping Ge photodetectors need doped regions. There are two broad routes.\nIon implantation plus RTA gives precise placement and concentration control and fits mainstream CMOS thinking. But implantation damage in Ge can be severe, and end-of-range defects can become dark-current centres.\nIn-situ doping during epitaxy avoids implantation damage, but profile control, process stability, and EHS controls become more difficult.\nA 2021 Optics Express paper cited in the draft found that in-situ As doping during Ge seed-layer growth produced dramatically lower dark current than the ion-implant route.\nThat is not an optics breakthrough.\nIt is a doping-process breakthrough.\nThe BEOL thermal-budget squeeze The hardest case is BEOL-compatible Ge detector integration.\nHigh-quality Ge epitaxy often wants temperatures around 700°C. Dislocation annealing can want even higher temperatures. Dopant activation can also require temperatures above what BEOL copper and low-k materials can comfortably tolerate.\nBut BEOL integration forces the process below roughly 450°C.\nThat is the third core CPO conflict:\nGe detectors want high-temperature material quality, but CPO integration caps the temperature budget.\nSo the detector may be forced to operate below its theoretical performance ceiling, not because detector physics is poorly understood, but because the integration stack will not allow the ideal process.\nThe underlying conflict Put the three failure modes side by side, and the pattern becomes clear.\nCPO requires FEOL-grade process quality at BEOL thermal budget.\nSiN waveguides need low-loss film quality, but CPO pushes them toward low-temperature deposition and post-processing.\nCu-Cu bonding uses BEOL metallization, but demands a few-nanometer recess window and wafer-scale uniformity.\nGe detectors want high-temperature epitaxy and annealing, but BEOL integration limits the thermal budget.\nThis cannot be solved by a single better optical component.\nIt requires cross-module process co-design:\nDeposition with CMP.\nCMP with hybrid bonding.\nEpitaxy with ion implantation.\nThermal budget with optical loss.\nPackage yield with device-level variation.\nThat is why CPO is a process-integration story.\nAnd that is why the integration-control point becomes unusually valuable.\nThe early production phase of CPO should favour players that can see and control the FEOL, BEOL, 3D integration, and advanced-packaging boundary at the same time.\nThat does not mean one player owns the entire chain.\nOptical-component vendors, switch-ASIC companies, laser suppliers, packaging houses, foundries, and system integrators all remain critical.\nBut the party that can make the cross-module tradeoffs has a different kind of leverage.\nCPO is not won by the component that looks best alone.\nIt is won by the integration window that survives production.\nWhat this means for investors When evaluating CPO-exposed companies, do not only ask whether a company “has silicon photonics.”\nThat question is too broad.\nThe sharper question is whether the company controls a manufacturing window that becomes harder as CPO moves from roadmap to production.\nAsk more specific questions:\nDoes it have long-running SiN process R\u0026D capability?\nDoes it understand PECVD/LPCVD optical-quality tradeoffs?\nDoes it control CMP at optical-grade roughness?\nDoes it have production-scale hybrid-bonding experience?\nDoes it have low-thermal-budget Ge epitaxy and detector IP?\nCan it explain package-level yield, not just device-level performance?\nThe credible list becomes much shorter when asked this way.\nThis is also why I would separate product exposure from process-control exposure.\nProduct exposure is easier to see: optical engines, switch ASICs, pluggable modules, CPO roadmaps, and customer announcements.\nProcess-control exposure is easier to miss: low-temperature deposition, optical-grade CMP consumables, post-CMP cleaning, hybrid-bonding tools, wafer-level inspection, in-line metrology, and reliability qualification.\nThe market often prices the first category faster because it is easier to narrate.\nBut if CPO is fundamentally a process-integration problem, the second category may control the yield windows that decide who can actually ship.\nThat does not make every equipment, materials, or metrology supplier a “CPO winner.”\nIt means the right due diligence question changes.\nDo not only ask who has the best optical story.\nAsk who controls the process window that the optical story depends on.\nWhat this means for process engineers CPO is not a foreign technology.\nIt is the extreme application of skills that already exist in thin-film deposition, CMP, BEOL metallization, ion implantation, etch, epitaxy, metrology, and reliability engineering.\nThe difference is that the success criteria have moved.\nOne thing I have noticed in conversations with BEOL and CMP engineers is that some of them initially do not think of themselves as “photonics people.” Then CPO arrives, and the boundary moves: their roughness, recess, cleaning, and reliability windows suddenly become optical-link variables.\nA surface that is good enough for electrons may not be good enough for photons.\nA thermal budget that is acceptable for copper may not be sufficient for Ge.\nA CMP window that is respectable for BEOL may be too loose for hybrid bonding.\nThat is why the photonic era may end up rewarding process engineers more than people expect — especially the ones who are willing to think across modules instead of defending a single process silo.\nA note on metrology: when I ask about AFM roughness, I do not mean AFM is the only high-volume answer. AFM is often a process-characterization and excursion-analysis tool, not a fast in-line screen for every wafer. At scale, the better question becomes whether the company has a wafer-level metrology loop that connects AFM sampling, OCD or scatterometry, ellipsometry, defect inspection, test structures, microring maps, and optical cut-back data into one process-control system.\nClosing: the real winners of the photonic era are process engineers In a keynote deck, CPO looks like an optical story.\nWhen you open the manufacturing flow, it becomes something else.\nThe optics has been clear for decades.\nWhat decides mass production is whether the process stack can simultaneously deliver:\nSiN waveguide CMP roughness low enough for optical loss targets\nCu recess control tight enough for hybrid bonding\nGe detector dark current low enough under BEOL thermal budget\nWafer-scale uniformity and package-level yield high enough for commercial deployment\nThe more I study AI infrastructure, the more I think the least glamorous questions are often the most revealing ones.\nThe next time a company claims it is ready for CPO production, the most useful question may not be about bandwidth.\nIt may be this:\nWhat does your SiN waveguide AFM roughness distribution look like?\nThe companies that can answer immediately are the ones that are actually close — and they rarely lead with bandwidth slides.\nFurther reading For readers who want to go deeper, these are the references and topic areas I would start with:\nNVIDIA Spectrum-X Photonics / Quantum-X Photonics — official announcements and technical materials on co-packaged optics for AI networking.\nTSMC COUPE / SoIC / 3DFabric materials — public disclosures on compact universal photonic engines, hybrid bonding, and advanced packaging integration.\nBroadcom Tomahawk 6 Davisson — public materials on CPO Ethernet switch architecture and early customer availability.\nIDTechEx CPO market forecast — useful for understanding the commercial timeline and market-size expectations around co-packaged optics.\nUltra-low-loss silicon nitride photonics — papers on PECVD / LPCVD SiN waveguides, CMP planarization, annealing, and propagation-loss reduction.\nCu-Cu hybrid bonding reliability — literature on Cu recess control, interface voids, surface oxidation, electromigration, and wafer-scale hybrid bonding.\nGe-on-Si photodetectors for BEOL photonics — papers on Ge epitaxy, threading dislocation density, dark current, in-situ doping, implantation damage, and low-thermal-budget integration.\nBEOL copper interconnect reliability — background on copper damascene, low-k integration, electromigration, and post-Cu interconnect scaling.\nReferences NVIDIA, “NVIDIA Announces Spectrum-X Photonics, Co-Packaged Optics Networking Switches to Scale AI Factories to Millions of GPUs,” March 18, 2025.\nTSMC, “TSMC Debuts A13 Technology at 2026 North America Technology Symposium,” April 23, 2026.\nBroadcom, “Broadcom Announces Tomahawk 6 — Davisson, the Industry’s First 102.4-Tbps Ethernet Switch with Co-Packaged Optics,” October 8, 2025.\nIDTechEx, “Co-Packaged Optics (CPO) 2026–2036.”\nJi, X. et al., “Ultra-Low-Loss Silicon Nitride Photonics Based on Deposited Films Compatible with Foundries,” 2023.\nBose, D. et al., “Anneal-free ultra-low loss silicon nitride integrated photonics,” Light: Science \u0026 Applications, 2024.\nCheemalamarri, H. K. et al., “Void-free Cu/dielectric hybrid bonding at low-temperature enabled by ultrathin metal passivation engineering for 3D-IC applications,” Communications Engineering, 2026.\nLu, T.-F. et al., “Effect of Cu Film Thickness on Cu Bonding Quality and Bonding Mechanism,” Materials, 2024.\nLin, Y. et al., “Low-power and high-detectivity Ge photodiodes by in-situ heavy As doping during Ge-on-Si seed layer growth,” Optics Express, 2021.\nMarzen, S. et al., “High performance germanium on silicon photodiodes for back-end-of-line photonic integration,” Applied Physics Letters, 2023.\nEdelstein, D., “27 Years of Copper Interconnects and Beyond: BEOL for Current and Future Technology Nodes,” IEDM, 2024.\nAuthor note I develop technical training materials on semiconductor manufacturing, with a focus on connecting unit processes — deposition, lithography, etch, CMP, implantation, BEOL, and process integration — to advanced packaging and AI hardware infrastructure.\nThis article is part of my ongoing attempt to translate semiconductor process details into strategic language for engineers, investors, and technology operators. The goal is not to review every paper in the CPO literature, but to identify the manufacturing constraints that are most likely to matter when a technology moves from roadmap slides to high-volume production.\nAll views are my own.\nDisclaimer This article is for research and educational purposes only. It is not investment advice, technical qualification advice, legal advice, or a recommendation to buy or sell any security.\nThe analysis is based on publicly available academic papers, company disclosures, conference materials, industry reports, non-confidential technical context, and my personal interpretation of those materials.\nAny company, technology, or process mentioned may have internal capabilities, production data, or design choices that are not publicly disclosed. Actual production specifications may differ across vendors, process generations, and customer programs.\nErrors or omissions are my own. Corrections with public citations are welcome.\nDisclosure No company mentioned in this article has reviewed, sponsored, approved, or compensated me for this work.\nThis article is based on publicly available information, non-confidential technical context, and my personal analysis and opinions. It does not rely on proprietary, confidential, or material non-public information.\nI may currently hold, and may buy or sell, securities of companies mentioned in this article or in the broader AI infrastructure and semiconductor ecosystem at any time without further notice.\nNothing in this article constitutes investment advice, a financial recommendation, or a solicitation to buy or sell any security. Readers should conduct their own due diligence.\nComments invitation Comments and disagreements are welcome — especially if you can point me to public papers, conference proceedings, or vendor disclosures I missed. I would rather be corrected with an open citation than confirmed with a private one.\n",
+  "wordCount" : "3994",
+  "inLanguage": "en",
+  "datePublished": "2026-05-07T00:00:00Z",
+  "dateModified": "2026-05-07T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sinclairhuang.org/blog/2026-05-07-copper-is-running-out-of-room-but-light-has-a-manufacturing/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sinclair Huang, HEC Liège, Executive DBA",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sinclairhuang.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sinclairhuang.org/" accesskey="h" title="Sinclair Huang, HEC Liège, Executive DBA (Alt + H)">Sinclair Huang, HEC Liège, Executive DBA</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sinclairhuang.org/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/about" title="Research Profile">
+                    <span>Research Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/publications" title="Publications">
+                    <span>Publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/projects" title="Research Portfolio">
+                    <span>Research Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/news" title="News">
+                    <span>News</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Copper Is Running Out of Room. But Light Has a Manufacturing Problem.
+    </h1>
+    <div class="post-description">
+      ## Why CPO is not an optics story — it is a process-integration story.*AI Infrastructure Notes | Part 2**Sinclair Huang*Everyone says AI needs more bandwidth.That part is true.As AI clusters scale fro
+    </div>
+    <div class="post-meta"><span title='2026-05-07 00:00:00 +0000 UTC'>May 7, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="why-cpo-is-not-an-optics-storyit-is-a-process-integration-story">Why CPO is not an optics story — it is a process-integration story.<a hidden class="anchor" aria-hidden="true" href="#why-cpo-is-not-an-optics-storyit-is-a-process-integration-story">#</a></h2>
+<p><strong>AI Infrastructure Notes | Part 2</strong></p>
+<p><strong>Sinclair Huang</strong></p>
+<p>Everyone says AI needs more bandwidth.</p>
+<p>That part is true.</p>
+<p>As AI clusters scale from thousands of accelerators to tens of thousands, and then toward million-GPU-scale systems, the network stops being a background layer. It becomes part of the compute fabric itself. Copper reaches its distance, power, and signal-integrity limits. Optical interconnect moves closer to the switch ASIC. Co-packaged optics becomes the logical next step.</p>
+<p>That is the easy part of the story.</p>
+<p>The harder question is not whether light is useful.</p>
+<p>The harder question is whether the manufacturing window survives.</p>
+<p>In March 2025, NVIDIA announced Spectrum-X Photonics and Quantum-X Photonics, its co-packaged-optics networking switches for large-scale AI factories. TSMC has also said its COUPE-on-substrate CPO solution begins production in 2026. Broadcom has announced Tomahawk 6 Davisson, a 102.4-Tbps Ethernet switch with co-packaged optics.</p>
+<p>The industry narrative is now clear: light is moving closer to the ASIC.</p>
+<p>But CPO is not being delayed by a lack of optical physics. SiN waveguides, Cu-Cu bonding, and Ge photodetectors are all well-understood individually. The real problem appears when they must coexist inside one package, under BEOL-compatible thermal budgets, wafer-scale variation, and production-yield requirements.</p>
+<p>That makes CPO a process-integration story, not an optics story.</p>
+<p>While developing a training curriculum on advanced semiconductor manufacturing — and after working through recent literature and conversations with engineers who actually run these processes — I kept seeing the same pattern:</p>
+<p>The bottleneck is not a single missing invention.</p>
+<p>It is the collision of mature process modules at the integration boundary.</p>
+<p>This article focuses on three failure modes that will decide whether CPO actually ships at scale:</p>
+<ol>
+<li>
+<p>SiN waveguide propagation-loss drift</p>
+</li>
+<li>
+<p>EIC-PIC Cu-Cu hybrid-bonding voids</p>
+</li>
+<li>
+<p>Ge photodetector dark-current drift</p>
+</li>
+</ol>
+<p>There is another real CPO issue I am deliberately bracketing here: laser-source integration and thermal management. Whether the industry standardises around external laser sources, co-packaged laser sources, or some hybrid approach remains a major architecture debate. Lasers are heat-sensitive, and that problem deserves its own article.</p>
+<p>But even if the laser is kept outside the package, the PIC/EIC manufacturing stack still has to survive the three process windows below. That is why I focus here on the manufacturing failure modes inside the optical path and the EIC-PIC integration boundary.</p>
+<h2 id="the-60-second-version">The 60-second version<a hidden class="anchor" aria-hidden="true" href="#the-60-second-version">#</a></h2>
+<p>&gt; CPO is often described as “optics replacing copper.”</p>
+<p>&gt; That is directionally right, but incomplete.</p>
+<p>&gt; The manufacturing problem is more specific:</p>
+<p>&gt; <strong><strong>CPO requires FEOL-grade process quality under a BEOL thermal budget.</strong></strong></p>
+<p>&gt; That conflict appears in three places:</p>
+<p>&gt; <strong><strong>SiN waveguides</strong></strong> want low-loss, high-temperature film quality, but BEOL integration pushes them toward lower-temperature PECVD plus post-processing.</p>
+<p>&gt; <strong><strong>Cu-Cu hybrid bonding</strong></strong> uses BEOL copper technology, but requires near-atomic-level surface control, especially around Cu recess and wafer-scale bonding yield.</p>
+<p>&gt; <strong><strong>Ge photodetectors</strong></strong> want high-quality epitaxy and annealing, but BEOL-compatible integration caps the thermal budget below the temperatures that normally produce the best detector performance.</p>
+<p>&gt; So the real CPO question is not:</p>
+<p>&gt; <strong><strong>Can optics beat copper?</strong></strong></p>
+<p>&gt; It is:</p>
+<p>&gt; <strong><strong>Can thin-film deposition, CMP, BEOL metallization, ion implantation, Ge epitaxy, and hybrid bonding be co-optimised inside one manufacturable window?</strong></strong></p>
+<p>&gt; That is why the integration-control point becomes uniquely valuable.</p>
+<p>&gt; <strong><strong>The physics did not suddenly change. The tolerance budget did.</strong></strong></p>
+<h2 id="a-different-way-to-read-the-cpo-headlines">A different way to read the CPO headlines<a hidden class="anchor" aria-hidden="true" href="#a-different-way-to-read-the-cpo-headlines">#</a></h2>
+<p>The market reaction to CPO has been swift.</p>
+<p>IDTechEx forecasts the co-packaged-optics market to exceed $20 billion by 2036, growing at a 37% CAGR from 2026 to 2036. NVIDIA and Broadcom are pulling CPO into the centre of AI networking roadmaps. Foundry roadmaps now contain CPO line items that did not exist in the mainstream conversation only a short time ago.</p>
+<p>In public markets, “CPO exposure” is quickly becoming a narrative in itself. But a lot of that conversation still stops at roadmaps and TAM. Very little of it asks where the actual manufacturing windows are tightest.</p>
+<p>That is the gap I kept noticing while reading the NVIDIA, Broadcom, and foundry roadmaps: the slides tell you where bandwidth is going, but they rarely tell you which tolerance budget hurts first.</p>
+<p>Read the headlines, and the story sounds clean:</p>
+<p>Copper runs out of room.</p>
+<p>Light moves closer to the chip.</p>
+<p>Photons beat electrons.</p>
+<p>Problem solved.</p>
+<p>But when those slides are decomposed into actual unit-process steps, the bottlenecks are not purely optical.</p>
+<p>They sit at the boundary between process modules that each look solved on paper: thin-film deposition, CMP, ion implantation, BEOL metallization, hybrid bonding, and Ge epitaxy.</p>
+<p>Each module has decades of engineering maturity.</p>
+<p>The difficulty is forcing all of them to coexist under one CPO thermal, optical, electrical, and yield budget.</p>
+<p>That is when tolerances collapse by one to two orders of magnitude.</p>
+<p>A simple example captures the whole issue.</p>
+<p>In conventional BEOL Cu damascene, post-CMP surface roughness of Rq ≈ 1–2 nm can be excellent. Current flowing through copper does not meaningfully care about that scale of surface variation.</p>
+<p>But if a SiN waveguide is placed near or above that copper-integrated stack, the same surface starts interacting with telecom-wavelength light. What is invisible noise to electrons can become measurable dB/cm loss to photons. The exact magnitude depends on roughness amplitude, correlation length, sidewall versus top-surface contributions, mode overlap, waveguide geometry, and cladding design.</p>
+<p>The point is not a single number.</p>
+<p>The point is that the same manufactured surface receives two different verdicts from two different physical systems.</p>
+<p>That is the CPO problem.</p>
+<h2 id="failure-mode-1-drift-in-sin-waveguide-propagation-loss">Failure Mode #1: Drift in SiN waveguide propagation loss<a hidden class="anchor" aria-hidden="true" href="#failure-mode-1-drift-in-sin-waveguide-propagation-loss">#</a></h2>
+<h3 id="where-thin-film-deposition-and-cmp-jointly-decide-the-fate-of-a-single-opticalpath">Where thin-film deposition and CMP jointly decide the fate of a single optical path<a hidden class="anchor" aria-hidden="true" href="#where-thin-film-deposition-and-cmp-jointly-decide-the-fate-of-a-single-opticalpath">#</a></h3>
+<p><strong><strong>Key window:</strong></strong> SiN waveguide loss is not just a design variable. In reported foundry-compatible flows, it is strongly tied to film quality, CMP roughness, correlation length, and post-processing. The practical target is optical-grade roughness, not ordinary BEOL planarity.</p>
+<p>The first leg of a CPO optical path is often a SiN waveguide. Its quality directly sets the optical power budget.</p>
+<p>A typical CPO optical engine may start with finite laser launch power, then lose margin through modulation, routing, coupling, and detection. Every additional dB of insertion loss is a direct hit on system reliability and energy efficiency.</p>
+<p>SiN waveguide propagation loss has three main sources:</p>
+<ol>
+<li>
+<p>Intrinsic material absorption, including Si-H and N-H bond absorption</p>
+</li>
+<li>
+<p>Surface and sidewall scattering, especially relevant at telecom wavelengths</p>
+</li>
+<li>
+<p>Geometric non-uniformity from lithography and etch</p>
+</li>
+</ol>
+<p>The second source is where process integration becomes decisive.</p>
+<p>Scattering loss is not fixed by optics alone. It is strongly shaped by the deposition recipe, the post-deposition anneal, the CMP process, and the roughness correlation length left behind by the manufacturing flow.</p>
+<p>A 2023 study of foundry-compatible deposited SiN showed how large the process delta can be. PECVD SiN without CMP showed a loss above 10 dB/cm, while PECVD plus CMP brought a loss below 1 dB/cm. With additional annealing, the reported loss could fall further, reaching 0.28 dB/cm with RTA and 0.06 dB/cm with furnace annealing in the reported flow.</p>
+<p>The takeaway is simple:</p>
+<p>Going from “PECVD as deposited” to “PECVD plus CMP plus anneal” can buy roughly two orders of magnitude in optical loss.</p>
+<p>But that improvement is not free.</p>
+<p>Every extra 1 dB of link loss requires about 26% more optical launch power, because 10^(0.1) ≈ 1.26. More optical power means more heat, more thermal drift, and more reliability pressure.</p>
+<p>This is why waveguide roughness is not a cosmetic metric.</p>
+<p>It is a system-level power and reliability variable.</p>
+<h3 id="the-thermal-budget-conflict">The thermal-budget conflict<a hidden class="anchor" aria-hidden="true" href="#the-thermal-budget-conflict">#</a></h3>
+<p>LPCVD SiN can produce dense, high-quality films at around 780°C. That high temperature helps drive out hydrogen-related bonds and improves film quality.</p>
+<p>But 780°C is incompatible with a BEOL copper environment.</p>
+<p>PECVD SiN can be deposited at roughly 300–400°C, making it BEOL-compatible. But PECVD films typically carry higher hydrogen content, lower density, higher stress, and stronger dependence on deposition microstructure and post-processing.</p>
+<p>This is the first core CPO conflict:</p>
+<p><strong><strong>The optical layer wants high-temperature film quality. The package integration stack allows only low-temperature processing.</strong></strong></p>
+<p>The practical industry answer is PECVD plus post-processing:</p>
+<p>Low-temperature deposition → CMP planarization → low-thermal-budget anneal.</p>
+<p>The process window is narrow because the result depends on multiple tools that historically were not optimised as one optical system.</p>
+<h3 id="why-cmp-becomes-thehinge">Why CMP becomes the hinge<a hidden class="anchor" aria-hidden="true" href="#why-cmp-becomes-thehinge">#</a></h3>
+<p>In standard BEOL copper CMP, the objective is planarity and residue removal. Rq below 1 nm is already high-end work.</p>
+<p>But SiN waveguide CMP moves toward optical-grade flatness. The draft process targets discussed in the literature and engineering conversations are closer to Rq &lt; 0.3 nm, with sidewall roughness, correlation length, and particles all contributing to loss.</p>
+<p>That implies three simultaneous requirements:</p>
+<ol>
+<li>
+<p>Smaller abrasive particle size</p>
+</li>
+<li>
+<p>Lower scratch generation during pad conditioning</p>
+</li>
+<li>
+<p>Near-zero post-CMP particle contamination</p>
+</li>
+</ol>
+<p>This is CMP being asked to behave like optical polishing, but at semiconductor wafer throughput.</p>
+<p>That combination is the hard part.</p>
+<h2 id="failure-mode-2-voids-at-the-eic-pic-cu-cu-hybrid-bonding-interface">Failure Mode #2: Voids at the EIC-PIC Cu-Cu hybrid-bonding interface<a hidden class="anchor" aria-hidden="true" href="#failure-mode-2-voids-at-the-eic-pic-cu-cu-hybrid-bonding-interface">#</a></h2>
+<h3 id="where-beol-copper-damascene-recess-control-determines-cpos-electro-optical-conversion-fate">Where BEOL copper damascene recess control determines CPO’s electro-optical conversion fate<a hidden class="anchor" aria-hidden="true" href="#where-beol-copper-damascene-recess-control-determines-cpos-electro-optical-conversion-fate">#</a></h3>
+<p><strong><strong>Key window:</strong></strong> the Cu surface cannot simply be “flat.” In reported hybrid-bonding experiments, the useful recess window sits in the few-nanometer range: too shallow risks Cu protrusion and failed dielectric bonding; too deep risks insufficient Cu contact and void formation after anneal.</p>
+<p>TSMC COUPE’s important manufacturing idea is not simply that it uses silicon photonics. It is that the electronic IC and photonic IC can be brought extremely close together through advanced 3D integration.</p>
+<p>This interface matters because photonic chips need area, while electronic drivers and SerDes circuits benefit from advanced logic nodes. A long copper path between them defeats much of the energy and latency benefit.</p>
+<p>That is why wafer-scale EIC-PIC hybrid bonding becomes a key CPO control point.</p>
+<p>The problem is that hybrid bonding turns copper from “just a conductor” into a structural and electro-optical interface.</p>
+<h3 id="the-counterintuitive-cu-recesswindow">The counterintuitive Cu recess window<a hidden class="anchor" aria-hidden="true" href="#the-counterintuitive-cu-recesswindow">#</a></h3>
+<p>The critical pre-step in hybrid bonding is CMP.</p>
+<p>The wafer surface contains both dielectric and exposed copper. Before bonding, the dielectric surfaces must make intimate contact. During annealing, copper expands upward and completes the electrical connection.</p>
+<p>That means the copper must sit slightly below the dielectric surface before bonding.</p>
+<p>Too high, and the dielectric surfaces cannot bond properly.</p>
+<p>Too low, and the copper does not make good contact after annealing.</p>
+<p>In the cited bonding literature, the practical optimal window is only a few nanometers wide: Cu recess around 3–5 nm, with failure modes appearing when recess becomes too shallow or too deep.</p>
+<p>That is the second core CPO conflict:</p>
+<p><strong><strong>Hybrid bonding uses BEOL copper, but demands FEOL-grade surface precision.</strong></strong></p>
+<p>Conventional copper damascene CMP can tolerate a wider process window. CPO hybrid bonding tightens the problem dramatically because the target must be hit across a large number of pads on a 300 mm wafer.</p>
+<p>This is not only a resistance issue.</p>
+<p>It is a yield issue.</p>
+<p>And in CPO, yield compounds brutally.</p>
+<p>For illustration, if a package integrates 36 optical paths and each path has a 99% yield, the package-level yield is 0.99³⁶, or about 70%, before counting any other package defect.</p>
+<p>That is why a “small” per-element process miss becomes a system-level manufacturing problem.</p>
+<h3 id="the-other-hidden-failurepoints">The other hidden failure points<a hidden class="anchor" aria-hidden="true" href="#the-other-hidden-failurepoints">#</a></h3>
+<p>Cu recess is only the first issue.</p>
+<p>Copper surface oxidation can introduce a thin CuO layer before bonding. A low-temperature anneal may not fully remove that interface layer, raising resistance and weakening the bond.</p>
+<p>Interface voids can appear due to grain structure, non-uniform bonding, local contamination, or thermal cycling. Voids are not just electrical defects. They are stress concentrators.</p>
+<p>CTE mismatch between the EIC, PIC, dielectric layers, and metal stack creates long-term reliability risk.</p>
+<p>Electromigration also changes the meaning at a hybrid-bonding interface. The interface is not a conventional continuous copper line; it is a non-native Cu-Cu interface that may behave differently under high current density and thermal stress.</p>
+<p>In older BEOL thinking, copper was evaluated mainly as a current path.</p>
+<p>In CPO, copper becomes an electro-optical integration surface.</p>
+<p>That is a different standard.</p>
+<h2 id="failure-mode-3-dark-current-drift-in-ge-photodetectors">Failure Mode #3: Dark-current drift in Ge photodetectors<a hidden class="anchor" aria-hidden="true" href="#failure-mode-3-dark-current-drift-in-ge-photodetectors">#</a></h2>
+<h3 id="where-ion-implantation-and-defect-management-decide-whether-the-optical-signal-can-beheard">Where ion implantation and defect management decide whether the optical signal can be heard<a hidden class="anchor" aria-hidden="true" href="#where-ion-implantation-and-defect-management-decide-whether-the-optical-signal-can-beheard">#</a></h3>
+<p><strong><strong>Key window:</strong></strong> the detector must simultaneously hit dark-current, responsivity, bandwidth, and BEOL thermal-budget targets. That is hard because the best Ge material quality usually wants more temperature than the BEOL stack is willing to give.</p>
+<p>After light travels through the waveguide and crosses the integrated optical path, it must be converted back into an electrical signal.</p>
+<p>That conversion is typically done with Ge or SiGe photodetectors.</p>
+<p>Ge is attractive because silicon does not absorb telecom wavelengths efficiently, while germanium can absorb 1310 nm and 1550 nm light and remains Group IV, making it more CMOS-compatible than III-V materials such as InGaAs.</p>
+<p>But the defining metric is not just responsivity.</p>
+<p>It is dark current.</p>
+<p>Dark current is the current that flows even when no light is present. It raises the noise floor, reduces sensitivity, and consumes optical-link margin.</p>
+<h3 id="the-lattice-mismatch-problem">The lattice-mismatch problem<a hidden class="anchor" aria-hidden="true" href="#the-lattice-mismatch-problem">#</a></h3>
+<p>Ge-on-Si has a fundamental materials problem: the lattice mismatch between Ge and Si is about 4.2%.</p>
+<p>That mismatch generates threading dislocations during epitaxy. Each dislocation can act as a recombination centre and contribute to dark current.</p>
+<p>Typical threading-dislocation-density ranges can vary by orders of magnitude depending on the epitaxy and anneal process. In broad terms, unoptimized epi can sit around 1⁰⁸–1⁰⁹ cm⁻², optimised SiGe buffer and cyclic anneal flows can move toward 1⁰⁶–1⁰⁷ cm⁻², and leading research demonstrations can push below 1⁰⁵ cm⁻².</p>
+<p>That is why the detector problem is not purely optical.</p>
+<p>It is materials and defect engineering.</p>
+<h3 id="ion-implantation-versus-in-situdoping">Ion implantation versus in-situ doping<a hidden class="anchor" aria-hidden="true" href="#ion-implantation-versus-in-situdoping">#</a></h3>
+<p>Ge photodetectors need doped regions. There are two broad routes.</p>
+<p>Ion implantation plus RTA gives precise placement and concentration control and fits mainstream CMOS thinking. But implantation damage in Ge can be severe, and end-of-range defects can become dark-current centres.</p>
+<p>In-situ doping during epitaxy avoids implantation damage, but profile control, process stability, and EHS controls become more difficult.</p>
+<p>A 2021 <strong>Optics Express</strong> paper cited in the draft found that in-situ As doping during Ge seed-layer growth produced dramatically lower dark current than the ion-implant route.</p>
+<p>That is not an optics breakthrough.</p>
+<p>It is a doping-process breakthrough.</p>
+<h3 id="the-beol-thermal-budget-squeeze">The BEOL thermal-budget squeeze<a hidden class="anchor" aria-hidden="true" href="#the-beol-thermal-budget-squeeze">#</a></h3>
+<p>The hardest case is BEOL-compatible Ge detector integration.</p>
+<p>High-quality Ge epitaxy often wants temperatures around 700°C. Dislocation annealing can want even higher temperatures. Dopant activation can also require temperatures above what BEOL copper and low-k materials can comfortably tolerate.</p>
+<p>But BEOL integration forces the process below roughly 450°C.</p>
+<p>That is the third core CPO conflict:</p>
+<p><strong><strong>Ge detectors want high-temperature material quality, but CPO integration caps the temperature budget.</strong></strong></p>
+<p>So the detector may be forced to operate below its theoretical performance ceiling, not because detector physics is poorly understood, but because the integration stack will not allow the ideal process.</p>
+<h2 id="the-underlying-conflict">The underlying conflict<a hidden class="anchor" aria-hidden="true" href="#the-underlying-conflict">#</a></h2>
+<p>Put the three failure modes side by side, and the pattern becomes clear.</p>
+<p>CPO requires FEOL-grade process quality at BEOL thermal budget.</p>
+<p>SiN waveguides need low-loss film quality, but CPO pushes them toward low-temperature deposition and post-processing.</p>
+<p>Cu-Cu bonding uses BEOL metallization, but demands a few-nanometer recess window and wafer-scale uniformity.</p>
+<p>Ge detectors want high-temperature epitaxy and annealing, but BEOL integration limits the thermal budget.</p>
+<p>This cannot be solved by a single better optical component.</p>
+<p>It requires cross-module process co-design:</p>
+<p>Deposition with CMP.</p>
+<p>CMP with hybrid bonding.</p>
+<p>Epitaxy with ion implantation.</p>
+<p>Thermal budget with optical loss.</p>
+<p>Package yield with device-level variation.</p>
+<p>That is why CPO is a process-integration story.</p>
+<p>And that is why the integration-control point becomes unusually valuable.</p>
+<p>The early production phase of CPO should favour players that can see and control the FEOL, BEOL, 3D integration, and advanced-packaging boundary at the same time.</p>
+<p>That does not mean one player owns the entire chain.</p>
+<p>Optical-component vendors, switch-ASIC companies, laser suppliers, packaging houses, foundries, and system integrators all remain critical.</p>
+<p>But the party that can make the cross-module tradeoffs has a different kind of leverage.</p>
+<p>CPO is not won by the component that looks best alone.</p>
+<p>It is won by the integration window that survives production.</p>
+<h2 id="what-this-means-for-investors">What this means for investors<a hidden class="anchor" aria-hidden="true" href="#what-this-means-for-investors">#</a></h2>
+<p>When evaluating CPO-exposed companies, do not only ask whether a company “has silicon photonics.”</p>
+<p>That question is too broad.</p>
+<p>The sharper question is whether the company controls a manufacturing window that becomes harder as CPO moves from roadmap to production.</p>
+<p>Ask more specific questions:</p>
+<p>Does it have long-running SiN process R&amp;D capability?</p>
+<p>Does it understand PECVD/LPCVD optical-quality tradeoffs?</p>
+<p>Does it control CMP at optical-grade roughness?</p>
+<p>Does it have production-scale hybrid-bonding experience?</p>
+<p>Does it have low-thermal-budget Ge epitaxy and detector IP?</p>
+<p>Can it explain package-level yield, not just device-level performance?</p>
+<p>The credible list becomes much shorter when asked this way.</p>
+<p>This is also why I would separate <strong><strong>product exposure</strong></strong> from <strong><strong>process-control exposure</strong></strong>.</p>
+<p>Product exposure is easier to see: optical engines, switch ASICs, pluggable modules, CPO roadmaps, and customer announcements.</p>
+<p>Process-control exposure is easier to miss: low-temperature deposition, optical-grade CMP consumables, post-CMP cleaning, hybrid-bonding tools, wafer-level inspection, in-line metrology, and reliability qualification.</p>
+<p>The market often prices the first category faster because it is easier to narrate.</p>
+<p>But if CPO is fundamentally a process-integration problem, the second category may control the yield windows that decide who can actually ship.</p>
+<p>That does not make every equipment, materials, or metrology supplier a “CPO winner.”</p>
+<p>It means the right due diligence question changes.</p>
+<p>Do not only ask who has the best optical story.</p>
+<p>Ask who controls the process window that the optical story depends on.</p>
+<h2 id="what-this-means-for-process-engineers">What this means for process engineers<a hidden class="anchor" aria-hidden="true" href="#what-this-means-for-process-engineers">#</a></h2>
+<p>CPO is not a foreign technology.</p>
+<p>It is the extreme application of skills that already exist in thin-film deposition, CMP, BEOL metallization, ion implantation, etch, epitaxy, metrology, and reliability engineering.</p>
+<p>The difference is that the success criteria have moved.</p>
+<p>One thing I have noticed in conversations with BEOL and CMP engineers is that some of them initially do not think of themselves as “photonics people.” Then CPO arrives, and the boundary moves: their roughness, recess, cleaning, and reliability windows suddenly become optical-link variables.</p>
+<p>A surface that is good enough for electrons may not be good enough for photons.</p>
+<p>A thermal budget that is acceptable for copper may not be sufficient for Ge.</p>
+<p>A CMP window that is respectable for BEOL may be too loose for hybrid bonding.</p>
+<p>That is why the photonic era may end up rewarding process engineers more than people expect — especially the ones who are willing to think across modules instead of defending a single process silo.</p>
+<p>A note on metrology: when I ask about AFM roughness, I do not mean AFM is the only high-volume answer. AFM is often a process-characterization and excursion-analysis tool, not a fast in-line screen for every wafer. At scale, the better question becomes whether the company has a wafer-level metrology loop that connects AFM sampling, OCD or scatterometry, ellipsometry, defect inspection, test structures, microring maps, and optical cut-back data into one process-control system.</p>
+<h2 id="closing-the-real-winners-of-the-photonic-era-are-process-engineers">Closing: the real winners of the photonic era are process engineers<a hidden class="anchor" aria-hidden="true" href="#closing-the-real-winners-of-the-photonic-era-are-process-engineers">#</a></h2>
+<p>In a keynote deck, CPO looks like an optical story.</p>
+<p>When you open the manufacturing flow, it becomes something else.</p>
+<p>The optics has been clear for decades.</p>
+<p>What decides mass production is whether the process stack can simultaneously deliver:</p>
+<ul>
+<li>
+<p>SiN waveguide CMP roughness low enough for optical loss targets</p>
+</li>
+<li>
+<p>Cu recess control tight enough for hybrid bonding</p>
+</li>
+<li>
+<p>Ge detector dark current low enough under BEOL thermal budget</p>
+</li>
+<li>
+<p>Wafer-scale uniformity and package-level yield high enough for commercial deployment</p>
+</li>
+</ul>
+<p>The more I study AI infrastructure, the more I think the least glamorous questions are often the most revealing ones.</p>
+<p>The next time a company claims it is ready for CPO production, the most useful question may not be about bandwidth.</p>
+<p>It may be this:</p>
+<p><strong><strong>What does your SiN waveguide AFM roughness distribution look like?</strong></strong></p>
+<p>The companies that can answer immediately are the ones that are actually close — and they rarely lead with bandwidth slides.</p>
+<h2 id="furtherreading">Further reading<a hidden class="anchor" aria-hidden="true" href="#furtherreading">#</a></h2>
+<p>For readers who want to go deeper, these are the references and topic areas I would start with:</p>
+<ol>
+<li>
+<p><strong><strong>NVIDIA Spectrum-X Photonics / Quantum-X Photonics</strong></strong> — official announcements and technical materials on co-packaged optics for AI networking.</p>
+</li>
+<li>
+<p><strong><strong>TSMC COUPE / SoIC / 3DFabric materials</strong></strong> — public disclosures on compact universal photonic engines, hybrid bonding, and advanced packaging integration.</p>
+</li>
+<li>
+<p><strong><strong>Broadcom Tomahawk 6 Davisson</strong></strong> — public materials on CPO Ethernet switch architecture and early customer availability.</p>
+</li>
+<li>
+<p><strong><strong>IDTechEx CPO market forecast</strong></strong> — useful for understanding the commercial timeline and market-size expectations around co-packaged optics.</p>
+</li>
+<li>
+<p><strong><strong>Ultra-low-loss silicon nitride photonics</strong></strong> — papers on PECVD / LPCVD SiN waveguides, CMP planarization, annealing, and propagation-loss reduction.</p>
+</li>
+<li>
+<p><strong><strong>Cu-Cu hybrid bonding reliability</strong></strong> — literature on Cu recess control, interface voids, surface oxidation, electromigration, and wafer-scale hybrid bonding.</p>
+</li>
+<li>
+<p><strong><strong>Ge-on-Si photodetectors for BEOL photonics</strong></strong> — papers on Ge epitaxy, threading dislocation density, dark current, in-situ doping, implantation damage, and low-thermal-budget integration.</p>
+</li>
+<li>
+<p><strong><strong>BEOL copper interconnect reliability</strong></strong> — background on copper damascene, low-k integration, electromigration, and post-Cu interconnect scaling.</p>
+</li>
+</ol>
+<h2 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h2>
+<ol>
+<li>
+<p>NVIDIA, “<a href="https://nvidianews.nvidia.com/news/nvidia-spectrum-x-co-packaged-optics-networking-switches-ai-factories">NVIDIA Announces Spectrum-X Photonics, Co-Packaged Optics Networking Switches to Scale AI Factories to Millions of GPUs</a>,” March 18, 2025.</p>
+</li>
+<li>
+<p>TSMC, “<a href="https://pr.tsmc.com/english/news/3302">TSMC Debuts A13 Technology at 2026 North America Technology Symposium</a>,” April 23, 2026.</p>
+</li>
+<li>
+<p>Broadcom, “<a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-tomahawkr-6-davisson-industrys-first-1024">Broadcom Announces Tomahawk 6 — Davisson, the Industry’s First 102.4-Tbps Ethernet Switch with Co-Packaged Optics</a>,” October 8, 2025.</p>
+</li>
+<li>
+<p>IDTechEx, “<a href="https://www.idtechex.com/en/research-report/co-packaged-optics-cpo/1138">Co-Packaged Optics (CPO) 2026–2036</a>.”</p>
+</li>
+<li>
+<p>Ji, X. et al., “<a href="https://arxiv.org/abs/2301.03053">Ultra-Low-Loss Silicon Nitride Photonics Based on Deposited Films Compatible with Foundries</a>,” 2023.</p>
+</li>
+<li>
+<p>Bose, D. et al., “<a href="https://www.nature.com/articles/s41377-024-01503-4">Anneal-free ultra-low loss silicon nitride integrated photonics</a>,” <strong>Light: Science &amp; Applications</strong>, 2024.</p>
+</li>
+<li>
+<p>Cheemalamarri, H. K. et al., “<a href="https://www.nature.com/articles/s44172-026-00649-w">Void-free Cu/dielectric hybrid bonding at low-temperature enabled by ultrathin metal passivation engineering for 3D-IC applications</a>,” <strong>Communications Engineering</strong>, 2026.</p>
+</li>
+<li>
+<p>Lu, T.-F. et al., “<a href="https://www.mdpi.com/1996-1944/17/9/2150">Effect of Cu Film Thickness on Cu Bonding Quality and Bonding Mechanism</a>,” <strong>Materials</strong>, 2024.</p>
+</li>
+<li>
+<p>Lin, Y. et al., “<a href="https://opg.optica.org/abstract.cfm?uri=oe-29-3-2940">Low-power and high-detectivity Ge photodiodes by in-situ heavy As doping during Ge-on-Si seed layer growth</a>,” <strong>Optics Express</strong>, 2021.</p>
+</li>
+<li>
+<p>Marzen, S. et al., “<a href="https://pubs.aip.org/aip/apl/article/123/11/111105/2910867/High-performance-germanium-on-silicon-photodiodes">High performance germanium on silicon photodiodes for back-end-of-line photonic integration</a>,” <strong>Applied Physics Letters</strong>, 2023.</p>
+</li>
+<li>
+<p>Edelstein, D., “27 Years of Copper Interconnects and Beyond: BEOL for Current and Future Technology Nodes,” <strong>IEDM</strong>, 2024.</p>
+</li>
+</ol>
+<h2 id="authornote">Author note<a hidden class="anchor" aria-hidden="true" href="#authornote">#</a></h2>
+<p>I develop technical training materials on semiconductor manufacturing, with a focus on connecting unit processes — deposition, lithography, etch, CMP, implantation, BEOL, and process integration — to advanced packaging and AI hardware infrastructure.</p>
+<p>This article is part of my ongoing attempt to translate semiconductor process details into strategic language for engineers, investors, and technology operators. The goal is not to review every paper in the CPO literature, but to identify the manufacturing constraints that are most likely to matter when a technology moves from roadmap slides to high-volume production.</p>
+<p>All views are my own.</p>
+<h2 id="disclaimer">Disclaimer<a hidden class="anchor" aria-hidden="true" href="#disclaimer">#</a></h2>
+<p>This article is for research and educational purposes only. It is not investment advice, technical qualification advice, legal advice, or a recommendation to buy or sell any security.</p>
+<p>The analysis is based on publicly available academic papers, company disclosures, conference materials, industry reports, non-confidential technical context, and my personal interpretation of those materials.</p>
+<p>Any company, technology, or process mentioned may have internal capabilities, production data, or design choices that are not publicly disclosed. Actual production specifications may differ across vendors, process generations, and customer programs.</p>
+<p>Errors or omissions are my own. Corrections with public citations are welcome.</p>
+<h2 id="disclosure">Disclosure<a hidden class="anchor" aria-hidden="true" href="#disclosure">#</a></h2>
+<p>No company mentioned in this article has reviewed, sponsored, approved, or compensated me for this work.</p>
+<p>This article is based on publicly available information, non-confidential technical context, and my personal analysis and opinions. It does not rely on proprietary, confidential, or material non-public information.</p>
+<p>I may currently hold, and may buy or sell, securities of companies mentioned in this article or in the broader AI infrastructure and semiconductor ecosystem at any time without further notice.</p>
+<p>Nothing in this article constitutes investment advice, a financial recommendation, or a solicitation to buy or sell any security. Readers should conduct their own due diligence.</p>
+<h2 id="comments-invitation">Comments invitation<a hidden class="anchor" aria-hidden="true" href="#comments-invitation">#</a></h2>
+<p>Comments and disagreements are welcome — especially if you can point me to public papers, conference proceedings, or vendor disclosures I missed. I would rather be corrected with an open citation than confirmed with a private one.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://sinclairhuang.org/tags/silicon-photonics/">Silicon-Photonics</a></li>
+      <li><a href="https://sinclairhuang.org/tags/ai-infrastruture/">Ai-Infrastruture</a></li>
+      <li><a href="https://sinclairhuang.org/tags/advanced-packaging/">Advanced-Packaging</a></li>
+      <li><a href="https://sinclairhuang.org/tags/semiconductors/">Semiconductors</a></li>
+      <li><a href="https://sinclairhuang.org/tags/manufacturing/">Manufacturing</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://sinclairhuang.org/">Sinclair Huang, HEC Liège, Executive DBA</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

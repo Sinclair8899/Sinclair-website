@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ai-for-Science on Sinclair Huang, HEC Liège, Executive DBA</title>
+    <link>https://sinclairhuang.org/tags/ai-for-science/</link>
+    <description>Recent content in Ai-for-Science on Sinclair Huang, HEC Liège, Executive DBA</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sinclairhuang.org/tags/ai-for-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When AI Starts Predicting the Next Scientific Question</title>
+      <link>https://sinclairhuang.org/blog/2026-04-05-when-ai-starts-predicting-the-next-scientific-question/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/blog/2026-04-05-when-ai-starts-predicting-the-next-scientific-question/</guid>
+      <description>AI may not just accelerate science. It may begin to shape which questions emerge first.A new study in Nature Machine Intelligence suggests AI may do more than summarise knowledge or accelerate discove</description>
+    </item>
+  </channel>
+</rss>
