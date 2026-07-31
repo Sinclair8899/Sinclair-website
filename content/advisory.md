@@ -1,6 +1,7 @@
 ---
 title: "Advisory"
 description: "Independent advisory for boards, executive teams, and investors navigating AI infrastructure, semiconductors, supply chains, and capital allocation."
+hideDescription: true
 aliases:
   - /contact/
   - /consulting/
@@ -14,7 +15,7 @@ More than three decades of operating and strategic experience across Taiwan's in
 
 ## Who This Is For
 
-**Boards and executive teams** in industrial, materials, and technology companies facing decisions they cannot outsource: how AI reshapes their supply chain position, where to commit capital, and which capabilities to build versus buy. I have worked on the operating side of these decisions for more than thirty years, including advisory work at the chairman and senior-executive level in Taiwan's materials industry.
+**Boards and executive teams** in industrial, materials, and technology companies facing decisions whose accountability cannot be outsourced: how AI reshapes their supply chain position, where to commit capital, and which capabilities to build versus buy. I have worked on the operating side of these decisions for more than thirty years, including advisory work at the chairman and senior-executive level in Taiwan's materials industry.
 
 **Investors and institutions** — private equity, venture, and institutional teams that need supply-chain-grounded diligence on AI infrastructure, semiconductors, and advanced materials. Public research and broker coverage provide the visible picture; operating experience helps identify the assumptions, constraints, and execution risks that the models may miss.
 
@@ -23,7 +24,7 @@ More than three decades of operating and strategic experience across Taiwan's in
 <a id="retainer"></a>
 ### 1. Advisory Retainer
 
-Ongoing counsel to a chairman, board, or executive team: a regular monthly cadence covering AI transition strategy, supply chain positioning, and major capital decisions — plus direct access when time-sensitive questions arise. Discreet, and bilingual across English- and Mandarin-speaking contexts.
+Ongoing counsel to a chairman, board, or executive team: a regular monthly cadence covering AI transition strategy, supply chain positioning, and major capital decisions — plus direct access when time-sensitive questions arise. Work is handled discreetly, in either English or Mandarin.
 
 <a id="projects"></a>
 ### 2. Project Engagements
@@ -57,43 +58,43 @@ The best first step is a short note describing your situation — a decision you
 
 <a id="chinese"></a>
 
-# 顧問服務
+## 顧問服務
 
-三十餘年橫跨台灣工業與科技領域的營運及策略經驗——包括電子、化工、材料與生技產業——如今聚焦於 AI 基礎設施、半導體、供應鏈與資本配置等牽動長期發展的重大決策。我協助董事會、經營團隊與投資人,取得立足營運現實、並以嚴謹研究為基礎的獨立判斷。
+三十餘年橫跨台灣工業與科技領域的營運及策略經驗——包括電子、化工、材料與生技產業——如今聚焦於 AI 基礎設施、半導體、供應鏈與資本配置等牽動長期發展的重大決策。我協助董事會、經營團隊與投資人，形成立足營運現實、並以嚴謹研究為基礎的獨立判斷。
 
 ## 服務對象
 
-**面臨 AI 轉型的企業董事會與經營層** — 供應鏈定位如何被 AI 改寫、資本該投向何處、能力該自建或外購。這些決策無法外包;而我在營運端與董事層級決策桌上工作三十餘年,包括在台灣材料產業擔任董事長及高階經營層顧問。
+**面臨 AI 轉型的企業董事會與經營層** — 供應鏈定位如何被 AI 改寫、資本該投向何處、能力該自建或外購。這些決策可以借助外部判斷，但責任與後果無法外包。我在營運端參與這類決策三十餘年，並曾在台灣材料產業為董事長與高階經營層提供顧問服務。
 
-**投資機構與法人** — 需要「供應鏈實地視角」的私募、創投與機構團隊,針對 AI 基礎設施、半導體與先進材料進行盡職調查。公開研究與券商報告呈現的是檯面上的圖像;營運經驗協助辨識模型可能忽略的假設、限制條件與執行風險。
+**投資機構與法人** — 需要「供應鏈實地視角」的私募、創投與機構團隊，針對 AI 基礎設施、半導體與先進材料進行盡職調查。公開研究與券商報告呈現的是檯面上的圖像；營運經驗協助辨識模型可能忽略的假設、限制條件與執行風險。
 
 ## 合作方式
 
 ### 1. 顧問委任
 
-董事長、董事會或經營團隊的常態顧問:每月定期對談,涵蓋 AI 轉型策略、供應鏈定位與重大資本決策,並在重大議題或時效性決策出現時,提供直接討論與研判。重視保密,可在中英文環境中工作。
+董事長、董事會或經營團隊的常態顧問：每月定期對談，涵蓋 AI 轉型策略、供應鏈定位與重大資本決策，並在重大議題或時效性決策出現時，提供直接討論與研判。重視保密，可在中英文環境中工作。
 
 ### 2. 專案研究
 
-四至八週的單題深度工作:投資決策的技術與供應鏈盡職調查、外商進入亞洲供應鏈的市場評估、或特定領域的產業結構分析——AI 算力、HBM 與先進封裝、先進材料、工業機器人。交付形式為書面報告加一場與貴團隊的工作會議。
+四至八週的單題深度工作：投資決策的技術與供應鏈盡職調查、外商進入亞洲供應鏈的市場評估、或特定領域的產業結構分析——AI 算力、HBM 與先進封裝、先進材料、工業機器人。交付形式為書面報告加一場與貴團隊的工作會議。
 
 ### 3. 簡報與工作坊
 
-董事會閉門簡報、高階主管工作坊與演講。一場兩小時的深度簡報——AI 算力供應鏈的真實運作方式,以及它對貴公司或投資組合的意義——可協助經營團隊對機會、限制條件與後續決策建立共同認知。
+董事會閉門簡報、高階主管工作坊與演講。一場兩小時的深度簡報——AI 算力供應鏈的真實運作方式，以及它對貴公司或投資組合的意義——可協助經營團隊對機會、限制條件與後續決策建立共同認知。
 
 ## 我的獨特視角
 
-許多顧問擅長分析框架,卻未曾真正承擔營運責任;許多資深經營者有深厚經驗,卻少有可供外界檢視的研究與論述。我的工作結合兩者:三十餘年橫跨台灣電子、化工、材料與生技產業的實務經驗,以及持續公開發表、可在合作前先行檢驗的研究成果。
+許多顧問擅長分析框架，卻未曾真正承擔營運責任；許多資深經營者有深厚經驗，卻少有可供外界檢視的研究與論述。我的工作結合兩者：三十餘年橫跨台灣電子、化工、材料與生技產業的實務經驗，以及持續公開發表、可在合作前先行檢驗的研究成果。
 
-- **研究成果** — [AI 算力供應鏈研究](/publications/)、[SSRN 工作論文](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1044018)、[Zenodo 公開學術研究](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Huang%2C%20Po-Sung%28Sinclair%29%22&l=list&p=1&s=10&sort=bestmatch)。ORCID:[0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
+- **研究成果** — [AI 算力供應鏈研究](/publications/)、[SSRN 工作論文](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1044018)、[Zenodo 公開學術研究](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Huang%2C%20Po-Sung%28Sinclair%29%22&l=list&p=1&s=10&sort=bestmatch)。ORCID：[0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672)
 - **學歷** — 列日高等商學院(HEC Liège)高階企業管理博士(EDBA)
-- **經歷** — 三十餘年台灣電子、化工、材料與生技產業資歷,橫跨營運、企業策略與高階經營層顧問
+- **經歷** — 三十餘年台灣電子、化工、材料與生技產業資歷，橫跨營運、企業策略與高階經營層顧問
 
 ## 開始對話
 
-最好的第一步,是簡短說明您的情境——正在面對的決策、盡職調查的疑問,或考慮安排的簡報。來信由我本人回覆,初步對話不涉及任何義務。
+最好的第一步，是簡短說明您的情境——正在面對的決策、盡職調查的疑問，或考慮安排的簡報。來信由我本人回覆，初步對話不涉及任何義務。
 
-**Email:[research@sinclairhuang.org](mailto:research@sinclairhuang.org)**
-**LinkedIn:[Po-Sung (Sinclair) Huang](https://www.linkedin.com/in/po-sung-sinclair-h-53b33533/)**
+**Email：[research@sinclairhuang.org](mailto:research@sinclairhuang.org)**
+**LinkedIn：[Po-Sung (Sinclair) Huang](https://www.linkedin.com/in/po-sung-sinclair-h-53b33533/)**
 
-*由於每項委託皆由我本人直接參與,同一時期我僅承接有限數量的案件,以維持工作深度。若時程緊迫,請於來信中註明。*
+*由於每項委託皆由我本人直接參與，同一時期我僅承接有限數量的案件，以維持工作深度。若時程緊迫，請於來信中註明。*
