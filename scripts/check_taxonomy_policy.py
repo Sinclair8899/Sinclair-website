@@ -13,11 +13,16 @@ Rules enforced against a built tree (DOCS):
    not a valid stub fails; a refresh on any other taxonomy page fails.
 3. Outside the taxonomy dirs, any robots/googlebot meta containing
    noindex (or none) fails. Classification is by first path segment only.
-4. sitemap.xml is parsed as XML; a <loc> whose URL path — after percent-
-   decoding and normalization — has tags or categories as its first
-   segment fails (catches /tags, /tags/, and encoded forms alike).
+4. sitemap.xml is parsed as XML; every <loc> URL path is normalized as
+   urlparse -> unquote (exactly once) -> posixpath.normpath, so dot
+   segments collapse to the real destination (/blog/../tags/ai/ and
+   /blog/%2e%2e/tags/ai/ ARE taxonomy; /tags/../blog/ is NOT). A path
+   whose first normalized segment is tags or categories fails — URLs
+   containing .. are classified by destination, never rejected outright.
 5. While DOCS/research exists, /research/, /research/ai-infrastructure/
-   and /research/semiconductors/ must stay in the sitemap.
+   and /research/semiconductors/ must stay in the sitemap; membership is
+   compared on the SAME normalized form, so trailing-slash and
+   dot-segment spellings cannot cause false negatives.
 
 Error message prefixes are stable and asserted by test_checks.sh:
   TAXONOMY PAGE MISSING NOINDEX / TAXONOMY PAGE HAS UNEXPECTED REFRESH /
@@ -25,6 +30,7 @@ Error message prefixes are stable and asserted by test_checks.sh:
   TAXONOMY URL IN SITEMAP / RESEARCH URL MISSING FROM SITEMAP
 """
 import os
+import posixpath
 import re
 import sys
 import xml.etree.ElementTree as ET
@@ -74,6 +80,18 @@ def has_noindex(directives):
     return "noindex" in directives or "none" in directives
 
 
+def normalized_segments(url_or_path):
+    """urlparse -> unquote ONCE -> posixpath.normpath, as a segment tuple.
+
+    posixpath (never os.path) keeps the normalization platform-independent;
+    dot segments collapse to the real destination path, so classification
+    and sitemap membership both operate on where a URL actually lands.
+    """
+    path = unquote(urlparse(url_or_path.strip()).path)
+    norm = posixpath.normpath(path)
+    return tuple(s for s in norm.split("/") if s and s != ".")
+
+
 def is_valid_stub(scan):
     """Zero-second refresh whose target equals the single canonical href."""
     if len(scan.refreshes) != 1 or len(scan.canonicals) != 1:
@@ -120,18 +138,17 @@ def main(docs):
         except ET.ParseError as exc:
             errors.append(f"SITEMAP PARSE ERROR: {exc}")
         else:
-            paths = []
+            seen = set()
             for el in tree.getroot().iter():
                 if el.tag.rsplit("}", 1)[-1] == "loc" and el.text:
                     loc = el.text.strip()
-                    decoded = unquote(urlparse(loc).path)
-                    segments = [s for s in decoded.split("/") if s]
-                    paths.append(decoded)
+                    segments = normalized_segments(loc)
+                    seen.add(segments)
                     if segments and segments[0].casefold() in TAXONOMY_SEGMENTS:
                         errors.append(f"TAXONOMY URL IN SITEMAP: {loc}")
             if os.path.isdir(os.path.join(docs, "research")):
                 for url in RESEARCH_URLS:
-                    if url not in paths:
+                    if normalized_segments(url) not in seen:
                         errors.append(f"RESEARCH URL MISSING FROM SITEMAP: {url}")
 
     for line in errors[:MAX_REPORT]:

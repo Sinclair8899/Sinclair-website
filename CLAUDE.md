@@ -52,22 +52,29 @@ concurrency group.
 An unattended build that hits a new warning fails and leaves the live site as
 it was — that is the safe outcome, not an inconvenience.
 
-The checker itself is negative-tested: `scripts/test_checks.sh` runs one
-pristine case (must pass), twenty-one seeded tree faults (must each fail,
+The checker itself is negative-tested: `scripts/test_checks.sh` runs 29
+cases — 1 pristine (must pass), 23 seeded tree faults (must each fail,
 the newer ones asserted on their specific error messages so they cannot
-pass for the wrong reason): malformed relative link, `localhost:57206`
-leak, unledgered disappeared URL, duplicate CTA, backup file,
-sync-duplicate dirs `name 5`/`name 12`/`name (12)`, sync-duplicate files
+pass for the wrong reason), 2 positive cases (must pass), and 3
+Hugo-version parsing fixtures. The 23 faults are 12 non-taxonomy —
+malformed relative link, `localhost:57206` leak, unledgered disappeared
+URL, duplicate CTA, backup file, sync-duplicate dirs
+`name 5`/`name 12`/`name (12)`, sync-duplicate files
 `favicon 12.png`/`update-news 12.yml`/`data-name 12.json`, zero date in
-`docs/research/`, and eight taxonomy-policy faults (missing noindex,
+`docs/research/` — plus 11 taxonomy-policy faults: missing noindex,
 robots directive conflict, refresh on a real taxonomy page, corrupted
-`page/1` stub, googlebot-noindex leak outside taxonomy, plain and
-percent-encoded taxonomy sitemap locs, research URL dropped from the
-sitemap) — plus one positive robots-variant case (`" NoIndex ,  FOLLOW "`
-with flipped attribute order must PASS: the taxonomy gate parses HTML/XML
-semantically via `scripts/check_taxonomy_policy.py`, it does not grep
-fixed strings) and three Hugo-version parsing fixtures (official-hash
-pass, brew-metadata pass, `v0.152.20` fail). Run it after changing any
+`page/1` stub, plain noindex leaked onto a research page
+(noindex-on-research-page), googlebot-noindex leak outside taxonomy,
+taxonomy sitemap locs in plain (`/tags/ai/`), percent-encoded
+(`/%74%61%67%73/ai/`), dot-segment (`/blog/../tags/ai/`) and
+encoded-dot-segment (`/blog/%2e%2e/tags/ai/`) forms, and a research URL
+dropped from the sitemap. The 2 positive cases: a robots variant
+(`" NoIndex ,  FOLLOW "` with flipped attribute order) must PASS, and
+`/tags/../blog/` must normalize OUT of taxonomy — sitemap paths are
+normalized urlparse → unquote-once → `posixpath.normpath`, and the gate
+parses HTML/XML semantically via `scripts/check_taxonomy_policy.py`, it
+does not grep fixed strings. Version fixtures: official-hash pass,
+brew-metadata pass, `v0.152.20` fail. Run the suite after changing any
 check logic.
 
 **Never invoke the build through a pipe** (`scripts/build_and_check.sh | tail`
