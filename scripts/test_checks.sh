@@ -118,6 +118,67 @@ p.write_text(t2)
 PY
 expect research-url-dropped-from-sitemap fail "$TMP/case" "RESEARCH URL MISSING FROM SITEMAP"
 
+# Semantic taxonomy-policy fixtures (checker-only patch on 3B): the parser
+# must reject directive conflicts, refreshes outside genuine page/1 stubs,
+# corrupted stubs, googlebot leaks, and encoded sitemap paths — and must
+# ACCEPT case/space/attribute-order robots variants.
+fresh
+python3 - "$TMP/case/tags/ai/index.html" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+old = 'content="noindex,follow"'
+assert old in t
+p.write_text(t.replace(old, 'content="noindex, nofollow"', 1))
+PY
+expect taxonomy-robots-conflict fail "$TMP/case" "TAXONOMY PAGE MISSING NOINDEX"
+
+fresh
+python3 - "$TMP/case/tags/ai/index.html" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+assert '</head>' in t
+p.write_text(t.replace('</head>', '<meta http-equiv="refresh" content="0; url=https://sinclairhuang.org/"></head>', 1))
+PY
+expect refresh-on-real-taxonomy-page fail "$TMP/case" "TAXONOMY PAGE HAS UNEXPECTED REFRESH"
+
+fresh
+python3 - "$TMP/case/tags/ai/page/1/index.html" <<'PY'
+import sys, pathlib, re
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+t2, n = re.subn(r'(http-equiv="refresh" content="0; url=)[^"]+', r'\g<1>https://sinclairhuang.org/blog/', t, count=1)
+assert n == 1, 'refresh meta not found in stub'
+p.write_text(t2)
+PY
+expect stub-target-canonical-mismatch fail "$TMP/case" "INVALID TAXONOMY PAGINATION STUB"
+
+fresh
+printf '<meta name="googlebot" content="noindex">\n' >> "$TMP/case/blog/cowos-hbm-abf-explainer/index.html"
+expect googlebot-noindex-outside-taxonomy fail "$TMP/case" "NOINDEX LEAKED OUTSIDE TAXONOMY"
+
+fresh
+python3 - "$TMP/case/sitemap.xml" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+assert '</urlset>' in t
+p.write_text(t.replace('</urlset>', '  <url><loc>https://sinclairhuang.org/%74%61%67%73/ai/</loc></url>\n</urlset>'))
+PY
+expect encoded-taxonomy-loc-in-sitemap fail "$TMP/case" "TAXONOMY URL IN SITEMAP"
+
+fresh
+python3 - "$TMP/case/tags/ai/index.html" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+old = '<meta name="robots" content="noindex,follow">'
+assert old in t
+p.write_text(t.replace(old, '<meta content=" NoIndex ,  FOLLOW " name="ROBOTS">', 1))
+PY
+expect robots-variant-still-valid pass "$TMP/case"
+
 # Hugo version parsing fixtures — official releases carry a commit hash,
 # brew carries extra metadata; only the BASE semver may decide.
 vexpect() { # vexpect <name> <pass|fail> <version-token>

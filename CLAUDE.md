@@ -53,14 +53,22 @@ An unattended build that hits a new warning fails and leaves the live site as
 it was — that is the safe outcome, not an inconvenience.
 
 The checker itself is negative-tested: `scripts/test_checks.sh` runs one
-pristine case (must pass), eleven seeded tree faults (must each fail):
-malformed relative link, `localhost:57206` leak, unledgered disappeared URL
-(asserted on its specific error message, so it cannot pass for the wrong
-reason), duplicate CTA, backup file, sync-duplicate dirs `name 5`/`name 12`/
-`name (12)`, and sync-duplicate files `favicon 12.png`/`update-news 12.yml`/
-`data-name 12.json` — plus three Hugo-version parsing fixtures
-(official-hash pass, brew-metadata pass, `v0.152.20` fail). Run it after
-changing any check logic.
+pristine case (must pass), twenty-one seeded tree faults (must each fail,
+the newer ones asserted on their specific error messages so they cannot
+pass for the wrong reason): malformed relative link, `localhost:57206`
+leak, unledgered disappeared URL, duplicate CTA, backup file,
+sync-duplicate dirs `name 5`/`name 12`/`name (12)`, sync-duplicate files
+`favicon 12.png`/`update-news 12.yml`/`data-name 12.json`, zero date in
+`docs/research/`, and eight taxonomy-policy faults (missing noindex,
+robots directive conflict, refresh on a real taxonomy page, corrupted
+`page/1` stub, googlebot-noindex leak outside taxonomy, plain and
+percent-encoded taxonomy sitemap locs, research URL dropped from the
+sitemap) — plus one positive robots-variant case (`" NoIndex ,  FOLLOW "`
+with flipped attribute order must PASS: the taxonomy gate parses HTML/XML
+semantically via `scripts/check_taxonomy_policy.py`, it does not grep
+fixed strings) and three Hugo-version parsing fixtures (official-hash
+pass, brew-metadata pass, `v0.152.20` fail). Run it after changing any
+check logic.
 
 **Never invoke the build through a pipe** (`scripts/build_and_check.sh | tail`
 — the pipeline's exit status is tail's, and `pipefail` inside the script
