@@ -1,0 +1,17 @@
+# SSRN paper basketing — reviewer-approved 2026-08-01. Basis for pillar
+# Reading Paths and the Publications-page sync. No pillar routing deployed yet.
+# reading_path_role: where the paper sits in the five-pillar knowledge system.
+ssrn_id	title	primary_cluster	related_clusters	reading_path_role
+6535178	Hype Volatility Premium	capital-and-society		Capital optional; not in P1/P2
+6504361	The Architecture of Leverage	semiconductors	ai-infrastructure,capital-and-society	Pillar 2 Featured/Core; P1 optional
+6487218	Patent Topology	bio-ai	capital-and-society	Bio research; not in P1/P2
+6468118	Innovation Premium Multiplier	capital-and-society	bio-ai	Capital optional
+6285318	Infrastructure-Led Leading Indicators	semiconductors	ai-infrastructure,capital-and-society	P1/P2 optional deep research
+6241778	AI-Driven Value Redistribution	semiconductors	capital-and-society,ai-infrastructure	Pillar 2 optional
+6195878	Information Depth	capital-and-society		Capital Featured
+6184459	Vision-Only FSD vs Sensor Fusion	robotics	semiconductors,ai-infrastructure	Robotics Featured; P2 edge optional
+7013899	The Mid-2026 Semiconductor Correction	ai-infrastructure	semiconductors,capital-and-society	Pillar 1 Featured/Core Research — NOT yet on Publications page; add during sync
+7106058	When Winning Streaks Mislead	capital-and-society		Not in P1/P2 — NOT yet on Publications page; add during sync
+# Note: none of the eight papers currently listed on the site qualifies as
+# Pillar 1's core paper — 7013899 fills that role. Publications page is out of
+# date (eight listed; 7013899 and 7106058 missing) — sync in a later round.
