@@ -11,7 +11,9 @@ canonical: "https://medium.com/@sinclairhuang/article-4-stress-testing-the-moat-
 
 TurboQuant, HBM demand reversal, geopolitics, and glass substrates — not a doomsday scenario, but a disciplined analysis.
 
-**Series:** AI Compute Supply Chain | Part 4 of 5 **Author:** Sinclair Huang
+**Series:** AI Compute Supply Chain | Part 4 of 5
+
+**Author:** Sinclair Huang
 
 *Four pressure vectors. Four clocks are already ticking. The question is not whether these moats will last forever — it’s whether you know which one breaks first.*
 
@@ -95,7 +97,12 @@ One thing I still haven’t found a good answer to: how does Ajinomoto itself vi
 
 The timeline I would monitor: 2028 as the critical milestone for Samsung’s glass interposer volume production target. If that date slips — which is common in semiconductor manufacturing — the ABF window extends further. If it holds, moat erosion begins in earnest in the 2029–2031 period.
 
-**PeriodABF Moat StatusGlass Substrate Status2026–2027**IntactPilot production, ultra-premium only**2028**DominantSamsung, Absolics, Intel target volume entry**2029–2030**Beginning to erode20%+ penetration possible**2031+**Structural transitionGlass leads high-end market
+| Period | ABF Moat Status | Glass Substrate Status |
+|---|---|---|
+| 2026–2027 | Intact | Pilot production, ultra-premium only |
+| 2028 | Dominant | Samsung, Absolics, Intel target volume entry |
+| 2029–2030 | Beginning to erode | 20%+ penetration possible |
+| 2031+ | Structural transition | Glass leads high-end market |
 
 ### Closing: Moats Have a Time Dimension
 

@@ -243,23 +243,24 @@ Sinclair Huang is an executive advisor and independent researcher working at the
 
 ### References
 
-Ajinomoto Co., Inc. (2024). *Innovation Story: Ajinomoto Build-up Film (ABF).*
-Barclays Investment Bank. (2026, March). *The Next Wave of AI: Demand and Adoption.*
-Counterpoint Research. (2025, Q3). *Global HBM Market Share Analysis.*
-Digitimes. (2025, December 10). *TSMC expands CoWoS capacity with Nvidia booking over half for 2026–27.*
-Micron Technology, Inc. (2024). *Annual Report on Form 10-K for Fiscal Year Ended August 29, 2024.*
-Taiwan Semiconductor Manufacturing Company. (2025). *Annual Report on Form 20-F for Year Ended December 31, 2024.*
-TrendForce. (2025, January). *TSMC set to expand CoWoS capacity to record 75,000 wafers in 2025.*
-TrendForce. (2025, December). *TSMC’s CoWoS-L/S reportedly fully booked, OSAT partners step up.*
-TrendForce. (2025, December). *MediaTek reportedly secures Google v7e, v8e TPU orders, requests 7-fold CoWoS increase from TSMC.*
-TrendForce. (2026, March). *NAND leaders bet on Taiwan’s DRAM maker: Why Kioxia, SanDisk, SK hynix back Nanya Tech’s $2.5B deal.*
-Williamson, O. E. (1985). *The Economic Institutions of Capitalism.*
-Zandieh, A., Mirrokni, V., et al. (2026). *TurboQuant: Online Vector Quantisation with Near-optimal Distortion Rate.*
+- Ajinomoto Co., Inc. (2024). *Innovation Story: Ajinomoto Build-up Film (ABF).*
+- Barclays Investment Bank. (2026, March). *The Next Wave of AI: Demand and Adoption.*
+- Counterpoint Research. (2025, Q3). *Global HBM Market Share Analysis.*
+- Digitimes. (2025, December 10). *TSMC expands CoWoS capacity with Nvidia booking over half for 2026–27.*
+- Micron Technology, Inc. (2024). *Annual Report on Form 10-K for Fiscal Year Ended August 29, 2024.*
+- Taiwan Semiconductor Manufacturing Company. (2025). *Annual Report on Form 20-F for Year Ended December 31, 2024.*
+- TrendForce. (2025, January). *TSMC set to expand CoWoS capacity to record 75,000 wafers in 2025.*
+- TrendForce. (2025, December). *TSMC’s CoWoS-L/S reportedly fully booked, OSAT partners step up.*
+- TrendForce. (2025, December). *MediaTek reportedly secures Google v7e, v8e TPU orders, requests 7-fold CoWoS increase from TSMC.*
+- TrendForce. (2026, March). *NAND leaders bet on Taiwan’s DRAM maker: Why Kioxia, SanDisk, SK hynix back Nanya Tech’s $2.5B deal.*
+- Williamson, O. E. (1985). *The Economic Institutions of Capitalism.*
+- Zandieh, A., Mirrokni, V., et al. (2026). *TurboQuant: Online Vector Quantisation with Near-optimal Distortion Rate.*
 
 ### Further Reading
 
 - *The Architecture of Leverage: Power Dynamics, Structural Concentration, and Competitive Moats in the AI Hardware Supply Chain* — working paper version of the broader framework behind this series.
 
+- Article 1: *What Are CoWoS, HBM, and ABF — And Why Do They Matter So Much in the AI Era?* — the technical foundations behind the series.
 - Article 2: *The Real AI Supply Chain: A Power Map Beyond the GPU* — on who actually holds leverage across CoWoS, HBM, and ABF.
 - Article 3: *How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings* — on customer prepayments, HBM economics, and what filings reveal that summaries often miss.
 - Article 4: *Stress-Testing the Moat: Four Threats That Could Rewrite the AI Supply Chain* — on TurboQuant, HBM reversal risk, geopolitics, and glass substrates.

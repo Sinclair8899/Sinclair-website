@@ -699,4 +699,4 @@ Nothing in this article constitutes investment advice, a financial recommendatio
 
 ## Hashtags
 
-#AI Infrastructure#Semiconductors#Advanced Packaging#Data Centers#Power Infrastructure
+#AIInfrastructure #Semiconductors #AdvancedPackaging #DataCenters #PowerInfrastructure

@@ -43,11 +43,11 @@ A supplier can say no for three different reasons:
 
 1. **Capacity scarcity.** There is not enough physical supply. The resulting margin is cyclical and should eventually mean-revert.
 
-2. **Qualification friction. **An alternative exists, but the customer cannot use it immediately. Validation, reliability work, yield improvement, and system integration can take quarters.
+2. **Qualification friction.** An alternative exists, but the customer cannot use it immediately. Validation, reliability work, yield improvement, and system integration can take quarters.
 
-3. **Embedded capability. **The advantage comes from process knowledge, formulation, accumulated learning, or customer co-development that competitors cannot reproduce quickly.
+3. **Embedded capability.** The advantage comes from process knowledge, formulation, accumulated learning, or customer co-development that competitors cannot reproduce quickly.
 
-**CoWoS at TSMC** is mainly capacity-backed. Replication still requires specialised tools, process integration, yield learning, and customer qualification.[1] **HBM at SK hynix **is more qualification-backed: a replacement must pass inside a specific system’s performance, power, thermal, reliability, and yield envelope.[3] **Ajinomoto’s ABF film **is closer to capability-backed. The company reports a share above 95%, customer-specific co-development, and greater material use in larger AI package substrates.[4]
+**CoWoS at TSMC** is mainly capacity-backed. Replication still requires specialised tools, process integration, yield learning, and customer qualification.[1] **HBM at SK hynix** is more qualification-backed: a replacement must pass inside a specific system’s performance, power, thermal, reliability, and yield envelope.[3] **Ajinomoto’s ABF film** is closer to capability-backed. The company reports a share above 95%, customer-specific co-development, and greater material use in larger AI package substrates.[4]
 
 #### Taiwan is an engineering loop, not a supplier list
 
@@ -69,7 +69,7 @@ At GPT-3.5-equivalent capability, advertised inference prices fell more than 280
 
 Cheaper intelligence can create far more usage — the Jevons mechanism. It also forces every layer of the supply chain to compete harder for margin.
 
-A recent scenario paper proposes **dollars per petabyte moved through the memory subsystem ($/PB) **as one way to compare serving economics.[7] I use “paid bandwidth” as shorthand for monetised memory traffic. The metric is imperfect, but the question behind it is useful:
+A recent scenario paper proposes **dollars per petabyte moved through the memory subsystem ($/PB)** as one way to compare serving economics.[7] I use “paid bandwidth” as shorthand for monetised memory traffic. The metric is imperfect, but the question behind it is useful:
 
 **Is monetised traffic growing faster than the profit earned on each unit of traffic is shrinking?**
 

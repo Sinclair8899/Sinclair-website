@@ -33,7 +33,9 @@ The main argument: **large AI demand explains why the sector is hot; bottlenecks
 
 4. Write down one validation signal and one falsification trigger before adding exposure.
 
-5. If you cannot name the bottleneck, margin-capture mechanism, or kill signal, you may be holding a story rather than a thesis.
+5. If you cannot name the bottleneck, margin-capture mechanism, or kill signal, you may be holding a story rather than a thesis.
+
+*(Tables 1–7 are figures in the [original Medium version](https://medium.com/@sinclairhuang/everyone-wants-the-next-ai-stock-im-looking-for-the-next-physical-bottleneck-f75737995b64); the three technical verification tables are also in the appendix PDF linked at the end of this essay.)*
 
 #### Author note
 
@@ -249,11 +251,13 @@ Second, **Verification Confidence means inspectability, not truth**. A 5/5 score
 
 The framework is useful for one thing:
 
-***Separating real profit pools from AI labels.**
+**Separating real profit pools from AI labels.**
 
 I deliberately avoid a single composite score. The point is to force a conversation axis by axis: high vs. medium vs. low, durable vs. temporary, observable vs. speculative.
 
-#### 6. Case 1 — HBM and the memory spilloverThe HBM thesis is straightforward.
+#### 6. Case 1 — HBM and the memory spillover
+
+The HBM thesis is straightforward.
 
 AI accelerators need more high-bandwidth memory. But HBM supply is constrained by stack yield, power, thermal behaviour, customer qualification, wafer allocation, and packaging integration.
 
@@ -327,7 +331,9 @@ The key point is not simply “HBM is good.”
 
 The key point is that HBM has a testable bottleneck thesis — and that the bottleneck may spill into the wider economy.
 
-#### 7. Case 2 — CoWoS and advanced packagingThe CoWoS thesis is different.
+#### 7. Case 2 — CoWoS and advanced packaging
+
+The CoWoS thesis is different.
 
 The question is not only how much capacity is announced.
 
@@ -401,7 +407,9 @@ This is why I care less about headline capacity and more about the conversion fr
 
 Capacity is not real until it becomes qualified output.
 
-#### 8. Case 3 — Power and coolingPower and cooling are different again.
+#### 8. Case 3 — Power and cooling
+
+Power and cooling are different again.
 
 The bottleneck is real, but margin capture is more fragmented.
 
@@ -529,7 +537,7 @@ The idea is powerful. Space offers abundant solar energy, Low-Earth orbit satell
 
 But this remains an imagination narrative, not a near-term replacement for terrestrial AI infrastructure. Space-based AI data centres may reduce some terrestrial constraints, but they introduce new constraints: launch cost, mass per kilowatt, radiation hardening, thermal rejection, satellite lifetime, maintenance, utilisation, link bandwidth, orbital debris, and regulation.
 
-***The bigger the imagination, the more important the constraint map becomes.**
+**The bigger the imagination, the more important the constraint map becomes.**
 
 #### 11. The practical investor dashboard
 
@@ -571,7 +579,9 @@ For a hypothetical HBM supplier X, I would write the thesis like this: “This i
 
 That is the level of clarity I want before treating any AI theme as more than a story.
 
-#### 12. This is not an anti-AI argumentI am not arguing that AI is fake.
+#### 12. This is not an anti-AI argument
+
+I am not arguing that AI is fake.
 
 The demand is real.
 
@@ -668,6 +678,8 @@ That is the whole framework.
 - Google DeepMind’s AlphaEvolve article and white paper.
 
 #### References
+
+Numbered sources appear as footnotes at the end of this page.
 
 [^goldman]: Goldman Sachs, “The Assumptions Shaping the Scale of the AI Build-Out,” May 2026. [https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out](https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out)
 

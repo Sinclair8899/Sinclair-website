@@ -77,7 +77,9 @@ A smaller biotech with a narrow but highly visible clinical story can receive a 
 
 This is not simply a Japan discount story, nor merely a cross-border anomaly. The paper’s U.S. evidence suggests that the same structural logic can operate even within a single national market.
 
-### Why does this happen?My reading is that three structural forces are doing much of the work.
+### Why does this happen?
+
+My reading is that three structural forces are doing much of the work.
 
 The first is **narrative visibility**. Markets prefer stories they can compress. A focused company with one or two lead assets can be translated into a familiar growth narrative: one pipeline, one catalyst path, one acquisition possibility, one valuation frame. That kind of story is easy to underwrite.
 
@@ -85,7 +87,9 @@ The second is **geography and governance**. In the global sample, the paper find
 
 The third is **asymmetric risk preference**. Biotech capital is structurally drawn to convexity. Investors will often pay aggressively for a smaller, more binary story because the upside is legible and potentially explosive. Large pharma, by contrast, is more likely to be treated as a mature, diversified, almost defensive asset, even when its underlying knowledge platform is vastly more consequential.
 
-### Why this mattersIPM is not a magic number.
+### Why this matters
+
+IPM is not a magic number.
 
 But it may be a useful way to screen for a very specific phenomenon: **the gap between knowledge creation and value capture**.
 

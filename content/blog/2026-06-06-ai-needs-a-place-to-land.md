@@ -41,7 +41,9 @@ COMPUTEX is no longer just a product show. It is becoming a **co-design and depl
 
 And that may be Taiwan’s next role in the AI economy.
 
-#### The information is no longer scarceAnother AI article is easy to write.
+#### The information is no longer scarce
+
+Another AI article is easy to write.
 
 AI is hot. NVIDIA is powerful. Taiwan is important. HBM is scarce. CoWoS is strategic. Liquid cooling is rising. Power is becoming the next bottleneck. AI factories are the new infrastructure of intelligence.
 
@@ -71,7 +73,9 @@ Software asks: Can the model perform?
 
 Physical AI asks: Can the system survive the real world?
 
-#### AI is becoming infrastructureThen the agenda turns heavier.
+#### AI is becoming infrastructure
+
+Then the agenda turns heavier.
 
 On June 4, the language of COMPUTEX changes almost completely: **Extreme Co-Design: Building the AI Factory; Infineon powering AI from grid to core to physical AI; Reinventing Storage for AI at Scale; Reimagining AI data center power design; AI DC Infrastructure for an Accelerating World; Path towards 10kW xPU Power Delivery; Cooling AI-generation data centres; The Race to Scale AI Data Centers; Smarter Power: The Key to Scalable AI; Quality Innovation Across the AI Chip-to-Rack Stack.** [[COMPUTEX Event Schedule](https://www.computex.biz/EventForum.aspx?type=organizer&amp;year=2026)]
 
@@ -111,7 +115,9 @@ That is why Taiwan’s role is no longer just manufacturing. It is becoming a co
 
 The same GTC Taipei brief frames Vera Rubin as a Taiwan-scale co-design project: more than 150 Taiwanese partners, more than 350 global production factories, and nearly two million parts. That is not a component story. It is a systems story.
 
-#### The index can move faster than the factoryA market can reprice Taiwan in a week.
+#### The index can move faster than the factory
+
+A market can reprice Taiwan in a week.
 
 A fab cannot be built in a week. A CoWoS line cannot be qualified in a week. A substation cannot be connected in a week. A liquid-cooling architecture cannot earn reliability in a week. A robotics deployment cannot become safe fleet economics in a week.
 
@@ -315,7 +321,9 @@ AI does not only need more compute.
 
 AI needs a place to land.
 
-#### Author NoteThis essay is part of my ongoing **AI Infrastructure Notes** series.
+#### Author Note
+
+This essay is part of my ongoing **AI Infrastructure Notes** series.
 
 It was revised while Taiwan’s market was no longer merely strong, but historically strange: the index had moved into the 45,000–46,000 range and daily turnover remained in trillion-NT-dollar territory. The emotional backdrop matters. Friends were celebrating. COMPUTEX has made Taipei a global AI stage. The easiest article would have been another explanation of why AI, Taiwan, and semiconductors matter.
 
@@ -327,7 +335,9 @@ The argument draws on my recent SSRN working papers on AI-driven value redistrib
 
 The core public-facing argument remains: **AI does not only need more compute. It needs a place to land.**
 
-#### References1. COMPUTEX TAIPEI, **COMPUTEX 2026 Show Profile**.
+#### References
+
+1. COMPUTEX TAIPEI, **COMPUTEX 2026 Show Profile**.
 
 [https://www.computextaipei.com.tw/en/menu/A546BFC6C2E2ED34D0636733C6861689/info.html](https://www.computextaipei.com.tw/en/menu/A546BFC6C2E2ED34D0636733C6861689/info.html)
 
@@ -379,7 +389,9 @@ The core public-facing argument remains: **AI does not only need more compute. I
 
 15. User-provided statistical-science outlook, **“統計科學的未來十年：AI・量子運算・資料科學的跨域融合研究報告（2026–2035）”** — used for trustworthy AI, uncertainty quantification, statistical monitoring, distribution-shift detection, and deployment verification.
 
-#### Further Reading1. NVIDIA Blog, **AI Factories: The New Infrastructure of Intelligence**.
+#### Further Reading
+
+1. NVIDIA Blog, **AI Factories: The New Infrastructure of Intelligence**.
 
 [https://blogs.nvidia.com/blog/ai-factories-new-infrastructure-of-intelligence/](https://blogs.nvidia.com/blog/ai-factories-new-infrastructure-of-intelligence/)
 
@@ -405,7 +417,9 @@ The author may reference his own SSRN working papers as analytical background. T
 
 Readers should conduct their own research and consult qualified financial, legal, or tax advisers before making investment or business decisions.
 
-#### HashTagsArtificial Intelligence, Semiconductors, Taiwan, Robotics, Venture Capital
+#### HashTags
+
+Artificial Intelligence, Semiconductors, Taiwan, Robotics, Venture Capital
 
 #### Social Copy
 

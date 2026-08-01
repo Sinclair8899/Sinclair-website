@@ -11,6 +11,8 @@ canonical: "https://medium.com/@sinclairhuang/the-ai-capex-money-map-v0-2-americ
 
 #### From $650B to HBM, CoWoS and power — mapping who gets paid, who keeps margin, and when the bottlenecks move.
 
+*(The money-map, cost-stack, and regional margin-capture charts referenced below are figures in the [original Medium version](https://medium.com/@sinclairhuang/the-ai-capex-money-map-v0-2-america-spends-who-actually-keeps-the-margin-995fbcc60ea9); this text edition keeps all the numbers and reasoning.)*
+
 Most people are asking whether AI is a bubble. It is an important question, but not a very operational one.
 
 A better one is:
@@ -31,9 +33,9 @@ The key point: equipment and materials (ASML, AMAT, TEL, Advantest…) are **not
 
 Open the “Compute Systems” pipe, and you find the most counterintuitive structural shift of this cycle.
 
-Using Epoch AI’s B200 BOM model as a reference: B200 variable manufacturing cost is roughly US$5,700–7,300 (central ~US$6,400), of which **HBM + advanced packaging together account for about two-thirds.** A clean 100% stack looks like this:
+Using Epoch AI’s B200 BOM model as a reference: B200 variable manufacturing cost is roughly US$5,700–7,300 (central ~US$6,400), of which **HBM + advanced packaging together account for about two-thirds.** A clean 100% stack is charted in the Medium version; the headline split:
 
-This chart answers an investment question, not an engineering one: **when a hyperscaler pays for an accelerator, where do the physical dollars go?** Nvidia captures IP and platform margin at the top — but the real dollars inside the box flow heavily to **SK Hynix (HBM) and TSMC (packaging)**. “Who can ship an AI accelerator?” stopped being a logic-die question long ago; it is now a joint constraint of memory allocation, CoWoS, substrate and test.
+That chart answers an investment question, not an engineering one: **when a hyperscaler pays for an accelerator, where do the physical dollars go?** Nvidia captures IP and platform margin at the top — but the real dollars inside the box flow heavily to **SK Hynix (HBM) and TSMC (packaging)**. “Who can ship an AI accelerator?” stopped being a logic-die question long ago; it is now a joint constraint of memory allocation, CoWoS, substrate and test.
 
 #### 3. A detail most people skip: chip margin ≠ realised margin
 
@@ -43,9 +45,9 @@ Nvidia sits on the highest margin in the chain. True. But if you anchor to a sin
 
 - FY2026 **full year**: **71.1% / 71.3%**
 
-- Epoch, taking a ~$30,000–40,000 sale price against a ~$6,400 build cost, implies a **chip-level** gross margin near 82% — but it also notes that most Blackwell revenue comes from server and rack-scale systems, so ** realised margin at the system level runs below the chip level.**
+- Epoch, taking a ~$30,000–40,000 sale price against a ~$6,400 build cost, implies a **chip-level** gross margin near 82% — but it also notes that most Blackwell revenue comes from server and rack-scale systems, so **realised margin at the system level runs below the chip level.**
 
-So “Nvidia’s margin is high” has to be said in three layers: chip, platform, system. That is the discipline of the whole map — **revenue flows down the chain; margin does not. **Standing where revenue passes through is not the same as keeping the margin.
+So “Nvidia’s margin is high” has to be said in three layers: chip, platform, system. That is the discipline of the whole map — **revenue flows down the chain; margin does not.** Standing where revenue passes through is not the same as keeping the margin.
 
 #### 4. The bottleneck clock: not “is it scarce” but “when does it ease”
 
@@ -131,17 +133,19 @@ Only one rule: **keep what a vendor says (“sold out,” “in volume”) separ
 
 The piece is called a Money Map, so it should close on a summary of national margin capture. America spends, and Asia builds — but the margin each region retains is completely different:
 
-One line: ** This map is not a stock list. It tells you whether a company stands at the collection point or merely next to the market’s amplifier.**
+One line: **This map is not a stock list. It tells you whether a company stands at the collection point or merely next to the market’s amplifier.**
 
 #### Conclusion: money flow doesn’t lie; bottlenecks decide who keeps the margin
 
 AI FOMO isn’t necessarily wrong. But long-run returns aren’t decided by buying the letters “AI” — they’re decided by whether the company you back stands at the **collection point** of this capex flow, or merely next to the market’s **amplifier.**
 
-&gt; **Money flow doesn’t lie. Bottlenecks decide who actually keeps the margin.**
+> **Money flow doesn’t lie. Bottlenecks decide who actually keeps the margin.**
 
 **Model boundary:** This is not a full investment-bank BOM model down to every cable, connector or construction material. It is a public-data v0.2 map of AI capex flows, margin capture and bottleneck timing. The goal is not false precision — it is to avoid double counting, separate direct hyperscaler spend from second-order supplier capex, and ask which layers actually retain margin.
 
-#### Author**Sinclair Huang**
+#### Author
+
+**Sinclair Huang**
 
 Research notes on AI infrastructure, semiconductors, supply chains, and technology strategy.
 
