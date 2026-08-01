@@ -28,7 +28,9 @@ Whoever can refuse holds the leverage. Whoever can’t is the one being priced. 
 
 Bottlenecks don’t distribute profits evenly. Value concentrates at the nodes that cannot be bypassed.
 
-#### ## Layer One — CoWoS: One Node, One Real AnswerAdvanced packaging is a phrase everyone uses now. That doesn’t mean everyone can do it.
+### Layer One — CoWoS: One Node, One Real Answer
+
+Advanced packaging is a phrase everyone uses now. That doesn’t mean everyone can do it.
 
 The difficulty in CoWoS isn’t whether you **can** package chips together. It’s whether you can do it ****at scale, with production yields high enough to matter, consistently, for the most demanding customers on earth.****
 
@@ -44,7 +46,9 @@ The velocity of demand makes that timeline feel even tighter when you look at sp
 
 ****Tier Two — important, but not equivalent:**** ASE and Amkor absorb TSMC’s overflow on lower-complexity RDL processes. Their role is real and growing. But TSMC retains the highest-margin, highest-complexity work — CoWoS-L integration, silicon interposer fabrication, Chip-on-Wafer front-end processes. The overflow is a deliberate allocation decision, not a concession of position.
 
-#### ## Layer Two — HBM: It Looks Like a Memory Market. It Behaves Like a Platform Allocation Market.The HBM competitive landscape appears straightforward: SK Hynix leads with approximately 62% market share, Micron has moved into second position at around 21%, and Samsung is working to recover ground.
+### Layer Two — HBM: It Looks Like a Memory Market. It Behaves Like a Platform Allocation Market.
+
+The HBM competitive landscape appears straightforward: SK Hynix leads with approximately 62% market share, Micron has moved into second position at around 21%, and Samsung is working to recover ground.
 
 But market share is a lagging indicator. It tells you where the competition **was**. The more important question is what the competition is **becoming**.
 
@@ -56,7 +60,9 @@ HBM4 encodes this dynamic into the silicon itself. Each supplier’s product car
 
 This is no longer a memory market in the traditional sense. It is a ****platform qualification market****. The three questions that determine position are: who passed the customer’s validation first, who holds the multi-year supply agreement, and whose roadmap is co-developed with the customer’s next-generation architecture. On all three, SK Hynix currently leads.
 
-#### ## Layer Three — ABF Substrates: The Most Underestimated Node in the StackMost AI supply chain analysis stops at chips and packaging. Fewer people go one level deeper to the substrate, and fewer still look at the material that makes the substrate possible.
+### Layer Three — ABF Substrates: The Most Underestimated Node in the Stack
+
+Most AI supply chain analysis stops at chips and packaging. Fewer people go one level deeper to the substrate, and fewer still look at the material that makes the substrate possible.
 
 ****The material layer:**** Ajinomoto — the Japanese company most people know for its food seasoning products, particularly MSG — holds above 95% global market share in the high-performance semiconductor insulating film used in advanced packaging substrates. This is not market leadership. This is a structural monopoly.
 
@@ -70,7 +76,9 @@ The generative AI boom has also dramatically changed the **consumption rate** of
 
 ****The substrate manufacturing layer:**** The top five manufacturers — Unimicron, Ibiden, AT&amp;S, Nan Ya PCB, Shinko Electric — collectively hold approximately 74% of global ABF substrate capacity. Unimicron leads with approximately 22% individual share. This layer is more fragmented than the material layer, but the entry barriers are substantial: high capital intensity, long certification cycles, and the continuous technical demands of AI/HPC substrates pushing toward higher layer counts, finer line widths, and larger package dimensions.
 
-#### ## The Framework: Class A, Class B, Class CPulling the three layers together, the market players can be sorted into three categories. The sorting criteria are not size or revenue — they are the structural conditions that determine whether pricing power is durable.
+### The Framework: Class A, Class B, Class C
+
+Pulling the three layers together, the market players can be sorted into three categories. The sorting criteria are not size or revenue — they are the structural conditions that determine whether pricing power is durable.
 
 ****Class A — genuine pricing power:**** Technology scarcity, concentrated supply, high customer qualification barriers, long replacement cycles — all four conditions present simultaneously. The current list is short: TSMC, SK Hynix, Ajinomoto.
 
@@ -80,7 +88,9 @@ The generative AI boom has also dramatically changed the **consumption rate** of
 
 I can’t name Class C companies here, but I can say this: every time an industry narrative peaks, a batch of companies that “touch the keywords but lack real position” get lifted along with it. I’ve seen this firsthand in the 2000 internet bubble, the 2012 tablet boom, and the automotive chip wave. The speed of narrative diffusion always exceeds the speed of fundamental verification. That gap is the risk.
 
-#### ## ClosingIn AI hardware, value does not distribute evenly across the stack.
+### Closing
+
+In AI hardware, value does not distribute evenly across the stack.
 
 It concentrates where scale, qualification, and scarcity converge simultaneously — and only there.
 
@@ -91,13 +101,17 @@ It concentrates where scale, qualification, and scarcity converge simultaneously
 - A working paper expanding this analysis — including an Irreplaceability Index scoring framework, patent portfolio analysis, and technology evolution roadmap — has been submitted to the Social Science Research Network (SSRN). The paper will be publicly available upon completion of review. For updates, follow this series or visit sinclairhuang.org.### About the Author**Sinclair Huang** is a senior advisor and researcher focused on semiconductors, AI infrastructure, and supply chain strategy. He has held leadership roles across the electronics and biotech industries for more than twenty-five years, with responsibilities spanning product, procurement, and operations. His work examines how technological bottlenecks, capital allocation, and industrial organisation shape competitive advantage in the AI era.
 More at: **sinclairhuang.org**
 
-### Further Reading — AI Compute Supply Chain Series- **Part 1 — Technical Foundations**
+### Further Reading — AI Compute Supply Chain Series
+
+- **Part 1 — Technical Foundations**
 CoWoS, HBM, and ABF: what they are, how they work, and why they became the bottlenecks in AI compute.- **Part 2 — Power Map**
 *The Real AI Supply Chain: A Power Map Beyond the GPU*（This Article)- **Part 3 — SEC Filings**
 *How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings* — using regulatory filings to quantify pricing power and customer behaviour.- **Part 4 — Stress Test**
 *Stress-Testing the Moat: Four Threats That Could Rewrite the AI Supply Chain* — TurboQuant-style compression, HBM demand reversal, geopolitical concentration, and the glass substrate transition.- **Part 5 — Industrial Transformation (upcoming)**
 How the AI infrastructure buildout re-prices risk and return across industries beyond semiconductors through 2030.### References- Taiwan Semiconductor Manufacturing Company (TSMC) — Annual Report and Form 20-F filings.- SK Hynix — Earnings call transcripts and investor presentations on HBM and HBM4.- Ajinomoto — Annual reports and technical materials on Ajinomoto Build-up Film (ABF).- Broadcom — Investor materials on packaging bottlenecks and ABF substrate constraints.- Industry reports and broker research on CoWoS capacity, HBM market share, and ABF substrate supply.- Academic and policy work on semiconductor supply chain concentration and resilience.### DisclaimerThis article is for informational and educational purposes only and does not constitute investment advice or a recommendation to buy or sell any security. The views expressed are solely those of the author and are based on information believed to be reliable at the time of writing, but no representation or warranty is made as to their accuracy or completeness. Scenario analyses and examples are illustrative and may not materialise as described. Readers should conduct their own research and, if necessary, consult a qualified financial advisor before making investment decisions.
 
-### Suggested Hashtags#ArtificialIntelligence #Semiconductors #SupplyChain
+### Suggested Hashtags
+
+#ArtificialIntelligence #Semiconductors #SupplyChain
 #TSMC #SKHynix #Ajinomoto
 #HBM #CoWoS #AIInfrastructure #Investing
