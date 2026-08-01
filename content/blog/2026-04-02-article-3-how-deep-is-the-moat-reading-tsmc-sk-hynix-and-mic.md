@@ -10,7 +10,9 @@ description: "Three regulatory filings. Three financial moats.Customer prepaymen
 canonical: "https://medium.com/@sinclairhuang/article-3-how-deep-is-the-moat-reading-tsmc-sk-hynix-and-micron-through-their-sec-filings-930c3e0d5cba?source=rss-1f713d63bb6a------2"
 ---
 
-#### Customer prepayments, HBM margin structure, capital expenditure intensity — the numbers say more than the narratives do.****Series:**** AI Compute Supply Chain | Part 3 of 5
+#### Customer prepayments, HBM margin structure, capital expenditure intensity — the numbers say more than the narratives do.
+
+**Series:** AI Compute Supply Chain | Part 3 of 5
 
 By Po-Sung(Sinclair) Huang
 
@@ -18,7 +20,7 @@ The previous article built a framework. This one tests it with documents.
 
 Before writing this piece, I set aside the analyst summaries and went to the source: TSMC’s 2024 20-F filed with the SEC on April 17, 2025; Micron’s most recent 10-K and two 10-Q filings; and SK Hynix earnings call transcripts for the past three quarters.
 
-I have a habit with regulatory filings that I developed over the years of reading them for investment and business decisions. Summaries tell you the conclusion someone chose to highlight. The original document tells you something different: ****which number was emphasised, which risk was disclosed only because the regulation required it, and what the company is most careful about saying exactly right.****
+I have a habit with regulatory filings that I developed over the years of reading them for investment and business decisions. Summaries tell you the conclusion someone chose to highlight. The original document tells you something different: **which number was emphasised, which risk was disclosed only because the regulation required it, and what the company is most careful about saying exactly right.**
 
 This time, I found two gaps between the summaries and the documents worth pausing on.
 
@@ -26,7 +28,9 @@ First: most financial media reporting Micron’s HBM customer concentration uses
 
 Second, more significantly, TSMC’s 20-F contains one line that I have seen almost no analysis article pull out and examine on its own terms. The customer prepayment figure: NT$291 billion in 2024. That number is the subject of the next section.
 
-#### ## TSMC: The Moat Is Written in Customer Behaviour, Not Just MarginsTSMC’s gross margin of 56.1% in 2024 is impressive. Operating margin at 45.7% is remarkable. Revenue of US$90.1 billion, up 30% year-over-year, speaks for itself.
+### TSMC: The Moat Is Written in Customer Behaviour, Not Just Margins
+
+TSMC’s gross margin of 56.1% in 2024 is impressive. Operating margin at 45.7% is remarkable. Revenue of US$90.1 billion, up 30% year-over-year, speaks for itself.
 
 But I spent most of my reading time on that prepayment line.
 
@@ -38,9 +42,11 @@ One additional data point from the 20-F is worth holding together with the prepa
 
 Advanced processes (7nm and below) accounted for 69% of wafer revenue in 2024, up from 58% in 2023. The revenue centre of gravity is continuously moving toward the narrower, harder-to-replicate segment. HPC platform revenue grew 58% year-over-year. Each of these trends points in the same direction: TSMC’s addressable moat is widening, not narrowing.
 
-#### ## SK Hynix and Micron: The HBM Margin Engine and the Most Honest Risk Disclosure in the IndustrySK Hynix management has described HBM inventory status consistently across multiple quarters: sold out. In commodity markets, a sold-out supplier would typically be pressuring prices higher. In HBM, the constraint runs deeper — it is not just price, it is allocation. Customers cannot simply pay more to get more. They need to be in the qualification pipeline, and the qualification pipeline has a finite throughput.
+### SK Hynix and Micron: The HBM Margin Engine and the Most Honest Risk Disclosure in the Industry
 
-The architecture shift in HBM4 changes this dynamic from cyclical to structural. The “customer-specific logic die” embedded in HBM4 means each supplier’s product is engineered to a customer’s specific platform requirements. Switching suppliers in a subsequent generation does not mean sourcing a compatible component — it means re-engineering the base die interface and requalifying against a platform that was designed around a different architecture. This elevates switching costs from a technical barrier to an ****architectural barrier.****
+SK Hynix management has described HBM inventory status consistently across multiple quarters: sold out. In commodity markets, a sold-out supplier would typically be pressuring prices higher. In HBM, the constraint runs deeper — it is not just price, it is allocation. Customers cannot simply pay more to get more. They need to be in the qualification pipeline, and the qualification pipeline has a finite throughput.
+
+The architecture shift in HBM4 changes this dynamic from cyclical to structural. The “customer-specific logic die” embedded in HBM4 means each supplier’s product is engineered to a customer’s specific platform requirements. Switching suppliers in a subsequent generation does not mean sourcing a compatible component — it means re-engineering the base die interface and requalifying against a platform that was designed around a different architecture. This elevates switching costs from a technical barrier to an **architectural barrier.**
 
 In product development, I have found that architectural switching costs are the most undervalued form of moat. They are difficult to quantify in a standard financial model, they don’t appear on a balance sheet, and analysts often treat them as temporary friction rather than structural lock-in. But anyone who has managed a platform-level component change knows: you don’t execute a base die architecture migration in one product cycle. It takes time, engineering capacity, risk budget, and a customer willing to absorb the transition cost. SK Hynix’s position in the Rubin platform — with UBS projecting approximately 70% HBM4 share — is not just a market share statistic. It is an architectural entanglement.
 
@@ -52,7 +58,9 @@ One thing I appreciate about reading US public company 10-Ks is precisely this: 
 
 This is the fundamental fragility of the HBM thesis, stated precisely by the company most likely to feel the downside first. HBM’s high margins are partially a function of the capacity reallocation away from conventional DRAM that created artificial scarcity in that market. The premium is real, but it has a mechanism — and that mechanism can run in reverse.
 
-#### ## The Barclays Demand Framework: What If the Denominator Is Wrong?Supply-side moats only hold their value if the demand that justifies them is real and durable. Before closing this analysis, one demand-side data point is worth examining — not for the headline number, but for the methodology.
+### The Barclays Demand Framework: What If the Denominator Is Wrong?
+
+Supply-side moats only hold their value if the demand that justifies them is real and durable. Before closing this analysis, one demand-side data point is worth examining — not for the headline number, but for the methodology.
 
 Barclays analyst Tom O’Malley’s team did not use token usage or query demand models to estimate AI infrastructure spending. They analysed financial disclosures from OpenAI and Anthropic — published in **The Information** — to reverse-engineer implied chip spending by hyperscalers. Working backwards from accounting flows is methodologically cleaner than projecting forward from usage assumptions, because token usage models require compounding assumptions at every step: applications deployed, compute per token, and hardware generation efficiency. Each assumption multiplies the error. Accounting flows don’t have that problem: the money either moved or it didn’t.
 
@@ -60,7 +68,9 @@ The conclusion: consensus hyperscaler capex forecasts for 2027 and 2028 are more
 
 When I was doing product planning, the scenario I feared most was not demand collapse. It was systematic demand underestimation — where the supply chain plans conservatively, and the catch-up cost when reality arrives is enormous. If the Barclays model is directionally correct, the Class A nodes we identified in the previous article are not just maintaining their moats. They are facing a demand environment that will test whether those moats are deep enough.
 
-#### ## ClosingThe competitive logic of this market has shifted from **who can do this** to **who has already been qualified, contracted, and prepaid.**
+### Closing
+
+The competitive logic of this market has shifted from **who can do this** to **who has already been qualified, contracted, and prepaid.**
 
 That shift is visible in the documents if you look for it — in prepayment line items, in sold-out inventory characterisations, in risk factor language that quietly names the conditions under which the whole structure could reverse.
 
@@ -68,15 +78,36 @@ That shift is visible in the documents if you look for it — in prepayment 
 
 **Next: Four pressures that could crack these moats — and which one actually keeps me up at night.**
 
-- *This article is part of the AI Compute Supply Chain series. For the full series and related analysis*- A working paper expanding this analysis — including an Irreplaceability Index scoring framework, patent portfolio analysis, and technology evolution roadmap — has been submitted to the Social Science Research Network (SSRN). The paper will be publicly available upon completion of review. For updates, follow this series or visit sinclairhuang.org.### About the Author**Sinclair Huang** is a senior advisor and researcher focused on semiconductors, AI infrastructure, and supply chain strategy. He has held leadership roles across the electronics and biotech industries for more than twenty-five years, working across product, procurement, and operations. His current research examines how technological bottlenecks, capital allocation, and institutional structures shape competitive advantage in the AI era.
+- *This article is part of the AI Compute Supply Chain series. For the full series and related analysis, visit [sinclairhuang.org](https://sinclairhuang.org).*
+- A working paper expanding this analysis — including an Irreplaceability Index scoring framework, patent portfolio analysis, and technology evolution roadmap — has been submitted to the Social Science Research Network (SSRN). The paper will be publicly available upon completion of review. For updates, follow this series or visit sinclairhuang.org.
 
-### Further Reading — AI Compute Supply Chain Series- **Part 1 — Technical Foundations**
-CoWoS, HBM, and ABF: what they are, how they work, and why they became the bottlenecks in AI compute.- **Part 2 — Power Map**
-*The Real AI Supply Chain: A Power Map Beyond the GPU* — mapping where pricing power actually sits upstream of the GPU.- **Part 3 — SEC Filings**
-*How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings*（This Article）- **Part 4 — Stress Test**
-*Stress-Testing the Moat: Four Threats That Could Rewrite the AI Supply Chain* — algorithmic compression, HBM demand reversal, geopolitical concentration, and glass substrates.- **Working Paper — SSRN**
-*The Architecture of Leverage: Structural Concentration and Competitive Moats in the AI Compute Supply Chain* — an extended working paper with an Irreplaceability Index (IRI), patent portfolio analysis, and technology roadmap.### References- Taiwan Semiconductor Manufacturing Company Limited (TSMC), **Form 20‑F** and annual reports — customer concentration, prepayment liabilities, process mix, and capex guidance.- Micron Technology, Inc., **Form 10‑K** and **Form 10‑Q** filings — HBM revenue disclosure, customer concentration, and risk factor discussions.- SK Hynix Inc., earnings call transcripts and investor presentations — HBM4 architecture, “customer‑specific logic die,” and capacity allocation commentary.- Goldman Sachs and UBS equity research — projections on HBM market share, SK Hynix’s position in NVIDIA’s Rubin platform, and hyperscaler AI capex.- Academic and policy work on disclosure incentives, accounting conservatism, and risk reporting in regulatory filings.- Additional industry reports and primary documents are cited throughout the essay.### DisclaimerThis article is for informational and educational purposes only and does not constitute investment advice or a recommendation to buy or sell any security. The views expressed are solely those of the author and are based on information believed to be reliable at the time of writing, but no representation or warranty is made as to their accuracy or completeness. Any forward-looking statements, scenario analyses, or interpretations of regulatory filings are inherently uncertain and may change without notice. Readers should conduct their own research and, if necessary, consult a qualified financial advisor before making investment decisions.
+### About the Author
 
-### Suggested Hashtags#ArtificialIntelligence #Semiconductors #SupplyChain
+**Sinclair Huang** is a senior advisor and researcher focused on semiconductors, AI infrastructure, and supply chain strategy. He has held leadership roles across the electronics and biotech industries for more than twenty-five years, working across product, procurement, and operations. His current research examines how technological bottlenecks, capital allocation, and institutional structures shape competitive advantage in the AI era.
+
+### Further Reading — AI Compute Supply Chain Series
+
+- **Part 1 — Technical Foundations** — CoWoS, HBM, and ABF: what they are, how they work, and why they became the bottlenecks in AI compute.
+- **Part 2 — Power Map** — *The Real AI Supply Chain: A Power Map Beyond the GPU* — mapping where pricing power actually sits upstream of the GPU.
+- **Part 3 — SEC Filings** — *How Deep Is the Moat? Reading TSMC, SK Hynix, and Micron Through Their SEC Filings* (this article)
+- **Part 4 — Stress Test** — *Stress-Testing the Moat: Four Threats That Could Rewrite the AI Supply Chain* — algorithmic compression, HBM demand reversal, geopolitical concentration, and glass substrates.
+- **Working Paper — SSRN** — *The Architecture of Leverage: Structural Concentration and Competitive Moats in the AI Compute Supply Chain* — an extended working paper with an Irreplaceability Index (IRI), patent portfolio analysis, and technology roadmap.
+
+### References
+
+- Taiwan Semiconductor Manufacturing Company Limited (TSMC), **Form 20‑F** and annual reports — customer concentration, prepayment liabilities, process mix, and capex guidance.
+- Micron Technology, Inc., **Form 10‑K** and **Form 10‑Q** filings — HBM revenue disclosure, customer concentration, and risk factor discussions.
+- SK Hynix Inc., earnings call transcripts and investor presentations — HBM4 architecture, “customer‑specific logic die,” and capacity allocation commentary.
+- Goldman Sachs and UBS equity research — projections on HBM market share, SK Hynix’s position in NVIDIA’s Rubin platform, and hyperscaler AI capex.
+- Academic and policy work on disclosure incentives, accounting conservatism, and risk reporting in regulatory filings.
+- Additional industry reports and primary documents are cited throughout the essay.
+
+### Disclaimer
+
+This article is for informational and educational purposes only and does not constitute investment advice or a recommendation to buy or sell any security. The views expressed are solely those of the author and are based on information believed to be reliable at the time of writing, but no representation or warranty is made as to their accuracy or completeness. Any forward-looking statements, scenario analyses, or interpretations of regulatory filings are inherently uncertain and may change without notice. Readers should conduct their own research and, if necessary, consult a qualified financial advisor before making investment decisions.
+
+### Suggested Hashtags
+
+#ArtificialIntelligence #Semiconductors #SupplyChain
 #TSMC #Micron #SKHynix
 #SECFilings #Investing #AIInfrastructure #PricingPower

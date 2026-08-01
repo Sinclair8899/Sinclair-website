@@ -35,11 +35,15 @@ In plain English, IPM asks a straightforward question:
 
 A high IPM suggests that investors are assigning a rich valuation to each unit of scientific impact. A very low IPM suggests that a firm may be generating substantial knowledge spillovers without receiving proportionate market recognition.
 
-### A methodological noteThe underlying paper uses **two internally consistent sub-samples rather than a single fully harmonised** global dataset. That matters. Forward citation levels are most comparable **within** each sub-sample rather than mechanically across all firms in the figure. In other words, the strongest comparisons are within each sample’s internal structure, while the combined figure is best read as a map of valuation asymmetry rather than a perfect apples-to-apples ranking across the full universe.
+### A methodological note
+
+The underlying paper uses **two internally consistent sub-samples rather than a single fully harmonised** global dataset. That matters. Forward citation levels are most comparable **within** each sub-sample rather than mechanically across all firms in the figure. In other words, the strongest comparisons are within each sample’s internal structure, while the combined figure is best read as a map of valuation asymmetry rather than a perfect apples-to-apples ranking across the full universe.
 
 Also, “forward citations” in this paper refer to **OpenAlex-indexed downstream citations** to a firm’s research output. In the non-U.S. sample, the measure is based on cumulative citations to the firm’s 2015–2024 R&amp;D works. In the U.S. sample, the paper uses an internally consistent all-time institution-level approach for a separate set of firms. That is precisely why within-subsample comparison matters.
 
-### What the chart showsWhen market capitalisation is plotted against forward citations on log scales, the first thing that stands out is not a neat linear hierarchy. It is **vertical dispersion**.
+### What the chart shows
+
+When market capitalisation is plotted against forward citations on log scales, the first thing that stands out is not a neat linear hierarchy. It is **vertical dispersion**.
 
 Firms with broadly similar levels of scientific influence can sit at very different valuation levels.
 
@@ -47,7 +51,9 @@ Across the combined sample of **92 firms**, forward citations do have a statisti
 
 That unexplained space is where narrative, governance, geography, and investor risk preference appear to do much of the real pricing work.
 
-### Eisai vs. Argenx: a pricing gap, not necessarily a science gapThe cleanest example is **Eisai versus Argenx**.
+### Eisai vs. Argenx: a pricing gap, not necessarily a science gap
+
+The cleanest example is **Eisai versus Argenx**.
 
 In the paper’s global non-U.S. sub-sample, Eisai generated about **156,488 forward citations** and had a market capitalisation of roughly **$8.998 billion**, implying an IPM of about **0.058**. Argenx generated about **18,719 forward citations** and a market capitalisation of roughly **$42.376 billion**, implying an IPM of about **2.264**.
 
@@ -59,7 +65,9 @@ But that is not what the paper suggests.
 
 One of the reasons Eisai is analytically interesting is that its citation network appears to be tied to institutions deeply embedded in the infrastructure of global health research. In the paper, this serves as a quality falsification check: the issue is unlikely to be that Eisai’s scientific output is peripheral or unused. The more plausible interpretation is that the market is discounting a type of knowledge that is diffuse, foundational, and harder to compress into a simple equity story.
 
-### Inside the U.S.: the Large Pharma Knowledge DiscountThe pattern does not stop at the international level. It reappears inside the U.S. sample.
+### Inside the U.S.: the Large Pharma Knowledge Discount
+
+The pattern does not stop at the international level. It reappears inside the U.S. sample.
 
 Large pharma firms such as Pfizer, Merck, Amgen, and Eli Lilly generate citation volumes measured in the millions, yet the paper finds that **U.S. Large Pharma has a median IPM of about 0.036**, compared with **0.660 for U.S. Biotechs** — a gap of nearly **18 times**.
 
@@ -69,7 +77,7 @@ A smaller biotech with a narrow but highly visible clinical story can receive a 
 
 This is not simply a Japan discount story, nor merely a cross-border anomaly. The paper’s U.S. evidence suggests that the same structural logic can operate even within a single national market.
 
-### Why does this happen?My reading is that three structural forces are doing much of the work.
+### Why does this happen?My reading is that three structural forces are doing much of the work.
 
 The first is **narrative visibility**. Markets prefer stories they can compress. A focused company with one or two lead assets can be translated into a familiar growth narrative: one pipeline, one catalyst path, one acquisition possibility, one valuation frame. That kind of story is easy to underwrite.
 
@@ -77,7 +85,7 @@ The second is **geography and governance**. In the global sample, the paper find
 
 The third is **asymmetric risk preference**. Biotech capital is structurally drawn to convexity. Investors will often pay aggressively for a smaller, more binary story because the upside is legible and potentially explosive. Large pharma, by contrast, is more likely to be treated as a mature, diversified, almost defensive asset, even when its underlying knowledge platform is vastly more consequential.
 
-### Why this mattersIPM is not a magic number.
+### Why this mattersIPM is not a magic number.
 
 But it may be a useful way to screen for a very specific phenomenon: **the gap between knowledge creation and value capture**.
 
@@ -87,7 +95,9 @@ For corporate strategy and BD teams, IPM may help identify where narrative repos
 
 For M&amp;A, the spread between low-IPM incumbents and high-IPM focused firms offers a way to think about how markets may be underpricing broad scientific platforms before they are repackaged into a cleaner commercial story.
 
-### The broader questionThe conventional assumption in innovation economics is that better science should eventually lead to better value capture.
+### The broader question
+
+The conventional assumption in innovation economics is that better science should eventually lead to better value capture.
 
 This paper suggests that the relationship is much messier.
 
@@ -101,15 +111,31 @@ The rest may still matter enormously — for medicine, for public health, fo
 
 That is the gap IPM is trying to make visible.
 
-### CTA / EndingThis working paper has been submitted to SSRN and is currently pending distribution. I’ll update this post with the SSRN link once it goes live.
+### CTA / Ending
+
+This working paper has been submitted to SSRN and is currently pending distribution. I’ll update this post with the SSRN link once it goes live.
 
 Until then, I’d be especially interested in hearing from people in healthcare investing, pharma strategy, and business development:
 
 **Which firms today look scientifically central, but narratively under-monetised?**
 
-### Selected Reference- Arrow, K. J. (1962). *Economic welfare and the allocation of resources for invention.*- Teece, D. J. (1986). *Profiting from technological innovation.*- Hall, B. H., &amp; Oriani, R. (2006). *Does the market value R&amp;D investment by European firms?*- Yin, W. (2008). *Market incentives and pharmaceutical innovation.*### About the Author**Po-Sung (Sinclair) Huang, EDBA**
+### Selected Reference
+
+- Arrow, K. J. (1962). *Economic welfare and the allocation of resources for invention.*
+- Teece, D. J. (1986). *Profiting from technological innovation.*
+- Hall, B. H., &amp; Oriani, R. (2006). *Does the market value R&amp;D investment by European firms?*
+- Yin, W. (2008). *Market incentives and pharmaceutical innovation.*
+
+### About the Author
+
+**Po-Sung (Sinclair) Huang, EDBA**
+
 Sinclair Huang writes at the intersection of innovation, capital markets, and industrial strategy, with a particular focus on how markets price technological and scientific knowledge.
 
-### DisclaimerThis article is for research discussion and informational purposes only. It does not constitute investment advice, legal advice, or a recommendation to buy or sell any security.
+### Disclaimer
 
-### HashTags#Biopharma#Innovation#Valuation#Knowledge Spillovers#Capital Markets
+This article is for research discussion and informational purposes only. It does not constitute investment advice, legal advice, or a recommendation to buy or sell any security.
+
+### HashTags
+
+#Biopharma #Innovation #Valuation #KnowledgeSpillovers #CapitalMarkets

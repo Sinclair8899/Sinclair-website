@@ -11,37 +11,45 @@ From “What’s the next AI stock?” to “Where’s the next bottleneck, who 
 
 Sinclair Huang
 
-#### This essay helps answer four practical questions:*- Which AI themes are real constraints rather than just attractive stories?*
+#### This essay helps answer four practical questions:
 
-*- Who can capture gross margin when a constraint binds?*
+- *Which AI themes are real constraints rather than just attractive stories?*
 
-*- How long might the bottleneck last before capacity, substitution, or efficiency relieves it?*
+- *Who can capture gross margin when a constraint binds?*
 
-*- What evidence would prove the thesis wrong?*
+- *How long might the bottleneck last before capacity, substitution, or efficiency relieves it?*
 
-The main argument: ****large AI demand explains why the sector is hot; bottlenecks explain who gets paid; spillovers explain who absorbs hidden costs; monetised usage determines whether the buildout is sustainable.****
+- *What evidence would prove the thesis wrong?*
 
-#### How to use this essay as an investor1. Start with ****Table 1**** and locate the AI theme you care about.
+The main argument: **large AI demand explains why the sector is hot; bottlenecks explain who gets paid; spillovers explain who absorbs hidden costs; monetised usage determines whether the buildout is sustainable.**
 
-2. Use ****Table 2**** to score it roughly as high/medium/low across the five axes.
+#### How to use this essay as an investor
 
-3. Use ****Table 7**** to decide which metrics you should actually track.
+1. Start with **Table 1** and locate the AI theme you care about.
+
+2. Use **Table 2** to score it roughly as high/medium/low across the five axes.
+
+3. Use **Table 7** to decide which metrics you should actually track.
 
 4. Write down one validation signal and one falsification trigger before adding exposure.
 
 5. If you cannot name the bottleneck, margin-capture mechanism, or kill signal, you may be holding a story rather than a thesis.
 
-#### Author noteThis essay is not a stock-picking note, and it is written in a personal capacity. It is a framework for asking better questions in an AI market increasingly driven by capital expenditure, sovereign competition, compute scarcity, memory shortages, power constraints, consumer AI monetisation, and the financialization of compute.
+#### Author note
+
+This essay is not a stock-picking note, and it is written in a personal capacity. It is a framework for asking better questions in an AI market increasingly driven by capital expenditure, sovereign competition, compute scarcity, memory shortages, power constraints, consumer AI monetisation, and the financialization of compute.
 
 The goal is simple:
 
-****Do not only ask: “What is the next AI stock?”**
+**Do not only ask: “What is the next AI stock?”**
 
-**Ask: “Where is the next bottleneck, who can monetise it, and what evidence would prove us wrong?”****
+**Ask: “Where is the next bottleneck, who can monetise it, and what evidence would prove us wrong?”**
 
 This article is built from three companion technical verification tables: HBM3E, CoWoS, and process-node verification. The full technical tables are included in the appendix package. The main text uses their conclusions without overloading the reader with engineering detail.
 
-#### 1. Everyone wants the next AI stockOver the past few weeks, I have noticed something very human in several investor groups.
+#### 1. Everyone wants the next AI stock
+
+Over the past few weeks, I have noticed something very human in several investor groups.
 
 Many people in these groups are highly educated, experienced, and successful. Some were senior executives. They are not uninformed people.
 
@@ -49,23 +57,25 @@ But when the market moves violently, and when every AI-related name seems to att
 
 They want to ask one simple question:
 
-****What should I buy next?****
+**What should I buy next?**
 
 I understand that. Everyone wants to make money. Nobody wants to be the person who missed the AI boom.
 
 But in AI infrastructure, I believe the better question is not only:
 
-****Which stock will go up next?****
+**Which stock will go up next?**
 
 The better question is:
 
-****Where is the next physical bottleneck?****
+**Where is the next physical bottleneck?**
 
 Because in this cycle, demand is only the first layer of the story. The deeper question is where that demand gets trapped — and who has the ability to convert that bottleneck into margin, pricing power, and durable profits.
 
 A note on the word **physical**. I lead with physical bottlenecks because they are the easiest to verify: you can measure yield, lead times, transformer queues, and power. But the same discipline applies to constraints that are not physical at all — monetisation, market structure, and platform distribution. The test never changes. Is the constraint real? Who captures it, and what evidence would prove the thesis wrong?
 
-#### 2. The demand stack is realThis section answers where the demand is coming from before asking who can actually monetise it.
+#### 2. The demand stack is real
+
+This section answers where the demand is coming from before asking who can actually monetise it.
 
 The AI infrastructure cycle is not built on nothing.
 
@@ -75,17 +85,17 @@ The demand pull is real — and it is no longer only corporate. It is becomi
 
 The first layer is U.S. hyperscaler capex. Microsoft, Google, Amazon, Meta, OpenAI’s ecosystem, and other AI infrastructure buyers are committing enormous sums to data centres, GPUs, custom ASICs, networking, HBM, cooling, and power.
 
-Goldman Sachs’ baseline model estimates ****$765 billion in annual AI capex in 2026****, growing to ****$1.6 trillion in annual AI capex by 2031****, with roughly ****$7.6 trillion of cumulative capex from 2026 to 2031**** (as of the May 2026 version of Goldman’s build-out model; these figures are revised across editions). Goldman frames this as an infrastructure estimate implied by accelerator deployment, data centres, power, and supporting systems — not as a guarantee of end-market demand.[^goldman]
+Goldman Sachs’ baseline model estimates **$765 billion in annual AI capex in 2026**, growing to **$1.6 trillion in annual AI capex by 2031**, with roughly **$7.6 trillion of cumulative capex from 2026 to 2031** (as of the May 2026 version of Goldman’s build-out model; these figures are revised across editions). Goldman frames this as an infrastructure estimate implied by accelerator deployment, data centres, power, and supporting systems — not as a guarantee of end-market demand.[^goldman]
 
 *Layer 2: China sovereign AI capex*
 
 The second layer is sovereign AI capex.
 
-Reuters, citing Bloomberg News, reported that China is preparing a plan worth around ****RMB 2 trillion****, or about ****$295 billion****, over five years to build a nationwide network of AI-focused data centres. The plan is expected to involve key government agencies, state-owned telecom operators such as China Mobile and China Telecom, and a domestic-first supply chain with suppliers such as Huawei providing at least 80% of key AI-related technologies.[^china-295]
+Reuters, citing Bloomberg News, reported that China is preparing a plan worth around **RMB 2 trillion**, or about **$295 billion**, over five years to build a nationwide network of AI-focused data centres. The plan is expected to involve key government agencies, state-owned telecom operators such as China Mobile and China Telecom, and a domestic-first supply chain with suppliers such as Huawei providing at least 80% of key AI-related technologies.[^china-295]
 
 Two details matter.
 
-First, this is still a reported plan based on people familiar with the matter, not an officially confirmed spending program. Second, the headline ****RMB 2 trillion**** figure reportedly does ****not**** include private AI spending by firms such as Alibaba and Tencent. If China integrates power-grid infrastructure into the project, reported estimates suggest the total projected investment could reach at least ****RMB 5 trillion****.[^china-5t]
+First, this is still a reported plan based on people familiar with the matter, not an officially confirmed spending program. Second, the headline **RMB 2 trillion** figure reportedly does **not** include private AI spending by firms such as Alibaba and Tencent. If China integrates power-grid infrastructure into the project, reported estimates suggest the total projected investment could reach at least **RMB 5 trillion**.[^china-5t]
 
 That second point strengthens the main argument of this essay: once power infrastructure is included, capex becomes much larger — and the bottleneck map becomes more important.
 
@@ -121,13 +131,15 @@ That is a monetisation signal.
 
 Consumer AI is not only a feature cycle. It is a test of whether platform companies can turn AI into hardware upgrades, services revenue, and ecosystem lock-in.
 
-#### 3. But capex is not the same as monetised demandThis section separates infrastructure spending from paid usage — the difference between building compute and earning an economic return on it.
+#### 3. But capex is not the same as monetised demand
+
+This section separates infrastructure spending from paid usage — the difference between building compute and earning an economic return on it.
 
 There is one bottleneck investors should not ignore.
 
 It is not a physical bottleneck.
 
-It is the ****monetisation bottleneck****.
+It is the **monetisation bottleneck**.
 
 The AI infrastructure bull case starts with capex: hyperscalers, model companies, cloud providers, and now governments are committing enormous sums to data centres, GPUs, networking, power, and cooling.
 
@@ -137,7 +149,7 @@ At some point, the compute being built has to be paid for by customers who use A
 
 That is where the debate becomes harder.
 
-Bain &amp; Company’s 2025 Global Technology Report estimated that sustaining AI’s scaling trend could require about ****$2 trillion in annual revenue by 2030****. Even with AI-related savings, Bain estimated an ****$800 billion annual revenue gap****, and it also framed the problem as one involving about ****$500 billion of annual data-centre capex**** by 2030.[^bain]
+Bain &amp; Company’s 2025 Global Technology Report estimated that sustaining AI’s scaling trend could require about **$2 trillion in annual revenue by 2030**. Even with AI-related savings, Bain estimated an **$800 billion annual revenue gap**, and it also framed the problem as one involving about **$500 billion of annual data-centre capex** by 2030.[^bain]
 
 This is the pressure point that AI skeptics such as Ed Zitron emphasise. His argument is not simply that AI is useless. It is that the infrastructure being built requires extremely fast revenue growth from AI software, model usage, and compute customers — growth that may be difficult to achieve if enterprises begin to control token spending more tightly.[^zitron]
 
@@ -153,15 +165,15 @@ This does not mean AI adoption will stop.
 
 But it does mean:
 
-****Token usage is not automatically profitable demand.****
+**Token usage is not automatically profitable demand.**
 
 For AI infrastructure to be sustainable, the equation is not only:
 
-****More capex → more compute****
+**More capex → more compute**
 
 It must eventually become:
 
-****Paid usage × willingness to pay × gross margin per token × utilization &gt; capex burden****
+**Paid usage × willingness to pay × gross margin per token × utilization &gt; capex burden**
 
 That is the economic bottleneck behind the physical bottlenecks.
 
@@ -169,9 +181,11 @@ The right debate is not simply “AI boom or AI bubble.”
 
 The better question is:
 
-****Can paid AI usage grow fast enough to absorb the infrastructure being built?****
+**Can paid AI usage grow fast enough to absorb the infrastructure being built?**
 
-#### 4. Big demand is not the same as durable profitThis section turns the demand story into a constraint map: which parts of the chain can actually capture margin, and which parts merely absorb cost.
+#### 4. Big demand is not the same as durable profit
+
+This section turns the demand story into a constraint map: which parts of the chain can actually capture margin, and which parts merely absorb cost.
 
 A huge capex cycle can lift an entire supply chain.
 
@@ -183,7 +197,7 @@ This is where technical reality becomes useful.
 
 The market often treats AI infrastructure as one big trade. In reality, AI infrastructure is a chain of rotating bottlenecks.
 
-And a bottleneck does not only create winners. When a constraint binds, its cost spills into adjacent markets, into downstream devices, and eventually onto end customers and policymakers. I call this ****bottleneck spillover****, and together with one companion idea — ****announced capacity is not effective capacity**** — it forms the spine of this essay. A bound constraint rarely stays contained, and headline capacity rarely equals deliverable output. Case 1 is the worked example of the first idea; Case 2 is the second.
+And a bottleneck does not only create winners. When a constraint binds, its cost spills into adjacent markets, into downstream devices, and eventually onto end customers and policymakers. I call this **bottleneck spillover**, and together with one companion idea — **announced capacity is not effective capacity** — it forms the spine of this essay. A bound constraint rarely stays contained, and headline capacity rarely equals deliverable output. Case 1 is the worked example of the first idea; Case 2 is the second.
 
 Each of these can be part of the AI story.
 
@@ -203,7 +217,9 @@ The investor’s job is not to chase every AI-related label. The better job is t
 
 6. Is the market already pricing a temporary shortage as a permanent advantage?
 
-#### 5. A bottleneck map is better than a stock tipThis section gives the reusable checklist. It is designed to help readers compare AI themes without pretending that a simple score can predict stock prices.
+#### 5. A bottleneck map is better than a stock tip
+
+This section gives the reusable checklist. It is designed to help readers compare AI themes without pretending that a simple score can predict stock prices.
 
 A stock tip tells you what to buy.
 
@@ -215,7 +231,7 @@ Not “HBM is good.” Not “CoWoS is good.” Not “power is good.” Not “
 
 The better question is:
 
-****What is the testable bottleneck thesis?****
+**What is the testable bottleneck thesis?**
 
 If a thesis cannot be validated or falsified, it is just another narrative.
 
@@ -223,17 +239,17 @@ So I use a five-axis rubric.
 
 These five axes are chosen because they map cleanly to P&amp;L and time: how large the demand is, whether the segment actually constrains the system, who captures gross margin, how long the constraint may last, and how observable the claim is.
 
-This is a rubric, not a multiplication model. I do ****not**** multiply ordinal scores or treat them as independent variables. The purpose is to force discipline and make assumptions visible.
+This is a rubric, not a multiplication model. I do **not** multiply ordinal scores or treat them as independent variables. The purpose is to force discipline and make assumptions visible.
 
 Two notes are important.
 
-First, ****Demand Pull is 5/5 in every worked case by design****. This article starts with AI themes where demand is visibly large. Demand is the entry ticket. The real discrimination comes from the other four axes: constraint severity, margin capture, duration, and verification confidence.
+First, **Demand Pull is 5/5 in every worked case by design**. This article starts with AI themes where demand is visibly large. Demand is the entry ticket. The real discrimination comes from the other four axes: constraint severity, margin capture, duration, and verification confidence.
 
-Second, ****Verification Confidence means inspectability, not truth****. A 5/5 score means there are multiple observable metrics that can be tracked. It does not mean every vendor claim has already been verified as true.
+Second, **Verification Confidence means inspectability, not truth**. A 5/5 score means there are multiple observable metrics that can be tracked. It does not mean every vendor claim has already been verified as true.
 
 The framework is useful for one thing:
 
-***Separating real profit pools from AI labels.****
+***Separating real profit pools from AI labels.**
 
 I deliberately avoid a single composite score. The point is to force a conversation axis by axis: high vs. medium vs. low, durable vs. temporary, observable vs. speculative.
 
@@ -253,7 +269,7 @@ It is spilling into the broader memory market.
 
 As memory suppliers prioritise high-margin AI data centre products, conventional DRAM and NAND supply becomes tighter for PCs, smartphones, automobiles, medical devices, telecom equipment, and general enterprise IT.
 
-This is ****bottleneck spillover**** in action — the mechanism named in Section 4, now with a concrete path.
+This is **bottleneck spillover** in action — the mechanism named in Section 4, now with a concrete path.
 
 Reuters reported that U.S. trade groups representing automakers, retailers, electronics firms, medical device manufacturers, telecom groups, and others have warned the U.S. Treasury and Commerce Departments that AI data centres are consuming an enormous share of available memory-chip capacity, creating price pressure and supply risks for other industries.[^reuters-memory]
 
@@ -305,7 +321,7 @@ The thesis weakens if:
 
 The variant view is that DRAM/NAND elasticity, new supply, or demand destruction caps the spillover. That is what the falsification list is watching for.
 
-****For investors in one sentence:**** HBM is a real, profitable bottleneck as long as prices, contracts, and DRAM/NAND spillover all point the same way.
+**For investors in one sentence:** HBM is a real, profitable bottleneck as long as prices, contracts, and DRAM/NAND spillover all point the same way.
 
 The key point is not simply “HBM is good.”
 
@@ -315,7 +331,7 @@ The key point is that HBM has a testable bottleneck thesis — and that the 
 
 The question is not only how much capacity is announced.
 
-The question is how much ****effective output**** can actually be delivered after yield, warpage, substrate constraints, equipment readiness, customer qualification, and ramp speed.
+The question is how much **effective output** can actually be delivered after yield, warpage, substrate constraints, equipment readiness, customer qualification, and ramp speed.
 
 This distinction is crucial.
 
@@ -329,11 +345,11 @@ CoWoS remains a key bottleneck while AI accelerator demand continues to grow, bu
 
 The market should gradually shift from asking:
 
-****How much CoWoS capacity was announced?****
+**How much CoWoS capacity was announced?**
 
 To:
 
-****How much high-end effective capacity can actually be shipped?****
+**How much high-end effective capacity can actually be shipped?**
 
 TrendForce expects severe global 2.5D packaging shortages to begin easing slightly by 2027, helped by order spillover and TSMC’s plan to expand CoWoS capacity by more than 60% by 2027.[^trendforce-cowos]
 
@@ -377,15 +393,15 @@ The thesis weakens if:
 
 - AI accelerator shipments slow due to downstream data-centre constraints
 
-****For investors in one sentence:**** treat CoWoS as an execution window, not a permanent moat, unless effective output keeps lagging announced capacity.
+**For investors in one sentence:** treat CoWoS as an execution window, not a permanent moat, unless effective output keeps lagging announced capacity.
 
 This is why I care less about headline capacity and more about the conversion from:
 
-****announced capacity → effective output****
+**announced capacity → effective output**
 
 Capacity is not real until it becomes qualified output.
 
-#### 8. Case 3 — Power and coolingPower and cooling are different again.
+#### 8. Case 3 — Power and coolingPower and cooling are different again.
 
 The bottleneck is real, but margin capture is more fragmented.
 
@@ -399,7 +415,7 @@ Power and cooling constraints should create large capex opportunities, but stock
 
 A transformer OEM may have a large backlog, but if utilities aggressively bid out projects or standardise specifications, pricing power can be much weaker than headline demand suggests.
 
-The demand side is real. The International Energy Agency estimates that global data centre electricity consumption was around ****415 TWh in 2024**** and could double to around ****945 TWh by 2030**** in its base case, representing just under 3% of global electricity consumption. The IEA also notes that data centres can be operational in two to three years, while the broader energy system has longer lead times for planning and infrastructure buildout.[^iea]
+The demand side is real. The International Energy Agency estimates that global data centre electricity consumption was around **415 TWh in 2024** and could double to around **945 TWh by 2030** in its base case, representing just under 3% of global electricity consumption. The IEA also notes that data centres can be operational in two to three years, while the broader energy system has longer lead times for planning and infrastructure buildout.[^iea]
 
 China’s reported AI infrastructure plan reinforces the same point. The headline number is roughly RMB 2 trillion for AI infrastructure, but if China integrates the power grid into the project, reported estimates suggest the total could reach at least RMB 5 trillion.[^china-5t] In other words, power is not a supporting footnote. It can be larger than the compute plan itself.
 
@@ -441,19 +457,21 @@ The thesis weakens if:
 
 - Utilisation assumptions prove too optimistic
 
-****For investors in one sentence:**** power and cooling are real capex waves, but margin capture is scattered — this is a “pick specific winners” problem, not a “buy the whole theme blindly” thesis.
+**For investors in one sentence:** power and cooling are real capex waves, but margin capture is scattered — this is a “pick specific winners” problem, not a “buy the whole theme blindly” thesis.
 
 The lesson:
 
-****A real bottleneck does not automatically mean an easy investment expression.****
+**A real bottleneck does not automatically mean an easy investment expression.**
 
-#### 9. Five shorter cases: not every thesis is a physical bottleneckThe first three cases deserve the full template because they are direct supply-side constraints. The remaining cases are still important, but they are different kinds of theses: scaling reality, sovereign execution, demand-side monetisation, market structure, and platform distribution.
+#### 9. Five shorter cases: not every thesis is a physical bottleneck
+
+The first three cases deserve the full template because they are direct supply-side constraints. The remaining cases are still important, but they are different kinds of theses: scaling reality, sovereign execution, demand-side monetisation, market structure, and platform distribution.
 
 *Advanced nodes and SRAM scaling*
 
 Advanced process nodes remain strategically critical. But “3nm” or “2nm” does not tell us whether AI chip economics are improving. The real questions are contacted poly pitch (CPP, a gate-pitch metric that helps determine logic density), metal pitch, SRAM bit-cell size, yield, wafer cost, die size, and cost per usable die.
 
-The most important investment implication is SRAM. My process-node verification table shows that TSMC N5 high-density SRAM bit-cell is around ****0.021 µm²****, while N3 is around ****0.0199 µm²****, only about a ****5%**** shrink, even though logic density improves much more. Semiconductor Engineering has also written that SRAM scaling limitations challenge power and performance goals, even as SRAM remains a workhorse memory for AI.[^semieng]
+The most important investment implication is SRAM. My process-node verification table shows that TSMC N5 high-density SRAM bit-cell is around **0.021 µm²**, while N3 is around **0.0199 µm²**, only about a **5%** shrink, even though logic density improves much more. Semiconductor Engineering has also written that SRAM scaling limitations challenge power and performance goals, even as SRAM remains a workhorse memory for AI.[^semieng]
 
 This is why “3nm” is not an investment thesis. It is a starting point for verification.
 
@@ -465,7 +483,7 @@ It is not simply another source of demand for the existing Nvidia-centred AI sta
 
 China previously launched the “Eastern Data, Western Computing” project, with the National Development and Reform Commission approving eight national computing hubs and ten national data-centre clusters.[^ndrc] But capex alone does not guarantee effective compute. Reuters has reported that China has also faced concerns about data-centre glut and surplus computing power, leading policymakers to explore national networks for coordinating and selling excess compute capacity.[^china-glut]
 
-****Sovereign capex is real demand, but capex is not the same as effective compute.****
+**Sovereign capex is real demand, but capex is not the same as effective compute.**
 
 *Token economics and enterprise AI ROI*
 
@@ -477,7 +495,7 @@ Watch enterprise AI spend per employee, token usage caps, paid conversion, model
 
 A physical bottleneck can create a short-term profit pool. Long-term AI infrastructure economics require the monetisation bottleneck to be solved.
 
-### Compute futures and the financialization of AI capacity
+### Compute futures and the financialization of AI capacity
 
 There is one more signal that AI compute is becoming a real bottleneck: Wall Street is trying to financialise it.
 
@@ -501,7 +519,9 @@ Watch AI-compatible installed base, iPhone upgrade cycle, iCloud+ attachment rat
 
 Consumer AI is not just another feature cycle. It is a test of whether a platform company can turn AI into hardware upgrades, services revenue, and ecosystem lock-in.
 
-#### 10. The next narrative: AI leaves the data centreThere is now an even bigger story emerging.
+#### 10. The next narrative: AI leaves the data centre
+
+There is now an even bigger story emerging.
 
 If terrestrial data centres are constrained by power, land, cooling, grid connection, and permitting, why not move some compute into space?
 
@@ -509,9 +529,11 @@ The idea is powerful. Space offers abundant solar energy, Low-Earth orbit satell
 
 But this remains an imagination narrative, not a near-term replacement for terrestrial AI infrastructure. Space-based AI data centres may reduce some terrestrial constraints, but they introduce new constraints: launch cost, mass per kilowatt, radiation hardening, thermal rejection, satellite lifetime, maintenance, utilisation, link bandwidth, orbital debris, and regulation.
 
-***The bigger the imagination, the more important the constraint map becomes.****
+***The bigger the imagination, the more important the constraint map becomes.**
 
-#### 11. The practical investor dashboardSo what should a rational investor do after reading all this?
+#### 11. The practical investor dashboard
+
+So what should a rational investor do after reading all this?
 
 Not chase every AI headline.
 
@@ -549,7 +571,7 @@ For a hypothetical HBM supplier X, I would write the thesis like this: “This i
 
 That is the level of clarity I want before treating any AI theme as more than a story.
 
-#### 12. This is not an anti-AI argumentI am not arguing that AI is fake.
+#### 12. This is not an anti-AI argumentI am not arguing that AI is fake.
 
 The demand is real.
 
@@ -565,7 +587,7 @@ And monetisation is also real.
 
 The centre of the argument is this:
 
-****Corporate capex, sovereign capex, frontier AGI roadmaps, and consumer platforms explain why AI demand keeps expanding.**
+**Corporate capex, sovereign capex, frontier AGI roadmaps, and consumer platforms explain why AI demand keeps expanding.**
 
 **Physical bottlenecks explain who can capture the profit pool.**
 
@@ -573,7 +595,7 @@ The centre of the argument is this:
 
 **Monetised usage explains whether the buildout is sustainable.**
 
-**Compute futures may tell us how the market is pricing scarcity in real time.****
+**Compute futures may tell us how the market is pricing scarcity in real time.**
 
 Investors do not need to become semiconductor engineers.
 
@@ -601,7 +623,9 @@ But over time, it prices constraints.
 
 And in AI infrastructure, the constraints are where the real map begins.
 
-#### Appendix note: the three technical verification tablesThis article is based on three technical verification tables that I treat as companion notes rather than material to overload the main text:
+#### Appendix note: the three technical verification tables
+
+This article is based on three technical verification tables that I treat as companion notes rather than material to overload the main text:
 
 The three companion technical verification tables are available in a downloadable appendix PDF:
 
@@ -617,7 +641,11 @@ Take a market slogan, pull it down into measurable constraints, then ask what ca
 
 That is the whole framework.
 
-#### 👉 Download the appendix:#### [Download the technical appendix PDF](https://drive.google.com/file/d/1mSmqdWJIcqm9ZNK59tzhm04W5FLT3fOC/view?usp=sharing)#### Further reading- The three appendix tables in this package: HBM3E, CoWoS, and process-node verification.
+#### 👉 [Download the technical appendix PDF](https://drive.google.com/file/d/1mSmqdWJIcqm9ZNK59tzhm04W5FLT3fOC/view?usp=sharing)
+
+#### Further reading
+
+- The three appendix tables in this package: HBM3E, CoWoS, and process-node verification.
 
 - Goldman Sachs, “The Assumptions Shaping the Scale of the AI Build-Out.”
 
@@ -639,7 +667,9 @@ That is the whole framework.
 
 - Google DeepMind’s AlphaEvolve article and white paper.
 
-#### References[^goldman]: Goldman Sachs, “The Assumptions Shaping the Scale of the AI Build-Out,” May 2026. [https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out](https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out)
+#### References
+
+[^goldman]: Goldman Sachs, “The Assumptions Shaping the Scale of the AI Build-Out,” May 2026. [https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out](https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out)
 
 [^china-295]: Reuters, “China prepares $295 billion plan to fund nationwide AI buildout, Bloomberg News reports,” June 9, 2026. [https://www.reuters.com/world/china/china-prepares-295-billion-plan-fund-nationwide-ai-buildout-bloomberg-news-2026-06-09/](https://www.reuters.com/world/china/china-prepares-295-billion-plan-fund-nationwide-ai-buildout-bloomberg-news-2026-06-09/)
 
@@ -683,9 +713,13 @@ That is the whole framework.
 
 [^spacex]: Reuters, “Ahead of SpaceX IPO, Musk says AI satellites will use mostly existing technology,” June 9, 2026. [https://www.reuters.com/business/media-telecom/ahead-spacex-ipo-musk-says-ai-satellites-will-use-mostly-existing-technology-2026-06-09/](https://www.reuters.com/business/media-telecom/ahead-spacex-ipo-musk-says-ai-satellites-will-use-mostly-existing-technology-2026-06-09/)
 
-#### DisclaimerThis article is for educational and research purposes only. It is not investment advice, not a recommendation to buy or sell any security, and not a prediction of short-term stock prices. Any companies or sectors mentioned are used as examples to illustrate a framework. Investors should conduct their own research and consider valuation, risk tolerance, liquidity, time horizon, and professional advice before making investment decisions.
+#### Disclaimer
 
-#### Hashtags#AIInfrastructure #Semiconductors #HBM #CoWoS #DataCenters #AICapex #Memory #Chipflation #TSMC #AppleIntelligence #ComputeFutures #SovereignAI #AIInvesting #MooresLaw #PowerAndCooling #Substack #Medium
+This article is for educational and research purposes only. It is not investment advice, not a recommendation to buy or sell any security, and not a prediction of short-term stock prices. Any companies or sectors mentioned are used as examples to illustrate a framework. Investors should conduct their own research and consider valuation, risk tolerance, liquidity, time horizon, and professional advice before making investment decisions.
+
+#### Hashtags
+
+#AIInfrastructure #Semiconductors #HBM #CoWoS #DataCenters #AICapex #Memory #Chipflation #TSMC #AppleIntelligence #ComputeFutures #SovereignAI #AIInvesting #MooresLaw #PowerAndCooling #Substack #Medium
 
 ---
 
