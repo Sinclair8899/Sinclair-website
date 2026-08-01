@@ -7,6 +7,8 @@ draft: false
 tags: ["ai", "future-of-work", "inequality", "economic-security", "ownership"]
 description: "*Work, ownership, and the new architecture of economic security*By Po-Sung(Sinclair) HuangFor decades, people believed that working hard was enough.In the AI era, that assumption is quietly breaking.N"
 canonical: "https://medium.com/@sinclairhuang/why-jobs-are-no-longer-enough-in-the-ai-economy-dd8e6cf2fc8c?source=rss-1f713d63bb6a------2"
+primary_cluster: "capital-and-society"
+cta: "subscribe"
 ---
 
 **Work, ownership, and the new architecture of economic security**

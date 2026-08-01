@@ -7,6 +7,9 @@ draft: false
 tags: ["tsmc", "supply-chain", "sk-hynix", "semiconductors", "artificial-intelligence"]
 description: "Four pressure vectors. Four clocks are already ticking.The question is not whether these moats will last forever — It’s whether you know which one breaks first.TurboQuant, HBM demand reversal, geopoli"
 canonical: "https://medium.com/@sinclairhuang/article-4-stress-testing-the-moat-four-threats-that-could-rewrite-the-ai-supply-chain-279ce0e3bf92?source=rss-1f713d63bb6a------2"
+primary_cluster: "semiconductors"
+related_clusters: ["ai-infrastructure"]
+cta: "advisory"
 ---
 
 TurboQuant, HBM demand reversal, geopolitics, and glass substrates — not a doomsday scenario, but a disciplined analysis.

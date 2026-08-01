@@ -3,6 +3,9 @@ title: "What Are CoWoS, HBM, and ABF - And Why Do They Matter So Much in the AI 
 date: 2026-03-24
 description: "A plain-language walkthrough of CoWoS, HBM, and ABF — what they actually are, why they are always mentioned together, and how they map onto Taiwan's role in the global AI supply chain."
 tags: ["AI", "Semiconductors", "HBM", "CoWoS", "ABF", "Supply Chain", "Taiwan"]
+primary_cluster: "semiconductors"
+related_clusters: ["ai-infrastructure"]
+cta: "advisory"
 ---
 
 Why is everyone suddenly talking about CoWoS, HBM, and ABF whenever AI, NVIDIA, or AI servers come up? Many people know they are important, but still get stuck the first time they run into these terms.

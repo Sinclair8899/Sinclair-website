@@ -5,6 +5,9 @@ draft: false
 tags: ["cpo", "silicon-photonics", "ai-industrial-revolution", "semiconductors", "ai-infrastructure"]
 description: "Position matters more than opinionEveryone Is Betting on AI — But Almost No One Asks: Where Are You Standing?*The AI boom is real. The harder question is where value, risk, and leverage accumulate ins"
 canonical: "https://medium.com/@sinclairhuang/everyone-is-betting-on-ai-but-almost-no-one-asks-where-are-you-standing-6ecc9a3e8cf0?source=rss-1f713d63bb6a------2"
+primary_cluster: "capital-and-society"
+related_clusters: ["ai-infrastructure"]
+cta: "advisory"
 ---
 
 ### Everyone Is Betting on AI — But Almost No One Asks: Where Are You Standing?**The AI boom is real. The harder question is where value, risk, and leverage accumulate inside the stack.**

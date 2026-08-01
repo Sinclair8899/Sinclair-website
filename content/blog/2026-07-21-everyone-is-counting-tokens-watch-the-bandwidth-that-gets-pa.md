@@ -5,6 +5,9 @@ draft: false
 tags: ["market-structure", "economics", "ai", "semiconductors", "investing"]
 description: "AI will be everywhere. The harder question is who still earns a margin when intelligence gets cheap.By SinclairI have watched AI move from conversation and search into data processing, automation, veh"
 canonical: "https://medium.com/@sinclairhuang/everyone-is-counting-tokens-watch-the-bandwidth-that-gets-paid-2578c9af3ce4?source=rss-1f713d63bb6a------2"
+primary_cluster: "ai-infrastructure"
+related_clusters: ["semiconductors", "capital-and-society"]
+cta: "advisory"
 ---
 
 *AI will be everywhere. The harder question is who still earns a margin when intelligence gets cheap.*

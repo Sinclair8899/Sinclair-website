@@ -5,6 +5,8 @@ draft: false
 tags: ["innovation", "knowledge-discovery", "ai", "ai-for-science", "research"]
 description: "AI may not just accelerate science. It may begin to shape which questions emerge first.A new study in Nature Machine Intelligence suggests AI may do more than summarise knowledge or accelerate discove"
 canonical: "https://medium.com/@sinclairhuang/when-ai-starts-predicting-the-next-scientific-question-d3430bddaa5c?source=rss-1f713d63bb6a------2"
+primary_cluster: "capital-and-society"
+cta: "subscribe"
 ---
 
 **A new study in *Nature Machine Intelligence* suggests AI may do more than summarise knowledge or accelerate discovery. It may begin to shape which scientific questions are noticed first.**

@@ -5,6 +5,9 @@ draft: false
 tags: ["elder-care", "physical-ai", "embodied-ai", "robotics", "human-in-the-loop"]
 description: "When AI leaves the screen: worker, caregiver, or companion?China is turning factories into schools for robots. Tesla is betting on general-purpose labour. But Physical AI’s most urgent value may be fi"
 canonical: "https://medium.com/@sinclairhuang/when-ai-leaves-the-screen-will-we-need-a-worker-a-caregiver-or-a-companion-first-b6e371e0b295?source=rss-1f713d63bb6a------2"
+primary_cluster: "robotics"
+related_clusters: ["bio-ai", "capital-and-society"]
+cta: "subscribe"
 ---
 
 China is turning factories into schools for robots. Tesla is betting on general-purpose labour. But Physical AI’s most urgent value may be filling the gap left by a simple human limitation: no one can always be there.

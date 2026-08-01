@@ -3,6 +3,8 @@ title: "Interface Control May Matter More Than Website Ownership"
 date: 2026-03-20
 description: "The next battle for brand power will be fought through control over the layer where demand is matched to supply."
 tags: ["AI", "Brand", "Platform Power", "Digital Strategy"]
+primary_cluster: "capital-and-society"
+cta: "subscribe"
 ---
 
 For years, digital strategy was built around owning traffic and bringing users back to a company website.

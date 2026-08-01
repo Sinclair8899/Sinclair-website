@@ -5,6 +5,8 @@ draft: false
 tags: ["innovation", "research", "bibliometrics", "scientific-discovery", "science"]
 description: "Real breakthroughs are often not one person’s victory. Discovery often emerges in parallel.What EDM Reveals About the Twin Structure of Scientific InnovationEDM is not just a better academic metric. I"
 canonical: "https://medium.com/@sinclairhuang/why-real-breakthroughs-are-not-one-persons-victory-78e5081b33cb?source=rss-1f713d63bb6a------2"
+primary_cluster: "capital-and-society"
+cta: "subscribe"
 ---
 
 **What EDM Reveals About the Twin Structure of Scientific Innovation**

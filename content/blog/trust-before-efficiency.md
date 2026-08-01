@@ -3,6 +3,8 @@ title: "Trust Still Comes Before Efficiency"
 date: 2026-03-20
 description: "AI does not replace trust. It amplifies the value of trust by making it more scalable."
 tags: ["AI", "Commerce", "Trust"]
+primary_cluster: "capital-and-society"
+cta: "subscribe"
 ---
 
 In every wave of commerce, people tend to focus on tools first.

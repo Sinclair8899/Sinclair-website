@@ -8,6 +8,9 @@ draft: false
 tags: ["artificial-intelligence", "micron", "semiconductors", "tsmc", "supply-chain"]
 description: "Three regulatory filings. Three financial moats.Customer prepayments, HBM margin structure, capital expenditure intensity — the numbers say more than the narratives do.**Series:** AI Compute Supply Ch"
 canonical: "https://medium.com/@sinclairhuang/article-3-how-deep-is-the-moat-reading-tsmc-sk-hynix-and-micron-through-their-sec-filings-930c3e0d5cba?source=rss-1f713d63bb6a------2"
+primary_cluster: "semiconductors"
+related_clusters: ["capital-and-society", "ai-infrastructure"]
+cta: "advisory"
 ---
 
 #### Customer prepayments, HBM margin structure, capital expenditure intensity — the numbers say more than the narratives do.

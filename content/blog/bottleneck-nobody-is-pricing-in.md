@@ -3,6 +3,9 @@ title: "The Bottleneck Nobody Is Pricing In: Where AI Compute Really Breaks"
 date: 2026-03-21
 description: "Every layer that looks solved hides another constraint beneath it. A deep look at CoWoS, HBM, and ABF substrate — the three physical bottlenecks shaping AI infrastructure."
 tags: ["AI", "Semiconductors", "Supply Chain", "Infrastructure", "Investment"]
+primary_cluster: "ai-infrastructure"
+related_clusters: ["semiconductors"]
+cta: "advisory"
 ---
 
 Every layer that looks solved hides another constraint beneath it.

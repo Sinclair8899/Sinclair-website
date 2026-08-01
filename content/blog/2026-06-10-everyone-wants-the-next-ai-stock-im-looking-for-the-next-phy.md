@@ -5,6 +5,9 @@ draft: false
 tags: ["cowos", "semiconductors", "hbm", "data-center", "ai-infrastructure"]
 description: "From “What’s the next AI stock?” to “Where’s the next bottleneck, who gets paid, and what would prove us wrong?”Sinclair HuangThis essay helps answer four practical questions:- Which AI themes are rea"
 canonical: "https://medium.com/@sinclairhuang/everyone-wants-the-next-ai-stock-im-looking-for-the-next-physical-bottleneck-f75737995b64?source=rss-1f713d63bb6a------2"
+primary_cluster: "ai-infrastructure"
+related_clusters: ["semiconductors", "capital-and-society"]
+cta: "advisory"
 ---
 
 From “What’s the next AI stock?” to “Where’s the next bottleneck, who gets paid, and what would prove us wrong?”

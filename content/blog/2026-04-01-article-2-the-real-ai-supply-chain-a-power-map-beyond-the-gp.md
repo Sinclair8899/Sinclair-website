@@ -8,6 +8,9 @@ draft: false
 tags: ["artificial-intelligence", "semiconductors", "sk-hynix", "supply-chain", "tsmc"]
 description: "The AI compute supply chain: three layers, three chokepoints, one power map.From TSMC to SK Hynix to Ajinomoto — who holds pricing power, and who is just riding the narrative?**Series:** AI Compute Su"
 canonical: "https://medium.com/@sinclairhuang/article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gpu-c3ddd7ba0929?source=rss-1f713d63bb6a------2"
+primary_cluster: "semiconductors"
+related_clusters: ["ai-infrastructure"]
+cta: "advisory"
 ---
 
 From TSMC to SK Hynix to Ajinomoto — who holds pricing power, and who is just riding the narrative?

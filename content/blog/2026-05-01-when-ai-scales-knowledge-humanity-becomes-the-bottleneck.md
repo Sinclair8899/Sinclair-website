@@ -5,6 +5,8 @@ draft: false
 tags: ["future-of-work", "ai", "connective-labor", "knowledge-work", "human-connection"]
 description: "** In a world of infinite content and scalable intelligence, the scarcest resource may no longer be intelligence itself — but the ability to truly see another human being, and to be seen in return.***"
 canonical: "https://medium.com/@sinclairhuang/when-ai-scales-knowledge-humanity-becomes-the-bottleneck-f2cc5723b058?source=rss-1f713d63bb6a------2"
+primary_cluster: "capital-and-society"
+cta: "subscribe"
 ---
 
 ** In a world of infinite content and scalable intelligence, the scarcest resource may no longer be intelligence itself — but the ability to truly see another human being, and to be seen in return.**

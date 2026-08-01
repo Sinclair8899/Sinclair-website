@@ -5,6 +5,9 @@ draft: false
 tags: ["agentic-ai", "ai-ipo", "ai", "physical-ai", "robotics"]
 description: "Why the second AI revolution may be bigger — and riskier — than the firstSinclair HuangAI Infrastructure Notes｜Article 5*Field Note v4 — updated with GTC Taipei and statistical-science reference mater"
 canonical: "https://medium.com/@sinclairhuang/ai-is-getting-a-ticker-an-agent-and-a-body-40ad2022c608?source=rss-1f713d63bb6a------2"
+primary_cluster: "capital-and-society"
+related_clusters: ["robotics", "ai-infrastructure"]
+cta: "advisory"
 ---
 
 #### Why the second AI revolution may be bigger — and riskier — than the firstSinclair Huang

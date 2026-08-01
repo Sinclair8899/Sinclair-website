@@ -3,6 +3,8 @@ title: "AI Drug Discovery Is Not Just About Speed"
 date: 2026-03-20
 description: "What AI really changes in drug discovery is the way search space is organized — not just speed."
 tags: ["AI", "Biotech", "Drug Discovery"]
+primary_cluster: "bio-ai"
+cta: "subscribe"
 ---
 
 AI in drug discovery is often framed as a speed story. Faster screening, faster structure prediction, faster candidate generation.

@@ -7,6 +7,8 @@ draft: false
 tags: ["ai", "accountability", "technology", "future-of-work", "automation"]
 description: "From early data systems and process automation to generative AI, technology did not arrive as a sudden rupture. It has been moving steadily toward human cognitive work for decades.From dBase and enter"
 canonical: "https://medium.com/@sinclairhuang/ai-was-never-sudden-a-30-year-view-on-the-great-repricing-of-human-talent-c087c90127b0?source=rss-1f713d63bb6a------2"
+primary_cluster: "capital-and-society"
+cta: "advisory"
 ---
 
 *From dBase and enterprise systems to the internet revolution and generative AI, I have come to see AI not as a sudden break, but as the latest step in a long slope of automation now reaching human cognitive work itself.**

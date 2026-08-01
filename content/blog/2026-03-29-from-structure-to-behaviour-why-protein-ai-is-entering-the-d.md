@@ -5,6 +5,8 @@ draft: false
 tags: ["vibegen", "ai-drug-discovery", "proteindynamics", "proteinai", "alphafold"]
 description: "*AlphaFold helped us predict what proteins look like. The next wave of models is starting to address something harder: how proteins move, switch states, and perform functions over time.**By Po-Sung(Si"
 canonical: "https://medium.com/@sinclairhuang/from-structure-to-behaviour-why-protein-ai-is-entering-the-dynamics-era-68661af52490?source=rss-1f713d63bb6a------2"
+primary_cluster: "bio-ai"
+cta: "subscribe"
 ---
 
 *AlphaFold helped us predict what proteins look like. The next wave of models is starting to address something harder: how proteins move, switch states, and perform functions over time.**

@@ -4,6 +4,9 @@ date: 2026-02-22
 description: "SSRN Working Paper - Infrastructure constraints as predictive signals for technology investment cycles"
 tags: ["SSRN", "semiconductors", "infrastructure", "investment cycles", "leading indicators"]
 draft: false
+primary_cluster: "semiconductors"
+related_clusters: ["ai-infrastructure", "capital-and-society"]
+cta: "advisory"
 ---
 
 *Huang, Po-Sung (Sinclair)* (2026) | SSRN Working Paper No. 6285318

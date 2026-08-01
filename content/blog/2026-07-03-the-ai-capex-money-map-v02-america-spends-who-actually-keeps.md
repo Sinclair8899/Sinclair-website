@@ -5,6 +5,9 @@ draft: false
 tags: ["ai-capex", "semiconductors", "ai", "hbm", "cowos"]
 description: "The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?From $650B to HBM, CoWoS and power — mapping who gets paid, who keeps margin, and when the bottlenecks move.Most people are "
 canonical: "https://medium.com/@sinclairhuang/the-ai-capex-money-map-v0-2-america-spends-who-actually-keeps-the-margin-995fbcc60ea9?source=rss-1f713d63bb6a------2"
+primary_cluster: "ai-infrastructure"
+related_clusters: ["semiconductors", "capital-and-society"]
+cta: "advisory"
 ---
 
 ### The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?

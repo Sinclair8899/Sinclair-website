@@ -5,6 +5,9 @@ date: 2026-01-21T23:11:35+08:00
 draft: false
 categories: ["半導體", "AI"]
 tags: ["AI晶片", "產業分析"]
+primary_cluster: "semiconductors"
+related_clusters: ["ai-infrastructure"]
+cta: "advisory"
 ---
 
 

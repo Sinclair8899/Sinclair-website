@@ -5,6 +5,9 @@ draft: false
 tags: ["valuation", "innovation", "knowledge-spillover", "capital-markets", "biopharma"]
 description: "The figure reflects the paper’s methodology and sample construction; citation values are most comparable within each sub-sample.A new working paper suggests that markets often reward narrative clarity"
 canonical: "https://medium.com/@sinclairhuang/why-156-000-citations-can-be-worth-less-than-18-700-in-biopharma-86e6360f4c59?source=rss-1f713d63bb6a------2"
+primary_cluster: "capital-and-society"
+related_clusters: ["bio-ai"]
+cta: "subscribe"
 ---
 
 **A new working paper suggests that markets often reward narrative clarity more than scientific spillovers.**
