@@ -5,6 +5,10 @@ on:
     - cron: '0 3 * * 1'  # Every Monday at 3am UTC (11am Taiwan)
   workflow_dispatch:
 
+concurrency:
+  group: site-content-push
+  cancel-in-progress: false
+
 jobs:
   import-medium:
     runs-on: ubuntu-latest
@@ -32,8 +36,8 @@ jobs:
           hugo-version: '0.152.2'
           extended: true
 
-      - name: Build Hugo site
-        run: hugo --cleanDestinationDir --destination docs
+      - name: Build Hugo site and run acceptance checks
+        run: bash scripts/build_and_check.sh
 
       - name: Commit and push
         run: |

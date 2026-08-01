@@ -41,8 +41,8 @@ jobs:
           hugo-version: '0.152.2'
           extended: true
 
-      - name: Build Hugo site
-        run: hugo --cleanDestinationDir --destination docs
+      - name: Build Hugo site and run acceptance checks
+        run: bash scripts/build_and_check.sh
 
       - name: Commit and push
         run: |
