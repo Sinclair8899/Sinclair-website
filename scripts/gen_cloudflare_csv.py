@@ -28,11 +28,12 @@ def main():
                 continue
             rows.append((DOMAIN + old, DOMAIN + new, "301"))
 
+    # Cloudflare's Bulk Redirect CSV import forbids a header row — the file
+    # must contain data rows only.
     with open("redirects-cloudflare.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["source_url", "target_url", "status_code"])
-        w.writerows(rows)
-    print(f"redirects-cloudflare.csv: {len(rows)} redirect rows (GONE/self-map excluded)")
+        csv.writer(f).writerows(rows)
+    print(f"redirects-cloudflare.csv: {len(rows)} redirect rows, no header "
+          f"(GONE/self-map excluded)")
 
 if __name__ == "__main__":
     main()

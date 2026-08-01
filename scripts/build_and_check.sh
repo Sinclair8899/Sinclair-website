@@ -10,17 +10,16 @@ cd "$(dirname "$0")/.."
 export TZ=Asia/Taipei
 
 # Toolchain gate: docs/ is committed build output; a different Hugo rewrites
-# hundreds of generated files and still "passes" — so the version is pinned.
-# Exact match on the version token (grep -F would also accept v0.152.20).
-REQUIRED_HUGO="v0.152.2"
-HV=$(hugo version | awk '{print $2}' | cut -d+ -f1)
-[ "$HV" = "$REQUIRED_HUGO" ] \
-  || { echo "FAIL: Hugo $REQUIRED_HUGO required, found: $HV"; exit 1; }
+# hundreds of generated files and still "passes" — so the BASE semver is
+# pinned (official releases report v0.152.2-<hash>+extended, brew reports
+# v0.152.2+extended+withdeploy; both pass, v0.152.20-* does not).
+scripts/check_hugo_version.sh || exit 1
 
-# Source-side junk gate (the June sync-duplication incident reached .git/refs);
-# one-or-more digits — " 10" and " (12)" count too
-JUNK=$(find content static layouts assets .github 2>/dev/null \
-       | grep -E ' \(?[0-9]+\)?(\.(md|html|xml))?$|\.bak$|\.backup$|\.before-remove$|~$')
+# Source-side junk gate over the WHOLE repo except .git/ and docs/ (data/ was
+# a prior incident zone and must be covered); any extension counts.
+. scripts/junk_pattern.sh
+JUNK=$(find . -path ./.git -prune -o -path ./docs -prune -o -print 2>/dev/null \
+       | grep -E "$JUNK_RE")
 [ -z "$JUNK" ] || { echo "FAIL: backup/duplicate junk in source:"; echo "$JUNK"; exit 1; }
 REFJUNK=$(find .git/refs -name '* *' 2>/dev/null)
 [ -z "$REFJUNK" ] || { echo "FAIL: junk git refs:"; echo "$REFJUNK"; exit 1; }

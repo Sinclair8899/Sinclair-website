@@ -70,5 +70,33 @@ mkdir "$TMP/case/blog/some-article (12)"
 cp "$TMP/case/$ARTICLE" "$TMP/case/blog/some-article (12)/index.html"
 expect sync-duplicate-parenthesized-dir fail "$TMP/case"
 
+fresh
+touch "$TMP/case/favicon 12.png"
+expect sync-duplicate-png fail "$TMP/case" "JUNK FILES"
+
+fresh
+touch "$TMP/case/update-news 12.yml"
+expect sync-duplicate-yml fail "$TMP/case" "JUNK FILES"
+
+fresh
+touch "$TMP/case/data-name 12.json"
+expect sync-duplicate-json fail "$TMP/case" "JUNK FILES"
+
+# Hugo version parsing fixtures — official releases carry a commit hash,
+# brew carries extra metadata; only the BASE semver may decide.
+vexpect() { # vexpect <name> <pass|fail> <version-token>
+  local name=$1 want=$2 token=$3 got
+  if scripts/check_hugo_version.sh "$token" >/dev/null 2>&1; then got=pass; else got=fail; fi
+  if [ "$got" = "$want" ]; then
+    echo "ok   $name (version gate ${got}ed as expected)"
+  else
+    echo "FAIL $name — version gate ${got}ed for '$token', expected $want"
+    RESULT=1
+  fi
+}
+vexpect hugo-official-release-hash pass "v0.152.2-6abd821c8dd41a10f7f9ba52a4dfebdaa1a84151+extended"
+vexpect hugo-brew-metadata pass "v0.152.2+extended+withdeploy"
+vexpect hugo-reject-0.152.20 fail "v0.152.20-6abd821+extended"
+
 [ "$RESULT" = 0 ] && echo "NEGATIVE TESTS: all faults detected" || echo "NEGATIVE TESTS FAILED"
 exit "$RESULT"

@@ -21,11 +21,10 @@ LEAK=$(grep -rlE 'https?://(localhost|127\.0\.0\.1)([:/]|")|(localhost|127\.0\.0
 [ -z "$LEAK" ] || { echo "DEV URL LEAK:"; echo "$LEAK"; FAIL=1; }
 
 # 3. Backup / sync-duplicate junk must never reach the built site.
-#    The 2026-06/08 incidents produced " 2", " 5", " (1)" — and can produce
-#    multi-digit variants (" 10", " (12)"), so match one-or-more digits via
-#    grep -E (portable; find globs cannot express +). Legitimate Hugo slugs
-#    never contain spaces.
-JUNK=$(find "$DOCS" 2>/dev/null | grep -E ' \(?[0-9]+\)?(\.(md|html|xml))?$|\.bak$|\.backup$|\.before-remove$|~$')
+#    Shared pattern (scripts/junk_pattern.sh): one-or-more digits, ANY
+#    extension — " 10", " (12)", "favicon 12.png", "update-news 12.yml".
+. "$REPO/scripts/junk_pattern.sh"
+JUNK=$(find "$DOCS" 2>/dev/null | grep -E "$JUNK_RE")
 [ -z "$JUNK" ] || { echo "JUNK FILES IN BUILD OUTPUT:"; echo "$JUNK"; FAIL=1; }
 
 # 4. Advisory fixed anchors (linked from CTAs and external notes)

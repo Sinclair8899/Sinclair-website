@@ -13,8 +13,12 @@ enabled first (Sinclair's decision, not yet made).
 scripts/build_and_check.sh
 ```
 
-Gates before the build: Hugo version pin, no backup/Finder-duplicate junk in
-source or `.git/refs`, no stray `public/` tree. Then
+Gates before the build: Hugo BASE-semver check (`scripts/check_hugo_version.sh`
+— official releases report `v0.152.2-<hash>+extended`, brew reports
+`v0.152.2+extended+withdeploy`; both pass, `v0.152.20-*` fails), no
+backup/sync-duplicate junk anywhere in the repo except `.git/` and `docs/`
+(shared pattern in `scripts/junk_pattern.sh`: one-or-more digits, ANY
+extension), no junk `.git/refs`, no stray `public/` tree. Then
 `hugo --cleanDestinationDir --panicOnWarning --printPathWarnings` with the
 production baseURL, then `scripts/check_site.sh docs <prev-inventory>`:
 
@@ -49,11 +53,14 @@ An unattended build that hits a new warning fails and leaves the live site as
 it was — that is the safe outcome, not an inconvenience.
 
 The checker itself is negative-tested: `scripts/test_checks.sh` runs one
-pristine case (must pass) and eight seeded faults (must each fail): malformed
-relative link, `localhost:57206` leak, unledgered disappeared URL (asserted
-on its specific error message, so it cannot pass for the wrong reason),
-duplicate CTA, backup file, and sync-duplicate dirs `name 5`, `name 12`,
-`name (12)`. Run it after changing any check logic.
+pristine case (must pass), eleven seeded tree faults (must each fail):
+malformed relative link, `localhost:57206` leak, unledgered disappeared URL
+(asserted on its specific error message, so it cannot pass for the wrong
+reason), duplicate CTA, backup file, sync-duplicate dirs `name 5`/`name 12`/
+`name (12)`, and sync-duplicate files `favicon 12.png`/`update-news 12.yml`/
+`data-name 12.json` — plus three Hugo-version parsing fixtures
+(official-hash pass, brew-metadata pass, `v0.152.20` fail). Run it after
+changing any check logic.
 
 **Never invoke the build through a pipe** (`scripts/build_and_check.sh | tail`
 — the pipeline's exit status is tail's, and `pipefail` inside the script
