@@ -168,6 +168,28 @@ p.write_text(t.replace('</urlset>', '  <url><loc>https://sinclairhuang.org/%74%6
 PY
 expect encoded-taxonomy-loc-in-sitemap fail "$TMP/case" "TAXONOMY URL IN SITEMAP"
 
+# Dot-segment normalization: sitemap paths are urlparse -> unquote-once ->
+# posixpath.normpath, so classification follows the real destination.
+fresh
+python3 - "$TMP/case/sitemap.xml" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+assert '</urlset>' in t
+p.write_text(t.replace('</urlset>', '  <url><loc>https://sinclairhuang.org/blog/../tags/ai/</loc></url>\n</urlset>'))
+PY
+expect dotdot-taxonomy-loc-in-sitemap fail "$TMP/case" "TAXONOMY URL IN SITEMAP"
+
+fresh
+python3 - "$TMP/case/sitemap.xml" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+assert '</urlset>' in t
+p.write_text(t.replace('</urlset>', '  <url><loc>https://sinclairhuang.org/blog/%2e%2e/tags/ai/</loc></url>\n</urlset>'))
+PY
+expect encoded-dotdot-taxonomy-loc fail "$TMP/case" "TAXONOMY URL IN SITEMAP"
+
 fresh
 python3 - "$TMP/case/tags/ai/index.html" <<'PY'
 import sys, pathlib
@@ -178,6 +200,16 @@ assert old in t
 p.write_text(t.replace(old, '<meta content=" NoIndex ,  FOLLOW " name="ROBOTS">', 1))
 PY
 expect robots-variant-still-valid pass "$TMP/case"
+
+fresh
+python3 - "$TMP/case/sitemap.xml" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+assert '</urlset>' in t
+p.write_text(t.replace('</urlset>', '  <url><loc>https://sinclairhuang.org/tags/../blog/</loc></url>\n</urlset>'))
+PY
+expect dotdot-escape-normalizes-out-of-taxonomy pass "$TMP/case"
 
 # Hugo version parsing fixtures — official releases carry a commit hash,
 # brew carries extra metadata; only the BASE semver may decide.
