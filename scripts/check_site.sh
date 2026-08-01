@@ -21,10 +21,11 @@ LEAK=$(grep -rlE 'https?://(localhost|127\.0\.0\.1)([:/]|")|(localhost|127\.0\.0
 [ -z "$LEAK" ] || { echo "DEV URL LEAK:"; echo "$LEAK"; FAIL=1; }
 
 # 3. Backup / Finder-duplicate junk must never reach the built site
-#    (incl. bare "name 2" directories — the 2026-06/08 Finder incidents)
+#    (incl. bare "name N" directories — the 2026-06/08 sync-duplication incidents
+#    produce " 2", " 5", " (1)" variants; legitimate Hugo slugs never contain spaces)
 JUNK=$(find "$DOCS" \( -name '*.bak' -o -name '*.backup' -o -name '*.before-remove' \
-       -o -name '*~' -o -name '* (1)*' -o -name '* 2' -o -name '* 2.md' \
-       -o -name '* 2.html' -o -name '* 2.xml' \) 2>/dev/null)
+       -o -name '*~' -o -name '* ([0-9])*' -o -name '* [0-9]' -o -name '* [0-9].md' \
+       -o -name '* [0-9].html' -o -name '* [0-9].xml' \) 2>/dev/null)
 [ -z "$JUNK" ] || { echo "JUNK FILES IN BUILD OUTPUT:"; echo "$JUNK"; FAIL=1; }
 
 # 4. Advisory fixed anchors (linked from CTAs and external notes)
@@ -60,7 +61,7 @@ if [ -n "$PREV" ] && [ -f "$PREV" ]; then
   while IFS= read -r gone; do
     [ -n "$gone" ] || continue
     case "$gone" in
-      *" 2/"*|*" (1)"*)  # Finder-duplicate junk vanishing is cleanup, not loss
+      *" "[0-9]/*|*" ("[0-9]")"*)  # sync-duplicate junk vanishing is cleanup, not loss
         echo "NOTE: junk URL removed by clean rebuild (OK): $gone"; continue ;;
     esac
     awk -F'\t' -v p="$gone" '$1==p{found=1} END{exit !found}' "$REPO/redirects.tsv" \

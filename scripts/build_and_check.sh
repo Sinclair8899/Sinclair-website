@@ -13,8 +13,8 @@ hugo version | grep -qF "$REQUIRED_HUGO" \
 
 # Source-side junk gate (the June Finder-duplication incident reached .git/refs)
 JUNK=$(find content static layouts assets .github \( -name '*.bak' -o -name '*.backup' \
-       -o -name '*.before-remove' -o -name '*~' -o -name '* (1)*' -o -name '* 2' \
-       -o -name '* 2.md' -o -name '* 2.html' \) 2>/dev/null)
+       -o -name '*.before-remove' -o -name '*~' -o -name '* ([0-9])*' -o -name '* [0-9]' \
+       -o -name '* [0-9].md' -o -name '* [0-9].html' \) 2>/dev/null)
 [ -z "$JUNK" ] || { echo "FAIL: backup/duplicate junk in source:"; echo "$JUNK"; exit 1; }
 REFJUNK=$(find .git/refs -name '* *' 2>/dev/null)
 [ -z "$REFJUNK" ] || { echo "FAIL: junk git refs:"; echo "$REFJUNK"; exit 1; }

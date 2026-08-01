@@ -51,9 +51,9 @@ touch "$TMP/case/publications/_index.md.bak"
 expect backup-file-in-output fail "$TMP/case"
 
 fresh
-mkdir "$TMP/case/blog/some-article 2"
-cp "$TMP/case/$ARTICLE" "$TMP/case/blog/some-article 2/index.html"
-expect finder-duplicate-dir-in-output fail "$TMP/case"
+mkdir "$TMP/case/blog/some-article 5"
+cp "$TMP/case/$ARTICLE" "$TMP/case/blog/some-article 5/index.html"
+expect sync-duplicate-dir-in-output fail "$TMP/case"
 
 [ "$RESULT" = 0 ] && echo "NEGATIVE TESTS: all faults detected" || echo "NEGATIVE TESTS FAILED"
 exit "$RESULT"

@@ -20,7 +20,12 @@ production baseURL, then `scripts/check_site.sh docs <prev-inventory>`:
 
 - root files (CNAME, `.nojekyll`, `robots.txt`, five favicons)
 - dev-URL leak — any `localhost`/`127.0.0.1`, **any port**
-- no backup/junk files in output
+- no backup/junk files in output (incl. bare `name N` sync-duplicate dirs —
+  the duplication process is ACTIVE on this machine; it renamed 21 tag dirs
+  to `name 2` and spawned `name 5` variants during the 2026-08-01 session
+  alone. Root cause is almost certainly iCloud "Desktop & Documents" sync
+  fighting over `~/Desktop/Sinclair-website` — move the repo out of
+  `~/Desktop` or exclude it from sync)
 - `/advisory/` fixed anchors (english/chinese/retainer/projects/briefings/start)
 - `scripts/check_links.py`: internal links, assets, cross-page anchors, sitemap
   `<loc>`s; **relative or malformed URLs are a hard failure** (they are broken
