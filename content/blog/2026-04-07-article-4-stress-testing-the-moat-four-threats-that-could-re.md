@@ -97,7 +97,7 @@ TurboQuant drew the boundary of software efficiency — and the 7.1x compres
 
 None of these is a thesis-breaking discovery. All of them are things a serious analyst needs to hold alongside the bullish framework — not to undermine it, but to know its edges.
 
-Article 5 is written for anyone wondering how this semiconductor reality connects to your own industry, your company’s strategy, or the shape of the next decade. If that sounds like you, subscribe below so you don’t miss it.
+Article 5 is written for anyone wondering how this semiconductor reality connects to your own industry, your company’s strategy, or the shape of the next decade. If that sounds like you, you can find it with the rest of this series at [sinclairhuang.org/blog](https://sinclairhuang.org/blog/).
 
 *Moats are not permanent. They are directional. The question is not whether this moat will last forever — it’s whether it will last long enough, and whether you know which clock is already ticking.*
 

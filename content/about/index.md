@@ -56,8 +56,7 @@ Exploring computational and conceptual applications of AI in life-science resear
 | **Full Name** | Po-Sung (Sinclair) Huang｜黃柏松 |
 | **Degree** | Executive Doctorate in Business Administration (EDBA), HEC Liège |
 | **ORCID** | [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672) |
-| **Research Email** | research@sinclairhuang.org |
-| **Contact Email** | sinclairhuang@gmail.com |
+| **Email** | [research@sinclairhuang.org](mailto:research@sinclairhuang.org) |
 
 **Research Platforms:** [SSRN](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1044018) · [Google Scholar](https://scholar.google.com/citations?user=rtOBjQkAAAAJ) · [Zenodo](https://zenodo.org/search?q=sinclair+huang) · [ORCID](https://orcid.org/0009-0007-8173-5672) · [Medium](https://medium.com/@sinclairhuang)
 
