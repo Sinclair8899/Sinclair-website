@@ -82,6 +82,11 @@ fresh
 touch "$TMP/case/data-name 12.json"
 expect sync-duplicate-json fail "$TMP/case" "JUNK FILES"
 
+fresh
+printf '<script type="application/ld+json">{"datePublished":"0001-01-01T00:00:00+00:00"}</script>\n' \
+  >> "$TMP/case/research/ai-infrastructure/index.html"
+expect zero-date-in-research fail "$TMP/case" "YEAR-0001 DATE IN RESEARCH OUTPUT"
+
 # Hugo version parsing fixtures — official releases carry a commit hash,
 # brew carries extra metadata; only the BASE semver may decide.
 vexpect() { # vexpect <name> <pass|fail> <version-token>

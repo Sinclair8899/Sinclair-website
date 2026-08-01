@@ -33,6 +33,15 @@ for a in english chinese retainer projects briefings start; do
     || { echo "MISSING ANCHOR #$a on /advisory/"; FAIL=1; }
 done
 
+# 4b. Zero-date leak in the research section — a date-less page renders
+#     0001-01-01 into JSON-LD and "Mon, 01 Jan 0001" into RSS. Scoped to
+#     docs/research/ only: the three legacy zero-date RSS entries
+#     (advisory/data/about) are separately ledgered old debt.
+if [ -d "$DOCS/research" ]; then
+  ZDATE=$(grep -rlE '0001-01-01|Jan 0001|January 1, 0001' "$DOCS/research" 2>/dev/null | head -5)
+  [ -z "$ZDATE" ] || { echo "YEAR-0001 DATE IN RESEARCH OUTPUT:"; echo "$ZDATE"; FAIL=1; }
+fi
+
 # 5. Internal links, assets, anchors, sitemap (rejects relative/malformed URLs)
 python3 "$REPO/scripts/check_links.py" "$DOCS" || FAIL=1
 

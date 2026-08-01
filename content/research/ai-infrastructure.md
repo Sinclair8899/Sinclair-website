@@ -1,5 +1,7 @@
 ---
 title: "AI Infrastructure"
+date: 2026-08-01
+hideMeta: true
 hideDescription: true
 description: "AI infrastructure research on compute supply chains, physical bottlenecks, deployment constraints, and where capital spending becomes durable margin."
 ---

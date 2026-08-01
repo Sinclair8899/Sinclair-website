@@ -1,5 +1,7 @@
 ---
 title: "Semiconductors"
+date: 2026-08-01
+hideMeta: true
 hideDescription: true
 description: "Semiconductor strategy research on HBM, CoWoS, advanced packaging, photonics, materials, and the manufacturing constraints that shape competitive leverage."
 ---
