@@ -45,5 +45,21 @@ theme = "PaperMod"
     url = "/advisory"
     weight = 8
 
+# 3B: taxonomy pages (tags/categories, list + term) keep their URLs but
+# leave the sitemap; the matching noindex,follow meta lives in the
+# layouts/partials/head.html theme override. primary_cluster stays a page
+# param — no cluster taxonomy is registered here.
+[[cascade]]
+  [cascade.sitemap]
+    disable = true
+  [cascade._target]
+    kind = "taxonomy"
+
+[[cascade]]
+  [cascade.sitemap]
+    disable = true
+  [cascade._target]
+    kind = "term"
+
 [markup.goldmark.renderer]
   unsafe = true
