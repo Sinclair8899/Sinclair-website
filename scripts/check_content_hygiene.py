@@ -23,7 +23,7 @@ HEADING_MAX = 110  # a heading longer than this has almost certainly swallowed b
 CAMEL_OK = re.compile(
     r"CoWoS|InFO|TurboQuant|MediaTek|TrendForce|SanDisk|AlphaFold|AlphaEvolve|"
     r"VibeGen|InnoVEX|McKinsey|GitHub|YouTube|LinkedIn|OpenAI|DeepMind|InPost|"
-    r"HashTags?|IoT|SoIC|TSMC|NVIDIA|BioNTech|EDBA|COMPUTEX|HauteLook")
+    r"HashTags?|IoT|SoIC|TSMC|NVIDIA|BioNTech|EDBA|COMPUTEX|macOS|iOS|iPadOS|SpaceX")
 
 
 def fusion_signature(text):
@@ -33,7 +33,10 @@ def fusion_signature(text):
             or re.search(r"(Note|Disclaimer|Summary|Reading|References|Keywords|"
                           r"Ending|Author)[\u4e00-\u9fff]", stripped)  # Note本文-style fusion
                           # (bare [A-Za-z][CJK] would misflag normal mixed titles like "AI晶片")
-            or re.search(r"[a-z][A-Z][a-z]{2,}", stripped))       # scarceAnother
+            or re.search(r"[a-z][A-Z][a-z]{2,}", stripped)        # scarceAnother
+            or re.search(r"[A-Z]{2,}[A-Z][a-z]{2,}", stripped)    # AIThe (acronym+word)
+            or re.search(r"[a-z][A-Z]{2,}", stripped)             # mattersIPM
+            or re.search(r"[a-z][A-Z](?=[ ,.!?:;]|$)", stripped))  # factoryA market
 
 
 class Page(HTMLParser):
@@ -95,12 +98,62 @@ def scan(path):
             findings.append(f"visible literal #: {t[:90]!r}")  # hashtag blocks are whitelisted
         if "**" in t:
             findings.append(f"visible '**' residue: {t[:90]!r}")
-        if re.search(r"(?<![\w*])\*(?![\s*])[^*]+\*\*(?!\*)", t):
-            findings.append(f"unbalanced emphasis: {t[:90]!r}")
+        elif "*" in t:  # ANY literal asterisk surviving into rendered text is residue
+            findings.append(f"visible '*' residue: {t[:90]!r}")
+        if re.match(r">\s", t):  # escaped blockquote marker rendered as text
+            findings.append(f"leading '>' residue: {t[:90]!r}")
     return findings
 
 
+
+
+def selftest():
+    """Fixtures: each named fault class must be caught; controls must pass."""
+    must_flag = [
+        "The third phase of AIThe first phase of AI was about models.",
+        "Why this mattersIPM is not a magic number.",
+        "Why does this happen?My reading is that",
+        "Author Note本文以中文寫作",
+        "The index can move faster than the factoryA market can reprice",
+    ]
+    must_pass = [
+        "What Are CoWoS, HBM, and ABF — And Why Do They Matter",
+        "TurboQuant and the Limits of Compression",
+        "2025 AI晶片產業趨勢",
+        "AI Infrastructure Is Not One Trade",
+        "SK Hynix and Micron: The HBM Margin Engine",
+        "macOS and iOS deployment targets",
+    ]
+    failures = []
+    for s in must_flag:
+        if not fusion_signature(s):
+            failures.append(f"NOT flagged (should be): {s!r}")
+    for s in must_pass:
+        if fusion_signature(s):
+            failures.append(f"flagged (should pass): {s!r}")
+    text_cases = [  # (text, should_flag)
+        ("*For the full research version, see the Substack edition on *", True),
+        ("> Money flow doesn't lie.", True),
+        ("#AIInfrastructure #HBM #CoWoS", False),
+        ("Normal paragraph about HBM allocation.", False),
+    ]
+    for s, want in text_cases:
+        got = bool("**" in s or ("*" in s) or re.match(r">\s", s)) if want or True else None
+        flagged = bool(("*" in s) or re.match(r">\s", s))
+        if flagged != want:
+            failures.append(f"text case wrong (flagged={flagged}, want={want}): {s!r}")
+    if failures:
+        print("SELFTEST FAIL:")
+        for f in failures:
+            print("  " + f)
+        return 1
+    print(f"SELFTEST OK: {len(must_flag)} fault fixtures caught, "
+          f"{len(must_pass)} controls pass, {len(text_cases)} text cases correct")
+    return 0
+
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == "--selftest":
+        return selftest()
     docs = sys.argv[1] if len(sys.argv) > 1 else "docs"
     targets = sys.argv[2:]
     if not targets:

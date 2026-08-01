@@ -293,7 +293,9 @@ The event is not saying, “AI is hot.” It is saying, “AI needs somewhere to
 
 That is a much more useful signal.
 
-#### The third phase of AIThe first phase of AI was about models.
+#### The third phase of AI
+
+The first phase of AI was about models.
 
 The second phase was about chips.
 

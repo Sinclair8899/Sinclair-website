@@ -11,7 +11,7 @@ canonical: "https://medium.com/@sinclairhuang/the-ai-capex-money-map-v0-2-americ
 
 #### From $650B to HBM, CoWoS and power — mapping who gets paid, who keeps margin, and when the bottlenecks move.
 
-*(The money-map, cost-stack, and regional margin-capture charts referenced below are figures in the [original Medium version](https://medium.com/@sinclairhuang/the-ai-capex-money-map-v0-2-america-spends-who-actually-keeps-the-margin-995fbcc60ea9); this text edition keeps all the numbers and reasoning.)*
+*(The capex waterfall, cost-stack, bottleneck-clock, and regional margin-capture charts are figures in the [original Medium version](https://medium.com/@sinclairhuang/the-ai-capex-money-map-v0-2-america-spends-who-actually-keeps-the-margin-995fbcc60ea9); this text edition keeps the surrounding reasoning — see Medium for the full visual breakdowns.)*
 
 Most people are asking whether AI is a bubble. It is an important question, but not a very operational one.
 
