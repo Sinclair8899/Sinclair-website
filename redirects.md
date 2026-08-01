@@ -1,56 +1,47 @@
-# Redirect ledger — 舊 URL → 新 URL 主對照表
+# Redirect ledger — 舊 URL → 新 URL
 
-單一事實來源：所有曾公開存在、之後移動或刪除的 URL 都記錄在這裡。
-Search Console 只作後續監控，不取代本表。
+**機器可讀主檔是 [`redirects.tsv`](redirects.tsv)**（`scripts/check_site.sh` 逐列核對：
+任何在兩次建置之間消失的 URL 必須在 TSV 有對應列，否則建置失敗）。
+本檔是人讀的說明與 Cloudflare 執行指引；改 slug、刪頁、併頁時**兩檔都要更新**。
+Search Console 只作後續監控，不取代台帳。
 
-**機制現況**：Hugo alias 產生 HTTP 200 + meta refresh（canonical 指向新頁），暫可接受。
-重要舊網址應逐步改用 **Cloudflare Redirect Rules** 做真正 301——candidate 欄標記 `301` 者優先。
+## 機制現況（2026-08-01 實測更正）
 
-## 1. 頁面匯流（Hugo alias 已生效）
+- Hugo alias = HTTP 200 + meta refresh（canonical 指向新頁），暫可接受。
+- **本網域目前是 Cloudflare DNS-only**：DNS 直接解到 GitHub Pages 四個 IP，
+  流量由 GitHub/Fastly 服務（`server: GitHub.com`），**沒有經過 Cloudflare proxy**。
+  因此：
+  - **Cloudflare Redirect Rules 現在貼了不會生效**（官方文件：redirect 只作用於
+    proxied DNS records）。
+  - **Purge Cloudflare cache 也無實質作用**——現在的快取在瀏覽器與 GitHub/Fastly 端。
+  - 是否啟用 proxy（orange cloud）由 Sinclair 決定；啟用前需先驗證 HTTPS 憑證、
+    GitHub Pages 自訂網域與 redirect 行為。**在那之前，真正 301 無法實作，
+    alias 的 200 + meta refresh 是現行機制。**
 
-| 舊 URL | 新 URL | 機制 | Cloudflare |
-|---|---|---|---|
-| `/contact/` | `/advisory/` | alias（content/advisory.md） | 301 candidate |
-| `/consulting/` | `/advisory/` | alias（content/advisory.md） | 301 candidate |
+## 若未來啟用 Cloudflare proxy：執行清單
 
-## 2. 舊文章 slug（2026-07-31 乾淨重建清出的孤兒頁，本輪已補 alias 恢復可達）
+1. **頁面匯流與舊 slug**（redirects.tsv 中 new_path 非 GONE 的靜態列）：
+   用 **Bulk Redirects** 建立精確的一對一 301 清單，直接照 TSV 貼。
+2. **15 個 `-2` 垃圾副本**：不要用涵蓋未來所有 `-2` slug 的寬鬆 regex——
+   會誤傷未來任何正好以 `-2` 結尾的正當 slug。同樣放進 Bulk Redirects
+   精確清單（15 列都已在 TSV）。
+3. 若真要用 dynamic redirect 表達式，Cloudflare 的 capture 語法是
+   `regex_replace(...)` 與 `${1}`，**不是** `$1`。
 
-| 舊 URL | 新 URL | 機制 | Cloudflare |
-|---|---|---|---|
-| `/blog/ai-supply-chain-part2-power-map/` | `/blog/2026-04-01-article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gp/` | alias | 301 candidate |
-| `/posts/ai-supply-chain-part2-power-map/` | 同上 | alias | 301 candidate |
-| `/blog/ai-supply-chain-part3-sec-filings/` | `/blog/2026-04-02-article-3-how-deep-is-the-moat-reading-tsmc-sk-hynix-and-mic/` | alias | 301 candidate |
-| `/posts/ai-supply-chain-part3-sec-filings/` | 同上 | alias | 301 candidate |
-| `/blog/ai-supply-chain-part4-stress-test/` | `/blog/2026-04-07-article-4-stress-testing-the-moat-four-threats-that-could-re/` | alias | 301 candidate |
-| `/blog/ai-supply-chain-part5-industrial-transformation/` | `/blog/2026-04-11-beyond-the-gpu-what-the-ai-infrastructure-buildout-means-for/` | alias | 301 candidate |
-| `/blog/ai-was-never-sudden/` | `/blog/2026-04-15-ai-was-never-sudden-a-30-year-view-on-the-great-repricing-of/` | alias | 301 candidate |
-| `/blog/why-jobs-are-no-longer-enough/` | `/blog/2026-04-17-why-jobs-are-no-longer-enough-in-the-ai-economy/` | alias | 301 candidate |
+## 分類摘要（明細以 TSV 為準）
 
-## 3. 拼錯的 tag 頁（本輪修正 front matter 後自然消失）
-
-| 舊 URL | 新 URL | 機制 | Cloudflare |
-|---|---|---|---|
-| `/tags/ai-infrastruture/` | `/tags/ai-infrastructure/` | 已 404（tag 改拼） | 301 candidate |
-| `/tags/industialstrategy/` | `/tags/industrial-strategy/` | 已 404（tag 改拼） | 301 candidate |
-
-## 4. 2026-06 Finder 複製事故的垃圾頁（2026-07-31 清除，共 15 篇 `-2` 副本 + `/news-1/`）
-
-短暫上線約一個月，可能被少量索引。單條 Cloudflare 規則即可全數涵蓋：
-
-| 舊 URL 模式 | 新 URL | 機制 | Cloudflare |
-|---|---|---|---|
-| `/blog/<slug>-2/`（15 篇） | `/blog/<slug>/` | 已 404 | 一條 regex 規則：`^/blog/(.+)-2/$` → `/blog/$1/` |
-| `/news-1/` | `/news/` | alias（content/news/_index.md） | 301 candidate |
-| `/blog/thoughts/yyyy-mm-dd-title/` | —（模板殘留，無對應內容） | 已 404 | 不處理（410 即可） |
-
-## 5. 廢棄 taxonomy 頁（低價值，不設 redirect，404/410 即可）
-
-`/categories/ai-compute-supply-chain/`、`/categories/research/`、
-`/tags/ajinomoto/`、`/tags/geopolitics/`、`/tags/sec-filings/`、
-`/tags/society/`、`/tags/strategy/`、`/tags/tag1/`、`/tags/tag2/`
-（皆為 2026-07-31 乾淨重建清出的過期 taxonomy 頁；`tag1`/`tag2` 為測試殘留。）
+| 類別 | 數量 | 處置 |
+|---|---|---|
+| 頁面匯流 `/contact/`、`/consulting/` → `/advisory/` | 2 | Hugo alias 已生效；proxy 啟用後轉 301 |
+| 舊文章 slug（part2–5、posts 變體、ai-was-never-sudden、why-jobs） | 8 | Hugo alias 已生效（2026-07-31 補） |
+| 拼錯 tag 頁 → 正確 tag 頁（含 page/1） | 4 | 已 404；301 candidate |
+| `-2` 垃圾副本 → 原文（2026-06 Finder 事故） | 15 | 已 404；Bulk Redirect 精確清單 |
+| `/news-1/` → `/news/` | 1 | Hugo alias 已生效 |
+| 過期 pagination URL → 上層列表頁或 GONE | 16 | 低價值；404 可接受 |
+| 廢棄 taxonomy／模板殘留頁 | 8 | GONE（404/410 即可） |
 
 ---
 
-**維護規則**：任何改 slug、刪頁、併頁的 commit，必須同步更新本表。
-Phase 2 建立 `/research/` pillar、taxonomy 頁停產時，新增條目到本表。
+**維護規則**：任何改 slug、刪頁、併頁的 commit，必須同步更新 `redirects.tsv`
+（機器核對）與本檔（人讀摘要）。Phase 2 建立 `/research/` pillar、taxonomy
+停產時，先加台帳列再部署。

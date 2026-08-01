@@ -1,0 +1,57 @@
+# old_path	new_path_or_GONE	note
+# Machine-readable redirect ledger, checked by scripts/check_site.sh:
+# any URL that disappears between builds MUST have a row here.
+/blog/2026-03-25-why-156000-citations-can-be-worth-less-than-18700-in-biophar-2/	/blog/2026-03-25-why-156000-citations-can-be-worth-less-than-18700-in-biophar/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d-2/	/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-04-01-article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gp-2/	/blog/2026-04-01-article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gp/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-04-02-article-3-how-deep-is-the-moat-reading-tsmc-sk-hynix-and-mic-2/	/blog/2026-04-02-article-3-how-deep-is-the-moat-reading-tsmc-sk-hynix-and-mic/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-04-02-why-real-breakthroughs-are-not-one-persons-victory-2/	/blog/2026-04-02-why-real-breakthroughs-are-not-one-persons-victory/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-04-05-when-ai-starts-predicting-the-next-scientific-question-2/	/blog/2026-04-05-when-ai-starts-predicting-the-next-scientific-question/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-04-07-article-4-stress-testing-the-moat-four-threats-that-could-re-2/	/blog/2026-04-07-article-4-stress-testing-the-moat-four-threats-that-could-re/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-04-11-beyond-the-gpu-what-the-ai-infrastructure-buildout-means-for-2/	/blog/2026-04-11-beyond-the-gpu-what-the-ai-infrastructure-buildout-means-for/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-04-15-ai-was-never-sudden-a-30-year-view-on-the-great-repricing-of-2/	/blog/2026-04-15-ai-was-never-sudden-a-30-year-view-on-the-great-repricing-of/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-04-17-why-jobs-are-no-longer-enough-in-the-ai-economy-2/	/blog/2026-04-17-why-jobs-are-no-longer-enough-in-the-ai-economy/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-04-26-everyone-is-betting-on-ai-but-almost-no-one-asks-where-are-y-2/	/blog/2026-04-26-everyone-is-betting-on-ai-but-almost-no-one-asks-where-are-y/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-05-01-when-ai-scales-knowledge-humanity-becomes-the-bottleneck-2/	/blog/2026-05-01-when-ai-scales-knowledge-humanity-becomes-the-bottleneck/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-05-07-copper-is-running-out-of-room-but-light-has-a-manufacturing-2/	/blog/2026-05-07-copper-is-running-out-of-room-but-light-has-a-manufacturing/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-05-23-ai-infrastructure-is-not-one-trade-2/	/blog/2026-05-23-ai-infrastructure-is-not-one-trade/	junk -2 duplicate (2026-06 Finder incident)
+/blog/2026-06-06-ai-needs-a-place-to-land-2/	/blog/2026-06-06-ai-needs-a-place-to-land/	junk -2 duplicate (2026-06 Finder incident)
+/blog/ai-supply-chain-part2-power-map/	/blog/2026-04-01-article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gp/	deleted 2026-07-31 purge/rebuild
+/blog/ai-supply-chain-part3-sec-filings/	/blog/2026-04-02-article-3-how-deep-is-the-moat-reading-tsmc-sk-hynix-and-mic/	deleted 2026-07-31 purge/rebuild
+/blog/ai-supply-chain-part4-stress-test/	/blog/2026-04-07-article-4-stress-testing-the-moat-four-threats-that-could-re/	deleted 2026-07-31 purge/rebuild
+/blog/ai-supply-chain-part5-industrial-transformation/	/blog/2026-04-11-beyond-the-gpu-what-the-ai-infrastructure-buildout-means-for/	deleted 2026-07-31 purge/rebuild
+/blog/ai-was-never-sudden/	/blog/2026-04-15-ai-was-never-sudden-a-30-year-view-on-the-great-repricing-of/	deleted 2026-07-31 purge/rebuild
+/blog/page/4/	/blog/	stale pagination URL
+/blog/page/5/	/blog/	stale pagination URL
+/blog/thoughts/yyyy-mm-dd-title/	GONE	deleted 2026-07-31 purge/rebuild
+/blog/why-jobs-are-no-longer-enough/	/blog/2026-04-17-why-jobs-are-no-longer-enough-in-the-ai-economy/	deleted 2026-07-31 purge/rebuild
+/categories/ai-compute-supply-chain/	GONE	obsolete taxonomy page
+/categories/ai-compute-supply-chain/page/1/	GONE	stale pagination URL
+/categories/research/	GONE	obsolete taxonomy page
+/categories/research/page/1/	GONE	stale pagination URL
+/consulting/	/advisory/	page merge (Hugo alias live)
+/contact/	/advisory/	page merge (Hugo alias live)
+/news-1/	/news/	deleted 2026-07-31 purge/rebuild
+/page/4/	/	stale pagination URL
+/page/5/	/	stale pagination URL
+/posts/ai-supply-chain-part2-power-map/	/blog/2026-04-01-article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gp/	deleted 2026-07-31 purge/rebuild
+/posts/ai-supply-chain-part3-sec-filings/	/blog/2026-04-02-article-3-how-deep-is-the-moat-reading-tsmc-sk-hynix-and-mic/	deleted 2026-07-31 purge/rebuild
+/tags/ai-infrastruture/	/tags/ai-infrastructure/	deleted 2026-07-31 purge/rebuild
+/tags/ai-infrastruture/page/1/	/tags/ai-infrastructure/	stale pagination URL
+/tags/ajinomoto/	GONE	obsolete taxonomy page
+/tags/ajinomoto/page/1/	GONE	stale pagination URL
+/tags/geopolitics/	GONE	obsolete taxonomy page
+/tags/geopolitics/page/1/	GONE	stale pagination URL
+/tags/industrial-strategy/	/tags/industrial-strategy/	deleted 2026-07-31 purge/rebuild
+/tags/industrial-strategy/page/1/	/tags/industrial-strategy/	stale pagination URL
+/tags/sec-filings/	GONE	obsolete taxonomy page
+/tags/sec-filings/page/1/	GONE	stale pagination URL
+/tags/semiconductors/page/3/	/tags/semiconductors/	stale pagination URL
+/tags/society/	GONE	obsolete taxonomy page
+/tags/society/page/1/	GONE	stale pagination URL
+/tags/strategy/	GONE	obsolete taxonomy page
+/tags/strategy/page/1/	GONE	stale pagination URL
+/tags/tag1/	GONE	obsolete taxonomy page
+/tags/tag1/page/1/	GONE	stale pagination URL
+/tags/tag2/	GONE	obsolete taxonomy page
+/tags/tag2/page/1/	GONE	stale pagination URL
