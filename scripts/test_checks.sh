@@ -13,15 +13,20 @@ cp -R docs "$TMP/base"
 ARTICLE="blog/2026-06-06-ai-needs-a-place-to-land/index.html"   # ordinary article, not in ledger
 RESULT=0
 
-expect() { # expect <name> <pass|fail> <dir>
-  local name=$1 want=$2 dir=$3 got
+expect() { # expect <name> <pass|fail> <dir> [required-error-message]
+  local name=$1 want=$2 dir=$3 msg=${4:-} got
   if scripts/check_site.sh "$dir" "$TMP/before" >"$TMP/out-$name" 2>&1; then got=pass; else got=fail; fi
-  if [ "$got" = "$want" ]; then
-    echo "ok   $name (checker ${got}ed as expected)"
-  else
+  if [ "$got" != "$want" ]; then
     echo "FAIL $name — checker ${got}ed, expected $want; output:"
     sed 's/^/     /' "$TMP/out-$name" | tail -8
     RESULT=1
+  elif [ -n "$msg" ] && ! grep -qF "$msg" "$TMP/out-$name"; then
+    # failing for the WRONG reason must not count as a pass of the test
+    echo "FAIL $name — failed, but without the expected message: $msg"
+    sed 's/^/     /' "$TMP/out-$name" | tail -8
+    RESULT=1
+  else
+    echo "ok   $name (checker ${got}ed as expected${msg:+, with the expected message})"
   fi
 }
 
@@ -40,7 +45,7 @@ expect localhost-any-port-leak fail "$TMP/case"
 
 fresh
 rm -rf "$TMP/case/$(dirname "$ARTICLE")"
-expect unledgered-disappeared-url fail "$TMP/case"
+expect unledgered-disappeared-url fail "$TMP/case" "URL DISAPPEARED AND NOT IN redirects.tsv"
 
 fresh
 printf '<div class="advisory-cta">dup</div>\n' >> "$TMP/case/$ARTICLE"
@@ -54,6 +59,16 @@ fresh
 mkdir "$TMP/case/blog/some-article 5"
 cp "$TMP/case/$ARTICLE" "$TMP/case/blog/some-article 5/index.html"
 expect sync-duplicate-dir-in-output fail "$TMP/case"
+
+fresh
+mkdir "$TMP/case/blog/some-article 12"
+cp "$TMP/case/$ARTICLE" "$TMP/case/blog/some-article 12/index.html"
+expect sync-duplicate-multidigit-dir fail "$TMP/case"
+
+fresh
+mkdir "$TMP/case/blog/some-article (12)"
+cp "$TMP/case/$ARTICLE" "$TMP/case/blog/some-article (12)/index.html"
+expect sync-duplicate-parenthesized-dir fail "$TMP/case"
 
 [ "$RESULT" = 0 ] && echo "NEGATIVE TESTS: all faults detected" || echo "NEGATIVE TESTS FAILED"
 exit "$RESULT"

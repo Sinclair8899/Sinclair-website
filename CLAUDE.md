@@ -20,12 +20,14 @@ production baseURL, then `scripts/check_site.sh docs <prev-inventory>`:
 
 - root files (CNAME, `.nojekyll`, `robots.txt`, five favicons)
 - dev-URL leak — any `localhost`/`127.0.0.1`, **any port**
-- no backup/junk files in output (incl. bare `name N` sync-duplicate dirs —
-  the duplication process is ACTIVE on this machine; it renamed 21 tag dirs
-  to `name 2` and spawned `name 5` variants during the 2026-08-01 session
-  alone. Root cause is almost certainly iCloud "Desktop & Documents" sync
-  fighting over `~/Desktop/Sinclair-website` — move the repo out of
-  `~/Desktop` or exclude it from sync)
+- no backup/junk files in output (incl. bare `name N`/`name (N)`
+  sync-duplicate dirs, one or more digits — a sync-type external process is
+  ACTIVELY interfering on this machine: it renamed 21 tag dirs to `name 2`
+  and spawned `name 5` variants during the 2026-08-01 session alone. Leading
+  hypothesis: iCloud "Desktop & Documents" sync. The repo was moved from
+  `~/Desktop/Sinclair-website` to `~/Projects/Sinclair-website` on
+  2026-08-01 as risk isolation and as the causal test — if junk recurs at
+  the new path, the hypothesis is wrong)
 - `/advisory/` fixed anchors (english/chinese/retainer/projects/briefings/start)
 - `scripts/check_links.py`: internal links, assets, cross-page anchors, sitemap
   `<loc>`s; **relative or malformed URLs are a hard failure** (they are broken
@@ -36,15 +38,27 @@ production baseURL, then `scripts/check_site.sh docs <prev-inventory>`:
 - a URL that disappears vs the previous build **fails the build** unless it has
   a row in `redirects.tsv`
 
-All three CI workflows run this same script (they install Hugo 0.152.2 via
-peaceiris/actions-hugo and share `concurrency: group: site-content-push`).
+All three content CI workflows run this same script (they install Hugo
+0.152.2 via peaceiris/actions-hugo and share
+`concurrency: group: site-content-push`). The fourth workflow,
+`daily_crawl.yml`, had its schedule disabled 2026-08-01: its output
+(`data/research_news.md`) is not consumed by the site and is the file that
+breaks `site.Data`; manual dispatch remains, now inside the same
+concurrency group.
 An unattended build that hits a new warning fails and leaves the live site as
 it was — that is the safe outcome, not an inconvenience.
 
-The checker itself is negative-tested: `scripts/test_checks.sh` seeds five
-faults (malformed relative link, `localhost:57206` leak, unledgered
-disappeared URL, duplicate CTA, backup file) and requires each to fail the
-checks. Run it after changing any check logic.
+The checker itself is negative-tested: `scripts/test_checks.sh` runs one
+pristine case (must pass) and eight seeded faults (must each fail): malformed
+relative link, `localhost:57206` leak, unledgered disappeared URL (asserted
+on its specific error message, so it cannot pass for the wrong reason),
+duplicate CTA, backup file, and sync-duplicate dirs `name 5`, `name 12`,
+`name (12)`. Run it after changing any check logic.
+
+**Never invoke the build through a pipe** (`scripts/build_and_check.sh | tail`
+— the pipeline's exit status is tail's, and `pipefail` inside the script
+cannot protect the caller). Run it directly, or redirect to a file and read
+that.
 
 - **Never run bare `hugo server` here** — it rewrites `docs/` with
   `127.0.0.1` URLs. Preview with

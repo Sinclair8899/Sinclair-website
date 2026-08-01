@@ -5,16 +5,22 @@
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
+# Deterministic timestamps: without a pinned TZ, CI flips six generated files
+# between CST and +0800 renderings on every run.
+export TZ=Asia/Taipei
+
 # Toolchain gate: docs/ is committed build output; a different Hugo rewrites
 # hundreds of generated files and still "passes" — so the version is pinned.
+# Exact match on the version token (grep -F would also accept v0.152.20).
 REQUIRED_HUGO="v0.152.2"
-hugo version | grep -qF "$REQUIRED_HUGO" \
-  || { echo "FAIL: Hugo $REQUIRED_HUGO required, found: $(hugo version)"; exit 1; }
+HV=$(hugo version | awk '{print $2}' | cut -d+ -f1)
+[ "$HV" = "$REQUIRED_HUGO" ] \
+  || { echo "FAIL: Hugo $REQUIRED_HUGO required, found: $HV"; exit 1; }
 
-# Source-side junk gate (the June Finder-duplication incident reached .git/refs)
-JUNK=$(find content static layouts assets .github \( -name '*.bak' -o -name '*.backup' \
-       -o -name '*.before-remove' -o -name '*~' -o -name '* ([0-9])*' -o -name '* [0-9]' \
-       -o -name '* [0-9].md' -o -name '* [0-9].html' \) 2>/dev/null)
+# Source-side junk gate (the June sync-duplication incident reached .git/refs);
+# one-or-more digits — " 10" and " (12)" count too
+JUNK=$(find content static layouts assets .github 2>/dev/null \
+       | grep -E ' \(?[0-9]+\)?(\.(md|html|xml))?$|\.bak$|\.backup$|\.before-remove$|~$')
 [ -z "$JUNK" ] || { echo "FAIL: backup/duplicate junk in source:"; echo "$JUNK"; exit 1; }
 REFJUNK=$(find .git/refs -name '* *' 2>/dev/null)
 [ -z "$REFJUNK" ] || { echo "FAIL: junk git refs:"; echo "$REFJUNK"; exit 1; }

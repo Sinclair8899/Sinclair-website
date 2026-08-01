@@ -20,12 +20,12 @@ done
 LEAK=$(grep -rlE 'https?://(localhost|127\.0\.0\.1)([:/]|")|(localhost|127\.0\.0\.1):[0-9]+' "$DOCS" 2>/dev/null | head -5)
 [ -z "$LEAK" ] || { echo "DEV URL LEAK:"; echo "$LEAK"; FAIL=1; }
 
-# 3. Backup / Finder-duplicate junk must never reach the built site
-#    (incl. bare "name N" directories — the 2026-06/08 sync-duplication incidents
-#    produce " 2", " 5", " (1)" variants; legitimate Hugo slugs never contain spaces)
-JUNK=$(find "$DOCS" \( -name '*.bak' -o -name '*.backup' -o -name '*.before-remove' \
-       -o -name '*~' -o -name '* ([0-9])*' -o -name '* [0-9]' -o -name '* [0-9].md' \
-       -o -name '* [0-9].html' -o -name '* [0-9].xml' \) 2>/dev/null)
+# 3. Backup / sync-duplicate junk must never reach the built site.
+#    The 2026-06/08 incidents produced " 2", " 5", " (1)" — and can produce
+#    multi-digit variants (" 10", " (12)"), so match one-or-more digits via
+#    grep -E (portable; find globs cannot express +). Legitimate Hugo slugs
+#    never contain spaces.
+JUNK=$(find "$DOCS" 2>/dev/null | grep -E ' \(?[0-9]+\)?(\.(md|html|xml))?$|\.bak$|\.backup$|\.before-remove$|~$')
 [ -z "$JUNK" ] || { echo "JUNK FILES IN BUILD OUTPUT:"; echo "$JUNK"; FAIL=1; }
 
 # 4. Advisory fixed anchors (linked from CTAs and external notes)
@@ -60,10 +60,10 @@ if [ -n "$PREV" ] && [ -f "$PREV" ]; then
   (cd "$DOCS" && find . -name index.html | sed 's|^\.||;s|index\.html$||' | sort) > "$NOW"
   while IFS= read -r gone; do
     [ -n "$gone" ] || continue
-    case "$gone" in
-      *" "[0-9]/*|*" ("[0-9]")"*)  # sync-duplicate junk vanishing is cleanup, not loss
-        echo "NOTE: junk URL removed by clean rebuild (OK): $gone"; continue ;;
-    esac
+    if printf '%s\n' "$gone" | grep -qE ' \(?[0-9]+\)?/'; then
+      # sync-duplicate junk vanishing is cleanup, not loss
+      echo "NOTE: junk URL removed by clean rebuild (OK): $gone"; continue
+    fi
     awk -F'\t' -v p="$gone" '$1==p{found=1} END{exit !found}' "$REPO/redirects.tsv" \
       || { echo "URL DISAPPEARED AND NOT IN redirects.tsv: $gone"; FAIL=1; }
   done < <(comm -23 "$PREV" "$NOW")
