@@ -29,7 +29,9 @@ In factories, workers are asked to move materials, sort parts, assemble products
 
 When AI leaves the screen, will people first pay for its labour, for the safety of someone they love, or for the feeling that another presence is in the room?
 
-#### 1. What Does Physical AI Actually Add?Physical AI, embodied intelligence, and spatial intelligence are often treated as interchangeable. They overlap, but they are not identical.
+#### 1. What Does Physical AI Actually Add?
+
+Physical AI, embodied intelligence, and spatial intelligence are often treated as interchangeable. They overlap, but they are not identical.
 
 Spatial intelligence, the field Fei-Fei Li has recently emphasised, concerns an AI system’s understanding of the three-dimensional world: depth, geometry, motion, object relationships, and how things interact in space. Embodied intelligence goes one step further. Intelligence is no longer confined to reasoning inside a model; it learns through a body acting in an environment.
 
@@ -57,7 +59,9 @@ The practical path is therefore staged: learn first from human demonstrations an
 
 LLMs read the world humans have recorded. Physical AI must enter the world — and bear the consequences of every action it takes.
 
-#### 2. How Far Has It Progressed?Humanoid robots have moved beyond the stage of simply standing for a demonstration. Bipedal locomotion, balance, navigation inside factories, and repetitive material-handling tasks are approaching practical use in structured environments.
+#### 2. How Far Has It Progressed?
+
+Humanoid robots have moved beyond the stage of simply standing for a demonstration. Bipedal locomotion, balance, navigation inside factories, and repetitive material-handling tasks are approaching practical use in structured environments.
 
 Unitree says it delivered more than 5,500 humanoid robots in 2025 and produced more than 6,500. UBTECH says its Walker S2 reached small-scale mass production and delivery at the thousand-unit level.
 
@@ -71,7 +75,9 @@ The more mature capabilities today are locomotion, perception, and constrained t
 
 Models are beginning to learn how to perform a task. The industry still has to prove that it can repeat it every day, at an acceptable cost, without a human constantly rescuing them.
 
-#### 3. China Is Turning Factories Into Schools for RobotsChina’s most important advantage may not be lower component costs or faster manufacturing alone. It may be pursuing a different path from the search for a perfect general-purpose robot: enter structured production lines first, perform narrow tasks, and learn from deployment at scale.
+#### 3. China Is Turning Factories Into Schools for Robots
+
+China’s most important advantage may not be lower component costs or faster manufacturing alone. It may be pursuing a different path from the search for a perfect general-purpose robot: enter structured production lines first, perform narrow tasks, and learn from deployment at scale.
 
 A factory can rearrange racks, routes, lighting, and work heights around a robot. A task can be reduced to moving a specific container, sorting a fixed set of parts, or completing one repetitive assembly step. The machine does not have to understand every human environment on day one. It only needs to become more stable, safer, or less expensive in a defined setting.
 
@@ -79,7 +85,7 @@ UBTECH’s Walker S2 is designed to exchange its own batteries in about three mi
 
 “Working for more than ten hours” can mean remaining powered on, continuing to move, repeating a fixed routine, or recovering autonomously when something goes wrong. What a customer should measure is closer to:
 
-****Effective autonomous hours = uptime × task success rate × unsupervised share × quality yield****
+**Effective autonomous hours = uptime × task success rate × unsupervised share × quality yield**
 
 Then subtract battery exchange, calibration, maintenance, recovery, and task-switching time.
 
@@ -89,7 +95,9 @@ Only when those experiences flow back into models and control systems can shipme
 
 Factories are not merely a market. They may become the schools in which Physical AI learns to work.
 
-#### 4. Can Tesla Create a Second “Tesla Moment”?Tesla already has capabilities that matter: multi-camera perception, onboard inference, automated labelling, simulation, data pipelines, motors, batteries, power electronics, and large-scale manufacturing. It also owns factories that can serve as Optimus’s first customer and training ground.
+#### 4. Can Tesla Create a Second “Tesla Moment”?
+
+Tesla already has capabilities that matter: multi-camera perception, onboard inference, automated labelling, simulation, data pipelines, motors, batteries, power electronics, and large-scale manufacturing. It also owns factories that can serve as Optimus’s first customer and training ground.
 
 Autonomous-driving technology can clearly help a robot see and move. Object detection, depth and velocity estimation, occlusion reasoning, occupancy modelling, motion prediction, and path planning all have transferable value.
 
@@ -105,7 +113,9 @@ It is also necessary to separate the roadmap from reality. Tesla’s 2025 annual
 
 A Tesla moment will not be established by a dance or a carefully edited video. It will be established by deployment data.
 
-#### 5. The Real Bottleneck Is the Hand, Not Only the BrainMusk is right to emphasise the human hand. Door handles, cups, scissors, tools, clothing, and appliances were designed around it. A machine with a truly capable human-like hand could use the existing human environment instead of forcing the world to be rebuilt around robots.
+#### 5. The Real Bottleneck Is the Hand, Not Only the Brain
+
+Musk is right to emphasise the human hand. Door handles, cups, scissors, tools, clothing, and appliances were designed around it. A machine with a truly capable human-like hand could use the existing human environment instead of forcing the world to be rebuilt around robots.
 
 But human-like appearance is not human-like capability.
 
@@ -119,7 +129,9 @@ The case also shows why Physical AI will not be delivered by bigger models alone
 
 Twenty-two degrees of freedom address whether the hand can move like ours. Optical touch addresses whether it can feel like ours. Without the second, the first may produce a more agile form of blind grasping.
 
-#### 6. Medicine and Care: Extend the Human Before Replacing OneRobotics discussions often begin with factory labour. In an ageing society, however, the more urgent shortage may not be a pair of hands for assembly, but an observer who can remain present.
+#### 6. Medicine and Care: Extend the Human Before Replacing One
+
+Robotics discussions often begin with factory labour. In an ageing society, however, the more urgent shortage may not be a pair of hands for assembly, but an observer who can remain present.
 
 The risks older people face are often not one dramatic diagnosis. They are small, continuous events: a missed or repeated dose, getting out of bed at night, a gradual slowdown in walking, reduced activity, or a fall after which no one hears the call for help.
 
@@ -147,7 +159,9 @@ Good Physical AI does not take responsibility away from people. It extends human
 
 The first breakthrough in robotic eldercare may not be lifting someone after a fall. It may be ensuring that a person no longer remains on the floor for hours without anyone knowing.
 
-#### 7. From Periodic Checkups to a Health TrajectoryModern medicine remains the irreplaceable centre of eldercare. But medical examinations occur at specific moments, while the condition of a person in her nineties may change gradually between visits.
+#### 7. From Periodic Checkups to a Health Trajectory
+
+Modern medicine remains the irreplaceable centre of eldercare. But medical examinations occur at specific moments, while the condition of a person in her nineties may change gradually between visits.
 
 Physical AI could connect those isolated medical moments into a daily health trajectory: walking speed, step length, left–right balance, time required to stand, nighttime bed exits, activity range, sleep, and eating patterns. With clinician direction and informed consent, it may also integrate blood pressure, heart rate, oxygen saturation, body weight, or glucose data.
 
@@ -163,7 +177,9 @@ Science is actively exploring whether ageing mechanisms can one day be slowed or
 
 Perhaps future biotechnology will slow or reverse parts of biological ageing. Until then, Physical AI can help us notice functional decline earlier, reduce avoidable harm, and extend the period in which older people can live safely and with dignity.
 
-#### 8. Will People Buy a Worker — or a Companion?An industrial robot is valued through output, yield, availability, and return on investment. A household robot faces a harder environment: children, pets, clothing, glass, liquids, and temporary obstacles constantly change the task.
+#### 8. Will People Buy a Worker — or a Companion?
+
+An industrial robot is valued through output, yield, availability, and return on investment. A household robot faces a harder environment: children, pets, clothing, glass, liquids, and temporary obstacles constantly change the task.
 
 A companion humanoid may not need to solve all household work first. Its minimum viable value could be looking at a person, remembering her, responding to emotion, and creating a sense of presence through voice, expression, posture, and well-timed initiative.
 
@@ -181,7 +197,9 @@ Care also raises a subtler question: does a robot need to look more human to be 
 
 The real test is not which form is most impressive. It is how much embodiment is needed to improve adherence, reassurance, interaction, and successful escalation when help is required.
 
-#### 9. What Must Never Be Outsourced to a MachineWhen Physical AI enters homes and care settings, it will collect more than text. It may observe how a person moves through a room, when she sleeps, what medication she takes, whom she speaks to, when her mood changes, and how her body is touched.
+#### 9. What Must Never Be Outsourced to a Machine
+
+When Physical AI enters homes and care settings, it will collect more than text. It may observe how a person moves through a room, when she sleeps, what medication she takes, whom she speaks to, when her mood changes, and how her body is touched.
 
 These data may improve care. They may also create unprecedented capacity for surveillance and manipulation.
 
@@ -203,7 +221,9 @@ At minimum, several boundaries should remain non-negotiable:
 
 Technology can extend human presence. It must not become an excuse for people to withdraw from a relationship.
 
-#### Conclusion: We Need Systems That Respect Humans, Not Merely Machines That Resemble ThemChatGPT demonstrated that machines can generate human language. Physical AI must demonstrate that machines can understand human space, use human tools, and perform reliably without a person specifying every movement.
+#### Conclusion: We Need Systems That Respect Humans, Not Merely Machines That Resemble Them
+
+ChatGPT demonstrated that machines can generate human language. Physical AI must demonstrate that machines can understand human space, use human tools, and perform reliably without a person specifying every movement.
 
 The era will not begin with the first robot that dances, folds a shirt, or imitates conversation. The real threshold will be crossed when a system simultaneously demonstrates effective autonomous hours, reliability, viable unit economics, and a learning curve that improves with deployment.
 
@@ -217,69 +237,85 @@ When AI leaves the screen, what we purchase may not be only a new form of labour
 
 What is worth hoping for is not simply that machines finally become more human. It is that technology may help us care for one another longer — and with greater dignity — when human capability reaches its limits.
 
-#### Author NoteThis essay began with my family’s experience caring for my mother in her nineties. It is an editorial analysis of technical capability, deployment economics, medicine and care design, and social governance. It is not an endorsement of any company or product, and it does not predict a specific commercialisation timeline. Throughout the article, ****company statements, research prototypes, preorders or orders, capacity plans, actual delivery, long-term deployment, and independent validation**** are treated as different levels of evidence.
+#### Author Note
 
-#### About the AuthorThe author writes about Physical AI, robotics, technology strategy, eldercare, health technology, and the social implications of emerging technologies.
+This essay began with my family’s experience caring for my mother in her nineties. It is an editorial analysis of technical capability, deployment economics, medicine and care design, and social governance. It is not an endorsement of any company or product, and it does not predict a specific commercialisation timeline. Throughout the article, **company statements, research prototypes, preorders or orders, capacity plans, actual delivery, long-term deployment, and independent validation** are treated as different levels of evidence.
 
-#### DisclosureThis article was written independently and was not commissioned, sponsored, or reviewed by any company or organisation mentioned in the article. The author received no compensation from the companies discussed in connection with its preparation or publication and has no material financial, advisory, consulting, research-funding, or commercial relationship relevant to the subjects covered.
+#### About the Author
+
+The author writes about Physical AI, robotics, technology strategy, eldercare, health technology, and the social implications of emerging technologies.
+
+#### Disclosure
+
+This article was written independently and was not commissioned, sponsored, or reviewed by any company or organisation mentioned in the article. The author received no compensation from the companies discussed in connection with its preparation or publication and has no material financial, advisory, consulting, research-funding, or commercial relationship relevant to the subjects covered.
 
 References to companies, products, researchers, and institutions are included for analysis and do not constitute endorsement. All opinions and interpretations are the author’s own.
 
-#### Last Editorial ReviewLast editorial review: 11 July 2026
+#### Last Editorial Review
 
-#### References1. Stanford HAI, [What is Spatial Intelligence?]([https://hai.stanford.edu/ai-definitions/what-is-spatial-intelligence](https://hai.stanford.edu/ai-definitions/what-is-spatial-intelligence))
+Last editorial review: 11 July 2026
 
-2. World Labs, [About]([https://www.worldlabs.ai/about](https://www.worldlabs.ai/about))
+#### References
 
-3. NVIDIA, [What is Physical AI?]([https://www.nvidia.com/en-gb/glossary/generative-physical-ai/](https://www.nvidia.com/en-gb/glossary/generative-physical-ai/))
+1. Stanford HAI, [What is Spatial Intelligence?](https://hai.stanford.edu/ai-definitions/what-is-spatial-intelligence)
 
-4. Google DeepMind, [Gemini Robotics]([https://deepmind.google/en/models/gemini-robotics/gemini-robotics/](https://deepmind.google/en/models/gemini-robotics/gemini-robotics/))
+2. World Labs, [About](https://www.worldlabs.ai/about)
 
-5. Tesla, [2025 Annual Report]([https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf](https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf)) and [2026 company update]([https://ir.tesla.com/_flysystem/s3/sec/000162828026026551/tsla-20260422-gen.pdf](https://ir.tesla.com/_flysystem/s3/sec/000162828026026551/tsla-20260422-gen.pdf))
+3. NVIDIA, [What is Physical AI?](https://www.nvidia.com/en-gb/glossary/generative-physical-ai/)
 
-6. Unitree, [Clarification Regarding 2025 Sales Data]([https://shop.unitree.com/blogs/news/clarification-regarding-unitrees-2025-sales-data](https://shop.unitree.com/blogs/news/clarification-regarding-unitrees-2025-sales-data))
+4. Google DeepMind, [Gemini Robotics](https://deepmind.google/en/models/gemini-robotics/gemini-robotics/)
 
-7. UBTECH, [2025 Annual Report]([https://owebsite-cdn.ubtrobot.com/resources/file/2026/04/21/797179114676293.pdf](https://owebsite-cdn.ubtrobot.com/resources/file/2026/04/21/797179114676293.pdf)) and [Walker S2]([https://www.ubtrobot.com/cn/humanoid/products/walker-s2](https://www.ubtrobot.com/cn/humanoid/products/walker-s2))
+5. Tesla, [2025 Annual Report](https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf) and [2026 company update](https://ir.tesla.com/_flysystem/s3/sec/000162828026026551/tsla-20260422-gen.pdf)
 
-8. Sasso et al., [High-Resolution Real-Time Mechanochromic Tactile Sensors]([https://www.science.org/doi/10.1126/sciadv.aee5236](https://www.science.org/doi/10.1126/sciadv.aee5236)), **Science Advances** (2026)
+6. Unitree, [Clarification Regarding 2025 Sales Data](https://shop.unitree.com/blogs/news/clarification-regarding-unitrees-2025-sales-data)
 
-9. Rantanen et al., [In-home robotic medication management pilot study]([https://pubmed.ncbi.nlm.nih.gov/28433400/](https://pubmed.ncbi.nlm.nih.gov/28433400/))
+7. UBTECH, [2025 Annual Report](https://owebsite-cdn.ubtrobot.com/resources/file/2026/04/21/797179114676293.pdf) and [Walker S2](https://www.ubtrobot.com/cn/humanoid/products/walker-s2)
 
-10. Sawadogo et al., [TELEHPAD randomised controlled trial]([https://pubmed.ncbi.nlm.nih.gov/41424819/](https://pubmed.ncbi.nlm.nih.gov/41424819/))
+8. Sasso et al., [High-Resolution Real-Time Mechanochromic Tactile Sensors](https://www.science.org/doi/10.1126/sciadv.aee5236), **Science Advances** (2026)
 
-11. Gao et al., [ML/DL models for predicting future falls]([https://www.jmir.org/2026/1/e84844/](https://www.jmir.org/2026/1/e84844/)), systematic review and meta-analysis
+9. Rantanen et al., [In-home robotic medication management pilot study](https://pubmed.ncbi.nlm.nih.gov/28433400/)
 
-12. Wu et al., [Wearable gait features versus intrinsic fall-risk indicators]([https://pubmed.ncbi.nlm.nih.gov/42103900/](https://pubmed.ncbi.nlm.nih.gov/42103900/))
+10. Sawadogo et al., [TELEHPAD randomised controlled trial](https://pubmed.ncbi.nlm.nih.gov/41424819/)
 
-13. Sony Group, [Microsurgery Assistance Robot]([https://www.sony.com/en/SonyInfo/News/Press/202405/24-020E/](https://www.sony.com/en/SonyInfo/News/Press/202405/24-020E/))
+11. Gao et al., [ML/DL models for predicting future falls](https://www.jmir.org/2026/1/e84844/), systematic review and meta-analysis
 
-14. Kim et al., [SRT-H]([https://www.science.org/doi/10.1126/scirobotics.adt5254](https://www.science.org/doi/10.1126/scirobotics.adt5254)), **Science Robotics** (2025)
+12. Wu et al., [Wearable gait features versus intrinsic fall-risk indicators](https://pubmed.ncbi.nlm.nih.gov/42103900/)
 
-15. WHO, [Healthy ageing and functional ability]([https://www.who.int/news-room/questions-and-answers/item/healthy-ageing-and-functional-ability](https://www.who.int/news-room/questions-and-answers/item/healthy-ageing-and-functional-ability)) and [clarification on old age in ICD]([https://www.who.int/standards/classifications/frequently-asked-questions/old-age](https://www.who.int/standards/classifications/frequently-asked-questions/old-age))
+13. Sony Group, [Microsurgery Assistance Robot](https://www.sony.com/en/SonyInfo/News/Press/202405/24-020E/)
 
-16. Harvard Medical School, [Sinclair Lab]([https://sinclair.hms.harvard.edu/people/david-sinclair](https://sinclair.hms.harvard.edu/people/david-sinclair))
+14. Kim et al., [SRT-H](https://www.science.org/doi/10.1126/scirobotics.adt5254), **Science Robotics** (2025)
 
-17. Xinhua, [UBTECH U1 launch pricing and company-announced orders]([https://www.xinhuanet.com/tech/20260701/3c549b1ded2e47a4894e5b982b8ebc09/c.html](https://www.xinhuanet.com/tech/20260701/3c549b1ded2e47a4894e5b982b8ebc09/c.html))
+15. WHO, [Healthy ageing and functional ability](https://www.who.int/news-room/questions-and-answers/item/healthy-ageing-and-functional-ability) and [clarification on old age in ICD](https://www.who.int/standards/classifications/frequently-asked-questions/old-age)
 
-#### Further Reading- ****Spatial intelligence and three-dimensional world understanding:**** Stanford HAI, [What is Spatial Intelligence?]([https://hai.stanford.edu/ai-definitions/what-is-spatial-intelligence](https://hai.stanford.edu/ai-definitions/what-is-spatial-intelligence))
+16. Harvard Medical School, [Sinclair Lab](https://sinclair.hms.harvard.edu/people/david-sinclair)
 
-- ****An industry framing for Physical AI:**** NVIDIA, [What is Physical AI?]([https://www.nvidia.com/en-gb/glossary/generative-physical-ai/](https://www.nvidia.com/en-gb/glossary/generative-physical-ai/))
+17. Xinhua, [UBTECH U1 launch pricing and company-announced orders](https://www.xinhuanet.com/tech/20260701/3c549b1ded2e47a4894e5b982b8ebc09/c.html)
 
-- ****Vision-language-action robotics:**** Google DeepMind, [Gemini Robotics]([https://deepmind.google/en/models/gemini-robotics/gemini-robotics/](https://deepmind.google/en/models/gemini-robotics/gemini-robotics/))
+#### Further Reading
 
-- ****Healthy ageing and functional ability:**** WHO, [Healthy ageing and functional ability]([https://www.who.int/news-room/questions-and-answers/item/healthy-ageing-and-functional-ability](https://www.who.int/news-room/questions-and-answers/item/healthy-ageing-and-functional-ability))
+- **Spatial intelligence and three-dimensional world understanding:** Stanford HAI, [What is Spatial Intelligence?](https://hai.stanford.edu/ai-definitions/what-is-spatial-intelligence)
 
-- ****Evidence on fall detection and secondary prevention:**** Sawadogo et al., [TELEHPAD randomized controlled trial]([https://pubmed.ncbi.nlm.nih.gov/41424819/](https://pubmed.ncbi.nlm.nih.gov/41424819/))
+- **An industry framing for Physical AI:** NVIDIA, [What is Physical AI?](https://www.nvidia.com/en-gb/glossary/generative-physical-ai/)
 
-- ****Limits of fall-prediction models:**** Gao et al., [Systematic review and meta-analysis]([https://www.jmir.org/2026/1/e84844/](https://www.jmir.org/2026/1/e84844/))
+- **Vision-language-action robotics:** Google DeepMind, [Gemini Robotics](https://deepmind.google/en/models/gemini-robotics/gemini-robotics/)
 
-- ****Bounded autonomy in surgical robotics:**** Kim et al., [SRT-H]([https://www.science.org/doi/10.1126/scirobotics.adt5254](https://www.science.org/doi/10.1126/scirobotics.adt5254)), **Science Robotics** (2025)
+- **Healthy ageing and functional ability:** WHO, [Healthy ageing and functional ability](https://www.who.int/news-room/questions-and-answers/item/healthy-ageing-and-functional-ability)
 
-#### DisclaimerThis article is for general informational and educational purposes only. It is not medical, clinical, investment, legal, engineering-safety, or emergency-response advice. Company figures may be self-reported, based on preorders or announced orders, or presented as forward-looking capacity plans; product availability, performance, regulatory status, and research evidence may change. Decisions involving eldercare, fall detection, medication management, surgery, physical contact, or emergency escalation should be evaluated by qualified professionals and supported by appropriate human oversight, fail-safe procedures, and clear accountability. In an emergency, contact the local emergency services for your location.
+- **Evidence on fall detection and secondary prevention:** Sawadogo et al., [TELEHPAD randomized controlled trial](https://pubmed.ncbi.nlm.nih.gov/41424819/)
 
-#### Hashtags****Core:**** #PhysicalAI #Robotics #EmbodiedAI #Eldercare #HumanInTheLoop
+- **Limits of fall-prediction models:** Gao et al., [Systematic review and meta-analysis](https://www.jmir.org/2026/1/e84844/)
 
-****Extended:**** #SpatialIntelligence #HumanoidRobots #DexterousManipulation #HealthcareAI #CareTech #AIForGood #TechnologyStrategy #FutureOfWork #Tesla #ChinaTech
+- **Bounded autonomy in surgical robotics:** Kim et al., [SRT-H](https://www.science.org/doi/10.1126/scirobotics.adt5254), **Science Robotics** (2025)
+
+#### Disclaimer
+
+This article is for general informational and educational purposes only. It is not medical, clinical, investment, legal, engineering-safety, or emergency-response advice. Company figures may be self-reported, based on preorders or announced orders, or presented as forward-looking capacity plans; product availability, performance, regulatory status, and research evidence may change. Decisions involving eldercare, fall detection, medication management, surgery, physical contact, or emergency escalation should be evaluated by qualified professionals and supported by appropriate human oversight, fail-safe procedures, and clear accountability. In an emergency, contact the local emergency services for your location.
+
+#### Hashtags
+
+**Core:** #PhysicalAI #Robotics #EmbodiedAI #Eldercare #HumanInTheLoop
+
+**Extended:** #SpatialIntelligence #HumanoidRobots #DexterousManipulation #HealthcareAI #CareTech #AIForGood #TechnologyStrategy #FutureOfWork #Tesla #ChinaTech
 
 ---
 

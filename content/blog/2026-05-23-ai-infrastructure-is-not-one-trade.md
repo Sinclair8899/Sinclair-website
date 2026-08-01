@@ -653,27 +653,27 @@ For readers who want to go deeper, I would start with these topic areas:
 
 These references are not meant to be a complete bibliography. They are public background sources and technical starting points for readers who want to explore the layers discussed above.
 
-1. [TSMC 3DFabric — advanced packaging technologies including SoIC, CoWoS, and InFO]([https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/3DFabric.htm](https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/3DFabric.htm))
+1. [TSMC 3DFabric — advanced packaging technologies including SoIC, CoWoS, and InFO](https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/3DFabric.htm)
 
-2. [TSMC Advanced Packaging Services]([https://www.tsmc.com/english/dedicatedFoundry/services/advanced-packaging](https://www.tsmc.com/english/dedicatedFoundry/services/advanced-packaging))
+2. [TSMC Advanced Packaging Services](https://www.tsmc.com/english/dedicatedFoundry/services/advanced-packaging)
 
-3. [Micron HBM4 technical overview]([https://tw.micron.com/products/memory/hbm/hbm4](https://tw.micron.com/products/memory/hbm/hbm4))
+3. [Micron HBM4 technical overview](https://tw.micron.com/products/memory/hbm/hbm4)
 
-4. [Applied Materials — Hybrid Bonding]([https://www.appliedmaterials.com/us/en/semiconductor/markets-and-inflections/heterogeneous-integration/hybrid-bonding.html](https://www.appliedmaterials.com/us/en/semiconductor/markets-and-inflections/heterogeneous-integration/hybrid-bonding.html))
+4. [Applied Materials — Hybrid Bonding](https://www.appliedmaterials.com/us/en/semiconductor/markets-and-inflections/heterogeneous-integration/hybrid-bonding.html)
 
-5. [Applied Materials — Heterogeneous Design and Advanced Packaging]([https://www.appliedmaterials.com/us/en/blog/blog-posts/heterogeneous-design-and-advanced-packaging-enable-advances-in-ppact-even-as-classic-moores-law-scaling-slows.html](https://www.appliedmaterials.com/us/en/blog/blog-posts/heterogeneous-design-and-advanced-packaging-enable-advances-in-ppact-even-as-classic-moores-law-scaling-slows.html))
+5. [Applied Materials — Heterogeneous Design and Advanced Packaging](https://www.appliedmaterials.com/us/en/blog/blog-posts/heterogeneous-design-and-advanced-packaging-enable-advances-in-ppact-even-as-classic-moores-law-scaling-slows.html)
 
-6. [OIF — Implementation Agreements]([https://www.oiforum.com/technical-work/implementation-agreements-ias/](https://www.oiforum.com/technical-work/implementation-agreements-ias/))
+6. [OIF — Implementation Agreements](https://www.oiforum.com/technical-work/implementation-agreements-ias/)
 
-7. [OIF — Co-Packaging Framework Document]([https://www.oiforum.com/wp-content/uploads/OIF-Co-Packaging-FD-01.0.pdf](https://www.oiforum.com/wp-content/uploads/OIF-Co-Packaging-FD-01.0.pdf))
+7. [OIF — Co-Packaging Framework Document](https://www.oiforum.com/wp-content/uploads/OIF-Co-Packaging-FD-01.0.pdf)
 
-8. [Open Compute Project — Cooling Environments]([https://www.opencompute.org/community/cooling-environments](https://www.opencompute.org/community/cooling-environments))
+8. [Open Compute Project — Cooling Environments](https://www.opencompute.org/community/cooling-environments)
 
-9. [Open Compute Project — OAI System Liquid Cooling Guidelines]([https://www.opencompute.org/documents/oai-system-liquid-cooling-guidelines-in-ocp-template-mar-3-2023-update-pdf](https://www.opencompute.org/documents/oai-system-liquid-cooling-guidelines-in-ocp-template-mar-3-2023-update-pdf))
+9. [Open Compute Project — OAI System Liquid Cooling Guidelines](https://www.opencompute.org/documents/oai-system-liquid-cooling-guidelines-in-ocp-template-mar-3-2023-update-pdf)
 
-10. [Lawrence Berkeley National Laboratory — 2024 United States Data Centre Energy Usage Report]([https://eta.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report](https://eta.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report))
+10. [Lawrence Berkeley National Laboratory — 2024 United States Data Centre Energy Usage Report](https://eta.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report)
 
-11. [Uptime Institute — Global Data Centre Survey Results 2025]([https://uptimeinstitute.com/resources/research-and-reports/uptime-institute-global-data-center-survey-results-2025](https://uptimeinstitute.com/resources/research-and-reports/uptime-institute-global-data-center-survey-results-2025))
+11. [Uptime Institute — Global Data Centre Survey Results 2025](https://uptimeinstitute.com/resources/research-and-reports/uptime-institute-global-data-center-survey-results-2025)
 
 ## Author note
 

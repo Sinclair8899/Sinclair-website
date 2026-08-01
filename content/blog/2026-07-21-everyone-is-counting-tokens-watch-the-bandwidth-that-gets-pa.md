@@ -106,7 +106,7 @@ This essay is analytical and educational, not a recommendation to buy or sell an
 
 *For the full research version, including the valuation bridge, model-vintage analysis, decision tree, and monitoring framework, see the Substack edition on *[https://open.substack.com/pub/sinclairhuang/p/everyone-is-counting-tokens-watch?r=2focqg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true](https://open.substack.com/pub/sinclairhuang/p/everyone-is-counting-tokens-watch?r=2focqg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true)
 
-**Related research: [The Architecture of Leverage](*https://ssrn.com/abstract=6504361*) develops the Irreplaceability Index; [The Mid-2026 Semiconductor Correction](*https://ssrn.com/abstract=7013899*) applies IRI, ECDR, and gross margin to Micron; and [Infrastructure-Led Leading Indicators](*https://ssrn.com/abstract=6285318*) develops the Equipment-CapEx Divergence Ratio.**
+**Related research: [The Architecture of Leverage](https://ssrn.com/abstract=6504361) develops the Irreplaceability Index; [The Mid-2026 Semiconductor Correction](https://ssrn.com/abstract=7013899) applies IRI, ECDR, and gross margin to Micron; and [Infrastructure-Led Leading Indicators](https://ssrn.com/abstract=6285318) develops the Equipment-CapEx Divergence Ratio.**
 
 ### Sources
 
