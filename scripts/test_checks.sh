@@ -87,6 +87,37 @@ printf '<script type="application/ld+json">{"datePublished":"0001-01-01T00:00:00
   >> "$TMP/case/research/ai-infrastructure/index.html"
 expect zero-date-in-research fail "$TMP/case" "YEAR-0001 DATE IN RESEARCH OUTPUT"
 
+fresh
+python3 - "$TMP/case/tags/ai/index.html" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+p.write_text(p.read_text().replace('content="noindex,follow"', 'content="index, follow"'))
+PY
+expect taxonomy-missing-noindex fail "$TMP/case" "TAXONOMY PAGE MISSING NOINDEX"
+
+fresh
+python3 - "$TMP/case/sitemap.xml" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+p.write_text(p.read_text().replace('</urlset>', '  <url><loc>https://sinclairhuang.org/tags/ai/</loc></url>\n</urlset>'))
+PY
+expect taxonomy-url-in-sitemap fail "$TMP/case" "TAXONOMY URL IN SITEMAP"
+
+fresh
+printf '<meta name="robots" content="noindex,follow">\n' >> "$TMP/case/research/ai-infrastructure/index.html"
+expect noindex-on-research-page fail "$TMP/case" "NOINDEX LEAKED OUTSIDE TAXONOMY"
+
+fresh
+python3 - "$TMP/case/sitemap.xml" <<'PY'
+import sys, pathlib, re
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+t2 = re.sub(r'<url>\s*<loc>https://sinclairhuang\.org/research/ai-infrastructure/</loc>.*?</url>', '', t, count=1, flags=re.S)
+assert t2 != t, 'research loc not found in sitemap fixture'
+p.write_text(t2)
+PY
+expect research-url-dropped-from-sitemap fail "$TMP/case" "RESEARCH URL MISSING FROM SITEMAP"
+
 # Hugo version parsing fixtures — official releases carry a commit hash,
 # brew carries extra metadata; only the BASE semver may decide.
 vexpect() { # vexpect <name> <pass|fail> <version-token>
