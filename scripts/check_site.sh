@@ -43,26 +43,13 @@ if [ -d "$DOCS/research" ]; then
 fi
 
 # 4c. Taxonomy policy (3B): /tags/ and /categories/ pages keep their URLs
-#     but must be noindex,follow and out of the sitemap; nothing outside
-#     the taxonomy dirs may carry noindex, and the research pages must
-#     stay in the sitemap. Meta-refresh alias stubs (page/1) are excluded,
-#     as in the CTA gate. NOTE: pre-3B trees fail this gate by design —
-#     the policy is part of acceptance from 3B on.
-while IFS= read -r f; do
-  grep -q 'http-equiv="refresh"' "$f" && continue   # alias/pagination stub
-  grep -q 'name="robots" content="noindex,follow"' "$f" \
-    || { echo "TAXONOMY PAGE MISSING NOINDEX: $f"; FAIL=1; }
-done < <(find "$DOCS/tags" "$DOCS/categories" -name index.html 2>/dev/null)
-TAXLOC=$(grep -o '<loc>[^<]*</loc>' "$DOCS/sitemap.xml" 2>/dev/null | grep -E '/tags/|/categories/' | head -5)
-[ -z "$TAXLOC" ] || { echo "TAXONOMY URL IN SITEMAP:"; echo "$TAXLOC"; FAIL=1; }
-NOIDX_LEAK=$(grep -rl 'name="robots" content="noindex' "$DOCS" 2>/dev/null | grep -vE '/(tags|categories)/' | head -5)
-[ -z "$NOIDX_LEAK" ] || { echo "NOINDEX LEAKED OUTSIDE TAXONOMY:"; echo "$NOIDX_LEAK"; FAIL=1; }
-if [ -d "$DOCS/research" ]; then
-  for u in /research/ /research/ai-infrastructure/ /research/semiconductors/; do
-    grep -q "<loc>https://sinclairhuang.org$u</loc>" "$DOCS/sitemap.xml" 2>/dev/null \
-      || { echo "RESEARCH URL MISSING FROM SITEMAP: $u"; FAIL=1; }
-  done
-fi
+#     but must be exactly noindex,follow and out of the sitemap; nothing
+#     outside the taxonomy dirs may carry noindex, and the research pages
+#     must stay in the sitemap. Semantic HTML/XML parsing (robots variants,
+#     encoded sitemap paths, genuine zero-second page/1 stubs only) lives
+#     in scripts/check_taxonomy_policy.py. NOTE: pre-3B trees fail this
+#     gate by design — the policy is part of acceptance from 3B on.
+python3 "$REPO/scripts/check_taxonomy_policy.py" "$DOCS" || FAIL=1
 
 # 5. Internal links, assets, anchors, sitemap (rejects relative/malformed URLs)
 python3 "$REPO/scripts/check_links.py" "$DOCS" || FAIL=1
