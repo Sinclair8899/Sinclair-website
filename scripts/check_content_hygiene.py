@@ -25,7 +25,7 @@ HEADING_MAX = 110  # a heading longer than this has almost certainly swallowed b
 # guarantee the fusion evidence survives for the signatures below).
 CAMEL_OK = re.compile(
     r"(?<![A-Za-z])(?:CoWoS|InFO|TurboQuant|MediaTek|TrendForce|SanDisk|AlphaFold|"
-    r"AlphaEvolve|VibeGen|InnoVEX|McKinsey|GitHub|YouTube|LinkedIn|OpenAI|DeepMind|"
+    r"AlphaEvolve|VibeGen|InnoVEX|McKinsey|GitHub|YouTube|LinkedIn|OpenAI|DeepMind|InPost|"
     r"HashTags?|IoT|SoIC|TSMC|NVIDIA|BioNTech|EDBA|COMPUTEX|macOS|iOS|iPadOS|SpaceX)"
     r"(?![A-Za-z])")
 
@@ -130,6 +130,7 @@ def selftest():
         "TurboQuantThe": "<h4>TurboQuantThe next phase of compression</h4>",
         "SpaceXThe": "<h4>SpaceXThe next phase of launch</h4>",
         "macOSThe": "<h4>macOSThe next phase of the desktop</h4>",
+        "InPostThe": "<h4>InPostThe next phase of lockers</h4>",
         "heading-star": "<h4>*Broken emphasis in a heading</h4>",
         "heading-quote": "<h4>&gt; Broken quote in a heading</h4>",
         "body-star": "<p>*For the full research version, see the Substack edition on *</p>",
@@ -142,6 +143,7 @@ def selftest():
         "AI晶片": "<h1>2025 AI晶片產業趨勢</h1>",
         "SpaceX-standalone": "<h4>SpaceX and the launch market</h4>",
         "macOS-standalone": "<h4>macOS and iOS deployment targets</h4>",
+        "InPost-standalone": "<h4>InPost and the next market</h4>",
         "plain-title": "<h3>AI Infrastructure Is Not One Trade</h3>",
         "hashtags": "<p>#AIInfrastructure #HBM #CoWoS</p>",
         "normal-paragraph": "<p>Normal paragraph about HBM allocation.</p>",
