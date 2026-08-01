@@ -2,7 +2,7 @@
 # Columns 9-11 (primary_cluster / related_clusters / cta) are the REVIEWER-APPROVED BASELINE (2026-08-01): 12 rows re-clustered, 2 CTAs adjusted from the original proposal.
 # cta: advisory = pillar CTA -> /advisory/#projects; subscribe = newsletter entry only; none = draft or no-CTA layout.
 # Baseline approved 2026-08-01 (original proposal at 25cb4fe); regenerate/update on content changes.
-title	source_path	url	lang	type	draft	canonical	current_cta	primary_cluster	related_clusters	proposed_cta
+title	source_path	url	lang	type	draft	canonical	current_cta	primary_cluster	related_clusters	cta
 Why 156,000 Citations Can Be Worth Less Than 18,700 in Biopharma	content/blog/2026-03-25-why-156000-citations-can-be-worth-less-than-18700-in-biophar.md	/blog/2026-03-25-why-156000-citations-can-be-worth-less-than-18700-in-biophar/	en	blog article	false	medium	advisory (template)	capital-and-society	bio-ai	subscribe
 From Structure to Behaviour: Why Protein AI Is Entering the Dynamics Era	content/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d.md	/blog/2026-03-29-from-structure-to-behaviour-why-protein-ai-is-entering-the-d/	en	blog article	false	medium	advisory (template)	bio-ai		subscribe
 Article 2 | The Real AI Supply Chain: A Power Map Beyond the GPU	content/blog/2026-04-01-article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gp.md	/blog/2026-04-01-article-2-the-real-ai-supply-chain-a-power-map-beyond-the-gp/	en	blog article	false	medium	advisory (template)	semiconductors	ai-infrastructure	advisory
