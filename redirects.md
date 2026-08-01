@@ -20,8 +20,11 @@ Search Console 只作後續監控，不取代台帳。
 
 ## 若未來啟用 Cloudflare proxy：執行清單
 
-1. **頁面匯流與舊 slug**（redirects.tsv 中 new_path 非 GONE 的靜態列）：
-   用 **Bulk Redirects** 建立精確的一對一 301 清單，直接照 TSV 貼。
+1. **頁面匯流與舊 slug**：TSV 是內部台帳、**不能直接貼進 Cloudflare**。
+   上傳用 [`redirects-cloudflare.csv`](redirects-cloudflare.csv)（由
+   `scripts/gen_cloudflare_csv.py` 從 TSV 產生：排除 GONE 與 self-map、
+   補上完整網域、`source_url,target_url,status_code` 格式、301）。
+   **TSV 每次修改後重跑產生器。**
 2. **15 個 `-2` 垃圾副本**：不要用涵蓋未來所有 `-2` slug 的寬鬆 regex——
    會誤傷未來任何正好以 `-2` 結尾的正當 slug。同樣放進 Bulk Redirects
    精確清單（15 列都已在 TSV）。

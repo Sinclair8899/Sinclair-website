@@ -42,8 +42,8 @@
 /tags/ajinomoto/page/1/	GONE	stale pagination URL
 /tags/geopolitics/	GONE	obsolete taxonomy page
 /tags/geopolitics/page/1/	GONE	stale pagination URL
-/tags/industrial-strategy/	/tags/industrial-strategy/	deleted 2026-07-31 purge/rebuild
-/tags/industrial-strategy/page/1/	/tags/industrial-strategy/	stale pagination URL
+/tags/industialstrategy/	/tags/industrial-strategy/	misspelled tag page, deleted 2026-07-31
+/tags/industialstrategy/page/1/	/tags/industrial-strategy/	stale pagination URL (misspelled tag)
 /tags/sec-filings/	GONE	obsolete taxonomy page
 /tags/sec-filings/page/1/	GONE	stale pagination URL
 /tags/semiconductors/page/3/	/tags/semiconductors/	stale pagination URL
