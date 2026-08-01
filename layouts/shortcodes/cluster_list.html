@@ -1,0 +1,9 @@
+{{- /* Lists all published pages whose primary_cluster page param matches the
+       given cluster key (page-param scheme per content-inventory.tsv — NOT a
+       Hugo taxonomy). Newest first. Drafts are excluded by Hugo itself. */ -}}
+{{- $cluster := .Get "cluster" -}}
+<ul class="cluster-list">
+{{- range (where site.RegularPages "Params.primary_cluster" $cluster).ByDate.Reverse }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+{{- end }}
+</ul>

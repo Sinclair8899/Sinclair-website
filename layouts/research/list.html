@@ -1,0 +1,28 @@
+{{- define "main" }}
+
+{{- /* The /research/ hub is copy-driven: pillar links live in _index.md, so
+       this template renders the section's own content only. PaperMod's
+       default list.html would auto-card the pillar leaf pages, which carry
+       no dates (zero-date footers) and are already linked in the body. */ -}}
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title entry-hint-parent">{{ .Title }}</h1>
+    {{- /* hideDescription: description stays in <head> for SEO but is not rendered into the page body */ -}}
+    {{- if and .Description (not (.Param "hideDescription")) }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}
