@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Research Brief: The Illusion of Winning Streaks | Sinclair Huang, HEC Liège, Executive DBA</title>
+<meta name="keywords" content="capital-markets, investing">
+<meta name="description" content="A bilingual research brief of SSRN 7106058: why long no-loss streaks in retail Fixed Coupon Notes reflect market regime and tail deferral, not skill.">
+<meta name="author" content="">
+<link rel="canonical" href="https://sinclairhuang.org/insights/research-brief-illusion-of-winning-streaks/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sinclairhuang.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sinclairhuang.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sinclairhuang.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sinclairhuang.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sinclairhuang.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://sinclairhuang.org/insights/research-brief-illusion-of-winning-streaks/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google" content="notranslate">
+
+
+
+<meta property="og:url" content="https://sinclairhuang.org/insights/research-brief-illusion-of-winning-streaks/">
+  <meta property="og:site_name" content="Sinclair Huang, HEC Liège, Executive DBA">
+  <meta property="og:title" content="Research Brief: The Illusion of Winning Streaks">
+  <meta property="og:description" content="A bilingual research brief of SSRN 7106058: why long no-loss streaks in retail Fixed Coupon Notes reflect market regime and tail deferral, not skill.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="insights">
+    <meta property="article:published_time" content="2026-08-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-08-02T00:00:00+00:00">
+    <meta property="article:tag" content="Capital-Markets">
+    <meta property="article:tag" content="Investing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Research Brief: The Illusion of Winning Streaks">
+<meta name="twitter:description" content="A bilingual research brief of SSRN 7106058: why long no-loss streaks in retail Fixed Coupon Notes reflect market regime and tail deferral, not skill.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Insights",
+      "item": "https://sinclairhuang.org/insights/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Research Brief: The Illusion of Winning Streaks",
+      "item": "https://sinclairhuang.org/insights/research-brief-illusion-of-winning-streaks/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Research Brief: The Illusion of Winning Streaks",
+  "name": "Research Brief: The Illusion of Winning Streaks",
+  "description": "A bilingual research brief of SSRN 7106058: why long no-loss streaks in retail Fixed Coupon Notes reflect market regime and tail deferral, not skill.",
+  "keywords": [
+    "capital-markets", "investing"
+  ],
+  "articleBody": "A bilingual research brief for The Illusion of Winning Streaks: Regime Dependence, Tail Deferral, and Survivorship Bias in Retail Fixed Coupon Notes — SSRN Working Paper No. 7106058, Huang, Po-Sung (Sinclair), 2026.\nWhat the paper studies. A retail Fixed Coupon Note (FCN) is, in economic substance, a short position in a worst-of down-and-in put sold by the investor. Using Monte-Carlo simulation and a 2000–2026 historical backtest, the paper asks whether the long, uninterrupted profit streaks investors observe reflect any risk-adjusted superiority of the instrument — or the market regime they happened to sit in.\nThree findings. First, streak illusion: in a strong bull regime the probability of two years with no loss is 78%, and the expected streak exceeds 32 quarterly periods. Second, tail-dominated expectation: a four-source decomposition shows positive returns come almost entirely from equity and variance risk premia while the issuer margin is a fixed negative drag, so net expected return is positive only in a strong bull. Third, fat left tail under regime switching: even conditioning on a bull start, the 5th-percentile five-year return is −71%.\nThe validation. On nine real semiconductor stocks (2000–2026, ~108,780 simulated contracts), realized assignment clusters in the crash years 2000–02, 2008, and 2022 (up to 54%); the two-year no-loss rate is still 66%; and a calendar-year block-bootstrap gives a 95% confidence interval for the five-year median return of [−1.8%, 41.0%] — straddling zero. A survivorship-bias stress test collapses the share of positive five-year outcomes from 64% to 27%.\nThe policy angle. Rather than wealth-based access gates, the paper proposes regime stress-disclosure and tail-tolerance suitability testing.\n中文｜核心觀點 散戶端的固定配息票據（FCN），在經濟實質上是投資人賣出的 worst-of 下敲入賣權的空頭部位。本文以蒙地卡羅模擬與 2000–2026 年歷史回測提出三個發現：其一，「連勝幻覺」——在強勢多頭下，連續兩年不虧損的機率高達 78%，預期連勝超過 32 個季度；其二，「尾部主導的期望值」——正報酬幾乎全部來自股權與波動風險溢酬，發行商利差是固定的負向拖累，只有在強多頭中淨期望報酬才為正；其三，「制度切換下的肥左尾」——即使從多頭起步，五年期報酬的第 5 百分位仍為 −71%。\n在九檔半導體實股（約 108,780 份合約）的驗證中，履約集中在 2000–02、2008 與 2022 的崩盤年份（最高 54%）；生存者偏誤壓力測試把五年期正報酬的比例從 64% 壓到 27%。政策面，本文主張以「制度壓力揭露」與「尾部承受度適足性測試」取代以財力門檻限制參與。\n在 SSRN 閱讀全文 →\n",
+  "wordCount" : "290",
+  "inLanguage": "en",
+  "datePublished": "2026-08-02T00:00:00Z",
+  "dateModified": "2026-08-02T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sinclairhuang.org/insights/research-brief-illusion-of-winning-streaks/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sinclair Huang, HEC Liège, Executive DBA",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sinclairhuang.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sinclairhuang.org/" accesskey="h" title="Sinclair Huang, HEC Liège, Executive DBA (Alt + H)">Sinclair Huang, HEC Liège, Executive DBA</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sinclairhuang.org/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/research" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/writing" title="Writing">
+                    <span>Writing</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/news" title="News">
+                    <span>News</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/market-brief" title="Market Brief">
+                    <span>Market Brief</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sinclairhuang.org/advisory" title="Advisory">
+                    <span>Advisory</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Research Brief: The Illusion of Winning Streaks
+    </h1>
+    <div class="post-description">
+      A bilingual research brief of SSRN 7106058: why long no-loss streaks in retail Fixed Coupon Notes reflect market regime and tail deferral, not skill.
+    </div>
+    <div class="post-meta"><span title='2026-08-02 00:00:00 +0000 UTC'>August 2, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><em>A bilingual research brief for <a href="https://ssrn.com/abstract=7106058">The Illusion of Winning Streaks: Regime Dependence, Tail Deferral, and Survivorship Bias in Retail Fixed Coupon Notes</a> — SSRN Working Paper No. 7106058, Huang, Po-Sung (Sinclair), 2026.</em></p>
+<p><strong>What the paper studies.</strong> A retail Fixed Coupon Note (FCN) is, in economic substance, a short position in a worst-of down-and-in put sold by the investor. Using Monte-Carlo simulation and a 2000–2026 historical backtest, the paper asks whether the long, uninterrupted profit streaks investors observe reflect any risk-adjusted superiority of the instrument — or the market regime they happened to sit in.</p>
+<p><strong>Three findings.</strong> First, <em>streak illusion</em>: in a strong bull regime the probability of two years with no loss is 78%, and the expected streak exceeds 32 quarterly periods. Second, <em>tail-dominated expectation</em>: a four-source decomposition shows positive returns come almost entirely from equity and variance risk premia while the issuer margin is a fixed negative drag, so net expected return is positive only in a strong bull. Third, <em>fat left tail under regime switching</em>: even conditioning on a bull start, the 5th-percentile five-year return is −71%.</p>
+<p><strong>The validation.</strong> On nine real semiconductor stocks (2000–2026, ~108,780 simulated contracts), realized assignment clusters in the crash years 2000–02, 2008, and 2022 (up to 54%); the two-year no-loss rate is still 66%; and a calendar-year block-bootstrap gives a 95% confidence interval for the five-year median return of [−1.8%, 41.0%] — straddling zero. A survivorship-bias stress test collapses the share of positive five-year outcomes from 64% to 27%.</p>
+<p><strong>The policy angle.</strong> Rather than wealth-based access gates, the paper proposes regime stress-disclosure and tail-tolerance suitability testing.</p>
+<h2 id="中文核心觀點">中文｜核心觀點<a hidden class="anchor" aria-hidden="true" href="#中文核心觀點">#</a></h2>
+<p>散戶端的固定配息票據（FCN），在經濟實質上是投資人賣出的 worst-of 下敲入賣權的空頭部位。本文以蒙地卡羅模擬與 2000–2026 年歷史回測提出三個發現：其一，「連勝幻覺」——在強勢多頭下，連續兩年不虧損的機率高達 78%，預期連勝超過 32 個季度；其二，「尾部主導的期望值」——正報酬幾乎全部來自股權與波動風險溢酬，發行商利差是固定的負向拖累，只有在強多頭中淨期望報酬才為正；其三，「制度切換下的肥左尾」——即使從多頭起步，五年期報酬的第 5 百分位仍為 −71%。</p>
+<p>在九檔半導體實股（約 108,780 份合約）的驗證中，履約集中在 2000–02、2008 與 2022 的崩盤年份（最高 54%）；生存者偏誤壓力測試把五年期正報酬的比例從 64% 壓到 27%。政策面，本文主張以「制度壓力揭露」與「尾部承受度適足性測試」取代以財力門檻限制參與。</p>
+<p><a href="https://ssrn.com/abstract=7106058">在 SSRN 閱讀全文 →</a></p>
+
+
+  </div>
+
+  <aside class="advisory-cta" data-cta-type="subscribe" style="border:1px solid var(--border);border-radius:8px;padding:1.1rem 1.3rem;margin:2rem 0 1rem;line-height:1.7">
+  <h4 style="margin:0 0 .6rem;font-size:1.05rem">
+    <span lang="en">If you would like to follow these questions further</span><br>
+    <span lang="zh-Hant">如果您想繼續追蹤這些問題</span>
+  </h4>
+  <p lang="en" style="margin:0 0 .6rem;color:var(--secondary)">I continue to write about AI, semiconductors, industrial strategy, science, and the human consequences of technological change. Subscribe on Substack to receive new essays by email.</p>
+  <p lang="zh-Hant" style="margin:0 0 .6rem;color:var(--secondary)">我持續撰寫 AI、半導體、產業策略、科學，以及科技變遷對人的影響。可在 Substack 訂閱，以電子郵件收到後續文章。</p>
+  <p style="margin:0"><a href="https://sinclairhuang.substack.com/"><span lang="en">Subscribe on Substack</span> / <span lang="zh-Hant">在 Substack 訂閱</span> →</a></p>
+</aside>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://sinclairhuang.org/tags/capital-markets/">Capital-Markets</a></li>
+      <li><a href="https://sinclairhuang.org/tags/investing/">Investing</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://sinclairhuang.org/">Sinclair Huang, HEC Liège, Executive DBA</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
