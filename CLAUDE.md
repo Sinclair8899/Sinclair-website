@@ -175,17 +175,23 @@ with `git -c core.quotePath=false`.
   code points chosen in document order — never a `[:200]` cut; headings,
   figures/figcaptions, bylines, series labels, and Field Note version
   blocks are excluded; entities decoded, NBSP/whitespace normalized;
-  nested blocks flush in document order and never fuse. Exclusion
-  heuristics keep prose: "By 2030, …" and "Field notes from …" are body
-  text — a byline needs "By " + a capitalized name, short, with no
-  sentence-ending punctuation; a Field Note block needs a version token
+  nested blocks AND excluded figure regions are block boundaries — the
+  open block flushes before either, so document order holds and text on
+  either side of a figure never fuses ("towardmillion-GPU" is the
+  canonical counterexample). Exclusion heuristics keep prose: a byline
+  is case-insensitive "By " plus 1–5 tokens that ALL have name shape
+  (capitalized words, initials `H.`, honorifics `Dr.`,
+  hyphen/apostrophe/parenthesis compounds, optional trailing period) —
+  so "By Jane Doe.", "By Dr. Jane Doe", "By H. L. Cheung" are noise
+  while "By 2030, …", "By Grace, we made it home." and "By the way …"
+  stay body text; a Field Note block needs a version token
   (`Field Note v4`). Titles/descriptions are YAML-escaped as single
   physical lines (`\n`/`\r`/`\t` escapes), so a multiline or
   `---`-bearing title can never fake a front-matter delimiter. An
   article with no compliant sentence group makes the WHOLE import run
   exit nonzero (CI fails, nothing commits) and is NOT recorded in
   `imported_medium.json`, so it retries after a fix. Offline tests
-  (`test_import_medium.py`, 17 cases, socket-disabled, zero
+  (`test_import_medium.py`, 23 cases, socket-disabled, zero
   third-party) run in the workflow BEFORE feedparser/requests install
   and any network fetch.
 - PaperMod's footer is `partialCached` — per-section footer content must go in

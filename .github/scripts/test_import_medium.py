@@ -159,6 +159,66 @@ class TransformTests(unittest.TestCase):
             ],
         )
 
+    # --- Step 5 follow-up 2: byline and figure boundary gaps ---
+
+    EXPLOIT_SENTENCE = ("As AI clusters scale from thousands of accelerators toward "
+                        "million-GPU systems, the network becomes part of the compute fabric itself.")
+
+    def test_byline_plain_capital_name_is_noise(self):
+        self.assertTrue(mt.is_noise("By Jane Doe"))
+        desc = mt.description_from_html(
+            f"<p>By Jane Doe</p><p>{self.EXPLOIT_SENTENCE}</p>"
+        )
+        self.assertEqual(desc, self.EXPLOIT_SENTENCE)
+        self.assertNotIn("Jane Doe", desc)
+
+    def test_byline_with_trailing_period_is_noise(self):
+        self.assertTrue(mt.is_noise("By Jane Doe."))
+        # the reviewer's 147-char exploit: "By Jane Doe." must not pair up
+        desc = mt.description_from_html(
+            f"<p>By Jane Doe.</p><p>{self.EXPLOIT_SENTENCE}</p>"
+        )
+        self.assertEqual(desc, self.EXPLOIT_SENTENCE)
+
+    def test_byline_honorific_prefix_is_noise(self):
+        self.assertTrue(mt.is_noise("By Dr. Jane Doe"))
+        desc = mt.description_from_html(
+            f"<p>By Dr. Jane Doe</p><p>{self.EXPLOIT_SENTENCE}</p>"
+        )
+        self.assertNotIn("By Dr.", desc)
+        self.assertEqual(desc, self.EXPLOIT_SENTENCE)
+
+    def test_byline_initials_are_noise(self):
+        self.assertTrue(mt.is_noise("By H. L. Cheung"))
+        desc = mt.description_from_html(
+            f"<p>By H. L. Cheung</p><p>{self.EXPLOIT_SENTENCE}</p>"
+        )
+        self.assertNotIn("L.", desc.split(self.EXPLOIT_SENTENCE)[0] if self.EXPLOIT_SENTENCE in desc else desc)
+        self.assertEqual(desc, self.EXPLOIT_SENTENCE)
+
+    def test_by_year_and_prose_still_kept_after_byline_fix(self):
+        self.assertFalse(mt.is_noise("By 2030, the grid will double."))
+        self.assertFalse(mt.is_noise("By Grace, we made it home before dark."))
+        self.assertFalse(mt.is_noise("By the way, this matters a lot."))
+
+    def test_figure_boundary_no_fusion_document_order(self):
+        html = ("<p>toward<figure><img src=\"x.png\">"
+                "<figcaption>cap text that must not leak</figcaption></figure>"
+                "million-GPU systems now arrive on a predictable schedule.</p>"
+                "<p>After the figure.</p>")
+        blocks = mt.blocks_from_html(html)
+        self.assertEqual(
+            blocks,
+            [
+                ("text", "toward"),
+                ("text", "million-GPU systems now arrive on a predictable schedule."),
+                ("text", "After the figure."),
+            ],
+        )
+        joined = " | ".join(t for _, t in blocks)
+        self.assertNotIn("towardmillion", joined)
+        self.assertNotIn("cap text", joined)
+
     def test_nofit_makes_importer_fail_nonzero_without_recording(self):
         import tempfile
         import types

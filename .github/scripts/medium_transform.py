@@ -38,12 +38,29 @@ NOISE_PATTERNS = [
     re.compile(r"^\s*field\s+notes?\s+v?\d", re.IGNORECASE),
 ]
 
-# Bylines look like "By Po-Sung(Sinclair) Huang": short, opened by "By " plus
-# a capitalized name, and WITHOUT sentence-ending punctuation. Real prose
-# such as "By 2030, the grid will double." starts with a digit and ends like
-# a sentence — it must stay body text.
-BYLINE_OPEN = re.compile(r"^\s*by\s+[A-Z(]")
+# Bylines look like "By Jane Doe", "By Dr. Jane Doe", "By H. L. Cheung",
+# or "By Po-Sung(Sinclair) Huang", optionally with a trailing period:
+# case-insensitive "By" followed by 1-5 tokens that ALL have name shape
+# (capitalized word, initial like "H.", honorific like "Dr.",
+# hyphen/apostrophe/parenthesis compounds). Prose fails the token-shape
+# test and stays body text: "By 2030, ..." (digit), "By Grace, we made it
+# home." (comma + lowercase words), "By the way ..." (lowercase).
+BYLINE_RE = re.compile(r"^\s*by\s+(.+?)\s*$", re.IGNORECASE)
+NAME_TOKEN_RE = re.compile(r"^[A-Z][\w'’()\-]*\.?$")
 BYLINE_MAX_LEN = 60
+BYLINE_MAX_TOKENS = 5
+
+
+def _is_byline(text):
+    if len(text) > BYLINE_MAX_LEN:
+        return False
+    m = BYLINE_RE.match(text)
+    if not m:
+        return False
+    tokens = m.group(1).rstrip(".").split()
+    if not 1 <= len(tokens) <= BYLINE_MAX_TOKENS:
+        return False
+    return all(NAME_TOKEN_RE.match(token) for token in tokens)
 
 SENTENCE_END = re.compile(r'([.!?…。！？]["”』」)]?)(?=\s|$)')
 
@@ -74,6 +91,12 @@ class _BlockCollector(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         if tag in FIGURE_TAGS:
+            # Entering an EXCLUDED region is also a block boundary: flush
+            # the open block so text on either side of a figure can never
+            # fuse ("toward<figure>…</figure>million-GPU" must not become
+            # "towardmillion-GPU").
+            if self._figure_depth == 0 and self._open:
+                self._flush_top()
             self._figure_depth += 1
             return
         if self._figure_depth:
@@ -116,11 +139,7 @@ def blocks_from_html(html):
 def is_noise(text):
     if any(p.search(text) for p in NOISE_PATTERNS):
         return True
-    return bool(
-        BYLINE_OPEN.match(text)
-        and len(text) <= BYLINE_MAX_LEN
-        and not SENTENCE_END.search(text)
-    )
+    return _is_byline(text)
 
 
 def sentences_of(text):
