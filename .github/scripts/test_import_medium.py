@@ -18,6 +18,11 @@ socket.socket = _NoNetworkSocket  # type: ignore[misc]
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import medium_transform as mt  # noqa: E402  (after socket guard, by design)
 
+# Snapshot taken immediately after importing the transform layer: the
+# stdlib-only assertion checks THIS set, so later tests that stub
+# feedparser/requests for the import_medium glue cannot pollute it.
+MODULES_AFTER_TRANSFORM_IMPORT = frozenset(sys.modules)
+
 FIXTURES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures", "medium")
 
 
@@ -35,7 +40,11 @@ EXPECTED_RICH = (
 class TransformTests(unittest.TestCase):
     def test_stdlib_only(self):
         for banned in ("feedparser", "requests"):
-            self.assertNotIn(banned, sys.modules, f"{banned} leaked into the transform layer")
+            self.assertNotIn(
+                banned,
+                MODULES_AFTER_TRANSFORM_IMPORT,
+                f"{banned} leaked into the transform layer",
+            )
 
     def test_block_boundaries_do_not_fuse(self):
         blocks = mt.blocks_from_html(fixture("blocks.html"))
@@ -103,6 +112,77 @@ class TransformTests(unittest.TestCase):
             mt.sentences_of("Complete sentence here. Trailing fragment without end"),
             ["Complete sentence here."],
         )
+
+    # --- Step 5 follow-up: edge-case hardening ---
+
+    @staticmethod
+    def _yaml_unquote(scalar):
+        assert scalar.startswith('"') and scalar.endswith('"')
+        out, it = [], iter(scalar[1:-1])
+        table = {"n": "\n", "r": "\r", "t": "\t", '"': '"', "\\": "\\"}
+        for ch in it:
+            out.append(table[next(it)] if ch == "\\" else ch)
+        return "".join(out)
+
+    def test_multiline_and_doc_separator_title_roundtrips(self):
+        for title in ("Line one\nLine two", "---\nnot a document separator", 'Mix "quote"\tand\ttabs\n---'):
+            fm = mt.front_matter(title, "2026-08-02", ["AI"], "D.", "https://m/x")
+            lines = fm.split("\n")
+            self.assertEqual(lines[0], "---")
+            self.assertEqual([i for i, l in enumerate(lines) if l.strip() == "---"], [0, len(lines) - 3])
+            title_lines = [l for l in lines if l.startswith("title: ")]
+            self.assertEqual(len(title_lines), 1)
+            self.assertEqual(self._yaml_unquote(title_lines[0][len("title: "):]), title)
+
+    def test_by_year_prose_is_kept(self):
+        self.assertFalse(mt.is_noise("By 2030, the grid will double."))
+        sentence = ("By 2030, the grid interconnection queue is expected to double, "
+                    "and the binding constraint shifts from chips to electricity, land, and cooling capacity.")
+        self.assertEqual(mt.description_from_html(f"<p>{sentence}</p>"), sentence)
+
+    def test_field_notes_prose_is_kept(self):
+        self.assertFalse(mt.is_noise("Field notes from deployment sites show a different picture."))
+        self.assertTrue(mt.is_noise("Field Note v4 — updated with reference materials."))
+        sentence = ("Field notes from deployment sites show utilization, not headline capex, "
+                    "deciding which operators actually earn back their accelerated depreciation.")
+        self.assertEqual(mt.description_from_html(f"<p>{sentence}</p>"), sentence)
+
+    def test_nested_blocks_keep_document_order_without_fusing(self):
+        blocks = mt.blocks_from_html(fixture("nested.html"))
+        self.assertEqual(
+            blocks,
+            [
+                ("text", "Lead text before the inner block."),
+                ("text", "Inner sentence one."),
+                ("text", "Tail text after the inner block."),
+                ("text", "After the quote."),
+            ],
+        )
+
+    def test_nofit_makes_importer_fail_nonzero_without_recording(self):
+        import tempfile
+        import types
+        for stub in ("feedparser", "requests"):
+            sys.modules.setdefault(stub, types.ModuleType(stub))
+        import import_medium as im
+
+        class FakeEntry:
+            def __init__(self, link, title, summary):
+                self.summary = summary
+                self._d = {"link": link, "title": title}
+
+            def get(self, key, default=None):
+                return self._d.get(key, default)
+
+        imported = []
+        with tempfile.TemporaryDirectory() as tmp:
+            entries = [FakeEntry("https://medium.com/nofit", "No Fit", fixture("nofit.html"))]
+            new, failed = im.process_entries("Medium", entries, imported, blog_dir=tmp)
+            self.assertEqual((new, failed), (0, 1))
+            self.assertEqual(imported, [])
+            self.assertEqual(os.listdir(tmp), [])
+        self.assertEqual(im.exit_code(1), 1)
+        self.assertEqual(im.exit_code(0), 0)
 
 
 if __name__ == "__main__":

@@ -30,12 +30,20 @@ HEADING_TAGS = {"h1", "h2", "h3", "h4", "h5", "h6"}
 FIGURE_TAGS = {"figure", "figcaption"}
 
 NOISE_PATTERNS = [
-    re.compile(r"^\s*by\s+\S+", re.IGNORECASE),          # "By ..."
     re.compile(r"sinclair\s*huang", re.IGNORECASE),       # author name
     re.compile(r"po-sung\s*\(\s*sinclair\s*\)", re.IGNORECASE),
     re.compile(r"notes\s*[|｜]\s*(part|article)", re.IGNORECASE),  # series label
-    re.compile(r"^\s*field\s+note", re.IGNORECASE),       # version block
+    # Version blocks like "Field Note v4 — updated ...". A version token is
+    # required so PROSE starting "Field notes from deployment ..." stays body.
+    re.compile(r"^\s*field\s+notes?\s+v?\d", re.IGNORECASE),
 ]
+
+# Bylines look like "By Po-Sung(Sinclair) Huang": short, opened by "By " plus
+# a capitalized name, and WITHOUT sentence-ending punctuation. Real prose
+# such as "By 2030, the grid will double." starts with a digit and ends like
+# a sentence — it must stay body text.
+BYLINE_OPEN = re.compile(r"^\s*by\s+[A-Z(]")
+BYLINE_MAX_LEN = 60
 
 SENTENCE_END = re.compile(r'([.!?…。！？]["”』」)]?)(?=\s|$)')
 
@@ -53,6 +61,17 @@ class _BlockCollector(HTMLParser):
         self._figure_depth = 0
         self._open = []       # stack of (tag, [chunks])
 
+    def _flush_top(self):
+        """Emit the top block's accumulated text (if any) and reset it.
+        Called when a nested block opens, so document order is preserved
+        and text on either side of a nested block never fuses."""
+        tag, chunks = self._open[-1]
+        text = normalize_whitespace("".join(chunks))
+        if text:
+            kind = "heading" if tag in HEADING_TAGS else "text"
+            self.blocks.append((kind, text))
+        chunks.clear()
+
     def handle_starttag(self, tag, attrs):
         if tag in FIGURE_TAGS:
             self._figure_depth += 1
@@ -60,6 +79,8 @@ class _BlockCollector(HTMLParser):
         if self._figure_depth:
             return
         if tag in BLOCK_TAGS:
+            if self._open:
+                self._flush_top()
             self._open.append((tag, []))
         elif tag == "br" and self._open:
             self._open[-1][1].append(" ")
@@ -71,11 +92,8 @@ class _BlockCollector(HTMLParser):
         if self._figure_depth:
             return
         if self._open and tag == self._open[-1][0]:
-            _tag, chunks = self._open.pop()
-            text = normalize_whitespace("".join(chunks))
-            if text:
-                kind = "heading" if tag in HEADING_TAGS else "text"
-                self.blocks.append((kind, text))
+            self._flush_top()
+            self._open.pop()
 
     def handle_data(self, data):
         if self._figure_depth:
@@ -96,7 +114,13 @@ def blocks_from_html(html):
 
 
 def is_noise(text):
-    return any(p.search(text) for p in NOISE_PATTERNS)
+    if any(p.search(text) for p in NOISE_PATTERNS):
+        return True
+    return bool(
+        BYLINE_OPEN.match(text)
+        and len(text) <= BYLINE_MAX_LEN
+        and not SENTENCE_END.search(text)
+    )
 
 
 def sentences_of(text):
@@ -131,8 +155,21 @@ def description_from_html(html):
 
 
 def yaml_quote(value):
-    """Safe double-quoted YAML scalar (single line by construction)."""
-    return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
+    """Safe double-quoted YAML scalar, always a SINGLE physical line.
+
+    Newlines/carriage returns/tabs become YAML escape sequences, so a
+    multiline title — or one containing a document separator like "---" —
+    can never break the front-matter block or fake a delimiter line: the
+    emitted line always starts with a key, and full-line delimiter parsers
+    stay correct. Round-trips through a YAML double-quoted reader."""
+    escaped = (
+        value.replace("\\", "\\\\")
+        .replace('"', '\\"')
+        .replace("\r", "\\r")
+        .replace("\n", "\\n")
+        .replace("\t", "\\t")
+    )
+    return '"' + escaped + '"'
 
 
 def front_matter(title, date_str, tags, description, canonical):

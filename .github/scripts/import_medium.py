@@ -107,6 +107,7 @@ def extract_tags(entry):
     return tags[:6]
 
 def process_feed(source_name, feed_url, imported):
+    """Fetch layer only — parsing/writing is process_entries (testable offline)."""
     print(f"Fetching {source_name} RSS: {feed_url}")
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"}
     try:
@@ -119,9 +120,18 @@ def process_feed(source_name, feed_url, imported):
         feed = feedparser.parse(feed_url)
     if not feed.entries:
         print(f"No entries found in {source_name} RSS feed")
-        return 0
+        return 0, 0
+    return process_entries(source_name, feed.entries, imported)
+
+
+def process_entries(source_name, entries, imported, blog_dir=None):
+    """Returns (new_count, failed_count). A DescriptionError article is a
+    FAILURE of the run: it is not written, and its URL is NOT recorded in
+    imported_medium.json, so the whole batch retries after a fix."""
+    blog_dir = blog_dir or BLOG_DIR
     new_count = 0
-    for entry in feed.entries:
+    failed_count = 0
+    for entry in entries:
         link = entry.get('link', '')
         title = entry.get('title', 'Untitled').lstrip('# ')
         if link in imported:
@@ -150,12 +160,13 @@ def process_feed(source_name, feed_url, imported):
         try:
             description = description_from_html(content_html)
         except DescriptionError as exc:
-            print(f"SKIPPED (no compliant description, not recorded): {title} — {exc}")
+            print(f"FAILED (no compliant description, not recorded): {title} — {exc}")
+            failed_count += 1
             continue
         tags = extract_tags(entry)
         slug = title_to_slug(title)
         filename = f"{date_str}-{slug}.md"
-        filepath = os.path.join(BLOG_DIR, filename)
+        filepath = os.path.join(blog_dir, filename)
         if os.path.exists(filepath):
             print(f"File exists: {filename}")
             imported.append(link)
@@ -177,16 +188,25 @@ def process_feed(source_name, feed_url, imported):
         imported.append(link)
         new_count += 1
         print(f"Imported: {title} -> {filename}")
-    return new_count
+    return new_count, failed_count
+
+def exit_code(total_failed):
+    """A run with any non-compliant article stops NONZERO: the CI job fails,
+    nothing is committed, and the unrecorded URLs retry next run."""
+    return 1 if total_failed else 0
 
 def main():
     os.makedirs(BLOG_DIR, exist_ok=True)
     imported = load_imported()
     total = 0
+    failed = 0
     for source_name, feed_url in SOURCES:
-        total += process_feed(source_name, feed_url, imported)
+        n, f = process_feed(source_name, feed_url, imported)
+        total += n
+        failed += f
     save_imported(imported)
-    print(f"\nDone: {total} new articles imported")
+    print(f"\nDone: {total} new articles imported, {failed} failed")
+    sys.exit(exit_code(failed))
 
 if __name__ == '__main__':
     main()

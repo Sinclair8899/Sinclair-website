@@ -173,12 +173,21 @@ with `git -c core.quotePath=false`.
 - **Importer transform layer** (`.github/scripts/medium_transform.py`,
   stdlib-only): descriptions are 1–2 complete body sentences in 120–160
   code points chosen in document order — never a `[:200]` cut; headings,
-  figures/figcaptions, bylines, series labels, and Field Note blocks are
-  excluded; entities decoded, NBSP/whitespace normalized. An article with
-  no compliant sentence group FAILS that import (and is NOT recorded in
-  `imported_medium.json`, so it retries after a fix). Offline tests
-  (`test_import_medium.py`, socket-disabled, zero third-party) run in the
-  workflow BEFORE feedparser/requests install and any network fetch.
+  figures/figcaptions, bylines, series labels, and Field Note version
+  blocks are excluded; entities decoded, NBSP/whitespace normalized;
+  nested blocks flush in document order and never fuse. Exclusion
+  heuristics keep prose: "By 2030, …" and "Field notes from …" are body
+  text — a byline needs "By " + a capitalized name, short, with no
+  sentence-ending punctuation; a Field Note block needs a version token
+  (`Field Note v4`). Titles/descriptions are YAML-escaped as single
+  physical lines (`\n`/`\r`/`\t` escapes), so a multiline or
+  `---`-bearing title can never fake a front-matter delimiter. An
+  article with no compliant sentence group makes the WHOLE import run
+  exit nonzero (CI fails, nothing commits) and is NOT recorded in
+  `imported_medium.json`, so it retries after a fix. Offline tests
+  (`test_import_medium.py`, 17 cases, socket-disabled, zero
+  third-party) run in the workflow BEFORE feedparser/requests install
+  and any network fetch.
 - PaperMod's footer is `partialCached` — per-section footer content must go in
   section-scoped single templates (`layouts/blog/single.html`,
   `layouts/insights/single.html` → `partials/advisory_cta.html`), never in
