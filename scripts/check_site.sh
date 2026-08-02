@@ -64,12 +64,19 @@ while IFS= read -r f; do
   esac
   grep -q 'http-equiv="refresh"' "$f" && continue   # alias stub
   ARTICLES=$((ARTICLES + 1))
-  n=$(grep -o 'class="advisory-cta"' "$f" | wc -l | tr -d ' ')
+  n=$(grep -oE 'class="([^"]* )?advisory-cta( [^"]*)?"' "$f" | wc -l | tr -d ' ')
   [ "$n" = 1 ] || { echo "CTA COUNT $n (expected 1): $f"; CTA_ERRS=$((CTA_ERRS + 1)); }
 done < <(find "$DOCS/blog" "$DOCS/insights" -name index.html 2>/dev/null | sort)
 [ "$CTA_ERRS" = 0 ] || FAIL=1
 [ "$ARTICLES" -gt 0 ] || { echo "CTA CHECK FOUND NO ARTICLES"; FAIL=1; }
 echo "CTA: $ARTICLES article pages, each with exactly one CTA: $([ "$CTA_ERRS" = 0 ] && echo yes || echo NO)"
+
+# 6b. CTA routing (Step 4): every blog/insights article's rendered CTA must
+#     match its front-matter cta param — count, data-cta-type, and exact
+#     target — parsed semantically by scripts/check_cta_routing.py.
+#     Expectations derive from source front matter dynamically; release
+#     acceptance asserts the split of the day separately.
+python3 "$REPO/scripts/check_cta_routing.py" "$DOCS" || FAIL=1
 
 # 7. Disappeared URLs must be ledgered in redirects.tsv (machine-readable)
 if [ -n "$PREV" ] && [ -f "$PREV" ]; then

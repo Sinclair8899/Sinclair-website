@@ -1,9 +1,37 @@
-{{/* End-of-article conversion CTA. Included by the section-scoped
+{{- /* End-of-article CTA dispatcher (Step 4). Included by the section-scoped
      blog/insights single templates (NOT via extend_footer — the theme
-     footer is partialCached and would freeze the conditional). */}}
-<div class="advisory-cta" style="border:1px solid var(--border);border-radius:8px;padding:1.1rem 1.3rem;margin:2rem 0 1rem;line-height:1.7">
-  <strong>把這類分析用在你的決策上</strong><br>
-  <span style="color:var(--secondary)">我以獨立顧問身分,協助董事會、經營團隊與投資人處理 AI 基礎設施、半導體供應鏈與資本配置的判斷。
-  Independent advisory for boards, executive teams, and investors.</span><br>
-  <a href="/advisory/">了解顧問服務 → Advisory</a>
-</div>
+     footer is partialCached and would freeze the conditional).
+
+     .Params.cta is the ONLY routing input (reviewer-approved
+     content-inventory baseline). primary_cluster must never drive this.
+     advisory -> exactly one CTA targeting /advisory/#projects
+     subscribe -> exactly one CTA targeting https://sinclairhuang.substack.com/
+     none      -> no CTA
+     missing/unknown -> errorf: the build FAILS. No silent default — a
+     newly imported article without an explicit cta must break the build,
+     not quietly become an advisory page. */ -}}
+{{- $cta := .Params.cta -}}
+{{- if eq $cta "advisory" -}}
+<aside class="advisory-cta" data-cta-type="advisory" style="border:1px solid var(--border);border-radius:8px;padding:1.1rem 1.3rem;margin:2rem 0 1rem;line-height:1.7">
+  <h4 style="margin:0 0 .6rem;font-size:1.05rem">
+    <span lang="en">If this question is also on your desk</span><br>
+    <span lang="zh-Hant">如果您也正在面對這個問題</span>
+  </h4>
+  <p lang="en" style="margin:0 0 .6rem;color:var(--secondary)">I work directly with boards, executive teams, and investors through defined-scope projects on AI infrastructure, semiconductors, supply chains, and capital allocation.</p>
+  <p lang="zh-Hant" style="margin:0 0 .6rem;color:var(--secondary)">我直接與董事會、經營團隊及投資人合作，就 AI 基礎設施、半導體、供應鏈與資本配置的具體問題，進行範圍明確的專案研究。</p>
+  <p style="margin:0"><a href="/advisory/#projects">Project engagements / 專案研究 →</a></p>
+</aside>
+{{- else if eq $cta "subscribe" -}}
+<aside class="advisory-cta" data-cta-type="subscribe" style="border:1px solid var(--border);border-radius:8px;padding:1.1rem 1.3rem;margin:2rem 0 1rem;line-height:1.7">
+  <h4 style="margin:0 0 .6rem;font-size:1.05rem">
+    <span lang="en">If you would like to follow these questions further</span><br>
+    <span lang="zh-Hant">如果您想繼續追蹤這些問題</span>
+  </h4>
+  <p lang="en" style="margin:0 0 .6rem;color:var(--secondary)">I continue to write about AI, semiconductors, industrial strategy, science, and the human consequences of technological change. Subscribe on Substack to receive new essays by email.</p>
+  <p lang="zh-Hant" style="margin:0 0 .6rem;color:var(--secondary)">我持續撰寫 AI、半導體、產業策略、科學，以及科技變遷對人的影響。可在 Substack 訂閱，以電子郵件收到後續文章。</p>
+  <p style="margin:0"><a href="https://sinclairhuang.substack.com/">Subscribe on Substack / 在 Substack 訂閱 →</a></p>
+</aside>
+{{- else if eq $cta "none" -}}
+{{- else -}}
+{{- errorf "advisory_cta dispatcher: %q has missing or unknown cta front matter %q — every blog/insights article must set cta to \"advisory\", \"subscribe\", or \"none\" (no silent default)" .File.Path $cta -}}
+{{- end -}}

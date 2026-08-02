@@ -211,6 +211,130 @@ p.write_text(t.replace('</urlset>', '  <url><loc>https://sinclairhuang.org/tags/
 PY
 expect dotdot-escape-normalizes-out-of-taxonomy pass "$TMP/case"
 
+# CTA-routing fixtures (Step 4). The through-check_site.sh cases double as
+# proof the routing checker is WIRED INTO the harness — if the 6b hookup
+# were removed, each of them would go green for the wrong reason and fail
+# its message assertion. Source-side faults use throwaway content/docs
+# trees and call the checker directly.
+ADV_PAGE="blog/cowos-hbm-abf-explainer/index.html"        # cta: advisory
+SUB_PAGE="blog/trust-before-efficiency/index.html"        # cta: subscribe
+
+fresh
+python3 - "$TMP/case/$ADV_PAGE" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+assert 'data-cta-type="advisory"' in t
+t = t.replace('data-cta-type="advisory"', 'data-cta-type="subscribe"', 1)
+t = t.replace('href="/advisory/#projects"', 'href="https://sinclairhuang.substack.com/"', 1)
+p.write_text(t)
+PY
+expect cta-advisory-rendered-as-subscribe fail "$TMP/case" "CTA TYPE MISMATCH"
+
+fresh
+python3 - "$TMP/case/$SUB_PAGE" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+assert 'data-cta-type="subscribe"' in t
+t = t.replace('data-cta-type="subscribe"', 'data-cta-type="advisory"', 1)
+t = t.replace('href="https://sinclairhuang.substack.com/"', 'href="/advisory/#projects"', 1)
+p.write_text(t)
+PY
+expect cta-subscribe-rendered-as-advisory fail "$TMP/case" "CTA TYPE MISMATCH"
+
+fresh
+python3 - "$TMP/case/$ADV_PAGE" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+start = t.index('<aside class="advisory-cta"')
+end = t.index('</aside>', start) + len('</aside>')
+p.write_text(t[:start] + t[end:])
+PY
+expect cta-missing-on-page fail "$TMP/case" "CTA MISSING ON PAGE"
+
+fresh
+python3 - "$TMP/case/$ADV_PAGE" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+start = t.index('<aside class="advisory-cta"')
+end = t.index('</aside>', start) + len('</aside>')
+p.write_text(t[:end] + t[start:end] + t[end:])
+PY
+expect cta-duplicate-on-page fail "$TMP/case" "DUPLICATE CTA ON PAGE"
+
+fresh
+python3 - "$TMP/case/$ADV_PAGE" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+assert 'href="/advisory/#projects"' in t
+p.write_text(t.replace('href="/advisory/#projects"', 'href="/advisory/"', 1))
+PY
+expect cta-advisory-target-missing-anchor fail "$TMP/case" "CTA TARGET WRONG"
+
+fresh
+python3 - "$TMP/case/$SUB_PAGE" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+assert 'href="https://sinclairhuang.substack.com/"' in t
+p.write_text(t.replace('href="https://sinclairhuang.substack.com/"', 'href="https://substack.com/@sinclairhuang"', 1))
+PY
+expect cta-subscribe-target-wrong fail "$TMP/case" "CTA TARGET WRONG"
+
+# Source-side faults: throwaway content/docs trees, checker called directly.
+cta_direct() { # cta_direct <name> <pass|fail> <docs> <content> [msg]
+  local name=$1 want=$2 docs=$3 content=$4 msg=${5:-} got
+  if python3 scripts/check_cta_routing.py "$docs" "$content" >"$TMP/out-$name" 2>&1; then got=pass; else got=fail; fi
+  if [ "$got" != "$want" ]; then
+    echo "FAIL $name — checker ${got}ed, expected $want"; sed 's/^/     /' "$TMP/out-$name" | tail -4; RESULT=1
+  elif [ -n "$msg" ] && ! grep -qF "$msg" "$TMP/out-$name"; then
+    echo "FAIL $name — failed, but without the expected message: $msg"; RESULT=1
+  else
+    echo "ok   $name (checker ${got}ed as expected${msg:+, with the expected message})"
+  fi
+}
+
+mkdir -p "$TMP/src-miss/blog" "$TMP/docs-empty/blog"
+printf -- '---\ntitle: "X"\ndate: 2026-01-01\n---\nbody\n' > "$TMP/src-miss/blog/x.md"
+cta_direct source-cta-missing fail "$TMP/docs-empty" "$TMP/src-miss" "SOURCE CTA MISSING"
+
+mkdir -p "$TMP/src-unknown/blog"
+printf -- '---\ntitle: "X"\ncta: "banana"\n---\nbody\n' > "$TMP/src-unknown/blog/x.md"
+cta_direct source-cta-unknown fail "$TMP/docs-empty" "$TMP/src-unknown" "SOURCE CTA UNKNOWN"
+
+mkdir -p "$TMP/src-none/blog" "$TMP/docs-none/blog/x"
+printf -- '---\ntitle: "X"\ncta: "none"\n---\nbody\n' > "$TMP/src-none/blog/x.md"
+printf '<html><body><aside class="advisory-cta" data-cta-type="advisory"><a href="/advisory/#projects">go</a></aside></body></html>\n' > "$TMP/docs-none/blog/x/index.html"
+cta_direct none-page-still-has-cta fail "$TMP/docs-none" "$TMP/src-none" "CTA ON NONE PAGE"
+
+# Positive: attribute order must not matter to any CTA gate.
+fresh
+python3 - "$TMP/case/$ADV_PAGE" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+old = '<aside class="advisory-cta" data-cta-type="advisory" style='
+assert old in t
+p.write_text(t.replace(old, '<aside data-cta-type="advisory" class="advisory-cta" style=', 1))
+PY
+expect cta-attribute-order-variant pass "$TMP/case"
+
+# Positive: a harmless extra class token must not break counting or routing.
+fresh
+python3 - "$TMP/case/$ADV_PAGE" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+old = 'class="advisory-cta"'
+assert old in t
+p.write_text(t.replace(old, 'class="advisory-cta cta-highlight"', 1))
+PY
+expect cta-extra-class-token pass "$TMP/case"
+
 # Hugo version parsing fixtures — official releases carry a commit hash,
 # brew carries extra metadata; only the BASE semver may decide.
 vexpect() { # vexpect <name> <pass|fail> <version-token>
