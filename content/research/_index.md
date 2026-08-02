@@ -2,6 +2,9 @@
 title: "Research"
 description: "Research organized by thesis and open questions — reading paths, selected papers, and cluster archives for AI infrastructure and semiconductors."
 hideDescription: true
+aliases:
+  - /projects/
+  - /projects/page/1/
 ---
 
 <!-- Hub copy: executor-minimal scaffold (3A). Wording pending its own copy round; pillar links and dissertation entry are per phase2-plan-v2. -->

@@ -55,3 +55,5 @@
 /tags/tag1/page/1/	GONE	stale pagination URL
 /tags/tag2/	GONE	obsolete taxonomy page
 /tags/tag2/page/1/	GONE	stale pagination URL
+/projects/	/research/	Research Portfolio retired in 3D nav 8→7; Hugo alias on the Research hub serves the old URL
+/projects/page/1/	/research/	pagination stub of the retired /projects/ list (3D)
