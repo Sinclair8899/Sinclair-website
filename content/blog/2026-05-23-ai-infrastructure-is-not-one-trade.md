@@ -3,7 +3,7 @@ title: "AI Infrastructure Is Not One Trade"
 date: 2026-05-23
 draft: false
 tags: ["data-center", "advanced-packaging", "power-infrastructure", "ai-infrastructure", "semiconductors"]
-description: "## Product exposure, process-control exposure, and the physical bottlenecks behind the AI capex wave*AI Infrastructure Notes | Part 3**Sinclair Huang*A reader recently left a comment on my ABF substra"
+description: "AI infrastructure is not a single trade: product, process-control, and infrastructure exposure carry different bottlenecks, margins, and time horizons."
 canonical: "https://medium.com/@sinclairhuang/ai-infrastructure-is-not-one-trade-7f197259424a?source=rss-1f713d63bb6a------2"
 primary_cluster: "ai-infrastructure"
 related_clusters: ["semiconductors"]

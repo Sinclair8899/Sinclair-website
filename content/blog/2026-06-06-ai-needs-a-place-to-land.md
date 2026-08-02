@@ -3,7 +3,7 @@ title: "AI Needs a Place to Land"
 date: 2026-06-06
 draft: false
 tags: ["semiconductors", "taiwan", "venture-capital", "robotics", "artificial-intelligence"]
-description: "## COMPUTEX 2026 and Taiwan’s shift from supply chain to co-design and deployment marketplace*AI Infrastructure Notes｜Article 4*Sinclair HuangField Note v4 — updated with GTC Taipei and statistical-sc"
+description: "A COMPUTEX 2026 field note: compute becomes value only where it can land, as Taiwan shifts from supplying parts to co-designing and deploying AI systems."
 canonical: "https://medium.com/@sinclairhuang/ai-needs-a-place-to-land-88b842625cdf?source=rss-1f713d63bb6a------2"
 primary_cluster: "ai-infrastructure"
 related_clusters: ["semiconductors", "robotics"]

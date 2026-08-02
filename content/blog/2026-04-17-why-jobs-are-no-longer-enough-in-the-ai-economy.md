@@ -5,7 +5,7 @@ title: "Why Jobs Are No Longer Enough in the AI Economy"
 date: 2026-04-17
 draft: false
 tags: ["ai", "future-of-work", "inequality", "economic-security", "ownership"]
-description: "*Work, ownership, and the new architecture of economic security*By Po-Sung(Sinclair) HuangFor decades, people believed that working hard was enough.In the AI era, that assumption is quietly breaking.N"
+description: "In the AI era, working hard is no longer enough: ownership of productive assets, not labour income alone, is becoming central to economic security."
 canonical: "https://medium.com/@sinclairhuang/why-jobs-are-no-longer-enough-in-the-ai-economy-dd8e6cf2fc8c?source=rss-1f713d63bb6a------2"
 primary_cluster: "capital-and-society"
 cta: "subscribe"

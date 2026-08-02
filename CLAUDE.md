@@ -170,6 +170,15 @@ with `git -c core.quotePath=false`.
   asterisk-wrapped `[t](*url*)`, run-on headings (`#### ReferencesText…`),
   `****` bold junk, and U+00A0 non-breaking spaces inside sentences. The
   link checker now catches the link forms; eyeball headings on new imports.
+- **Importer transform layer** (`.github/scripts/medium_transform.py`,
+  stdlib-only): descriptions are 1–2 complete body sentences in 120–160
+  code points chosen in document order — never a `[:200]` cut; headings,
+  figures/figcaptions, bylines, series labels, and Field Note blocks are
+  excluded; entities decoded, NBSP/whitespace normalized. An article with
+  no compliant sentence group FAILS that import (and is NOT recorded in
+  `imported_medium.json`, so it retries after a fix). Offline tests
+  (`test_import_medium.py`, socket-disabled, zero third-party) run in the
+  workflow BEFORE feedparser/requests install and any network fetch.
 - PaperMod's footer is `partialCached` — per-section footer content must go in
   section-scoped single templates (`layouts/blog/single.html`,
   `layouts/insights/single.html` → `partials/advisory_cta.html`), never in

@@ -3,7 +3,13 @@ import requests
 import os
 import re
 import json
+import sys
 from datetime import datetime, timedelta
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# Transform layer is stdlib-only and offline-tested (test_import_medium.py
+# runs BEFORE feedparser/requests are installed in the workflow).
+from medium_transform import DescriptionError, description_from_html, front_matter
 
 SOURCES = [
     ("Medium", "https://medium.com/feed/@sinclairhuang"),
@@ -137,9 +143,16 @@ def process_feed(source_name, feed_url, imported):
         else:
             pub_date = datetime.now() - timedelta(days=1)
         date_str = pub_date.strftime('%Y-%m-%d')
-        description = strip_html(entry.get('summary', ''))[:200].replace('"', "'")
+        # Description comes from the offline transform layer: 1-2 complete
+        # body sentences in 120-160 code points, never a [:200] cut. A
+        # non-compliant article FAILS this import run and is NOT recorded
+        # as imported, so it retries after a fix instead of vanishing.
+        try:
+            description = description_from_html(content_html)
+        except DescriptionError as exc:
+            print(f"SKIPPED (no compliant description, not recorded): {title} — {exc}")
+            continue
         tags = extract_tags(entry)
-        tags_str = ', '.join([f'"{t}"' for t in tags]) if tags else '"AI", "Research"'
         slug = title_to_slug(title)
         filename = f"{date_str}-{slug}.md"
         filepath = os.path.join(BLOG_DIR, filename)
@@ -152,23 +165,15 @@ def process_feed(source_name, feed_url, imported):
             print(f"Cross-post of an existing article, skipping: {title} (already at {existing})")
             imported.append(link)
             continue
-        title_escaped = title.replace('"', '\\"')
         if source_name == "Medium":
             footer = f"\n\n---\n\n*This article was originally published on Medium. [Read the full version with charts and figures \u2192]({link})*"
         else:
             footer = f"\n\n---\n\n*This article was originally published on Substack. [Read the full version with charts and figures \u2192]({link})*"
-        front_matter = f"""---
-title: "{title_escaped}"
-date: {date_str}
-draft: false
-tags: [{tags_str}]
-description: "{description}"
-canonical: "{link}"
----
-
-"""
+        # front_matter() writes cta: "subscribe" explicitly (the dispatcher
+        # fails builds on missing cta) and never guesses primary_cluster.
+        fm = front_matter(title, date_str, tags, description, link)
         with open(filepath, 'w') as f:
-            f.write(front_matter + content_md + footer)
+            f.write(fm + content_md + footer)
         imported.append(link)
         new_count += 1
         print(f"Imported: {title} -> {filename}")

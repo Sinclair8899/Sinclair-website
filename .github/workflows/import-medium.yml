@@ -24,6 +24,12 @@ jobs:
         with:
           python-version: '3.11'
 
+      # Offline transform tests run BEFORE any dependency install and any
+      # network fetch: the transform layer is stdlib-only by contract, and
+      # passing here proves it (feedparser/requests are not yet available).
+      - name: Offline importer transform tests (no network, no third-party)
+        run: python3 .github/scripts/test_import_medium.py
+
       - name: Install dependencies
         run: pip install feedparser requests
 

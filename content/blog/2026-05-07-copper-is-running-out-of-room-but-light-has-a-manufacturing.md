@@ -3,7 +3,7 @@ title: "Copper Is Running Out of Room. But Light Has a Manufacturing Problem."
 date: 2026-05-07
 draft: false
 tags: ["silicon-photonics", "ai-infrastructure", "advanced-packaging", "semiconductors", "manufacturing"]
-description: "## Why CPO is not an optics story — it is a process-integration story.*AI Infrastructure Notes | Part 2**Sinclair Huang*Everyone says AI needs more bandwidth.That part is true.As AI clusters scale fro"
+description: "Co-packaged optics is not an optics story but a process-integration story: moving light next to the switch ASIC is a manufacturing and yield problem."
 canonical: "https://medium.com/@sinclairhuang/copper-is-running-out-of-room-but-light-has-a-manufacturing-problem-4a7c8f2c1dcd?source=rss-1f713d63bb6a------2"
 primary_cluster: "semiconductors"
 related_clusters: ["ai-infrastructure"]

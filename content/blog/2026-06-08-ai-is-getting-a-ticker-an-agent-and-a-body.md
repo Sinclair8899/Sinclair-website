@@ -3,7 +3,7 @@ title: "AI Is Getting a Ticker, an Agent, and a Body"
 date: 2026-06-08
 draft: false
 tags: ["agentic-ai", "ai-ipo", "ai", "physical-ai", "robotics"]
-description: "Why the second AI revolution may be bigger — and riskier — than the firstSinclair HuangAI Infrastructure Notes｜Article 5*Field Note v4 — updated with GTC Taipei and statistical-science reference mater"
+description: "AI is acquiring a ticker, an agent, and a body—becoming tradable, operational, and physical. This second revolution may be larger and riskier than the first."
 canonical: "https://medium.com/@sinclairhuang/ai-is-getting-a-ticker-an-agent-and-a-body-40ad2022c608?source=rss-1f713d63bb6a------2"
 primary_cluster: "capital-and-society"
 related_clusters: ["robotics", "ai-infrastructure"]
