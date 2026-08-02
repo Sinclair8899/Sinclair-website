@@ -9,6 +9,26 @@ description: "Academic publications, working papers, and research outputs by Sin
 
 ---
 
+**The Illusion of Winning Streaks: Regime Dependence, Tail Deferral, and Survivorship Bias in Retail Fixed Coupon Notes**
+
+*Huang, Po-Sung (Sinclair)* (2026) | SSRN Working Paper No. 7106058
+
+A retail Fixed Coupon Note is, in economic substance, a short position in a worst-of down-and-in put sold by the investor. Using Monte-Carlo simulation and a 2000–2026 historical backtest across nine semiconductor stocks (~108,780 contracts), the paper argues that the long profit streaks investors observe are primarily a product of market regime and tail deferral: in a strong bull regime the two-year no-loss probability is 78%, yet the 5th-percentile five-year return is −71%, and a survivorship-bias stress test collapses the share of positive five-year outcomes from 64% to 27%. On policy, it proposes regime stress-disclosure and tail-tolerance suitability testing rather than wealth-based access gates.
+
+[View on SSRN →](https://ssrn.com/abstract=7106058)
+
+---
+
+**The Mid-2026 Semiconductor Correction: AI Infrastructure, Model Mis-Specification, and Memory as a Bottleneck Asset**
+
+*Huang, Po-Sung (Sinclair)* (2026) | SSRN Working Paper No. 7013899
+
+Uses the divergence in analyst and retail commentary around Micron Technology during the mid-2026 correction as a case study in regime mis-specification — applying a prior-cycle statistical model to a structurally transformed market. Building on the Irreplaceability Index (IRI), the Equipment-CapEx Divergence Ratio (ECDR), and gross margin as a real-time regime indicator, it argues the June 2026 correction is broadly consistent with a macrofinancial repricing event rather than AI infrastructure demand collapse — a stress test of the framework, not a price forecast.
+
+[View on SSRN →](https://ssrn.com/abstract=7013899)
+
+---
+
 **Hype Volatility Premium in AI-Linked Structured Products: Evidence from Fixed Coupon Note Pricing Residuals**
 
 *Huang, Po-Sung (Sinclair)* (2026) | SSRN Working Paper No. 6535178 | *Posted: April 7, 2026 | Under Review*

@@ -60,6 +60,9 @@ production baseURL, then `scripts/check_site.sh docs <prev-inventory>`:
   for fixtures; production runs use the repo's `content/`.
 - a URL that disappears vs the previous build **fails the build** unless it has
   a row in `redirects.tsv`
+- every SSRN id in `ssrn-basketing.tsv` (the approved paper basket) must
+  appear on the rendered Publications page — adding a paper to the basket
+  without syncing the page fails the build
 
 All three content CI workflows run this same script (they install Hugo
 0.152.2 via peaceiris/actions-hugo and share
@@ -71,9 +74,10 @@ concurrency group.
 An unattended build that hits a new warning fails and leaves the live site as
 it was — that is the safe outcome, not an inconvenience.
 
-The checker itself is negative-tested: `scripts/test_checks.sh` runs 44
-cases — 1 pristine (must pass), 30 seeded tree faults through the FULL
-check_site.sh plus 3 source-side CTA faults against throwaway trees
+The checker itself is negative-tested: `scripts/test_checks.sh` runs 45
+cases — 1 pristine (must pass), 31 seeded tree faults through the FULL
+check_site.sh (including a Publications page stripped of a basket SSRN
+id) plus 3 source-side CTA faults against throwaway trees
 (must each fail, the newer ones asserted on their specific error
 messages so they cannot pass for the wrong reason), 5 positive cases
 (must pass), 2 REAL Hugo builds proving the dispatcher's errorf

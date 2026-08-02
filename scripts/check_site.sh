@@ -89,5 +89,17 @@ else
   echo "NOTE: no previous inventory supplied — disappeared-URL gate skipped"
 fi
 
+# 8. Publications sync: every SSRN id in the approved basket
+#    (ssrn-basketing.tsv) must appear on the rendered Publications page —
+#    a paper added to the basket can never silently miss the sync again
+#    (7013899/7106058 were absent for a whole round before Release 3A).
+if [ -f "$REPO/ssrn-basketing.tsv" ] && [ -f "$DOCS/publications/index.html" ]; then
+  while IFS="$(printf '\t')" read -r sid _rest; do
+    case "$sid" in ''|\#*|ssrn_id) continue ;; esac
+    grep -q "ssrn.com/abstract=$sid" "$DOCS/publications/index.html" \
+      || { echo "PUBLICATIONS MISSING SSRN ID: $sid"; FAIL=1; }
+  done < "$REPO/ssrn-basketing.tsv"
+fi
+
 [ "$FAIL" = 0 ] && echo "SITE CHECKS PASSED" || echo "SITE CHECKS FAILED"
 exit "$FAIL"
