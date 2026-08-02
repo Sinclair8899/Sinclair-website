@@ -9,11 +9,11 @@ description: "Academic publications, working papers, and research outputs by Sin
 
 ---
 
-**The Illusion of Winning Streaks: Regime Dependence, Tail Deferral, and Survivorship Bias in Retail Fixed Coupon Notes**
+**When Winning Streaks Mislead: Regime Dependence, Tail Deferral, and Survivorship Bias in Retail Fixed Coupon Notes**
 
 *Huang, Po-Sung (Sinclair)* (2026) | SSRN Working Paper No. 7106058
 
-A retail Fixed Coupon Note is, in economic substance, a short position in a worst-of down-and-in put sold by the investor. Using Monte-Carlo simulation and a 2000–2026 historical backtest across nine semiconductor stocks (~108,780 contracts), the paper argues that the long profit streaks investors observe are primarily a product of market regime and tail deferral: in a strong bull regime the two-year no-loss probability is 78%, yet the 5th-percentile five-year return is −71%, and a survivorship-bias stress test collapses the share of positive five-year outcomes from 64% to 27%. On policy, it proposes regime stress-disclosure and tail-tolerance suitability testing rather than wealth-based access gates.
+A retail Fixed Coupon Note is, in economic substance, a short position in a worst-of down-and-in put sold by the investor. The paper asks what a long no-assignment streak reveals about future tail risk, using "streak illusion" in a statistical — not psychometric — sense: regime-dependent tail deferral can generate a benign record that says little about resilience after a state change. In a strong-bull benchmark, eight placements avoid assignment about 78% of the time (contract counts, not calendar time), yet a 1,260-trading-day simulation starting in a bull state has a −8.9% median total return and a −71.8% 5th percentile; across nine surviving semiconductor stocks (108,780 overlapping observations), assignment clusters in 2000–02 and 2008, reaching 54.4%. The evidence supports state-conditional risk disclosure; effects on investor understanding or choice require separate investor-level data.
 
 [View on SSRN →](https://ssrn.com/abstract=7106058)
 

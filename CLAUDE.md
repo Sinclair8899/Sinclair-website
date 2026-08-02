@@ -170,6 +170,15 @@ with `git -c core.quotePath=false`.
 
 ## Content gotchas
 
+- **Paper-metadata source priority**: the live SSRN record / posted PDF
+  always wins over pre-upload artifacts — Zenodo upload-field drafts,
+  submission checklists, and manuscript versions can carry a different
+  title, different numbers, and weaker caveats than what was actually
+  posted (7106058's draft title, CI, and survivorship framing all
+  diverged from the posted version). When SSRN blocks automated access,
+  source from the posted PDF, and leave unverifiable fields (posted
+  date, review status) blank for manual fill — never from drafts.
+
 - **Medium imports corrupt links and headings**: nested `[t]([url](url))`,
   asterisk-wrapped `[t](*url*)`, run-on headings (`#### ReferencesText…`),
   `****` bold junk, and U+00A0 non-breaking spaces inside sentences. The
