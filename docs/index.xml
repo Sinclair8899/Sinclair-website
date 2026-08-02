@@ -9,18 +9,18 @@
     <lastBuildDate>Sun, 02 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sinclairhuang.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Research Brief: The Illusion of Winning Streaks</title>
-      <link>https://sinclairhuang.org/insights/research-brief-illusion-of-winning-streaks/</link>
-      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/insights/research-brief-illusion-of-winning-streaks/</guid>
-      <description>A bilingual research brief of SSRN 7106058: why long no-loss streaks in retail Fixed Coupon Notes reflect market regime and tail deferral, not skill.</description>
-    </item>
-    <item>
       <title>Research Brief: The Mid-2026 Semiconductor Correction</title>
       <link>https://sinclairhuang.org/insights/research-brief-mid-2026-semiconductor-correction/</link>
       <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/insights/research-brief-mid-2026-semiconductor-correction/</guid>
       <description>A bilingual research brief of SSRN 7013899: why the mid-2026 semiconductor correction reads as macrofinancial repricing rather than AI demand collapse.</description>
+    </item>
+    <item>
+      <title>Research Brief: When Winning Streaks Mislead</title>
+      <link>https://sinclairhuang.org/insights/research-brief-illusion-of-winning-streaks/</link>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/insights/research-brief-illusion-of-winning-streaks/</guid>
+      <description>A bilingual research brief of SSRN 7106058: what a long no-assignment streak in retail Fixed Coupon Notes reveals, statistically, about future tail risk.</description>
     </item>
     <item>
       <title>AI Infrastructure</title>

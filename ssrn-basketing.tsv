@@ -10,8 +10,7 @@ ssrn_id	title	primary_cluster	related_clusters	reading_path_role
 6241778	AI-Driven Value Redistribution	semiconductors	capital-and-society,ai-infrastructure	Pillar 2 optional
 6195878	Information Depth	capital-and-society		Capital Featured
 6184459	Vision-Only FSD vs Sensor Fusion	robotics	semiconductors,ai-infrastructure	Robotics Featured; P2 edge optional
-7013899	The Mid-2026 Semiconductor Correction	ai-infrastructure	semiconductors,capital-and-society	Pillar 1 Featured/Core Research — NOT yet on Publications page; add during sync
-7106058	When Winning Streaks Mislead	capital-and-society		Not in P1/P2 — NOT yet on Publications page; add during sync
-# Note: none of the eight papers currently listed on the site qualifies as
-# Pillar 1's core paper — 7013899 fills that role. Publications page is out of
-# date (eight listed; 7013899 and 7106058 missing) — sync in a later round.
+7013899	The Mid-2026 Semiconductor Correction	ai-infrastructure	semiconductors,capital-and-society	Pillar 1 Featured/Core Research
+7106058	When Winning Streaks Mislead	capital-and-society		Not in P1/P2
+# Note: 7013899 is Pillar 1's core paper. Publications sync completed in
+# Release 3A (all ten basket ids listed; enforced by check_site.sh gate 8).
