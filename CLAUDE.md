@@ -175,25 +175,30 @@ with `git -c core.quotePath=false`.
   code points chosen in document order — never a `[:200]` cut; headings,
   figures/figcaptions, bylines, series labels, and Field Note version
   blocks are excluded; entities decoded, NBSP/whitespace normalized;
-  nested blocks AND excluded figure regions are block boundaries — the
-  open block flushes before either, so document order holds and text on
-  either side of a figure never fuses ("towardmillion-GPU" is the
-  canonical counterexample). Exclusion heuristics keep prose: a byline
-  is case-insensitive "By " plus 1–5 tokens that ALL have name shape
-  (capitalized words, initials `H.`, honorifics `Dr.`,
-  hyphen/apostrophe/parenthesis compounds, optional trailing period) —
-  so "By Jane Doe.", "By Dr. Jane Doe", "By H. L. Cheung" are noise
-  while "By 2030, …", "By Grace, we made it home." and "By the way …"
-  stay body text; a Field Note block needs a version token
-  (`Field Note v4`). Titles/descriptions are YAML-escaped as single
-  physical lines (`\n`/`\r`/`\t` escapes), so a multiline or
-  `---`-bearing title can never fake a front-matter delimiter. An
-  article with no compliant sentence group makes the WHOLE import run
-  exit nonzero (CI fails, nothing commits) and is NOT recorded in
-  `imported_medium.json`, so it retries after a fix. Offline tests
-  (`test_import_medium.py`, 23 cases, socket-disabled, zero
-  third-party) run in the workflow BEFORE feedparser/requests install
-  and any network fetch.
+  nested blocks, excluded figure regions, AND `<br>` soft breaks are all
+  block boundaries — the open block flushes before each, so document
+  order holds and text never fuses across them ("towardmillion-GPU" is
+  the canonical counterexample). Bylines never reach the sentence pool
+  in ANY position: standalone blocks are noise, `<br>`-separated lines
+  become their own blocks, and an inline byline OPENING a body block
+  ("By Jane Doe. As AI clusters …") is removed by strip_byline_prefix.
+  A byline is case-insensitive "By " plus 1–5 tokens that ALL have name
+  shape — UNICODE-aware uppercase via str.isupper()/isalpha(), never
+  ASCII `[A-Z]`, so "By Élodie Dupont" and "By José Álvarez" count —
+  covering capitalized words, initials `H.`, honorifics `Dr.`,
+  hyphen/apostrophe/parenthesis compounds, and an optional trailing
+  period; the prefix ends at the first ≥2-letter name word carrying the
+  period. Prose stays body text: "By 2030, …", "By Grace, we made it
+  home.", "By the way …" all fail token shape and are never stripped.
+  A Field Note block needs a version token (`Field Note v4`).
+  Titles/descriptions are YAML-escaped as single physical lines
+  (`\n`/`\r`/`\t` escapes), so a multiline or `---`-bearing title can
+  never fake a front-matter delimiter. An article with no compliant
+  sentence group makes the WHOLE import run exit nonzero (CI fails,
+  nothing commits) and is NOT recorded in `imported_medium.json`, so it
+  retries after a fix. Offline tests (`test_import_medium.py`, 29
+  cases, socket-disabled, zero third-party) run in the workflow BEFORE
+  feedparser/requests install and any network fetch.
 - PaperMod's footer is `partialCached` — per-section footer content must go in
   section-scoped single templates (`layouts/blog/single.html`,
   `layouts/insights/single.html` → `partials/advisory_cta.html`), never in

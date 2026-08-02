@@ -219,6 +219,47 @@ class TransformTests(unittest.TestCase):
         self.assertNotIn("towardmillion", joined)
         self.assertNotIn("cap text", joined)
 
+    # --- Step 5 follow-up 3: inline and Unicode bylines ---
+
+    def test_inline_byline_in_same_paragraph_is_stripped(self):
+        desc = mt.description_from_html(f"<p>By Jane Doe. {self.EXPLOIT_SENTENCE}</p>")
+        self.assertEqual(desc, self.EXPLOIT_SENTENCE)
+        self.assertNotIn("Jane Doe", desc)
+
+    def test_br_separated_byline_is_stripped(self):
+        desc = mt.description_from_html(f"<p>By Jane Doe<br>{self.EXPLOIT_SENTENCE}</p>")
+        self.assertEqual(desc, self.EXPLOIT_SENTENCE)
+        self.assertNotIn("Jane Doe", desc)
+
+    def test_inline_honorific_byline_is_stripped(self):
+        desc = mt.description_from_html(f"<p>By Dr. Jane Doe. {self.EXPLOIT_SENTENCE}</p>")
+        self.assertEqual(desc, self.EXPLOIT_SENTENCE)
+        self.assertNotIn("Dr.", desc)
+
+    def test_inline_initials_byline_is_stripped(self):
+        desc = mt.description_from_html(f"<p>By H. L. Cheung. {self.EXPLOIT_SENTENCE}</p>")
+        self.assertEqual(desc, self.EXPLOIT_SENTENCE)
+        self.assertNotIn("Cheung", desc)
+        self.assertNotIn("L.", desc)
+
+    def test_unicode_uppercase_bylines_are_noise(self):
+        self.assertTrue(mt.is_noise("By Élodie Dupont"))
+        self.assertTrue(mt.is_noise("By José Álvarez."))
+        for byline in ("By Élodie Dupont.", "By José Álvarez."):
+            desc = mt.description_from_html(f"<p>{byline}</p><p>{self.EXPLOIT_SENTENCE}</p>")
+            self.assertEqual(desc, self.EXPLOIT_SENTENCE)
+        inline = mt.description_from_html(f"<p>By Élodie Dupont. {self.EXPLOIT_SENTENCE}</p>")
+        self.assertEqual(inline, self.EXPLOIT_SENTENCE)
+
+    def test_prose_counterexamples_survive_prefix_stripping(self):
+        for prose in (
+            "By 2030, the grid will double.",
+            "By Grace, we made it home before dark.",
+            "By the way, this matters a lot.",
+        ):
+            self.assertFalse(mt.is_noise(prose))
+            self.assertEqual(mt.strip_byline_prefix(prose), prose)
+
     def test_nofit_makes_importer_fail_nonzero_without_recording(self):
         import tempfile
         import types
