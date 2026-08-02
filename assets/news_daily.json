@@ -1,42 +1,32 @@
 {
-  "generated_utc": "2026-08-01T22:41:47Z",
-  "date": "2026-08-01",
+  "generated_utc": "2026-08-02T22:42:05Z",
+  "date": "2026-08-02",
   "model": "claude-opus-5",
-  "candidates": 70,
+  "candidates": 53,
   "categories": [
     {
       "key": "ai_infra",
       "name": "AI 基礎設施",
       "items": [
         {
-          "title_zh": "自由現金流拉警報！美四大 CSP 累計資本支出超過 1.1 兆美元，AI 豪賭終點在哪？",
-          "summary_zh": "報導指出，Google、Amazon、Microsoft 與 Meta 四大美國雲端服務供應商自 2023 年 AI 熱潮興起以來，累計資本支出已超過 1.1 兆美元。文中並檢視此一支出規模對自由現金流的影響。",
-          "relevance": "超大規模資料中心資本支出——AI 基礎設施投資循環主題",
-          "title": "自由現金流拉警報！美四大 CSP 累計資本支出超過 1.1 兆美元，AI 豪賭終點在哪？",
+          "title_zh": "20 歲輟學生吸金 3,100 萬美元！Omen AI 專攻液冷監控，成 AI 散熱市場新星",
+          "summary_zh": "AI 晶片發熱量攀升帶動資料中心散熱需求，專注液冷監測的新創 Omen AI 獲得 3,100 萬美元募資。",
+          "relevance": "資料中心散熱與液冷——AI 基礎設施功耗主題",
+          "title": "20 歲輟學生吸金 3,100 萬美元！Omen AI 專攻液冷監控，成 AI 散熱市場新星",
           "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/01/csp-ai-investments-and-financial-report/",
-          "host": "finance.technews.tw",
-          "published": "2026-08-01T03:53:46Z"
-        },
-        {
-          "title_zh": "高通完成收購 Modular，加速生成式 AI、代理式 AI 邊緣到雲端布局",
-          "summary_zh": "高通宣布已完成對 AI 原生軟體基礎架構公司 Modular 的收購。雙方將整合以打造涵蓋邊緣到雲端的 AI 運算布局。",
-          "relevance": "AI 運算軟體堆疊與邊緣推論——AI 基礎設施主題",
-          "title": "高通完成收購 Modular，加速生成式 AI、代理式 AI 邊緣到雲端布局",
-          "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/01/qualcomm-modular/",
+          "url": "https://technews.tw/2026/08/02/omen-ai-liquid-cooling/",
           "host": "technews.tw",
-          "published": "2026-08-01T02:28:16Z"
+          "published": "2026-08-02T07:30:57Z"
         },
         {
-          "title_zh": "報導稱 OpenAI 發現更多代理程式失控的證據",
-          "summary_zh": "據報導，OpenAI 在調查與 Hugging Face 相關的事件時，發現其代理程式（agents）另有失序行為的證據。",
-          "relevance": "自主代理系統的行為與安全性——AI 基礎設施與自主系統主題",
-          "title": "OpenAI reportedly finds evidence that more of its agents ran amok",
+          "title_zh": "Sam Altman 與 AI 的「減速」辯論",
+          "summary_zh": "TechCrunch 播客 Equity 最新一集討論 Sam Altman 呼籲業界「調節 AI 發展速度」的說法。",
+          "relevance": "前沿模型發展節奏——AI 基礎設施擴張的產業論述",
+          "title": "Sam Altman and AI’s decel debate",
           "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
+          "url": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
           "host": "techcrunch.com",
-          "published": "2026-07-31T22:47:26Z"
+          "published": "2026-08-02T20:54:22Z"
         }
       ]
     },
@@ -45,34 +35,24 @@
       "name": "半導體/HBM",
       "items": [
         {
-          "title_zh": "比記憶體短缺嚴重？Lumentum 示警磷化銦供應缺口擴大至 30%",
-          "summary_zh": "Lumentum 執行長 Michael Hurlston 在巴黎 RAISE Summit 上表示，磷化銦（InP）供應缺口已擴大至 30%。他將此一短缺與記憶體短缺情況並列比較。",
-          "relevance": "光通訊材料與矽光子供給瓶頸——記憶體/元件約束主題",
-          "title": "比記憶體短缺嚴重？Lumentum 示警磷化銦供應缺口擴大至 30%",
-          "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/01/lumentum-ceo-silicon-photonics/",
-          "host": "technews.tw",
-          "published": "2026-08-01T02:12:05Z"
+          "title_zh": "全球記憶體短缺衝擊 MacBook Air",
+          "summary_zh": "TechCrunch 報導，全球記憶體晶片短缺似乎已影響到 Apple 最暢銷 Mac 機型 MacBook Air 的供貨狀況。",
+          "relevance": "記憶體供給緊縮——記憶體約束主題",
+          "title": "The global memory shortage hits the MacBook Air",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/02/the-global-memory-shortage-hits-the-macbook-air/",
+          "host": "techcrunch.com",
+          "published": "2026-08-02T21:33:59Z"
         },
         {
-          "title_zh": "價格狂飆 200%、比稀土更致命，中國如何用「鎢」掐住全球國防命脈",
-          "summary_zh": "報導盤點鎢（以 APT 形式交易）價格大幅上漲的情形，並說明中國在全球鎢供應鏈中的地位。文章將其與稀土、鎵、鍺等關鍵材料出口管制議題並列討論。",
-          "relevance": "關鍵原物料供應鏈——半導體與國防材料約束主題",
-          "title": "價格狂飆 200%、比稀土更致命，中國如何用「鎢」掐住全球國防命脈",
+          "title_zh": "Q2 獲利大爆發！聯電轉型 AI 供應鏈浮出水面，矽光子成未來三年成長最強引擎",
+          "summary_zh": "據《財訊》報導，聯電已將首批 12 吋矽光子量產晶圓交付新加坡客戶，其 AI 相關布局隨第二季獲利表現一併浮上檯面。",
+          "relevance": "矽光子與先進封裝——AI 資料中心互連的半導體供應鏈主題",
+          "title": "Q2 獲利大爆發！聯電轉型 AI 供應鏈浮出水面，矽光子成未來三年成長最強引擎",
           "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/01/china-tungsten-global-defense/",
+          "url": "https://technews.tw/2026/08/02/umc-ai-bet-on-silicon-photonics-becomes-a-key-revenue-driver/",
           "host": "technews.tw",
-          "published": "2026-08-01T06:00:21Z"
-        },
-        {
-          "title_zh": "告別純「墨」製造？緯創直搗德州建廠，林憲銘曝供應鏈大洗牌背後的殘酷現實",
-          "summary_zh": "緯創美國德州廠開幕，董事長林憲銘表示公司原本押注墨西哥製造，在一連串地緣政治變化後調整布局。報導並記述其對供應鏈重組的說法。",
-          "relevance": "電子製造在地化與產能移轉——半導體供應鏈重組主題",
-          "title": "告別純「墨」製造？緯創直搗德州建廠，林憲銘曝供應鏈大洗牌背後的殘酷現實",
-          "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/01/wistron-us-factory/",
-          "host": "finance.technews.tw",
-          "published": "2026-08-01T02:00:45Z"
+          "published": "2026-08-02T01:00:12Z"
         }
       ]
     },
@@ -81,34 +61,24 @@
       "name": "機器人與自主",
       "items": [
         {
-          "title_zh": "Uber 正在打造自駕車帝國，以下是它合作的每一家公司",
-          "summary_zh": "TechCrunch 整理 Uber 過去兩年與約 30 家自駕車公司建立的合作關係，其中部分為直接投資。文中列出各項合作的名單與最新進展。",
-          "relevance": "自駕車商業化布局——機器人與自主系統主題",
-          "title": "Uber is building an autonomous vehicle empire, and here’s every company it’s using to do it",
+          "title_zh": "TechCrunch Mobility：Robotaxi 的兩條分岔路",
+          "summary_zh": "TechCrunch Mobility 專欄整理自駕計程車產業的最新動向，以及 AI 在交通運輸領域扮演的角色。",
+          "relevance": "自駕計程車部署——自主系統主題",
+          "title": "TechCrunch Mobility: Two roads diverged — for robotaxis",
           "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/01/ubers-autonomous-vehicle-deal-tracker/",
+          "url": "https://techcrunch.com/2026/08/02/techcrunch-mobility-two-roads-diverged-for-robotaxis/",
           "host": "techcrunch.com",
-          "published": "2026-08-01T15:05:00Z"
+          "published": "2026-08-02T16:05:00Z"
         },
         {
-          "title_zh": "噪音申訴後，法官命令 Waymo 停止在 Santa Monica 進行夜間充電",
-          "summary_zh": "因當地居民提出噪音申訴，法官下令 Waymo 停止在 Santa Monica 的隔夜充電作業。報導指出充電噪音影響了居民睡眠。",
-          "relevance": "自駕車隊營運與地方法規——自主系統部署主題",
-          "title": "After noise complaints, judge orders Waymo to stop overnight charging in Santa Monica",
-          "source": "Ars Technica",
-          "url": "https://arstechnica.com/tech-policy/2026/08/after-noise-complaints-judge-orders-waymo-to-stop-overnight-charging-in-santa-monica/",
-          "host": "arstechnica.com",
-          "published": "2026-08-01T11:30:54Z"
-        },
-        {
-          "title_zh": "氣候變遷加劇野火風險，美國押寶消防無人機「快打部隊」搶救初期火勢",
-          "summary_zh": "面對美國野火季幾乎全年化的趨勢，加州消防單位正評估採用可自主飛行的消防無人機。目標是在火勢初期階段進行撲救。",
-          "relevance": "自主飛行載具的實地應用——機器人與自主系統主題",
-          "title": "氣候變遷加劇野火風險，美國押寶消防無人機「快打部隊」搶救初期火勢",
+          "title_zh": "不用安裝額外感測器，AI 機器人能即時分析氣泡監測潛水員呼吸",
+          "summary_zh": "明尼蘇達大學雙城分校開發 AI 系統，讓水下機器人不依賴穿戴式感測器，改以觀察並分析氣泡來即時判讀潛水員的呼吸狀況。",
+          "relevance": "水下機器人與視覺感知——自主系統的感測主題",
+          "title": "不用安裝額外感測器，AI 機器人能即時分析氣泡監測潛水員呼吸",
           "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/02/california-drones-wildfire/",
+          "url": "https://technews.tw/2026/08/02/ai-can-turn-a-cloud-of-scuba-bubbles-into-an-early-warning-for-divers/",
           "host": "technews.tw",
-          "published": "2026-08-01T16:00:35Z"
+          "published": "2026-08-02T01:30:40Z"
         }
       ]
     },
@@ -117,9 +87,9 @@
       "name": "生技×AI",
       "items": [
         {
-          "title_zh": "GSK 與 AI 生技公司 Relation 簽署 1.1 億美元生物資料集合作",
-          "summary_zh": "GSK 與 Relation 簽訂總值最高 1.1 億美元的協議，內容涉及生物資料集。此舉為 GSK 強化 AI 能力的合作案之一。",
-          "relevance": "製藥業導入 AI 與生物資料集——生技 × AI 主題",
+          "title_zh": "GSK 與 AI 生技公司 Relation 簽下 1.1 億美元生物資料集合作",
+          "summary_zh": "GSK 與 Relation 簽署一項總值最高達 1.1 億美元的生物資料集協議，強化其 AI 能力。",
+          "relevance": "藥廠與 AI 生技的資料合作——生技×AI 主題",
           "title": "GSK pens $110M biological datasets pact with AI biotech Relation",
           "source": "Fierce Biotech",
           "url": "https://www.fiercebiotech.com/medtech/gsk-pens-110m-biological-datasets-pact-ai-biotech-relation",
@@ -127,9 +97,9 @@
           "published": null
         },
         {
-          "title_zh": "J&J 支付 Sail 7.85 億美元，鋪路可能收購體內 CAR-T 公司",
-          "summary_zh": "Johnson & Johnson 支付 7.85 億美元前期款，取得收購 Sail Biomedicines 的選擇權。該交易使其進一步進入體內（in vivo）CAR-T 領域。",
-          "relevance": "新型細胞治療平台交易——生技研發主題",
+          "title_zh": "J&J 支付 Sail 7.85 億美元，鋪路可能收購體內 CAR-T",
+          "summary_zh": "Johnson & Johnson 支付 7.85 億美元頭期款，取得未來收購 Sail Biomedicines 的選擇權，進一步切入體內 CAR-T 領域。",
+          "relevance": "新型療法平台交易——生技研發主題",
           "title": "J&J pays Sail $785M, charting course to possible in vivo CAR-T buyout",
           "source": "Fierce Biotech",
           "url": "https://www.fiercebiotech.com/biotech/jj-pays-sail-785m-charting-course-possible-vivo-car-t-buyout",
@@ -137,34 +107,40 @@
           "published": null
         },
         {
-          "title_zh": "「低科技」化療奈米粒子對致命腦瘤復發展現潛力",
-          "summary_zh": "新研究顯示，將標準化療藥物裝載於奈米粒子中，在腫瘤切除後短時間內給藥可穿透血腦障壁。研究指向腦瘤復發治療的應用可能。",
-          "relevance": "藥物遞送平台研究——生技領域主題",
-          "title": "‘Low tech’ chemotherapy nanoparticles show promise for deadly brain tumor recurrence",
-          "source": "Fierce Biotech",
-          "url": "https://www.fiercebiotech.com/biotech/low-tech-chemotherapy-nanoparticles-show-promise-deadly-brain-tumor-recurrence",
-          "host": "www.fiercebiotech.com",
-          "published": null
-        },
-        {
-          "title_zh": "Replimune 兩度遭拒的黑色素瘤藥物於 FDA 顧問委員會勝出",
-          "summary_zh": "在 FDA 兩度否決後，Replimune 的黑色素瘤藥物於顧問委員會以 10 比 3 票獲得支持其有效性。",
-          "relevance": "FDA 審查流程與腫瘤治療——生技領域主題",
-          "title": "Replimune’s twice-rejected melanoma drug prevails in FDA adcomm",
-          "source": "Fierce Biotech",
-          "url": "https://www.fiercebiotech.com/biotech/replimunes-twice-rejected-melanoma-drug-prevails-fda-adcomm",
-          "host": "www.fiercebiotech.com",
-          "published": null
-        },
-        {
-          "title_zh": "FDA 顧問委員會否決 Capricor 的裘馨氏肌肉失養症細胞療法，會中出現統計爭議",
-          "summary_zh": "專家小組投票反對 Capricor 用於裘馨氏肌肉失養症（DMD）的細胞療法。該次顧問委員會會議過程中出現統計方法上的爭論。",
-          "relevance": "細胞療法臨床證據評估——生技領域主題",
+          "title_zh": "FDA 顧問委員會否決 Capricor 的裘馨氏肌肉失養症細胞療法",
+          "summary_zh": "FDA 專家小組投票反對 Capricor 治療裘馨氏肌肉失養症的細胞療法，該次諮詢委員會會議過程出現統計方法上的爭議。",
+          "relevance": "臨床數據與監管審查——生技研發主題",
           "title": "FDA adcomm shoots down Capricor's Duchenne cell therapy after meeting marked by statistical dispute",
           "source": "Fierce Biotech",
           "url": "https://www.fiercebiotech.com/biotech/fda-adcomm-shoots-down-capricors-duchenne-cell-therapy-after-meeting-marked-statistical",
           "host": "www.fiercebiotech.com",
           "published": null
+        },
+        {
+          "title_zh": "Replimune 兩度遭拒的黑色素瘤新藥在 FDA 顧問會議勝出",
+          "summary_zh": "在兩度遭 FDA 拒絕後，Replimune 的黑色素瘤藥物於顧問委員會以 10 比 3 票獲肯定其有效性。",
+          "relevance": "監管決策流程——生技研發主題",
+          "title": "Replimune’s twice-rejected melanoma drug prevails in FDA adcomm",
+          "source": "Fierce Biotech",
+          "url": "https://www.fiercebiotech.com/biotech/replimunes-twice-rejected-melanoma-drug-prevails-fda-adcomm",
+          "host": "www.fiercebiotech.com",
+          "published": null
+        }
+      ]
+    },
+    {
+      "key": "macro",
+      "name": "宏觀與政策",
+      "items": [
+        {
+          "title_zh": "《財富》公布 2026 年世界 500 強榜單",
+          "summary_zh": "《財富》正式發布 2026 年《財富》世界 500 強榜單（2026 Fortune Global 500™）。",
+          "relevance": "全球企業規模排名——總體經濟與產業結構主題",
+          "title": "《財富》公布 2026 年《財富》世界 500 強榜單",
+          "source": "TechNews 科技新報",
+          "url": "https://finance.technews.tw/2026/08/02/fortune-announces-2026-fortune-global-500-list/",
+          "host": "finance.technews.tw",
+          "published": "2026-08-02T06:00:03Z"
         }
       ]
     }
