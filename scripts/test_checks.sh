@@ -378,6 +378,17 @@ printf '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=ht
   > "$TMP/case/blog/fake-refresh-page/index.html"
 expect fake-refresh-not-an-alias fail "$TMP/case" "UNEXPECTED ARTICLE PAGE"
 
+fresh
+python3 - "$TMP/case/publications/index.html" <<'PY'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+t = p.read_text()
+needle = 'https://ssrn.com/abstract=7106058'
+assert needle in t
+p.write_text(t.replace(needle, 'https://ssrn.com/abstract=0000000'))
+PY
+expect publications-missing-ssrn-id fail "$TMP/case" "PUBLICATIONS MISSING SSRN ID"
+
 # The dispatcher's errorf contract is proven against REAL Hugo builds on
 # throwaway mini sites that use the actual partial.
 hugo_dispatcher_case() { # <name> <extra-front-matter> <required-message>
