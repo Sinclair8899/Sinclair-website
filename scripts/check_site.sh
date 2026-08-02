@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 # Post-build acceptance checks, testable against any built tree.
-# Usage: scripts/check_site.sh [DOCS_DIR] [PREV_URL_INVENTORY_FILE]
-#   DOCS_DIR defaults to docs; PREV inventory enables the disappeared-URL gate.
+# Usage: scripts/check_site.sh [DOCS_DIR] [PREV_URL_INVENTORY_FILE] [CONTENT_ROOT]
+#   DOCS_DIR defaults to docs; PREV inventory enables the disappeared-URL gate;
+#   CONTENT_ROOT overrides the CTA gate's source root (fixtures only —
+#   production runs use the repo's content/).
 # Exits 1 on any failure. Negative-tested by scripts/test_checks.sh.
 set -uo pipefail
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 DOCS="${1:-docs}"
 PREV="${2:-}"
+CONTENT="${3:-}"
 FAIL=0
 
 # 1. Root files that must survive every build (all sourced from static/)
@@ -54,29 +57,19 @@ python3 "$REPO/scripts/check_taxonomy_policy.py" "$DOCS" || FAIL=1
 # 5. Internal links, assets, anchors, sitemap (rejects relative/malformed URLs)
 python3 "$REPO/scripts/check_links.py" "$DOCS" || FAIL=1
 
-# 6. CTA: exactly one per rendered article (blog + insights), any nesting depth;
-#    section indexes, pagination, and alias stubs excluded
-ARTICLES=0 CTA_ERRS=0
-while IFS= read -r f; do
-  case "$f" in
-    "$DOCS/blog/index.html"|"$DOCS/insights/index.html") continue ;;
-    */page/*) continue ;;
-  esac
-  grep -q 'http-equiv="refresh"' "$f" && continue   # alias stub
-  ARTICLES=$((ARTICLES + 1))
-  n=$(grep -oE 'class="([^"]* )?advisory-cta( [^"]*)?"' "$f" | wc -l | tr -d ' ')
-  [ "$n" = 1 ] || { echo "CTA COUNT $n (expected 1): $f"; CTA_ERRS=$((CTA_ERRS + 1)); }
-done < <(find "$DOCS/blog" "$DOCS/insights" -name index.html 2>/dev/null | sort)
-[ "$CTA_ERRS" = 0 ] || FAIL=1
-[ "$ARTICLES" -gt 0 ] || { echo "CTA CHECK FOUND NO ARTICLES"; FAIL=1; }
-echo "CTA: $ARTICLES article pages, each with exactly one CTA: $([ "$CTA_ERRS" = 0 ] && echo yes || echo NO)"
-
-# 6b. CTA routing (Step 4): every blog/insights article's rendered CTA must
-#     match its front-matter cta param — count, data-cta-type, and exact
-#     target — parsed semantically by scripts/check_cta_routing.py.
-#     Expectations derive from source front matter dynamically; release
-#     acceptance asserts the split of the day separately.
-python3 "$REPO/scripts/check_cta_routing.py" "$DOCS" || FAIL=1
+# 6. CTA routing (Step 4, sole authoritative CTA gate): every blog/insights
+#    article's rendered CTA must match its front-matter cta param — count
+#    (advisory/subscribe exactly one, none exactly zero), data-cta-type,
+#    and exact target — parsed semantically by scripts/check_cta_routing.py.
+#    Expectations derive from source front matter dynamically; an empty
+#    non-draft article set is itself a failure. The optional third
+#    CONTENT_ROOT argument exists for fixtures; production default is the
+#    repo's content/.
+if [ -n "$CONTENT" ]; then
+  python3 "$REPO/scripts/check_cta_routing.py" "$DOCS" "$CONTENT" || FAIL=1
+else
+  python3 "$REPO/scripts/check_cta_routing.py" "$DOCS" || FAIL=1
+fi
 
 # 7. Disappeared URLs must be ledgered in redirects.tsv (machine-readable)
 if [ -n "$PREV" ] && [ -f "$PREV" ]; then

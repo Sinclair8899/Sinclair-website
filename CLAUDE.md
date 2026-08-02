@@ -36,22 +36,28 @@ production baseURL, then `scripts/check_site.sh docs <prev-inventory>`:
 - `scripts/check_links.py`: internal links, assets, cross-page anchors, sitemap
   `<loc>`s; **relative or malformed URLs are a hard failure** (they are broken
   Markdown links in disguise — see the 42-link Medium-import incident)
-- CTA appears **exactly once** per rendered blog/insights article
-  (class token `advisory-cta`; alias stubs excluded) — and is **routed**
-  by front matter: `.Params.cta` is the ONLY routing input
-  (`advisory` → `data-cta-type="advisory"`, target exactly
-  `/advisory/#projects`; `subscribe` → `data-cta-type="subscribe"`,
-  target exactly `https://sinclairhuang.substack.com/`; `none` → no CTA;
+- CTA is **routed** by front matter, and the semantic checker
+  `scripts/check_cta_routing.py` (gate 6) is the SOLE authoritative CTA
+  gate: `.Params.cta` is the ONLY routing input (`advisory` →
+  `data-cta-type="advisory"`, target exactly `/advisory/#projects`;
+  `subscribe` → `data-cta-type="subscribe"`, target exactly
+  `https://sinclairhuang.substack.com/`; **`none` → the article
+  publishes with ZERO CTA — a legal state, not a defect**;
   missing/unknown → the dispatcher `errorf`s and the BUILD FAILS).
   **A newly imported article without an explicit `cta` must never
   silently default to advisory** — the import flow has to write
-  `cta: "subscribe"` explicitly. `scripts/check_cta_routing.py`
-  (gate 6b) verifies count, type, and exact target per page with
-  semantic HTML parsing, deriving expectations dynamically from source
-  front matter; per-release splits (e.g. 18/11) are asserted by that
-  release's acceptance run, not hardcoded. Front matter is delimited by
-  FULL `---` lines — never split on the substring `---` (Medium
-  canonical URLs contain six-dash runs).
+  `cta: "subscribe"` explicitly. The gate verifies count
+  (advisory/subscribe exactly one, none exactly zero), type, and exact
+  target per page with semantic HTML parsing, derives expectations
+  dynamically from source front matter, fails on an EMPTY non-draft
+  article set, and only skips a page as an alias stub when it is
+  genuine (exactly one zero-second refresh whose target equals the
+  canonical AND normalizes onto a known article page). Per-release
+  splits (e.g. 18/11/0) are asserted by that release's acceptance run,
+  not hardcoded. Front matter is delimited by FULL `---` lines — never
+  split on the substring `---` (Medium canonical URLs contain six-dash
+  runs). `check_site.sh` takes an optional third CONTENT_ROOT argument
+  for fixtures; production runs use the repo's `content/`.
 - a URL that disappears vs the previous build **fails the build** unless it has
   a row in `redirects.tsv`
 
@@ -65,18 +71,24 @@ concurrency group.
 An unattended build that hits a new warning fails and leaves the live site as
 it was — that is the safe outcome, not an inconvenience.
 
-The checker itself is negative-tested: `scripts/test_checks.sh` runs 40
-cases — 1 pristine (must pass), 29 seeded tree faults through
+The checker itself is negative-tested: `scripts/test_checks.sh` runs 44
+cases — 1 pristine (must pass), 30 seeded tree faults through the FULL
 check_site.sh plus 3 source-side CTA faults against throwaway trees
 (must each fail, the newer ones asserted on their specific error
-messages so they cannot pass for the wrong reason), 4 positive cases
-(must pass), and 3 Hugo-version parsing fixtures. The nine CTA-routing
+messages so they cannot pass for the wrong reason), 5 positive cases
+(must pass), 2 REAL Hugo builds proving the dispatcher's errorf
+contract (missing cta and unknown cta each fail the build with their
+specific message), and 3 Hugo-version parsing fixtures. The CTA-routing
 cases: advisory↔subscribe type swaps, missing CTA, duplicate CTA,
-advisory target without `#projects`, wrong subscribe target (all six
-run the FULL check_site.sh, proving gate 6b is actually wired in),
-source cta missing, source cta unknown, none-page-with-CTA (direct
-calls), plus positives for attribute order and a harmless extra class
-token. The 23 faults are 12 non-taxonomy —
+advisory target without `#projects`, wrong subscribe target, and a
+fake refresh page that must NOT pass as an alias (all through the full
+harness, proving gate 6 is actually wired in), source cta missing,
+source cta unknown, none-page-with-CTA (direct calls); positives cover
+attribute order, a harmless extra class token, and a published
+cta:none article whose zero-CTA page passes the whole harness via the
+CONTENT_ROOT fixture override. Positive-case mutations are guarded: a
+failed seeding script fails the suite rather than silently testing the
+pristine tree. The 23 faults are 12 non-taxonomy —
 malformed relative link, `localhost:57206` leak, unledgered disappeared
 URL, duplicate CTA, backup file, sync-duplicate dirs
 `name 5`/`name 12`/`name (12)`, sync-duplicate files

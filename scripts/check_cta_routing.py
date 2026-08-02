@@ -35,9 +35,11 @@ Error message prefixes (stable, asserted by test_checks.sh):
   CTA TARGET WRONG / CTA ON NONE PAGE / UNEXPECTED ARTICLE PAGE
 """
 import os
+import posixpath
 import re
 import sys
 from html.parser import HTMLParser
+from urllib.parse import unquote, urlparse
 
 VALID_CTA = {"advisory", "subscribe", "none"}
 TARGETS = {
@@ -46,6 +48,7 @@ TARGETS = {
 }
 CTA_LINE = re.compile(r'^cta:\s*["\']?([A-Za-z0-9_-]+)["\']?\s*$')
 DRAFT_LINE = re.compile(r'^draft:\s*(true|false)\s*$')
+REFRESH_RE = re.compile(r"^\s*(\d+)\s*;\s*url\s*=\s*(\S+)\s*$", re.IGNORECASE)
 VOID_TAGS = frozenset(
     "area base br col embed hr img input link meta param source track wbr".split()
 )
@@ -70,13 +73,16 @@ class PageScan(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.ctas = []          # list of dicts: {type: str|None, hrefs: []}
-        self.refresh = False
+        self.refreshes = []     # raw content strings of http-equiv=refresh metas
+        self.canonicals = []    # canonical link hrefs
         self._stack = []        # depth counters for open CTA elements
 
     def handle_starttag(self, tag, attrs):
         a = {k.lower(): (v if v is not None else "") for k, v in attrs}
         if tag == "meta" and a.get("http-equiv", "").strip().lower() == "refresh":
-            self.refresh = True
+            self.refreshes.append(a.get("content", ""))
+        if tag == "link" and "canonical" in a.get("rel", "").lower().split():
+            self.canonicals.append(a.get("href", "").strip())
         in_cta = bool(self._stack)
         if tag == "a" and in_cta and "href" in a:
             self.ctas[self._stack[-1][0]]["hrefs"].append(a["href"])
@@ -99,6 +105,26 @@ def scan_page(path):
     with open(path, encoding="utf-8", errors="replace") as fh:
         scanner.feed(fh.read())
     return scanner
+
+
+def is_genuine_alias(scan, expected):
+    """A page may be skipped as an alias stub ONLY when it is a real one:
+    exactly one zero-second refresh, exactly one canonical, target equal to
+    the canonical, and the target — urlparse -> unquote once ->
+    posixpath.normpath — resolving to a KNOWN canonical article page. A
+    refresh pointing anywhere else keeps the page in scope and it will be
+    reported as UNEXPECTED ARTICLE PAGE."""
+    if len(scan.refreshes) != 1 or len(scan.canonicals) != 1:
+        return False
+    m = REFRESH_RE.match(scan.refreshes[0])
+    if not m or int(m.group(1)) != 0:
+        return False
+    target = m.group(2)
+    if not target or target != scan.canonicals[0]:
+        return False
+    norm = posixpath.normpath(unquote(urlparse(target).path))
+    rel = norm.strip("/") + "/index.html"
+    return rel in expected
 
 
 def main(docs, content_root):
@@ -139,6 +165,12 @@ def main(docs, content_root):
                 rel_page = os.path.splitext(os.path.relpath(src, content_root))[0]
                 expected[rel_page.replace(os.sep, "/") + "/index.html"] = cta
 
+    if not errors and not expected:
+        errors.append(
+            "NO NON-DRAFT ARTICLES FOUND under content blog/insights — "
+            "the CTA gate must never pass on an empty set"
+        )
+
     for rel_page, cta in sorted(expected.items()):
         page = os.path.join(docs, rel_page)
         if not os.path.isfile(page):
@@ -177,8 +209,8 @@ def main(docs, content_root):
                 continue  # section list + pagination
             if rel in expected:
                 continue
-            if scan_page(page).refresh:
-                continue  # alias stub
+            if is_genuine_alias(scan_page(page), expected):
+                continue  # genuine alias stub onto a known article
             errors.append(f"UNEXPECTED ARTICLE PAGE (no source mapping): {rel}")
 
     for line in errors[:20]:

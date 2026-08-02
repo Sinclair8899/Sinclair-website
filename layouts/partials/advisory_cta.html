@@ -19,7 +19,7 @@
   </h4>
   <p lang="en" style="margin:0 0 .6rem;color:var(--secondary)">I work directly with boards, executive teams, and investors through defined-scope projects on AI infrastructure, semiconductors, supply chains, and capital allocation.</p>
   <p lang="zh-Hant" style="margin:0 0 .6rem;color:var(--secondary)">我直接與董事會、經營團隊及投資人合作，就 AI 基礎設施、半導體、供應鏈與資本配置的具體問題，進行範圍明確的專案研究。</p>
-  <p style="margin:0"><a href="/advisory/#projects">Project engagements / 專案研究 →</a></p>
+  <p style="margin:0"><a href="/advisory/#projects"><span lang="en">Project engagements</span> / <span lang="zh-Hant">專案研究</span> →</a></p>
 </aside>
 {{- else if eq $cta "subscribe" -}}
 <aside class="advisory-cta" data-cta-type="subscribe" style="border:1px solid var(--border);border-radius:8px;padding:1.1rem 1.3rem;margin:2rem 0 1rem;line-height:1.7">
@@ -29,9 +29,11 @@
   </h4>
   <p lang="en" style="margin:0 0 .6rem;color:var(--secondary)">I continue to write about AI, semiconductors, industrial strategy, science, and the human consequences of technological change. Subscribe on Substack to receive new essays by email.</p>
   <p lang="zh-Hant" style="margin:0 0 .6rem;color:var(--secondary)">我持續撰寫 AI、半導體、產業策略、科學，以及科技變遷對人的影響。可在 Substack 訂閱，以電子郵件收到後續文章。</p>
-  <p style="margin:0"><a href="https://sinclairhuang.substack.com/">Subscribe on Substack / 在 Substack 訂閱 →</a></p>
+  <p style="margin:0"><a href="https://sinclairhuang.substack.com/"><span lang="en">Subscribe on Substack</span> / <span lang="zh-Hant">在 Substack 訂閱</span> →</a></p>
 </aside>
 {{- else if eq $cta "none" -}}
+{{- else if eq $cta nil -}}
+{{- errorf "advisory_cta dispatcher: %s is missing the cta front matter — every blog/insights article must set cta to \"advisory\", \"subscribe\", or \"none\" (no silent default)" .File.Path -}}
 {{- else -}}
-{{- errorf "advisory_cta dispatcher: %q has missing or unknown cta front matter %q — every blog/insights article must set cta to \"advisory\", \"subscribe\", or \"none\" (no silent default)" .File.Path $cta -}}
+{{- errorf "advisory_cta dispatcher: %s has unknown cta value %q — allowed values: advisory, subscribe, none (no silent default)" .File.Path $cta -}}
 {{- end -}}

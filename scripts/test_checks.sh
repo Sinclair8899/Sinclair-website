@@ -13,9 +13,9 @@ cp -R docs "$TMP/base"
 ARTICLE="blog/2026-06-06-ai-needs-a-place-to-land/index.html"   # ordinary article, not in ledger
 RESULT=0
 
-expect() { # expect <name> <pass|fail> <dir> [required-error-message]
-  local name=$1 want=$2 dir=$3 msg=${4:-} got
-  if scripts/check_site.sh "$dir" "$TMP/before" >"$TMP/out-$name" 2>&1; then got=pass; else got=fail; fi
+expect() { # expect <name> <pass|fail> <dir> [required-error-message] [content-root]
+  local name=$1 want=$2 dir=$3 msg=${4:-} croot=${5:-} got
+  if scripts/check_site.sh "$dir" "$TMP/before" ${croot:+"$croot"} >"$TMP/out-$name" 2>&1; then got=pass; else got=fail; fi
   if [ "$got" != "$want" ]; then
     echo "FAIL $name — checker ${got}ed, expected $want; output:"
     sed 's/^/     /' "$TMP/out-$name" | tail -8
@@ -190,8 +190,10 @@ p.write_text(t.replace('</urlset>', '  <url><loc>https://sinclairhuang.org/blog/
 PY
 expect encoded-dotdot-taxonomy-loc fail "$TMP/case" "TAXONOMY URL IN SITEMAP"
 
+# Positive-case mutations are guarded: if the seeding python fails, the
+# suite FAILS — a pristine tree must never masquerade as a mutated positive.
 fresh
-python3 - "$TMP/case/tags/ai/index.html" <<'PY'
+if python3 - "$TMP/case/tags/ai/index.html" <<'PY'
 import sys, pathlib
 p = pathlib.Path(sys.argv[1])
 t = p.read_text()
@@ -199,17 +201,27 @@ old = '<meta name="robots" content="noindex,follow">'
 assert old in t
 p.write_text(t.replace(old, '<meta content=" NoIndex ,  FOLLOW " name="ROBOTS">', 1))
 PY
-expect robots-variant-still-valid pass "$TMP/case"
+then
+  expect robots-variant-still-valid pass "$TMP/case"
+else
+  echo "FAIL robots-variant-still-valid — fixture mutation failed; not testing a pristine tree"
+  RESULT=1
+fi
 
 fresh
-python3 - "$TMP/case/sitemap.xml" <<'PY'
+if python3 - "$TMP/case/sitemap.xml" <<'PY'
 import sys, pathlib
 p = pathlib.Path(sys.argv[1])
 t = p.read_text()
 assert '</urlset>' in t
 p.write_text(t.replace('</urlset>', '  <url><loc>https://sinclairhuang.org/tags/../blog/</loc></url>\n</urlset>'))
 PY
-expect dotdot-escape-normalizes-out-of-taxonomy pass "$TMP/case"
+then
+  expect dotdot-escape-normalizes-out-of-taxonomy pass "$TMP/case"
+else
+  echo "FAIL dotdot-escape-normalizes-out-of-taxonomy — fixture mutation failed; not testing a pristine tree"
+  RESULT=1
+fi
 
 # CTA-routing fixtures (Step 4). The through-check_site.sh cases double as
 # proof the routing checker is WIRED INTO the harness — if the 6b hookup
@@ -313,7 +325,7 @@ cta_direct none-page-still-has-cta fail "$TMP/docs-none" "$TMP/src-none" "CTA ON
 
 # Positive: attribute order must not matter to any CTA gate.
 fresh
-python3 - "$TMP/case/$ADV_PAGE" <<'PY'
+if python3 - "$TMP/case/$ADV_PAGE" <<'PY'
 import sys, pathlib
 p = pathlib.Path(sys.argv[1])
 t = p.read_text()
@@ -321,11 +333,16 @@ old = '<aside class="advisory-cta" data-cta-type="advisory" style='
 assert old in t
 p.write_text(t.replace(old, '<aside data-cta-type="advisory" class="advisory-cta" style=', 1))
 PY
-expect cta-attribute-order-variant pass "$TMP/case"
+then
+  expect cta-attribute-order-variant pass "$TMP/case"
+else
+  echo "FAIL cta-attribute-order-variant — fixture mutation failed; not testing a pristine tree"
+  RESULT=1
+fi
 
 # Positive: a harmless extra class token must not break counting or routing.
 fresh
-python3 - "$TMP/case/$ADV_PAGE" <<'PY'
+if python3 - "$TMP/case/$ADV_PAGE" <<'PY'
 import sys, pathlib
 p = pathlib.Path(sys.argv[1])
 t = p.read_text()
@@ -333,7 +350,60 @@ old = 'class="advisory-cta"'
 assert old in t
 p.write_text(t.replace(old, 'class="advisory-cta cta-highlight"', 1))
 PY
-expect cta-extra-class-token pass "$TMP/case"
+then
+  expect cta-extra-class-token pass "$TMP/case"
+else
+  echo "FAIL cta-extra-class-token — fixture mutation failed; not testing a pristine tree"
+  RESULT=1
+fi
+
+# Positive: a published (non-draft) cta:none article renders zero CTA and the
+# FULL harness passes — the none contract is honored end to end. Uses the
+# CONTENT_ROOT override (third check_site.sh argument, fixtures only).
+cp -R content "$TMP/content-none"
+printf -- '---\ntitle: "None Fixture"\ndate: 2026-08-02\ndraft: false\ncta: "none"\n---\nA fixture article that publishes without any CTA.\n' \
+  > "$TMP/content-none/blog/cta-none-fixture.md"
+fresh
+mkdir -p "$TMP/case/blog/cta-none-fixture"
+printf '<!DOCTYPE html><html><head><title>None Fixture</title></head><body><article><p>A fixture article that publishes without any CTA.</p></article></body></html>\n' \
+  > "$TMP/case/blog/cta-none-fixture/index.html"
+expect published-none-article pass "$TMP/case" "" "$TMP/content-none"
+
+# A refresh alone must not exempt a page: only a genuine zero-second alias
+# whose target equals its canonical AND resolves to a known article may be
+# skipped. Anything else stays in scope.
+fresh
+mkdir -p "$TMP/case/blog/fake-refresh-page"
+printf '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=https://sinclairhuang.org/writing/"></head><body></body></html>\n' \
+  > "$TMP/case/blog/fake-refresh-page/index.html"
+expect fake-refresh-not-an-alias fail "$TMP/case" "UNEXPECTED ARTICLE PAGE"
+
+# The dispatcher's errorf contract is proven against REAL Hugo builds on
+# throwaway mini sites that use the actual partial.
+hugo_dispatcher_case() { # <name> <extra-front-matter> <required-message>
+  local name=$1 extra=$2 msg=$3
+  local site="$TMP/hugo-$name"
+  mkdir -p "$site/content/blog" "$site/layouts/_default" "$site/layouts/partials"
+  printf 'baseURL = "https://example.org/"\ndisableKinds = ["taxonomy", "term", "RSS", "sitemap"]\n' > "$site/hugo.toml"
+  cp layouts/partials/advisory_cta.html "$site/layouts/partials/"
+  printf '{{ partial "advisory_cta.html" . }}\n' > "$site/layouts/_default/single.html"
+  printf 'list\n' > "$site/layouts/_default/list.html"
+  printf 'home\n' > "$site/layouts/index.html"
+  printf -- '---\ntitle: "X"\ndate: 2026-01-01\n%s---\nbody\n' "$extra" > "$site/content/blog/x.md"
+  if hugo --source "$site" --destination "$site/public" > "$TMP/out-$name" 2>&1; then
+    echo "FAIL $name — hugo build passed, expected the dispatcher errorf to fail it"
+    RESULT=1
+  elif ! grep -qF "$msg" "$TMP/out-$name"; then
+    echo "FAIL $name — hugo build failed, but without the expected message: $msg"
+    sed 's/^/     /' "$TMP/out-$name" | tail -4
+    RESULT=1
+  else
+    echo "ok   $name (hugo build failed as expected, with the expected message)"
+  fi
+}
+hugo_dispatcher_case hugo-missing-cta "" "is missing the cta front matter"
+hugo_dispatcher_case hugo-unknown-cta 'cta: "banana"
+' "has unknown cta value"
 
 # Hugo version parsing fixtures — official releases carry a commit hash,
 # brew carries extra metadata; only the BASE semver may decide.
