@@ -472,6 +472,9 @@ class IdentityAndLedgerTests(unittest.TestCase):
                 '{"version": 1, "identities": [{"canonical": "not-a-url"}]}',
                 '{"version": 1, "identities": [{"canonical": "https://medium.com/@x/t-abcdef123456",'
                 ' "medium_id": "nothex"}]}',
+                # a trailing newline must not sneak past the exactness check
+                '{"version": 1, "identities": [{"canonical": "https://medium.com/@x/t-abcdef123456",'
+                ' "medium_id": "abcdef123456\\n"}]}',
                 # id contradicting its own canonical
                 '{"version": 1, "identities": [{"canonical": "https://medium.com/@x/t-abcdef123456",'
                 ' "medium_id": "aaaabbbbcccc"}]}',
@@ -547,6 +550,7 @@ class IdentityAndLedgerTests(unittest.TestCase):
                 mi.Identity("ddddeeeeffff", "https://example.com/story"),   # canonical has another id
                 mi.Identity("aaaabbbbcccc", "https://medium.com/@x/other-ddddeeeeffff"),  # id vs canonical
                 mi.Identity("nothex", "https://example.com/new"),           # malformed id
+                mi.Identity("abcdef123456\n", "https://example.com/new"),   # trailing newline
                 mi.Identity("abcdef123456", "not-a-url"),                   # malformed canonical
             ):
                 with self.assertRaises(mi.LedgerError):

@@ -34,7 +34,9 @@ import tempfile
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 MEDIUM_ID_RE = re.compile(r"(?:^|-)([0-9a-f]{12})$")
-MEDIUM_ID_EXACT_RE = re.compile(r"^[0-9a-f]{12}$")
+# \Z, never $: Python's $ also matches before a trailing newline, so
+# "abcdef123456\n" would pass an exactness check written with $.
+MEDIUM_ID_EXACT_RE = re.compile(r"^[0-9a-f]{12}\Z")
 TRACKING_KEYS = ("source",)
 TRACKING_PREFIXES = ("utm_",)
 LEDGER_VERSION = 1
