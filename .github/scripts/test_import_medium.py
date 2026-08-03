@@ -511,6 +511,59 @@ class IdentityAndLedgerTests(unittest.TestCase):
             self.assertTrue(once.endswith(b"\n"))
             self.assertEqual([f for f in os.listdir(tmp) if f.startswith(".ledger-")], [])
 
+            def round_trips(led):
+                return mi.Ledger.parse(led.serialize()).serialize() == led.serialize()
+
+            # changed slug, same Medium ID: URL alias, not a second row
+            ledger.add(mi.entry_identity("https://medium.com/@x/renamed-title-abcdef123456"))
+            self.assertEqual(len(ledger.identities()), 1)
+            self.assertEqual(ledger.identities()[0].canonical,
+                             "https://medium.com/@x/t-abcdef123456")
+            self.assertTrue(round_trips(ledger))
+
+            # idempotent no-op, and an id-less repeat keeps the existing id
+            ledger.add(mi.entry_identity("https://medium.com/@x/t-abcdef123456"))
+            ledger.add(mi.Identity(None, "https://medium.com/@x/t-abcdef123456"))
+            self.assertEqual(len(ledger.identities()), 1)
+            self.assertEqual(ledger.identities()[0].medium_id, "abcdef123456")
+
+            # promotion: an id-less row later learns its (free) id, atomically
+            ledger.add(mi.Identity(None, "https://example.com/story"))
+            ledger.add(mi.Identity("aaaabbbbcccc", "https://example.com/story"))
+            promoted = {i.canonical: i.medium_id for i in ledger.identities()}
+            self.assertEqual(promoted["https://example.com/story"], "aaaabbbbcccc")
+            self.assertEqual(len(ledger.identities()), 2)
+            self.assertTrue(round_trips(ledger))
+
+            # a new canonical with a new id is a normal add
+            ledger.add(mi.entry_identity("https://medium.com/@x/other-ddddeeeeffff"))
+            self.assertEqual(len(ledger.identities()), 3)
+
+            # real conflicts: zero mutation, ledger bytes unchanged
+            ledger.save_atomic(path)
+            before = open(path, "rb").read()
+            snapshot = ledger.serialize()
+            for bad in (
+                mi.Identity("ddddeeeeffff", "https://example.com/story"),   # canonical has another id
+                mi.Identity("aaaabbbbcccc", "https://medium.com/@x/other-ddddeeeeffff"),  # id vs canonical
+                mi.Identity("nothex", "https://example.com/new"),           # malformed id
+                mi.Identity("abcdef123456", "not-a-url"),                   # malformed canonical
+            ):
+                with self.assertRaises(mi.LedgerError):
+                    ledger.add(bad)
+            self.assertEqual(ledger.serialize(), snapshot)      # zero mutation
+            self.assertEqual(open(path, "rb").read(), before)   # bytes unchanged
+            # ambiguous bridge: an id-less row cannot claim another row's id
+            ledger.add(mi.Identity(None, "https://example.com/bridge"))
+            bridged = ledger.serialize()
+            with self.assertRaises(mi.LedgerError):
+                ledger.add(mi.Identity("ddddeeeeffff", "https://example.com/bridge"))
+            self.assertEqual(ledger.serialize(), bridged)   # rejected add changed nothing
+            self.assertIsNone({i.canonical: i.medium_id
+                               for i in ledger.identities()}["https://example.com/bridge"])
+            ledger.save_atomic(path)
+            self.assertTrue(round_trips(ledger))
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

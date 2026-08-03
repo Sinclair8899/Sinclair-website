@@ -178,7 +178,64 @@ class Ledger:
         return self.has_medium_id(identity.medium_id) or self.has_canonical(identity.canonical)
 
     def add(self, identity):
-        self._remember(identity)
+        """Merge one identity, VALIDATING FIRST and mutating only after the
+        outcome is decided — so a rejected add leaves the ledger byte-identical
+        and `parse(serialize())` always round-trips.
+
+        idempotent no-op   same canonical, same id
+        keep existing      same canonical, existing has id, incoming has none
+        promotion          same canonical, existing has no id, incoming id free
+        alias              same id, different canonical -> keep the first
+                           canonical, never write a second row
+        new row            unseen canonical and unseen id
+        LedgerError        same canonical with a different id, an ambiguous
+                           bridge between two existing rows, malformed input,
+                           or an id contradicting its own canonical
+        """
+        canonical = identity.canonical
+        medium_id = identity.medium_id
+        if not is_http_url(canonical):
+            raise LedgerError(f"ledger canonical is not a usable http(s) URL: {canonical!r}")
+        canonical = normalize_canonical(canonical)
+        from_url = medium_id_from_url(canonical)
+        if medium_id is not None:
+            if not isinstance(medium_id, str) or not MEDIUM_ID_EXACT_RE.match(medium_id):
+                raise LedgerError(f"ledger medium_id is not a 12-hex id: {medium_id!r}")
+            if from_url and from_url != medium_id:
+                raise LedgerError(
+                    f"ledger medium_id {medium_id} contradicts its canonical "
+                    f"({from_url} in {canonical})"
+                )
+        medium_id = medium_id or from_url
+
+        by_canonical = self._by_canonical.get(canonical)
+        by_id = self._by_id.get(medium_id) if medium_id else None
+
+        if by_canonical is not None:
+            if by_canonical.medium_id == medium_id or medium_id is None:
+                return  # identical, or incoming carries no new information
+            if by_canonical.medium_id is not None:
+                raise LedgerError(
+                    f"canonical {canonical} already has medium_id "
+                    f"{by_canonical.medium_id}, refusing to rewrite it to {medium_id}"
+                )
+            if by_id is not None and by_id.canonical != canonical:
+                raise LedgerError(
+                    f"ambiguous bridge: medium_id {medium_id} already belongs to "
+                    f"{by_id.canonical}, cannot also claim {canonical}"
+                )
+            promoted = Identity(medium_id, canonical)   # atomic promotion
+            self._by_canonical[canonical] = promoted
+            self._by_id[medium_id] = promoted
+            return
+
+        if by_id is not None:
+            return  # URL alias of a known article: keep the original canonical
+
+        entry = Identity(medium_id, canonical)
+        self._by_canonical[canonical] = entry
+        if medium_id:
+            self._by_id[medium_id] = entry
 
     def identities(self):
         return sorted(
