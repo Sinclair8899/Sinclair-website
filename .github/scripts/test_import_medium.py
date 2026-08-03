@@ -334,6 +334,13 @@ class IdentityAndLedgerTests(unittest.TestCase):
         self.assertEqual(
             mi.normalize_canonical("https://example.com/paper?id=7&utm_source=x"),
             "https://example.com/paper?id=7")  # meaningful query survives
+        # an UPPERCASE scheme must not slip past the front-matter reader:
+        # it has to normalize to the same identity as the lowercase form
+        upper = mi.canonical_from_markdown(
+            '---\ntitle: "X"\ncanonical: "HTTPS://MEDIUM.COM/@x/t-abcdef123456"\n---\nbody\n')
+        self.assertEqual(upper, "HTTPS://MEDIUM.COM/@x/t-abcdef123456")
+        self.assertEqual(mi.normalize_canonical(upper), "https://medium.com/@x/t-abcdef123456")
+        self.assertEqual(mi.medium_id_from_url(upper), "abcdef123456")
 
     def test_entry_identity_guid_agreement(self):
         import medium_identity as mi
@@ -455,6 +462,30 @@ class IdentityAndLedgerTests(unittest.TestCase):
             open(unknown, "w").write('{"version": 99, "identities": []}')
             with self.assertRaises(mi.LedgerError):
                 mi.Ledger.load(unknown)
+            # a version-1 ledger MUST carry an identities list — a bare
+            # {"version": 1} must never be read as "nothing imported yet"
+            for bad in (
+                '{"version": 1}',
+                '{"version": 1, "identities": {}}',
+                '{"version": 1, "identities": [{"canonical": null}]}',
+                '{"version": 1, "identities": [{"canonical": ""}]}',
+                '{"version": 1, "identities": [{"canonical": "not-a-url"}]}',
+                '{"version": 1, "identities": [{"canonical": "https://medium.com/@x/t-abcdef123456",'
+                ' "medium_id": "nothex"}]}',
+                # id contradicting its own canonical
+                '{"version": 1, "identities": [{"canonical": "https://medium.com/@x/t-abcdef123456",'
+                ' "medium_id": "aaaabbbbcccc"}]}',
+                # duplicate canonical rows
+                '{"version": 1, "identities": [{"canonical": "https://medium.com/@x/t-abcdef123456"},'
+                ' {"canonical": "https://medium.com/@x/t-abcdef123456?source=rss"}]}',
+                # same id under two different canonicals
+                '{"version": 1, "identities": [{"canonical": "https://medium.com/@x/one-abcdef123456"},'
+                ' {"canonical": "https://medium.com/@x/two-abcdef123456"}]}',
+            ):
+                path = os.path.join(tmp, "bad.json")
+                open(path, "w").write(bad)
+                with self.assertRaises(mi.LedgerError, msg=bad):
+                    mi.Ledger.load(path)
 
     def test_ledger_legacy_url_list_migrates(self):
         import medium_identity as mi

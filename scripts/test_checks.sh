@@ -408,7 +408,8 @@ canon_direct() { # canon_direct <name> <pass|fail> <content-root> [msg]
 
 mkdir -p "$TMP/dup-canon/blog"
 printf -- '---\ntitle: "A"\ncanonical: "https://medium.com/@x/story-aaaabbbbcccc?source=rss"\n---\nbody\n' > "$TMP/dup-canon/blog/a.md"
-printf -- '---\ntitle: "B"\ncanonical: "https://medium.com/@x/story-aaaabbbbcccc#frag"\n---\nbody\n' > "$TMP/dup-canon/blog/b.md"
+# uppercase scheme + host must NOT be a way around the gate
+printf -- '---\ntitle: "B"\ncanonical: "HTTPS://MEDIUM.COM/@x/story-aaaabbbbcccc#frag"\n---\nbody\n' > "$TMP/dup-canon/blog/b.md"
 canon_direct duplicate-canonical-in-sources fail "$TMP/dup-canon" "DUPLICATE CANONICAL"
 
 mkdir -p "$TMP/dup-mid/blog"

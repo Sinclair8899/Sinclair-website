@@ -34,6 +34,7 @@ import tempfile
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 MEDIUM_ID_RE = re.compile(r"(?:^|-)([0-9a-f]{12})$")
+MEDIUM_ID_EXACT_RE = re.compile(r"^[0-9a-f]{12}$")
 TRACKING_KEYS = ("source",)
 TRACKING_PREFIXES = ("utm_",)
 LEDGER_VERSION = 1
@@ -112,17 +113,33 @@ def entry_identity(link, guid=None):
     return Identity(id_from_link or id_from_guid, normalize_canonical(link))
 
 
+CANONICAL_FM_RE = re.compile(
+    r'^canonical:\s*["\']?(https?://[^"\']+)["\']?\s*$', re.IGNORECASE
+)
+
+
+def is_http_url(value):
+    """A non-empty string whose scheme is http/https (case-insensitive)
+    and that has a host — the only shape a canonical may take."""
+    if not isinstance(value, str) or not value.strip():
+        return False
+    parts = urlsplit(value.strip())
+    return parts.scheme.lower() in ("http", "https") and bool(_host_of(parts))
+
+
 def canonical_from_markdown(text):
     """The canonical: front-matter value of a source file, or None.
     Front matter is delimited by FULL '---' lines — never split on the
-    substring '---' (Medium canonicals contain six-dash runs)."""
+    substring '---' (Medium canonicals contain six-dash runs). The scheme
+    match is case-insensitive: HTTPS://MEDIUM.COM/... must not slip past
+    this reader (and therefore past the uniqueness gate)."""
     lines = text.split("\n")
     if not lines or lines[0].strip() != "---":
         return None
     for line in lines[1:]:
         if line.strip() == "---":
             return None
-        match = re.match(r'^canonical:\s*["\']?(https?://[^"\']+)["\']?\s*$', line)
+        match = CANONICAL_FM_RE.match(line)
         if match:
             return match.group(1)
     return None
@@ -169,24 +186,66 @@ class Ledger:
             key=lambda i: (i.medium_id or "", i.canonical),
         )
 
+    @staticmethod
+    def _checked_identity(canonical, medium_id, seen_canonicals, seen_ids):
+        """Validate one ledger row and fail closed on anything ambiguous:
+        an unusable canonical, a malformed id, an id that contradicts the
+        canonical's own id, or a duplicate/conflicting row."""
+        if not is_http_url(canonical):
+            raise LedgerError(f"ledger canonical is not a usable http(s) URL: {canonical!r}")
+        normalized = normalize_canonical(canonical)
+        from_url = medium_id_from_url(canonical)
+        if medium_id is not None:
+            if not isinstance(medium_id, str) or not MEDIUM_ID_EXACT_RE.match(medium_id):
+                raise LedgerError(f"ledger medium_id is not a 12-hex id: {medium_id!r}")
+            if from_url and from_url != medium_id:
+                raise LedgerError(
+                    f"ledger medium_id {medium_id} contradicts its canonical "
+                    f"({from_url} in {normalized})"
+                )
+        resolved = medium_id or from_url
+        if normalized in seen_canonicals:
+            raise LedgerError(f"duplicate ledger canonical: {normalized}")
+        if resolved and resolved in seen_ids:
+            if seen_ids[resolved] != normalized:
+                raise LedgerError(
+                    f"conflicting ledger medium_id {resolved}: "
+                    f"{seen_ids[resolved]} vs {normalized}"
+                )
+            raise LedgerError(f"duplicate ledger medium_id: {resolved}")
+        seen_canonicals.add(normalized)
+        if resolved:
+            seen_ids[resolved] = normalized
+        return Identity(resolved, normalized)
+
     @classmethod
     def parse(cls, raw):
         data = json.loads(raw)
+        seen_canonicals, seen_ids = set(), {}
         if isinstance(data, list):
             # legacy format: plain list of URL strings — migrate
             if not all(isinstance(u, str) for u in data):
                 raise LedgerError("legacy ledger list contains non-string entries")
             return cls(
-                Identity(medium_id_from_url(u), normalize_canonical(u)) for u in data
+                cls._checked_identity(u, None, seen_canonicals, seen_ids) for u in data
             )
         if isinstance(data, dict):
             if data.get("version") != LEDGER_VERSION:
                 raise LedgerError(f"unknown ledger schema version {data.get('version')!r}")
+            if "identities" not in data or not isinstance(data["identities"], list):
+                raise LedgerError(
+                    "version 1 ledger must carry an 'identities' list — refusing to "
+                    "treat a missing or malformed key as an empty ledger"
+                )
             identities = []
-            for entry in data.get("identities", []):
+            for entry in data["identities"]:
                 if not isinstance(entry, dict) or "canonical" not in entry:
                     raise LedgerError(f"malformed ledger identity entry: {entry!r}")
-                identities.append(Identity(entry.get("medium_id"), entry["canonical"]))
+                identities.append(
+                    cls._checked_identity(
+                        entry["canonical"], entry.get("medium_id"), seen_canonicals, seen_ids
+                    )
+                )
             return cls(identities)
         raise LedgerError(f"unknown ledger schema: {type(data).__name__}")
 

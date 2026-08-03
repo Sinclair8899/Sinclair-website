@@ -28,7 +28,12 @@ sys.path.insert(
 from medium_identity import medium_id_from_url, normalize_canonical  # noqa: E402
 
 DRAFT_LINE = re.compile(r"^draft:\s*true\s*$")
-CANONICAL_LINE = re.compile(r'^canonical:\s*["\']?(https?://[^"\']+)["\']?\s*$')
+# Case-insensitive scheme: HTTPS://MEDIUM.COM/... must be read, normalized,
+# and deduped like any other canonical — an uppercase scheme must never be
+# a way around this gate.
+CANONICAL_LINE = re.compile(
+    r'^canonical:\s*["\']?(https?://[^"\']+)["\']?\s*$', re.IGNORECASE
+)
 
 
 def front_matter_lines(path):
