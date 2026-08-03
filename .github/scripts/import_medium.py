@@ -7,9 +7,16 @@ import sys
 from datetime import datetime, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-# Transform layer is stdlib-only and offline-tested (test_import_medium.py
-# runs BEFORE feedparser/requests are installed in the workflow).
+# Transform + identity layers are stdlib-only and offline-tested
+# (test_import_medium.py runs BEFORE feedparser/requests are installed).
 from medium_transform import DescriptionError, description_from_html, front_matter
+from medium_identity import (
+    IdentityError,
+    Ledger,
+    LedgerError,
+    entry_identity,
+    file_identity,
+)
 
 SOURCES = [
     ("Medium", "https://medium.com/feed/@sinclairhuang"),
@@ -18,16 +25,22 @@ SOURCES = [
 BLOG_DIR = "content/blog"
 IMPORTED_LOG = ".github/scripts/imported_medium.json"
 
-def load_imported():
-    if os.path.exists(IMPORTED_LOG):
-        with open(IMPORTED_LOG) as f:
-            return json.load(f)
-    return []
-
-def save_imported(imported):
-    os.makedirs(os.path.dirname(IMPORTED_LOG), exist_ok=True)
-    with open(IMPORTED_LOG, "w") as f:
-        json.dump(imported, f, indent=2)
+def index_existing(blog_dir):
+    """Identity index of the articles already in blog_dir: two maps,
+    medium_id -> filename and normalized canonical -> filename. Always
+    honors the passed blog_dir — never the module global."""
+    by_id, by_canonical = {}, {}
+    if os.path.isdir(blog_dir):
+        for name in sorted(os.listdir(blog_dir)):
+            if not name.endswith(".md") or name == "_index.md":
+                continue
+            identity = file_identity(os.path.join(blog_dir, name))
+            if identity is None:
+                continue
+            if identity.medium_id:
+                by_id[identity.medium_id] = name
+            by_canonical[identity.canonical] = name
+    return by_id, by_canonical
 
 def strip_html(text):
     text = re.sub('<[^<]+?>', '', text)
@@ -73,19 +86,21 @@ def title_to_slug(title):
     slug = re.sub(r'-+', '-', slug)
     return slug[:60].rstrip('-')
 
-def find_existing_by_slug(slug):
+def find_existing_by_slug(slug, blog_dir):
     """Return an existing post with this slug under ANY date, or None.
 
     Cross-posting means the same article arrives from both Medium and Substack
     under different URLs and often a different publication date. Matching on
     "{date}-{slug}.md" alone therefore lets a same-day repost through as a
     duplicate post. Matching on the slug regardless of date closes that hole.
+    NOTE: a slug match alone never SILENTLY dedupes anymore — the caller
+    compares stable identities and fails closed on a mismatch.
     """
     # A very short slug is not distinctive enough to prove two posts are the
     # same article; blocking on it would silently drop legitimate new posts.
-    if not slug or len(slug) < 8 or not os.path.isdir(BLOG_DIR):
+    if not slug or len(slug) < 8 or not os.path.isdir(blog_dir):
         return None
-    for name in os.listdir(BLOG_DIR):
+    for name in os.listdir(blog_dir):
         if not name.endswith('.md'):
             continue
         stem = name[:-3]
@@ -125,17 +140,41 @@ def process_feed(source_name, feed_url, imported):
 
 
 def process_entries(source_name, entries, imported, blog_dir=None):
-    """Returns (new_count, failed_count). A DescriptionError article is a
-    FAILURE of the run: it is not written, and its URL is NOT recorded in
-    imported_medium.json, so the whole batch retries after a fix."""
+    """Returns (new_count, failed_count).
+
+    Dedup priority (Importer P1): Medium ID -> normalized canonical ->
+    output path / conservative slug fallback — and every lookup honors the
+    passed blog_dir. Two different stable identities are NEVER merged just
+    because a title or slug collides: that case, an inconsistent link/guid
+    pair, or a DescriptionError all count as run FAILURES — nothing is
+    written, nothing is recorded, and main() exits nonzero so the batch
+    retries after human review."""
     blog_dir = blog_dir or BLOG_DIR
+    ledger = imported if isinstance(imported, Ledger) else Ledger.parse(json.dumps(imported))
+    existing_by_id, existing_by_canonical = index_existing(blog_dir)
     new_count = 0
     failed_count = 0
     for entry in entries:
         link = entry.get('link', '')
         title = entry.get('title', 'Untitled').lstrip('# ')
-        if link in imported:
-            print(f"Already imported: {title}")
+        guid = entry.get('id', '') or entry.get('guid', '')
+        try:
+            ident = entry_identity(link, guid)
+        except IdentityError as exc:
+            print(f"FAILED (identity, not recorded): {title} — {exc}")
+            failed_count += 1
+            continue
+        # 1. Medium ID beats everything.
+        if ident.medium_id and (
+            ledger.has_medium_id(ident.medium_id) or ident.medium_id in existing_by_id
+        ):
+            print(f"Already imported (medium id {ident.medium_id}): {title}")
+            ledger.add(ident)
+            continue
+        # 2. Normalized canonical.
+        if ledger.has_canonical(ident.canonical) or ident.canonical in existing_by_canonical:
+            print(f"Already imported (canonical): {title}")
+            ledger.add(ident)
             continue
         content_html = ''
         if hasattr(entry, 'content') and entry.content:
@@ -167,14 +206,39 @@ def process_entries(source_name, entries, imported, blog_dir=None):
         slug = title_to_slug(title)
         filename = f"{date_str}-{slug}.md"
         filepath = os.path.join(blog_dir, filename)
+        # 3. Output path / conservative slug fallback. A collision is only a
+        #    silent skip when the stable identity AGREES; a different or
+        #    unknown identity at the same path/slug fails for manual review.
         if os.path.exists(filepath):
-            print(f"File exists: {filename}")
-            imported.append(link)
+            existing_ident = file_identity(filepath)
+            if existing_ident and (
+                (ident.medium_id and ident.medium_id == existing_ident.medium_id)
+                or ident.canonical == existing_ident.canonical
+            ):
+                print(f"File exists with the same identity: {filename}")
+                ledger.add(ident)
+                continue
+            print(
+                f"FAILED (path collision with different identity, not recorded): "
+                f"{filename} — manual review required"
+            )
+            failed_count += 1
             continue
-        existing = find_existing_by_slug(slug)
+        existing = find_existing_by_slug(slug, blog_dir)
         if existing:
-            print(f"Cross-post of an existing article, skipping: {title} (already at {existing})")
-            imported.append(link)
+            existing_ident = file_identity(os.path.join(blog_dir, existing))
+            if existing_ident and (
+                (ident.medium_id and ident.medium_id == existing_ident.medium_id)
+                or ident.canonical == existing_ident.canonical
+            ):
+                print(f"Cross-post of an existing article, skipping: {title} (already at {existing})")
+                ledger.add(ident)
+                continue
+            print(
+                f"FAILED (slug matches {existing} but stable identity differs, "
+                f"not recorded): {title} — manual review required"
+            )
+            failed_count += 1
             continue
         if source_name == "Medium":
             footer = f"\n\n---\n\n*This article was originally published on Medium. [Read the full version with charts and figures \u2192]({link})*"
@@ -185,7 +249,10 @@ def process_entries(source_name, entries, imported, blog_dir=None):
         fm = front_matter(title, date_str, tags, description, link)
         with open(filepath, 'w') as f:
             f.write(fm + content_md + footer)
-        imported.append(link)
+        ledger.add(ident)
+        if ident.medium_id:
+            existing_by_id[ident.medium_id] = filename
+        existing_by_canonical[ident.canonical] = filename
         new_count += 1
         print(f"Imported: {title} -> {filename}")
     return new_count, failed_count
@@ -197,14 +264,25 @@ def exit_code(total_failed):
 
 def main():
     os.makedirs(BLOG_DIR, exist_ok=True)
-    imported = load_imported()
+    # Fail-closed load: a missing, corrupt, or unknown-schema ledger stops
+    # the run — it must NEVER silently degrade to an empty ledger.
+    try:
+        ledger = Ledger.load(IMPORTED_LOG)
+    except LedgerError as exc:
+        print(f"FATAL: {exc}")
+        sys.exit(1)
     total = 0
     failed = 0
     for source_name, feed_url in SOURCES:
-        n, f = process_feed(source_name, feed_url, imported)
+        n, f = process_feed(source_name, feed_url, ledger)
         total += n
         failed += f
-    save_imported(imported)
+    if failed == 0:
+        # Atomic, deterministic write — and ONLY when the whole batch had
+        # zero failures, so a broken run never persists partial state.
+        ledger.save_atomic(IMPORTED_LOG)
+    else:
+        print("Ledger NOT saved: batch had failures — state left for retry")
     print(f"\nDone: {total} new articles imported, {failed} failed")
     sys.exit(exit_code(failed))
 

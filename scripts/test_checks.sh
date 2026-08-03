@@ -389,6 +389,73 @@ p.write_text(t.replace(needle, 'https://ssrn.com/abstract=0000000'))
 PY
 expect publications-missing-ssrn-id fail "$TMP/case" "PUBLICATIONS MISSING SSRN ID"
 
+# Canonical-uniqueness fixtures (Importer dedupe P1, gate 9). Source-side
+# duplicates use throwaway content roots; the harness case proves the gate
+# is wired into check_site.sh via the CONTENT_ROOT argument; the rendered
+# case proves the gate reads SOURCE front matter, never rendered
+# <link rel="canonical">.
+canon_direct() { # canon_direct <name> <pass|fail> <content-root> [msg]
+  local name=$1 want=$2 croot=$3 msg=${4:-} got
+  if python3 scripts/check_canonical_uniqueness.py "$croot" >"$TMP/out-$name" 2>&1; then got=pass; else got=fail; fi
+  if [ "$got" != "$want" ]; then
+    echo "FAIL $name — gate ${got}ed, expected $want"; sed 's/^/     /' "$TMP/out-$name" | tail -4; RESULT=1
+  elif [ -n "$msg" ] && ! grep -qF "$msg" "$TMP/out-$name"; then
+    echo "FAIL $name — ${got}ed, but without the expected message: $msg"; RESULT=1
+  else
+    echo "ok   $name (gate ${got}ed as expected${msg:+, with the expected message})"
+  fi
+}
+
+mkdir -p "$TMP/dup-canon/blog"
+printf -- '---\ntitle: "A"\ncanonical: "https://medium.com/@x/story-aaaabbbbcccc?source=rss"\n---\nbody\n' > "$TMP/dup-canon/blog/a.md"
+printf -- '---\ntitle: "B"\ncanonical: "https://medium.com/@x/story-aaaabbbbcccc#frag"\n---\nbody\n' > "$TMP/dup-canon/blog/b.md"
+canon_direct duplicate-canonical-in-sources fail "$TMP/dup-canon" "DUPLICATE CANONICAL"
+
+mkdir -p "$TMP/dup-mid/blog"
+printf -- '---\ntitle: "A"\ncanonical: "https://medium.com/@x/one-title-aaaabbbbcccc"\n---\nbody\n' > "$TMP/dup-mid/blog/a.md"
+printf -- '---\ntitle: "B"\ncanonical: "https://medium.com/@x/other-title-aaaabbbbcccc"\n---\nbody\n' > "$TMP/dup-mid/blog/b.md"
+canon_direct duplicate-medium-id-in-sources fail "$TMP/dup-mid" "DUPLICATE MEDIUM ID"
+
+# Positive: meaningful query differences are DISTINCT canonicals (only
+# fragment/source/utm_* are tracking); similar titles alone never collide.
+mkdir -p "$TMP/canon-ok/blog"
+printf -- '---\ntitle: "A"\ncanonical: "https://example.com/paper?id=1&utm_source=x"\n---\nbody\n' > "$TMP/canon-ok/blog/a.md"
+printf -- '---\ntitle: "A (part two)"\ncanonical: "https://example.com/paper?id=2&utm_source=x"\n---\nbody\n' > "$TMP/canon-ok/blog/b.md"
+canon_direct meaningful-query-not-duplicate pass "$TMP/canon-ok"
+
+# Full harness with CONTENT_ROOT: the duplicate must fail check_site.sh
+# itself, proving gate 9 is wired in.
+cp -R content "$TMP/content-dup"
+python3 - "$TMP/content-dup/blog/dup-reimport.md" <<'PY'
+import sys, pathlib
+src = pathlib.Path('content/blog/2026-06-29-ai.md').read_text(encoding='utf-8')
+pathlib.Path(sys.argv[1]).write_text(src, encoding='utf-8')
+PY
+fresh
+expect duplicate-canonical-fails-harness fail "$TMP/case" "DUPLICATE CANONICAL" "$TMP/content-dup"
+
+# Rendered canonicals are OUT of scope: injecting a duplicate
+# <link rel="canonical"> into two BUILT pages must not trip the gate.
+fresh
+if python3 - "$TMP/case" <<'PY'
+import sys, pathlib
+base = pathlib.Path(sys.argv[1])
+for page in ('blog/trust-before-efficiency/index.html', 'blog/interface-control-brand-power/index.html'):
+    p = base / page
+    t = p.read_text(encoding='utf-8')
+    assert '</head>' in t
+    p.write_text(t.replace('</head>', '<link rel="canonical" href="https://medium.com/@x/dup-feedbeefcafe">\n</head>', 1), encoding='utf-8')
+PY
+then
+  expect rendered-canonicals-not-scanned pass "$TMP/case"
+else
+  echo "FAIL rendered-canonicals-not-scanned — fixture mutation failed; not testing a pristine tree"
+  RESULT=1
+fi
+
+# Baseline: the real content tree reports exactly the sealed counts.
+canon_direct canonical-baseline-21-21-0 pass "content" "21 canonicals / 21 Medium IDs / 0 duplicates"
+
 # The dispatcher's errorf contract is proven against REAL Hugo builds on
 # throwaway mini sites that use the actual partial.
 hugo_dispatcher_case() { # <name> <extra-front-matter> <required-message>

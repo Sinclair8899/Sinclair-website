@@ -63,6 +63,10 @@ production baseURL, then `scripts/check_site.sh docs <prev-inventory>`:
 - every SSRN id in `ssrn-basketing.tsv` (the approved paper basket) must
   appear on the rendered Publications page — adding a paper to the basket
   without syncing the page fails the build
+- no two non-draft blog/insights sources may share a normalized canonical
+  or a Medium ID (`scripts/check_canonical_uniqueness.py`, gate 9 — reads
+  SOURCE front matter only, never rendered `<link rel="canonical">`; the
+  build-side backstop for the fe85f9e duplicate import)
 
 All three content CI workflows run this same script (they install Hugo
 0.152.2 via peaceiris/actions-hugo and share
@@ -74,10 +78,12 @@ concurrency group.
 An unattended build that hits a new warning fails and leaves the live site as
 it was — that is the safe outcome, not an inconvenience.
 
-The checker itself is negative-tested: `scripts/test_checks.sh` runs 45
-cases — 1 pristine (must pass), 31 seeded tree faults through the FULL
+The checker itself is negative-tested: `scripts/test_checks.sh` runs 51
+cases — 1 pristine (must pass), 32 seeded tree faults through the FULL
 check_site.sh (including a Publications page stripped of a basket SSRN
-id) plus 3 source-side CTA faults against throwaway trees
+id, and a duplicated source canonical failing the harness via
+CONTENT_ROOT) plus 5 source-side CTA/canonical faults against throwaway
+trees
 (must each fail, the newer ones asserted on their specific error
 messages so they cannot pass for the wrong reason), 5 positive cases
 (must pass), 2 REAL Hugo builds proving the dispatcher's errorf
@@ -209,9 +215,22 @@ with `git -c core.quotePath=false`.
   never fake a front-matter delimiter. An article with no compliant
   sentence group makes the WHOLE import run exit nonzero (CI fails,
   nothing commits) and is NOT recorded in `imported_medium.json`, so it
-  retries after a fix. Offline tests (`test_import_medium.py`, 29
-  cases, socket-disabled, zero third-party) run in the workflow BEFORE
-  feedparser/requests install and any network fetch.
+  retries after a fix. **Dedup (Importer P1)**: identity lives in
+  `medium_identity.py` — Medium ID (trailing 12-hex, medium.com hosts
+  only; link and GUID must AGREE or the entry fails closed) → normalized
+  canonical (fragment/`source`/`utm_*` stripped, meaningful query kept)
+  → output path / conservative slug fallback; two different stable
+  identities are never merged on a title/slug collision (that fails for
+  manual review), and every lookup honors the passed `blog_dir`. The
+  ledger `.github/scripts/imported_medium.json` is TRACKED (the workflow
+  stages it explicitly), versioned/sorted/deterministic, migrates the
+  legacy URL-list format, fails closed on missing/corrupt/unknown
+  schema, and is written atomically ONLY after a zero-failure batch.
+  Offline tests (`test_import_medium.py`, 41 cases, socket-disabled,
+  zero third-party — including the fe85f9e regression: 2026-06-29-ai.md
+  vs its full-CJK-slug re-import, ba760d82d834) run in the workflow
+  BEFORE feedparser/requests install and any network fetch. **Do not run
+  the import-medium workflow manually while an importer P1 is unsealed.**
 - PaperMod's footer is `partialCached` — per-section footer content must go in
   section-scoped single templates (`layouts/blog/single.html`,
   `layouts/insights/single.html` → `partials/advisory_cta.html`), never in

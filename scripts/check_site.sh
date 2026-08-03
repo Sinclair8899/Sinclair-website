@@ -101,5 +101,15 @@ if [ -f "$REPO/ssrn-basketing.tsv" ] && [ -f "$DOCS/publications/index.html" ]; 
   done < "$REPO/ssrn-basketing.tsv"
 fi
 
+# 9. Source-side canonical uniqueness (Importer dedupe P1): no two
+#    non-draft blog/insights sources may share a normalized canonical or
+#    a Medium ID — the build-side backstop for duplicate imports. Reads
+#    SOURCE front matter only, never rendered <link rel="canonical">.
+if [ -n "$CONTENT" ]; then
+  python3 "$REPO/scripts/check_canonical_uniqueness.py" "$CONTENT" || FAIL=1
+else
+  python3 "$REPO/scripts/check_canonical_uniqueness.py" || FAIL=1
+fi
+
 [ "$FAIL" = 0 ] && echo "SITE CHECKS PASSED" || echo "SITE CHECKS FAILED"
 exit "$FAIL"

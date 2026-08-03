@@ -286,5 +286,200 @@ class TransformTests(unittest.TestCase):
         self.assertEqual(im.exit_code(0), 0)
 
 
+REPO_ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+
+
+class IdentityAndLedgerTests(unittest.TestCase):
+    """Importer dedupe P1: identity extraction, dedup priority, ledger."""
+
+    BODY = ("<p>As AI clusters scale from thousands of accelerators toward "
+            "million-GPU systems, the network becomes part of the compute fabric itself.</p>")
+
+    @staticmethod
+    def _importer():
+        import types
+        for stub in ("feedparser", "requests"):
+            sys.modules.setdefault(stub, types.ModuleType(stub))
+        import import_medium as im
+        return im
+
+    class Entry:
+        def __init__(self, link, title, summary, guid=""):
+            self.summary = summary
+            self._d = {"link": link, "title": title, "id": guid}
+
+        def get(self, key, default=None):
+            value = self._d.get(key, default)
+            return value if value else default
+
+    def test_medium_id_extraction_hosts_and_suffix(self):
+        import medium_identity as mi
+        self.assertEqual(mi.medium_id_from_url(
+            "https://medium.com/@x/some-title-abcdef123456?source=rss"), "abcdef123456")
+        self.assertEqual(mi.medium_id_from_url(
+            "https://medium.com/p/abcdef123456"), "abcdef123456")
+        self.assertEqual(mi.medium_id_from_url(
+            "https://sinclairhuang.medium.com/title-abcdef123456"), "abcdef123456")
+        self.assertIsNone(mi.medium_id_from_url(
+            "https://example.com/some-title-abcdef123456"))  # non-medium host
+        self.assertIsNone(mi.medium_id_from_url(
+            "https://medium.com/@x/short-hex-abc123"))       # not 12 hex
+
+    def test_canonical_normalization_tracking_vs_meaningful(self):
+        import medium_identity as mi
+        self.assertEqual(
+            mi.normalize_canonical(
+                "HTTPS://Medium.com/@x/t-abcdef123456?source=rss&utm_campaign=a#frag"),
+            "https://medium.com/@x/t-abcdef123456")
+        self.assertEqual(
+            mi.normalize_canonical("https://example.com/paper?id=7&utm_source=x"),
+            "https://example.com/paper?id=7")  # meaningful query survives
+
+    def test_entry_identity_guid_agreement(self):
+        import medium_identity as mi
+        ident = mi.entry_identity(
+            "https://medium.com/@x/t-abcdef123456?source=rss",
+            "https://medium.com/p/abcdef123456")
+        self.assertEqual(ident.medium_id, "abcdef123456")
+
+    def test_entry_identity_mismatch_fails_closed(self):
+        import medium_identity as mi
+        with self.assertRaises(mi.IdentityError):
+            mi.entry_identity(
+                "https://medium.com/@x/t-abcdef123456",
+                "https://medium.com/p/aaaabbbbcccc")
+
+    def test_same_run_duplicate_second_entry_skipped(self):
+        import tempfile
+        import medium_identity as mi
+        im = self._importer()
+        with tempfile.TemporaryDirectory() as tmp:
+            ledger = mi.Ledger([])
+            entries = [
+                self.Entry("https://medium.com/@x/fresh-story-abcdef123456?source=rss",
+                           "Fresh Story", self.BODY),
+                self.Entry("https://medium.com/@x/fresh-story-abcdef123456?utm_source=tw",
+                           "Fresh Story", self.BODY),
+            ]
+            new, failed = im.process_entries("Medium", entries, ledger, blog_dir=tmp)
+            self.assertEqual((new, failed), (1, 0))
+            self.assertEqual(len(os.listdir(tmp)), 1)
+
+    def test_cross_run_ledger_prevents_reimport(self):
+        import tempfile
+        import medium_identity as mi
+        im = self._importer()
+        with tempfile.TemporaryDirectory() as tmp:
+            blog = os.path.join(tmp, "blog"); os.makedirs(blog)
+            ledger_path = os.path.join(tmp, "ledger.json")
+            ledger = mi.Ledger([])
+            entry = self.Entry("https://medium.com/@x/fresh-story-abcdef123456?source=rss",
+                               "Fresh Story", self.BODY)
+            new, failed = im.process_entries("Medium", [entry], ledger, blog_dir=blog)
+            self.assertEqual((new, failed), (1, 0))
+            ledger.save_atomic(ledger_path)
+            first_bytes = open(ledger_path, "rb").read()
+            # a later run with an EMPTY blog dir must still dedupe via ledger
+            ledger2 = mi.Ledger.load(ledger_path)
+            blog2 = os.path.join(tmp, "blog2"); os.makedirs(blog2)
+            new2, failed2 = im.process_entries("Medium", [entry], ledger2, blog_dir=blog2)
+            self.assertEqual((new2, failed2), (0, 0))
+            self.assertEqual(os.listdir(blog2), [])
+            ledger2.save_atomic(ledger_path)
+            self.assertEqual(open(ledger_path, "rb").read(), first_bytes)
+
+    def test_real_regression_2026_06_29_ai_not_reimported(self):
+        """fe85f9e regression: the existing old-short-slug file
+        2026-06-29-ai.md vs the same article arriving with a full-CJK slug
+        and medium id ba760d82d834 — zero new files, zero overwrite."""
+        import shutil
+        import tempfile
+        import medium_identity as mi
+        im = self._importer()
+        real = os.path.join(REPO_ROOT, "content", "blog", "2026-06-29-ai.md")
+        canonical = mi.canonical_from_markdown(open(real, encoding="utf-8").read())
+        self.assertIn("ba760d82d834", canonical)
+        with tempfile.TemporaryDirectory() as tmp:
+            shutil.copy(real, os.path.join(tmp, "2026-06-29-ai.md"))
+            before = open(os.path.join(tmp, "2026-06-29-ai.md"), "rb").read()
+            entry = self.Entry(canonical,
+                               "AI 需求沒有消失，但價格開始接受壓力測試",
+                               self.BODY,
+                               guid="https://medium.com/p/ba760d82d834")
+            ledger = mi.Ledger([])
+            new, failed = im.process_entries("Medium", [entry], ledger, blog_dir=tmp)
+            self.assertEqual((new, failed), (0, 0))
+            self.assertEqual(os.listdir(tmp), ["2026-06-29-ai.md"])
+            self.assertEqual(open(os.path.join(tmp, "2026-06-29-ai.md"), "rb").read(), before)
+            self.assertTrue(ledger.has_medium_id("ba760d82d834"))
+
+    def test_url_variants_share_one_identity(self):
+        import medium_identity as mi
+        base = mi.entry_identity("https://medium.com/@x/t-abcdef123456?source=rss")
+        ledger = mi.Ledger([base])
+        for variant in (
+            "https://medium.com/@x/t-abcdef123456",
+            "https://medium.com/@x/t-abcdef123456?utm_medium=email#open",
+            "HTTPS://MEDIUM.com/@x/t-abcdef123456?source=twitter",
+        ):
+            self.assertTrue(ledger.knows(mi.entry_identity(variant)), variant)
+
+    def test_different_ids_same_slug_fail_closed(self):
+        import tempfile
+        import medium_identity as mi
+        im = self._importer()
+        with tempfile.TemporaryDirectory() as tmp:
+            fm = ('---\ntitle: "Fresh Story"\ndate: 2026-01-01\n'
+                  'canonical: "https://medium.com/@x/fresh-story-aaaabbbbcccc"\n---\nbody\n')
+            with open(os.path.join(tmp, "2026-01-01-fresh-story.md"), "w", encoding="utf-8") as fh:
+                fh.write(fm)
+            entry = self.Entry("https://medium.com/@x/fresh-story-abcdef123456",
+                               "Fresh Story", self.BODY)
+            ledger = mi.Ledger([])
+            new, failed = im.process_entries("Medium", [entry], ledger, blog_dir=tmp)
+            self.assertEqual((new, failed), (0, 1))          # manual review, not swallowed
+            self.assertEqual(len(os.listdir(tmp)), 1)        # nothing new written
+            self.assertFalse(ledger.has_medium_id("abcdef123456"))  # not recorded
+
+    def test_ledger_missing_corrupt_unknown_all_fail(self):
+        import tempfile
+        import medium_identity as mi
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaises(mi.LedgerError):
+                mi.Ledger.load(os.path.join(tmp, "absent.json"))
+            corrupt = os.path.join(tmp, "corrupt.json")
+            open(corrupt, "w").write("{not json")
+            with self.assertRaises(mi.LedgerError):
+                mi.Ledger.load(corrupt)
+            unknown = os.path.join(tmp, "unknown.json")
+            open(unknown, "w").write('{"version": 99, "identities": []}')
+            with self.assertRaises(mi.LedgerError):
+                mi.Ledger.load(unknown)
+
+    def test_ledger_legacy_url_list_migrates(self):
+        import medium_identity as mi
+        legacy = ['https://medium.com/@x/t-abcdef123456?source=rss',
+                  'https://example.com/elsewhere?id=3&utm_source=x']
+        ledger = mi.Ledger.parse(__import__("json").dumps(legacy))
+        self.assertTrue(ledger.has_medium_id("abcdef123456"))
+        self.assertTrue(ledger.has_canonical("https://example.com/elsewhere?id=3"))
+        serialized = ledger.serialize()
+        self.assertIn('"version": 1', serialized)
+
+    def test_ledger_atomic_deterministic_write(self):
+        import tempfile
+        import medium_identity as mi
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, "ledger.json")
+            ledger = mi.Ledger([mi.entry_identity(
+                "https://medium.com/@x/t-abcdef123456?source=rss")])
+            ledger.save_atomic(path)
+            once = open(path, "rb").read()
+            ledger.save_atomic(path)
+            self.assertEqual(open(path, "rb").read(), once)
+            self.assertTrue(once.endswith(b"\n"))
+            self.assertEqual([f for f in os.listdir(tmp) if f.startswith(".ledger-")], [])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
