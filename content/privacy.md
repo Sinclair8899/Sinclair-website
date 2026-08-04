@@ -10,17 +10,19 @@ hideDescription: true
 
 This site is a personal research and advisory site. There are **two places where you actively submit personal data**: the advisory enquiry form on [/advisory/](/advisory/#start), and the newsletter subscription box on [/writing/](/writing/). Those two flows are what this notice describes in detail.
 
-Separately from anything you type in, ordinary technical data is still processed whenever a page loads. The site is hosted on GitHub Pages, the subscription box is an embedded Substack component, and the enquiry form is protected by anti-spam measures. Each of those may process standard technical information — IP address, browser characteristics, request logs, and cookies set by the embedded component — under its own provider's policy. This notice does not claim otherwise.
+Separately from anything you type in, ordinary technical data is processed as you use the site. That is described under [Technical data](#technical-data) below. This notice does not claim that no tracking, cookies, or technical data occur.
 
-## Who is responsible, and for what
+## Who decides what happens to your data
 
-The data controller is **Sinclair (Po-Sung) Huang**, operating this site in a personal capacity. The commitments in this notice describe what *I* do with the data I receive and control.
+**Sinclair (Po-Sung) Huang is the controller** for both flows: he decides why and how advisory enquiry data and publication subscriber data are used, and he manages both.
 
-The service providers named below are separate organisations. When they process data — including through their own subprocessors, such as the anti-spam services used by the form provider — they do so under **their own privacy policies and terms**, which I do not control and cannot guarantee on their behalf. Where their handling matters to you, please read their policies directly.
+**Formspree and Substack act as service providers on his behalf** — Formspree processes the enquiry form submissions, and Substack hosts the publication's subscriber list and delivers its posts. He administers both through their publisher/dashboard tools.
 
-## Your rights, and how to exercise them
+Those platforms **also process data for their own purposes** — running your account with them, security, abuse prevention, technical logs, and general platform functionality — under their own privacy policies and terms. That separate processing is theirs, not his, and this notice cannot speak for it.
 
-For the personal data I hold about you, you may ask me to:
+## Your rights, and where to ask
+
+For the personal data he holds about you, you may ask Sinclair to:
 
 - **confirm and let you review** what is held;
 - **provide you with a copy**;
@@ -28,40 +30,52 @@ For the personal data I hold about you, you may ask me to:
 - **stop collecting, processing, or using** it;
 - **delete** it.
 
-Write to **[research@sinclairhuang.org](mailto:research@sinclairhuang.org)**, and say which of the two flows your request concerns so it can be located quickly. Requests about data held *by* Substack, Formspree, or another provider may also need to be made to that provider directly; tell me and I will point you to the right route.
+**Write to [research@sinclairhuang.org](mailto:research@sinclairhuang.org) first.** That is the contact point for all three sets of data he controls: enquiry submissions held at Formspree, the copies delivered to his email, and the subscriber list of his Substack publication. He acts on those requests directly through his Formspree and Substack dashboards.
+
+A separate request to a platform is only needed for data that platform keeps for **its own** account, security, compliance, or platform purposes. If that turns out to apply to your request, he will tell you and point you to the right route.
 
 ## Advisory enquiries
 
-**What is collected.** Your name, email address, a description of the question or situation you are writing about, and — if you choose to provide them — your company and expected timeline. The form also records which page the enquiry was sent from and the version of this notice in force at the time.
+**What is collected.** Your name, email address, a description of the question or situation you are writing about, and — if you choose to provide them — your company and expected timeline. The form also records that you gave the required consent, which page the enquiry was sent from, and the version of this notice in force at the time.
 
-**What I use it for.** Replying to you, and assessing whether an engagement is appropriate. Nothing else. I do not sell the data I receive, and I do not use it for advertising or cross-site profiling.
+**What it is used for.** Replying to you, and assessing whether an engagement is appropriate. Nothing else. Sinclair does not sell the data he receives, and does not use it for advertising or cross-site profiling.
 
 **An enquiry does not subscribe you to anything.** Sending the form never adds you to the newsletter. There is no hidden or pre-ticked subscription field. If you also want the newsletter, subscribe separately on [/writing/](/writing/).
 
-**If you would rather not complete the form.** The name, email, question, and consent fields are required, so the form cannot be submitted without them. You can instead write to [research@sinclairhuang.org](mailto:research@sinclairhuang.org) or reach me on [LinkedIn](https://www.linkedin.com/in/po-sung-sinclair-h-53b33533/) — bearing in mind that email and LinkedIn are themselves operated by other companies, under their own policies.
+**How long it is kept.** Enquiry data is retained for at most **12 months after the last substantive contact**, then deleted. Formspree's dashboard holds submissions for 30 days on the current plan; copies forwarded to email are cleaned under the same 12-month policy. If an enquiry leads to a formal engagement, the records necessary for that engagement are kept for as long as contractual, accounting, and legal obligations require.
 
-**How long it is kept.** Enquiry data is retained for at most **12 months after the last substantive contact**, then deleted. The form provider's dashboard holds submissions for 30 days on the current plan; copies forwarded to email are cleaned under the same 12-month policy. If an enquiry leads to a formal engagement, the records necessary for that engagement are kept for as long as contractual, accounting, and legal obligations require.
+**If you would rather not use the form.** The name, email, question, and consent fields are required, so the form cannot be submitted without them. You can instead write to [research@sinclairhuang.org](mailto:research@sinclairhuang.org) or reach him on [LinkedIn](https://www.linkedin.com/in/po-sung-sinclair-h-53b33533/). Once such a message reaches him it is treated the same way as a form enquiry — used only to reply and to assess a possible engagement, under the same 12-month retention policy and the same exception for formal engagement records. The email and LinkedIn platforms themselves process your message under their own policies.
 
-**Please do not send in this form:** trade secrets or confidential material, national identification numbers, medical or financial records, or personal data about other people. If your question depends on such material, say so in general terms and we can agree a suitable channel first.
+**Please do not send in this form:** trade secrets or confidential material, national identification numbers, medical or financial records, or personal data about other people. If your question depends on such material, say so in general terms and a suitable channel can be agreed first.
 
 ## Newsletter subscription
 
-Subscription is handled entirely by **Substack**, which is the single system of record for the mailing list. The box on this site is Substack's own embedded form, so your email address goes to Substack and is stored there under Substack's privacy policy and terms.
+The subscription box on this site is Substack's own embedded form, and the publication's list lives in Substack. Sinclair runs that publication and can see and manage its subscriber data in the Substack publisher dashboard: **your email address, any name Substack makes available, your subscription status, and the subscription and activity data Substack reports to publishers.**
+
+**What it is used for.** Sending and managing this publication, and honouring your subscription choices. It is not used for unrelated marketing, and not for cross-site profiling.
 
 **Confirmation is required before posts are sent.** Substack stores the address you enter in order to send you a confirmation email; newsletter posts only begin once you confirm. Until then, no issues are sent to you.
 
-**Unsubscribing and deletion.** Every issue carries an unsubscribe link, which stops delivery immediately. Because Substack holds the list, removal of the underlying record and its retention period are governed by Substack — you can request deletion from them directly, and I will pass on or support such a request if you contact me instead.
+**Retention, unsubscribing, and deletion.** Subscriber records are held in Substack for as long as the subscription lasts. Every issue carries an unsubscribe link, which lets you stop future newsletter delivery. You can also ask Sinclair to remove you from the publication list — write to [research@sinclairhuang.org](mailto:research@sinclairhuang.org) and he will do it from the publisher dashboard. Any further data Substack retains for its own account, security, or compliance purposes is handled under Substack's own policy.
+
+## Technical data {#technical-data}
+
+Technical data is processed at different points, by different parties:
+
+- **Whenever any page loads** — the site is hosted on GitHub Pages, which processes standard web-request data, including your IP address.
+- **When you load [/writing/](/writing/)** — the embedded Substack subscription box is loaded from Substack, which may process technical data and set cookies as part of providing it.
+- **When you submit the enquiry form** — Formspree, together with the anti-spam measures enabled on that form, may process your submission along with technical data such as IP address and browser information. One of those measures is a hidden field in the form itself, which automated submissions tend to fill in and people never see.
 
 ## Service providers and international transfers
 
 | Service | Role | What it handles |
 |---|---|---|
-| **Formspree** | Advisory enquiry form processing | The fields you submit, plus technical data such as IP address and browser information used by it and its anti-spam subprocessors |
-| **Substack** | Newsletter list and delivery | Your email address and subscription activity; the embedded box may also set cookies and process technical data |
-| **Email provider** | Delivery of enquiry notifications and replies | The content of the enquiry and subsequent correspondence |
-| **GitHub Pages** | Website hosting | Standard web-server request data, including IP address |
+| **Formspree** | Processes enquiry form submissions on Sinclair's behalf | The fields you submit, plus technical data used for spam filtering |
+| **Substack** | Hosts the publication's subscriber list and delivers posts on Sinclair's behalf | Email address, available name, subscription status and activity; the embedded box may also set cookies and process technical data |
+| **Email provider** | Delivers enquiry notifications and replies | The content of the enquiry and subsequent correspondence |
+| **GitHub Pages** | Website hosting | Standard web-request data, including IP address |
 
-These providers operate internationally, so data submitted here may be processed **outside your country of residence**, including in the United States.
+Each of these also processes data for its own account, security, and platform purposes under its own policy. They operate internationally, so data submitted here may be processed **outside your country of residence**, including in the United States.
 
 ## Changes
 
