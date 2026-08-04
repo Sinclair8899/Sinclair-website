@@ -64,13 +64,14 @@ Technical data is processed at different points, by different parties:
 
 - **Whenever any page loads** — the site is hosted on GitHub Pages, which processes standard web-request data, including your IP address.
 - **When you load [/writing/](/writing/)** — the embedded Substack subscription box is loaded from Substack, which may process technical data and set cookies as part of providing it.
-- **When you submit the enquiry form** — Formspree, together with the anti-spam measures enabled on that form, may process your submission along with technical data such as IP address and browser information. One of those measures is a hidden field in the form itself, which automated submissions tend to fill in and people never see.
+- **When you submit the enquiry form** — Formspree processes your submission along with technical data such as IP address and browser information. Two anti-spam measures are enabled on this form: **Formshield**, Formspree's own spam filtering, and **Google reCAPTCHA**, which Formspree provides as a built-in option and which is operated by Google. Both examine technical data and interaction signals to tell automated submissions from people, and reCAPTCHA may set cookies under Google's own policy. A third measure sits in the form itself: a hidden field that automated submissions tend to fill in and people never see.
 
 ## Service providers and international transfers
 
 | Service | Role | What it handles |
 |---|---|---|
-| **Formspree** | Processes enquiry form submissions on Sinclair's behalf | The fields you submit, plus technical data used for spam filtering |
+| **Formspree** | Processes enquiry form submissions on Sinclair's behalf | The fields you submit, plus technical data used by its Formshield spam filtering |
+| **Google reCAPTCHA** | Bot detection on the enquiry form, enabled through Formspree | Technical data and interaction signals; may set cookies, under Google's own policy |
 | **Substack** | Hosts the publication's subscriber list and delivers posts on Sinclair's behalf | Email address, available name, subscription status and activity; the embedded box may also set cookies and process technical data |
 | **Email provider** | Delivers enquiry notifications and replies | The content of the enquiry and subsequent correspondence |
 | **GitHub Pages** | Website hosting | Standard web-request data, including IP address |
