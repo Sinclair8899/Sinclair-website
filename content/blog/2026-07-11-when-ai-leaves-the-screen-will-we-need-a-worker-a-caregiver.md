@@ -10,6 +10,8 @@ related_clusters: ["bio-ai", "capital-and-society"]
 cta: "subscribe"
 ---
 
+*繁體中文版：[AI離開螢幕之後：人類會先需要一個工人、照護者，還是一個陪伴者？](/blog/2026-07-11-ai-leaves-the-screen-zh/)*
+
 China is turning factories into schools for robots. Tesla is betting on general-purpose labour. But Physical AI’s most urgent value may be filling the gap left by a simple human limitation: no one can always be there.
 
 Sinclair

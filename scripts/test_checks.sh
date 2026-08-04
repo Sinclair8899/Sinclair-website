@@ -455,7 +455,7 @@ else
 fi
 
 # Baseline: the real content tree reports exactly the sealed counts.
-canon_direct canonical-baseline-21-21-0 pass "content" "21 canonicals / 21 Medium IDs / 0 duplicates"
+canon_direct canonical-baseline-23-21-0 pass "content" "23 canonicals / 21 Medium IDs / 0 duplicates"
 
 # The dispatcher's errorf contract is proven against REAL Hugo builds on
 # throwaway mini sites that use the actual partial.

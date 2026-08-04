@@ -10,6 +10,8 @@ related_clusters: ["semiconductors", "capital-and-society"]
 cta: "advisory"
 ---
 
+*繁體中文版：[AI Capex 錢流地圖 v0.2｜美國出錢，誰真的收得到毛利？](/blog/2026-07-03-ai-capex-money-map-v02-zh/)*
+
 ### The AI Capex Money Map v0.2 — America Spends. Who Actually Keeps the Margin?
 
 #### From $650B to HBM, CoWoS and power — mapping who gets paid, who keeps margin, and when the bottlenecks move.
