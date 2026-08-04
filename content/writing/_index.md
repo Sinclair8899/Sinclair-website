@@ -6,6 +6,16 @@ hideMeta: true
 
 Writing is where formal research meets field-based interpretation. Use this page to browse by form, or follow a research question across papers and essays.
 
+## Subscribe
+
+New essays and field notes by email. Subscription is handled by Substack, and you will be asked to confirm your address before anything is sent. See the [privacy notice](/privacy/) for what is collected.
+
+<div class="subscribe-embed">
+<iframe src="https://sinclairhuang.substack.com/embed" width="480" height="150" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no"></iframe>
+</div>
+
+If the box above does not load, you can [subscribe on Substack directly](https://sinclairhuang.substack.com/subscribe).
+
 ## Research Papers
 
 Working papers, doctoral research, and longer-form studies grounded in empirical analysis.

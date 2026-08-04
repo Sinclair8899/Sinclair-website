@@ -1,0 +1,100 @@
+/* Advisory enquiry form and newsletter subscription block.
+   PaperMod picks up every file under assets/css/extended/ automatically.
+   Kept to layout and form-control styling only — colours reuse the theme's
+   existing custom properties so both light and dark themes stay correct. */
+
+.enquiry-form {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem 1.3rem;
+  margin: 1.4rem 0;
+  max-width: 38rem;
+}
+
+.enquiry-form p {
+  margin: 0 0 0.9rem;
+}
+
+.enquiry-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.enquiry-form input[type="text"],
+.enquiry-form input[type="email"],
+.enquiry-form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--theme);
+  color: var(--primary);
+  font: inherit;
+}
+
+.enquiry-form textarea {
+  resize: vertical;
+}
+
+.enquiry-hint,
+.enquiry-optional,
+.enquiry-required {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--secondary);
+}
+
+.enquiry-hint {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.enquiry-consent label {
+  display: block;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.enquiry-consent input[type="checkbox"] {
+  margin-right: 0.4rem;
+}
+
+/* Honeypot: reachable by bots, never shown to or focusable by a person. */
+.enquiry-gotcha {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.enquiry-submit {
+  padding: 0.55rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--tertiary);
+  color: var(--primary);
+  font-weight: 600;
+  font: inherit;
+  cursor: pointer;
+}
+
+.enquiry-submit:hover {
+  background: var(--secondary);
+  color: var(--theme);
+}
+
+/* Substack's official embed is a fixed 480px iframe. The wrapper keeps it
+   from forcing horizontal scroll on a phone without altering the embed. */
+.subscribe-embed {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1.2rem 0 0.6rem;
+}
+
+.subscribe-embed iframe {
+  max-width: 100%;
+}

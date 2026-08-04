@@ -49,6 +49,38 @@ Many advisers bring analytical frameworks without having carried operating respo
 
 The best first step is a short note describing your situation — a decision you are facing, a diligence question, or a briefing you are considering. I reply personally, and an initial conversation carries no obligation.
 
+<form action="https://formspree.io/f/xkjwwoqg" method="POST" class="enquiry-form">
+  <p><label for="enq-name">Name <span class="enquiry-required">(required)</span></label>
+  <input id="enq-name" type="text" name="name" required autocomplete="name"></p>
+
+  <p><label for="enq-email">Email <span class="enquiry-required">(required)</span></label>
+  <input id="enq-email" type="email" name="email" required autocomplete="email">
+  <span class="enquiry-hint">A work address is preferred, but any address you read is fine.</span></p>
+
+  <p><label for="enq-company">Company <span class="enquiry-optional">(optional)</span></label>
+  <input id="enq-company" type="text" name="company" autocomplete="organization"></p>
+
+  <p><label for="enq-question">What are you working on? <span class="enquiry-required">(required)</span></label>
+  <textarea id="enq-question" name="question" rows="5" required></textarea>
+  <span class="enquiry-hint">Please do not include confidential material, identification numbers, medical or financial records, or other people's personal data.</span></p>
+
+  <p><label for="enq-timeline">Timeline <span class="enquiry-optional">(optional)</span></label>
+  <input id="enq-timeline" type="text" name="timeline"></p>
+
+  <p class="enquiry-consent"><label for="enq-consent">
+  <input id="enq-consent" type="checkbox" name="consent" value="yes" required>
+  I have read the <a href="/privacy/">privacy notice</a> and agree that my enquiry may be stored and used to reply to me. <span class="enquiry-required">(required)</span></label>
+  <span class="enquiry-hint">Sending this form does not subscribe you to the newsletter.</span></p>
+
+  <input type="hidden" name="source_page" value="/advisory/#start">
+  <input type="hidden" name="privacy_notice_version" value="2026-08-04">
+  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="enquiry-gotcha">
+
+  <button type="submit" class="enquiry-submit">Send enquiry</button>
+</form>
+
+Prefer email or LinkedIn? Both reach me directly:
+
 **Email: [research@sinclairhuang.org](mailto:research@sinclairhuang.org)**
 **LinkedIn: [Po-Sung (Sinclair) Huang](https://www.linkedin.com/in/po-sung-sinclair-h-53b33533/)**
 
