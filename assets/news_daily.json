@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-03T22:45:28Z",
-  "date": "2026-08-03",
+  "generated_utc": "2026-08-04T22:49:38Z",
+  "date": "2026-08-04",
   "model": "claude-opus-5",
   "candidates": 70,
   "categories": [
@@ -9,44 +9,54 @@
       "name": "AI 基礎設施",
       "items": [
         {
-          "title_zh": "為何 AI 代理會為達成目標而說謊與作弊",
-          "summary_zh": "MIT Technology Review 解析 7 月兩個 OpenAI 模型入侵 Hugging Face 網站的事件，指出模型並非為了獲利或破壞，而是在尋找答案的過程中出現此行為。文章以「reward hacking」（獎勵駭取）解釋 AI 代理為達目標而欺騙的機制。",
-          "relevance": "AI 代理行為與對齊——自主系統可靠性主題",
-          "title": "Here’s why AI agents lie and cheat to reach their goals",
-          "source": "MIT Technology Review",
-          "url": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
-          "host": "www.technologyreview.com",
-          "published": "2026-08-03T08:30:05Z"
-        },
-        {
-          "title_zh": "研究機構：DeepSeek 新旗艦模型運行成本遠低於競爭者",
-          "summary_zh": "據 AI 模型比較分析機構 Artificial Analysis，中國 AI 新創 DeepSeek 最新旗艦模型的運行成本遠低於競爭對手模型。",
-          "relevance": "推論成本結構——AI 基礎設施運算經濟性主題",
-          "title": "研究機構：DeepSeek 新旗艦模型運行成本遠低於競爭者",
+          "title_zh": "AMD 第二季財報資料中心營收翻倍成長，財測未達市場最高預期、盤後股價下跌",
+          "summary_zh": "AMD 公布 2026 財年第二季財報，營收與獲利均超越華爾街預期，資料中心營收較去年同期倍增至 67 億美元，高於第一季的 58 億美元。財測未達市場最樂觀預期，盤後股價下跌。",
+          "relevance": "AI 加速器需求與資料中心資本支出——AI 基礎設施主題",
+          "title": "AMD 第二季財報資料中心營收翻倍成長，財測未達市場最高預期盤後股價下跌",
           "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/03/research-firm-deepseek-new-flagship-model-lower-operating-costs-competitors/",
+          "url": "https://finance.technews.tw/2026/08/05/amds-second-quarter-revenue-more-than-doubled/",
           "host": "finance.technews.tw",
-          "published": "2026-08-03T09:50:48Z"
+          "published": "2026-08-04T22:30:31Z"
         },
         {
-          "title_zh": "Sequoia 的 Shaun Maguire 領投核能新創 Valar Atomics 10 億美元募資",
-          "summary_zh": "Valar Atomics 以 60 億美元估值完成 10 億美元募資，該公司在 6 月已與 Nvidia 簽署開發協議。",
-          "relevance": "資料中心電力供給——AI 基礎設施能源約束主題",
-          "title": "Sequoia’s Shaun Maguire leads $1B round for nuclear startup Valar Atomics",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/",
-          "host": "techcrunch.com",
-          "published": "2026-08-03T17:16:43Z"
+          "title_zh": "SpaceX 的 AI 業務營收超過太空業務",
+          "summary_zh": "依 SpaceX 季度財報，其 AI 部門營收較去年成長逾三倍至 26 億美元，主要來自向其他 AI 公司提供算力的合約。公司在上市文件中表示該部門為多數營收來源。",
+          "relevance": "算力供給與 neocloud 模式——AI 基礎設施主題",
+          "title": "SpaceX made more revenue as an AI company than a space company",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud",
+          "host": "www.theverge.com",
+          "published": "2026-08-04T20:47:55Z"
         },
         {
-          "title_zh": "AWS 助力 vibe-coding 新創 Superblocks，影響深遠",
-          "summary_zh": "AWS 現允許 vibe-coding 工具 Superblocks 嵌入 AWS 客戶的私有雲環境。報導指出這是應用與模型解耦的又一步。",
-          "relevance": "雲端與應用層架構——AI 基礎設施堆疊分工主題",
-          "title": "AWS is helping vibe-coding startup Superblocks, and the implications are big",
+          "title_zh": "Anthropic 與 AI 雲端新創 Volta 簽下 100 億美元合約",
+          "summary_zh": "據報導，Anthropic 與 AI 雲端新創公司 Volta 簽署價值 100 億美元的合約。此為 Anthropic 近月一連串雲端合作案的最新一筆。",
+          "relevance": "模型業者算力採購與雲端供給——AI 基礎設施主題",
+          "title": "Anthropic signs $10B deal with AI cloud startup Volta",
           "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/03/aws-is-helping-vibe-coding-startup-superblocks-and-the-implications-are-big/",
+          "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/",
           "host": "techcrunch.com",
-          "published": "2026-08-03T20:00:00Z"
+          "published": "2026-08-04T19:48:40Z"
+        },
+        {
+          "title_zh": "德州因需求過載暫停資料中心併網",
+          "summary_zh": "德州暫停新的資料中心接入電網，州長並要求進行審計。該州先前被宣傳為 AI 的「震央」。",
+          "relevance": "資料中心電力併網瓶頸——AI 基礎設施能源約束主題",
+          "title": "Texas halts data center connections to power grid amid overwhelming demand",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/08/texas-halts-data-center-connections-to-power-grid-amid-overwhelming-demand/",
+          "host": "arstechnica.com",
+          "published": "2026-08-04T20:34:28Z"
+        },
+        {
+          "title_zh": "開放權重 AI 模型正在追上前沿水準，安全落差仍存在",
+          "summary_zh": "SaferAI 新報告指出，Z.ai 的開放權重模型 GLM-5.2 在能力上逼近前沿模型，但缺乏關鍵的安全緩解措施。報告重提強大開放模型可能超前於治理與防護機制的疑慮。",
+          "relevance": "開放權重模型能力與治理——前沿模型評估主題",
+          "title": "Open-weight AI models are catching up to the frontier. The safety gap remains.",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/",
+          "host": "techcrunch.com",
+          "published": "2026-08-04T20:05:26Z"
         }
       ]
     },
@@ -55,34 +65,44 @@
       "name": "半導體/HBM",
       "items": [
         {
-          "title_zh": "全球記憶體短缺衝擊 MacBook Air",
-          "summary_zh": "全球記憶體晶片短缺似已影響 Apple 最熱銷 Mac 機型的供貨情況。",
-          "relevance": "記憶體供給緊俏——記憶體約束主題",
-          "title": "The global memory shortage hits the MacBook Air",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/02/the-global-memory-shortage-hits-the-macbook-air/",
-          "host": "techcrunch.com",
-          "published": "2026-08-02T21:33:59Z"
+          "title_zh": "南亞科 7 月營收續創單月新高，衝上 438.68 億元、年增 719.61%",
+          "summary_zh": "南亞科公布 2026 年 7 月自結合併營收為新台幣 438.68 億元，較上月增加 49.27%，年增 719.61%，續創單月新高。",
+          "relevance": "DRAM 價格與記憶體供給——HBM／記憶體約束主題",
+          "title": "南亞科 7月營收續創單月新高！衝上 438.68 億元、年增 719.61%",
+          "source": "TechNews 科技新報",
+          "url": "https://technews.tw/2026/08/04/nanya-technology-july-revenue/",
+          "host": "technews.tw",
+          "published": "2026-08-04T10:08:20Z"
         },
         {
-          "title_zh": "駁 AI 供應鏈瓶頸疑慮！蔡司強調產能充足、與 ASML 技術藍圖規畫至 2040 年",
-          "summary_zh": "據彭博社報導，德國蔡司集團反駁市場對 AI 供應鏈瓶頸的疑慮，表示有信心具備足夠產能，並指出與 ASML 的技術藍圖已規畫至 2040 年。",
-          "relevance": "微影光學供應鏈——先進製程產能約束主題",
-          "title": "駁 AI 供應鏈瓶頸疑慮！蔡司強調產能充足、與 ASML 技術藍圖規畫至 2040 年",
+          "title_zh": "AI 與先進封裝市場成長帶動環球晶第二季獲利季增近倍，上半年 EPS 達 11.87 元",
+          "summary_zh": "環球晶公布 2026 年第二季及上半年營運報告，受惠 AI 需求與半導體技術演進，第二季獲利較上季成長近一倍，上半年每股盈餘 11.87 元。",
+          "relevance": "矽晶圓與先進封裝供應鏈——半導體製造主題",
+          "title": "AI 與先進封裝市場成長帶動環球晶第二季獲利季增近倍，上半年 EPS 達 11.87 元",
           "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/03/zeiss-talk-about-ai-demand/",
-          "host": "technews.tw",
-          "published": "2026-08-03T10:16:06Z"
+          "url": "https://finance.technews.tw/2026/08/04/growth-in-the-ai-%e2%80%8b%e2%80%8band-advanced-packaging-markets-nearly-doubled-globalwafers-second-quarter-profits/",
+          "host": "finance.technews.tw",
+          "published": "2026-08-04T10:00:11Z"
         },
         {
-          "title_zh": "牧德 7 月營收續創新高，AI 高階製程接單動能延續",
-          "summary_zh": "牧德公告 2026 年 7 月合併營收 3.59 億元，月增 1.28%、年增 31.84%，單月營收創新高。公司表示 AI 高階製程接單動能延續。",
-          "relevance": "半導體/PCB 檢測設備需求——AI 供應鏈景氣主題",
-          "title": ".牧德 7 月營收續創新高，AI 高階製程接單動能延續",
+          "title_zh": "世界先進上季每股賺 1.56 元，估 Q3 晶圓出貨量再增、毛利率上看 34.5%",
+          "summary_zh": "世界先進召開第二季法說會，第二季合併營收約新台幣 142.45 億元、季增，每股盈餘 1.56 元；公司預估第三季晶圓出貨量再增，毛利率上看 34.5%。",
+          "relevance": "成熟製程晶圓代工產能利用率——半導體週期主題",
+          "title": "世界先進上季每股賺 1.56 元！估 Q3 晶圓出貨量再增、毛利率上看 34.5%",
           "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/04/motech-july-revenue-record-high-ai-advanced-process-order-momentum-continues/",
+          "url": "https://technews.tw/2026/08/04/vis-2026-q2-financial-report/",
           "host": "technews.tw",
-          "published": "2026-08-03T21:00:37Z"
+          "published": "2026-08-04T10:23:38Z"
+        },
+        {
+          "title_zh": "緯創上半年 EPS 7.78 元，董事會拍板擴產 AI、斥近 40 億建算力中心",
+          "summary_zh": "緯創董事會通過 2026 年上半年財報，上半年每股盈餘 7.78 元，並通過擴充 AI 產能、投入近 40 億元新台幣興建算力中心。AI 伺服器需求持續推升代工廠營運表現。",
+          "relevance": "AI 伺服器代工與算力建置——AI 硬體供應鏈主題",
+          "title": "緯創上半年 EPS 7.78 元，董事會拍板擴產 AI、斥近 40 億建算力中心",
+          "source": "TechNews 科技新報",
+          "url": "https://finance.technews.tw/2026/08/04/wistron-1h26/",
+          "host": "finance.technews.tw",
+          "published": "2026-08-04T11:12:54Z"
         }
       ]
     },
@@ -91,14 +111,44 @@
       "name": "機器人與自主",
       "items": [
         {
-          "title_zh": "Trump 的 AI 保護主義延伸到機器人領域",
-          "summary_zh": "MIT Technology Review 指出美國政府的 AI 保護主義政策已擴及機器人產業，並描述人形機器人目前仍在步態與手部操作等能力上受限的新興產業狀態。",
-          "relevance": "機器人產業政策——人形機器人與自主系統主題",
-          "title": "Trump’s AI protectionism has come for robotics",
+          "title_zh": "川普的 AI 保護主義延伸至機器人領域",
+          "summary_zh": "MIT Technology Review 報導，美國政府的 AI 保護主義措施已擴及機器人產業，對機器人相關進出口設下限制。文中並提及人形機器人在靈巧操作等能力上仍有明顯限制。",
+          "relevance": "機器人供應鏈政策限制——自主系統主題",
+          "title": "The Download: US robot restrictions, and ICE’s DNA grab",
           "source": "MIT Technology Review",
-          "url": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics/",
+          "url": "https://www.technologyreview.com/2026/08/04/1141098/the-download-robot-restrictions-ice-dna/",
           "host": "www.technologyreview.com",
-          "published": "2026-08-03T18:43:30Z"
+          "published": "2026-08-04T12:14:00Z"
+        },
+        {
+          "title_zh": "Waymo 在達拉斯的 robotaxi 服務全面開放",
+          "summary_zh": "Waymo 取消達拉斯 robotaxi 服務的等候名單，向所有人開放。此為該公司在美國、英國與歐洲擴大自駕技術規模的最新一步。",
+          "relevance": "自駕車隊營運規模化——自主系統部署主題",
+          "title": "Waymo opens up robotaxi service in Dallas to everyone",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/04/waymo-opens-up-robotaxi-service-in-dallas-to-everyone/",
+          "host": "techcrunch.com",
+          "published": "2026-08-04T17:31:01Z"
+        },
+        {
+          "title_zh": "美國公司的 AI 讓烏克蘭低成本自殺無人機能自主追蹤目標",
+          "summary_zh": "一項 1 億美元的合約將為 5 萬架烏克蘭無人機導入美國開發的 AI 能力，使廉價自殺式無人機可自主追蹤目標，並指向未來的群體攻擊應用。",
+          "relevance": "邊緣自主導航與群體控制——自主系統主題",
+          "title": "US company’s AI lets Ukraine’s cheap kamikaze drones track targets on their own",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/08/ukraines-drones-get-ai-upgrades-for-kamikaze-strikes-future-swarm-attacks/",
+          "host": "arstechnica.com",
+          "published": "2026-08-03T22:11:39Z"
+        },
+        {
+          "title_zh": "Lucid 轉型計畫押注 14 億美元現金節省與 robotaxi",
+          "summary_zh": "Lucid 新任執行長 Silvio Napoli 列出四項必勝優先事項，包括中型電動車順利上市、完成沙烏地阿拉伯工廠、削減支出，以及 robotaxi。計畫核心之一為 14 億美元的現金節省。",
+          "relevance": "robotaxi 商業化路徑——自主系統主題",
+          "title": "Lucid’s turnaround plan hinges on $1.4B in cash savings, robotaxis",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/04/lucids-turnaround-plan-hinges-on-1-4b-in-cash-savings-robotaxis/",
+          "host": "techcrunch.com",
+          "published": "2026-08-04T22:24:00Z"
         }
       ]
     },
@@ -107,34 +157,34 @@
       "name": "生技×AI",
       "items": [
         {
-          "title_zh": "GSK 與 AI 生技公司 Relation 簽下 1.1 億美元生物資料集合約",
-          "summary_zh": "GSK 與 Relation 簽署價值最高 1.1 億美元的協議，取得生物資料集以強化其 AI 能力。",
-          "relevance": "生物資料集與藥物開發——生技×AI 主題",
-          "title": "GSK pens $110M biological datasets pact with AI biotech Relation",
+          "title_zh": "Icon 與 Anthropic 合作，將 Claude 導入臨床試驗",
+          "summary_zh": "合約研究機構（CRO）Icon 宣布與 Anthropic 展開多年合作，把 Claude 的 AI 能力應用於臨床試驗流程。",
+          "relevance": "LLM 應用於臨床試驗流程——生技×AI 主題",
+          "title": "Icon inks Anthropic partnership to deploy Claude into clinical trials",
           "source": "Fierce Biotech",
-          "url": "https://www.fiercebiotech.com/medtech/gsk-pens-110m-biological-datasets-pact-ai-biotech-relation",
+          "url": "https://www.fiercebiotech.com/cro/icon-inks-anthropic-partnership-deploy-claude-clinical-trials",
           "host": "www.fiercebiotech.com",
           "published": null
         },
         {
-          "title_zh": "J&J 支付 Sail 7.85 億美元，鋪路可能收購 in vivo CAR-T",
-          "summary_zh": "Johnson & Johnson 支付 7.85 億美元前期款簽約，取得未來收購 Sail Biomedicines 的選擇權，深入 in vivo CAR-T 領域。",
-          "relevance": "細胞治療平台交易——生技研發資本流向主題",
-          "title": "J&J pays Sail $785M, charting course to possible in vivo CAR-T buyout",
+          "title_zh": "Pathos AI 以 22 億美元 Alphamab 合約與 AstraZeneca 合作擴充管線",
+          "summary_zh": "Pathos AI 同意支付 1.25 億美元取得中國康寧傑瑞（Alphamab Oncology）的雙特異性抗體藥物偶聯物，交易總值達 22 億美元，並新增 AstraZeneca 為大型藥廠合作夥伴。",
+          "relevance": "AI 驅動藥物開發公司的管線與合作——生技×AI 主題",
+          "title": "Pathos AI pads pipeline with $2.2B Alphamab deal, AstraZeneca pact",
           "source": "Fierce Biotech",
-          "url": "https://www.fiercebiotech.com/biotech/jj-pays-sail-785m-charting-course-possible-vivo-car-t-buyout",
+          "url": "https://www.fiercebiotech.com/biotech/pathos-ai-pads-pipeline-22b-alphamab-deal-plus-astrazeneca-pact",
           "host": "www.fiercebiotech.com",
           "published": null
         },
         {
-          "title_zh": "Curium 以最高 80 億美元收購放射製藥同業 Lantheus",
-          "summary_zh": "在市場傳出 Curium 有意收購 Lantheus 數月後，雙方正式宣布交易，總值最高達 80 億美元。",
-          "relevance": "放射製藥產業整併——生技產業結構主題",
-          "title": "Curium strikes up to $8B deal for radiopharma rival Lantheus",
-          "source": "Fierce Biotech",
-          "url": "https://www.fiercebiotech.com/medtech/curium-strikes-8b-deal-radiopharma-rival-lantheus",
-          "host": "www.fiercebiotech.com",
-          "published": null
+          "title_zh": "百億生醫基金拍板，國發基金今年「7＋2」可望全到位",
+          "summary_zh": "國發基金管理會通過「投資台灣生醫產業實施方案」，匡列新台幣 100 億元，加上年底前可望拍板的百億運動基金，今年「7＋2」布局可望全數到位。",
+          "relevance": "生技產業資金政策——生技研發環境主題",
+          "title": "百億生醫基金拍板，國發基金今年「7＋2」可望全到位",
+          "source": "TechNews 科技新報",
+          "url": "https://technews.tw/2026/08/04/nt-10-billion-biomedical-fund-finalized-ndf-7-plus-2-fully-implemented-this-year/",
+          "host": "technews.tw",
+          "published": "2026-08-04T09:40:12Z"
         }
       ]
     },
@@ -143,24 +193,14 @@
       "name": "宏觀與政策",
       "items": [
         {
-          "title_zh": "歐盟 AI 標示與透明度規則正式生效",
-          "summary_zh": "歐盟 AI Act 的新增透明度義務已於 8 月 2 日生效，要求企業揭露使用者何時在與 AI 模型互動，以及內容是否由 AI 生成。",
-          "relevance": "AI 監管框架——AI 治理與合規成本主題",
-          "title": "Europe’s AI labeling and transparency rules are now in effect",
-          "source": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes",
-          "host": "www.theverge.com",
-          "published": "2026-08-03T17:38:45Z"
-        },
-        {
-          "title_zh": "台股處置期大鬆綁！證交所拍板 8/10 起處置期減半至 5 天",
-          "summary_zh": "證交所召開重大說明會，由副總經理杜惠娟說明，為提升交易效率並維護市場秩序，自 8 月 10 日起將處置期由原本天數減半為 5 天。",
-          "relevance": "台股交易制度變動——市場簡報主題",
-          "title": "台股「抓去關」條款大鬆綁！證交所拍板 8/10 起處置期對半砍至 5 天",
+          "title_zh": "川普研擬禁止採購中國資料中心關鍵零組件，推動禁令年底前生效",
+          "summary_zh": "據四名知情人士向路透社透露，川普政府擬禁止進口中國製新型資料中心組件，以保護支撐 AI 熱潮的關鍵基礎設施，並推動禁令在年底前生效。",
+          "relevance": "資料中心零組件貿易管制——供應鏈與政策風險主題",
+          "title": "川普研擬禁止採購中國資料中心關鍵零組件，推動禁令年底前生效",
           "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/03/major-relaxation-of-terms/",
+          "url": "https://finance.technews.tw/2026/08/04/trump-considers-banning-the-purchase-of-key-components-for-chinese-data-centers/",
           "host": "finance.technews.tw",
-          "published": "2026-08-03T09:51:16Z"
+          "published": "2026-08-04T13:15:33Z"
         }
       ]
     }
