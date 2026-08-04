@@ -54,23 +54,23 @@ The best first step is a short note describing your situation — a decision you
   <input id="enq-name" type="text" name="name" required autocomplete="name"></p>
 
   <p><label for="enq-email">Email <span class="enquiry-required">(required)</span></label>
-  <input id="enq-email" type="email" name="email" required autocomplete="email">
-  <span class="enquiry-hint">A work address is preferred, but any address you read is fine.</span></p>
+  <input id="enq-email" type="email" name="email" required autocomplete="email" aria-describedby="enq-email-hint">
+  <span id="enq-email-hint" class="enquiry-hint">A work address is preferred, but any address you read is fine.</span></p>
 
   <p><label for="enq-company">Company <span class="enquiry-optional">(optional)</span></label>
   <input id="enq-company" type="text" name="company" autocomplete="organization"></p>
 
   <p><label for="enq-question">What are you working on? <span class="enquiry-required">(required)</span></label>
-  <textarea id="enq-question" name="question" rows="5" required></textarea>
-  <span class="enquiry-hint">Please do not include confidential material, identification numbers, medical or financial records, or other people's personal data.</span></p>
+  <textarea id="enq-question" name="question" rows="5" required aria-describedby="enq-question-hint"></textarea>
+  <span id="enq-question-hint" class="enquiry-hint">Please do not include confidential material, identification numbers, medical or financial records, or other people's personal data.</span></p>
 
   <p><label for="enq-timeline">Timeline <span class="enquiry-optional">(optional)</span></label>
   <input id="enq-timeline" type="text" name="timeline"></p>
 
   <p class="enquiry-consent"><label for="enq-consent">
-  <input id="enq-consent" type="checkbox" name="consent" value="yes" required>
+  <input id="enq-consent" type="checkbox" name="consent" value="yes" required aria-describedby="enq-consent-hint">
   I have read the <a href="/privacy/">privacy notice</a> and agree that my enquiry may be stored and used to reply to me. <span class="enquiry-required">(required)</span></label>
-  <span class="enquiry-hint">Sending this form does not subscribe you to the newsletter.</span></p>
+  <span id="enq-consent-hint" class="enquiry-hint">Sending this form does not subscribe you to the newsletter.</span></p>
 
   <input type="hidden" name="source_page" value="/advisory/#start">
   <input type="hidden" name="privacy_notice_version" value="2026-08-04">

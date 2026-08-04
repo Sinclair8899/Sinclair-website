@@ -10,7 +10,7 @@
 <meta name="description" content="Independent advisory for boards, executive teams, and investors navigating AI infrastructure, semiconductors, supply chains, and capital allocation.">
 <meta name="author" content="">
 <link rel="canonical" href="https://sinclairhuang.org/advisory/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.bb4302774ffad55374a3e8a88e97a9e07bd4934dce6d12897d5e613b6db75943.css" integrity="sha256-u0MCd0/61VN0o&#43;iojpep4HvUk03ObRKJfV5hO223WUM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7ec32f80dc970b9da48dc6f22eebefc30d73f9ed19464768233772a01e2eb779.css" integrity="sha256-fsMvgNyXC52kjcbyLuvvww1z&#43;e0ZRkdoIzdyoB4ut3k=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://sinclairhuang.org/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://sinclairhuang.org/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://sinclairhuang.org/favicon-32x32.png">
@@ -238,19 +238,19 @@
   <p><label for="enq-name">Name <span class="enquiry-required">(required)</span></label>
   <input id="enq-name" type="text" name="name" required autocomplete="name"></p>
   <p><label for="enq-email">Email <span class="enquiry-required">(required)</span></label>
-  <input id="enq-email" type="email" name="email" required autocomplete="email">
-  <span class="enquiry-hint">A work address is preferred, but any address you read is fine.</span></p>
+  <input id="enq-email" type="email" name="email" required autocomplete="email" aria-describedby="enq-email-hint">
+  <span id="enq-email-hint" class="enquiry-hint">A work address is preferred, but any address you read is fine.</span></p>
   <p><label for="enq-company">Company <span class="enquiry-optional">(optional)</span></label>
   <input id="enq-company" type="text" name="company" autocomplete="organization"></p>
   <p><label for="enq-question">What are you working on? <span class="enquiry-required">(required)</span></label>
-  <textarea id="enq-question" name="question" rows="5" required></textarea>
-  <span class="enquiry-hint">Please do not include confidential material, identification numbers, medical or financial records, or other people's personal data.</span></p>
+  <textarea id="enq-question" name="question" rows="5" required aria-describedby="enq-question-hint"></textarea>
+  <span id="enq-question-hint" class="enquiry-hint">Please do not include confidential material, identification numbers, medical or financial records, or other people's personal data.</span></p>
   <p><label for="enq-timeline">Timeline <span class="enquiry-optional">(optional)</span></label>
   <input id="enq-timeline" type="text" name="timeline"></p>
   <p class="enquiry-consent"><label for="enq-consent">
-  <input id="enq-consent" type="checkbox" name="consent" value="yes" required>
+  <input id="enq-consent" type="checkbox" name="consent" value="yes" required aria-describedby="enq-consent-hint">
   I have read the <a href="/privacy/">privacy notice</a> and agree that my enquiry may be stored and used to reply to me. <span class="enquiry-required">(required)</span></label>
-  <span class="enquiry-hint">Sending this form does not subscribe you to the newsletter.</span></p>
+  <span id="enq-consent-hint" class="enquiry-hint">Sending this form does not subscribe you to the newsletter.</span></p>
   <input type="hidden" name="source_page" value="/advisory/#start">
   <input type="hidden" name="privacy_notice_version" value="2026-08-04">
   <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="enquiry-gotcha">

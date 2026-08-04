@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sinclairhuang.org/</loc>
-    <lastmod>2026-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-04T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/privacy/</loc>
+    <lastmod>2026-08-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/insights/</loc>
     <lastmod>2026-08-02T00:00:00+00:00</lastmod>
@@ -128,8 +131,6 @@
     <loc>https://sinclairhuang.org/advisory/</loc>
   </url><url>
     <loc>https://sinclairhuang.org/data/</loc>
-  </url><url>
-    <loc>https://sinclairhuang.org/privacy/</loc>
   </url><url>
     <loc>https://sinclairhuang.org/publications/</loc>
   </url><url>

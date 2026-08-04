@@ -6,8 +6,15 @@
     <description>Recent content in Home on Sinclair Huang, HEC Liège, Executive DBA</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://sinclairhuang.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy</title>
+      <link>https://sinclairhuang.org/privacy/</link>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0800</pubDate>
+      <guid>https://sinclairhuang.org/privacy/</guid>
+      <description>How enquiry and subscription data on sinclairhuang.org is collected, used, retained, and deleted — including the third-party services involved.</description>
+    </item>
     <item>
       <title>Research Brief: The Mid-2026 Semiconductor Correction</title>
       <link>https://sinclairhuang.org/insights/research-brief-mid-2026-semiconductor-correction/</link>
@@ -274,13 +281,6 @@
       <guid>https://sinclairhuang.org/data/</guid>
       <description>&lt;h2 id=&#34;-ai-semiconductor-valuation-dataset&#34;&gt;📊 AI Semiconductor Valuation Dataset&lt;/h2&gt;
 &lt;p&gt;Utilizing &lt;strong&gt;GEE regression&lt;/strong&gt; and &lt;strong&gt;Random Forest models&lt;/strong&gt; to analyze the impact of R&amp;amp;D intensity on firm valuation across 95 global semiconductor firms.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Privacy</title>
-      <link>https://sinclairhuang.org/privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/privacy/</guid>
-      <description>How enquiry and subscription data on sinclairhuang.org is collected, used, retained, and deleted — including the third-party services involved.</description>
     </item>
     <item>
       <title>Research Profile</title>

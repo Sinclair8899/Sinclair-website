@@ -21,14 +21,14 @@
   margin-bottom: 0.25rem;
 }
 
-.enquiry-form input[type="text"],
+.enquiry-form input[type="text"]:not(.enquiry-gotcha),
 .enquiry-form input[type="email"],
 .enquiry-form textarea {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   padding: 0.5rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--secondary);
   border-radius: 4px;
   background: var(--theme);
   color: var(--primary);
@@ -62,12 +62,16 @@
   margin-right: 0.4rem;
 }
 
-/* Honeypot: reachable by bots, never shown to or focusable by a person. */
-.enquiry-gotcha {
+/* Honeypot: reachable by bots, never shown to or focusable by a person.
+   The generic control rule above excludes it, and this rule is written at
+   matching specificity so the 1px box cannot be re-inflated by it. */
+.enquiry-form input.enquiry-gotcha {
   position: absolute;
   left: -9999px;
   width: 1px;
   height: 1px;
+  padding: 0;
+  border: 0;
   overflow: hidden;
 }
 
@@ -97,4 +101,18 @@
 
 .subscribe-embed iframe {
   max-width: 100%;
+}
+
+/* PaperMod globally sets `input, textarea { outline: 0 }`, which removes the
+   keyboard focus indicator. Restore an explicit, high-contrast one on every
+   interactive element in these blocks — the honeypot is excluded because it
+   is deliberately unreachable (tabindex="-1"). */
+.enquiry-form input:not(.enquiry-gotcha):focus-visible,
+.enquiry-form textarea:focus-visible,
+.enquiry-form input[type="checkbox"]:focus-visible,
+.enquiry-submit:focus-visible,
+.subscribe-embed iframe:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
