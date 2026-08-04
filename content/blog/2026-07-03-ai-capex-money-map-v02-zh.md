@@ -26,7 +26,7 @@ cta: "advisory"
 
 Reuters 引述 Bridgewater 的估計：Alphabet、Amazon、Meta、Microsoft 四大 2026 年的 AI 基礎設施投資約 **US$650B**，高於 2025 年約 US$410B。先講清楚一件事——這是**四大的地板數**，不含 Oracle、Stargate、CoreWeave 這類 neocloud、xAI，也不含任何非美系業者。所以 $650B 是四家公司的**下限**，不是市場總額。
 
-錢不會平均落下。它會分成幾條性質完全不同的水管。以下是第一層、彼此互斥的系統層分配（示意情境，加總 100%）。要注意的是，設備與材料屬於二階供應商的 capex，不計入 hyperscaler 的直接支出，以避免重複計算：
+錢不會平均落下，而會進入性質不同的系統層支出。設備與材料則屬二階供應商 capex，不計入 hyperscaler 直接支出，以避免重複計算。
 
 關鍵是——**設備與材料（ASML、AMAT、TEL、Advantest…）不在這 $650B 裡。** 那是台積電、SK Hynix 的資本支出，是二階供應商支出、是另一個分母。把它加進 hyperscaler 支出裡相加，就是 v0.1 犯的、也是很多市場圖表仍在犯的 **double counting**。
 
@@ -34,7 +34,7 @@ Reuters 引述 Bridgewater 的估計：Alphabet、Amazon、Meta、Microsoft 四�
 
 把「Compute Systems」這條水管打開，你會看到這一輪最反直覺的結構變化。
 
-以 Epoch AI 對 B200 的 BOM 模型為參考：B200 的 variable manufacturing cost 約 US$5,700–7,300（中心值約 US$6,400），其中 **HBM + 先進封裝合計約占三分之二**。乾淨的 100% stack 大致長這樣：
+以 Epoch AI 對 B200 的 BOM 模型為參考：B200 的 variable manufacturing cost 約 US$5,700–7,300（中心值約 US$6,400），其中 **HBM + 先進封裝合計約占製造成本三分之二**；此比例為分析用估算，並非廠商揭露的 BOM。
 
 這裡要回答的是投資問題，不是工程問題——上述比例為分析用估算，並非廠商揭露的 BOM：**當 hyperscaler 付一顆加速器的錢，那些實體美元真正流到哪裡？** Nvidia 在最上層收走 IP 與平台毛利，但**箱子裡的實體現金，大量流向 SK Hynix（HBM）與台積電（封裝）**。「誰能出貨 AI 加速器」早已不是 logic die 的問題，而是 memory allocation、CoWoS、substrate、測試的聯合約束。
 
@@ -142,11 +142,11 @@ AI FOMO 不一定錯。但真正決定長期報酬的，不是你買到「AI」�
 
 **模型邊界：** 這不是一份拆到每根電纜、接頭、建材的投行 BOM 模型，而是一張用公開資料建立的 AI capex 錢流、毛利留存與瓶頸時間 v0.2 地圖。它的目的不是假裝精準，而是避免重複計算、把 hyperscaler 直接支出與二階供應商 capex 分開，並追問：哪一層真的留得住毛利。
 
-**English Summary**
+### English Summary
 
 **The AI Capex Money Map v0.2 — America spends; who actually keeps the margin?** Of the ~US$650B the US Big Four will spend on AI infrastructure in 2026 (a floor, not a market total), this public-data map separates three things usually blurred together: where capex becomes **revenue**, where revenue becomes **margin**, and when **bottlenecks** ease. Opening the accelerator box, the cost center has shifted from logic die to **HBM + advanced packaging (~two-thirds of unit cost)** — so the real dollars flow to SK Hynix and TSMC, not just Nvidia. In Taiwan the same capex dollar becomes four different businesses: TSMC’s 66% gross margin versus Quanta’s 4.78% — an order-of-magnitude gap driven by the buy-and-sell/consignment model, not effort. MediaTek’s ASIC re-rating is the case study: volume is being confirmed (guidance doubled to ~US$2B), but the margin story is still unproven, especially if Google keeps more design/procurement control in-house. **Money flow doesn’t lie; bottlenecks decide who keeps the margin.**
 
-**Data / Source Notes / References**
+### Data / Source Notes / References
 
 1. **Reuters / Bridgewater** — Big Four (Alphabet, Amazon, Meta, Microsoft) 2026 AI infrastructure investment ≈ US$650B, up from ≈ US$410B in 2025. **(Confirmed.)**
 

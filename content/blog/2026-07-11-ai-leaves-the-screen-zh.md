@@ -230,7 +230,7 @@ ChatGPT證明機器可以生成人類的語言；Physical AI要證明的，是�
 
 真正值得期待的，不是機器終於變得像人，而是科技終於有機會在人的能力有限時，幫助我們更長久、更有尊嚴地照顧彼此。
 
-**作者註（Author Note）**
+### 作者註（Author Note）
 
 這篇文章的起點，是作者家庭照護九十多歲母親的親身經驗。本文是一篇關於技術能力、部署經濟、醫療與照護設計、以及社會治理的評論分析；它不是對任何公司或產品的背書，也不是對特定商業化時程的預測。文中刻意把**公司聲明、研究原型、預購／訂單、產能規劃、實際交付、長期部署與獨立驗證**視為不同層級的證據。
 
@@ -248,7 +248,7 @@ ChatGPT證明機器可以生成人類的語言；Physical AI要證明的，是�
 
 最後編輯審閱日期：2026年7月11日
 
-**參考資料（References）**
+### 參考資料（References）
 
 1. Stanford HAI, [What is Spatial Intelligence?](https://hai.stanford.edu/ai-definitions/what-is-spatial-intelligence)
 
@@ -284,7 +284,7 @@ ChatGPT證明機器可以生成人類的語言；Physical AI要證明的，是�
 
 17. Xinhua, [UBTECH U1 launch pricing and company-announced orders](https://www.xinhuanet.com/tech/20260701/3c549b1ded2e47a4894e5b982b8ebc09/c.html)
 
-**延伸閱讀（Further Reading）**
+### 延伸閱讀（Further Reading）
 
 - **空間智慧與三維世界理解：** Stanford HAI, [What is Spatial Intelligence?](https://hai.stanford.edu/ai-definitions/what-is-spatial-intelligence)
 
