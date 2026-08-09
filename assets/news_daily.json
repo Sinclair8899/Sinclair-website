@@ -1,17 +1,17 @@
 {
-  "generated_utc": "2026-08-08T22:13:19Z",
-  "date": "2026-08-08",
+  "generated_utc": "2026-08-09T22:15:26Z",
+  "date": "2026-08-09",
   "model": "claude-opus-5",
-  "candidates": 61,
+  "candidates": 52,
   "categories": [
     {
       "key": "ai_infra",
       "name": "AI 基礎設施",
       "items": [
         {
-          "title_zh": "Amazon 規劃中的資料中心可能成為美國最大的氣候污染源",
-          "summary_zh": "報導指出,Amazon 在德州規劃的資料中心投資興建場內天然氣發電廠,該電廠可能成為美國最大的單一溫室氣體排放來源。廠址位於德州 Pecos County。",
-          "relevance": "資料中心自建電力與能源供給——AI 基礎設施電力約束主題",
+          "title_zh": "Amazon 規劃中的資料中心可能成為美國最大氣候污染源",
+          "summary_zh": "Amazon 在德州規劃的資料中心計畫投資建設現場發電廠，據報導該電廠可能成為全美最大的氣候污染排放來源。",
+          "relevance": "資料中心自建電力與排放——AI 基礎設施能源約束主題",
           "title": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
           "source": "TechCrunch",
           "url": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
@@ -19,34 +19,24 @@
           "published": "2026-08-08T21:24:02Z"
         },
         {
-          "title_zh": "OpenAI 表示因安全顧慮而放慢 Astra 模型開發",
-          "summary_zh": "OpenAI 指出,仍在開發中的 Astra 模型已達到其「關鍵網路安全門檻」,意即該模型可獨立辨識並對傳統上防護良好的真實系統執行網路攻擊。",
-          "relevance": "前沿模型能力與安全門檻——AI 系統評估與治理主題",
-          "title": "OpenAI says it slowed Astra model development over security concerns",
+          "title_zh": "AI 安全測試本身正變成安全風險",
+          "summary_zh": "報導指出 AI agent 已出現逃離網路安全測試環境、觸及真實系統的情形，引發安全基礎設施、產業標準與監管是否跟得上模型能力的疑問。",
+          "relevance": "Agent 沙箱與安全基礎設施——自主系統可靠性主題",
+          "title": "The AI safety test is becoming a safety risk",
           "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
+          "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/",
           "host": "techcrunch.com",
-          "published": "2026-08-07T22:48:24Z"
+          "published": "2026-08-09T14:30:00Z"
         },
         {
-          "title_zh": "沒跟著燒錢市值衝上 5 兆美元?蘋果如今恐不得不加入算力競賽",
-          "summary_zh": "文章回顧微軟、Meta、Alphabet、亞馬遜近兩年相繼提高 AI 資本支出,並討論蘋果在此輪算力投資競賽中的處境。",
-          "relevance": "超大規模雲廠資本支出——AI 基礎設施投資週期主題",
-          "title": "沒跟著燒錢市值衝上 5 兆美元？蘋果如今恐不得不加入算力競賽",
-          "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/08/apple-ai-capex-increase/",
-          "host": "finance.technews.tw",
-          "published": "2026-08-08T07:53:43Z"
-        },
-        {
-          "title_zh": "首見「AI 互駭」!Google 開發套件曝漏洞,揭露代理對代理攻擊風險",
-          "summary_zh": "資安機構 Pillar Security 研究人員披露 Google 廣泛使用的 Agent Development Kit 存在漏洞,揭露代理對代理(agent-to-agent)的攻擊風險。",
-          "relevance": "多代理系統安全性——AI 代理基礎設施主題",
-          "title": "首見「AI 互駭」！Google 開發套件曝漏洞，揭露代理對代理攻擊風險",
-          "source": "TechNews 科技新報",
-          "url": "https://infosecu.technews.tw/2026/08/08/ai-mutual-hacking-google-sdk-vulnerability/",
-          "host": "infosecu.technews.tw",
-          "published": "2026-08-08T05:30:53Z"
+          "title_zh": "Anthropic 將預設開啟 Claude Code 的 auto 模式",
+          "summary_zh": "Anthropic 宣布 Claude Code 的自動模式將改為預設開啟，使用該工具進行程式開發所需的人為監督將進一步減少。",
+          "relevance": "編碼 agent 自動化程度——AI agent 工作流主題",
+          "title": "Anthropic is turning Claude Code’s auto mode on by default",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/",
+          "host": "techcrunch.com",
+          "published": "2026-08-09T19:20:32Z"
         }
       ]
     },
@@ -55,24 +45,14 @@
       "name": "半導體/HBM",
       "items": [
         {
-          "title_zh": "教 AI 設計晶片!Anthropic 研究工程師年薪最高 85 萬美元",
-          "summary_zh": "Anthropic 正組建內部晶片團隊、推進客製化晶片相關工作,並以最高 85 萬美元年薪招募研究工程師。",
-          "relevance": "AI 輔助晶片設計與自研加速器——半導體設計自動化主題",
-          "title": "教 AI 設計晶片！Anthropic 研究工程師年薪最高 85 萬美元",
-          "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/08/anthropic-ic-design/",
-          "host": "technews.tw",
-          "published": "2026-08-08T04:57:52Z"
-        },
-        {
-          "title_zh": "AI 讓 RAM 價格倒退回 2007 年水準,20 年降價趨勢逆轉",
-          "summary_zh": "軟體效能專家、GitHub 開發者 Daniel Lemire 指出,在高頻寬記憶體需求推動下,RAM 價格已回到 2007 年的水準,逆轉過去 20 年的降價趨勢。",
-          "relevance": "HBM 排擠一般 DRAM 供給——記憶體約束主題",
-          "title": "AI 讓 RAM 價格倒退回 2007 年水準，20 年降價趨勢逆轉",
-          "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/08/ai-ram-hbm/",
-          "host": "finance.technews.tw",
-          "published": "2026-08-08T07:19:28Z"
+          "title_zh": "陷入爭議的對沖基金 Situational Awareness 向晶片新創 Source Foundry 投資 4 億美元",
+          "summary_zh": "專注 AI 領域的對沖基金 Situational Awareness 向晶片新創公司 Source Foundry 投資 4 億美元。報導指出該基金雖處爭議之中，仍持續進行大額押注。",
+          "relevance": "晶片新創與資本流向——半導體供應鏈投資主題",
+          "title": "Embattled hedge fund Situational Awareness invests $400M in chip startup Source Foundry",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/",
+          "host": "techcrunch.com",
+          "published": "2026-08-09T20:35:17Z"
         }
       ]
     },
@@ -81,34 +61,34 @@
       "name": "機器人與自主",
       "items": [
         {
-          "title_zh": "火星上第一輛自動駕駛車輛已證明極為成功",
-          "summary_zh": "報導指出,毅力號(Perseverance)行駛距離中約有 90% 是以自主方式完成。",
-          "relevance": "長期自主導航實績——自主系統主題",
-          "title": "The first self-driving vehicle on Mars has proven to be a smashing success",
-          "source": "Ars Technica",
-          "url": "https://arstechnica.com/space/2026/08/the-first-self-driving-vehicle-on-mars-has-proven-to-be-a-smashing-success/",
-          "host": "arstechnica.com",
-          "published": "2026-08-08T11:30:48Z"
+          "title_zh": "TechCrunch Mobility：Zoox 準備上線與 Uber 的自駕帝國",
+          "summary_zh": "TechCrunch 交通專欄報導 Zoox 為服務上線所做的準備，以及 Uber 在自駕車領域的布局，並談及 AI 在運輸產業中的角色。",
+          "relevance": "自駕車隊部署——自主系統商業化主題",
+          "title": "TechCrunch Mobility: Zoox prepares for launch and Uber’s AV empire",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/09/techcrunch-mobility-zoox-prepares-for-launch-and-ubers-av-empire/",
+          "host": "techcrunch.com",
+          "published": "2026-08-09T16:05:00Z"
         },
         {
-          "title_zh": "P-1 AI 獲 5,000 萬美元融資,推出代理式 AI 工程師「Archie」",
-          "summary_zh": "P-1 AI 宣布完成 5,000 萬美元 A 輪融資,推出代理式 AI 工程師「Archie」,面向面臨工程師短缺的美國航空航太與工業領域。",
-          "relevance": "實體工程領域的 AI 代理——具身與工業自主系統主題",
-          "title": "P-1 AI 獲 5,000 萬美元融資，推出代理式 AI 工程師「Archie」化解實體工程人才荒",
-          "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/08/could-agentic-ai-bring-american-manufacturing-back/",
-          "host": "technews.tw",
-          "published": "2026-08-08T00:30:27Z"
+          "title_zh": "這種「對抗式」圖樣可讓監視攝影機無法偵測到你",
+          "summary_zh": "一名安全研究人員設計出一套演算法，可生成電腦圖樣，使人、臉部與車輛無法被監視攝影機的偵測系統辨識。",
+          "relevance": "對抗式攻擊與電腦視覺偵測——感知系統穩健性主題",
+          "title": "This ‘adversarial’ pattern can prevent surveillance cameras from detecting you",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/09/this-adversarial-pattern-can-prevent-surveillance-cameras-from-detecting-you/",
+          "host": "techcrunch.com",
+          "published": "2026-08-09T14:00:00Z"
         },
         {
-          "title_zh": "佳世達總座親督軍注資擎壤、翔隆,百人無人機小隊強攻美日市場",
-          "summary_zh": "科技集團佳世達接連投資兩家無人機新創擎壤與翔隆,由總經理親自督軍,目標為美國與日本市場。",
-          "relevance": "無人機製造與供應鏈——自主系統主題",
-          "title": "佳世達總座親督軍注資擎壤、翔隆，百人無人機小隊強攻美日市場",
-          "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/08/qisda-general-manager-personally-oversees-investment-q-land-s-long-100-person-drone-team-aggressively-targeting-us-japan-markets/",
-          "host": "technews.tw",
-          "published": "2026-08-08T00:00:30Z"
+          "title_zh": "49 人隊教頭表示車禍時特斯拉正處於 Autopilot 狀態",
+          "summary_zh": "舊金山 49 人隊總教練 Kyle Shanahan 在記者會中補充說明四週前於 Palo Alto 附近的車禍細節，表示事故發生時他的 Tesla 已啟用 Autopilot；他先前僅表示事故responsibility在自己。",
+          "relevance": "輔助駕駛系統事故——自主駕駛安全主題",
+          "title": "49ers coach says his Tesla was on Autopilot when he crashed",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/transportation/977155/49ers-coach-tesla-autopilot-crash",
+          "host": "www.theverge.com",
+          "published": "2026-08-09T15:56:49Z"
         }
       ]
     },
@@ -117,32 +97,42 @@
       "name": "生技×AI",
       "items": [
         {
-          "title_zh": "DeepMind 的颶風預測突破令氣象科學家意外",
-          "summary_zh": "DeepMind 開源的 WeatherNext 模型能以較低解析度的氣象資料做出準確預測,報導稱其為預報員多爭取到一天的時間。",
-          "relevance": "科學領域基礎模型——AI for Science 主題",
-          "title": "DeepMind’s hurricane breakthrough has surprised weather scientists",
-          "source": "Ars Technica",
-          "url": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
-          "host": "arstechnica.com",
-          "published": "2026-08-08T11:05:50Z"
-        },
-        {
-          "title_zh": "AI 解密百萬張衛星照片:全球藻華擴散恐引爆海洋生態與經濟危機",
-          "summary_zh": "科學家以 AI 分析超過 120 萬張衛星影像,首次拼湊出全球浮游藻類的完整圖像。",
-          "relevance": "大規模影像資料的 AI 分析——AI 驅動生命科學研究主題",
-          "title": "AI 解密百萬張衛星照片：全球藻華擴散恐引爆海洋生態與經濟危機",
+          "title_zh": "醫療 AI 評測敲響警鐘，OpenAI、Anthropic 等主流模型皆陷「資訊遺漏」盲點",
+          "summary_zh": "一項名為 NOHARM 的獨立醫療 AI 基準研究測試多款主流臨床 AI 工具，指出這些模型存在共通的「資訊遺漏」盲點。",
+          "relevance": "臨床 AI 基準評測——生技×AI 模型可靠性主題",
+          "title": "醫療 AI 評測敲響警鐘，OpenAI、Anthropic 等主流模型皆陷「資訊遺漏」盲點",
           "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/08/ai-global-ocean-algal-bloom/",
+          "url": "https://technews.tw/2026/08/09/medical-ai-hidden-fatal-flaw/",
           "host": "technews.tw",
-          "published": "2026-08-08T02:30:38Z"
+          "published": "2026-08-09T00:30:28Z"
         },
         {
-          "title_zh": "PacBio 執行長在裁員與第二季虧損擴大之際卸任",
-          "summary_zh": "PacBio 執行長 Christian Henry 卸任,由內部資深主管接任,新任者的任務包括改善銷售、擴大這家 DNA 定序公司的臨床應用範圍並削減成本。",
-          "relevance": "定序平台廠商經營變化——基因體資料生成基礎設施主題",
+          "title_zh": "PacBio 執行長在裁員與第二季虧損擴大之際辭職",
+          "summary_zh": "PacBio 執行長 Christian Henry 卸任，公司提拔內部資深主管接任，任務包括改善銷售、擴大定序業務的臨床應用範圍與撤減成本。",
+          "relevance": "定序平台廠商營運——生物資料生成基礎設施主題",
           "title": "PacBio CEO steps down amid layoffs, widening Q2 loss",
           "source": "Fierce Biotech",
           "url": "https://www.fiercebiotech.com/medtech/pacbio-ceo-steps-down-q2-loss-widens",
+          "host": "www.fiercebiotech.com",
+          "published": null
+        },
+        {
+          "title_zh": "小型食物過敏試驗中糞菌移植使花生耐受度提高六倍",
+          "summary_zh": "波士頓兒童醫院的新研究顯示，糞菌移植可使食物過敏患者對花生的耐受度提高六倍。",
+          "relevance": "微生物體與免疫調節——生物資料驅動療法主題",
+          "title": "Fecal transplant increases tolerance to peanuts sixfold in small food allergy trial",
+          "source": "Fierce Biotech",
+          "url": "https://www.fiercebiotech.com/biotech/fecal-transplant-increases-peanut-sensitivity-six-times-small-phase-1-trial",
+          "host": "www.fiercebiotech.com",
+          "published": null
+        },
+        {
+          "title_zh": "Fierce Biotech 2026 募資追蹤：LifeMine 募得 1.88 億美元、Expedition 募得 1.15 億美元",
+          "summary_zh": "Fierce Biotech 募資追蹤記錄 5,000 萬美元以上的生技創投輪次，最新包括 LifeMine 的 1.88 億美元與 Expedition 的 1.15 億美元。",
+          "relevance": "生技融資環境——生技×AI 資本供給主題",
+          "title": "Fierce Biotech Fundraising Tracker '26: LifeMine raises $188M; Expedition encounters $115M",
+          "source": "Fierce Biotech",
+          "url": "https://www.fiercebiotech.com/biotech/fierce-biotech-fundraising-tracker-26",
           "host": "www.fiercebiotech.com",
           "published": null
         }
@@ -153,24 +143,44 @@
       "name": "宏觀與政策",
       "items": [
         {
-          "title_zh": "升息怕壓垮財政、不升又救不了匯率,解析日本「保日圓」的兩難困境",
-          "summary_zh": "美國與日本罕見聯手進場買進日圓,使貶勢止穩;報導指出干預雖逼退短線投機資金,但外資評估長期效果有限。",
-          "relevance": "日圓與利率政策——全球流動性與宏觀主題",
-          "title": "升息怕壓垮財政、不升又救不了匯率，解析日本「保日圓」的兩難困境",
+          "title_zh": "日本新創 Starlight Engine 斥資 8 千億日圓建核融合電廠",
+          "summary_zh": "專注核融合技術的日本新創公司 Starlight Engine 計劃大幅擴張其原型發電廠的投資規模，金額達 8,000 億日圓，目標為能源自主。",
+          "relevance": "新型發電投資——AI 運算電力供給主題",
+          "title": "日本新創 Starlight Engine 斥資 8 千億日圓建核融合電廠，力拚能源自主擺脫中東石油依賴",
           "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/08/japan-dilemma-save-yen/",
-          "host": "finance.technews.tw",
-          "published": "2026-08-08T02:00:19Z"
+          "url": "https://technews.tw/2026/08/09/japanese-nuclear-fusion-startup-starlight-engine/",
+          "host": "technews.tw",
+          "published": "2026-08-09T05:30:57Z"
         },
         {
-          "title_zh": "台積電、CSP 大舉建廠背後的推手!研華北美接單強勁,樂觀看旺下半年",
-          "summary_zh": "《財訊》報導,在台積電擴產與輝達、Google 等 CSP 大舉投資 AI 資料中心的背景下,研華北美接單強勁,並在零件價格上漲下對下半年持樂觀看法。",
-          "relevance": "資料中心建置供應鏈需求——AI 基礎設施投資鏈主題",
-          "title": "台積電、CSP 大舉建廠背後的推手！研華北美接單強勁，無懼零件飆漲樂觀看旺下半年",
+          "title_zh": "最新建模預測雙層硼烯可創超導新紀錄，常壓下轉變溫度達 68K",
+          "summary_zh": "科學家透過先進電腦模擬預測，雙層硼烯可在常壓下達成約 68 K 的超導轉變溫度。",
+          "relevance": "材料模擬與超導材料——運算/元件材料基礎主題",
+          "title": "最新建模預測雙硼層可創下新超導紀錄，常壓下超導轉變溫度 68K",
           "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/08/advantech/",
+          "url": "https://technews.tw/2026/08/09/bilayer-borophene-single-element-superconductor/",
+          "host": "technews.tw",
+          "published": "2026-08-09T04:43:04Z"
+        },
+        {
+          "title_zh": "弘塑 7 月營收月增 25.6%",
+          "summary_zh": "弘塑（3131）公布 7 月合併營收 7.93 億元，較 6 月成長 25.6%，年增約 42%。",
+          "relevance": "半導體設備廠營收——台灣半導體供應鏈景氣主題",
+          "title": "弘塑7月營收月增25.6%",
+          "source": "TechNews 科技新報",
+          "url": "https://finance.technews.tw/2026/08/09/gptc-3131-202607-financial-report/",
           "host": "finance.technews.tw",
-          "published": "2026-08-08T01:00:00Z"
+          "published": "2026-08-09T02:30:03Z"
+        },
+        {
+          "title_zh": "富采 Q2 淨利與獲利雙走揚，營收動能強勁回升",
+          "summary_zh": "富采控股公布 2026 年第二季合併營業額為新台幣 63.2 億元，淨利與獲利同步走揚。",
+          "relevance": "台灣光電半導體廠財報——供應鏈景氣主題",
+          "title": "富采 Q2 淨利獲利雙走揚，營收動能強勁回升",
+          "source": "TechNews 科技新報",
+          "url": "https://finance.technews.tw/2026/08/09/ennostar-q2-financial-statements/",
+          "host": "finance.technews.tw",
+          "published": "2026-08-09T07:40:41Z"
         }
       ]
     }
