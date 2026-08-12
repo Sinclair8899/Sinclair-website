@@ -30,34 +30,43 @@ jobs:
       - name: Install dependencies
         run: pip install feedparser anthropic
 
-      - name: Generate research news digest
+      - name: Require API key
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then
-            echo "ANTHROPIC_API_KEY secret not set; skipping news generation."
-            exit 0
+            echo "ERROR: ANTHROPIC_API_KEY secret not set. Frozen semantics:" >&2
+            echo "a missing key is a run FAILURE (archive untouched), never a skip." >&2
+            exit 1
           fi
-          python3 .github/scripts/update_news.py
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: '0.152.2'
-          extended: true
+      # The generator's own exit code gates everything below: any non-zero
+      # here fails the job and no stage/commit/push step runs. Never wrap
+      # this in continue-on-error or follow it with always().
+      - name: Generate research news digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 .github/scripts/update_news.py
 
-      - name: Build Hugo site and run acceptance checks
-        run: bash scripts/build_and_check.sh
+      # generated=true/false is decided by the actual git diff of the two
+      # approved paths, never by the generator's exit code alone.
+      # digest_date is read from the generator's frozen product (the newest
+      # archive record), never from the runner clock.
+      - name: Detect approved changes
+        id: gate
+        run: bash .github/scripts/news_workflow_gate.sh detect
 
-      - name: Commit and push
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add assets/news_daily.json docs
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "📰 Daily research news $(date -u +%Y-%m-%d)"
-            git pull --rebase origin main
-            git push
-          fi
+      - name: Stage approved paths
+        if: ${{ success() && steps.gate.outputs.generated == 'true' }}
+        run: bash .github/scripts/news_workflow_gate.sh stage
+
+      - name: Commit digest
+        if: ${{ success() && steps.gate.outputs.generated == 'true' }}
+        run: bash .github/scripts/news_workflow_gate.sh commit "${{ steps.gate.outputs.digest_date }}"
+
+      # Plain fast-forward push only. A non-fast-forward failure fails the
+      # run and is left as evidence; the gate script never pulls, rebases,
+      # merges or force-pushes.
+      - name: Push
+        if: ${{ success() && steps.gate.outputs.generated == 'true' }}
+        run: bash .github/scripts/news_workflow_gate.sh push
