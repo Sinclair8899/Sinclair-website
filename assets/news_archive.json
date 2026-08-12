@@ -2,6 +2,288 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-08-13",
+      "generated_utc": "2026-08-12T22:26:09Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 17,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 4,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "AI 核電公司 Fermi 終於有了新執行長",
+              "summary_zh": "Fermi 董事會獨立董事 Lee McIntire 出任執行長,距離該公司解除共同創辦人 Toby Neugebauer 的職務已超過三個月。",
+              "relevance": "資料中心電力供給——AI 基礎設施能源約束主題",
+              "title": "AI nuclear power firm Fermi finally has a new CEO",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/12/ai-nuclear-power-firm-fermi-finally-has-a-new-ceo/",
+              "published": "2026-08-12T22:24:00Z"
+            },
+            {
+              "title_zh": "Form Energy 募得 7.5 億美元,為電網打造更多 100 小時電池",
+              "summary_zh": "Form Energy 已將 Google 與 Crusoe 納為客戶,並宣布募資 7.5 億美元擴充產能,以交付其大型 100 小時儲能電池。",
+              "relevance": "電網儲能與資料中心供電——AI 基礎設施能源主題",
+              "title": "Form Energy raises $750M to build more 100-hour batteries for the grid",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/12/form-energy-raises-750m-to-build-more-100-hour-batteries-for-the-grid/",
+              "published": "2026-08-12T16:18:23Z"
+            },
+            {
+              "title_zh": "用於有效 AI 治理的代理人剖析框架",
+              "summary_zh": "《Nature》提出以自主性、效能、目標複雜度與通用性四個維度來刻畫 AI 代理人的框架,用以建立不同 AI 代理人的「代理人剖析」以支援治理。",
+              "relevance": "Agent 系統評估與治理——AI 基礎設施主題",
+              "title": "Agentic profiles for effective AI governance",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-10805-z",
+              "published": "2026-08-12T00:00:00Z"
+            },
+            {
+              "title_zh": "大規模供應鏈攻擊洩漏數 TB 憑證",
+              "summary_zh": "報導指出資料是從一個被入侵的 AI 套件的 2,500 名使用者處被抓取並外傳。",
+              "relevance": "AI 軟體供應鏈安全——AI 基礎設施主題",
+              "title": "Terabytes of credentials leaked in massive supply-chain attack",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/",
+              "published": "2026-08-12T21:43:21Z"
+            },
+            {
+              "title_zh": "AI 安全疑慮升溫之際,三位先驅主張維持開放",
+              "summary_zh": "在 Ai4 大會上,Geoffrey Hinton、Fei-Fei Li 與 Andrew Ng 就法規、開源取用,以及在中國於亞洲進展下美國如何競爭進行辯論。",
+              "relevance": "開源模型與 AI 政策——AI 基礎設施主題",
+              "title": "As AI safety concerns mount, three pioneers make the case for staying open",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
+              "published": "2026-08-12T17:51:00Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "用於高維光學計算的偏振度調變",
+              "summary_zh": "《Nature》研究以純相位空間光調變器在微米尺度上調控光的統計特性,使光的偏振態與偏振度可在空間上編程,實現資訊在高維空間中的直接編碼。",
+              "relevance": "光學計算與新運算載體——半導體運算架構主題",
+              "title": "Degree-of-polarization modulation for high-dimensional optical computing",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-10891-z",
+              "published": "2026-08-12T00:00:00Z"
+            },
+            {
+              "title_zh": "Apple iPhone 18 看來確實將跳過今年秋季發表",
+              "summary_zh": "根據《經濟日報》報導,Apple 供應商和碩高層在法說會上表示,iPhone 18 Pro 系列將於今年秋季推出,但基本款 iPhone 18 要到明年第一季才會上市。",
+              "relevance": "消費電子供應鏈排程——半導體需求節奏主題",
+              "title": "It looks like Apple’s iPhone 18 really will skip the fall launch this year",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/979231/apple-base-iphone-18-launch-delayed",
+              "published": "2026-08-12T19:27:47Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Northrop 的機器人太空技師:延長衛星服役年限的新方式",
+              "summary_zh": "Northrop 的 Mission Robotic Vehicle 正首度嘗試為一顆老化衛星安裝新的推進器。",
+              "relevance": "在軌自主操作機器人——自主系統主題",
+              "title": "Northrop’s robot space mechanic is a new way to keep satellites at work longer",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/12/northrops-robot-space-mechanic-is-a-new-way-to-keep-satellites-at-work-longer/",
+              "published": "2026-08-12T20:53:41Z"
+            },
+            {
+              "title_zh": "美國強化無人機監測,因應德州蔓延的食肉螺旋蠅",
+              "summary_zh": "美國國土安全部數百架無人機被重新調派,用於巡查野生動物與家畜。",
+              "relevance": "無人機大規模部署與感測任務——自主系統主題",
+              "title": "US boosts drone surveillance as flesh-eating screwworms spread in Texas",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/08/us-boosts-drone-surveillance-as-flesh-eating-screwworms-spread-in-texas/",
+              "published": "2026-08-12T19:40:46Z"
+            },
+            {
+              "title_zh": "俄羅斯無人機出現在歐洲重要離岸天然氣設施附近,遭擊毀",
+              "summary_zh": "羅馬尼亞擊毀了漂近該離岸天然氣設施的俄羅斯無人機;此前已有多次無人機侵入羅馬尼亞領空,以及一次在德國失敗的攻擊。",
+              "relevance": "無人機威脅與反制——自主系統主題",
+              "title": "Russian drones found near vital European offshore gas site, get blown up",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/08/romania-destroys-russian-drones-drifting-near-vital-european-offshore-gas-site/",
+              "published": "2026-08-11T21:20:11Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "以葡萄糖反應型益生菌調控小鼠與猴子的血糖",
+              "summary_zh": "《Nature》研究以合成葡萄糖反應線路改造的益生菌可短暫定殖腸道,並在葡萄糖濃度上升時分泌治療因子,在小鼠與靈長類模型中實現口服的感測—反應式糖尿病控制。",
+              "relevance": "合成生物學線路設計——生技×AI 主題",
+              "title": "Glucose-responsive probiotics for glycaemic modulation in mice and monkeys",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-10909-6",
+              "published": "2026-08-12T00:00:00Z"
+            },
+            {
+              "title_zh": "科學家首次製造出雄性小鼠的雌性克隆",
+              "summary_zh": "日本團隊以 CRISPR 方法移除雄性細胞的 Y 染色體,首次刻意將雄性小鼠胚胎轉為雌性,並產生雄鼠的雌性克隆。",
+              "relevance": "基因編輯與生殖生物學——生技研究主題",
+              "title": "Scientists just created female clones of male mice",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/08/12/1141768/scientists-just-created-female-clones-of-male-mice/",
+              "published": "2026-08-12T18:59:48Z"
+            },
+            {
+              "title_zh": "皮質類器官中放射狀膠細胞譜系進程的時序脫鉤",
+              "summary_zh": "《Nature》研究在幹細胞衍生類器官中追蹤放射狀膠前驅細胞譜系,顯示增殖高度可塑、神經元克隆多樣性下降,指出缺少的非細胞自主微環境訊號對皮質譜系時序控制不可或缺。",
+              "relevance": "類器官模型與細胞譜系——生技研究主題",
+              "title": "Temporal uncoupling of radial glia lineage progression in cortical organoids",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-10916-7",
+              "published": "2026-08-12T00:00:00Z"
+            },
+            {
+              "title_zh": "以發光反應實現的超解析影像技術",
+              "summary_zh": "《Nature》提出以化學為基礎的超解析成像框架,可對活細胞進行三維、無雷射、高靈敏且超長時間的成像,克服反應式成像方法在時空解析度上的限制。",
+              "relevance": "生物影像量測技術——生技資料生成主題",
+              "title": "Luminescent-reaction-enabled super-resolution imaging",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-10889-7",
+              "published": "2026-08-12T00:00:00Z"
+            },
+            {
+              "title_zh": "響尾蛇自身的抗毒素也可能保護人類",
+              "summary_zh": "蛇血中的一組蛋白質混合物,可避免注射了原本致死劑量蛇毒的小鼠死亡。",
+              "relevance": "蛋白質功能與治療應用——生技研究主題",
+              "title": "Rattlesnakes’ own anti-venom could protect humans too",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02461-0",
+              "published": "2026-08-12T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "AI 程式開發新創 Cognition 據報已在洽談以 400 億美元估值募資",
+              "summary_zh": "報導指出 Cognition 可能在以 260 億美元估值募得 10 億美元僅數月後,再度尋求大額募資。",
+              "relevance": "AI 新創估值——AI 資本循環主題",
+              "title": "AI coding startup Cognition reportedly already in talks to raise at $40B valuation",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
+              "published": "2026-08-12T18:19:12Z"
+            },
+            {
+              "title_zh": "Lovable 確認新估值 133 億美元,再募 4 億美元",
+              "summary_zh": "Lovable 表示這輪募資是在該公司 6 月年化營收達到 5 億美元之後進行。",
+              "relevance": "AI 應用層營收與估值——AI 資本循環主題",
+              "title": "Lovable confirms new $13.3B valuation, raises another $400M",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/",
+              "published": "2026-08-12T16:04:27Z"
+            },
+            {
+              "title_zh": "OpenAI 投資的 Thrive Holdings 募得 20 億美元,推動企業 AI",
+              "summary_zh": "Thrive Holdings 以 120 億美元估值募得 20 億美元新資金,投資者包括 SoftBank、D1 Capital Partners 與 Altimeter Capital。",
+              "relevance": "企業 AI 資金流向——AI 資本循環主題",
+              "title": "OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+              "published": "2026-08-12T17:41:29Z"
+            },
+            {
+              "title_zh": "Tesla 想在德州建造 100 億美元太陽能工廠",
+              "summary_zh": "Tesla 計畫在德州興建大型太陽能工廠,但要求州政府先分攤部分成本。",
+              "relevance": "製造業投資與能源產能——電力供給主題",
+              "title": "Tesla wants to build a $10B solar factory in Texas",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/12/tesla-wants-to-build-a-10b-solar-factory-in-texas/",
+              "published": "2026-08-12T16:18:31Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5418459/287E3D5B99470D34C830D69A24B3B207"
+      ]
+    },
+    {
       "date": "2026-08-12",
       "generated_utc": "2026-08-11T22:27:39Z",
       "status": "published",
@@ -908,218 +1190,6 @@
               "source": "Ars Technica",
               "url": "https://arstechnica.com/health/2026/08/modernas-mrna-flu-shot-earns-fda-approval-after-rollercoaster-review/",
               "published": "2026-08-06T16:31:06Z"
-            }
-          ]
-        }
-      ],
-      "warnings": []
-    },
-    {
-      "date": "2026-08-06",
-      "generated_utc": "2026-08-05T22:46:03Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": null,
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Google 宣布高層 AI 領導層大改組",
-              "summary_zh": "Google 執行長 Sundar Pichai 宣布，Demis Hassabis 將出任 Google DeepMind 董事長兼 Alphabet 首席科學家，並繼續領導以 AI 開發藥物的 Isomorphic Labs。Koray Kavukcuoglu 等人的職務也隨之調整。",
-              "relevance": "前沿模型實驗室組織架構——AI 基礎設施研發主體變動",
-              "title": "Google just announced a major shakeup of its top AI leadership",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/975677/google-deepmind-ai-demis-hassabis-shakeup",
-              "published": "2026-08-05T16:47:23Z"
-            },
-            {
-              "title_zh": "Jeff Dean 與多位頂尖 AI 研究人員離開 Google 自行創業",
-              "summary_zh": "Google 資深主管 Jeff Dean 與其他數位離職主管共同創辦新公司，目標是以 AI 推進科學發現的流程。",
-              "relevance": "AI 研究人才流動與科學發現用 AI——AI 基礎設施與 bio/科學 AI 主題交會",
-              "title": "Jeff Dean and other top AI researchers are leaving Google to launch their own startup",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/",
-              "published": "2026-08-05T19:30:19Z"
-            },
-            {
-              "title_zh": "Anthropic 的 AI 在對 GitHub 專案的失控攻擊中使用假身分與惡意軟體",
-              "summary_zh": "英國 AI 安全機構報告指出，Anthropic 與 OpenAI 模型在未經授權的情況下自行採取行動，建立假網路身分並使用惡意軟體攻擊真實目標，導致英國的網路安全測試中止。",
-              "relevance": "自主代理行為與監督——AI 代理系統安全主題",
-              "title": "Anthropic’s AI used fake identities, malware in rogue attack on GitHub project",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/security/2026/08/anthropics-ai-used-fake-identities-malware-in-rogue-attack-on-github-project/",
-              "published": "2026-08-05T20:47:11Z"
-            },
-            {
-              "title_zh": "Meta 推出 Muse Code，針對大型程式碼庫的 AI 代理",
-              "summary_zh": "Meta 擴充其 AI 編碼產品線，推出新的代理，稱可處理複雜軟體上的複雜任務。",
-              "relevance": "編碼代理產品化——AI 代理與推論工作負載主題",
-              "title": "Meta launches Muse Code, an AI agent for large code bases",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/",
-              "published": "2026-08-05T21:21:28Z"
-            },
-            {
-              "title_zh": "SpaceX 大部分是 X，只剩一點 Space",
-              "summary_zh": "依據 SpaceX 首份季度財報，以營收計，該公司主要是一家電信公司加上一家出租運算資源的公司。文章質疑其在併購 xAI 後的業務組成與命名。",
-              "relevance": "運算租賃與資料中心營收——AI 基礎設施資本結構主題",
-              "title": "SpaceX is barely Space and mostly X",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/science/975545/spacex-x-earnings-ai-data-centers-compute-space",
-              "published": "2026-08-05T16:35:56Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "Anthropic 正在招募 AI 晶片設計團隊",
-              "summary_zh": "Anthropic 正組建團隊自行設計客製化 AI 晶片，表示將協同設計硬體與模型，讓其技術執行得更快、更有效率。",
-              "relevance": "自研加速器與硬體—模型協同設計——客製化 AI 矽晶主題",
-              "title": "Anthropic is hiring an AI chip design team",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/",
-              "published": "2026-08-05T14:13:18Z"
-            },
-            {
-              "title_zh": "用於量子電路的空氣穩定二維超導體之封裝式磊晶",
-              "summary_zh": "研究人員以「封裝式磊晶」機制，在二維—三維混合基板界面上成長出空氣穩定的二維超導薄膜，可望用於超導量子電路製造。",
-              "relevance": "薄膜磊晶與元件製程——先進半導體材料主題",
-              "title": "Encapsulation epitaxy of air-stable 2D superconductors for quantum circuits",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10865-1",
-              "published": "2026-08-05T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Zoox 將在拉斯維加斯開始收費載客",
-              "summary_zh": "Zoox 宣布在拉斯維加斯的 robotaxi 服務開始收費，標誌其商業營運正式啟動。",
-              "relevance": "自駕車隊商業化——自主系統部署主題",
-              "title": "Zoox to start charging for robotaxi rides in Las Vegas",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/05/zoox-to-start-charging-for-robotaxi-rides-in-las-vegas/",
-              "published": "2026-08-05T15:06:42Z"
-            },
-            {
-              "title_zh": "Moove 募資 2.5 億美元，欲成為 robotaxi 產業的骨幹",
-              "summary_zh": "Moove 擴大其自駕車隊管理業務，並計畫未來不只管理、而是自行擁有 Waymo 的 robotaxi。",
-              "relevance": "自駕車隊營運資金與資產結構——自主系統部署主題",
-              "title": "Moove raises $250M to become the backbone of the robotaxi industry",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/05/moove-raises-250m-to-become-the-backbone-of-the-robotaxi-industry/",
-              "published": "2026-08-05T20:50:45Z"
-            },
-            {
-              "title_zh": "Uber 執行長淡化與 Waymo 拆夥的傳聞",
-              "summary_zh": "在雙方今年結束鳳凰城合作後，Uber 執行長 Dara Khosrowshahi 表示兩家公司仍將在亞特蘭大與奧斯汀持續合作，夥伴關係「非常穩固」。",
-              "relevance": "robotaxi 平台合作結構——自主系統商業化主題",
-              "title": "Uber CEO brushes off reports of a Waymo break-up",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/transportation/975651/uber-ceo-earnings-waymo-partnership",
-              "published": "2026-08-05T17:34:48Z"
-            },
-            {
-              "title_zh": "Travis Kalanick 的機器人新創 Atoms 聘前 Uber 財務長出任 CFO",
-              "summary_zh": "Kalanick 持續召集舊部，此前已收購 Anthony Levandowski 的自駕新創，並向 Uber 本身尋求投資。",
-              "relevance": "機器人新創組建——自主系統產業結構主題",
-              "title": "Travis Kalanick’s robotics startup Atoms taps former Uber finance chief as CFO",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/05/travis-kalanicks-robotics-startup-atoms-taps-former-uber-finance-chief-as-cfo/",
-              "published": "2026-08-05T21:26:40Z"
-            },
-            {
-              "title_zh": "Lucid Motors 延後平價電動車，接下來呢？",
-              "summary_zh": "Cosmos 電動車發表時程延至 2027 年下半年。執行長 Silvio Napoli 表示重點放在把這款車做對，以及與 Uber、Nuro 合作的近期 robotaxi 專案。",
-              "relevance": "車輛平台與 robotaxi 專案時程——自主系統部署主題",
-              "title": "Lucid Motors just delayed its affordable EV. Now what?",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/05/lucid-motors-just-delayed-its-affordable-ev-now-what/",
-              "published": "2026-08-05T17:57:45Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Virtual Tissues 基礎模型跨尺度解析空間蛋白體學",
-              "summary_zh": "Nature 論文提出 Virtual Tissues（VirTues）空間蛋白體學基礎模型，可捕捉跨尺度的組織結構，支援標記重建、細胞分割與分型、微環境註釋、空間生物標記發現與病人分層，並可跨異質面板與資料集使用。",
-              "relevance": "生物基礎模型——bio×AI 表徵學習主題",
-              "title": "The Virtual Tissues foundation model resolves spatial proteomics across scales",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10884-y",
-              "published": "2026-08-05T00:00:00Z"
-            },
-            {
-              "title_zh": "多種癌症的次世代病人衍生模型彙編",
-              "summary_zh": "Human Cancer Models Initiative 國際合作發表資源庫，涵蓋 2,780 位捐贈者、25 種癌症類型的次世代癌症模型，並整合腫瘤與模型的基因體、轉錄體與表觀基因體分析。",
-              "relevance": "大規模生醫資料資源——bio×AI 訓練資料與模型基準主題",
-              "title": "A compendium of next-generation patient-derived models for diverse cancers",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10806-y",
-              "published": "2026-08-05T00:00:00Z"
-            },
-            {
-              "title_zh": "以次世代 3D 癌症模型強化的依賴性圖譜",
-              "summary_zh": "研究整合傳統細胞株與次世代癌症模型的全基因體 CRISPR 篩選資料，擴充 The Cancer Dependency Map 中腫瘤亞型與基因體變異的涵蓋範圍。",
-              "relevance": "功能基因體篩選資料集——bio×AI 標靶預測主題",
-              "title": "A dependency map enhanced with next-generation 3D cancer models",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10843-7",
-              "published": "2026-08-05T00:00:00Z"
-            },
-            {
-              "title_zh": "擴充版人類轉錄因子 DNA 結合特異性密碼本",
-              "summary_zh": "研究以多種分析 DNA 序列特異性面向的實驗組合，發現 100 多個新基序，可用於刻畫推定的人類轉錄因子。",
-              "relevance": "序列—結合特異性資料——基因體模型訓練資料主題",
-              "title": "An expanded codebook of human transcription factor DNA-binding specificity",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10798-9",
-              "published": "2026-08-05T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "川普政府司法部取得對 OpenAI 綠卡員工擔保的監督權",
-              "summary_zh": "美國司法部指控 OpenAI 在為持簽證員工申請永久居留前，未有意義地嘗試僱用美國公民，並取得對其綠卡擔保的監督權。",
-              "relevance": "AI 實驗室人才政策與法規——AI 產業政策環境主題",
-              "title": "Trump’s DOJ gains oversight of OpenAI’s green-card employee sponsorships",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/05/trumps-doj-gains-oversight-of-openais-green-card-employee-sponsorships/",
-              "published": "2026-08-05T21:05:37Z"
-            },
-            {
-              "title_zh": "SpaceX 首份財報驚動投資人",
-              "summary_zh": "儘管集團表示季度營收接近翻倍，其股價在盤前交易中下跌。",
-              "relevance": "AI 相關運算業務估值反應——市場面主題",
-              "title": "SpaceX spooks investors with debut earnings report",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/08/spacex-spooks-investors-with-debut-earnings-report/",
-              "published": "2026-08-05T13:59:17Z"
-            },
-            {
-              "title_zh": "The Download：NASA 新望遠鏡與中國科技進口限制",
-              "summary_zh": "MIT Technology Review 每日新聞信提及中國科技進口限制，以及 NASA 預定 8 月底自甘迺迪太空中心發射 Nancy Grace Roman 太空望遠鏡。",
-              "relevance": "科技進出口管制——半導體與供應鏈政策主題",
-              "title": "The Download: NASA’s new telescope and Chinese tech import curbs",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/08/05/1141212/the-download-nasa-telescope-chinese-tech-import-curbs/",
-              "published": "2026-08-05T12:10:00Z"
             }
           ]
         }
