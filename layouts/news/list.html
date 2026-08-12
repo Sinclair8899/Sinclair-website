@@ -1,27 +1,35 @@
 {{- define "main" }}
-{{/* Reads assets/news_daily.json (written by the daily workflow). Lives in
-     assets/, not data/, for the same reason as market_brief.json. */}}
-{{- $d := false }}
-{{- with resources.Get "news_daily.json" }}{{ $d = . | transform.Unmarshal }}{{ end }}
+{{/* N3 (news-page revamp): this page renders client-side from the seven-day
+     archive assets/news_archive.json. GitHub Pages serves docs/ only, so the
+     archive's sole public URL is the repository raw URL below (CORS: *).
+     A JSON-only commit from the news workflow therefore updates this page on
+     the next load, with no new HTML commit. All archive text is inserted via
+     textContent (never innerHTML); links are restricted to absolute
+     http(s) URLs. Dates shown are the archive's frozen Asia/Taipei
+     digest_date strings -- never re-derived from the browser clock. */}}
 
 <style>
   .nw-meta{color:var(--secondary);font-size:.82rem;margin:-.4rem 0 1.6rem}
-  .nw-meta .sep{margin:0 .4rem}
   .nw-tag{display:inline-block;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
     color:var(--secondary);border:1px solid var(--border);border-radius:3px;padding:.03rem .4rem;
     vertical-align:middle;margin-left:.4rem}
+  .nw-day{margin:2.4rem 0 0}
+  .nw-day-head{font-size:1.02rem;font-weight:700;border-bottom:2px solid var(--border);
+    padding-bottom:.4rem;margin:0 0 .3rem}
+  .nw-day-time{font-weight:400;font-size:.76rem;color:var(--secondary)}
   .nw-eyebrow{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--secondary);
-    margin:2.2rem 0 .7rem;font-weight:600}
+    margin:1.6rem 0 .7rem;font-weight:600}
   .nw-card{padding:.9rem 0;border-bottom:1px solid var(--border)}
-  .nw-head{display:flex;gap:.55rem;align-items:baseline}
-  .nw-favicon{width:16px;height:16px;border-radius:3px;flex:0 0 16px;align-self:center;opacity:.9}
-  .nw-title{font-weight:600;line-height:1.5}
+  .nw-title{font-weight:600;line-height:1.5;word-break:break-word}
   .nw-title a{color:var(--primary);text-decoration:none}
   .nw-title a:hover{text-decoration:underline}
-  .nw-src{color:var(--secondary);font-size:.78rem;margin:.25rem 0 0 calc(16px + .55rem)}
-  .nw-sum{color:var(--content);line-height:1.7;margin:.35rem 0 0 calc(16px + .55rem)}
-  .nw-rel{color:var(--secondary);font-size:.84rem;margin:.25rem 0 0 calc(16px + .55rem)}
-  .nw-orig{color:var(--secondary);font-size:.78rem;margin:.15rem 0 0 calc(16px + .55rem);font-style:italic}
+  .nw-src{color:var(--secondary);font-size:.78rem;margin:.25rem 0 0;word-break:break-word}
+  .nw-sum{color:var(--content);line-height:1.7;margin:.35rem 0 0}
+  .nw-rel{color:var(--secondary);font-size:.84rem;margin:.25rem 0 0}
+  .nw-orig{color:var(--secondary);font-size:.78rem;margin:.15rem 0 0;font-style:italic;
+    word-break:break-word}
+  .nw-empty{color:var(--secondary);font-style:italic;margin:.6rem 0 0}
+  .nw-state{color:var(--secondary);margin:1.2rem 0}
   .nw-foot{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--border);
     color:var(--secondary);font-size:.78rem;line-height:1.65}
 </style>
@@ -32,44 +40,203 @@
     {{- with .Params.subtitle }}<p class="post-description">{{ . }}</p>{{ end }}
   </header>
 
-  {{- if $d }}
-  <p class="nw-meta">
-    {{ $d.date }}<span class="sep">·</span>每日自動生成<span class="nw-tag">auto</span>
-  </p>
-
   <div class="post-content">
     {{ .Content }}
 
-    {{- range $d.categories }}
-    <div class="nw-eyebrow">{{ .name }}</div>
-    {{- range .items }}
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain={{ .host }}&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="{{ .url }}" rel="noopener" target="_blank">{{ .title_zh }}</a></span>
-      </div>
-      <p class="nw-src">{{ .source }}{{ with .published }} · {{ substr . 0 10 }}{{ end }}</p>
-      <p class="nw-sum">{{ .summary_zh }}</p>
-      {{- with .relevance }}<p class="nw-rel">相關領域:{{ . }}</p>{{ end }}
-      <p class="nw-orig">{{ .title }}</p>
+    <div id="news-app"
+         data-archive-url="https://raw.githubusercontent.com/Sinclair8899/Sinclair-website/main/assets/news_archive.json">
+      <p class="nw-state" id="news-loading">正在載入最近七日的每日精選……</p>
+      <noscript>
+        <p class="nw-state">此頁的七日精選需要 JavaScript 才能載入最新資料。</p>
+      </noscript>
     </div>
-    {{- end }}
-    {{- end }}
 
     <p class="nw-foot">
       本頁每日由自動管線生成:標題與連結屬原出版者所有,中文標題為翻譯,摘要為 AI 依來源標題與摘要生成的事實性概述,
       不轉載內文、不加入未見於來源的推論。「相關領域」僅標注與本站研究主題的對應,不構成投資建議。
       選題由模型依研究相關性判斷,可能有遺漏;完整報導請點連結閱讀原文。
-      {{- with $d.warnings }}
-      <br>資料警示:{{ delimit . ";" }}
-      {{- end }}
+      頁面顯示最近七個台北日曆日的紀錄;標示為無新聞的日子代表管線正常執行但未選出符合條件的條目。
     </p>
   </div>
-  {{- else }}
-  <div class="post-content">
-    {{ .Content }}
-    <p><em>新聞資料尚未生成。管線首次執行後,此處會顯示當日精選。</em></p>
-  </div>
-  {{- end }}
 </article>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.getElementById("news-app");
+  if (!root) { return; }
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) { n.className = cls; }
+    if (text !== undefined && text !== null) { n.textContent = String(text); }
+    return n;
+  }
+
+  /* "YYYY-MM-DDTHH:MM:SSZ" -> "HH:MM" in UTC+8 by pure string arithmetic.
+     Taipei has no DST; the browser timezone and clock are never consulted. */
+  function taipeiHM(genUtc) {
+    var m = /^\d{4}-\d{2}-\d{2}T(\d{2}):(\d{2}):\d{2}Z$/.exec(genUtc || "");
+    if (!m) { return null; }
+    var h = (parseInt(m[1], 10) + 8) % 24;
+    return (h < 10 ? "0" : "") + h + ":" + m[2];
+  }
+
+  /* Absolute http(s) URLs only; anything else (javascript:, data:,
+     relative, unparseable) renders as plain text, never as a link. */
+  function safeHref(u) {
+    var p;
+    if (typeof u !== "string") { return null; }
+    try { p = new URL(u); } catch (e) { return null; }
+    if (p.protocol === "https:" || p.protocol === "http:") { return p.href; }
+    return null;
+  }
+
+  function renderItem(it) {
+    var card = el("div", "nw-card");
+    var title = el("div", "nw-title");
+    var href = safeHref(it.url);
+    if (href) {
+      var a = el("a", null, it.title_zh);
+      a.href = href;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      title.appendChild(a);
+    } else {
+      title.appendChild(el("span", null, it.title_zh));
+    }
+    card.appendChild(title);
+    var src = String(it.source || "");
+    if (it.published) { src += " · " + String(it.published).slice(0, 10); }
+    card.appendChild(el("p", "nw-src", src));
+    card.appendChild(el("p", "nw-sum", it.summary_zh));
+    if (it.relevance) { card.appendChild(el("p", "nw-rel", "相關領域:" + it.relevance)); }
+    card.appendChild(el("p", "nw-orig", it.title));
+    return card;
+  }
+
+  function renderDay(day) {
+    var sec = el("section", "nw-day");
+    var head = el("h2", "nw-day-head", day.date);
+    var hm = taipeiHM(day.generated_utc);
+    if (hm) { head.appendChild(el("span", "nw-day-time", " · " + hm + "（UTC+8）更新")); }
+    sec.appendChild(head);
+    if (day.status === "empty") {
+      sec.appendChild(el("p", "nw-empty",
+        "本日管線已於 " + (hm || "--:--") + "（UTC+8）完成,未選出符合發布條件的新聞。"));
+      return sec;
+    }
+    (day.categories || []).forEach(function (cat) {
+      sec.appendChild(el("div", "nw-eyebrow", cat.name));
+      (cat.items || []).forEach(function (it) { sec.appendChild(renderItem(it)); });
+    });
+    return sec;
+  }
+
+  var DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+  var GEN_RE = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/;
+
+  function isObj(x) { return !!x && typeof x === "object" && !Array.isArray(x); }
+  function nes(x) { return typeof x === "string" && x.length > 0; }
+
+  /* Display-critical validation of the WHOLE archive, run before any DOM
+     is built or the loading state is cleared. Any invalid day fails the
+     entire archive -- no partial rendering of the other days. This is the
+     page's display boundary only; the full production schema stays in the
+     generator and is not duplicated here. Returns null when valid, else a
+     reason string (logged to the console; the visible state is "schema"). */
+  function checkArchive(archive) {
+    if (!isObj(archive) || archive.schema_version !== 1 ||
+        !Array.isArray(archive.days)) {
+      return "top-level shape";
+    }
+    for (var i = 0; i < archive.days.length; i++) {
+      var d = archive.days[i];
+      if (!isObj(d)) { return "day[" + i + "] not an object"; }
+      if (!nes(d.date) || !DATE_RE.test(d.date)) {
+        return "day[" + i + "] invalid date";
+      }
+      if (!nes(d.generated_utc) || !GEN_RE.test(d.generated_utc)) {
+        return "day " + d.date + " invalid generated_utc";
+      }
+      if (d.status !== "published" && d.status !== "empty") {
+        return "day " + d.date + " unknown status";
+      }
+      if (!Array.isArray(d.categories)) {
+        return "day " + d.date + " categories not an array";
+      }
+      if (d.status === "empty") {
+        if (d.categories.length !== 0) {
+          return "day " + d.date + " empty status with categories";
+        }
+        continue;
+      }
+      var total = 0;
+      for (var j = 0; j < d.categories.length; j++) {
+        var c = d.categories[j];
+        if (!isObj(c) || !nes(c.name) || !Array.isArray(c.items)) {
+          return "day " + d.date + " invalid category";
+        }
+        for (var k = 0; k < c.items.length; k++) {
+          var it = c.items[k];
+          if (!isObj(it) || !nes(it.title_zh) || !nes(it.summary_zh) ||
+              !nes(it.title) || !nes(it.source) ||
+              typeof it.url !== "string") {
+            return "day " + d.date + " item missing critical fields";
+          }
+          total += 1;
+        }
+      }
+      if (total < 1) { return "day " + d.date + " published without items"; }
+    }
+    return null;
+  }
+
+  function render(archive) {
+    var bad = checkArchive(archive);
+    if (bad) {
+      if (window.console && console.error) {
+        console.error("news archive rejected:", bad);
+      }
+      throw new Error("schema");
+    }
+    /* The archive is already newest-first and at most seven days; the sort
+       and slice below are defensive and must never change its semantics --
+       the offline tests assert the result equals the archive's own order. */
+    var days = archive.days.slice().sort(function (a, b) {
+      return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0);
+    }).slice(0, 7);
+    var frag = document.createDocumentFragment();
+    if (days.length === 0) {
+      frag.appendChild(el("p", "nw-state",
+        "archive 目前沒有任何日紀錄;管線首次執行後,此處會顯示最近七日的精選。"));
+    }
+    days.forEach(function (day) { frag.appendChild(renderDay(day)); });
+    root.textContent = "";
+    root.appendChild(frag);
+  }
+
+  function fail(kind) {
+    root.textContent = "";
+    root.appendChild(el("p", "nw-state nw-error",
+      "暫時無法載入最新內容(" + kind + ")。請稍後重新整理;這不代表今日沒有新聞。"));
+  }
+
+  fetch(root.dataset.archiveUrl, { cache: "no-store" })
+    .then(function (r) {
+      if (!r.ok) { throw new Error("http-" + r.status); }
+      return r.text();
+    })
+    .then(function (text) {
+      var obj;
+      try { obj = JSON.parse(text); } catch (e) { throw new Error("parse"); }
+      render(obj);
+    })
+    .catch(function (e) {
+      var kind = e && e.message ? e.message : "error";
+      if (window.console && console.error) { console.error("news archive load failed:", kind); }
+      fail(kind);
+    });
+})();
+</script>
 {{- end }}

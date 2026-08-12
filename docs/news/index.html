@@ -173,22 +173,26 @@
 
 <style>
   .nw-meta{color:var(--secondary);font-size:.82rem;margin:-.4rem 0 1.6rem}
-  .nw-meta .sep{margin:0 .4rem}
   .nw-tag{display:inline-block;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
     color:var(--secondary);border:1px solid var(--border);border-radius:3px;padding:.03rem .4rem;
     vertical-align:middle;margin-left:.4rem}
+  .nw-day{margin:2.4rem 0 0}
+  .nw-day-head{font-size:1.02rem;font-weight:700;border-bottom:2px solid var(--border);
+    padding-bottom:.4rem;margin:0 0 .3rem}
+  .nw-day-time{font-weight:400;font-size:.76rem;color:var(--secondary)}
   .nw-eyebrow{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--secondary);
-    margin:2.2rem 0 .7rem;font-weight:600}
+    margin:1.6rem 0 .7rem;font-weight:600}
   .nw-card{padding:.9rem 0;border-bottom:1px solid var(--border)}
-  .nw-head{display:flex;gap:.55rem;align-items:baseline}
-  .nw-favicon{width:16px;height:16px;border-radius:3px;flex:0 0 16px;align-self:center;opacity:.9}
-  .nw-title{font-weight:600;line-height:1.5}
+  .nw-title{font-weight:600;line-height:1.5;word-break:break-word}
   .nw-title a{color:var(--primary);text-decoration:none}
   .nw-title a:hover{text-decoration:underline}
-  .nw-src{color:var(--secondary);font-size:.78rem;margin:.25rem 0 0 calc(16px + .55rem)}
-  .nw-sum{color:var(--content);line-height:1.7;margin:.35rem 0 0 calc(16px + .55rem)}
-  .nw-rel{color:var(--secondary);font-size:.84rem;margin:.25rem 0 0 calc(16px + .55rem)}
-  .nw-orig{color:var(--secondary);font-size:.78rem;margin:.15rem 0 0 calc(16px + .55rem);font-style:italic}
+  .nw-src{color:var(--secondary);font-size:.78rem;margin:.25rem 0 0;word-break:break-word}
+  .nw-sum{color:var(--content);line-height:1.7;margin:.35rem 0 0}
+  .nw-rel{color:var(--secondary);font-size:.84rem;margin:.25rem 0 0}
+  .nw-orig{color:var(--secondary);font-size:.78rem;margin:.15rem 0 0;font-style:italic;
+    word-break:break-word}
+  .nw-empty{color:var(--secondary);font-style:italic;margin:.6rem 0 0}
+  .nw-state{color:var(--secondary);margin:1.2rem 0}
   .nw-foot{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--border);
     color:var(--secondary);font-size:.78rem;line-height:1.65}
 </style>
@@ -197,161 +201,202 @@
   <header class="post-header">
     <h1 class="post-title">研究 × 新聞 — 每日精選</h1><p class="post-description">Research × News — Daily Digest · 用研究框架過濾的科技新聞:只留下對論述重要的,每天更新。</p>
   </header>
-  <p class="nw-meta">
-    2026-08-11<span class="sep">·</span>每日自動生成<span class="nw-tag">auto</span>
-  </p>
 
   <div class="post-content">
     <p>這一頁不是新聞聚合器。它每天從固定來源的新聞裡,只挑出對本站研究領域——AI 基礎設施、半導體與 HBM、機器人與自主系統、生技×AI——真正重要的條目,翻成中文並附一到兩句事實摘要。分類與<a href="/market-brief/">每日市場簡報</a>的研究籃子一一對應。</p>
 
-    <div class="nw-eyebrow">AI 基礎設施</div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=techcrunch.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/" rel="noopener" target="_blank">General Catalyst 領投成立兩個月的 River AI 11 億美元募資</a></span>
-      </div>
-      <p class="nw-src">TechCrunch · 2026-08-11</p>
-      <p class="nw-sum">由 xAI 共同創辦人 Igor Babuschkin 創立的新創 River AI 完成 11 億美元募資,由 General Catalyst 領投。該公司主打個人 agent 的產品願景。</p><p class="nw-rel">相關領域:前沿模型新創資本形成——AI 基礎設施投資主題</p>
-      <p class="nw-orig">General Catalyst leads $1.1B round into 2-month-old River AI</p>
-    </div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=techcrunch.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/" rel="noopener" target="_blank">Anthropic 一個未發表模型在數學最大未解問題之一上取得進展</a></span>
-      </div>
-      <p class="nw-src">TechCrunch · 2026-08-11</p>
-      <p class="nw-sum">據報導,Anthropic 尚未發表的模型在已懸置逾 150 年的黎曼假設上取得比預期更多的進展,但並未解出該問題。</p><p class="nw-rel">相關領域:模型推理能力評估——前沿模型能力主題</p>
-      <p class="nw-orig">An unreleased Anthropic model made progress on one of math’s biggest unsolved problems</p>
-    </div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=arstechnica.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://arstechnica.com/ai/2026/08/with-new-open-models-meta-pitches-another-reboot-of-its-struggling-ai-strategy/" rel="noopener" target="_blank">Meta 以新開放模型再度重整其 AI 策略</a></span>
-      </div>
-      <p class="nw-src">Ars Technica · 2026-08-10</p>
-      <p class="nw-sum">Meta 發布新的開放權重模型,並提出其 AI 策略的又一次調整。報導指出 Meta 在此領域一直落後競爭對手。</p><p class="nw-rel">相關領域:開放權重模型生態——模型供應鏈主題</p>
-      <p class="nw-orig">With new open models, Meta pitches another reboot of its struggling AI strategy</p>
-    </div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=arstechnica.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://arstechnica.com/tech-policy/2026/08/amazon-funds-biggest-gas-power-plant-in-us-despite-climate-pledge/" rel="noopener" target="_blank">Amazon 投資的電廠可能成為美國氣候污染最大來源</a></span>
-      </div>
-      <p class="nw-src">Ars Technica · 2026-08-10</p>
-      <p class="nw-sum">Amazon 宣布其首座離網(off-the-grid)資料中心,並資助美國最大的天然氣發電廠。報導指出此舉與該公司先前的氣候承諾有落差。</p><p class="nw-rel">相關領域:資料中心電力供應——AI 基礎設施能源約束主題</p>
-      <p class="nw-orig">Amazon backs power plant that may become top source of US climate pollution</p>
-    </div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=arstechnica.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://arstechnica.com/ai/2026/08/google-says-gemini-has-reached-1b-users-faster-than-any-other-google-product/" rel="noopener" target="_blank">Gemini 達到 10 億使用者,成為 Google 史上成長最快的產品</a></span>
-      </div>
-      <p class="nw-src">Ars Technica · 2026-08-11</p>
-      <p class="nw-sum">Google 表示 Gemini 每月使用者數已達 10 億,為該公司歷來成長最快的產品;OpenAI 的 ChatGPT 同樣已突破 10 億使用者。Google 另指出 63% 的 Gemini 使用者透過語音功能互動,每日生成超過 1.5 億張圖片。</p><p class="nw-rel">相關領域:推論工作負載規模——AI 基礎設施容量需求主題</p>
-      <p class="nw-orig">Gemini becomes Google&#39;s fastest-growing product ever as it hits 1B users</p>
-    </div>
-    <div class="nw-eyebrow">機器人與自主</div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=techcrunch.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://techcrunch.com/2026/08/11/uber-surprised-robotics-company-serve-by-selling-its-entire-stake/" rel="noopener" target="_blank">Uber 出售其在機器人公司 Serve 的全部持股,令對方感到意外</a></span>
-      </div>
-      <p class="nw-src">TechCrunch · 2026-08-11</p>
-      <p class="nw-sum">Uber 賣出所持 Serve Robotics 全部股份,此舉令 Serve 感到意外。報導指出兩家曾密切合作的公司在業務面已開始分歧。</p><p class="nw-rel">相關領域:配送機器人商業化——自主系統產業結構主題</p>
-      <p class="nw-orig">Uber surprised robotics company Serve by selling its entire stake</p>
-    </div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=techcrunch.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://techcrunch.com/2026/08/11/joby-aviation-builds-out-defense-business-with-500m-acquisition/" rel="noopener" target="_blank">Joby Aviation 以 5 億美元併購案拓展國防業務</a></span>
-      </div>
-      <p class="nw-src">TechCrunch · 2026-08-11</p>
-      <p class="nw-sum">Joby Aviation 達成協議收購 Resonant Sciences,以此啟動其新的國防業務部門。</p><p class="nw-rel">相關領域:eVTOL 與自主飛行器產業——自主系統主題</p>
-      <p class="nw-orig">Joby Aviation builds out defense business with $500M acquisition</p>
-    </div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=arstechnica.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://arstechnica.com/gadgets/2026/08/romania-destroys-russian-drones-drifting-near-vital-european-offshore-gas-site/" rel="noopener" target="_blank">俄羅斯無人機出現在歐洲重要離岸天然氣設施附近後被擊毀</a></span>
-      </div>
-      <p class="nw-src">Ars Technica · 2026-08-11</p>
-      <p class="nw-sum">羅馬尼亞擊毀了漂近一處歐洲重要離岸天然氣設施的俄羅斯無人機。此前已有多次無人機侵入羅馬尼亞領空,以及一次在德國的攻擊未果。</p><p class="nw-rel">相關領域:無人機作戰與反制——自主系統主題</p>
-      <p class="nw-orig">Russian drones found near vital European offshore gas site, get blown up</p>
-    </div>
-    <div class="nw-eyebrow">生技×AI</div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=www.fiercebiotech.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://www.fiercebiotech.com/biotech/novo-nordisk-and-aws-sign-ai-drug-discovery-pact-launch-london-innovation-hub" rel="noopener" target="_blank">Novo Nordisk 與 Amazon 簽署 AI 藥物發現合作,並設立倫敦創新中心</a></span>
-      </div>
-      <p class="nw-src">Fierce Biotech</p>
-      <p class="nw-sum">Novo Nordisk 與 Amazon Web Services 將合作運用 AI 加速藥物發現,並同時啟動倫敦創新中心。</p><p class="nw-rel">相關領域:雲端運算與製藥合作——生技×AI 主題</p>
-      <p class="nw-orig">Novo Nordisk and Amazon sign AI drug discovery pact, launch London innovation hub</p>
-    </div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=www.fiercebiotech.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://www.fiercebiotech.com/medtech/abbott-teams-google-health-ai-powered-health-trends-app" rel="noopener" target="_blank">Abbott 與 Google Health 合作推出 AI 健康洞察應用</a></span>
-      </div>
-      <p class="nw-src">Fierce Biotech</p>
-      <p class="nw-sum">Abbott 與 Google 展開首見的跨界合作,目標是建立個人健康的數位圖像。</p><p class="nw-rel">相關領域:消費健康感測與 AI——生技×AI 主題</p>
-      <p class="nw-orig">Abbott teams with Google Health on AI-powered health insights app</p>
-    </div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=www.fiercebiotech.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://www.fiercebiotech.com/biotech/regeneron-backs-75m-series-antibody-upstart-infinimmune" rel="noopener" target="_blank">Regeneron 支持抗體新創 Infinimmune 的 7,500 萬美元 A 輪</a></span>
-      </div>
-      <p class="nw-src">Fierce Biotech</p>
-      <p class="nw-sum">Infinimmune 完成 7,500 萬美元 A 輪募資,由 Regeneron 的創投部門領投,用於推進其抗體發現引擎。</p><p class="nw-rel">相關領域:運算式抗體發現平台——生技×AI 主題</p>
-      <p class="nw-orig">Regeneron backs $75M series A for antibody upstart Infinimmune</p>
-    </div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=www.fiercebiotech.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://www.fiercebiotech.com/biotech/epicrispr-bags-90m-rewrite-treatment-rare-muscle-disease" rel="noopener" target="_blank">Epicrispr 募得 9,000 萬美元,改寫罕見肌肉疾病治療</a></span>
-      </div>
-      <p class="nw-src">Fierce Biotech</p>
-      <p class="nw-sum">Epicrispr Biotechnologies 完成 9,000 萬美元 C 輪募資,投資人包括 Sanofi Ventures。資金將推進其表觀遺傳藥物管線,領先項目為早期階段的顏面肩胛肱骨型肌肉萎縮症候選藥。</p><p class="nw-rel">相關領域:基因/表觀遺傳編輯平台——生技主題</p>
-      <p class="nw-orig">Epicrispr raises $90M to rewrite treatment of rare muscle disease</p>
-    </div>
-    <div class="nw-eyebrow">宏觀與政策</div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=techcrunch.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://techcrunch.com/2026/08/11/whats-scaleup-europe-the-5-7b-fund-that-just-backed-satellite-company-iceye/" rel="noopener" target="_blank">目標規模 57 億美元的 Scaleup Europe 基金首度投資衛星公司 ICEYE</a></span>
-      </div>
-      <p class="nw-src">TechCrunch · 2026-08-11</p>
-      <p class="nw-sum">公私合資的 Scaleup Europe 基金以 57 億美元為募資目標,首筆投資投向芬蘭衛星公司 ICEYE。</p><p class="nw-rel">相關領域:歐洲深科技資本形成——科技資本配置主題</p>
-      <p class="nw-orig">What’s Scaleup Europe, the $5.7B fund that just backed satellite company ICEYE?</p>
-    </div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=techcrunch.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://techcrunch.com/2026/08/11/kyoto-fusioneering-starts-work-on-key-fusion-power-plant-device/" rel="noopener" target="_blank">Kyoto Fusioneering 啟動關鍵融合電廠設備開發</a></span>
-      </div>
-      <p class="nw-src">TechCrunch · 2026-08-11</p>
-      <p class="nw-sum">多家融合發電新創轉向 Kyoto Fusioneering 採購未來電廠零組件。這家日本新創剛獲得補助,用於建造燃料系統的其中一項部件。</p><p class="nw-rel">相關領域:新增電力供給技術——能源與運算約束主題</p>
-      <p class="nw-orig">Kyoto Fusioneering starts work on key fusion power plant device</p>
-    </div>
-    <div class="nw-card">
-      <div class="nw-head">
-        <img class="nw-favicon" src="https://www.google.com/s2/favicons?domain=techcrunch.com&sz=32" alt="" loading="lazy">
-        <span class="nw-title"><a href="https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last/" rel="noopener" target="_blank">Accel 在上一支基金後 19 個月,數週內完成 5.5 億美元印度基金超額募集</a></span>
-      </div>
-      <p class="nw-src">TechCrunch · 2026-08-11</p>
-      <p class="nw-sum">美國創投機構 Accel 完成 5.5 億美元印度基金募集並獲超額認購。該公司前一支 6.5 億美元印度基金仍有超過 55% 尚未投出。</p><p class="nw-rel">相關領域:創投資金流向——科技資本配置主題</p>
-      <p class="nw-orig">Accel closes oversubscribed $550M India fund within weeks, 19 months after its last</p>
+
+    <div id="news-app"
+         data-archive-url="https://raw.githubusercontent.com/Sinclair8899/Sinclair-website/main/assets/news_archive.json">
+      <p class="nw-state" id="news-loading">正在載入最近七日的每日精選……</p>
+      <noscript>
+        <p class="nw-state">此頁的七日精選需要 JavaScript 才能載入最新資料。</p>
+      </noscript>
     </div>
 
     <p class="nw-foot">
       本頁每日由自動管線生成:標題與連結屬原出版者所有,中文標題為翻譯,摘要為 AI 依來源標題與摘要生成的事實性概述,
       不轉載內文、不加入未見於來源的推論。「相關領域」僅標注與本站研究主題的對應,不構成投資建議。
       選題由模型依研究相關性判斷,可能有遺漏;完整報導請點連結閱讀原文。
-      <br>資料警示:Nature News: 無條目
+      頁面顯示最近七個台北日曆日的紀錄;標示為無新聞的日子代表管線正常執行但未選出符合條件的條目。
     </p>
   </div>
 </article>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.getElementById("news-app");
+  if (!root) { return; }
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) { n.className = cls; }
+    if (text !== undefined && text !== null) { n.textContent = String(text); }
+    return n;
+  }
+
+  
+
+  function taipeiHM(genUtc) {
+    var m = /^\d{4}-\d{2}-\d{2}T(\d{2}):(\d{2}):\d{2}Z$/.exec(genUtc || "");
+    if (!m) { return null; }
+    var h = (parseInt(m[1], 10) + 8) % 24;
+    return (h < 10 ? "0" : "") + h + ":" + m[2];
+  }
+
+  
+
+  function safeHref(u) {
+    var p;
+    if (typeof u !== "string") { return null; }
+    try { p = new URL(u); } catch (e) { return null; }
+    if (p.protocol === "https:" || p.protocol === "http:") { return p.href; }
+    return null;
+  }
+
+  function renderItem(it) {
+    var card = el("div", "nw-card");
+    var title = el("div", "nw-title");
+    var href = safeHref(it.url);
+    if (href) {
+      var a = el("a", null, it.title_zh);
+      a.href = href;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      title.appendChild(a);
+    } else {
+      title.appendChild(el("span", null, it.title_zh));
+    }
+    card.appendChild(title);
+    var src = String(it.source || "");
+    if (it.published) { src += " · " + String(it.published).slice(0, 10); }
+    card.appendChild(el("p", "nw-src", src));
+    card.appendChild(el("p", "nw-sum", it.summary_zh));
+    if (it.relevance) { card.appendChild(el("p", "nw-rel", "相關領域:" + it.relevance)); }
+    card.appendChild(el("p", "nw-orig", it.title));
+    return card;
+  }
+
+  function renderDay(day) {
+    var sec = el("section", "nw-day");
+    var head = el("h2", "nw-day-head", day.date);
+    var hm = taipeiHM(day.generated_utc);
+    if (hm) { head.appendChild(el("span", "nw-day-time", " · " + hm + "（UTC+8）更新")); }
+    sec.appendChild(head);
+    if (day.status === "empty") {
+      sec.appendChild(el("p", "nw-empty",
+        "本日管線已於 " + (hm || "--:--") + "（UTC+8）完成,未選出符合發布條件的新聞。"));
+      return sec;
+    }
+    (day.categories || []).forEach(function (cat) {
+      sec.appendChild(el("div", "nw-eyebrow", cat.name));
+      (cat.items || []).forEach(function (it) { sec.appendChild(renderItem(it)); });
+    });
+    return sec;
+  }
+
+  var DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+  var GEN_RE = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/;
+
+  function isObj(x) { return !!x && typeof x === "object" && !Array.isArray(x); }
+  function nes(x) { return typeof x === "string" && x.length > 0; }
+
+  
+
+  function checkArchive(archive) {
+    if (!isObj(archive) || archive.schema_version !== 1 ||
+        !Array.isArray(archive.days)) {
+      return "top-level shape";
+    }
+    for (var i = 0; i < archive.days.length; i++) {
+      var d = archive.days[i];
+      if (!isObj(d)) { return "day[" + i + "] not an object"; }
+      if (!nes(d.date) || !DATE_RE.test(d.date)) {
+        return "day[" + i + "] invalid date";
+      }
+      if (!nes(d.generated_utc) || !GEN_RE.test(d.generated_utc)) {
+        return "day " + d.date + " invalid generated_utc";
+      }
+      if (d.status !== "published" && d.status !== "empty") {
+        return "day " + d.date + " unknown status";
+      }
+      if (!Array.isArray(d.categories)) {
+        return "day " + d.date + " categories not an array";
+      }
+      if (d.status === "empty") {
+        if (d.categories.length !== 0) {
+          return "day " + d.date + " empty status with categories";
+        }
+        continue;
+      }
+      var total = 0;
+      for (var j = 0; j < d.categories.length; j++) {
+        var c = d.categories[j];
+        if (!isObj(c) || !nes(c.name) || !Array.isArray(c.items)) {
+          return "day " + d.date + " invalid category";
+        }
+        for (var k = 0; k < c.items.length; k++) {
+          var it = c.items[k];
+          if (!isObj(it) || !nes(it.title_zh) || !nes(it.summary_zh) ||
+              !nes(it.title) || !nes(it.source) ||
+              typeof it.url !== "string") {
+            return "day " + d.date + " item missing critical fields";
+          }
+          total += 1;
+        }
+      }
+      if (total < 1) { return "day " + d.date + " published without items"; }
+    }
+    return null;
+  }
+
+  function render(archive) {
+    var bad = checkArchive(archive);
+    if (bad) {
+      if (window.console && console.error) {
+        console.error("news archive rejected:", bad);
+      }
+      throw new Error("schema");
+    }
+    
+
+    var days = archive.days.slice().sort(function (a, b) {
+      return a.date < b.date ? 1 : (a.date > b.date ? -1 : 0);
+    }).slice(0, 7);
+    var frag = document.createDocumentFragment();
+    if (days.length === 0) {
+      frag.appendChild(el("p", "nw-state",
+        "archive 目前沒有任何日紀錄;管線首次執行後,此處會顯示最近七日的精選。"));
+    }
+    days.forEach(function (day) { frag.appendChild(renderDay(day)); });
+    root.textContent = "";
+    root.appendChild(frag);
+  }
+
+  function fail(kind) {
+    root.textContent = "";
+    root.appendChild(el("p", "nw-state nw-error",
+      "暫時無法載入最新內容(" + kind + ")。請稍後重新整理;這不代表今日沒有新聞。"));
+  }
+
+  fetch(root.dataset.archiveUrl, { cache: "no-store" })
+    .then(function (r) {
+      if (!r.ok) { throw new Error("http-" + r.status); }
+      return r.text();
+    })
+    .then(function (text) {
+      var obj;
+      try { obj = JSON.parse(text); } catch (e) { throw new Error("parse"); }
+      render(obj);
+    })
+    .catch(function (e) {
+      var kind = e && e.message ? e.message : "error";
+      if (window.console && console.error) { console.error("news archive load failed:", kind); }
+      fail(kind);
+    });
+})();
+</script>
     </main>
     
 <footer class="footer">
