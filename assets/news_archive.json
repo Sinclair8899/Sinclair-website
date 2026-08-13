@@ -2,6 +2,192 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-08-14",
+      "generated_utc": "2026-08-13T22:27:11Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 16,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 6,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 8,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Nvidia 新的 5,000 億美元計畫風險高但精明,對老化 GPU 尤其如此",
+              "summary_zh": "報導指出 Nvidia 有一套計畫,要確保其 GPU 不會流失價值,並希望說服一批新的金融業者持續為 AI 建設案提供貸款。",
+              "relevance": "AI 資本支出與 GPU 殘值融資——算力建設資金結構主題",
+              "title": "Nvidia’s new $500B plan is risky but brilliant, especially for aging GPUs",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/",
+              "published": "2026-08-13T15:08:00Z"
+            },
+            {
+              "title_zh": "OpenAI 推出「Ultrafast」模式,讓 GPT-5.6 Sol 以 14 倍速度運作",
+              "summary_zh": "OpenAI 開放其最新、最強模型加速版本的預覽,速度為原本的 14 倍,目標是爭取企業用戶。",
+              "relevance": "推論速度與服務成本——推論基礎設施主題",
+              "title": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
+              "published": "2026-08-13T19:22:40Z"
+            },
+            {
+              "title_zh": "Databricks 原想募 10 億美元、投資人想投 150 億,最後以 1,900 億美元估值募得 50 億",
+              "summary_zh": "執行長 Ali Ghodsi 向 TechCrunch 表示 AI 成本高昂;由於想參與這輪的投資人眾多,他接受了比原計畫更高的募資金額。",
+              "relevance": "AI 資料與運算平台的資金規模——AI 基礎設施投資主題",
+              "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
+              "published": "2026-08-13T20:14:39Z"
+            },
+            {
+              "title_zh": "Anthropic 上市時市值可能達 2 兆美元",
+              "summary_zh": "報導稱 Anthropic 營收快速成長,使外界預期這家 Claude 開發商的 IPO 可能成為史上最大規模的上市案。",
+              "relevance": "前沿模型實驗室的資本市場定價——AI 基礎設施產業結構主題",
+              "title": "Anthropic could be worth $2 trillion when it goes public",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/",
+              "published": "2026-08-13T13:58:56Z"
+            },
+            {
+              "title_zh": "AI 核能公司 Fermi 終於有了新執行長",
+              "summary_zh": "Fermi 董事會獨立董事 Lee McIntire 出任執行長,距離該公司解除共同創辦人 Toby Neugebauer 的職務已超過三個月。",
+              "relevance": "資料中心電力供給——AI 算力的能源約束主題",
+              "title": "AI nuclear power firm Fermi finally has a new CEO",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/12/ai-nuclear-power-firm-fermi-finally-has-a-new-ceo/",
+              "published": "2026-08-12T22:24:00Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "烏克蘭無人機在實兵兵推中全滅一支美軍戰車旅",
+              "summary_zh": "報導指出烏克蘭無人機操作員在實地戰爭遊戲中殲滅了整支美軍戰車旅,為美軍與北約帶來戰場教訓。",
+              "relevance": "無人機作戰與自主系統——自主載具與感知決策主題",
+              "title": "Ukrainian drones wipe out entire US tank brigade in live war game",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/08/ukrainian-drones-wipe-out-entire-us-tank-brigade-in-live-war-game/",
+              "published": "2026-08-13T18:31:56Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "報告:AI 臨床監測 agent 在腫瘤學可帶來最高 82 倍投資報酬",
+              "summary_zh": "塔夫茲藥物開發研究中心(Tufts CSDD)的新分析發現,AI 臨床監測 agent 在第三期腫瘤學試驗中估計可帶來 82 倍的投資報酬率。",
+              "relevance": "AI agent 導入臨床試驗流程——生技×AI 主題",
+              "title": "AI clinical monitoring agent can deliver up to 82 times the ROI in oncology: report",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/cro/ai-clinical-monitoring-agents-can-deliver-82-times-roi-report",
+              "published": null
+            },
+            {
+              "title_zh": "AI 還沒準備好研究自己",
+              "summary_zh": "一套 agentic 系統成功從兩篇計算機科學論文中發展出概念,但原論文作者對結果並不滿意。",
+              "relevance": "AI 自動化科研流程——AI for science 主題",
+              "title": "AI isn’t ready to research itself",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02494-5",
+              "published": "2026-08-13T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "美國首度允許部分私人企業執行網路攻擊",
+              "summary_zh": "新命令推翻了美國數十年來禁止民間公司進行「反擊駭客」或攻擊性網路行動的既有政策,私人公司將在聯邦政府控制與監督下運作。",
+              "relevance": "科技與國安政策轉向——法規與地緣政治環境主題",
+              "title": "In a first, US will allow some private firms to carry out cyberattacks",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/13/in-a-first-us-will-allow-some-private-firms-to-carry-out-cyberattacks/",
+              "published": "2026-08-13T14:09:05Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5418459/287E3D5B99470D34C830D69A24B3B207"
+      ]
+    },
+    {
       "date": "2026-08-13",
       "generated_utc": "2026-08-12T22:26:09Z",
       "status": "published",
@@ -1079,122 +1265,6 @@
       "warnings": [
         "Nature News: 無條目"
       ]
-    },
-    {
-      "date": "2026-08-07",
-      "generated_utc": "2026-08-07T01:27:11Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": null,
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Anthropic 將自行設計硬體以支援 Claude",
-              "summary_zh": "Anthropic 證實將籌組內部晶片團隊,自行設計驅動 Claude 的硬體。報導指出 Anthropic 與 OpenAI 都在擴大規模的同時降低對 Nvidia 的依賴。",
-              "relevance": "自研加速器與雲端業者垂直整合——AI 基礎設施運算供給主題",
-              "title": "Anthropic will design its own hardware to power Claude",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team/",
-              "published": "2026-08-06T20:03:44Z"
-            },
-            {
-              "title_zh": "SoftBank 在聯邦資料中心協議前數月捐贈 5,000 萬美元給 Trump 圖書館",
-              "summary_zh": "SoftBank 於 1 月捐贈 5,000 萬美元給 Trump 總統圖書館,數月後宣布向聯邦政府租地、在俄亥俄州興建大型資料中心。該公司是在回應 Warren、Blumenthal 等國會議員 6 月來函時揭露此一時間點。",
-              "relevance": "資料中心用地與電力擴建——AI 基礎設施資本支出主題",
-              "title": "SoftBank donated $50 million to Trump’s library months before federal data center deal",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/policy/976138/softbank-trump-library-data-center-ohio",
-              "published": "2026-08-06T14:30:00Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "Tesla 與 SpaceX 將投資 168 億美元在德州興建「Terafab」晶片廠",
-              "summary_zh": "經過數月傳聞後,兩家公司正式宣布將在休士頓北方動工興建大型晶圓廠,投資金額達 168 億美元。",
-              "relevance": "先進晶圓製造產能擴張——半導體供給鏈主題",
-              "title": "Tesla and SpaceX will invest $16.8B to start building ‘Terafab’ chip factory in Texas",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/",
-              "published": "2026-08-06T15:21:51Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "國防科技公司 Hadrian 以 80 億美元估值募得 13.7 億美元",
-              "summary_zh": "Hadrian 正在打造自動化工廠,量產潛艦等國防載具的零組件,並獲得一長串知名投資人支持。",
-              "relevance": "自動化製造與自主系統供應鏈——機器人與自主系統主題",
-              "title": "Defense tech Hadrian raises $1.37B at $8B valuation",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/06/defense-tech-hadrian-raises-1-37b-at-8b-valuation/",
-              "published": "2026-08-06T19:02:57Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "大型基因體模型被用於設計新病毒",
-              "summary_zh": "研究人員以 AI 系統設計出與原始序列基因距離相當遠的殺菌病毒(噬菌體)版本。",
-              "relevance": "生成式基因體模型於序列設計的應用——生技×AI 主題",
-              "title": "Large genome models used to design new viruses",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/science/2026/08/large-genome-models-used-to-design-new-viruses/",
-              "published": "2026-08-06T19:04:57Z"
-            },
-            {
-              "title_zh": "Icon 與 Anthropic 合作,將 Claude 導入臨床試驗",
-              "summary_zh": "合約研究機構 Icon 本週宣布與 Anthropic 展開多年期合作,把 Claude 的 AI 能力導入臨床試驗流程。",
-              "relevance": "基礎模型導入藥物開發流程——生技×AI 主題",
-              "title": "Icon inks Anthropic partnership to deploy Claude into clinical trials",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/cro/icon-inks-anthropic-partnership-deploy-claude-clinical-trials",
-              "published": null
-            },
-            {
-              "title_zh": "AI 代理正在查核科學文獻,並找出數十年前的錯誤",
-              "summary_zh": "《Nature》報導指出,AI 代理在檢視數十年前的論文與參考資料庫時,展現出找出錯誤的能力。",
-              "relevance": "AI 代理應用於科學文獻查核——生技×AI 與科研自動化主題",
-              "title": "AI agents are checking the scientific literature — and spotting decades-old errors",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02235-8",
-              "published": "2026-08-06T00:00:00Z"
-            },
-            {
-              "title_zh": "以 AI 進行熱帶氣旋的作業化預報",
-              "summary_zh": "《Nature》刊出關於以 AI 進行作業化熱帶氣旋預報的研究論文(doi:10.1038/s41586-026-10953-2)。",
-              "relevance": "AI 模型取代傳統數值模擬——科學運算與 AI 應用主題",
-              "title": "Operational Tropical Cyclone Forecasting with AI",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10953-2",
-              "published": "2026-08-06T00:00:00Z"
-            },
-            {
-              "title_zh": "Moderna 的 mRNA 流感疫苗在波折的審查後獲 FDA 核准",
-              "summary_zh": "Moderna 新款流感疫苗 mFLUSIVA 獲美國 FDA 核准,適用於 50 歲以上的所有成人。",
-              "relevance": "mRNA 平台的法規進展——生技研發主題",
-              "title": "Moderna's mRNA flu shot earns FDA approval after rollercoaster review",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/health/2026/08/modernas-mrna-flu-shot-earns-fda-approval-after-rollercoaster-review/",
-              "published": "2026-08-06T16:31:06Z"
-            }
-          ]
-        }
-      ],
-      "warnings": []
     }
   ]
 }

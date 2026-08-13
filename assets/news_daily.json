@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-12T22:26:09Z",
-  "date": "2026-08-13",
+  "generated_utc": "2026-08-13T22:27:11Z",
+  "date": "2026-08-14",
   "model": "claude-opus-5",
   "candidates": 70,
   "categories": [
@@ -9,80 +9,54 @@
       "name": "AI 基礎設施",
       "items": [
         {
-          "title_zh": "AI 核電公司 Fermi 終於有了新執行長",
+          "title_zh": "Nvidia 新的 5,000 億美元計畫風險高但精明,對老化 GPU 尤其如此",
+          "summary_zh": "報導指出 Nvidia 有一套計畫,要確保其 GPU 不會流失價值,並希望說服一批新的金融業者持續為 AI 建設案提供貸款。",
+          "relevance": "AI 資本支出與 GPU 殘值融資——算力建設資金結構主題",
+          "title": "Nvidia’s new $500B plan is risky but brilliant, especially for aging GPUs",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/",
+          "published": "2026-08-13T15:08:00Z",
+          "host": "techcrunch.com"
+        },
+        {
+          "title_zh": "OpenAI 推出「Ultrafast」模式,讓 GPT-5.6 Sol 以 14 倍速度運作",
+          "summary_zh": "OpenAI 開放其最新、最強模型加速版本的預覽,速度為原本的 14 倍,目標是爭取企業用戶。",
+          "relevance": "推論速度與服務成本——推論基礎設施主題",
+          "title": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
+          "published": "2026-08-13T19:22:40Z",
+          "host": "techcrunch.com"
+        },
+        {
+          "title_zh": "Databricks 原想募 10 億美元、投資人想投 150 億,最後以 1,900 億美元估值募得 50 億",
+          "summary_zh": "執行長 Ali Ghodsi 向 TechCrunch 表示 AI 成本高昂;由於想參與這輪的投資人眾多,他接受了比原計畫更高的募資金額。",
+          "relevance": "AI 資料與運算平台的資金規模——AI 基礎設施投資主題",
+          "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
+          "published": "2026-08-13T20:14:39Z",
+          "host": "techcrunch.com"
+        },
+        {
+          "title_zh": "Anthropic 上市時市值可能達 2 兆美元",
+          "summary_zh": "報導稱 Anthropic 營收快速成長,使外界預期這家 Claude 開發商的 IPO 可能成為史上最大規模的上市案。",
+          "relevance": "前沿模型實驗室的資本市場定價——AI 基礎設施產業結構主題",
+          "title": "Anthropic could be worth $2 trillion when it goes public",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/",
+          "published": "2026-08-13T13:58:56Z",
+          "host": "arstechnica.com"
+        },
+        {
+          "title_zh": "AI 核能公司 Fermi 終於有了新執行長",
           "summary_zh": "Fermi 董事會獨立董事 Lee McIntire 出任執行長,距離該公司解除共同創辦人 Toby Neugebauer 的職務已超過三個月。",
-          "relevance": "資料中心電力供給——AI 基礎設施能源約束主題",
+          "relevance": "資料中心電力供給——AI 算力的能源約束主題",
           "title": "AI nuclear power firm Fermi finally has a new CEO",
           "source": "TechCrunch",
           "url": "https://techcrunch.com/2026/08/12/ai-nuclear-power-firm-fermi-finally-has-a-new-ceo/",
           "published": "2026-08-12T22:24:00Z",
           "host": "techcrunch.com"
-        },
-        {
-          "title_zh": "Form Energy 募得 7.5 億美元,為電網打造更多 100 小時電池",
-          "summary_zh": "Form Energy 已將 Google 與 Crusoe 納為客戶,並宣布募資 7.5 億美元擴充產能,以交付其大型 100 小時儲能電池。",
-          "relevance": "電網儲能與資料中心供電——AI 基礎設施能源主題",
-          "title": "Form Energy raises $750M to build more 100-hour batteries for the grid",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/12/form-energy-raises-750m-to-build-more-100-hour-batteries-for-the-grid/",
-          "published": "2026-08-12T16:18:23Z",
-          "host": "techcrunch.com"
-        },
-        {
-          "title_zh": "用於有效 AI 治理的代理人剖析框架",
-          "summary_zh": "《Nature》提出以自主性、效能、目標複雜度與通用性四個維度來刻畫 AI 代理人的框架,用以建立不同 AI 代理人的「代理人剖析」以支援治理。",
-          "relevance": "Agent 系統評估與治理——AI 基礎設施主題",
-          "title": "Agentic profiles for effective AI governance",
-          "source": "Nature News",
-          "url": "https://www.nature.com/articles/s41586-026-10805-z",
-          "published": "2026-08-12T00:00:00Z",
-          "host": "www.nature.com"
-        },
-        {
-          "title_zh": "大規模供應鏈攻擊洩漏數 TB 憑證",
-          "summary_zh": "報導指出資料是從一個被入侵的 AI 套件的 2,500 名使用者處被抓取並外傳。",
-          "relevance": "AI 軟體供應鏈安全——AI 基礎設施主題",
-          "title": "Terabytes of credentials leaked in massive supply-chain attack",
-          "source": "Ars Technica",
-          "url": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/",
-          "published": "2026-08-12T21:43:21Z",
-          "host": "arstechnica.com"
-        },
-        {
-          "title_zh": "AI 安全疑慮升溫之際,三位先驅主張維持開放",
-          "summary_zh": "在 Ai4 大會上,Geoffrey Hinton、Fei-Fei Li 與 Andrew Ng 就法規、開源取用,以及在中國於亞洲進展下美國如何競爭進行辯論。",
-          "relevance": "開源模型與 AI 政策——AI 基礎設施主題",
-          "title": "As AI safety concerns mount, three pioneers make the case for staying open",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
-          "published": "2026-08-12T17:51:00Z",
-          "host": "techcrunch.com"
-        }
-      ]
-    },
-    {
-      "key": "semis_hbm",
-      "name": "半導體/HBM",
-      "items": [
-        {
-          "title_zh": "用於高維光學計算的偏振度調變",
-          "summary_zh": "《Nature》研究以純相位空間光調變器在微米尺度上調控光的統計特性,使光的偏振態與偏振度可在空間上編程,實現資訊在高維空間中的直接編碼。",
-          "relevance": "光學計算與新運算載體——半導體運算架構主題",
-          "title": "Degree-of-polarization modulation for high-dimensional optical computing",
-          "source": "Nature News",
-          "url": "https://www.nature.com/articles/s41586-026-10891-z",
-          "published": "2026-08-12T00:00:00Z",
-          "host": "www.nature.com"
-        },
-        {
-          "title_zh": "Apple iPhone 18 看來確實將跳過今年秋季發表",
-          "summary_zh": "根據《經濟日報》報導,Apple 供應商和碩高層在法說會上表示,iPhone 18 Pro 系列將於今年秋季推出,但基本款 iPhone 18 要到明年第一季才會上市。",
-          "relevance": "消費電子供應鏈排程——半導體需求節奏主題",
-          "title": "It looks like Apple’s iPhone 18 really will skip the fall launch this year",
-          "source": "The Verge",
-          "url": "https://www.theverge.com/tech/979231/apple-base-iphone-18-launch-delayed",
-          "published": "2026-08-12T19:27:47Z",
-          "host": "www.theverge.com"
         }
       ]
     },
@@ -91,33 +65,13 @@
       "name": "機器人與自主",
       "items": [
         {
-          "title_zh": "Northrop 的機器人太空技師:延長衛星服役年限的新方式",
-          "summary_zh": "Northrop 的 Mission Robotic Vehicle 正首度嘗試為一顆老化衛星安裝新的推進器。",
-          "relevance": "在軌自主操作機器人——自主系統主題",
-          "title": "Northrop’s robot space mechanic is a new way to keep satellites at work longer",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/12/northrops-robot-space-mechanic-is-a-new-way-to-keep-satellites-at-work-longer/",
-          "published": "2026-08-12T20:53:41Z",
-          "host": "techcrunch.com"
-        },
-        {
-          "title_zh": "美國強化無人機監測,因應德州蔓延的食肉螺旋蠅",
-          "summary_zh": "美國國土安全部數百架無人機被重新調派,用於巡查野生動物與家畜。",
-          "relevance": "無人機大規模部署與感測任務——自主系統主題",
-          "title": "US boosts drone surveillance as flesh-eating screwworms spread in Texas",
+          "title_zh": "烏克蘭無人機在實兵兵推中全滅一支美軍戰車旅",
+          "summary_zh": "報導指出烏克蘭無人機操作員在實地戰爭遊戲中殲滅了整支美軍戰車旅,為美軍與北約帶來戰場教訓。",
+          "relevance": "無人機作戰與自主系統——自主載具與感知決策主題",
+          "title": "Ukrainian drones wipe out entire US tank brigade in live war game",
           "source": "Ars Technica",
-          "url": "https://arstechnica.com/gadgets/2026/08/us-boosts-drone-surveillance-as-flesh-eating-screwworms-spread-in-texas/",
-          "published": "2026-08-12T19:40:46Z",
-          "host": "arstechnica.com"
-        },
-        {
-          "title_zh": "俄羅斯無人機出現在歐洲重要離岸天然氣設施附近,遭擊毀",
-          "summary_zh": "羅馬尼亞擊毀了漂近該離岸天然氣設施的俄羅斯無人機;此前已有多次無人機侵入羅馬尼亞領空,以及一次在德國失敗的攻擊。",
-          "relevance": "無人機威脅與反制——自主系統主題",
-          "title": "Russian drones found near vital European offshore gas site, get blown up",
-          "source": "Ars Technica",
-          "url": "https://arstechnica.com/gadgets/2026/08/romania-destroys-russian-drones-drifting-near-vital-european-offshore-gas-site/",
-          "published": "2026-08-11T21:20:11Z",
+          "url": "https://arstechnica.com/gadgets/2026/08/ukrainian-drones-wipe-out-entire-us-tank-brigade-in-live-war-game/",
+          "published": "2026-08-13T18:31:56Z",
           "host": "arstechnica.com"
         }
       ]
@@ -127,53 +81,23 @@
       "name": "生技×AI",
       "items": [
         {
-          "title_zh": "以葡萄糖反應型益生菌調控小鼠與猴子的血糖",
-          "summary_zh": "《Nature》研究以合成葡萄糖反應線路改造的益生菌可短暫定殖腸道,並在葡萄糖濃度上升時分泌治療因子,在小鼠與靈長類模型中實現口服的感測—反應式糖尿病控制。",
-          "relevance": "合成生物學線路設計——生技×AI 主題",
-          "title": "Glucose-responsive probiotics for glycaemic modulation in mice and monkeys",
-          "source": "Nature News",
-          "url": "https://www.nature.com/articles/s41586-026-10909-6",
-          "published": "2026-08-12T00:00:00Z",
-          "host": "www.nature.com"
+          "title_zh": "報告:AI 臨床監測 agent 在腫瘤學可帶來最高 82 倍投資報酬",
+          "summary_zh": "塔夫茲藥物開發研究中心(Tufts CSDD)的新分析發現,AI 臨床監測 agent 在第三期腫瘤學試驗中估計可帶來 82 倍的投資報酬率。",
+          "relevance": "AI agent 導入臨床試驗流程——生技×AI 主題",
+          "title": "AI clinical monitoring agent can deliver up to 82 times the ROI in oncology: report",
+          "source": "Fierce Biotech",
+          "url": "https://www.fiercebiotech.com/cro/ai-clinical-monitoring-agents-can-deliver-82-times-roi-report",
+          "published": null,
+          "host": "www.fiercebiotech.com"
         },
         {
-          "title_zh": "科學家首次製造出雄性小鼠的雌性克隆",
-          "summary_zh": "日本團隊以 CRISPR 方法移除雄性細胞的 Y 染色體,首次刻意將雄性小鼠胚胎轉為雌性,並產生雄鼠的雌性克隆。",
-          "relevance": "基因編輯與生殖生物學——生技研究主題",
-          "title": "Scientists just created female clones of male mice",
-          "source": "MIT Technology Review",
-          "url": "https://www.technologyreview.com/2026/08/12/1141768/scientists-just-created-female-clones-of-male-mice/",
-          "published": "2026-08-12T18:59:48Z",
-          "host": "www.technologyreview.com"
-        },
-        {
-          "title_zh": "皮質類器官中放射狀膠細胞譜系進程的時序脫鉤",
-          "summary_zh": "《Nature》研究在幹細胞衍生類器官中追蹤放射狀膠前驅細胞譜系,顯示增殖高度可塑、神經元克隆多樣性下降,指出缺少的非細胞自主微環境訊號對皮質譜系時序控制不可或缺。",
-          "relevance": "類器官模型與細胞譜系——生技研究主題",
-          "title": "Temporal uncoupling of radial glia lineage progression in cortical organoids",
+          "title_zh": "AI 還沒準備好研究自己",
+          "summary_zh": "一套 agentic 系統成功從兩篇計算機科學論文中發展出概念,但原論文作者對結果並不滿意。",
+          "relevance": "AI 自動化科研流程——AI for science 主題",
+          "title": "AI isn’t ready to research itself",
           "source": "Nature News",
-          "url": "https://www.nature.com/articles/s41586-026-10916-7",
-          "published": "2026-08-12T00:00:00Z",
-          "host": "www.nature.com"
-        },
-        {
-          "title_zh": "以發光反應實現的超解析影像技術",
-          "summary_zh": "《Nature》提出以化學為基礎的超解析成像框架,可對活細胞進行三維、無雷射、高靈敏且超長時間的成像,克服反應式成像方法在時空解析度上的限制。",
-          "relevance": "生物影像量測技術——生技資料生成主題",
-          "title": "Luminescent-reaction-enabled super-resolution imaging",
-          "source": "Nature News",
-          "url": "https://www.nature.com/articles/s41586-026-10889-7",
-          "published": "2026-08-12T00:00:00Z",
-          "host": "www.nature.com"
-        },
-        {
-          "title_zh": "響尾蛇自身的抗毒素也可能保護人類",
-          "summary_zh": "蛇血中的一組蛋白質混合物,可避免注射了原本致死劑量蛇毒的小鼠死亡。",
-          "relevance": "蛋白質功能與治療應用——生技研究主題",
-          "title": "Rattlesnakes’ own anti-venom could protect humans too",
-          "source": "Nature News",
-          "url": "https://www.nature.com/articles/d41586-026-02461-0",
-          "published": "2026-08-12T00:00:00Z",
+          "url": "https://www.nature.com/articles/d41586-026-02494-5",
+          "published": "2026-08-13T00:00:00Z",
           "host": "www.nature.com"
         }
       ]
@@ -183,43 +107,13 @@
       "name": "宏觀與政策",
       "items": [
         {
-          "title_zh": "AI 程式開發新創 Cognition 據報已在洽談以 400 億美元估值募資",
-          "summary_zh": "報導指出 Cognition 可能在以 260 億美元估值募得 10 億美元僅數月後,再度尋求大額募資。",
-          "relevance": "AI 新創估值——AI 資本循環主題",
-          "title": "AI coding startup Cognition reportedly already in talks to raise at $40B valuation",
+          "title_zh": "美國首度允許部分私人企業執行網路攻擊",
+          "summary_zh": "新命令推翻了美國數十年來禁止民間公司進行「反擊駭客」或攻擊性網路行動的既有政策,私人公司將在聯邦政府控制與監督下運作。",
+          "relevance": "科技與國安政策轉向——法規與地緣政治環境主題",
+          "title": "In a first, US will allow some private firms to carry out cyberattacks",
           "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
-          "published": "2026-08-12T18:19:12Z",
-          "host": "techcrunch.com"
-        },
-        {
-          "title_zh": "Lovable 確認新估值 133 億美元,再募 4 億美元",
-          "summary_zh": "Lovable 表示這輪募資是在該公司 6 月年化營收達到 5 億美元之後進行。",
-          "relevance": "AI 應用層營收與估值——AI 資本循環主題",
-          "title": "Lovable confirms new $13.3B valuation, raises another $400M",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/",
-          "published": "2026-08-12T16:04:27Z",
-          "host": "techcrunch.com"
-        },
-        {
-          "title_zh": "OpenAI 投資的 Thrive Holdings 募得 20 億美元,推動企業 AI",
-          "summary_zh": "Thrive Holdings 以 120 億美元估值募得 20 億美元新資金,投資者包括 SoftBank、D1 Capital Partners 與 Altimeter Capital。",
-          "relevance": "企業 AI 資金流向——AI 資本循環主題",
-          "title": "OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
-          "published": "2026-08-12T17:41:29Z",
-          "host": "techcrunch.com"
-        },
-        {
-          "title_zh": "Tesla 想在德州建造 100 億美元太陽能工廠",
-          "summary_zh": "Tesla 計畫在德州興建大型太陽能工廠,但要求州政府先分攤部分成本。",
-          "relevance": "製造業投資與能源產能——電力供給主題",
-          "title": "Tesla wants to build a $10B solar factory in Texas",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/08/12/tesla-wants-to-build-a-10b-solar-factory-in-texas/",
-          "published": "2026-08-12T16:18:31Z",
+          "url": "https://techcrunch.com/2026/08/13/in-a-first-us-will-allow-some-private-firms-to-carry-out-cyberattacks/",
+          "published": "2026-08-13T14:09:05Z",
           "host": "techcrunch.com"
         }
       ]
