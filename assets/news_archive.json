@@ -2,6 +2,216 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-08-16",
+      "generated_utc": "2026-08-15T22:00:56Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 59,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 7,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "台積電、矽品、鴻海等供應鏈加持，輝達宣布 Spectrum-X 乙太網路矽光子交換機量產",
+              "summary_zh": "輝達宣布 Spectrum-X 乙太網路矽光子交換機進入量產，供應鏈包含台積電、矽品、鴻海。報導指出，隨 AI 工廠與 GPU 叢集規模擴大，伺服器間資料傳輸帶來的高功耗與散熱問題日益嚴峻。",
+              "relevance": "資料中心光互連與網路交換——AI 基礎設施的頻寬與功耗約束主題",
+              "title": "台積電、矽品、鴻海等供應鏈加持，輝達宣布 Spectrum-X 乙太網路矽光子交換機量產",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/15/nvidia-announces-mass-production-of-spectrum-x-ethernet-silicon-photonics-switches/",
+              "published": "2026-08-15T07:00:23Z"
+            },
+            {
+              "title_zh": "川湖受惠 AI 市場需求持續暢旺，7 月驚人賺進五個股本",
+              "summary_zh": "伺服器導軌廠川湖科技因有價證券達注意交易資訊標準，於 14 日召開重大訊息說明會並公布 7 月自結財務數據。公司表示受益於 AI 市場需求持續暢旺。",
+              "relevance": "AI 伺服器機構件供應鏈——資料中心建置週期主題",
+              "title": "川湖受惠 AI 市場需求持續暢旺，7 月驚人賺進五個股本",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/08/15/chuanhu-made-an-astonishing-profit-of-5-times-its-share-capital-in-july/",
+              "published": "2026-08-15T03:00:02Z"
+            },
+            {
+              "title_zh": "xAI 前共同創辦人新創 River AI 獲 11 億美元融資，主打低成本企業客製化 AI 模型",
+              "summary_zh": "River AI 於 11 日宣布完成 11 億美元融資，將用於擴大企業級 AI 工具組。該公司主打協助客戶以自有資料建立低成本的客製化 AI 模型。",
+              "relevance": "企業客製化模型與訓練成本——AI 基礎設施投資主題",
+              "title": "xAI 前共同創辦人新創 River AI 獲 11 億美元融資，主打低成本企業客製化 AI 模型",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/08/15/river-ai-raises-1-1-billion-for-enterprise-ai-tools/",
+              "published": "2026-08-15T03:30:55Z"
+            },
+            {
+              "title_zh": "SpaceX 正式完成對 Cursor 的併購",
+              "summary_zh": "AI 程式開發新創 Cursor 正式成為 SpaceX 的一部分，該併購案已完成交割。",
+              "relevance": "AI 編碼工具與大型科技公司整併——AI 應用堆疊主題",
+              "title": "SpaceX officially closes its Cursor acquisition",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
+              "published": "2026-08-15T16:30:00Z"
+            },
+            {
+              "title_zh": "影子 AI 橫掃職場：近半員工私用未核准工具，高階主管更愛「繞道」使用",
+              "summary_zh": "最新資料顯示，雖然約九成組織聲稱已制定 AI 政策，仍有七成 IT 主管發現員工使用未經核准的 AI 工具，其中高階主管的繞道使用比例更高。",
+              "relevance": "企業 AI 採用與治理現況——AI 部署與基礎設施需求主題",
+              "title": "影子 AI 橫掃職場：近半員工私用未核准工具，高階主管更愛「繞道」使用",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/08/15/half-your-workforce-already-bypassed-your-ai-policy/",
+              "published": "2026-08-15T07:30:19Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "瑞銀指出，兩大因素美光標準型記憶體毛利率將上看 9 成超越 HBM",
+              "summary_zh": "瑞銀最新研究報告指出，在 AI 伺服器產能吸納全球半導體產量的情況下，傳統記憶體市場出現利潤大幅成長，並預估美光標準型記憶體毛利率有機會上看九成、超越 HBM。",
+              "relevance": "記憶體毛利結構與 HBM 對比——記憶體供給約束主題",
+              "title": "瑞銀指出，兩大因素美光標準型記憶體毛利率將上看 9 成超越 HBM",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/08/15/microns-standard-memory-gross-margin-is-expected-to-surge-to-90-surpassing-hbm/",
+              "published": "2026-08-15T01:00:19Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "自駕卡車正式在加州公路上測試",
+              "summary_zh": "開發自駕卡車的 Aurora Innovation 與 Kodiak AI 已取得加州車輛管理局（DMV）核發的許可。兩家公司得以在加州公路進行測試。",
+              "relevance": "自駕貨運車隊法規許可——自主系統落地主題",
+              "title": "Self-driving trucks are officially testing on California highways",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/",
+              "published": "2026-08-14T20:37:49Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "報告：AI 臨床監測代理在腫瘤試驗可帶來最高 82 倍投資報酬",
+              "summary_zh": "塔夫茨大學藥物開發研究中心（Tufts CSDD）新分析發現，AI 臨床監測代理在第三期腫瘤臨床試驗中估計可帶來 82 倍的投資報酬率。",
+              "relevance": "AI 代理應用於臨床試驗流程——生技×AI 主題",
+              "title": "AI clinical monitoring agent can deliver up to 82 times the ROI in oncology: report",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/cro/ai-clinical-monitoring-agents-can-deliver-82-times-roi-report",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "美日聯手阻貶，日圓要反轉了？兩大利空仍難解威脅全球股債",
+              "summary_zh": "日圓兌美元貶至 40 年新低之際，美國財政部長貝森特表示日圓被嚴重低估。報導指出美日聯手干預後，仍有兩大利空未解，對全球股債構成威脅。",
+              "relevance": "匯率干預與全球股債流動性——總體市場條件主題",
+              "title": "美日聯手阻貶，日圓要反轉了？兩大利空仍難解威脅全球股債",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/08/15/yen-decline-unstoppable-despite-us-japan-intervention-no-rate-cuts-soaring-oil/",
+              "published": "2026-08-15T02:00:08Z"
+            },
+            {
+              "title_zh": "太陽能大爆發：細看今年美國所有併網發電廠清單",
+              "summary_zh": "今年美國新併網的發電容量以公用事業級太陽能遙遙領先，其次為儲能電池，化石燃料新增量則相對有限。",
+              "relevance": "美國新增電力供給結構——資料中心用電與能源約束主題",
+              "title": "So much solar: Digging into the list of every US power plant that went online this year",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/science/2026/08/so-much-solar-digging-into-the-list-of-every-us-power-plant-that-went-online-this-year/",
+              "published": "2026-08-15T11:09:57Z"
+            },
+            {
+              "title_zh": "募資超過 1 億美元的每一家核融合新創",
+              "summary_zh": "核融合新創迄今合計募得 71 億美元資金，其中大部分集中在少數幾家公司。",
+              "relevance": "新型基載電力投資——AI 資料中心長期電力供給主題",
+              "title": "Every fusion startup that has raised over $100M",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/15/every-fusion-startup-that-has-raised-over-100m/",
+              "published": "2026-08-15T13:15:20Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/"
+      ]
+    },
+    {
       "date": "2026-08-15",
       "generated_utc": "2026-08-14T22:07:56Z",
       "status": "published",
@@ -1170,173 +1380,6 @@
               "source": "TechNews 科技新報",
               "url": "https://finance.technews.tw/2026/08/09/ennostar-q2-financial-statements/",
               "published": "2026-08-09T07:40:41Z"
-            }
-          ]
-        }
-      ],
-      "warnings": []
-    },
-    {
-      "date": "2026-08-09",
-      "generated_utc": "2026-08-08T22:13:19Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 61,
-      "feeds": null,
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Amazon 規劃中的資料中心可能成為美國最大的氣候污染源",
-              "summary_zh": "報導指出,Amazon 在德州規劃的資料中心投資興建場內天然氣發電廠,該電廠可能成為美國最大的單一溫室氣體排放來源。廠址位於德州 Pecos County。",
-              "relevance": "資料中心自建電力與能源供給——AI 基礎設施電力約束主題",
-              "title": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
-              "published": "2026-08-08T21:24:02Z"
-            },
-            {
-              "title_zh": "OpenAI 表示因安全顧慮而放慢 Astra 模型開發",
-              "summary_zh": "OpenAI 指出,仍在開發中的 Astra 模型已達到其「關鍵網路安全門檻」,意即該模型可獨立辨識並對傳統上防護良好的真實系統執行網路攻擊。",
-              "relevance": "前沿模型能力與安全門檻——AI 系統評估與治理主題",
-              "title": "OpenAI says it slowed Astra model development over security concerns",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
-              "published": "2026-08-07T22:48:24Z"
-            },
-            {
-              "title_zh": "沒跟著燒錢市值衝上 5 兆美元?蘋果如今恐不得不加入算力競賽",
-              "summary_zh": "文章回顧微軟、Meta、Alphabet、亞馬遜近兩年相繼提高 AI 資本支出,並討論蘋果在此輪算力投資競賽中的處境。",
-              "relevance": "超大規模雲廠資本支出——AI 基礎設施投資週期主題",
-              "title": "沒跟著燒錢市值衝上 5 兆美元？蘋果如今恐不得不加入算力競賽",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/08/apple-ai-capex-increase/",
-              "published": "2026-08-08T07:53:43Z"
-            },
-            {
-              "title_zh": "首見「AI 互駭」!Google 開發套件曝漏洞,揭露代理對代理攻擊風險",
-              "summary_zh": "資安機構 Pillar Security 研究人員披露 Google 廣泛使用的 Agent Development Kit 存在漏洞,揭露代理對代理(agent-to-agent)的攻擊風險。",
-              "relevance": "多代理系統安全性——AI 代理基礎設施主題",
-              "title": "首見「AI 互駭」！Google 開發套件曝漏洞，揭露代理對代理攻擊風險",
-              "source": "TechNews 科技新報",
-              "url": "https://infosecu.technews.tw/2026/08/08/ai-mutual-hacking-google-sdk-vulnerability/",
-              "published": "2026-08-08T05:30:53Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "教 AI 設計晶片!Anthropic 研究工程師年薪最高 85 萬美元",
-              "summary_zh": "Anthropic 正組建內部晶片團隊、推進客製化晶片相關工作,並以最高 85 萬美元年薪招募研究工程師。",
-              "relevance": "AI 輔助晶片設計與自研加速器——半導體設計自動化主題",
-              "title": "教 AI 設計晶片！Anthropic 研究工程師年薪最高 85 萬美元",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/08/08/anthropic-ic-design/",
-              "published": "2026-08-08T04:57:52Z"
-            },
-            {
-              "title_zh": "AI 讓 RAM 價格倒退回 2007 年水準,20 年降價趨勢逆轉",
-              "summary_zh": "軟體效能專家、GitHub 開發者 Daniel Lemire 指出,在高頻寬記憶體需求推動下,RAM 價格已回到 2007 年的水準,逆轉過去 20 年的降價趨勢。",
-              "relevance": "HBM 排擠一般 DRAM 供給——記憶體約束主題",
-              "title": "AI 讓 RAM 價格倒退回 2007 年水準，20 年降價趨勢逆轉",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/08/ai-ram-hbm/",
-              "published": "2026-08-08T07:19:28Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "火星上第一輛自動駕駛車輛已證明極為成功",
-              "summary_zh": "報導指出,毅力號(Perseverance)行駛距離中約有 90% 是以自主方式完成。",
-              "relevance": "長期自主導航實績——自主系統主題",
-              "title": "The first self-driving vehicle on Mars has proven to be a smashing success",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/space/2026/08/the-first-self-driving-vehicle-on-mars-has-proven-to-be-a-smashing-success/",
-              "published": "2026-08-08T11:30:48Z"
-            },
-            {
-              "title_zh": "P-1 AI 獲 5,000 萬美元融資,推出代理式 AI 工程師「Archie」",
-              "summary_zh": "P-1 AI 宣布完成 5,000 萬美元 A 輪融資,推出代理式 AI 工程師「Archie」,面向面臨工程師短缺的美國航空航太與工業領域。",
-              "relevance": "實體工程領域的 AI 代理——具身與工業自主系統主題",
-              "title": "P-1 AI 獲 5,000 萬美元融資，推出代理式 AI 工程師「Archie」化解實體工程人才荒",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/08/08/could-agentic-ai-bring-american-manufacturing-back/",
-              "published": "2026-08-08T00:30:27Z"
-            },
-            {
-              "title_zh": "佳世達總座親督軍注資擎壤、翔隆,百人無人機小隊強攻美日市場",
-              "summary_zh": "科技集團佳世達接連投資兩家無人機新創擎壤與翔隆,由總經理親自督軍,目標為美國與日本市場。",
-              "relevance": "無人機製造與供應鏈——自主系統主題",
-              "title": "佳世達總座親督軍注資擎壤、翔隆，百人無人機小隊強攻美日市場",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/08/08/qisda-general-manager-personally-oversees-investment-q-land-s-long-100-person-drone-team-aggressively-targeting-us-japan-markets/",
-              "published": "2026-08-08T00:00:30Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "DeepMind 的颶風預測突破令氣象科學家意外",
-              "summary_zh": "DeepMind 開源的 WeatherNext 模型能以較低解析度的氣象資料做出準確預測,報導稱其為預報員多爭取到一天的時間。",
-              "relevance": "科學領域基礎模型——AI for Science 主題",
-              "title": "DeepMind’s hurricane breakthrough has surprised weather scientists",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
-              "published": "2026-08-08T11:05:50Z"
-            },
-            {
-              "title_zh": "AI 解密百萬張衛星照片:全球藻華擴散恐引爆海洋生態與經濟危機",
-              "summary_zh": "科學家以 AI 分析超過 120 萬張衛星影像,首次拼湊出全球浮游藻類的完整圖像。",
-              "relevance": "大規模影像資料的 AI 分析——AI 驅動生命科學研究主題",
-              "title": "AI 解密百萬張衛星照片：全球藻華擴散恐引爆海洋生態與經濟危機",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/08/08/ai-global-ocean-algal-bloom/",
-              "published": "2026-08-08T02:30:38Z"
-            },
-            {
-              "title_zh": "PacBio 執行長在裁員與第二季虧損擴大之際卸任",
-              "summary_zh": "PacBio 執行長 Christian Henry 卸任,由內部資深主管接任,新任者的任務包括改善銷售、擴大這家 DNA 定序公司的臨床應用範圍並削減成本。",
-              "relevance": "定序平台廠商經營變化——基因體資料生成基礎設施主題",
-              "title": "PacBio CEO steps down amid layoffs, widening Q2 loss",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/pacbio-ceo-steps-down-q2-loss-widens",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "升息怕壓垮財政、不升又救不了匯率,解析日本「保日圓」的兩難困境",
-              "summary_zh": "美國與日本罕見聯手進場買進日圓,使貶勢止穩;報導指出干預雖逼退短線投機資金,但外資評估長期效果有限。",
-              "relevance": "日圓與利率政策——全球流動性與宏觀主題",
-              "title": "升息怕壓垮財政、不升又救不了匯率，解析日本「保日圓」的兩難困境",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/08/japan-dilemma-save-yen/",
-              "published": "2026-08-08T02:00:19Z"
-            },
-            {
-              "title_zh": "台積電、CSP 大舉建廠背後的推手!研華北美接單強勁,樂觀看旺下半年",
-              "summary_zh": "《財訊》報導,在台積電擴產與輝達、Google 等 CSP 大舉投資 AI 資料中心的背景下,研華北美接單強勁,並在零件價格上漲下對下半年持樂觀看法。",
-              "relevance": "資料中心建置供應鏈需求——AI 基礎設施投資鏈主題",
-              "title": "台積電、CSP 大舉建廠背後的推手！研華北美接單強勁，無懼零件飆漲樂觀看旺下半年",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/08/advantech/",
-              "published": "2026-08-08T01:00:00Z"
             }
           ]
         }
