@@ -1,27 +1,47 @@
 {
-  "generated_utc": "2026-08-16T22:00:32Z",
-  "date": "2026-08-17",
+  "generated_utc": "2026-08-17T22:08:46Z",
+  "date": "2026-08-18",
   "model": "claude-opus-5",
-  "candidates": 52,
+  "candidates": 70,
   "categories": [
     {
       "key": "ai_infra",
       "name": "AI 基礎設施",
       "items": [
         {
-          "title_zh": "輝達砸 30 億美元投資 SB Energy！助 OpenAI 建置千億美元資料中心",
-          "summary_zh": "輝達（NVIDIA）正與軟銀集團旗下能源與基礎設施子公司 SB Energy 洽談 30 億美元投資，用於支援 OpenAI 規模達千億美元的資料中心建置。",
-          "relevance": "資料中心電力與資本支出——AI 基礎設施擴建主題",
-          "title": "輝達砸 30 億美元投資 SB Energy！助 OpenAI 建置千億美元資料中心",
-          "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/16/sb-energy-softbank/",
-          "published": "2026-08-16T01:16:19Z",
-          "host": "finance.technews.tw"
+          "title_zh": "Nvidia 投資 15 億美元於 SoftBank 旗下負責 OpenAI 專案的資料中心開發商",
+          "summary_zh": "Nvidia 將投資 15 億美元於 SoftBank 的資料中心開發商。該投資將確保其晶片用於一座 OpenAI 資料中心。",
+          "relevance": "AI 資料中心資本支出與晶片供應綁定——AI 基礎設施建置主題",
+          "title": "Nvidia investing $1.5B in SoftBank data center developer behind OpenAI project",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/",
+          "published": "2026-08-17T15:16:24Z",
+          "host": "techcrunch.com"
         },
         {
-          "title_zh": "據報 Stripe 將以逾 70 億美元收購 AI 閘道新創 OpenRouter",
-          "summary_zh": "據報導，Stripe 將以超過 70 億美元收購 AI 閘道新創 OpenRouter。該公司執行長近期形容自家為「AI 界的 Stripe」。",
-          "relevance": "模型推論路由與 API 中介層——AI 基礎設施堆疊主題",
+          "title_zh": "Groq 募資 3.5 億美元,推動從 AI 晶片轉向 neocloud",
+          "summary_zh": "Groq 以 35 億美元估值募得 3.5 億美元,由 AI 晶片業務轉型為 neocloud 業者。公司同時擴張其採用 Nvidia 晶片的資料中心版圖。",
+          "relevance": "推論晶片與 neocloud 商業模式——AI 運算供給主題",
+          "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/",
+          "published": "2026-08-17T16:15:12Z",
+          "host": "techcrunch.com"
+        },
+        {
+          "title_zh": "Nvidia 揭露持有 SpaceX 210 億美元股權",
+          "summary_zh": "Nvidia 在申報文件中揭露對 SpaceX 的 210 億美元持股。該申報出現於 Elon Musk 宣布由 Nvidia 獨家配置其資料中心設備之後。",
+          "relevance": "資料中心與衛星運算佈局——AI 基礎設施主題",
+          "title": "Nvidia discloses $21B stake in SpaceX",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/information-technology/2026/08/nvidia-discloses-21b-stake-in-spacex/",
+          "published": "2026-08-17T14:22:54Z",
+          "host": "arstechnica.com"
+        },
+        {
+          "title_zh": "據報 Stripe 將以逾 70 億美元收購 AI gateway 新創 OpenRouter",
+          "summary_zh": "據報導,Stripe 將以超過 70 億美元收購 AI gateway 新創公司 OpenRouter。OpenRouter 執行長近期形容該公司為「AI 界的 Stripe」。",
+          "relevance": "模型路由與 AI 服務中介層——AI 基礎設施堆疊主題",
           "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
           "source": "TechCrunch",
           "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
@@ -29,70 +49,40 @@
           "host": "techcrunch.com"
         },
         {
-          "title_zh": "神雲科技於 OCP APAC 高峰會展出多元化架構，打造代理型 AI 運作系統",
-          "summary_zh": "神達控股子公司神雲科技（MiTAC Computing Technology）在 OCP APAC 高峰會展出多元化伺服器架構，主打代理型 AI 運作系統的解決方案。",
-          "relevance": "開放運算伺服器架構——AI 基礎設施硬體主題",
-          "title": "神雲科技於 OCP APAC 高峰會展出多元化架構，打造代理型 AI 運作系統",
-          "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/16/mitac-computing-technology-ocp-apac-summit-diverse-architectures-agentic-ai-operating-systems/",
-          "published": "2026-08-16T06:00:29Z",
-          "host": "technews.tw"
-        },
-        {
-          "title_zh": "據報 OpenAI 已解散其 preparedness 團隊",
-          "summary_zh": "根據《金融時報》報導，OpenAI 於上月底解散了 preparedness 團隊；該團隊原本負責評估模型是否構成重大風險，並發展相應的緩解方法。",
-          "relevance": "前沿模型風險評估組織——AI 系統治理主題",
-          "title": "OpenAI reportedly disbanded its preparedness team",
-          "source": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
-          "published": "2026-08-16T21:32:56Z",
-          "host": "www.theverge.com"
+          "title_zh": "從 AI Copilot 到 Agent Swarm",
+          "summary_zh": "AMD 說明其將 AI 應用於軟體開發生命週期各環節的計畫,包括產生程式碼、問題分類、除錯與測試。文中回顧該公司先前設定的生產力提升目標。",
+          "relevance": "多代理系統於工程流程的部署——AI 應用與自主代理主題",
+          "title": "From AI Copilots to Agent Swarms",
+          "source": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org/amd-agent-swarms",
+          "published": "2026-08-17T14:00:01Z",
+          "host": "spectrum.ieee.org"
         }
       ]
     },
     {
-      "key": "semis_hbm",
-      "name": "半導體/HBM",
+      "key": "robotics",
+      "name": "機器人與自主",
       "items": [
         {
-          "title_zh": "13F 報告出爐！波克夏重押 AI、橋水幾乎清倉美光、軟銀砍 7 成台積電",
-          "summary_zh": "美國 SEC 最新一季 13F 持倉報告顯示，第二季機構投資人對半導體與 AI 基礎設施類股調整明顯：橋水幾乎清倉美光，軟銀減持台積電約七成，波克夏則加碼 AI 相關持股。",
-          "relevance": "記憶體與晶圓代工持股變動——HBM／半導體供應鏈主題",
-          "title": "13F 報告出爐！波克夏重押 Al、橋水幾乎清倉美光、軟銀砍 7 成台積電",
-          "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/16/13f-reports-are-out/",
-          "published": "2026-08-16T06:14:43Z",
-          "host": "finance.technews.tw"
+          "title_zh": "Uber 與 Zipline 合作推出 Eats 無人機外送",
+          "summary_zh": "Uber 將與無人機公司 Zipline 合作,於今年稍後開始空中外送,目標在 2029 年達到每日一百萬次無人機配送。Uber 同時對這家自 2025 年起在德州營運配送的加州公司進行策略投資。",
+          "relevance": "自主飛行器規模化營運——自主系統部署主題",
+          "title": "Uber partners with Zipline on Eats drone deliveries",
+          "source": "The Verge",
+          "url": "https://www.theverge.com/transportation/980912/uber-eats-zipline-drone-delivery-investment",
+          "published": "2026-08-17T14:24:35Z",
+          "host": "www.theverge.com"
         },
         {
-          "title_zh": "卡位 CPO 新架構前，臻鼎押寶光模組 PCB 拚 2027 年稱王",
-          "summary_zh": "臻鼎科技提前布局高階 PCB 產能，押注光模組 PCB，目標在客戶 CPO 新平台量產時即時遞補產能。",
-          "relevance": "共同封裝光學（CPO）與光模組載板——AI 資料中心互連主題",
-          "title": "卡位 CPO 新架構前，臻鼎押寶光模組 PCB 拚 2027 年稱王",
-          "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/16/zhen-ding-invests-80-billion-in-major-capacity-expansion/",
-          "published": "2026-08-16T01:00:26Z",
-          "host": "finance.technews.tw"
-        },
-        {
-          "title_zh": "又一家 AI 新創完成 900 萬美元募資，Discovered Materials 以 AI 代理開發晶片散熱材料",
-          "summary_zh": "美國半導體材料新創 Discovered Materials 完成 900 萬美元種子輪募資，運用 AI 代理探索用於晶片散熱的新材料。",
-          "relevance": "晶片散熱材料與 AI 驅動材料探索——半導體製程主題",
-          "title": "又一家 AI 新創完成 900 萬美元募資，Discovered Materials 以 AI 代理開發晶片散熱材料",
-          "source": "TechNews 科技新報",
-          "url": "https://technews.tw/2026/08/16/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
-          "published": "2026-08-16T06:30:32Z",
-          "host": "technews.tw"
-        },
-        {
-          "title_zh": "通寶半導體上半年毛利率高達 67%！董事會引私募拚年底送件申請上市",
-          "summary_zh": "通寶半導體公布上半年合併營收 3.2 億元、年增 92%，稅前淨利 4,807 萬元、年增 57%，毛利率達 67%；董事會決議引進私募，目標年底送件申請上市。",
-          "relevance": "台灣半導體業者財務動態——半導體產業主題",
-          "title": "通寶半導體上半年毛利率高達 67%！董事會引私募拚年底送件申請上市",
-          "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/16/private-equity-case/",
-          "published": "2026-08-16T07:32:42Z",
-          "host": "finance.technews.tw"
+          "title_zh": "當孩子的機器人好朋友死去會發生什麼事?",
+          "summary_zh": "報導追蹤一名孩童與社交機器人 Moxie 六年來的互動,包括機器人教他透過吐氣、呼吸練習來調節焦慮與憤怒情緒。文章探討機器人服務終止後對使用者的影響。",
+          "relevance": "社交機器人與人機互動——機器人系統主題",
+          "title": "What happens when a kid’s robot best friend dies?",
+          "source": "MIT Technology Review",
+          "url": "https://www.technologyreview.com/2026/08/17/1141568/moxie-when-kids-robot-best-friend-dies/",
+          "published": "2026-08-17T09:00:00Z",
+          "host": "www.technologyreview.com"
         }
       ]
     },
@@ -101,70 +91,54 @@
       "name": "生技×AI",
       "items": [
         {
-          "title_zh": "報告：AI 臨床監測代理在腫瘤試驗可帶來高達 82 倍投資報酬",
-          "summary_zh": "塔夫茲大學藥物開發研究中心（Tufts CSDD）的新分析指出，AI 臨床監測代理在第三期腫瘤臨床試驗中，估計可帶來 82 倍的投資報酬。",
-          "relevance": "AI 代理應用於臨床試驗流程——生技×AI 主題",
-          "title": "AI clinical monitoring agent can deliver up to 82 times the ROI in oncology: report",
+          "title_zh": "為何 AI 系統最有用之處在於設計新的科學工具",
+          "summary_zh": "《Nature》評論指出,歷史上的重大突破常由創新儀器所觸發,而 AI 協助設計這類儀器的能力可能是它對科學最重要的貢獻。",
+          "relevance": "AI 用於科學儀器設計——AI 驅動科研主題",
+          "title": "Why AI systems are most useful as designers of new scientific tools",
+          "source": "Nature News",
+          "url": "https://www.nature.com/articles/d41586-026-02529-x",
+          "published": "2026-08-17T00:00:00Z",
+          "host": "www.nature.com"
+        },
+        {
+          "title_zh": "首見的猝睡症新藥為腦部療法開啟大門",
+          "summary_zh": "名為 Orzeyful 的藥物針對猝睡症的根本病因而非症狀。《Nature》報導指其為同類首見藥物,並可能帶動腦部疾病的新療法方向。",
+          "relevance": "神經藥物開發——生技創新主題",
+          "title": "First-of-its-kind narcolepsy drug opens door to new therapies for the brain",
+          "source": "Nature News",
+          "url": "https://www.nature.com/articles/d41586-026-02552-y",
+          "published": "2026-08-17T00:00:00Z",
+          "host": "www.nature.com"
+        },
+        {
+          "title_zh": "在 2 起未公開的基因治療死亡事件後,中國的替代監管路徑還能被信任嗎?",
+          "summary_zh": "兩起近期病患死亡事件皆涉及對高劑量病毒載體基因治療的嚴重免疫反應,且未對外揭露。事件引發國際對中國研究者發起試驗(IIT)框架在監督與透明度上落差的關注。",
+          "relevance": "基因治療監管與臨床試驗透明度——生技法規主題",
+          "title": "After 2 undisclosed gene therapy deaths, can China’s alternative regulatory path still be trusted?",
           "source": "Fierce Biotech",
-          "url": "https://www.fiercebiotech.com/cro/ai-clinical-monitoring-agents-can-deliver-82-times-roi-report",
+          "url": "https://www.fiercebiotech.com/biotech/after-2-undisclosed-gene-therapy-deaths-can-china-iit-alternative-regulatory-path-still-be",
           "published": null,
           "host": "www.fiercebiotech.com"
         },
         {
-          "title_zh": "PTC 以 2.11 億美元標下 Sangamo 資產，取得進軍 Fabry 市場的機會",
-          "summary_zh": "PTC Therapeutics 以 1.11 億美元頭期款買下 Sangamo Therapeutics 的法布瑞氏症（Fabry disease）基因療法專案，勝過 Astellas 與 TerSera 的競標；破產程序中的 Sangamo 另以 5,000 萬美元將技術售予禮來。",
-          "relevance": "基因療法資產交易——生技研發資產配置主題",
-          "title": "PTC’s $211M bid wins Sangamo auction, teeing up ‘special opportunity’ to enter Fabry market",
+          "title_zh": "FDA 核准 Lantheus 的阿茲海默症 PET 影像劑 Tauklarify",
+          "summary_zh": "Lantheus 取得 FDA 對其阿茲海默症 PET 影像劑 Tauklarify 的核准。該公司近期同意由同業放射製藥公司 Curium 以 80 億美元收購。",
+          "relevance": "神經影像診斷與放射製藥併購——生醫診斷主題",
+          "title": "FDA clears Lantheus’ Alzheimer’s PET imaging agent Tauklarify",
           "source": "Fierce Biotech",
-          "url": "https://www.fiercebiotech.com/biotech/ptcs-211m-bid-wins-sangamo-auction-teeing-special-opportunity-enter-fabry-market",
+          "url": "https://www.fiercebiotech.com/medtech/fda-clears-lantheus-alzheimers-pet-imaging-agent-tauklarify",
           "published": null,
           "host": "www.fiercebiotech.com"
         },
         {
-          "title_zh": "CytoDyn 的 leronlimab 在幼年獼猴組合療法中清除病毒，重申 HIV 潛力",
-          "summary_zh": "CytoDyn 的 CCR5 標靶抗體 leronlimab 雖未能取得 HIV 治療核准，但在幼年靈長類動物的組合療法研究中清除了病毒。",
-          "relevance": "抗體療法臨床前資料——生技研發主題",
-          "title": "CytoDyn’s leronlimab reaffirms HIV potential after combo treatment eradicates virus in infant macaques",
+          "title_zh": "AstraZeneca 在雙特異性抗體不如 Keytruda 後終止第三期肺癌試驗",
+          "summary_zh": "AstraZeneca 依期中療效資料停止 volrustomig 的第三期肺癌試驗。該雙特異性抗體原設計用於取代現行免疫檢查點抑制劑。",
+          "relevance": "腫瘤免疫療法臨床開發——生技研發主題",
+          "title": "AstraZeneca ends phase 3 lung cancer trial after bispecific falls short versus Keytruda",
           "source": "Fierce Biotech",
-          "url": "https://www.fiercebiotech.com/biotech/cytodyns-leronlimab-aims-comeback-it-eradicates-hiv-infant-macaques-combination-hiv",
+          "url": "https://www.fiercebiotech.com/biotech/astrazeneca-ends-phase-3-lung-cancer-trial-after-bispecific-falls-short-versus-keytruda",
           "published": null,
           "host": "www.fiercebiotech.com"
-        },
-        {
-          "title_zh": "三星耳機助聽功能取得 FDA 核准",
-          "summary_zh": "FDA 核准三星電子最新軟體功能，使 Galaxy Buds 耳機可作為 OTC 助聽器使用，並提供使用者自我聽力檢測。",
-          "relevance": "消費性裝置醫療化與軟體型醫材核准——生醫感測主題",
-          "title": "Samsung hearing aid features for its ear buds garner FDA clearance",
-          "source": "Fierce Biotech",
-          "url": "https://www.fiercebiotech.com/medtech/samsung-hearing-aid-features-its-ear-buds-garner-fda-clearance",
-          "published": null,
-          "host": "www.fiercebiotech.com"
-        }
-      ]
-    },
-    {
-      "key": "macro",
-      "name": "宏觀與政策",
-      "items": [
-        {
-          "title_zh": "黃金還能追嗎？瑞銀財管 CIO：金價 2027 上半年有望衝過 5,000 美元",
-          "summary_zh": "黃金價格自 6 月以來首次突破每盎司 4,300 美元，脫離先前 4,000 至 4,100 美元區間；瑞銀財管 CIO 預期金價在 2027 年上半年有望突破每盎司 5,000 美元。",
-          "relevance": "貴金屬與避險資產價格——總體市場主題",
-          "title": "黃金還能追嗎？瑞銀財管 CIO：金價 2027 上半年有望衝過 5,000 美元",
-          "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/16/chinese-institutions/",
-          "published": "2026-08-16T09:28:54Z",
-          "host": "finance.technews.tw"
-        },
-        {
-          "title_zh": "估值蒸發近九成！Airtable 降價賣身 Bending Spoons，戳破 SaaS 獨角獸神話",
-          "summary_zh": "義大利 App 收購集團 Bending Spoons 於 8 月 4 日宣布將以現金收購協作平台新創 Airtable，成交估值較先前大幅縮水。",
-          "relevance": "軟體新創估值重評——科技資本市場主題",
-          "title": "估值蒸發近九成！Airtable 降價賣身 Bending Spoons，戳破 SaaS 獨角獸神話",
-          "source": "TechNews 科技新報",
-          "url": "https://finance.technews.tw/2026/08/16/bending-spoons-acquires-airtable/",
-          "published": "2026-08-16T03:00:34Z",
-          "host": "finance.technews.tw"
         }
       ]
     }
