@@ -2,6 +2,288 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-08-20",
+      "generated_utc": "2026-08-19T22:09:57Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 12,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "OpenAI 踩下煞車。接下來呢?",
+              "summary_zh": "OpenAI 本週二表示,已放慢部分 AI 開發的步調,以強化安全性與防護措施,其中包括為期兩週的暫停。報導指出,該公司同時面臨 IPO 在即、Anthropic 以及中國與開放權重模型競爭對手的壓力。",
+              "relevance": "前沿模型開發節奏與安全治理——AI 基礎設施主題",
+              "title": "Nielsen is leaning more on wearables to hear what people are watching",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/entertainment/982358/nielsen-ratings-ppm-smart-watch-cowatching-big-data",
+              "published": "2026-08-19T19:53:09Z"
+            },
+            {
+              "title_zh": "認識這家幫華爾街為 AI 算力定價的新創",
+              "summary_zh": "隨著每年數千億美元投入資料中心與 GPU,算力已成為 AI 產品開發者最大的單一成本,但目前仍缺乏直接的算力定價方式或避險工具。新創 Silicon Data 正著手處理此一問題。",
+              "relevance": "算力成本與定價機制——AI 基礎設施經濟性主題",
+              "title": "Meet the startup helping Wall Street put a price on AI compute",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/video/meet-the-startup-helping-wall-street-put-a-price-on-ai-compute/",
+              "published": "2026-08-19T17:26:48Z"
+            },
+            {
+              "title_zh": "TerraPower 的核子反應爐握有供電 AI 資料中心的祕密武器",
+              "summary_zh": "TechCrunch 報導指出,TerraPower 的核電廠設計相對於競爭對手具備策略優勢,特別是在爭取資料中心供電合約方面。",
+              "relevance": "資料中心電力供給——AI 基礎設施能源約束主題",
+              "title": "TerraPower’s nuclear reactor has a secret weapon for powering AI data centers",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/",
+              "published": "2026-08-19T15:44:53Z"
+            },
+            {
+              "title_zh": "研究人員稱 OpenAI 撤銷其對限定資安計畫的存取權",
+              "summary_zh": "多位研究人員表示,OpenAI 撤銷了他們對 Trusted Access for Cyber 計畫的存取權限。該計畫原意是提供可信任的防禦方更強的模型,以利回報漏洞給廠商並加速修補。",
+              "relevance": "前沿模型的受控存取與資安應用——AI 基礎設施主題",
+              "title": "Researchers say OpenAI revoked their access to limited cyber program",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/19/researchers-complain-that-openai-revoked-their-access-to-limited-cyber-program/",
+              "published": "2026-08-19T18:46:14Z"
+            },
+            {
+              "title_zh": "AI 的遞迴式自我改進,可能沒那麼快到來",
+              "summary_zh": "MIT Technology Review 報導指出,AI 產業目前最大膽的承諾是 AI 將很快在幾乎無需人類監督下自我改進,但該篇分析檢視了此一進程面臨的問題。",
+              "relevance": "模型自我改進的可行性——AI 研究方法論主題",
+              "title": "The Download: AI’s self-improvement problem, and what’s driving the heat",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/08/19/1140195/the-download-ai-recursive-self-improvement-problem-heatwave-causes/",
+              "published": "2026-08-19T12:10:00Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "在量子模擬器中觀測到共形場論能譜",
+              "summary_zh": "《Nature》研究在量子相變點對光學捕陷中性原子陣列進行量測,直接觀測到共形場論所預測的普適激發能譜。",
+              "relevance": "量子模擬硬體——先進運算平台主題",
+              "title": "Observation of conformal field theory spectra in a quantum simulator",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-10904-x",
+              "published": "2026-08-19T00:00:00Z"
+            },
+            {
+              "title_zh": "NbSe₂ 中真空增強超導性的證據",
+              "summary_zh": "《Nature》發表關於二硒化鈮(NbSe₂)中真空增強超導性的實驗證據。",
+              "relevance": "凝態材料與超導——先進元件材料主題",
+              "title": "Evidence for vacuum-enhanced superconductivity in NbSe 2",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-11037-x",
+              "published": "2026-08-19T00:00:00Z"
+            },
+            {
+              "title_zh": "以聚焦電子探針進行原子尺度雙狹縫干涉",
+              "summary_zh": "《Nature》研究以掃描穿透式電子顯微鏡展示原子尺度的雙狹縫干涉,聚焦電子束通過兩根相距 1.36 Å 的矽原子柱時產生干涉條紋。",
+              "relevance": "原子級電子顯微量測技術——半導體檢測與計量主題",
+              "title": "Atomic-scale double-slit interferometry with a focused electron probe",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-10914-9",
+              "published": "2026-08-19T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Amazon Prime Air 將擴展至近 500 個美國城市",
+              "summary_zh": "Amazon 大幅擴張其 Prime Air 無人機配送服務,計畫於 2026 年底前覆蓋近 500 個美國城市。",
+              "relevance": "自主無人載具規模化部署——機器人與自主系統主題",
+              "title": "Amazon’s Prime Air is taking off in nearly 500 US cities",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/19/amazons-prime-air-is-taking-off-in-nearly-500-u-s-cities/",
+              "published": "2026-08-19T14:57:58Z"
+            },
+            {
+              "title_zh": "Rivian 分拆公司 Also 再募資 1.5 億美元",
+              "summary_zh": "由 Prysm Capital 領投的這輪募資,將用於支持 Also 從電動助力自行車與商用貨運四輪車,擴展至自駕配送車輛。",
+              "relevance": "自駕配送載具——機器人與自主系統主題",
+              "title": "Rivian spinout Also raises another $150M",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/19/rivian-spinout-also-raises-another-150-million/",
+              "published": "2026-08-19T15:39:47Z"
+            },
+            {
+              "title_zh": "烏克蘭無人機壓制俄軍戰車的新型主動防護系統——至少目前如此",
+              "summary_zh": "配備可擊落無人機之防禦技術的戰車,在實戰中仍被證明存在弱點。",
+              "relevance": "無人機自主系統與反制對抗——自主系統主題",
+              "title": "Ukrainian drones overwhelm Russian tanks’ new active protection system—for now",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/08/ukrainian-drones-overwhelm-russian-tanks-new-active-protection-system-for-now/",
+              "published": "2026-08-18T22:18:13Z"
+            },
+            {
+              "title_zh": "Travis Kalanick 再度開炮批評創投:「只有 1% 有幫助」",
+              "summary_zh": "Travis Kalanick 為其新機器人公司 Atoms 募得 17 億美元後,回顧創投在他職涯中扮演的角色。",
+              "relevance": "機器人新創資金規模——機器人產業主題",
+              "title": "Travis Kalanick kicks off another round of VC bashing: ‘1% are helpful’",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/19/travis-kalanick-kicks-off-another-round-of-vc-bashing-1-are-helpful/",
+              "published": "2026-08-19T21:48:24Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Moderna 與 Merck 表示 mRNA 癌症疫苗在第三期黑色素瘤試驗成功",
+              "summary_zh": "兩家公司表示,該疫苗在第三期試驗中阻止了癌症的復發與擴散。",
+              "relevance": "mRNA 個人化療法臨床驗證——生技主題",
+              "title": "mRNA cancer vaccine succeeded in Phase 3 melanoma trial, Moderna and Merck say",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/health/2026/08/mrna-cancer-vaccine-succeeded-in-phase-3-melanoma-trial-moderna-and-merck-say/",
+              "published": "2026-08-19T16:53:56Z"
+            },
+            {
+              "title_zh": "人類腦類器官可記錄跨越多年的時間流逝",
+              "summary_zh": "《Nature》研究將人類腦類器官在培養中發育超過五年,顯示腦細胞即使脫離個體,仍能依循人類特有的內生程式持續成熟並記錄時間流逝。",
+              "relevance": "人類神經發育模型系統——生技×AI 主題",
+              "title": "Human brain organoids record the passage of time over multiple years",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-10877-x",
+              "published": "2026-08-19T00:00:00Z"
+            },
+            {
+              "title_zh": "冰島泛基因體參考序列",
+              "summary_zh": "《Nature》論文提出新方法建構冰島單倍型,並將族群規模的短讀長序列比對至泛基因體,降低參考偏差、改善低可比對區域的發現能力,揭示多個新變異,包括致病等位基因。",
+              "relevance": "泛基因體與變異偵測方法——生物資訊主題",
+              "title": "An Icelandic pangenome reference",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-10924-7",
+              "published": "2026-08-19T00:00:00Z"
+            },
+            {
+              "title_zh": "用於流體力學的 HydroGym 強化學習平台",
+              "summary_zh": "《Nature》論文發表的 HydroGym 提供超過 60 個標準化的強化學習流動控制環境,並展示對三維機翼的 zero-shot 遷移,局部表面摩擦降低 38%、探索成本減少四個數量級。",
+              "relevance": "強化學習控制基準平台——AI 方法與自主控制主題",
+              "title": "The HydroGym reinforcement learning platform for fluid dynamics",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-10917-6",
+              "published": "2026-08-19T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "FCC 廢除 Gigabit 網速目標,稱其對較慢技術不公平",
+              "summary_zh": "FCC 決議認定 1Gbps 標準過快,寬頻標準必須「技術中立」。",
+              "relevance": "寬頻基礎設施政策——總體科技政策主題",
+              "title": "FCC abolishes gigabit speed goal, suggesting it is unfair to slower technologies",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/tech-policy/2026/08/fcc-abolishes-gigabit-speed-goal-suggesting-it-is-unfair-to-slower-technologies/",
+              "published": "2026-08-19T19:45:19Z"
+            },
+            {
+              "title_zh": "Trump 提名白宮幕僚 Heidi Overton 出任下任 FDA 局長",
+              "summary_zh": "在 FDA 缺乏常任首長三個月後,Trump 提名現任白宮幕僚 Heidi Overton 醫師/博士,她將赴參議院接受任命審查。",
+              "relevance": "藥品監管機關人事——生技法規環境主題",
+              "title": "Trump taps White House aide Heidi Overton as nominee for next FDA commissioner",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/trump-taps-white-house-aide-overton-next-fda-commissioner",
+              "published": null
+            },
+            {
+              "title_zh": "又一家中國公司成功回收可重複使用火箭,閘門已開",
+              "summary_zh": "該公司表示:「我們會盡快讓這具助推器重新投入下一次飛行。」",
+              "relevance": "可重複使用發射載具——自主系統與航太主題",
+              "title": "The floodgates are open after another Chinese company lands a reusable rocket",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/space/2026/08/the-floodgates-are-open-after-another-chinese-company-lands-a-reusable-rocket/",
+              "published": "2026-08-19T18:41:02Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/"
+      ]
+    },
+    {
       "date": "2026-08-19",
       "generated_utc": "2026-08-18T22:02:13Z",
       "status": "published",
@@ -1283,288 +1565,6 @@
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/08/13/in-a-first-us-will-allow-some-private-firms-to-carry-out-cyberattacks/",
               "published": "2026-08-13T14:09:05Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5418459/287E3D5B99470D34C830D69A24B3B207"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "generated_utc": "2026-08-12T22:26:09Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 17,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 4
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 4,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "AI 核電公司 Fermi 終於有了新執行長",
-              "summary_zh": "Fermi 董事會獨立董事 Lee McIntire 出任執行長,距離該公司解除共同創辦人 Toby Neugebauer 的職務已超過三個月。",
-              "relevance": "資料中心電力供給——AI 基礎設施能源約束主題",
-              "title": "AI nuclear power firm Fermi finally has a new CEO",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/12/ai-nuclear-power-firm-fermi-finally-has-a-new-ceo/",
-              "published": "2026-08-12T22:24:00Z"
-            },
-            {
-              "title_zh": "Form Energy 募得 7.5 億美元,為電網打造更多 100 小時電池",
-              "summary_zh": "Form Energy 已將 Google 與 Crusoe 納為客戶,並宣布募資 7.5 億美元擴充產能,以交付其大型 100 小時儲能電池。",
-              "relevance": "電網儲能與資料中心供電——AI 基礎設施能源主題",
-              "title": "Form Energy raises $750M to build more 100-hour batteries for the grid",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/12/form-energy-raises-750m-to-build-more-100-hour-batteries-for-the-grid/",
-              "published": "2026-08-12T16:18:23Z"
-            },
-            {
-              "title_zh": "用於有效 AI 治理的代理人剖析框架",
-              "summary_zh": "《Nature》提出以自主性、效能、目標複雜度與通用性四個維度來刻畫 AI 代理人的框架,用以建立不同 AI 代理人的「代理人剖析」以支援治理。",
-              "relevance": "Agent 系統評估與治理——AI 基礎設施主題",
-              "title": "Agentic profiles for effective AI governance",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10805-z",
-              "published": "2026-08-12T00:00:00Z"
-            },
-            {
-              "title_zh": "大規模供應鏈攻擊洩漏數 TB 憑證",
-              "summary_zh": "報導指出資料是從一個被入侵的 AI 套件的 2,500 名使用者處被抓取並外傳。",
-              "relevance": "AI 軟體供應鏈安全——AI 基礎設施主題",
-              "title": "Terabytes of credentials leaked in massive supply-chain attack",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/",
-              "published": "2026-08-12T21:43:21Z"
-            },
-            {
-              "title_zh": "AI 安全疑慮升溫之際,三位先驅主張維持開放",
-              "summary_zh": "在 Ai4 大會上,Geoffrey Hinton、Fei-Fei Li 與 Andrew Ng 就法規、開源取用,以及在中國於亞洲進展下美國如何競爭進行辯論。",
-              "relevance": "開源模型與 AI 政策——AI 基礎設施主題",
-              "title": "As AI safety concerns mount, three pioneers make the case for staying open",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
-              "published": "2026-08-12T17:51:00Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "用於高維光學計算的偏振度調變",
-              "summary_zh": "《Nature》研究以純相位空間光調變器在微米尺度上調控光的統計特性,使光的偏振態與偏振度可在空間上編程,實現資訊在高維空間中的直接編碼。",
-              "relevance": "光學計算與新運算載體——半導體運算架構主題",
-              "title": "Degree-of-polarization modulation for high-dimensional optical computing",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10891-z",
-              "published": "2026-08-12T00:00:00Z"
-            },
-            {
-              "title_zh": "Apple iPhone 18 看來確實將跳過今年秋季發表",
-              "summary_zh": "根據《經濟日報》報導,Apple 供應商和碩高層在法說會上表示,iPhone 18 Pro 系列將於今年秋季推出,但基本款 iPhone 18 要到明年第一季才會上市。",
-              "relevance": "消費電子供應鏈排程——半導體需求節奏主題",
-              "title": "It looks like Apple’s iPhone 18 really will skip the fall launch this year",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/979231/apple-base-iphone-18-launch-delayed",
-              "published": "2026-08-12T19:27:47Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Northrop 的機器人太空技師:延長衛星服役年限的新方式",
-              "summary_zh": "Northrop 的 Mission Robotic Vehicle 正首度嘗試為一顆老化衛星安裝新的推進器。",
-              "relevance": "在軌自主操作機器人——自主系統主題",
-              "title": "Northrop’s robot space mechanic is a new way to keep satellites at work longer",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/12/northrops-robot-space-mechanic-is-a-new-way-to-keep-satellites-at-work-longer/",
-              "published": "2026-08-12T20:53:41Z"
-            },
-            {
-              "title_zh": "美國強化無人機監測,因應德州蔓延的食肉螺旋蠅",
-              "summary_zh": "美國國土安全部數百架無人機被重新調派,用於巡查野生動物與家畜。",
-              "relevance": "無人機大規模部署與感測任務——自主系統主題",
-              "title": "US boosts drone surveillance as flesh-eating screwworms spread in Texas",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gadgets/2026/08/us-boosts-drone-surveillance-as-flesh-eating-screwworms-spread-in-texas/",
-              "published": "2026-08-12T19:40:46Z"
-            },
-            {
-              "title_zh": "俄羅斯無人機出現在歐洲重要離岸天然氣設施附近,遭擊毀",
-              "summary_zh": "羅馬尼亞擊毀了漂近該離岸天然氣設施的俄羅斯無人機;此前已有多次無人機侵入羅馬尼亞領空,以及一次在德國失敗的攻擊。",
-              "relevance": "無人機威脅與反制——自主系統主題",
-              "title": "Russian drones found near vital European offshore gas site, get blown up",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gadgets/2026/08/romania-destroys-russian-drones-drifting-near-vital-european-offshore-gas-site/",
-              "published": "2026-08-11T21:20:11Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "以葡萄糖反應型益生菌調控小鼠與猴子的血糖",
-              "summary_zh": "《Nature》研究以合成葡萄糖反應線路改造的益生菌可短暫定殖腸道,並在葡萄糖濃度上升時分泌治療因子,在小鼠與靈長類模型中實現口服的感測—反應式糖尿病控制。",
-              "relevance": "合成生物學線路設計——生技×AI 主題",
-              "title": "Glucose-responsive probiotics for glycaemic modulation in mice and monkeys",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10909-6",
-              "published": "2026-08-12T00:00:00Z"
-            },
-            {
-              "title_zh": "科學家首次製造出雄性小鼠的雌性克隆",
-              "summary_zh": "日本團隊以 CRISPR 方法移除雄性細胞的 Y 染色體,首次刻意將雄性小鼠胚胎轉為雌性,並產生雄鼠的雌性克隆。",
-              "relevance": "基因編輯與生殖生物學——生技研究主題",
-              "title": "Scientists just created female clones of male mice",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/08/12/1141768/scientists-just-created-female-clones-of-male-mice/",
-              "published": "2026-08-12T18:59:48Z"
-            },
-            {
-              "title_zh": "皮質類器官中放射狀膠細胞譜系進程的時序脫鉤",
-              "summary_zh": "《Nature》研究在幹細胞衍生類器官中追蹤放射狀膠前驅細胞譜系,顯示增殖高度可塑、神經元克隆多樣性下降,指出缺少的非細胞自主微環境訊號對皮質譜系時序控制不可或缺。",
-              "relevance": "類器官模型與細胞譜系——生技研究主題",
-              "title": "Temporal uncoupling of radial glia lineage progression in cortical organoids",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10916-7",
-              "published": "2026-08-12T00:00:00Z"
-            },
-            {
-              "title_zh": "以發光反應實現的超解析影像技術",
-              "summary_zh": "《Nature》提出以化學為基礎的超解析成像框架,可對活細胞進行三維、無雷射、高靈敏且超長時間的成像,克服反應式成像方法在時空解析度上的限制。",
-              "relevance": "生物影像量測技術——生技資料生成主題",
-              "title": "Luminescent-reaction-enabled super-resolution imaging",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10889-7",
-              "published": "2026-08-12T00:00:00Z"
-            },
-            {
-              "title_zh": "響尾蛇自身的抗毒素也可能保護人類",
-              "summary_zh": "蛇血中的一組蛋白質混合物,可避免注射了原本致死劑量蛇毒的小鼠死亡。",
-              "relevance": "蛋白質功能與治療應用——生技研究主題",
-              "title": "Rattlesnakes’ own anti-venom could protect humans too",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02461-0",
-              "published": "2026-08-12T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "AI 程式開發新創 Cognition 據報已在洽談以 400 億美元估值募資",
-              "summary_zh": "報導指出 Cognition 可能在以 260 億美元估值募得 10 億美元僅數月後,再度尋求大額募資。",
-              "relevance": "AI 新創估值——AI 資本循環主題",
-              "title": "AI coding startup Cognition reportedly already in talks to raise at $40B valuation",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
-              "published": "2026-08-12T18:19:12Z"
-            },
-            {
-              "title_zh": "Lovable 確認新估值 133 億美元,再募 4 億美元",
-              "summary_zh": "Lovable 表示這輪募資是在該公司 6 月年化營收達到 5 億美元之後進行。",
-              "relevance": "AI 應用層營收與估值——AI 資本循環主題",
-              "title": "Lovable confirms new $13.3B valuation, raises another $400M",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/",
-              "published": "2026-08-12T16:04:27Z"
-            },
-            {
-              "title_zh": "OpenAI 投資的 Thrive Holdings 募得 20 億美元,推動企業 AI",
-              "summary_zh": "Thrive Holdings 以 120 億美元估值募得 20 億美元新資金,投資者包括 SoftBank、D1 Capital Partners 與 Altimeter Capital。",
-              "relevance": "企業 AI 資金流向——AI 資本循環主題",
-              "title": "OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
-              "published": "2026-08-12T17:41:29Z"
-            },
-            {
-              "title_zh": "Tesla 想在德州建造 100 億美元太陽能工廠",
-              "summary_zh": "Tesla 計畫在德州興建大型太陽能工廠,但要求州政府先分攤部分成本。",
-              "relevance": "製造業投資與能源產能——電力供給主題",
-              "title": "Tesla wants to build a $10B solar factory in Texas",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/12/tesla-wants-to-build-a-10b-solar-factory-in-texas/",
-              "published": "2026-08-12T16:18:31Z"
             }
           ]
         }
