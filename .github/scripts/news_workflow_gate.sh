@@ -6,8 +6,8 @@
 # isolated sandbox repositories -- what is tested is what runs.
 #
 # Frozen semantics (reviewer work order, 2026-08-12):
-#   detect  -> generated=true|false from the ACTUAL git diff of the two
-#              approved paths (never from the generator's exit code alone);
+#   detect  -> generated=true|false from the ACTUAL git diff of the single
+#              approved path (never from the generator's exit code alone);
 #              digest_date read from the generator's frozen product (the
 #              newest archive record), never from the runner clock.
 #   stage   -> refuses a non-clean index; stages exactly the allowlist,
@@ -19,8 +19,8 @@
 #              no force; a non-fast-forward failure fails the run.
 set -euo pipefail
 
+# Single approved path since case N4 retired the legacy daily dual-write.
 ALLOW_1="assets/news_archive.json"
-ALLOW_2="assets/news_daily.json"
 ARCHIVE="$ALLOW_1"
 FROZEN_MSG_PREFIX="chore(news): update digest for "
 
@@ -34,7 +34,7 @@ emit_output() {
 
 cmd_detect() {
   local changes digest_date
-  changes=$(git status --porcelain=v1 -- "$ALLOW_1" "$ALLOW_2")
+  changes=$(git status --porcelain=v1 -- "$ALLOW_1")
   if [ -z "$changes" ]; then
     emit_output generated false
     echo "no approved-path changes; nothing to commit"
@@ -69,13 +69,13 @@ cmd_stage() {
     echo "$pre" >&2
     exit 1
   fi
-  git add -- "$ALLOW_1" "$ALLOW_2"
+  git add -- "$ALLOW_1"
   staged=$(git diff --cached --name-only)
   if [ -z "$staged" ]; then
     echo "ERROR: nothing staged despite generated=true" >&2
     exit 1
   fi
-  bad=$(echo "$staged" | grep -vxF -e "$ALLOW_1" -e "$ALLOW_2" || true)
+  bad=$(echo "$staged" | grep -vxF -e "$ALLOW_1" || true)
   if [ -n "$bad" ]; then
     echo "ERROR: non-allowlist path staged; refusing to commit:" >&2
     echo "$bad" >&2

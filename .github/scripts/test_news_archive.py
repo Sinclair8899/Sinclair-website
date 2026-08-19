@@ -7,6 +7,9 @@ replace; 8th-day trim and middle gaps; true-empty vs all-invalid split;
 mixed valid/invalid/duplicate ids; corrupt archive and atomic rollback;
 URL scheme and hostname allowlist; insufficient candidates; first 7-day
 seed from git history; per-category cap and cross-day duplicate-URL policy.
+Since case N4 (dual-write retired): single-file atomic-write fault
+injection, stray-legacy-daily non-interference, and removal of the pair
+machinery are covered by SingleWriteFaultInjectionTests.
 
 Run:  python3 -m unittest -v test_news_archive
 """
@@ -326,7 +329,9 @@ class RunFlowTests(unittest.TestCase):
             [], collect_fn=collect, select_fn=select,
             now_fn=lambda: utc(now), repo_root=self.tmp)
 
-    def test_published_day_dual_write(self):
+    def test_published_day_single_write_archive_only(self):
+        """N4: a published day writes ONLY the archive; the legacy daily
+        file is never created."""
         self.write_archive([mk_published_day("2026-08-11",
                                              "2026-08-10T22:27:00Z")])
         rc = self.run_pipeline(self.collect_ok(),
@@ -334,13 +339,10 @@ class RunFlowTests(unittest.TestCase):
         self.assertEqual(rc, 0)
         archive = jload(self.archive_path)
         self.assertEqual([d["date"] for d in archive["days"]],
-                         ["2026-08-12", "2026-08-11"])
+                         ["2026-08-12", "2026-08-11"])  # Taipei, not UTC
         self.assertEqual(archive["days"][0]["status"], "published")
         self.assertNotIn("host", archive["days"][0]["categories"][0]["items"][0])
-        legacy = jload(self.daily_path)
-        self.assertEqual(legacy["date"], "2026-08-12")  # Taipei, not UTC
-        self.assertEqual(legacy["categories"][0]["items"][0]["host"],
-                         "www.theverge.com")
+        self.assertFalse(os.path.exists(self.daily_path))
 
     def test_same_day_rerun_replaces(self):
         self.write_archive([mk_published_day("2026-08-12",
@@ -354,7 +356,7 @@ class RunFlowTests(unittest.TestCase):
         self.assertEqual(archive["days"][0]["generated_utc"],
                          "2026-08-12T01:00:00Z")
 
-    def test_empty_day_exit_zero_daily_untouched(self):
+    def test_empty_day_exit_zero_no_legacy_file(self):
         self.write_archive([mk_published_day("2026-08-11",
                                              "2026-08-10T22:27:00Z")])
         before = sha256_file(self.archive_path)
@@ -520,12 +522,13 @@ class FeedFailureTests(unittest.TestCase):
         self.assert_gated(collect, "Ars Technica", "all-excluded")
 
 
-class PairFaultInjectionTests(unittest.TestCase):
-    """Blocking-issue-2 tests: the published archive+daily pair can never
-    be half-written. Injects os.replace failures on each target."""
+class SingleWriteFaultInjectionTests(unittest.TestCase):
+    """N4 tests: the single-file archive write can never half-write.
+    Injects os.replace failures on the archive target and proves the
+    retired legacy daily is never created or touched."""
 
     def setUp(self):
-        self.tmp = tempfile.mkdtemp(prefix="n1pair.")
+        self.tmp = tempfile.mkdtemp(prefix="n4single.")
         os.makedirs(os.path.join(self.tmp, "assets"))
         self.archive_path = os.path.join(self.tmp, "assets", "news_archive.json")
         self.daily_path = os.path.join(self.tmp, "assets", "news_daily.json")
@@ -533,17 +536,15 @@ class PairFaultInjectionTests(unittest.TestCase):
             self.archive_path,
             {"schema_version": 1,
              "days": [mk_published_day("2026-08-11", "2026-08-10T22:27:00Z")]})
-        with open(self.daily_path, "wb") as fh:
-            fh.write(b'{"old": "daily"}\n')
 
     def tearDown(self):
         shutil.rmtree(self.tmp, ignore_errors=True)
 
-    def selective_replace_fail(self, fail_target):
+    def archive_replace_fail(self):
         real = os.replace
 
         def fake(src, dst):
-            if os.path.abspath(dst) == os.path.abspath(fail_target):
+            if os.path.abspath(dst) == os.path.abspath(self.archive_path):
                 raise OSError("injected replace failure")
             return real(src, dst)
 
@@ -557,130 +558,69 @@ class PairFaultInjectionTests(unittest.TestCase):
             now_fn=lambda: utc("2026-08-11T22:27:41Z"),
             repo_root=self.tmp)
 
+    def run_empty(self):
+        cands = mk_candidates(6)
+        return update_news.run(
+            [], collect_fn=lambda: (cands, mk_feed_stats(6), []),
+            select_fn=lambda c: ([], None),
+            now_fn=lambda: utc("2026-08-11T22:27:41Z"),
+            repo_root=self.tmp)
+
     def assert_no_temps(self):
         leftovers = [f for f in os.listdir(os.path.join(self.tmp, "assets"))
                      if ".tmp" in f]
         self.assertEqual(leftovers, [])
 
-    def test_daily_replace_failure_leaves_both_untouched(self):
+    def test_published_replace_failure_leaves_archive_identical(self):
         a_before = sha256_file(self.archive_path)
-        d_before = sha256_file(self.daily_path)
-        with self.selective_replace_fail(self.daily_path):
-            rc = self.run_published()
-        a_after = sha256_file(self.archive_path)
-        d_after = sha256_file(self.daily_path)
-        print(f"\n[evidence] pair-fault/daily-replace: archive before={a_before}")
-        print(f"[evidence] pair-fault/daily-replace: archive after ={a_after}")
-        print(f"[evidence] pair-fault/daily-replace: daily   before={d_before}")
-        print(f"[evidence] pair-fault/daily-replace: daily   after ={d_after}")
-        self.assertEqual(rc, 2)
-        self.assertEqual(a_before, a_after)
-        self.assertEqual(d_before, d_after)
-        self.assert_no_temps()
-
-    def test_archive_replace_failure_rolls_daily_back(self):
-        a_before = sha256_file(self.archive_path)
-        d_before = sha256_file(self.daily_path)
-        with self.selective_replace_fail(self.archive_path):
-            rc = self.run_published()
-        a_after = sha256_file(self.archive_path)
-        d_after = sha256_file(self.daily_path)
-        print(f"\n[evidence] pair-fault/archive-replace: archive before={a_before}")
-        print(f"[evidence] pair-fault/archive-replace: archive after ={a_after}")
-        print(f"[evidence] pair-fault/archive-replace: daily   before={d_before}")
-        print(f"[evidence] pair-fault/archive-replace: daily   after ={d_after} (rolled back)")
-        self.assertEqual(rc, 2)
-        self.assertEqual(a_before, a_after)
-        self.assertEqual(d_before, d_after)
-        self.assert_no_temps()
-
-    def test_archive_replace_and_first_rollback_replace_failure_recovers_pair(self):
-        """archive replace fails AND the first daily-rollback replace fails;
-        the bounded second attempt must recover the pair."""
-        a_before = sha256_file(self.archive_path)
-        d_before = sha256_file(self.daily_path)
-        real = os.replace
-        state = {"daily_calls": 0}
-
-        def fake(src, dst):
-            if os.path.abspath(dst) == os.path.abspath(self.archive_path):
-                raise OSError("injected archive replace failure")
-            if os.path.abspath(dst) == os.path.abspath(self.daily_path):
-                state["daily_calls"] += 1
-                # call 1 = initial publish replace (succeed)
-                # call 2 = rollback attempt 1 (fail)
-                # call 3 = rollback attempt 2 (succeed)
-                if state["daily_calls"] == 2:
-                    raise OSError("injected rollback replace failure")
-            return real(src, dst)
-
         err = io.StringIO()
-        with mock.patch("os.replace", new=fake), \
-                contextlib.redirect_stderr(err):
+        with self.archive_replace_fail(), contextlib.redirect_stderr(err):
             rc = self.run_published()
         a_after = sha256_file(self.archive_path)
-        d_after = sha256_file(self.daily_path)
-        print(f"\n[evidence] pair-fault/rollback-retry: archive before={a_before}")
-        print(f"[evidence] pair-fault/rollback-retry: archive after ={a_after}")
-        print(f"[evidence] pair-fault/rollback-retry: daily   before={d_before}")
-        print(f"[evidence] pair-fault/rollback-retry: daily   after ={d_after} "
-              "(recovered on bounded 2nd attempt)")
+        print(f"\n[evidence] single-write-fault/published: sha before={a_before}")
+        print(f"[evidence] single-write-fault/published: sha after ={a_after}")
         self.assertEqual(rc, 2)
-        self.assertEqual(state["daily_calls"], 3)  # bounded: exactly one retry
         self.assertEqual(a_before, a_after)
-        self.assertEqual(d_before, d_after)
+        self.assertFalse(os.path.exists(self.daily_path))
         self.assert_no_temps()
-        self.assertIn("rollback attempt 1/2 failed", err.getvalue())
-        self.assertIn("no partial state kept", err.getvalue())
+        self.assertIn("archive left byte-identical", err.getvalue())
 
-    def test_rollback_exhausted_reports_inconsistent_pair(self):
-        """archive replace fails AND every bounded rollback attempt fails:
-        run must be non-zero, must NOT claim 'no partial state kept', and
-        must leave no temp files behind."""
+    def test_empty_replace_failure_leaves_archive_identical(self):
         a_before = sha256_file(self.archive_path)
-        d_before = sha256_file(self.daily_path)
-        real = os.replace
-        state = {"daily_calls": 0}
-
-        def fake(src, dst):
-            if os.path.abspath(dst) == os.path.abspath(self.archive_path):
-                raise OSError("injected archive replace failure")
-            if os.path.abspath(dst) == os.path.abspath(self.daily_path):
-                state["daily_calls"] += 1
-                if state["daily_calls"] >= 2:  # every rollback attempt fails
-                    raise OSError("injected rollback replace failure")
-            return real(src, dst)
-
         err = io.StringIO()
-        with mock.patch("os.replace", new=fake), \
-                contextlib.redirect_stderr(err):
-            rc = self.run_published()
+        with self.archive_replace_fail(), contextlib.redirect_stderr(err):
+            rc = self.run_empty()
         a_after = sha256_file(self.archive_path)
-        d_after = sha256_file(self.daily_path)
-        print(f"\n[evidence] pair-fault/rollback-exhausted: archive before={a_before}")
-        print(f"[evidence] pair-fault/rollback-exhausted: archive after ={a_after}")
-        print(f"[evidence] pair-fault/rollback-exhausted: daily   before={d_before}")
-        print(f"[evidence] pair-fault/rollback-exhausted: daily   after ={d_after} "
-              "(new content -- honestly reported as inconsistent)")
+        print(f"\n[evidence] single-write-fault/empty: sha before={a_before}")
+        print(f"[evidence] single-write-fault/empty: sha after ={a_after}")
         self.assertEqual(rc, 2)
-        self.assertEqual(state["daily_calls"],
-                         1 + update_news.ROLLBACK_ATTEMPTS)  # bounded
-        self.assertEqual(a_before, a_after)          # archive untouched
-        self.assertNotEqual(d_before, d_after)       # daily IS new: half-state
-        self.assert_no_temps()                       # but no temp residue
-        msg = err.getvalue()
-        self.assertIn("NOT recovered", msg)
-        self.assertIn("PAIR STATE MAY BE INCONSISTENT", msg)
-        self.assertNotIn("no partial state kept", msg)
+        self.assertEqual(a_before, a_after)
+        self.assertFalse(os.path.exists(self.daily_path))
+        self.assert_no_temps()
 
-    def test_success_path_still_writes_both(self):
+    def test_success_never_touches_stray_legacy_daily(self):
+        """Transition guard: even if a stale news_daily.json is lying in
+        the working tree, the pipeline neither rewrites nor deletes it."""
+        with open(self.daily_path, "wb") as fh:
+            fh.write(b'{"old": "stray legacy daily"}\n')
+        d_before = sha256_file(self.daily_path)
         rc = self.run_published()
+        d_after = sha256_file(self.daily_path)
+        print(f"\n[evidence] stray-daily: sha before={d_before}")
+        print(f"[evidence] stray-daily: sha after ={d_after} (byte-identical)")
         self.assertEqual(rc, 0)
+        self.assertEqual(d_before, d_after)
         archive = jload(self.archive_path)
-        legacy = jload(self.daily_path)
         self.assertEqual(archive["days"][0]["date"], "2026-08-12")
-        self.assertEqual(legacy["date"], "2026-08-12")
         self.assert_no_temps()
+
+    def test_retired_pair_machinery_is_gone(self):
+        """The pair-write API must not survive N4 as dead code."""
+        for name in ("write_published_pair_atomic", "_restore_daily",
+                     "PairWriteError", "ROLLBACK_ATTEMPTS",
+                     "_write_temp_bytes"):
+            self.assertFalse(hasattr(update_news, name),
+                             f"{name} should have been removed in N4")
 
 
 class SeedTests(unittest.TestCase):

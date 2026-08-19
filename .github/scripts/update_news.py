@@ -6,12 +6,10 @@ Claude to select only the items relevant to the site's research areas,
 translate them into Traditional Chinese, and write a 1-2 sentence summary
 each, bounded to the supplied title/snippet metadata.
 
-Outputs (dual-write during the news-page revamp transition, case N1):
-  * assets/news_daily.json   -- legacy single-day shape consumed by the
-    current /news/ template. Structure unchanged (items keep `host`).
+Output (single-write since case N4 retired the legacy daily dual-write):
   * assets/news_archive.json -- rolling archive of the last 7 Asia/Taipei
-    calendar days (schema_version 1), consumed by the future template (N3).
-    Items carry no `host` field (dead data once favicons are removed).
+    calendar days (schema_version 1), consumed by the /news/ template (N3).
+    Items carry no `host` field.
 
 Data-semantics rules (news-page-revamp-spec v2 + binding addendum):
   * digest_date is the Asia/Taipei calendar date of generated_utc, frozen
@@ -152,20 +150,6 @@ OUTPUT_SCHEMA = {
 
 class ArchiveError(Exception):
     """Raised for any archive load/validation/write problem."""
-
-
-class PairWriteError(ArchiveError):
-    """Raised when the published archive+daily pair write fails.
-
-    rolled_back=True: the pair was restored to its pre-run state.
-    rolled_back=False: recovery attempts were exhausted and the pair may be
-    inconsistent (daily new / archive old) -- the caller must report that
-    explicitly instead of claiming no partial state was kept.
-    """
-
-    def __init__(self, message: str, rolled_back: bool):
-        super().__init__(message)
-        self.rolled_back = rolled_back
 
 
 # --------------------------------------------------------------------------
@@ -556,21 +540,14 @@ def _write_temp_json(path: str, obj: dict) -> str:
     return tmp
 
 
-def _write_temp_bytes(path: str, data: bytes) -> str:
-    directory = os.path.dirname(os.path.abspath(path))
-    fd, tmp = tempfile.mkstemp(prefix="." + os.path.basename(path) + ".",
-                               suffix=".tmp", dir=directory)
-    try:
-        with os.fdopen(fd, "wb") as fh:
-            fh.write(data)
-    except BaseException:
-        _unlink_quiet(tmp)
-        raise
-    return tmp
-
-
 def write_archive_atomic(path: str, obj: dict) -> None:
-    """Validate, write to a temp file in the same directory, os.replace()."""
+    """Validate, write to a temp file in the same directory, os.replace().
+
+    The only publish path since N4: both the published and the empty day
+    go through this single-file atomic write. Any failure before the
+    os.replace() leaves the real archive byte-identical, and a temp file
+    never survives a failure.
+    """
     validate_archive(obj)
     tmp = _write_temp_json(path, obj)
     try:
@@ -578,85 +555,6 @@ def write_archive_atomic(path: str, obj: dict) -> None:
     except BaseException:
         _unlink_quiet(tmp)
         raise
-
-
-# Bounded rollback budget for the pair write: the initial rollback attempt
-# plus one retry. Never unbounded.
-ROLLBACK_ATTEMPTS = 2
-
-
-def _restore_daily(daily_path: str, original_daily: bytes | None) -> bool:
-    """Restore the legacy daily to its pre-run state, bounded attempts.
-
-    Each attempt uses a fresh temp file in the target directory; a temp
-    that was not consumed by os.replace is always cleaned in `finally`.
-    Returns True when the daily is restored (or removed, when it did not
-    exist before), False when every attempt failed.
-    """
-    for attempt in range(1, ROLLBACK_ATTEMPTS + 1):
-        try:
-            if original_daily is None:
-                os.unlink(daily_path)
-                return True
-            tmp = None
-            try:
-                tmp = _write_temp_bytes(daily_path, original_daily)
-                os.replace(tmp, daily_path)
-                tmp = None  # consumed by the successful replace
-                return True
-            finally:
-                if tmp is not None:
-                    _unlink_quiet(tmp)
-        except OSError as exc:
-            print(f"ERROR: daily rollback attempt {attempt}/"
-                  f"{ROLLBACK_ATTEMPTS} failed: {exc}", file=sys.stderr)
-    return False
-
-
-def write_published_pair_atomic(archive_path: str, archive_obj: dict,
-                                daily_path: str, daily_obj: dict) -> None:
-    """Publish archive + legacy daily as an atomic pair (addendum A5).
-
-    Both payloads are fully serialized to temp files in their target
-    directories, and the archive is validated, before either real file is
-    touched. The legacy daily is replaced first, so any failure preparing
-    or replacing it leaves the archive byte-identical. If the archive
-    replace then fails, the daily is rolled back from its pre-saved
-    original bytes (or removed if it did not exist), so the pair can never
-    end up half-published. Temp files never survive a failure.
-    """
-    validate_archive(archive_obj)
-    original_daily = None
-    if os.path.exists(daily_path):
-        with open(daily_path, "rb") as fh:
-            original_daily = fh.read()
-    archive_tmp = _write_temp_json(archive_path, archive_obj)
-    try:
-        daily_tmp = _write_temp_json(daily_path, daily_obj)
-    except BaseException:
-        _unlink_quiet(archive_tmp)
-        raise
-    try:
-        os.replace(daily_tmp, daily_path)
-    except BaseException:
-        _unlink_quiet(archive_tmp)
-        _unlink_quiet(daily_tmp)
-        raise
-    try:
-        os.replace(archive_tmp, archive_path)
-    except BaseException as primary:
-        _unlink_quiet(archive_tmp)
-        if _restore_daily(daily_path, original_daily):
-            raise PairWriteError(
-                f"archive replace failed ({primary}); daily rolled back; "
-                "pair left byte-identical to its pre-run state",
-                rolled_back=True) from primary
-        raise PairWriteError(
-            f"archive replace failed ({primary}) AND all "
-            f"{ROLLBACK_ATTEMPTS} daily rollback attempts failed: pair "
-            "consistency NOT recovered (daily may be new while archive is "
-            "old); manual intervention required",
-            rolled_back=False) from primary
 
 
 # --------------------------------------------------------------------------
@@ -686,7 +584,6 @@ def run(argv=None, *, collect_fn=None, select_fn=None, now_fn=None,
     args = list(sys.argv[1:] if argv is None else argv)
     dry_run = "--dry-run" in args
     repo = repo_root or _repo_root()
-    daily_path = os.path.join(repo, "assets", "news_daily.json")
     archive_path = os.path.join(repo, "assets", "news_archive.json")
 
     generated_dt = (now_fn or (lambda: datetime.now(timezone.utc)))()
@@ -740,7 +637,7 @@ def run(argv=None, *, collect_fn=None, select_fn=None, now_fn=None,
 
     if not items:
         # Legitimate model-judged empty day: feeds, API and schema all
-        # succeeded. Record it and exit 0. news_daily.json is untouched.
+        # succeeded. Record it and exit 0.
         day = build_day(digest_date, generated_utc, "empty",
                         len(candidates), feed_stats, [], warnings)
         days = trim_window(upsert_day(archive["days"], day), digest_date)
@@ -751,7 +648,7 @@ def run(argv=None, *, collect_fn=None, select_fn=None, now_fn=None,
         except (ArchiveError, OSError) as exc:
             print(f"ERROR: archive write: {exc}", file=sys.stderr)
             return 2
-        print(f"empty day recorded for {digest_date}; news_daily.json untouched")
+        print(f"empty day recorded for {digest_date}")
         return 0
 
     by_id = {c["id"]: c for c in candidates}
@@ -768,48 +665,21 @@ def run(argv=None, *, collect_fn=None, select_fn=None, now_fn=None,
                     len(candidates), feed_stats, categories, warnings)
     days = trim_window(upsert_day(archive["days"], day), digest_date)
 
-    # Legacy dual-write payload: same shape as pre-N1 (items keep `host`
-    # for the current template's favicon markup) with the date corrected
-    # to the frozen Taipei digest_date.
-    legacy_categories = []
-    for cat in categories:
-        legacy_categories.append({
-            "key": cat["key"],
-            "name": cat["name"],
-            "items": [
-                dict(it, host=urllib.parse.urlparse(it["url"]).netloc)
-                for it in cat["items"]
-            ],
-        })
-    legacy = {
-        "generated_utc": generated_utc,
-        "date": digest_date,
-        "model": MODEL,
-        "candidates": len(candidates),
-        "categories": legacy_categories,
-        "warnings": warnings,
-    }
     try:
-        write_published_pair_atomic(
+        write_archive_atomic(
             archive_path,
-            {"schema_version": ARCHIVE_SCHEMA_VERSION, "days": days},
-            daily_path, legacy)
+            {"schema_version": ARCHIVE_SCHEMA_VERSION, "days": days})
     except (ArchiveError, OSError) as exc:
-        if getattr(exc, "rolled_back", True):
-            print(f"ERROR: publish write failed ({exc}); no partial state "
-                  "kept", file=sys.stderr)
-        else:
-            print(f"ERROR: publish write failed ({exc}); PAIR STATE MAY BE "
-                  "INCONSISTENT -- do not commit; manual intervention "
-                  "required", file=sys.stderr)
+        print(f"ERROR: publish write failed ({exc}); archive left "
+              "byte-identical", file=sys.stderr)
         return 2
 
     if usage is not None:
-        print(f"wrote {archive_path} and {daily_path}: {total} items in "
+        print(f"wrote {archive_path}: {total} items in "
               f"{len(categories)} categories "
               f"(tokens in/out: {usage.input_tokens}/{usage.output_tokens})")
     else:
-        print(f"wrote {archive_path} and {daily_path}: {total} items in "
+        print(f"wrote {archive_path}: {total} items in "
               f"{len(categories)} categories")
     return 0
 

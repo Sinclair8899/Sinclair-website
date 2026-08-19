@@ -2,6 +2,14 @@
 """One-time, reproducible migration: seed assets/news_archive.json from the
 Git history of assets/news_daily.json.
 
+HISTORICAL TOOL ONLY (case N4, 2026-08-19): assets/news_daily.json was
+retired and deleted from the working tree in N4; this script reads that
+path exclusively from GIT HISTORY (`git show <commit>:...`), so it keeps
+working for historical archive reconstruction. It is NOT a production
+runtime dependency: no workflow step invokes it, and it must never become
+part of the nightly pipeline. Retained solely so the pre-N1 daily history
+can be re-derived into an archive if ever needed.
+
 Binding rules (news-page-revamp-spec v2, addendum A5):
   * Reads only verifiable historical news_daily.json versions via
     `git show <commit>:assets/news_daily.json` -- never rewrites history.

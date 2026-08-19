@@ -5,7 +5,10 @@
 # with their own local bare "origin", emulating the Actions job semantics:
 # a failed step fails the job and skips every later step; stage/commit/push
 # only run when generated=true. Covers the reviewer's eight minimum
-# acceptance scenarios (work order 2026-08-12, section 10).
+# acceptance scenarios (work order 2026-08-12, section 10), adjusted for
+# case N4: the allowlist is the single approved path news_archive.json
+# (legacy daily retired), plus S9 proving a stray legacy daily can never
+# reach the index or a commit.
 #
 # Usage: bash test_news_workflow.sh
 set -u
@@ -48,16 +51,15 @@ make_repo() {  # make_repo <name>  -> echoes workdir
   git -C "$work" config user.email "harness@example.com"
   mkdir -p "$work/assets"
   json_baseline_archive > "$work/assets/news_archive.json"
-  echo '{"date": "2026-08-11", "note": "baseline daily"}' > "$work/assets/news_daily.json"
-  git -C "$work" add -- assets/news_archive.json assets/news_daily.json
+  git -C "$work" add -- assets/news_archive.json
   git -C "$work" commit -q -m "baseline"
   git -C "$work" remote add origin "$bare"
   git -C "$work" push -q origin main
   echo "$work"
 }
 
-gen_add_day() {  # gen_add_day <workdir> <date> <both|archive_only>
-  local work="$1" date="$2" mode="$3"
+gen_add_day() {  # gen_add_day <workdir> <date>  (archive is the only output)
+  local work="$1" date="$2"
   python3 - "$work/assets/news_archive.json" "$date" <<'PY'
 import json, sys
 path, date = sys.argv[1], sys.argv[2]
@@ -67,10 +69,6 @@ obj["days"].insert(0, {"date": date, "note": "harness day"})
 with open(path, "w", encoding="utf-8") as fh:
     json.dump(obj, fh, ensure_ascii=False, indent=1)
 PY
-  if [ "$3" = "both" ]; then
-    printf '{"date": "%s", "note": "harness daily"}\n' "$date" \
-      > "$work/assets/news_daily.json"
-  fi
 }
 
 # run_job <workdir> <generator_cmd...>
@@ -131,17 +129,19 @@ run_job() {
 
 # ---------------------------------------------------------------- scenario 1
 say ""
-say "=== S1 published: archive+daily change -> one commit, frozen message ==="
+say "=== S1 published: archive change -> archive-only commit, frozen message ==="
 W=$(make_repo s1)
-run_job "$W" gen_add_day "$W" 2026-08-12 both
+run_job "$W" gen_add_day "$W" 2026-08-12
 check "job success" SUCCESS "$JOB"
 check "generated" true "$GENERATED"
 check "digest_date" 2026-08-12 "$DIGEST_DATE"
-check "staged exactly both allowlist files" \
-  "assets/news_archive.json assets/news_daily.json " "$STAGED"
+check "staged exactly the single allowlist file" \
+  "assets/news_archive.json " "$STAGED"
 check "one commit ahead" \
   "$HEAD_BEFORE" "$(git -C "$W" rev-parse HEAD^)"
 check "frozen message" "chore(news): update digest for 2026-08-12" "$COMMIT_MSG"
+check "commit touches archive only" "assets/news_archive.json" \
+  "$(git -C "$W" diff-tree --no-commit-id --name-only -r HEAD | tr '\n' ' ' | xargs)"
 check "pushed to sandbox origin" \
   "$HEAD_AFTER" "$(git -C "$ROOT/s1-origin.git" rev-parse main)"
 [ "$FAIL" -eq 0 ] && ok "S1" || bad "S1"
@@ -151,7 +151,7 @@ say ""
 say "=== S2 empty day: archive-only change -> archive-only commit ==="
 F0=$FAIL
 W=$(make_repo s2)
-run_job "$W" gen_add_day "$W" 2026-08-12 archive_only
+run_job "$W" gen_add_day "$W" 2026-08-12
 check "job success" SUCCESS "$JOB"
 check "generated" true "$GENERATED"
 check "staged archive only" "assets/news_archive.json " "$STAGED"
@@ -194,7 +194,7 @@ F0=$FAIL
 W=$(make_repo s5a)
 echo "foreign" > "$W/foreign.txt"
 git -C "$W" add foreign.txt
-run_job "$W" gen_add_day "$W" 2026-08-12 both
+run_job "$W" gen_add_day "$W" 2026-08-12
 check "job failed" FAILED "$JOB"
 check "stage rc" 1 "$STAGE_RC"
 check "commit skipped" SKIPPED "$COMMIT_RC"
@@ -207,10 +207,10 @@ say "=== S5b unstaged foreign change: never staged, commit stays clean ==="
 F0=$FAIL
 W=$(make_repo s5b)
 echo "foreign" > "$W/foreign.txt"
-run_job "$W" gen_add_day "$W" 2026-08-12 both
+run_job "$W" gen_add_day "$W" 2026-08-12
 check "job success" SUCCESS "$JOB"
 check "commit touches only allowlist" \
-  "assets/news_archive.json assets/news_daily.json" \
+  "assets/news_archive.json" \
   "$(git -C "$W" diff-tree --no-commit-id --name-only -r HEAD | tr '\n' ' ' | xargs)"
 check "foreign file still untracked" "?? foreign.txt" \
   "$(git -C "$W" status --porcelain=v1 -- foreign.txt)"
@@ -230,7 +230,7 @@ git -C "$OTHER" add advance.txt
 git -C "$OTHER" commit -q -m "remote advanced"
 git -C "$OTHER" push -q origin main
 REMOTE_ADVANCED=$(git -C "$ROOT/s6-origin.git" rev-parse main)
-run_job "$W" gen_add_day "$W" 2026-08-12 both
+run_job "$W" gen_add_day "$W" 2026-08-12
 check "job failed" FAILED "$JOB"
 check "push rc non-zero" 1 "$([ "$PUSH_RC" -ne 0 ] && echo 1 || echo 0)"
 check "local commit intact after push failure" \
@@ -252,7 +252,7 @@ say "=== S7 date boundary: commit uses Taipei digest_date, not runner UTC ==="
 F0=$FAIL
 W=$(make_repo s7)
 RUNNER_UTC=$(date -u +%Y-%m-%d)
-run_job "$W" gen_add_day "$W" 2026-08-13 both
+run_job "$W" gen_add_day "$W" 2026-08-13
 say "  runner UTC today: $RUNNER_UTC (differs from digest_date by design)"
 check "digest_date from archive" 2026-08-13 "$DIGEST_DATE"
 check "frozen message uses archive date" \
@@ -277,6 +277,28 @@ say "--- concurrency block (N1 parent) ---"; say "$OLD_BLOCK"
 say "--- concurrency block (N2)        ---"; say "$NEW_BLOCK"
 check "concurrency block byte-identical" "$OLD_BLOCK" "$NEW_BLOCK"
 [ "$FAIL" -eq "$F0" ] && ok "S8" || bad "S8"
+
+# ---------------------------------------------------------------- scenario 9
+say ""
+say "=== S9 stray legacy daily (N4): never detected, staged, or committed ==="
+F0=$FAIL
+W=$(make_repo s9)
+# 9a: only a stray legacy daily appears; archive unchanged -> generated=false
+echo '{"date": "2026-08-12", "note": "stray legacy daily"}' \
+  > "$W/assets/news_daily.json"
+run_job "$W" true
+check "9a generated=false despite stray daily" false "$GENERATED"
+check "9a stage skipped" SKIPPED "$STAGE_RC"
+check "9a HEAD unchanged" "$HEAD_BEFORE" "$HEAD_AFTER"
+# 9b: archive changes while the stray daily is present -> archive-only commit
+run_job "$W" gen_add_day "$W" 2026-08-12
+check "9b job success" SUCCESS "$JOB"
+check "9b staged archive only" "assets/news_archive.json " "$STAGED"
+check "9b commit touches archive only" "assets/news_archive.json" \
+  "$(git -C "$W" diff-tree --no-commit-id --name-only -r HEAD | tr '\n' ' ' | xargs)"
+check "9b stray daily still untracked" "?? assets/news_daily.json" \
+  "$(git -C "$W" status --porcelain=v1 -- assets/news_daily.json)"
+[ "$FAIL" -eq "$F0" ] && ok "S9" || bad "S9"
 
 # ---------------------------------------------------------------- summary
 say ""
