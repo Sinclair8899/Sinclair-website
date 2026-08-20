@@ -2,6 +2,270 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-08-21",
+      "generated_utc": "2026-08-20T22:11:40Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 8,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 5,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "SpaceX 的軌道資料中心將創造新一類電子廢棄物",
+              "summary_zh": "Ars Technica 報導指出,SpaceX 規劃的軌道資料中心會產生一種全新型態的電子廢棄物。文中以「反向小行星採礦」比喻其物料進出的計算方式。",
+              "relevance": "資料中心部署形態與生命週期——AI 基礎設施建置主題",
+              "title": "SpaceX’s orbital data centers would create a new category of e-waste",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/science/2026/08/spacexs-orbital-data-centers-would-create-a-new-category-of-e-waste/",
+              "published": "2026-08-20T13:59:50Z"
+            },
+            {
+              "title_zh": "Ramp 推出自有 AI 模型路由服務 Router",
+              "summary_zh": "Ramp 發表名為 Router 的 AI 模型路由服務,讓使用者與企業可透過 API 使用並切換各種大型語言模型。",
+              "relevance": "模型路由與推論調度——AI 基礎設施軟體層主題",
+              "title": "Ramp launches its own AI model router, called Router",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
+              "published": "2026-08-20T16:46:00Z"
+            },
+            {
+              "title_zh": "當惡意指令被加密時,Grok 會外洩使用者資料",
+              "summary_zh": "Ars Technica 報導,透過「Cryptographic Context Injection」手法,可讓 Grok 在收到加密的惡意指令時外洩使用者資料,是繞過 LLM 安全防護的最新方式之一。",
+              "relevance": "LLM 安全防護與代理系統風險——AI 基礎設施可靠性主題",
+              "title": "Grok exfiltrates user data when malicious instructions are encrypted",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/",
+              "published": "2026-08-20T13:00:35Z"
+            },
+            {
+              "title_zh": "研究發現:ChatGPT 問世後發布的網頁有三分之一顯示 AI 撰寫痕跡",
+              "summary_zh": "一項研究指出,自 ChatGPT 推出以來所發布的網頁中,約三分之一帶有 AI 撰寫或編輯的特徵。",
+              "relevance": "AI 生成內容佔比與訓練資料來源——模型資料供給主題",
+              "title": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
+              "published": "2026-08-20T17:18:58Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "Cerebras 早期投資人 Adit Singh 加入 Mayfield 擔任基礎設施合夥人",
+              "summary_zh": "Cerebras 早期投資人 Adit Singh 加入創投機構 Mayfield,擔任基礎設施合夥人,將專注於半導體、資安與實體 AI 領域的投資。",
+              "relevance": "AI 晶片與半導體投資動向——半導體產業資本流向主題",
+              "title": "Early Cerebras investor Adit Singh joins Mayfield as infrastructure partner",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/20/early-cerebras-investor-adit-singh-joins-mayfield-as-infrastructure-partner/",
+              "published": "2026-08-20T17:04:53Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "認識 Aletta:首個獲 FDA 核准的機器人抽血裝置",
+              "summary_zh": "FDA 核准 Vitestro 的 Aletta,成為美國首個可在無需人工協助下獨立完成抽血的機器人裝置。",
+              "relevance": "醫療自主機器人法規核准——機器人與自主系統主題",
+              "title": "Meet Aletta: The first FDA approved robotic blood draw device",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/meet-aletta-first-fda-approved-robotic-blood-draw-device",
+              "published": null
+            },
+            {
+              "title_zh": "Johnson & Johnson MedTech 取得 Monarch Quest 3 肺癌偵測軟體更新",
+              "summary_zh": "Johnson & Johnson MedTech 為其 Monarch 支氣管鏡機器人取得 Quest 3 軟體更新,用於肺癌偵測,是該產品 18 個月內第四次重大軟體發布。",
+              "relevance": "手術機器人軟體迭代——醫療機器人系統主題",
+              "title": "Johnson & Johnson MedTech nabs Monarch Quest 3 update for lung cancer detection",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/johnson-johnson-medtech-nabs-monarch-quest-3-update-lung-cancer-detection",
+              "published": null
+            },
+            {
+              "title_zh": "Amazon 目標在 2026 年底前讓送貨無人機覆蓋美國 500 個社區",
+              "summary_zh": "Amazon 計畫在 2026 年底前將 Prime Air 等送貨無人機服務擴展至美國 500 個社區。報導同時指出當地居民面臨的取捨。",
+              "relevance": "自主無人機規模化部署——自主系統主題",
+              "title": "Amazon aims for delivery drones to reach 500 US neighborhoods by end of 2026",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/08/amazon-aims-for-delivery-drones-to-reach-500-us-neighborhoods-by-end-of-2026/",
+              "published": "2026-08-19T22:02:38Z"
+            },
+            {
+              "title_zh": "Castelion 估值達 130 億美元,量產高超音速飛彈",
+              "summary_zh": "成立於 2022 年的 Castelion 估值達 130 億美元,目標以低於傳統國防主承包商的成本與更快的速度製造高超音速武器系統。",
+              "relevance": "自主武器系統與國防製造——自主系統產業主題",
+              "title": "Castelion hits $13B valuation to mass-produce hypersonic missiles",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/20/castelion-hits-13b-valuation-to-mass-produce-hypersonic-missiles/",
+              "published": "2026-08-20T19:01:41Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Chai 與 Bristol Myers Squibb 敲定 AI 抗體探索合作",
+              "summary_zh": "AI 藥物探索公司 Chai Discovery 在完成 4 億美元 C 輪募資一個月後,宣布與 Bristol Myers Squibb 合作進行 AI 抗體探索。",
+              "relevance": "AI 驅動蛋白質/抗體設計與藥廠合作——生技×AI 主題",
+              "title": "Chai tees up Bristol Myers Squibb AI antibody discovery collab",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/chai-tees-bristol-myers-squibb-ai-antibody-discovery-collab-deal",
+              "published": null
+            },
+            {
+              "title_zh": "Merck 與 Moderna 的個人化癌症疫苗於三期試驗延緩復發,準備申請核准",
+              "summary_zh": "Merck 與 Moderna 的個人化 mRNA 癌症疫苗合併 Keytruda 用於高風險皮膚癌患者,成功延長無復發存活期。此三期試驗結果讓雙方有機會申請加速核准。",
+              "relevance": "個人化 mRNA 疫苗設計流程——生技×AI 之計算化個人化醫療主題",
+              "title": "Merck, Moderna’s personalized cancer vaccine slows recurrence in phase 3, setting up approval push",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/merck-and-modernas-personalized-cancer-vaccine-slows-recurrence-ph-3-trial",
+              "published": null
+            },
+            {
+              "title_zh": "高達 90% 的生醫論文出現 AI 協助痕跡",
+              "summary_zh": "Nature 報導,針對 12 月發表並收錄於 PubMed 的論文分析顯示,約 90% 帶有 AI 協助的跡象,遠高於先前對大型語言模型使用率的估計。",
+              "relevance": "LLM 在生醫研究流程中的滲透率——生技×AI 主題",
+              "title": "Staggering 90% of biomedical papers now show signs of AI help",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02551-z",
+              "published": "2026-08-20T00:00:00Z"
+            },
+            {
+              "title_zh": "投資人的搶先看:這個 AI 工具能找出會催生專利的科學研究嗎?",
+              "summary_zh": "Nature 報導一種以 AI 預測哪些科學研究將產生專利的方法,可能加速投資決策,但研究人員指出該方法存在缺陷。",
+              "relevance": "AI 用於科研成果評估——生技×AI 與研究工具主題",
+              "title": "Investors’ sneak peak: can this AI tool spot the science that will lead to patents?",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02549-7",
+              "published": "2026-08-20T00:00:00Z"
+            },
+            {
+              "title_zh": "Craif 募得 3,300 萬美元,推進尿液癌症檢測研究",
+              "summary_zh": "AI 生技公司 Craif 完成 3,300 萬美元 D 輪募資並新增一名高階主管,累計募資總額達 8,800 萬美元。",
+              "relevance": "AI 診斷平台募資——生技×AI 主題",
+              "title": "Craif raises $33M to boost work on its urine test for cancer",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/craif-raises-33m-boost-work-its-urine-test-cancer",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "獨家:NSF 新核發補助件數將創四十年新低",
+              "summary_zh": "Nature 報導,美國國家科學基金會保留了 10 億美元預算,以便將該筆資金撥給白宮的一項特別計畫,新核發的研究補助件數預計為四十年來最低。",
+              "relevance": "美國基礎研究經費配置——研究環境總體條件主題",
+              "title": "Exclusive: NSF set to issue lowest number of new grants in four decades",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02574-6",
+              "published": "2026-08-20T00:00:00Z"
+            },
+            {
+              "title_zh": "川普提名白宮幕僚 Heidi Overton 出任下任 FDA 局長",
+              "summary_zh": "在 FDA 已三個月沒有常任首長的情況下,川普總統提名現任白宮幕僚 Heidi Overton 醫師、博士出任 FDA 局長,她將接受參議院審查。",
+              "relevance": "藥品與醫材監管領導層變動——生技×AI 的法規環境主題",
+              "title": "Trump taps White House aide Heidi Overton as nominee for next FDA commissioner",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/trump-taps-white-house-aide-overton-next-fda-commissioner",
+              "published": null
+            },
+            {
+              "title_zh": "「錢已經表態」:中國生技 CEO 向 Fierce 表示不擔心美中緊張升溫",
+              "summary_zh": "Fierce Biotech 訪談多家中國生技公司,這些公司對美方言辭升溫是否危及其財務進展表示不擔憂。",
+              "relevance": "跨境生技資本與地緣政治——產業總體環境主題",
+              "title": "‘Money has spoken’: Why Chinese biotech CEOs tell Fierce they’re unfazed about rising US tensions",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/money-has-spoken-why-chinese-biotech-ceos-are-unphased-about-rising-us-tensions",
+              "published": null
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/"
+      ]
+    },
+    {
       "date": "2026-08-20",
       "generated_utc": "2026-08-19T22:09:57Z",
       "status": "published",
@@ -1388,192 +1652,6 @@
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/"
-      ]
-    },
-    {
-      "date": "2026-08-14",
-      "generated_utc": "2026-08-13T22:27:11Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 16,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 4
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 6,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 8,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Nvidia 新的 5,000 億美元計畫風險高但精明,對老化 GPU 尤其如此",
-              "summary_zh": "報導指出 Nvidia 有一套計畫,要確保其 GPU 不會流失價值,並希望說服一批新的金融業者持續為 AI 建設案提供貸款。",
-              "relevance": "AI 資本支出與 GPU 殘值融資——算力建設資金結構主題",
-              "title": "Nvidia’s new $500B plan is risky but brilliant, especially for aging GPUs",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/",
-              "published": "2026-08-13T15:08:00Z"
-            },
-            {
-              "title_zh": "OpenAI 推出「Ultrafast」模式,讓 GPT-5.6 Sol 以 14 倍速度運作",
-              "summary_zh": "OpenAI 開放其最新、最強模型加速版本的預覽,速度為原本的 14 倍,目標是爭取企業用戶。",
-              "relevance": "推論速度與服務成本——推論基礎設施主題",
-              "title": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
-              "published": "2026-08-13T19:22:40Z"
-            },
-            {
-              "title_zh": "Databricks 原想募 10 億美元、投資人想投 150 億,最後以 1,900 億美元估值募得 50 億",
-              "summary_zh": "執行長 Ali Ghodsi 向 TechCrunch 表示 AI 成本高昂;由於想參與這輪的投資人眾多,他接受了比原計畫更高的募資金額。",
-              "relevance": "AI 資料與運算平台的資金規模——AI 基礎設施投資主題",
-              "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
-              "published": "2026-08-13T20:14:39Z"
-            },
-            {
-              "title_zh": "Anthropic 上市時市值可能達 2 兆美元",
-              "summary_zh": "報導稱 Anthropic 營收快速成長,使外界預期這家 Claude 開發商的 IPO 可能成為史上最大規模的上市案。",
-              "relevance": "前沿模型實驗室的資本市場定價——AI 基礎設施產業結構主題",
-              "title": "Anthropic could be worth $2 trillion when it goes public",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/",
-              "published": "2026-08-13T13:58:56Z"
-            },
-            {
-              "title_zh": "AI 核能公司 Fermi 終於有了新執行長",
-              "summary_zh": "Fermi 董事會獨立董事 Lee McIntire 出任執行長,距離該公司解除共同創辦人 Toby Neugebauer 的職務已超過三個月。",
-              "relevance": "資料中心電力供給——AI 算力的能源約束主題",
-              "title": "AI nuclear power firm Fermi finally has a new CEO",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/12/ai-nuclear-power-firm-fermi-finally-has-a-new-ceo/",
-              "published": "2026-08-12T22:24:00Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "烏克蘭無人機在實兵兵推中全滅一支美軍戰車旅",
-              "summary_zh": "報導指出烏克蘭無人機操作員在實地戰爭遊戲中殲滅了整支美軍戰車旅,為美軍與北約帶來戰場教訓。",
-              "relevance": "無人機作戰與自主系統——自主載具與感知決策主題",
-              "title": "Ukrainian drones wipe out entire US tank brigade in live war game",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gadgets/2026/08/ukrainian-drones-wipe-out-entire-us-tank-brigade-in-live-war-game/",
-              "published": "2026-08-13T18:31:56Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "報告:AI 臨床監測 agent 在腫瘤學可帶來最高 82 倍投資報酬",
-              "summary_zh": "塔夫茲藥物開發研究中心(Tufts CSDD)的新分析發現,AI 臨床監測 agent 在第三期腫瘤學試驗中估計可帶來 82 倍的投資報酬率。",
-              "relevance": "AI agent 導入臨床試驗流程——生技×AI 主題",
-              "title": "AI clinical monitoring agent can deliver up to 82 times the ROI in oncology: report",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/cro/ai-clinical-monitoring-agents-can-deliver-82-times-roi-report",
-              "published": null
-            },
-            {
-              "title_zh": "AI 還沒準備好研究自己",
-              "summary_zh": "一套 agentic 系統成功從兩篇計算機科學論文中發展出概念,但原論文作者對結果並不滿意。",
-              "relevance": "AI 自動化科研流程——AI for science 主題",
-              "title": "AI isn’t ready to research itself",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02494-5",
-              "published": "2026-08-13T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "美國首度允許部分私人企業執行網路攻擊",
-              "summary_zh": "新命令推翻了美國數十年來禁止民間公司進行「反擊駭客」或攻擊性網路行動的既有政策,私人公司將在聯邦政府控制與監督下運作。",
-              "relevance": "科技與國安政策轉向——法規與地緣政治環境主題",
-              "title": "In a first, US will allow some private firms to carry out cyberattacks",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/13/in-a-first-us-will-allow-some-private-firms-to-carry-out-cyberattacks/",
-              "published": "2026-08-13T14:09:05Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5418459/287E3D5B99470D34C830D69A24B3B207"
       ]
     }
   ]
