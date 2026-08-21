@@ -268,13 +268,6 @@
       <description>A brief observation from my research: AlphaFold 3&amp;#39;s ability to predict protein-ligand interactions i...</description>
     </item>
     <item>
-      <title>Advisory</title>
-      <link>https://sinclairhuang.org/advisory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/advisory/</guid>
-      <description>Independent advisory for boards, executive teams, and investors navigating AI infrastructure, semiconductors, supply chains, and capital allocation.</description>
-    </item>
-    <item>
       <title>Data &amp; Resources</title>
       <link>https://sinclairhuang.org/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -288,6 +281,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/about/</guid>
       <description>Senior industry executive, independent researcher, and advisor with over 30 years of cross-industry leadership experience across publicly listed companies.</description>
+    </item>
+    <item>
+      <title>企業成長、轉型與重大決策</title>
+      <link>https://sinclairhuang.org/advisory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/advisory/</guid>
+      <description>協助董事會與經營團隊處理跨越財務、營運與組織、無法由單一部門獨立解決的企業問題。立足台灣企業的經營現場，納入跨國供應鏈、資本市場與產業競爭的國際視角。</description>
     </item>
   </channel>
 </rss>
