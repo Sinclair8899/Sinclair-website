@@ -2,6 +2,232 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-08-22",
+      "generated_utc": "2026-08-21T22:08:32Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 13,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 5
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 4,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 4,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Nvidia 研究顯示:真正的主角是 harness,而非 AI 模型",
+              "summary_zh": "Nvidia 的研究指出,即使基礎模型在特定任務上表現一般,透過微調(fine-tuning)仍可讓 AI agent 有良好表現且不致失控。",
+              "relevance": "Agent 系統設計與微調方法——AI 基礎設施主題",
+              "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
+              "published": "2026-08-21T19:43:39Z"
+            },
+            {
+              "title_zh": "AI 資料新創 Micro1 在 AI 訓練熱潮中達到 5 億美元總營收年化規模",
+              "summary_zh": "TechCrunch 報導,AI 訓練資料需求激增,推動 Micro1 與其同業快速成長,該公司總營收年化規模達 5 億美元。",
+              "relevance": "訓練資料供應鏈——AI 基礎設施主題",
+              "title": "AI data startup Micro1 reaches $500M gross run rate amid AI training boom",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
+              "published": "2026-08-21T00:13:44Z"
+            },
+            {
+              "title_zh": "新數據顯示 OpenAI 在企業用戶市場上正逼近 Anthropic",
+              "summary_zh": "新數據指出企業客戶會隨著各實驗室推出新模型而來回轉換供應商;報導指這種波動性顯示企業 AI 支出的黏著度值得投資人留意。",
+              "relevance": "模型供應商競爭與企業採用——AI 基礎設施主題",
+              "title": "OpenAI is gaining on Anthropic with business users, new data indicates",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
+              "published": "2026-08-20T22:36:37Z"
+            },
+            {
+              "title_zh": "Starcloud 募得 2.5 億美元發展軌道資料中心,適逢發射運力吃緊",
+              "summary_zh": "軌道資料中心公司 Starcloud 完成 2.5 億美元募資,報導指出取得太空發射資源的競爭即將加劇。",
+              "relevance": "資料中心與運算部署形態——AI 基礎設施主題",
+              "title": "Starcloud raises $250 million for orbital data centers as launch options dry up",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/",
+              "published": "2026-08-21T14:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "中國最熱門人形機器人的美國經銷商在美方禁令後轉向",
+              "summary_zh": "FCC 針對外國製造機器人的禁令,促使經銷商 RoboStore 加速其美國本土製造計畫。",
+              "relevance": "人形機器人供應鏈與出口管制——機器人與自主系統主題",
+              "title": "US distributor of China’s most popular humanoid robots pivots after US ban",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/08/us-distributor-of-chinas-most-popular-humanoid-robots-pivots-after-us-ban/",
+              "published": "2026-08-20T22:00:11Z"
+            },
+            {
+              "title_zh": "Tesla、Uber 與 Waymo 均獲准在內華達州營運數千輛 robotaxi",
+              "summary_zh": "三家公司取得的許可合計允許未來 12 個月內部署最多 8,000 輛 robotaxi。",
+              "relevance": "自駕車隊規模化部署——自主系統主題",
+              "title": "Tesla, Uber, and Waymo all get the OK to operate thousands of robotaxis in Nevada",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/",
+              "published": "2026-08-21T00:23:36Z"
+            },
+            {
+              "title_zh": "Waymo 就 NHTSA 兒童碰撞調查提交文件",
+              "summary_zh": "Waymo 已向 NHTSA 提交回應文件,但目前所有回覆內容均以「商業機密資訊」為由全面遮蔽。",
+              "relevance": "自駕系統安全監理——自主系統主題",
+              "title": "Waymo hands over documents in NHTSA’s child collision probe",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/21/waymo-hands-over-documents-in-nhtsas-child-collision-probe/",
+              "published": "2026-08-21T17:49:58Z"
+            },
+            {
+              "title_zh": "美國政府實驗室正檢測中國製 lidar 的資安漏洞",
+              "summary_zh": "此項安全審查由 Idaho National Laboratory 執行,研究經費來自電動車與自駕車產業的一家或多家公司。",
+              "relevance": "感測器供應鏈安全——自主系統主題",
+              "title": "US government lab is probing Chinese lidar for security vulnerabilities",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/21/us-government-lab-is-probing-chinese-lidar-for-security-vulnerabilities/",
+              "published": "2026-08-21T16:01:54Z"
+            },
+            {
+              "title_zh": "Waymo 在與 Uber 的 robotaxi 競爭中將遊說支出加倍",
+              "summary_zh": "Alphabet 旗下的 Waymo 加倍投入遊說支出,尋求說服美國監理機關為全自動計程車服務開路。",
+              "relevance": "自駕服務法規環境——自主系統主題",
+              "title": "Waymo doubles spending on lobbying in robotaxi battle with Uber",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/cars/2026/08/waymo-doubles-spending-on-lobbying-in-robotaxi-battle-with-uber/",
+              "published": "2026-08-21T13:11:35Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Chai 與 Bristol Myers Squibb 達成 AI 抗體探索合作",
+              "summary_zh": "在完成 4 億美元 C 輪募資一個月後,AI 藥物探索公司 Chai Discovery 宣布與 Bristol Myers Squibb 合作。",
+              "relevance": "AI 驅動的分子設計合作——生技×AI 主題",
+              "title": "Chai tees up Bristol Myers Squibb AI antibody discovery collab",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/chai-tees-bristol-myers-squibb-ai-antibody-discovery-collab-deal",
+              "published": null
+            },
+            {
+              "title_zh": "當 AI 設計出一款藥物,功勞歸誰?",
+              "summary_zh": "生技公司 Insilico Medicine 在新聞稿中宣稱其肺纖維化候選藥物由生成式 AI 平台「發現」;報導檢視以 AI 快速提出藥物構想的一批公司如何主張歸屬。",
+              "relevance": "AI 藥物設計的歸屬與驗證問題——生技×AI 主題",
+              "title": "When AI designs a drug, who gets the credit?",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/08/21/1142627/when-ai-designs-a-drug-who-gets-the-credit/",
+              "published": "2026-08-21T09:00:00Z"
+            },
+            {
+              "title_zh": "認識 Aletta:首個獲 FDA 核准的機器人抽血裝置",
+              "summary_zh": "FDA 核准 Vitestro 的 Aletta,成為美國首個可在無需人工介入下獨立完成抽血的機器人裝置。",
+              "relevance": "醫療自動化與機器人——生技×AI 與機器人交會主題",
+              "title": "Meet Aletta: The first FDA approved robotic blood draw device",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/meet-aletta-first-fda-approved-robotic-blood-draw-device",
+              "published": null
+            },
+            {
+              "title_zh": "Merck 與 Moderna 的個人化癌症疫苗於三期試驗延緩復發,鋪路申請核准",
+              "summary_zh": "Merck 與 Moderna 的個人化 mRNA 癌症疫苗在與 Keytruda 併用下,延長了高風險皮膚癌患者的無復發存活期,兩家公司可望據此申請加速核准。",
+              "relevance": "個人化 mRNA 設計與臨床驗證——生技×AI 主題",
+              "title": "Merck, Moderna’s personalized cancer vaccine slows recurrence in phase 3, setting up approval push",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/merck-and-modernas-personalized-cancer-vaccine-slows-recurrence-ph-3-trial",
+              "published": null
+            },
+            {
+              "title_zh": "「生物醫學的文藝復興」:人類腦類器官可模擬長達 5 年的發育過程",
+              "summary_zh": "研究人員報告了目前存活最久的人類腦類器官,可在體外模擬長時間尺度的腦部發育。",
+              "relevance": "人體模型系統——生技研究平台主題",
+              "title": "A ‘renaissance for biomedicine’: human brain organoids model development for 5 years",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/renaissance-biomedicine-human-brain-organoids-model-development-5-years",
+              "published": null
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/"
+      ]
+    },
+    {
       "date": "2026-08-21",
       "generated_utc": "2026-08-20T22:11:40Z",
       "status": "published",
@@ -1424,225 +1650,6 @@
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/08/15/every-fusion-startup-that-has-raised-over-100m/",
               "published": "2026-08-15T13:15:20Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/"
-      ]
-    },
-    {
-      "date": "2026-08-15",
-      "generated_utc": "2026-08-14T22:07:56Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 15,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 17,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 4
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 5,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 5,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "OpenAI 與 Anthropic 打起價格戰,中國 AI 對手進逼",
-              "summary_zh": "OpenAI 與 Anthropic 推出價格更低的模型,展開價格競爭。報導指出此舉出現在其兆美元級目標面臨新挑戰之際。",
-              "relevance": "模型推論定價與成本結構——AI 基礎設施經濟性主題",
-              "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
-              "published": "2026-08-14T14:27:14Z"
-            },
-            {
-              "title_zh": "Kog 深入底層,從 GPU 榨出更多推論效能",
-              "summary_zh": "法國新創 Kog 認為「GPU 不適合 agentic 工作負載」是一種誤解,並著手從更底層優化 GPU 的推論效能。",
-              "relevance": "推論效能優化——AI 基礎設施運算效率主題",
-              "title": "Kog is going deeper to squeeze more inference out of GPUs",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
-              "published": "2026-08-14T14:50:11Z"
-            },
-            {
-              "title_zh": "若新預測成真,擁抱天然氣的超大規模業者可能後悔",
-              "summary_zh": "新預測顯示美國部分地區天然氣價格可能上漲至三倍,將使超大規模業者為 AI 資料中心供電付出龐大帳單。",
-              "relevance": "資料中心電力與能源成本——AI 基礎設施電力約束主題",
-              "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/",
-              "published": "2026-08-14T14:05:00Z"
-            },
-            {
-              "title_zh": "Databricks 原想募 10 億美元,投資人要投 150 億,最終以 1900 億估值募得 50 億",
-              "summary_zh": "Databricks 完成 50 億美元募資,估值達 1900 億美元。執行長 Ali Ghodsi 表示 AI 成本高昂,因投資人認購踴躍而擴大原定募資規模。",
-              "relevance": "AI 資料與運算平台資本流向——AI 基礎設施投資主題",
-              "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
-              "published": "2026-08-13T20:14:39Z"
-            },
-            {
-              "title_zh": "Writer 推出新 AI 模型與升級版 harness 以控制 token 成本",
-              "summary_zh": "Writer 以 Z.ai 的開源模型 GLM-5.2 為基礎進行後訓練,推出新系統,並稱可在遠低的價格下提供可直接部署的能力。",
-              "relevance": "開源模型後訓練與 token 成本——推論成本主題",
-              "title": "Writer introduces new AI model and upgraded harness to contain token costs",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
-              "published": "2026-08-13T21:13:24Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "「RAMageddon」開學筆電採購指南",
-              "summary_zh": "報導指出,持續的記憶體與儲存供應緊縮已使電腦價格失序,部分機種漲幅溫和,另一些則大幅上漲。",
-              "relevance": "DRAM/儲存供給緊縮傳導至終端裝置價格——記憶體約束主題",
-              "title": "A RAMageddon guide to back-to-school laptop shopping",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/979996/best-laptops-students-middle-high-school",
-              "published": "2026-08-14T18:32:47Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "自駕卡車正式在加州高速公路上測試",
-              "summary_zh": "開發自駕卡車的 Aurora Innovation 與 Kodiak AI 已取得加州車輛管理局(DMV)許可。",
-              "relevance": "自駕貨運部署與法規許可——自主系統主題",
-              "title": "Self-driving trucks are officially testing on California highways",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/",
-              "published": "2026-08-14T20:37:49Z"
-            },
-            {
-              "title_zh": "Uber 與 Pony.ai 計畫在歐洲投入 2,000 輛 robotaxi",
-              "summary_zh": "雙方合作將從最初的克羅埃西亞札格瑞布市場,擴展至另外四個歐洲城市。",
-              "relevance": "robotaxi 車隊規模化落地——自主系統主題",
-              "title": "Uber and Pony.ai plan to bring 2,000 robotaxis to Europe",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/14/uber-and-pony-ai-plan-to-bring-2000-robotaxis-to-europe/",
-              "published": "2026-08-14T10:44:30Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "報告:AI 臨床監測 agent 在腫瘤試驗可帶來最高 82 倍投資報酬",
-              "summary_zh": "塔夫茲藥物開發研究中心(Tufts CSDD)新分析指出,AI 臨床監測 agent 在第三期腫瘤試驗中估計可帶來 82 倍投資報酬。",
-              "relevance": "AI agent 應用於臨床試驗流程——生技×AI 主題",
-              "title": "AI clinical monitoring agent can deliver up to 82 times the ROI in oncology: report",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/cro/ai-clinical-monitoring-agents-can-deliver-82-times-roi-report",
-              "published": null
-            },
-            {
-              "title_zh": "這位科學家正在補上一張缺失的「童年地圖」",
-              "summary_zh": "Deanne Taylor 在 2017 年接觸 Human Cell Atlas 計畫後發現其資料涵蓋的不足,轉而投入建立兒童基因表現的圖譜。",
-              "relevance": "人體細胞與基因表現圖譜資料集——生技×AI 資料基礎主題",
-              "title": "This scientist is helping build a missing map of childhood",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/08/14/1141354/deanne-taylor-gene-expression-children/",
-              "published": "2026-08-14T09:00:00Z"
-            },
-            {
-              "title_zh": "複製技術可用於拯救物種——或製造人類「器官袋」",
-              "summary_zh": "科學家發展出以 CRISPR 切除 Y 染色體的方法,將雄性小鼠胚胎轉為雌性,並藉此製造出與雄鼠基因相同(僅缺 Y 染色體)的雌性複製個體。",
-              "relevance": "基因編輯與複製技術——生技研究主題",
-              "title": "Cloning could be used to save species—or make human “organ sacks”",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/08/14/1141919/cloning-save-species-or-make-human-organ-sacks/",
-              "published": "2026-08-14T09:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "Thrive 的 Joshua Kushner 批評矽谷創投的 AI 狂熱",
-              "summary_zh": "Kushner 在其首封投資人信中表示,AI 機會巨大,但「若讓興奮情緒削弱投資紀律,在我們看來也會是嚴重錯誤」。",
-              "relevance": "AI 資本市場情緒與投資紀律——總體與估值主題",
-              "title": "Thrive’s Joshua Kushner chides Silicon Valley VCs over AI euphoria",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/14/thrives-joshua-kushner-chides-silicon-valley-vcs-over-ai-euphoria/",
-              "published": "2026-08-14T19:33:00Z"
             }
           ]
         }
