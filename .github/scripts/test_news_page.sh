@@ -5,6 +5,10 @@
 # the copy's data-archive-url is pointed at the local fixture (test-only URL
 # injection -- the HTML is otherwise byte-identical to the built page and
 # stays byte-identical across every scenario, proving JSON-only updates).
+# T12 (icons UI case, 2026-08-21) additionally proves: frozen 18px/flex CSS,
+# five build-time icon slots, aria-hidden rendering per known category,
+# unknown/hostile names degrade to plain text with no icon and no HTML
+# interpretation, and zero /icons/ network requests (inline clone only).
 #
 # Usage: bash test_news_page.sh
 set -u
@@ -300,6 +304,85 @@ F0=$FAIL
 contains "$SITE/news/index.html" "正在載入最近七日的每日精選" "loading placeholder present pre-JS"
 contains "$SITE/news/index.html" "noscript" "noscript notice present"
 verdict "$F0" "static-states"
+
+# ---------------------------------------------------------------- T12 category icons
+say ""; say "=== T12 category icons (UI case): frozen assets, safe insertion ==="
+F0=$FAIL
+# Frozen CSS and markup facts, asserted on the page source itself.
+contains "$SITE/news/index.html" "width:18px;height:18px" "frozen 18px icon size in CSS"
+contains "$SITE/news/index.html" "flex:0 0 auto" "frozen non-shrinking icon box in CSS"
+count_is "$SITE/news/index.html" 'data-name=' 5 "exactly five build-time icon slots"
+count_is "$SITE/news/index.html" "innerHTML" 0 "page script never uses innerHTML"
+
+# 12a: all five real category names render one icon each (aria-hidden).
+fixture "[{'date':'2026-08-12','generated_utc':'2026-08-11T22:27:39Z','status':'published',
+           'model':'claude-opus-5','candidates':30,'feeds':None,'warnings':[],
+           'categories':[
+             {'key':'ai_infra','name':'AI 基礎設施','items':[item('i1')]},
+             {'key':'semis_hbm','name':'半導體/HBM','items':[item('i2')]},
+             {'key':'robotics','name':'機器人與自主','items':[item('i3')]},
+             {'key':'bio_ai','name':'生技×AI','items':[item('i4')]},
+             {'key':'macro','name':'宏觀與政策','items':[item('i5')]}]}]"
+dump "$ROOT/t12a.html"
+count_is "$ROOT/t12a.html" 'class="ic" aria-hidden="true"' 5 "five rendered icons, all aria-hidden"
+contains "$ROOT/t12a.html" "宏觀與政策" "category names still rendered as text"
+not_contains "$ROOT/t12a.html" "$ERROR_TEXT" "no error state"
+
+# 12b: unknown category name -> text renders, no icon, no error.
+fixture "[{'date':'2026-08-12','generated_utc':'2026-08-11T22:27:39Z','status':'published',
+           'model':'claude-opus-5','candidates':30,'feeds':None,'warnings':[],
+           'categories':[{'key':'x','name':'未知的新分類','items':[item('u1')]}]}]"
+dump "$ROOT/t12b.html"
+contains "$ROOT/t12b.html" "未知的新分類" "unknown category name rendered"
+count_is "$ROOT/t12b.html" 'class="ic" aria-hidden="true"' 0 "no icon for unknown category"
+not_contains "$ROOT/t12b.html" "$ERROR_TEXT" "unknown category is not an error"
+
+# 12c: hostile category name stays inert text -- never enters an HTML
+# interpretation path, never matches an icon.
+fixture "[{'date':'2026-08-12','generated_utc':'2026-08-11T22:27:39Z','status':'published',
+           'model':'claude-opus-5','candidates':30,'feeds':None,'warnings':[],
+           'categories':[{'key':'x','name':'<img src=x onerror=alert(1)>','items':[item('h1')]}]}]"
+dump "$ROOT/t12c.html"
+not_contains "$ROOT/t12c.html" '<img src=x' "hostile name not parsed as HTML"
+contains "$ROOT/t12c.html" '&lt;img src=x' "hostile name escaped as text"
+count_is "$ROOT/t12c.html" 'class="ic" aria-hidden="true"' 0 "no icon for hostile name"
+
+# 12e: prototype-key category names must miss the icon map cleanly
+# (Object.create(null)) -- plain text, no icon, no error, and rendering
+# CONTINUES: the normal third category still gets its icon and card.
+fixture "[{'date':'2026-08-12','generated_utc':'2026-08-11T22:27:39Z','status':'published',
+           'model':'claude-opus-5','candidates':30,'feeds':None,'warnings':[],
+           'categories':[
+             {'key':'x','name':'__proto__','items':[item('p1')]},
+             {'key':'y','name':'constructor','items':[item('p2')]},
+             {'key':'macro','name':'宏觀與政策','items':[item('p3')]}]}]"
+dump "$ROOT/t12e.html"
+contains "$ROOT/t12e.html" "__proto__" "__proto__ rendered as plain text"
+contains "$ROOT/t12e.html" "constructor" "constructor rendered as plain text"
+count_is "$ROOT/t12e.html" 'class="ic" aria-hidden="true"' 1 \
+  "prototype keys get no icon; only the normal category's single icon"
+contains "$ROOT/t12e.html" "標題-p3" "rendering continues past prototype keys (later card present)"
+not_contains "$ROOT/t12e.html" "$ERROR_TEXT" "no error state on prototype-key names"
+
+# 12d: zero network requests for icons -- serve the same sandbox via a
+# logging server and prove no /icons/ path is ever fetched.
+fixture "[{'date':'2026-08-12','generated_utc':'2026-08-11T22:27:39Z','status':'published',
+           'model':'claude-opus-5','candidates':30,'feeds':None,'warnings':[],
+           'categories':[{'key':'macro','name':'宏觀與政策','items':[item('n1')]}]}]"
+PORT2=$((PORT+1))
+python3 -m http.server "$PORT2" --bind 127.0.0.1 --directory "$SITE" > "$ROOT/t12d-access.log" 2>&1 &
+SRV2=$!
+sleep 1
+"$CHROME" --headless=new --disable-gpu --hide-scrollbars \
+  --virtual-time-budget=5000 --dump-dom "http://127.0.0.1:$PORT2/news/index.html" \
+  >/dev/null 2>&1
+kill "$SRV2" 2>/dev/null; wait "$SRV2" 2>/dev/null
+if grep -q "icons/" "$ROOT/t12d-access.log"; then
+  badc "icon file was fetched over the network (must be inline-only)"
+else
+  okc "zero /icons/ network requests (inline clone only)"
+fi
+verdict "$F0" "T12"
 
 # ---------------------------------------------------------------- summary
 say ""

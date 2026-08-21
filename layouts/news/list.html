@@ -18,7 +18,9 @@
     padding-bottom:.4rem;margin:0 0 .3rem}
   .nw-day-time{font-weight:400;font-size:.76rem;color:var(--secondary)}
   .nw-eyebrow{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--secondary);
-    margin:1.6rem 0 .7rem;font-weight:600}
+    margin:1.6rem 0 .7rem;font-weight:600;display:flex;align-items:center;gap:.5rem}
+  .nw-eyebrow .ic{flex:0 0 auto;display:inline-flex;color:var(--secondary)}
+  .nw-eyebrow .ic svg{width:18px;height:18px}
   .nw-card{padding:.9rem 0;border-bottom:1px solid var(--border)}
   .nw-title{font-weight:600;line-height:1.5;word-break:break-word}
   .nw-title a{color:var(--primary);text-decoration:none}
@@ -43,6 +45,21 @@
   <div class="post-content">
     {{ .Content }}
 
+    {{/* Category icons (UI case, 2026-08-21): the five approved SVGs are
+         embedded at BUILD time via readFile from static/news/icons/ (their
+         bytes are SHA-frozen by review; any pixel change needs re-approval).
+         The map from category name to icon lives in this hidden container;
+         the page script only clones these build-time nodes -- it never
+         builds icon markup from archive data, and category names are still
+         inserted as text nodes only. Unknown names render without an icon. */}}
+    <div id="nw-icons" hidden aria-hidden="true">
+      <span data-name="AI 基礎設施">{{ readFile "static/news/icons/cat-ai_infra.svg" | safeHTML }}</span>
+      <span data-name="半導體/HBM">{{ readFile "static/news/icons/cat-semis_hbm.svg" | safeHTML }}</span>
+      <span data-name="機器人與自主">{{ readFile "static/news/icons/cat-robotics.svg" | safeHTML }}</span>
+      <span data-name="生技×AI">{{ readFile "static/news/icons/cat-bio_ai.svg" | safeHTML }}</span>
+      <span data-name="宏觀與政策">{{ readFile "static/news/icons/cat-macro.svg" | safeHTML }}</span>
+    </div>
+
     <div id="news-app"
          data-archive-url="https://raw.githubusercontent.com/Sinclair8899/Sinclair-website/main/assets/news_archive.json">
       <p class="nw-state" id="news-loading">正在載入最近七日的每日精選……</p>
@@ -65,6 +82,23 @@
   "use strict";
   var root = document.getElementById("news-app");
   if (!root) { return; }
+
+  /* Build-time-frozen icon nodes (see the #nw-icons container). Lookup is
+     by exact category name; a miss simply renders no icon. The script
+     never assigns innerHTML anywhere -- icons are cloned DOM nodes and all
+     archive-derived strings stay text nodes. */
+  /* Null-prototype map: archive-supplied names like "__proto__" or
+     "constructor" must miss cleanly instead of hitting Object.prototype. */
+  var NW_ICONS = Object.create(null);
+  (function () {
+    var box = document.getElementById("nw-icons");
+    if (!box) { return; }
+    Array.prototype.forEach.call(box.children, function (n) {
+      var svg = n.querySelector("svg");
+      var name = n.getAttribute("data-name");
+      if (svg && name) { NW_ICONS[name] = svg; }
+    });
+  })();
 
   function el(tag, cls, text) {
     var n = document.createElement(tag);
@@ -127,7 +161,17 @@
       return sec;
     }
     (day.categories || []).forEach(function (cat) {
-      sec.appendChild(el("div", "nw-eyebrow", cat.name));
+      var eyebrow = el("div", "nw-eyebrow");
+      var iconSvg = NW_ICONS[String(cat.name)];
+      if (iconSvg) {
+        var ic = document.createElement("span");
+        ic.className = "ic";
+        ic.setAttribute("aria-hidden", "true");
+        ic.appendChild(iconSvg.cloneNode(true));
+        eyebrow.appendChild(ic);
+      }
+      eyebrow.appendChild(document.createTextNode(String(cat.name)));
+      sec.appendChild(eyebrow);
       (cat.items || []).forEach(function (it) { sec.appendChild(renderItem(it)); });
     });
     return sec;
