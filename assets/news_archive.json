@@ -2,6 +2,210 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-08-24",
+      "generated_utc": "2026-08-23T22:01:18Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 52,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 9,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 18,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%",
+              "summary_zh": "NVIDIA 已告知部分大型客戶，隨著記憶體成本大幅上升，搭載其晶片的 AI 伺服器價格將調漲逾 15%。",
+              "relevance": "AI 伺服器成本與記憶體價格——記憶體約束主題",
+              "title": "記憶體成本攀升，NVIDIA 明年起調漲 AI 伺服器價格、漲幅逾 15%",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/23/nvidia-notifies-customers-of-ai-related-price-hikes-above-15-percent/",
+              "published": "2026-08-23T02:29:41Z"
+            },
+            {
+              "title_zh": "神祕「stealth model」Ox Alpha 的背後是誰？",
+              "summary_zh": "一款名為 Ox Alpha 的新 AI 模型被放上 OpenRouter、OpenCode 等平台供免費試用，其開發者身分在開發者社群引發大量猜測。",
+              "relevance": "前沿模型發布與評測——AI 模型生態主題",
+              "title": "Who’s behind the new ‘stealth model’ Ox Alpha?",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
+              "published": "2026-08-23T20:01:36Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "韓國晶片貿易順差飆新高，半導體出口受惠 AI 熱潮",
+              "summary_zh": "報導指出 AI 需求推升韓國晶片產業規模，晶片貿易順差創下新高。",
+              "relevance": "記憶體與半導體出口動能——HBM 供應鏈主題",
+              "title": "韓國晶片貿易順差飆新高，半導體出口受惠 AI 熱潮",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/23/south-korea-s-chip-boom-is-incredible/",
+              "published": "2026-08-23T08:19:53Z"
+            },
+            {
+              "title_zh": "群創法說焦點「騰籠換鳥」！未回應台積電 CoPoS 合作問題，TGV 玻璃基板最快 2028 年量產",
+              "summary_zh": "群創於線上法說會說明 FOPLP（扇出型面板級封裝）量產狀況，並表示 TGV 玻璃基板最快 2028 年量產；對台積電 CoPoS 合作問題未予回應。",
+              "relevance": "先進封裝與玻璃基板——半導體封裝技術主題",
+              "title": "群創法說焦點「騰籠換鳥」！未回應台積電 CoPoS 合作問題，TGV 玻璃基板最快 2028 年量產",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/23/innolux-earnings-call-26q2/",
+              "published": "2026-08-23T01:00:46Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "TechCrunch Mobility：驅動 Waymo Robotaxi 野心的客製晶片",
+              "summary_zh": "TechCrunch 交通專欄報導 Waymo 自駕計程車所採用的客製晶片。",
+              "relevance": "自駕系統的專用運算硬體——機器人與自主系統主題",
+              "title": "TechCrunch Mobility: The custom chip driving Waymo’s robotaxi ambitions",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/23/techcrunch-mobility-the-custom-chip-driving-waymos-robotaxi-ambitions/",
+              "published": "2026-08-23T16:03:00Z"
+            },
+            {
+              "title_zh": "Uber 因自動化停權司機面臨近 10 億美元罰款",
+              "summary_zh": "荷蘭資料保護局對 Uber 開罰 8.25 億歐元，為歐洲 GDPR 下第二大罰款，事由為自動化系統對司機的停權處置。",
+              "relevance": "自動化決策系統的監管——自主系統治理主題",
+              "title": "Uber faces fine of nearly $1B over automated driver suspensions",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/23/uber-faces-fine-of-nearly-1b-over-automated-driver-suspensions/",
+              "published": "2026-08-23T19:30:00Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Chai 與 Bristol Myers Squibb 敲定 AI 抗體探索合作",
+              "summary_zh": "AI 藥物開發公司 Chai Discovery 在完成 4 億美元 C 輪募資一個月後，宣布與 Bristol Myers Squibb 合作進行抗體探索。",
+              "relevance": "AI 驅動的分子設計與藥廠合作——生技×AI 主題",
+              "title": "Chai tees up Bristol Myers Squibb AI antibody discovery collab",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/chai-tees-bristol-myers-squibb-ai-antibody-discovery-collab-deal",
+              "published": null
+            },
+            {
+              "title_zh": "Merck、Moderna 個人化癌症疫苗第三期延緩復發，將推進審批",
+              "summary_zh": "Merck 與 Moderna 的個人化 mRNA 癌症疫苗合併 Keytruda 使用，於高風險皮膚癌患者中延長無復發存活期，第三期成功後兩家公司可能申請加速核准。",
+              "relevance": "個人化 mRNA 療法設計——生技×AI 主題",
+              "title": "Merck, Moderna’s personalized cancer vaccine slows recurrence in phase 3, setting up approval push",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/merck-and-modernas-personalized-cancer-vaccine-slows-recurrence-ph-3-trial",
+              "published": null
+            },
+            {
+              "title_zh": "認識 Aletta：首款獲 FDA 核准的機器人抽血裝置",
+              "summary_zh": "FDA 核准 Vitestro 的 Aletta，成為美國首款無需人工協助即可抽血的獨立式機器人裝置。",
+              "relevance": "醫療自動化裝置——機器人×生醫交會主題",
+              "title": "Meet Aletta: The first FDA approved robotic blood draw device",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/meet-aletta-first-fda-approved-robotic-blood-draw-device",
+              "published": null
+            },
+            {
+              "title_zh": "Craif 募得 3,300 萬美元，推進尿液癌症檢測",
+              "summary_zh": "AI 生技公司 Craif 完成 3,300 萬美元 D 輪募資並延攬新高層，累計募資額達 8,800 萬美元。",
+              "relevance": "AI 診斷與早期篩檢——生技×AI 主題",
+              "title": "Craif raises $33M to boost work on its urine test for cancer",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/craif-raises-33m-boost-work-its-urine-test-cancer",
+              "published": null
+            },
+            {
+              "title_zh": "「生物醫學的文藝復興」：人類腦類器官模擬五年發育歷程",
+              "summary_zh": "報導指出科學家長期受限於無法在培養皿中重現大腦完整能力與時間發育歷程，新研究以人類腦類器官模擬長達五年的發育過程。",
+              "relevance": "人腦模型與神經系統模擬——生技研究主題",
+              "title": "A ‘renaissance for biomedicine’: human brain organoids model development for 5 years",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/renaissance-biomedicine-human-brain-organoids-model-development-5-years",
+              "published": null
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/"
+      ]
+    },
+    {
       "date": "2026-08-23",
       "generated_utc": "2026-08-22T22:01:35Z",
       "status": "published",
@@ -1510,237 +1714,6 @@
               "source": "Fierce Biotech",
               "url": "https://www.fiercebiotech.com/biotech/astrazeneca-ends-phase-3-lung-cancer-trial-after-bispecific-falls-short-versus-keytruda",
               "published": null
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/"
-      ]
-    },
-    {
-      "date": "2026-08-17",
-      "generated_utc": "2026-08-16T22:00:32Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 52,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 8,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 2,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 5,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 4
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 17,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "輝達砸 30 億美元投資 SB Energy！助 OpenAI 建置千億美元資料中心",
-              "summary_zh": "輝達（NVIDIA）正與軟銀集團旗下能源與基礎設施子公司 SB Energy 洽談 30 億美元投資，用於支援 OpenAI 規模達千億美元的資料中心建置。",
-              "relevance": "資料中心電力與資本支出——AI 基礎設施擴建主題",
-              "title": "輝達砸 30 億美元投資 SB Energy！助 OpenAI 建置千億美元資料中心",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/16/sb-energy-softbank/",
-              "published": "2026-08-16T01:16:19Z"
-            },
-            {
-              "title_zh": "據報 Stripe 將以逾 70 億美元收購 AI 閘道新創 OpenRouter",
-              "summary_zh": "據報導，Stripe 將以超過 70 億美元收購 AI 閘道新創 OpenRouter。該公司執行長近期形容自家為「AI 界的 Stripe」。",
-              "relevance": "模型推論路由與 API 中介層——AI 基礎設施堆疊主題",
-              "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
-              "published": "2026-08-16T20:57:04Z"
-            },
-            {
-              "title_zh": "神雲科技於 OCP APAC 高峰會展出多元化架構，打造代理型 AI 運作系統",
-              "summary_zh": "神達控股子公司神雲科技（MiTAC Computing Technology）在 OCP APAC 高峰會展出多元化伺服器架構，主打代理型 AI 運作系統的解決方案。",
-              "relevance": "開放運算伺服器架構——AI 基礎設施硬體主題",
-              "title": "神雲科技於 OCP APAC 高峰會展出多元化架構，打造代理型 AI 運作系統",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/08/16/mitac-computing-technology-ocp-apac-summit-diverse-architectures-agentic-ai-operating-systems/",
-              "published": "2026-08-16T06:00:29Z"
-            },
-            {
-              "title_zh": "據報 OpenAI 已解散其 preparedness 團隊",
-              "summary_zh": "根據《金融時報》報導，OpenAI 於上月底解散了 preparedness 團隊；該團隊原本負責評估模型是否構成重大風險，並發展相應的緩解方法。",
-              "relevance": "前沿模型風險評估組織——AI 系統治理主題",
-              "title": "OpenAI reportedly disbanded its preparedness team",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
-              "published": "2026-08-16T21:32:56Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "13F 報告出爐！波克夏重押 AI、橋水幾乎清倉美光、軟銀砍 7 成台積電",
-              "summary_zh": "美國 SEC 最新一季 13F 持倉報告顯示，第二季機構投資人對半導體與 AI 基礎設施類股調整明顯：橋水幾乎清倉美光，軟銀減持台積電約七成，波克夏則加碼 AI 相關持股。",
-              "relevance": "記憶體與晶圓代工持股變動——HBM／半導體供應鏈主題",
-              "title": "13F 報告出爐！波克夏重押 Al、橋水幾乎清倉美光、軟銀砍 7 成台積電",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/16/13f-reports-are-out/",
-              "published": "2026-08-16T06:14:43Z"
-            },
-            {
-              "title_zh": "卡位 CPO 新架構前，臻鼎押寶光模組 PCB 拚 2027 年稱王",
-              "summary_zh": "臻鼎科技提前布局高階 PCB 產能，押注光模組 PCB，目標在客戶 CPO 新平台量產時即時遞補產能。",
-              "relevance": "共同封裝光學（CPO）與光模組載板——AI 資料中心互連主題",
-              "title": "卡位 CPO 新架構前，臻鼎押寶光模組 PCB 拚 2027 年稱王",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/16/zhen-ding-invests-80-billion-in-major-capacity-expansion/",
-              "published": "2026-08-16T01:00:26Z"
-            },
-            {
-              "title_zh": "又一家 AI 新創完成 900 萬美元募資，Discovered Materials 以 AI 代理開發晶片散熱材料",
-              "summary_zh": "美國半導體材料新創 Discovered Materials 完成 900 萬美元種子輪募資，運用 AI 代理探索用於晶片散熱的新材料。",
-              "relevance": "晶片散熱材料與 AI 驅動材料探索——半導體製程主題",
-              "title": "又一家 AI 新創完成 900 萬美元募資，Discovered Materials 以 AI 代理開發晶片散熱材料",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/08/16/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
-              "published": "2026-08-16T06:30:32Z"
-            },
-            {
-              "title_zh": "通寶半導體上半年毛利率高達 67%！董事會引私募拚年底送件申請上市",
-              "summary_zh": "通寶半導體公布上半年合併營收 3.2 億元、年增 92%，稅前淨利 4,807 萬元、年增 57%，毛利率達 67%；董事會決議引進私募，目標年底送件申請上市。",
-              "relevance": "台灣半導體業者財務動態——半導體產業主題",
-              "title": "通寶半導體上半年毛利率高達 67%！董事會引私募拚年底送件申請上市",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/16/private-equity-case/",
-              "published": "2026-08-16T07:32:42Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "報告：AI 臨床監測代理在腫瘤試驗可帶來高達 82 倍投資報酬",
-              "summary_zh": "塔夫茲大學藥物開發研究中心（Tufts CSDD）的新分析指出，AI 臨床監測代理在第三期腫瘤臨床試驗中，估計可帶來 82 倍的投資報酬。",
-              "relevance": "AI 代理應用於臨床試驗流程——生技×AI 主題",
-              "title": "AI clinical monitoring agent can deliver up to 82 times the ROI in oncology: report",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/cro/ai-clinical-monitoring-agents-can-deliver-82-times-roi-report",
-              "published": null
-            },
-            {
-              "title_zh": "PTC 以 2.11 億美元標下 Sangamo 資產，取得進軍 Fabry 市場的機會",
-              "summary_zh": "PTC Therapeutics 以 1.11 億美元頭期款買下 Sangamo Therapeutics 的法布瑞氏症（Fabry disease）基因療法專案，勝過 Astellas 與 TerSera 的競標；破產程序中的 Sangamo 另以 5,000 萬美元將技術售予禮來。",
-              "relevance": "基因療法資產交易——生技研發資產配置主題",
-              "title": "PTC’s $211M bid wins Sangamo auction, teeing up ‘special opportunity’ to enter Fabry market",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/ptcs-211m-bid-wins-sangamo-auction-teeing-special-opportunity-enter-fabry-market",
-              "published": null
-            },
-            {
-              "title_zh": "CytoDyn 的 leronlimab 在幼年獼猴組合療法中清除病毒，重申 HIV 潛力",
-              "summary_zh": "CytoDyn 的 CCR5 標靶抗體 leronlimab 雖未能取得 HIV 治療核准，但在幼年靈長類動物的組合療法研究中清除了病毒。",
-              "relevance": "抗體療法臨床前資料——生技研發主題",
-              "title": "CytoDyn’s leronlimab reaffirms HIV potential after combo treatment eradicates virus in infant macaques",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/cytodyns-leronlimab-aims-comeback-it-eradicates-hiv-infant-macaques-combination-hiv",
-              "published": null
-            },
-            {
-              "title_zh": "三星耳機助聽功能取得 FDA 核准",
-              "summary_zh": "FDA 核准三星電子最新軟體功能，使 Galaxy Buds 耳機可作為 OTC 助聽器使用，並提供使用者自我聽力檢測。",
-              "relevance": "消費性裝置醫療化與軟體型醫材核准——生醫感測主題",
-              "title": "Samsung hearing aid features for its ear buds garner FDA clearance",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/samsung-hearing-aid-features-its-ear-buds-garner-fda-clearance",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "黃金還能追嗎？瑞銀財管 CIO：金價 2027 上半年有望衝過 5,000 美元",
-              "summary_zh": "黃金價格自 6 月以來首次突破每盎司 4,300 美元，脫離先前 4,000 至 4,100 美元區間；瑞銀財管 CIO 預期金價在 2027 年上半年有望突破每盎司 5,000 美元。",
-              "relevance": "貴金屬與避險資產價格——總體市場主題",
-              "title": "黃金還能追嗎？瑞銀財管 CIO：金價 2027 上半年有望衝過 5,000 美元",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/16/chinese-institutions/",
-              "published": "2026-08-16T09:28:54Z"
-            },
-            {
-              "title_zh": "估值蒸發近九成！Airtable 降價賣身 Bending Spoons，戳破 SaaS 獨角獸神話",
-              "summary_zh": "義大利 App 收購集團 Bending Spoons 於 8 月 4 日宣布將以現金收購協作平台新創 Airtable，成交估值較先前大幅縮水。",
-              "relevance": "軟體新創估值重評——科技資本市場主題",
-              "title": "估值蒸發近九成！Airtable 降價賣身 Bending Spoons，戳破 SaaS 獨角獸神話",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/16/bending-spoons-acquires-airtable/",
-              "published": "2026-08-16T03:00:34Z"
             }
           ]
         }
