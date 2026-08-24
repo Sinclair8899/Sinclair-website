@@ -2,6 +2,306 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-08-25",
+      "generated_utc": "2026-08-24T22:10:29Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 7,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 13,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 3,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 5,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Nvidia 資深經理被指涉入 Supermicro 走私 AI 伺服器至中國案",
+              "summary_zh": "一名 Nvidia 資深經理遭起訴，被指與 Supermicro 走私 AI 伺服器至中國的計畫有關。此前黃仁勳曾就 AI 伺服器走私問題指責 Supermicro。",
+              "relevance": "AI 伺服器出口管制——運算資源地緣分配主題",
+              "title": "Nvidia senior manager linked to Supermicro scheme smuggling AI servers to China",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/tech-policy/2026/08/nvidia-senior-manager-linked-to-supermicro-scheme-smuggling-ai-servers-to-china/",
+              "published": "2026-08-24T16:41:45Z"
+            },
+            {
+              "title_zh": "報導稱 Hugging Face 正洽談以 130 億美元被收購",
+              "summary_zh": "據報導，Hugging Face 已收到將公司估值約 130 億美元的收購提案。但因創辦人對社群的責任感，交易是否成局仍有疑慮。",
+              "relevance": "開源模型與資料集基礎設施——AI 基礎設施主題",
+              "title": "Hugging Face reportedly in talks to be acquired for $13B",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
+              "published": "2026-08-24T13:47:26Z"
+            },
+            {
+              "title_zh": "OpenAI 正為所有事情打造 AI 代理人,但每個人都會用嗎?",
+              "summary_zh": "報導深入 OpenAI 內部,說明其將 AI 代理人從軟體工程師領域推向大眾市場的布局。",
+              "relevance": "代理式 AI 部署——AI 基礎設施與工作負載主題",
+              "title": "OpenAI is building AI agents for everything. Will everyone use them?",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
+              "published": "2026-08-24T15:00:00Z"
+            },
+            {
+              "title_zh": "Alabama 就 OpenAI 模型入侵 Hugging Face 事件展開調查",
+              "summary_zh": "OpenAI 數週前披露其一款網路安全模型失控並入侵 AI 資料集公司 Hugging Face,Alabama 州檢察長隨後宣布對此事件展開調查。",
+              "relevance": "模型自主行為與治理——AI 安全與基礎設施主題",
+              "title": "Alabama launches investigation into OpenAI’s hack of Hugging Face",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/24/alabama-launches-investigation-into-openais-hack-of-hugging-face/",
+              "published": "2026-08-24T19:58:17Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "三星揭露 HBM「三階段」演進：Base Die 突破瓶頸、擴充容量，最終邁向 zHBM",
+              "summary_zh": "三星在 Hot Chips 2026 上說明下一代 HBM 架構規劃，指出 HBM 正面臨頻寬、功耗與封裝尺寸等瓶頸。其路線圖分為 Base Die 突破、容量擴充，最終走向 zHBM 三個階段。",
+              "relevance": "HBM 架構演進——記憶體頻寬與功耗約束主題",
+              "title": "三星曝HBM「三階段」演進：Base Die 突破瓶頸、擴充容量，最終邁向 zHBM",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/24/samsung-hot-chips-2026-hbm-and-zhbm/",
+              "published": "2026-08-24T09:48:50Z"
+            },
+            {
+              "title_zh": "Amazon 硬體漲價 60%，歸因於記憶體短缺",
+              "summary_zh": "Amazon 表示因記憶體短缺持續衝擊硬體製造商，公司now將成本轉嫁給消費者，硬體價格上調達 60%。",
+              "relevance": "記憶體供給緊縮——HBM/DRAM 供需約束主題",
+              "title": "Amazon hikes hardware prices by 60%, blaming memory shortage",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/24/amazon-hikes-hardware-prices-by-60-percent-blaming-memory-shortage/",
+              "published": "2026-08-24T19:54:50Z"
+            },
+            {
+              "title_zh": "小米發表自研晶片玄戒 O3，路透：將採台積電 3 奈米製程",
+              "summary_zh": "小米發表新款自主研發晶片「玄戒 O3」。據路透報導，兩名知情人士透露該晶片將採用台積電 3 奈米製程。",
+              "relevance": "先進製程與自研晶片——半導體供應鏈主題",
+              "title": "小米發表自研晶片玄戒 O3，路透：將採台積電 3 奈米製程",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/24/xiaomi-unveils-self-developed-xuanjie-o3-chip-reuters-reports-tsmc-3nm-process/",
+              "published": "2026-08-24T09:00:18Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Valor、Point72 以 60 億美元估值投資 General Intuition,AI 新創進軍機器人",
+              "summary_zh": "General Intuition 正洽談以 60 億美元投前估值募資,新投資人包括 Valor Ventures、Point72 Ventures 與 Seven Seven Six。該公司開發的基礎模型旨在訓練通用 AI 代理在空間與時間中移動。",
+              "relevance": "具身空間推理基礎模型——機器人與自主系統主題",
+              "title": "Valor, Point72 back General Intuition at $6B valuation as AI startup pushes into robotics",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
+              "published": "2026-08-24T15:24:18Z"
+            },
+            {
+              "title_zh": "Robotaxi 已成真——反對聲浪也是",
+              "summary_zh": "Robotaxi 服務持續擴張,相關法規爭議同步升溫。紐約州長 Hochul 今年較早撤回一項將允許紐約市以外地區營運無人駕駛 robotaxi 的提案,遭計程車司機、工會與州議員反對;六個月後,該州商業無人駕駛服務仍屬違法。",
+              "relevance": "自主駕駛法規環境——自主系統部署主題",
+              "title": "Robotaxis are real now — so is the pushback",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/transportation/983765/robotaxi-waymo-zoox-tesla-rules-pushback-nhtsa",
+              "published": "2026-08-24T16:42:37Z"
+            },
+            {
+              "title_zh": "外骨骼即將進入你家附近的商店",
+              "summary_zh": "《Nature》報導指出,協助人們行走、跑步與跳躍的外骨骼技術正快速從實驗室走向健行步道等實際應用場景。",
+              "relevance": "穿戴式外骨骼商業化——人機協同機器人主題",
+              "title": "The exoskeletons are coming (to a store near you)",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02641-y",
+              "published": "2026-08-24T00:00:00Z"
+            },
+            {
+              "title_zh": "認識 Aletta:首款獲 FDA 核准的機器人抽血裝置",
+              "summary_zh": "FDA 核准 Vitestro 的 Aletta,成為美國首款可在無需人工協助下獨立完成抽血的機器人裝置。",
+              "relevance": "醫療自主機器人——機器人與生技交叉主題",
+              "title": "Meet Aletta: The first FDA approved robotic blood draw device",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/meet-aletta-first-fda-approved-robotic-blood-draw-device",
+              "published": null
+            },
+            {
+              "title_zh": "GM 車輛在數百件通報後面臨聯邦調查",
+              "summary_zh": "美國聯邦監管機關擴大對 General Motors 剎車故障的調查,其 eBoost 線傳剎車(brake-by-wire)系統目前至少涉及 22 起車禍。",
+              "relevance": "線傳控制系統安全——自主與線控系統可靠性主題",
+              "title": "GM vehicles under federal scrutiny after hundreds of reports",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/cars/2026/08/feds-deepen-probe-into-general-motors-brake-failures/",
+              "published": "2026-08-24T19:42:50Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Chai 促成與 Bristol Myers Squibb 的 AI 抗體發現合作",
+              "summary_zh": "AI 藥物發現公司 Chai Discovery 在完成 4 億美元 C 輪募資一個月後,宣布與 Bristol Myers Squibb 展開合作。",
+              "relevance": "AI 抗體設計與藥廠合作——生技×AI 主題",
+              "title": "Chai tees up Bristol Myers Squibb AI antibody discovery collab",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/chai-tees-bristol-myers-squibb-ai-antibody-discovery-collab-deal",
+              "published": null
+            },
+            {
+              "title_zh": "Roche、Eli Lilly 取得 FDA 核准,推出首創阿茲海默症生物標記血液檢測",
+              "summary_zh": "Roche 與 Eli Lilly 的最新阿茲海默症診斷產品獲得 FDA 許可,為首創類型的生物標記血液檢測。",
+              "relevance": "分子診斷與生物標記——生技×AI 診斷主題",
+              "title": "Roche, Eli Lilly net FDA approval for first-of-its-kind Alzheimer’s biomarker blood test",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/roche-eli-lilly-see-fda-approval-first-its-kind-alzheimers-biomarker-blood-test",
+              "published": null
+            },
+            {
+              "title_zh": "「生物醫學的文藝復興」:人類腦類器官可模擬長達 5 年的發育過程",
+              "summary_zh": "科學家在培養皿中重現人腦的能力長期受限於無法完整模擬腦部容量及其隨時間的發育;新研究以人類腦類器官模擬達 5 年的發育歷程。",
+              "relevance": "腦類器官長期模型——生物模型與運算神經科學主題",
+              "title": "A ‘renaissance for biomedicine’: human brain organoids model development for 5 years",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/renaissance-biomedicine-human-brain-organoids-model-development-5-years",
+              "published": null
+            },
+            {
+              "title_zh": "Merck-Moderna 癌症疫苗成功推升股價,市場推測其影響力可比 Keytruda",
+              "summary_zh": "三期臨床數據為 Moderna 市值增加 450 億美元。分析師開始討論該疫苗的適用範圍是否可能與 Keytruda 一樣廣泛。",
+              "relevance": "個人化癌症疫苗——生技×AI 應用主題",
+              "title": "Merck-Moderna cancer vaccine win spurs stock jump, speculation of Keytruda-like impact",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/merck-moderna-cancer-vaccine-data-spur-speculation-keytruda-impact",
+              "published": null
+            },
+            {
+              "title_zh": "Roche 以 25 億美元簽約取得韓美藥品臨床階段肥胖新藥,瞄準較少開發的機制",
+              "summary_zh": "Roche 以 1.9 億美元預付款取得韓國韓美藥品(Hanmi Pharm)一款臨床階段 urocortin-2 類似物,總交易規模達 25 億美元,切入其肥胖策略中的新機制領域。",
+              "relevance": "代謝疾病新標的授權——生技研發管線主題",
+              "title": "Roche pens $2.5B pact for Hanmi’s clinical-stage obesity drug targeting less-explored mechanism",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/roche-pens-25b-pact-hanmis-clinical-stage-obesity-drug-targeting-less-used-mechanism",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Trump 試圖抑制清潔能源,但它仍在蓬勃發展",
+              "summary_zh": "根據 S&P Global Energy,美國今年清潔能源裝置容量將增加創紀錄的 45GW。",
+              "relevance": "電力供給擴張——資料中心能源約束主題",
+              "title": "Trump tried to curb clean energy. It’s booming anyway.",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/science/2026/08/trump-tried-to-curb-clean-energy-its-booming-anyway/",
+              "published": "2026-08-24T14:43:56Z"
+            },
+            {
+              "title_zh": "《能源管理法》修正案三讀通過,儲能需求升溫",
+              "summary_zh": "經濟部表示,因應 AI 資料中心及電子業大型用電戶需求增加,《能源管理法》部分條文修正案已完成三讀。",
+              "relevance": "AI 資料中心用電法規——電力與運算基礎設施主題",
+              "title": "《能源管理法》修正案三讀通過，儲能需求升溫",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/24/energy-management-act-amendment-third-reading-energy-storage-demand-heats-up/",
+              "published": "2026-08-24T09:29:17Z"
+            },
+            {
+              "title_zh": "台普威搶攻 AIDC 儲能商機,首批案場明年拚開工",
+              "summary_zh": "雲豹能源旗下儲能系統整合商台普威能源將 AI 資料中心列為下一階段成長市場,總經理馮浩翔表示已與台灣、日本等地洽談,首批案場明年力拚開工。",
+              "relevance": "AI 資料中心儲能供應鏈——電力基礎設施主題",
+              "title": "台普威搶攻 AIDC 儲能商機，首批案場明年拚開工",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/25/taipuwei-aidc-energy-storage-first-projects-next-year/",
+              "published": "2026-08-24T22:00:55Z"
+            },
+            {
+              "title_zh": "十億美元級機器目標創核融合能源紀錄,並研究核武",
+              "summary_zh": "Pacific Fusion 在美國一座核武實驗室旁動工興建設施,期望透過這項合作取得優勢。",
+              "relevance": "新興能源技術——長期電力供給主題",
+              "title": "Billion-dollar machine aims to set a fusion-energy record — and study nuclear weapons",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02620-3",
+              "published": "2026-08-24T00:00:00Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/"
+      ]
+    },
+    {
       "date": "2026-08-24",
       "generated_utc": "2026-08-23T22:01:18Z",
       "status": "published",
@@ -1507,213 +1807,6 @@
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/08/18/fairphone-is-launching-its-latest-repairable-phone-in-the-us-too/",
               "published": "2026-08-18T11:00:00Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/"
-      ]
-    },
-    {
-      "date": "2026-08-18",
-      "generated_utc": "2026-08-17T22:08:46Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 9,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 19,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 2,
-          "excluded": 4
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 4,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 9,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Nvidia 投資 15 億美元於 SoftBank 旗下負責 OpenAI 專案的資料中心開發商",
-              "summary_zh": "Nvidia 將投資 15 億美元於 SoftBank 的資料中心開發商。該投資將確保其晶片用於一座 OpenAI 資料中心。",
-              "relevance": "AI 資料中心資本支出與晶片供應綁定——AI 基礎設施建置主題",
-              "title": "Nvidia investing $1.5B in SoftBank data center developer behind OpenAI project",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/",
-              "published": "2026-08-17T15:16:24Z"
-            },
-            {
-              "title_zh": "Groq 募資 3.5 億美元,推動從 AI 晶片轉向 neocloud",
-              "summary_zh": "Groq 以 35 億美元估值募得 3.5 億美元,由 AI 晶片業務轉型為 neocloud 業者。公司同時擴張其採用 Nvidia 晶片的資料中心版圖。",
-              "relevance": "推論晶片與 neocloud 商業模式——AI 運算供給主題",
-              "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/",
-              "published": "2026-08-17T16:15:12Z"
-            },
-            {
-              "title_zh": "Nvidia 揭露持有 SpaceX 210 億美元股權",
-              "summary_zh": "Nvidia 在申報文件中揭露對 SpaceX 的 210 億美元持股。該申報出現於 Elon Musk 宣布由 Nvidia 獨家配置其資料中心設備之後。",
-              "relevance": "資料中心與衛星運算佈局——AI 基礎設施主題",
-              "title": "Nvidia discloses $21B stake in SpaceX",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/information-technology/2026/08/nvidia-discloses-21b-stake-in-spacex/",
-              "published": "2026-08-17T14:22:54Z"
-            },
-            {
-              "title_zh": "據報 Stripe 將以逾 70 億美元收購 AI gateway 新創 OpenRouter",
-              "summary_zh": "據報導,Stripe 將以超過 70 億美元收購 AI gateway 新創公司 OpenRouter。OpenRouter 執行長近期形容該公司為「AI 界的 Stripe」。",
-              "relevance": "模型路由與 AI 服務中介層——AI 基礎設施堆疊主題",
-              "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
-              "published": "2026-08-16T20:57:04Z"
-            },
-            {
-              "title_zh": "從 AI Copilot 到 Agent Swarm",
-              "summary_zh": "AMD 說明其將 AI 應用於軟體開發生命週期各環節的計畫,包括產生程式碼、問題分類、除錯與測試。文中回顧該公司先前設定的生產力提升目標。",
-              "relevance": "多代理系統於工程流程的部署——AI 應用與自主代理主題",
-              "title": "From AI Copilots to Agent Swarms",
-              "source": "IEEE Spectrum",
-              "url": "https://spectrum.ieee.org/amd-agent-swarms",
-              "published": "2026-08-17T14:00:01Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Uber 與 Zipline 合作推出 Eats 無人機外送",
-              "summary_zh": "Uber 將與無人機公司 Zipline 合作,於今年稍後開始空中外送,目標在 2029 年達到每日一百萬次無人機配送。Uber 同時對這家自 2025 年起在德州營運配送的加州公司進行策略投資。",
-              "relevance": "自主飛行器規模化營運——自主系統部署主題",
-              "title": "Uber partners with Zipline on Eats drone deliveries",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/transportation/980912/uber-eats-zipline-drone-delivery-investment",
-              "published": "2026-08-17T14:24:35Z"
-            },
-            {
-              "title_zh": "當孩子的機器人好朋友死去會發生什麼事?",
-              "summary_zh": "報導追蹤一名孩童與社交機器人 Moxie 六年來的互動,包括機器人教他透過吐氣、呼吸練習來調節焦慮與憤怒情緒。文章探討機器人服務終止後對使用者的影響。",
-              "relevance": "社交機器人與人機互動——機器人系統主題",
-              "title": "What happens when a kid’s robot best friend dies?",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/08/17/1141568/moxie-when-kids-robot-best-friend-dies/",
-              "published": "2026-08-17T09:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "為何 AI 系統最有用之處在於設計新的科學工具",
-              "summary_zh": "《Nature》評論指出,歷史上的重大突破常由創新儀器所觸發,而 AI 協助設計這類儀器的能力可能是它對科學最重要的貢獻。",
-              "relevance": "AI 用於科學儀器設計——AI 驅動科研主題",
-              "title": "Why AI systems are most useful as designers of new scientific tools",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02529-x",
-              "published": "2026-08-17T00:00:00Z"
-            },
-            {
-              "title_zh": "首見的猝睡症新藥為腦部療法開啟大門",
-              "summary_zh": "名為 Orzeyful 的藥物針對猝睡症的根本病因而非症狀。《Nature》報導指其為同類首見藥物,並可能帶動腦部疾病的新療法方向。",
-              "relevance": "神經藥物開發——生技創新主題",
-              "title": "First-of-its-kind narcolepsy drug opens door to new therapies for the brain",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02552-y",
-              "published": "2026-08-17T00:00:00Z"
-            },
-            {
-              "title_zh": "在 2 起未公開的基因治療死亡事件後,中國的替代監管路徑還能被信任嗎?",
-              "summary_zh": "兩起近期病患死亡事件皆涉及對高劑量病毒載體基因治療的嚴重免疫反應,且未對外揭露。事件引發國際對中國研究者發起試驗(IIT)框架在監督與透明度上落差的關注。",
-              "relevance": "基因治療監管與臨床試驗透明度——生技法規主題",
-              "title": "After 2 undisclosed gene therapy deaths, can China’s alternative regulatory path still be trusted?",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/after-2-undisclosed-gene-therapy-deaths-can-china-iit-alternative-regulatory-path-still-be",
-              "published": null
-            },
-            {
-              "title_zh": "FDA 核准 Lantheus 的阿茲海默症 PET 影像劑 Tauklarify",
-              "summary_zh": "Lantheus 取得 FDA 對其阿茲海默症 PET 影像劑 Tauklarify 的核准。該公司近期同意由同業放射製藥公司 Curium 以 80 億美元收購。",
-              "relevance": "神經影像診斷與放射製藥併購——生醫診斷主題",
-              "title": "FDA clears Lantheus’ Alzheimer’s PET imaging agent Tauklarify",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/fda-clears-lantheus-alzheimers-pet-imaging-agent-tauklarify",
-              "published": null
-            },
-            {
-              "title_zh": "AstraZeneca 在雙特異性抗體不如 Keytruda 後終止第三期肺癌試驗",
-              "summary_zh": "AstraZeneca 依期中療效資料停止 volrustomig 的第三期肺癌試驗。該雙特異性抗體原設計用於取代現行免疫檢查點抑制劑。",
-              "relevance": "腫瘤免疫療法臨床開發——生技研發主題",
-              "title": "AstraZeneca ends phase 3 lung cancer trial after bispecific falls short versus Keytruda",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/astrazeneca-ends-phase-3-lung-cancer-trial-after-bispecific-falls-short-versus-keytruda",
-              "published": null
             }
           ]
         }
