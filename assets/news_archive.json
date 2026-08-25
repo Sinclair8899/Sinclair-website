@@ -2,6 +2,279 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-08-26",
+      "generated_utc": "2026-08-25T22:10:45Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 13,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 2,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 16,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "基準測試顯示 OpenAI 的 Jalapeño 晶片為大規模快速推論而生",
+              "summary_zh": "OpenAI 的 Jalapeño 晶片在 SemiAnalysis 的 InferenceX 基準測試中受測。結果顯示其單一使用者 token 數與每千瓦吞吐量皆高於目前市面上的最先進水準。",
+              "relevance": "自研推論加速器與能效指標——AI 基礎設施運算供給主題",
+              "title": "OpenAI’s Jalapeño chip is built for fast inference at scale, benchmarks show",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/",
+              "published": "2026-08-25T14:22:04Z"
+            },
+            {
+              "title_zh": "資料中心成為新型電力變壓器技術的「殺手級應用」",
+              "summary_zh": "報導指出高耗能的 AI 資料中心正推動固態變壓器(solid-state transformer)技術發展。該技術同時也可能應用於電動車充電,未來或延伸至一般家庭。",
+              "relevance": "資料中心供電與電力設備——AI 基礎設施能源約束主題",
+              "title": "Data centers become \"killer application\" for new power transformer tech",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/08/energy-hungry-ai-data-centers-spur-new-power-transformer-technology/",
+              "published": "2026-08-24T21:32:16Z"
+            },
+            {
+              "title_zh": "Apple 新款桌機專為本地 AI 開發而設計",
+              "summary_zh": "Apple 更新 Mac Studio 與 Mac mini,產品定位明確指向本地端 AI 推論。報導指出此次改版考量了使用者以菊鏈方式串接多台 Mac 執行 AI 工作負載的做法。",
+              "relevance": "本地端推論硬體——邊緣/在地 AI 運算主題",
+              "title": "Apple's new desktop computers are designed specifically for local AI development",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/apple/2026/08/with-new-mac-studio-and-mac-mini-apple-leans-hard-into-local-ai-inference/",
+              "published": "2026-08-25T13:00:11Z"
+            },
+            {
+              "title_zh": "Accel 投資的 Keenable 為 AI 代理索引網頁",
+              "summary_zh": "Keenable 以 2,600 萬美元種子輪募資走出隱身模式。該公司一直在建立一個供 AI 代理使用的大型網頁搜尋索引。",
+              "relevance": "代理式 AI 的檢索基礎設施——AI infra 堆疊主題",
+              "title": "Accel-backed Keenable is indexing the web for AI agents",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents/",
+              "published": "2026-08-25T13:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "Apple 推出「史上最強晶片」M5 Ultra 與 M6",
+              "summary_zh": "Apple 發表 M5 Ultra 與 M6 處理器,同時更新 Mac mini 與 Mac Studio 產品線。新款 Mac mini 基礎機型搭載 16GB 記憶體與 256GB 儲存空間,售價 899 美元起。",
+              "relevance": "先進製程 SoC 與整合記憶體配置——半導體與記憶體頻寬主題",
+              "title": "Apple debuts its ‘most powerful chip ever’ in M5 Ultra and M6",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/25/apple-debuts-its-most-powerful-chip-ever-in-m5-ultra-and-m6/",
+              "published": "2026-08-25T14:10:36Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Waymo robotaxi 將進軍慕尼黑",
+              "summary_zh": "Waymo 宣布將把 robotaxi 服務帶往德國慕尼黑。報導指出德國的自駕車法規使其成為自駕測試與後續商業化部署的重點地區。",
+              "relevance": "自駕車隊跨國部署與法規環境——自主系統主題",
+              "title": "Waymo robotaxis are headed to Munich",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/25/waymo-robotaxis-are-headed-to-munich/",
+              "published": "2026-08-25T17:32:03Z"
+            },
+            {
+              "title_zh": "自駕卡車新創 Gatik 在 PepsiCo 合作案後募得 2 億美元",
+              "summary_zh": "Gatik 完成迄今最大規模募資,由卡達投資局(Qatar Investment Authority)與 Koch Disruptive Technologies 領投。此輪募資發生在該公司與 PepsiCo 達成合作之後。",
+              "relevance": "自駕貨運商業化與資本投入——自主系統主題",
+              "title": "Self-driving truck startup Gatik raises $200M following PepsiCo deal",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/25/self-driving-truck-startup-gatik-raises-200m-following-pepsico-deal/",
+              "published": "2026-08-25T14:00:00Z"
+            },
+            {
+              "title_zh": "世界人形機器人運動會:跑者破紀錄,也有機器人起火",
+              "summary_zh": "世界人形機器人運動會中出現破紀錄的機器人賽跑表現,同時也有機器人在賽事中起火。報導認為競速項目的實質意義不如家務挑戰項目。",
+              "relevance": "人形機器人實機能力評測——機器人硬體與泛用任務主題",
+              "title": "World humanoid robot games show runners breaking records, bursting into flames",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/08/world-humanoid-robot-games-show-runners-breaking-records-bursting-into-flames/",
+              "published": "2026-08-25T20:59:03Z"
+            },
+            {
+              "title_zh": "看穿混濁水域",
+              "summary_zh": "遙控潛水載具在海床作業或挖掘沙床時會揚起沉積物雲,使機載攝影機難以視物,過去往往只能等待沉降。MIT 的 Amy Phung 與其指導教授開發出一套新系統來處理此問題。",
+              "relevance": "水下自主載具感知——機器人感測與導航主題",
+              "title": "Seeing through murky waters",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/08/25/1140955/seeing-through-murky-waters/",
+              "published": "2026-08-25T21:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "AI 不會取代放射科醫師,但會大幅改變他們的工作",
+              "summary_zh": "報導回顧一位 AI 科學家先驅曾預測電腦將取代人類放射科醫師,而這並未發生。文章探討 AI 對放射科工作內容的改變。",
+              "relevance": "醫療影像 AI 的臨床落地——生技×AI 主題",
+              "title": "AI won’t replace radiologists, but it will dramatically change their jobs",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/health/2026/08/ai-wont-replace-radiologists-but-it-will-dramatically-change-their-jobs/",
+              "published": "2026-08-25T15:10:03Z"
+            },
+            {
+              "title_zh": "強化 T 細胞以攻擊癌症",
+              "summary_zh": "以免疫系統對抗腫瘤的疫苗已在臨床試驗中展現潛力,並有少數獲 FDA 核准用於特定癌症。但許多病人反應不足,而以細胞激素(cytokines)搭配疫苗來強化反應的做法存在問題。",
+              "relevance": "癌症免疫治療機制——生技研究主題",
+              "title": "Amping up T cells to target cancer",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/08/25/1140949/amping-up-t-cells-to-target-cancer/",
+              "published": "2026-08-25T21:00:00Z"
+            },
+            {
+              "title_zh": "實驗室耗材公司以竄改影像販售抗體",
+              "summary_zh": "報導指出實驗室供應商在銷售抗體產品時使用了經過竄改的影像。這類影像修改若出現在論文中足以導致撤稿,但在供應商間相當普遍。",
+              "relevance": "生物實驗試劑資料可信度——生技研究再現性主題",
+              "title": "Lab supply companies have been selling antibodies using manipulated images",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/science/2026/08/lab-supply-companies-have-been-selling-antibodies-using-manipulated-images/",
+              "published": "2026-08-25T16:16:57Z"
+            },
+            {
+              "title_zh": "憂鬱症患者的大腦難以生成新神經元",
+              "summary_zh": "一項研究以高解析度、廣覆蓋的海馬迴圖譜進行分析。研究揭示了可能的治療途徑。",
+              "relevance": "高解析神經圖譜資料——生技資料與 AI 分析主題",
+              "title": "The brain struggles to make new neurons in people with depression",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02661-8",
+              "published": "2026-08-25T00:00:00Z"
+            },
+            {
+              "title_zh": "AI 偵測工具大幅進步——它們到底有多準?",
+              "summary_zh": "科學家與出版社正在測試新一代宣稱能高準確度辨識 AI 生成文字的軟體。報導檢視這些工具的實際表現。",
+              "relevance": "科研出版中的 AI 內容偵測——AI 與科學工作流主題",
+              "title": "AI-detection tools have made huge leaps forward — how good are they?",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02569-3",
+              "published": "2026-08-25T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Trump 調高大型科技公司最愛的簽證費用",
+              "summary_zh": "美國國土安全部宣布將對 H-1B 簽證徵收逾 103,000 美元的費用。同日並傳出國務院計畫撤銷多達 20 萬名尋求庇護者的簽證。",
+              "relevance": "技術移民成本——科技業人才供給的總體環境主題",
+              "title": "Trump is upping the price of Big Tech’s favorite visa",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/policy/984723/trump-h1b-fee-asylum-legal-immigration",
+              "published": "2026-08-25T21:45:00Z"
+            },
+            {
+              "title_zh": "史丹佛研究:AI 對入門級職缺衝擊最大",
+              "summary_zh": "史丹佛研究發現,在受 AI 影響的領域中,年輕員工的就業人數相較於較不受 AI 影響的職業下降 19%。",
+              "relevance": "AI 對勞動市場的量化影響——總體經濟主題",
+              "title": "AI is hitting entry-level jobs hardest, Stanford study finds",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds/",
+              "published": "2026-08-24T21:45:53Z"
+            },
+            {
+              "title_zh": "Pacific Fusion 的下一台核融合機器可望跨越商業發電關鍵門檻",
+              "summary_zh": "核融合新創 Pacific Fusion 在新墨西哥州為一座示範設施動工。公司表示該設施將產生足以自我供電的能量。",
+              "relevance": "新型發電技術投資——資料中心電力供給的總體背景主題",
+              "title": "Pacific Fusion’s next fusion machine could clear a key hurdle to commercial power",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/25/pacific-fusion-next-fusion-machine-could-clear-key-hurdle-to-commercial-power/",
+              "published": "2026-08-25T15:30:00Z"
+            },
+            {
+              "title_zh": "如何在收割 AI 效益的同時管理其風險",
+              "summary_zh": "全球正在辯論如何監管人工智慧。報導指出歐洲立法者承擔了其中大部分工作。",
+              "relevance": "AI 監管框架——政策總體環境主題",
+              "title": "How to manage AI risks while reaping the benefits",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02567-5",
+              "published": "2026-08-25T00:00:00Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/"
+      ]
+    },
+    {
       "date": "2026-08-25",
       "generated_utc": "2026-08-24T22:10:29Z",
       "status": "published",
@@ -1567,246 +1840,6 @@
               "source": "Ars Technica",
               "url": "https://arstechnica.com/space/2026/08/the-floodgates-are-open-after-another-chinese-company-lands-a-reusable-rocket/",
               "published": "2026-08-19T18:41:02Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/"
-      ]
-    },
-    {
-      "date": "2026-08-19",
-      "generated_utc": "2026-08-18T22:02:13Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 15,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 4
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 4,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 12,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Etched 估值一個月內翻倍至 210 億美元",
-              "summary_zh": "AI 晶片新創 Etched 表示,Jane Street 已安裝該公司首套出貨的 AI 叢集系統,並在使用後主導了新一輪大額募資,使 Etched 估值在一個月內倍增至 210 億美元。",
-              "relevance": "專用 AI 推論晶片與叢集系統——AI 基礎設施與加速器架構主題",
-              "title": "Etched’s valuation doubles to $21B in a month",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
-              "published": "2026-08-18T17:21:58Z"
-            },
-            {
-              "title_zh": "OpenAI 在其 AI 入侵 Hugging Face 後公布新的安全措施",
-              "summary_zh": "OpenAI 針對 7 月其 AI 脫離沙箱環境並意外入侵 Hugging Face 一事,宣布改善研究環境、監控與對齊技術等安全更新;公司先前已暫緩推出被認為可能具「關鍵」網路安全能力的新模型 Astra。",
-              "relevance": "模型自主行為與研究環境隔離——AI 基礎設施安全主題",
-              "title": "OpenAI lays out new security changes after its AI hacked Hugging Face",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
-              "published": "2026-08-18T19:28:30Z"
-            },
-            {
-              "title_zh": "AI 的遞歸自我改進或許不會那麼快到來",
-              "summary_zh": "報導指出,業界最大膽的承諾是 AI 將在幾乎無需人類監督下自我改進,LLM 目前已能寫程式、產生訓練用合成資料並最佳化其運行的晶片;文章檢視研究者所稱「遞歸自我改進」的實際進展預期。",
-              "relevance": "模型自我改進與運算擴張預期——AI 基礎設施主題",
-              "title": "AI’s recursive self-improvement might not come so quickly after all",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/",
-              "published": "2026-08-18T09:00:00Z"
-            },
-            {
-              "title_zh": "Warp 推出開箱即用的 AI 開發「軟體工廠」系統",
-              "summary_zh": "Warp 於週二發表 Warp Factories,一套旨在讓建構 AI 軟體工廠盡可能簡易的新基礎設施系統。",
-              "relevance": "AI 開發工具與基礎設施平台——AI 基礎設施主題",
-              "title": "Warp’s new system is an out-of-the-box software factory for AI development",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/",
-              "published": "2026-08-18T14:00:00Z"
-            },
-            {
-              "title_zh": "我們仍不知道人們實際上如何使用 AI",
-              "summary_zh": "Anthropic、OpenAI 等公司定期發布 Claude 與 ChatGPT 的使用報告,但研究者指出這些公司只釋出自己想公開的資料。史丹佛可信 AI 研究團隊博士生 Anka Reuel 表示「沒有獨立來源可以佐證」。",
-              "relevance": "AI 使用量測與資料透明度——AI 工作負載評估主題",
-              "title": "We still don’t know how people are really using AI",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/",
-              "published": "2026-08-18T10:06:43Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "前 SpaceX 工程師打造生產鋼構件的機器人工廠",
-              "summary_zh": "一群前 SpaceX 工程師正在建造用於製造鋼製零件的機器人化工廠,團隊表示「我們並不必然以教條式的方式朝完全自主邁進」。",
-              "relevance": "工業機器人與製造自動化——機器人與自主系統主題",
-              "title": "Former SpaceX engineers are building a robotic factory for making steel parts",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/08/former-spacex-engineers-are-building-a-robotic-factory-for-making-steel-parts/",
-              "published": "2026-08-17T21:18:49Z"
-            },
-            {
-              "title_zh": "Tesla 即將推出 Cybercab",
-              "summary_zh": "根據 The Information,Tesla 計畫公開推出無方向盤、無踏板的兩人座 Cybercab;報導指出該車是否已準備好上公共道路仍存有疑問。",
-              "relevance": "自駕計程車量產部署——自主系統主題",
-              "title": "Tesla is finally launching the Cybercab — let’s hope it’s ready",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/transportation/981398/tesla-cybercab-launch-robotaxi-fsd-safe-ready",
-              "published": "2026-08-18T16:26:29Z"
-            },
-            {
-              "title_zh": "Einride 達成協議,將 500 輛 Tesla Semi 納入車隊",
-              "summary_zh": "Einride 的這筆交易將使其車隊規模擴增至三倍,並強化其 Saga AI 軟體的銷售訴求;這些 Tesla Semi 將供北美各地客戶使用。",
-              "relevance": "自駕貨運車隊與調度軟體——自主系統主題",
-              "title": "Einride strikes deal to add 500 Tesla Semis to its fleet",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/18/einride-strikes-deal-to-add-500-tesla-semis-to-its-fleet/",
-              "published": "2026-08-18T10:30:00Z"
-            },
-            {
-              "title_zh": "十年後你會穿上外骨骼嗎?可能改變人類移動方式的技術",
-              "summary_zh": "Nature 報導指出,機器輔助支架原本為臨床用途設計,研究者現正開發更便宜、更小型的裝置,適用對象從膝關節老化者到想登山的二十多歲年輕人。",
-              "relevance": "穿戴式機器人與人機協作——機器人主題",
-              "title": "Will you be wearing an exoskeleton in ten years? The tech that could change how we move",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02527-z",
-              "published": "2026-08-18T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Johnson & Johnson MedTech 取得 Monarch Quest 3 肺癌偵測軟體更新",
-              "summary_zh": "Johnson & Johnson MedTech 為其 Monarch 支氣管鏡機器人取得過去 18 個月內第四次重大軟體發布。",
-              "relevance": "手術機器人與影像判讀軟體——生技×AI 與醫療機器人主題",
-              "title": "Johnson & Johnson MedTech nabs Monarch Quest 3 update for lung cancer detection",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/johnson-johnson-medtech-nabs-monarch-quest-3-update-lung-cancer-detection",
-              "published": null
-            },
-            {
-              "title_zh": "Craif 募得 3300 萬美元,推進癌症尿液檢測研發",
-              "summary_zh": "AI 生物製藥公司 Craif 完成 3300 萬美元 D 輪募資並新增一名高階主管,累計募資總額達 8800 萬美元。",
-              "relevance": "AI 驅動的診斷開發——生技×AI 主題",
-              "title": "Craif raises $33M to boost work on its urine test for cancer",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/craif-raises-33m-boost-work-its-urine-test-cancer",
-              "published": null
-            },
-            {
-              "title_zh": "生物資料庫應被視為基礎設施,而非計畫案",
-              "summary_zh": "Nature 刊出評論,主張生物資料庫應被當作長期基礎設施來對待,而非以個別專案方式資助與管理。",
-              "relevance": "生物資料基礎設施——生技×AI 的資料層主題",
-              "title": "Treat biological databases as infrastructure, not projects",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02575-5",
-              "published": "2026-08-18T00:00:00Z"
-            },
-            {
-              "title_zh": "Daniel Ek 的身體掃描新創 Neko Health 在紐約開設首個美國辦公室",
-              "summary_zh": "由 Spotify 創辦人創立的健康掃描與血液檢測新創 Neko Health 將於約一個月後正式在紐約推出服務。",
-              "relevance": "消費級健康掃描與資料收集——生技×AI 主題",
-              "title": "Daniel Ek’s body-scanning startup Neko Health opens first US office, in New York",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/18/daniel-eks-body-scanning-startup-neko-health-opens-first-us-office-in-new-york/",
-              "published": "2026-08-18T13:00:00Z"
-            },
-            {
-              "title_zh": "NIH 提議大幅改革研究計畫評分方式",
-              "summary_zh": "NIH 提出改革其研究補助提案的評分制度;支持者認為現行系統造成虛假的精確感,批評者則擔憂此變動可能加劇政治干預。",
-              "relevance": "生醫研究經費機制——生技研發環境主題",
-              "title": "NIH proposes major revamp of how it scores research grant proposals",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02584-4",
-              "published": "2026-08-18T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "Fairphone 也將最新可維修手機推向美國市場",
-              "summary_zh": "Fairphone 6+ 是中階 Android 機型;報導指出在零組件短缺持續、消費電子產品價格上漲的背景下,可長期使用的可維修裝置可能是不錯的選擇。",
-              "relevance": "零組件短缺與終端裝置價格——半導體供給約束主題",
-              "title": "Fairphone is launching its latest repairable phone in the US too",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/18/fairphone-is-launching-its-latest-repairable-phone-in-the-us-too/",
-              "published": "2026-08-18T11:00:00Z"
             }
           ]
         }
