@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-27T00:59:07Z",
-  "date": "2026-08-27",
+  "generated_utc": "2026-08-28T05:33:24Z",
+  "date": "2026-08-28",
   "indicators": [
     {
       "key": "frontier_compute",
@@ -210,78 +210,78 @@
       "key": "tw_leading",
       "title": "台灣景氣領先指標",
       "subtitle": "Taiwan NDC leading index (detrended)",
-      "headline": "2026年06月 104.2",
-      "note": "近六個月上升 1.85 點,方向偏擴張。國發會領先指標(不含趨勢)由外銷訂單、實質M1B、股價指數、受僱員工淨進入率、建築物開工樓地板面積、實質半導體設備進口值與製造業營業氣候測驗點七項構成,其中半導體設備進口值直接對應台灣先進產能的資本支出。※ 政府開放資料的更新落後於國發會新聞稿,本欄資料月份為 2026年06月,非當月數值。",
+      "headline": "2026年07月 104.6",
+      "note": "近六個月上升 3.49 點,方向偏擴張。國發會領先指標(不含趨勢)由外銷訂單、實質M1B、股價指數、受僱員工淨進入率、建築物開工樓地板面積、實質半導體設備進口值與製造業營業氣候測驗點七項構成,其中半導體設備進口值直接對應台灣先進產能的資本支出。※ 政府開放資料的更新落後於國發會新聞稿,本欄資料月份為 2026年07月,非當月數值。",
       "series": [
         {
-          "label": "24/07",
-          "value": 103.0,
+          "label": "24/08",
+          "value": 102.2,
           "count": null,
           "partial": false
         },
         {
-          "label": "24/09",
-          "value": 102.7,
+          "label": "24/10",
+          "value": 101.6,
           "count": null,
           "partial": false
         },
         {
-          "label": "24/11",
-          "value": 102.4,
+          "label": "24/12",
+          "value": 101.2,
           "count": null,
           "partial": false
         },
         {
-          "label": "25/01",
-          "value": 102.0,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "25/03",
-          "value": 100.7,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "25/05",
-          "value": 99.6,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "25/07",
-          "value": 99.5,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "25/09",
+          "label": "25/02",
           "value": 100.5,
           "count": null,
           "partial": false
         },
         {
-          "label": "25/11",
-          "value": 101.9,
+          "label": "25/04",
+          "value": 99.3,
           "count": null,
           "partial": false
         },
         {
-          "label": "26/01",
+          "label": "25/06",
+          "value": 98.6,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "25/08",
+          "value": 98.8,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "25/10",
+          "value": 99.7,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "25/12",
+          "value": 100.8,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "26/02",
+          "value": 101.4,
+          "count": null,
+          "partial": false
+        },
+        {
+          "label": "26/04",
           "value": 102.5,
           "count": null,
           "partial": false
         },
         {
-          "label": "26/03",
-          "value": 102.6,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "26/05",
-          "value": 103.6,
+          "label": "26/06",
+          "value": 103.9,
           "count": null,
           "partial": false
         }
