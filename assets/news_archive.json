@@ -2,6 +2,270 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-08-29",
+      "generated_utc": "2026-08-29T03:23:30Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 9,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 15,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Neocloud 業者 Lambda 取得 10 億美元債務融資以採購更多晶片",
+              "summary_zh": "Lambda 透過私募債務募得 10 億美元，用於採購 NVIDIA AI 晶片並租給 Microsoft。報導指出這是其一系列貸款中的最新一筆，凸顯 AI 熱潮的高額成本。",
+              "relevance": "AI 資料中心資本支出與算力租賃融資——AI 基礎設施建置主題",
+              "title": "Neocloud Lambda secures $1B in debt to buy more chips",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
+              "published": "2026-08-28T20:24:11Z"
+            },
+            {
+              "title_zh": "a16z 成立 11 億美元「Machine Age」基金，要「加速 AI 的實體建置」",
+              "summary_zh": "以軟體投資聞名的 a16z 設立規模 11 億美元的新基金，將更多資金投向支撐 AI 的硬體。",
+              "relevance": "AI 硬體與實體基礎設施投資——AI 基礎設施主題",
+              "title": "a16z creates a $1.1B ‘Machine Age’ fund to ‘accelerate the physical buildout of AI’",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/28/a16z-creates-a-1-1b-machine-age-fund-to-accelerate-the-physical-buildout-of-ai/",
+              "published": "2026-08-28T13:24:43Z"
+            },
+            {
+              "title_zh": "川普政府的 EPA 擬讓資料中心得以隱藏空污資訊",
+              "summary_zh": "美國環保署計畫廢除一項聯邦規則，該規則要求特定工業場址在取得空氣許可時須公告並開放公眾評論。報導指出此時正值新建資料中心遭鄰近社區反彈升溫。",
+              "relevance": "資料中心選址與環境法規——AI 基礎設施建置限制主題",
+              "title": "Trump’s EPA wants to let data centers hide their air pollution",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit",
+              "published": "2026-08-28T16:28:40Z"
+            },
+            {
+              "title_zh": "Anthropic 研究員展示自我改進 AI 的初步樣貌",
+              "summary_zh": "在針對特定失準行為設計的 10 項基準測試中，該自動化系統在每一項上都提升了表現，且未使整體表現退化。",
+              "relevance": "模型自我改進與對齊評估——AI 基礎設施與模型能力主題",
+              "title": "An Anthropic researcher just gave us a peek at self-improving AI",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+              "published": "2026-08-28T19:30:38Z"
+            },
+            {
+              "title_zh": "Anthropic 就五角大廈「供應鏈風險」標籤取得首場法院勝訴",
+              "summary_zh": "聯邦法官裁定川普政府將 Anthropic 列為供應鏈風險的作法違法；該公司對五角大廈的第二起訴訟仍在華府審理中。訴狀指控政府因 Anthropic 設下使用「紅線」而不當報復。",
+              "relevance": "AI 實驗室與政府採購／國安審查——AI 基礎設施政策環境主題",
+              "title": "Anthropic gets its first court win over the Pentagon’s supply-chain risk label",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/",
+              "published": "2026-08-28T12:46:12Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "黃仁勳藉一場大缺貨改寫比賽規則，記憶體廠紅利沒預期那麼高了",
+              "summary_zh": "產業消息指出，NVIDIA 下一代旗艦晶片 Rubin Ultra 的記憶體配置正在進行降規格測試，與市場原先預期不同。",
+              "relevance": "HBM 配置與供給——記憶體約束主題",
+              "title": "黃仁勳藉一場大缺貨改寫比賽規則，記憶體廠紅利沒預期那麼高了",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/29/nvidia-changes-the-rules-of-the-ai-%e2%80%8b%e2%80%8bchip-memory-competition/",
+              "published": "2026-08-29T02:00:10Z"
+            },
+            {
+              "title_zh": "美光台灣工會醞釀罷工獲 8 成支持，不滿獎金分紅落後三星、SK 海力士",
+              "summary_zh": "在全球 AI 浪潮與 HBM 需求增加下，美光近期營收與獲利創新高，但台灣廠區員工不滿獎金分紅落後三星與 SK 海力士，罷工提議獲約八成支持。",
+              "relevance": "HBM 供應商產能與人力——記憶體供給鏈主題",
+              "title": "美光台灣工會醞釀罷工獲 8 成支持！不滿獎金分紅落後三星、SK 海力士",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/08/29/ipp/",
+              "published": "2026-08-29T00:28:37Z"
+            },
+            {
+              "title_zh": "不只做鞋膠！南寶挾一甲子功力轉型，強攻半導體與 AI 封裝材料",
+              "summary_zh": "南寶累積六十年高分子材料技術，近三年獲利達兩個股本，將切入半導體先進封裝與 AI 銅箔基板相關材料領域。",
+              "relevance": "先進封裝材料供應鏈——半導體製造瓶頸主題",
+              "title": "不只做鞋膠！南寶挾一甲子功力華麗轉型，強攻半導體與 AI 封裝材料",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/29/nanpao-enters-semiconductor-materials-to-unlock-new-growth-curve/",
+              "published": "2026-08-29T01:00:22Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "中國車廠跟進 Tesla，押注機器人是下一個大型獲利機器",
+              "summary_zh": "技術進展帶動新一批公司投入人形機器人，期待從中獲利，而這批新進者全是中國車廠。",
+              "relevance": "人形機器人產業投入與量產路徑——機器人與自主系統主題",
+              "title": "Chinese automakers are following Tesla’s bet that robots are the next big profit machine",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/28/chinese-automakers-are-following-teslas-bet-that-robots-are-the-next-big-profit-machine/",
+              "published": "2026-08-28T23:24:27Z"
+            },
+            {
+              "title_zh": "Meta 前團隊新創 Perceptron 推出視覺 AI 模型 Isaac 0.5",
+              "summary_zh": "由 Meta 前科學家創辦的 AI 新創 Perceptron 發表視覺 AI 模型 Isaac 0.5，聚焦讓機器人具備視覺理解與推理能力。",
+              "relevance": "視覺基礎模型應用於機器人——具身智慧與自主系統主題",
+              "title": "Meta 前團隊新創 Perceptron 推出視覺 AI 模型 Isaac 0.5，讓機器人學會「看懂與思考」",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/29/perceptron-ai-isaac-0-5/",
+              "published": "2026-08-28T23:30:12Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Deep Origin 結合 AI 與物理模擬，宣稱抗癌藥物發現有突破",
+              "summary_zh": "Deep Origin 宣布其 AI 藥物發現框架在一項針對癌症免疫治療相關酵素的測試中，命中率接近 3 成。",
+              "relevance": "AI 藥物設計與物理模擬結合——生技×AI 主題",
+              "title": "命中率狂飆百倍！Deep Origin 結合 AI 與物理模擬，抗癌藥物發現迎突破",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/29/deep-origin-claims-breakthrough-in-ai-drug-discovery-platform/",
+              "published": "2026-08-29T00:30:40Z"
+            },
+            {
+              "title_zh": "歷經「艱難數年」後，Frontier 執行長加大精準醫療平台布局",
+              "summary_zh": "Frontier Medicines 去年宣布裁員後，正推進更多癌症藥物進入臨床，並持續尋找合作夥伴以運用其 AI 蛋白質體學平台。",
+              "relevance": "AI 蛋白質體學藥物發現平台商業化——生技×AI 主題",
+              "title": "After some ‘tough years,’ Frontier’s CEO is ramping up ambitions for precision med platform",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/how-frontier-medicines-plans-drug-undruggable-ai-and-chemical-library",
+              "published": null
+            },
+            {
+              "title_zh": "蛋白質交互作用研究為自閉症成因提供新線索",
+              "summary_zh": "加州大學舊金山分校團隊提出，研究蛋白質—蛋白質交互作用可能是找出自閉症可成藥標靶的關鍵。",
+              "relevance": "蛋白質交互作用網路與標靶發現——生技×AI 的結構生物學基礎主題",
+              "title": "Research into protein interactions sheds new light on causes of autism",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/looking-drug-discovery-through-protein-protein-interaction-lens",
+              "published": null
+            },
+            {
+              "title_zh": "FDA 核准 Revolution Medicines 的胰臟癌新藥",
+              "summary_zh": "在 5 月 ASCO 年會上獲得起立喝采的數據之後，Revolution Medicines 的 Ras 抑制劑 daraxonrasib 獲 FDA 核准用於治療轉移性胰臟癌。",
+              "relevance": "難成藥標靶（Ras）藥物開發——生技研發主題",
+              "title": "FDA greenlights Revolution Medicines' pancreatic cancer gamechanger",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/pharma/fda-greenlights-revolution-medicines-pancreatic-cancer-gamechanger",
+              "published": null
+            },
+            {
+              "title_zh": "BioNTech-Genentech 癌症疫苗在終止的二期試驗中死亡數高於對照組",
+              "summary_zh": "在 Merck 與 Moderna 以 Keytruda 搭配個人化 mRNA 癌症疫苗取得三期成功之後，BioNTech 與 Genentech 類似的疫苗於試驗中失利，該試驗已終止。",
+              "relevance": "個人化癌症疫苗與序列設計——生技×AI 主題",
+              "title": "BioNTech-Genentech cancer vax records more deaths than control in scrapped ph. 2 test",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/biontech-genentech-personalized-cancer-vaccine-posts-worse-patient-survival-terminated-ph-2",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Fed 主席華許傑克森洞首度發言偏鷹，堅守 2% 通膨目標",
+              "summary_zh": "聯準會主席華許（Kevin Warsh）於懷俄明州傑克森洞全球央行年會發表談話，重申堅守 2% 通膨目標，內容歸納為五大重點。",
+              "relevance": "利率路徑與流動性環境——AI 資本支出融資成本的總體背景",
+              "title": "Fed 主席華許傑克森洞首秀放鷹！堅守 2% 通膨目標揭五大重點",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/08/29/hole/",
+              "published": "2026-08-29T02:06:49Z"
+            },
+            {
+              "title_zh": "要輝達不要變電所？北部電網瀕臨超載",
+              "summary_zh": "NVIDIA 海外總部「星群」基地落腳北投士林科技園區，成為其重要研發與製造樞紐；報導指出北部電網瀕臨超載，且有 25% 民眾誤認已歸零的核能為主力電力來源。",
+              "relevance": "電網容量與 AI 設施用電——AI 基礎設施能源約束主題",
+              "title": "要輝達不要變電所？北部電網瀕臨超載，25% 民眾錯把「歸零核能」當主力，揭開台灣電力三大真相",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/29/taiwan-public-lacks-understanding-of-power-grid/",
+              "published": "2026-08-29T00:00:09Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/"
+      ]
+    },
+    {
       "date": "2026-08-28",
       "generated_utc": "2026-08-28T05:50:18Z",
       "status": "published",
@@ -1577,232 +1841,6 @@
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
               "published": "2026-08-22T16:00:00Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/"
-      ]
-    },
-    {
-      "date": "2026-08-22",
-      "generated_utc": "2026-08-21T22:08:32Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 13,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 5
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 4,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 4,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Nvidia 研究顯示:真正的主角是 harness,而非 AI 模型",
-              "summary_zh": "Nvidia 的研究指出,即使基礎模型在特定任務上表現一般,透過微調(fine-tuning)仍可讓 AI agent 有良好表現且不致失控。",
-              "relevance": "Agent 系統設計與微調方法——AI 基礎設施主題",
-              "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
-              "published": "2026-08-21T19:43:39Z"
-            },
-            {
-              "title_zh": "AI 資料新創 Micro1 在 AI 訓練熱潮中達到 5 億美元總營收年化規模",
-              "summary_zh": "TechCrunch 報導,AI 訓練資料需求激增,推動 Micro1 與其同業快速成長,該公司總營收年化規模達 5 億美元。",
-              "relevance": "訓練資料供應鏈——AI 基礎設施主題",
-              "title": "AI data startup Micro1 reaches $500M gross run rate amid AI training boom",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
-              "published": "2026-08-21T00:13:44Z"
-            },
-            {
-              "title_zh": "新數據顯示 OpenAI 在企業用戶市場上正逼近 Anthropic",
-              "summary_zh": "新數據指出企業客戶會隨著各實驗室推出新模型而來回轉換供應商;報導指這種波動性顯示企業 AI 支出的黏著度值得投資人留意。",
-              "relevance": "模型供應商競爭與企業採用——AI 基礎設施主題",
-              "title": "OpenAI is gaining on Anthropic with business users, new data indicates",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
-              "published": "2026-08-20T22:36:37Z"
-            },
-            {
-              "title_zh": "Starcloud 募得 2.5 億美元發展軌道資料中心,適逢發射運力吃緊",
-              "summary_zh": "軌道資料中心公司 Starcloud 完成 2.5 億美元募資,報導指出取得太空發射資源的競爭即將加劇。",
-              "relevance": "資料中心與運算部署形態——AI 基礎設施主題",
-              "title": "Starcloud raises $250 million for orbital data centers as launch options dry up",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/",
-              "published": "2026-08-21T14:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "中國最熱門人形機器人的美國經銷商在美方禁令後轉向",
-              "summary_zh": "FCC 針對外國製造機器人的禁令,促使經銷商 RoboStore 加速其美國本土製造計畫。",
-              "relevance": "人形機器人供應鏈與出口管制——機器人與自主系統主題",
-              "title": "US distributor of China’s most popular humanoid robots pivots after US ban",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gadgets/2026/08/us-distributor-of-chinas-most-popular-humanoid-robots-pivots-after-us-ban/",
-              "published": "2026-08-20T22:00:11Z"
-            },
-            {
-              "title_zh": "Tesla、Uber 與 Waymo 均獲准在內華達州營運數千輛 robotaxi",
-              "summary_zh": "三家公司取得的許可合計允許未來 12 個月內部署最多 8,000 輛 robotaxi。",
-              "relevance": "自駕車隊規模化部署——自主系統主題",
-              "title": "Tesla, Uber, and Waymo all get the OK to operate thousands of robotaxis in Nevada",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/",
-              "published": "2026-08-21T00:23:36Z"
-            },
-            {
-              "title_zh": "Waymo 就 NHTSA 兒童碰撞調查提交文件",
-              "summary_zh": "Waymo 已向 NHTSA 提交回應文件,但目前所有回覆內容均以「商業機密資訊」為由全面遮蔽。",
-              "relevance": "自駕系統安全監理——自主系統主題",
-              "title": "Waymo hands over documents in NHTSA’s child collision probe",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/21/waymo-hands-over-documents-in-nhtsas-child-collision-probe/",
-              "published": "2026-08-21T17:49:58Z"
-            },
-            {
-              "title_zh": "美國政府實驗室正檢測中國製 lidar 的資安漏洞",
-              "summary_zh": "此項安全審查由 Idaho National Laboratory 執行,研究經費來自電動車與自駕車產業的一家或多家公司。",
-              "relevance": "感測器供應鏈安全——自主系統主題",
-              "title": "US government lab is probing Chinese lidar for security vulnerabilities",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/21/us-government-lab-is-probing-chinese-lidar-for-security-vulnerabilities/",
-              "published": "2026-08-21T16:01:54Z"
-            },
-            {
-              "title_zh": "Waymo 在與 Uber 的 robotaxi 競爭中將遊說支出加倍",
-              "summary_zh": "Alphabet 旗下的 Waymo 加倍投入遊說支出,尋求說服美國監理機關為全自動計程車服務開路。",
-              "relevance": "自駕服務法規環境——自主系統主題",
-              "title": "Waymo doubles spending on lobbying in robotaxi battle with Uber",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/cars/2026/08/waymo-doubles-spending-on-lobbying-in-robotaxi-battle-with-uber/",
-              "published": "2026-08-21T13:11:35Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Chai 與 Bristol Myers Squibb 達成 AI 抗體探索合作",
-              "summary_zh": "在完成 4 億美元 C 輪募資一個月後,AI 藥物探索公司 Chai Discovery 宣布與 Bristol Myers Squibb 合作。",
-              "relevance": "AI 驅動的分子設計合作——生技×AI 主題",
-              "title": "Chai tees up Bristol Myers Squibb AI antibody discovery collab",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/chai-tees-bristol-myers-squibb-ai-antibody-discovery-collab-deal",
-              "published": null
-            },
-            {
-              "title_zh": "當 AI 設計出一款藥物,功勞歸誰?",
-              "summary_zh": "生技公司 Insilico Medicine 在新聞稿中宣稱其肺纖維化候選藥物由生成式 AI 平台「發現」;報導檢視以 AI 快速提出藥物構想的一批公司如何主張歸屬。",
-              "relevance": "AI 藥物設計的歸屬與驗證問題——生技×AI 主題",
-              "title": "When AI designs a drug, who gets the credit?",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/08/21/1142627/when-ai-designs-a-drug-who-gets-the-credit/",
-              "published": "2026-08-21T09:00:00Z"
-            },
-            {
-              "title_zh": "認識 Aletta:首個獲 FDA 核准的機器人抽血裝置",
-              "summary_zh": "FDA 核准 Vitestro 的 Aletta,成為美國首個可在無需人工介入下獨立完成抽血的機器人裝置。",
-              "relevance": "醫療自動化與機器人——生技×AI 與機器人交會主題",
-              "title": "Meet Aletta: The first FDA approved robotic blood draw device",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/meet-aletta-first-fda-approved-robotic-blood-draw-device",
-              "published": null
-            },
-            {
-              "title_zh": "Merck 與 Moderna 的個人化癌症疫苗於三期試驗延緩復發,鋪路申請核准",
-              "summary_zh": "Merck 與 Moderna 的個人化 mRNA 癌症疫苗在與 Keytruda 併用下,延長了高風險皮膚癌患者的無復發存活期,兩家公司可望據此申請加速核准。",
-              "relevance": "個人化 mRNA 設計與臨床驗證——生技×AI 主題",
-              "title": "Merck, Moderna’s personalized cancer vaccine slows recurrence in phase 3, setting up approval push",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/merck-and-modernas-personalized-cancer-vaccine-slows-recurrence-ph-3-trial",
-              "published": null
-            },
-            {
-              "title_zh": "「生物醫學的文藝復興」:人類腦類器官可模擬長達 5 年的發育過程",
-              "summary_zh": "研究人員報告了目前存活最久的人類腦類器官,可在體外模擬長時間尺度的腦部發育。",
-              "relevance": "人體模型系統——生技研究平台主題",
-              "title": "A ‘renaissance for biomedicine’: human brain organoids model development for 5 years",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/research/renaissance-biomedicine-human-brain-organoids-model-development-5-years",
-              "published": null
             }
           ]
         }
