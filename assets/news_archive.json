@@ -2,6 +2,225 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-08-30",
+      "generated_utc": "2026-08-29T23:38:53Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 60,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 9,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 8,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Nvidia 的 AI 優勢正超越 GPU 本身",
+              "summary_zh": "報導指出，新一代資料中心系統透過更智慧的流量控制來提升效率，而非單靠增加處理器運算週期。",
+              "relevance": "資料中心互連與系統級架構——AI 基礎設施效率主題",
+              "title": "Alt-right troll Milo Yiannopoulos has been deported",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/policy/986456/milo-yiannopoulos-deported-ice",
+              "published": "2026-08-29T19:49:59Z"
+            },
+            {
+              "title_zh": "首創「AI for All」全民免費代幣！韓國豪擲 10 兆韓元實現算力自由",
+              "summary_zh": "韓國政府宣布計劃讓全體民眾免費使用生成式 AI 服務，目標是讓更多韓國人連結到本土 AI 聊天機器人。",
+              "relevance": "國家級算力與 AI 服務投入——AI 基礎設施主權主題",
+              "title": "首創「AI for All」全民免費代幣！韓國豪擲 10 兆韓元實現算力自由",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/08/29/ai-for-all/",
+              "published": "2026-08-29T07:36:08Z"
+            },
+            {
+              "title_zh": "輝達財報出爐股價跌轉升！但擔保金額超越單季營收，輝達循環融資風險成焦點",
+              "summary_zh": "輝達第二季營收達 962 億美元，財報公布後盤後股價漲逾 4%，並帶動美光、台積電股價走揚;報導同時指出其擔保金額已超越單季營收，循環融資結構受到關注。",
+              "relevance": "AI 資本支出與供應鏈財務結構——AI 基礎設施投資循環主題",
+              "title": "輝達財報出爐股價跌轉升！但擔保金額超越單季營收，輝達循環融資風險成焦點",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/08/29/nvidia-earnings-stock-rebound-jensen-huang-revolving-financing-concern/",
+              "published": "2026-08-29T08:00:47Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "黃仁勳藉一場大缺貨改寫比賽規則,記憶體廠紅利沒預期那麼高了",
+              "summary_zh": "產業消息指出,輝達下一代旗艦晶片 Rubin Ultra 的記憶體配置正在進行降規格測試,與市場原先預期的規格有落差。",
+              "relevance": "HBM 配置與供給——記憶體約束主題",
+              "title": "黃仁勳藉一場大缺貨改寫比賽規則，記憶體廠紅利沒預期那麼高了",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/29/nvidia-changes-the-rules-of-the-ai-%e2%80%8b%e2%80%8bchip-memory-competition/",
+              "published": "2026-08-29T02:00:10Z"
+            },
+            {
+              "title_zh": "不滿遭強扣「中國軍方公司」大帽!中國晶片巨頭長鑫存儲狀告五角大廈",
+              "summary_zh": "中國記憶體晶片製造商長鑫存儲（CXMT）向美國華盛頓哥倫比亞特區聯邦地方法院提起訴訟,控告美國國防部將其列入相關清單。",
+              "relevance": "DRAM 供給與出口管制——記憶體地緣政治主題",
+              "title": "不滿遭強扣「中國軍方公司」大帽！中國晶片巨頭長鑫存儲狀告五角大廈",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/08/29/cxmt/",
+              "published": "2026-08-29T06:06:49Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "中國車廠跟進 Tesla 押注:機器人是下一個獲利引擎",
+              "summary_zh": "技術進展吸引新一批公司投入人形機器人,而這批新進者全為中國汽車製造商。",
+              "relevance": "人形機器人產業化——自主系統商業化主題",
+              "title": "Chinese automakers are following Tesla’s bet that robots are the next big profit machine",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/28/chinese-automakers-are-following-teslas-bet-that-robots-are-the-next-big-profit-machine/",
+              "published": "2026-08-28T23:24:27Z"
+            },
+            {
+              "title_zh": "移動速度提升 13%、可靠度媲美真人,哈佛團隊 Mobilio AI 手機導航系統登場",
+              "summary_zh": "哈佛大學研究團隊推出專為盲人與低視能者設計的 AI 手機導航系統 Mobilio,強調無須額外硬體即可運作,行走速度提升 13%。",
+              "relevance": "視覺導航與感知輔助——自主導航系統主題",
+              "title": "移動速度提升 13%、可靠度媲美真人，哈佛團隊 Mobilio AI 手機導航系統登場",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/29/harvard-mobilio-ai-navigation-app/",
+              "published": "2026-08-29T05:30:41Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "AI 設計「胞內抗體」有望為阿茲海默症、巴金森氏症與漸凍症開啟新療法",
+              "summary_zh": "英國艾塞克斯大學運用 AI 重新設計抗體,開發出可直接在人類細胞內作用的胞內抗體（intrabody）。",
+              "relevance": "AI 蛋白質/抗體設計——生技×AI 主題",
+              "title": "AI 設計「胞內抗體」有望為阿茲海默症、巴金森氏症與漸凍症開啟新療法",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/08/30/ai-designed-intrabodies-could-unlock-new-treatments-for-alzheimers-parkinsons-and-mnd/",
+              "published": "2026-08-29T16:00:30Z"
+            },
+            {
+              "title_zh": "「我們不會一年下 30 個賭注」:Vijay Pande 談離開 a16z 40 億美元基金後改押小注",
+              "summary_zh": "去年離開 a16z 約 40 億美元生技投資業務、創辦 AI 原生創投 VZVC 的 Vijay Pande 表示,生物學正從「發現」科學轉向「工程」科學,並認為開放共享資料集而非封閉資料集,才是讓 AI 真正改變醫學的關鍵。",
+              "relevance": "AI 藥物開發資料集與投資結構——生技×AI 主題",
+              "title": "“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/",
+              "published": "2026-08-29T17:36:47Z"
+            },
+            {
+              "title_zh": "歷經「艱難數年」後,Frontier 執行長加大精準醫療平台企圖心",
+              "summary_zh": "Frontier Medicines 去年宣布裁員後,現正推進更多癌症藥物進入臨床,同時持續尋找合作夥伴以運用其 AI 蛋白質體學平台。",
+              "relevance": "AI 蛋白質體平台與藥物開發——生技×AI 主題",
+              "title": "After some ‘tough years,’ Frontier’s CEO is ramping up ambitions for precision med platform",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/how-frontier-medicines-plans-drug-undruggable-ai-and-chemical-library",
+              "published": null
+            },
+            {
+              "title_zh": "蛋白質交互作用研究為自閉症成因提供新線索",
+              "summary_zh": "加州大學舊金山分校科學家團隊提出,研究蛋白質-蛋白質交互作用可能是找出自閉症可成藥標的的關鍵。",
+              "relevance": "蛋白質交互作用網絡與標的發現——計算生物學主題",
+              "title": "Research into protein interactions sheds new light on causes of autism",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/looking-drug-discovery-through-protein-protein-interaction-lens",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Fed 主席華許傑克森洞首秀放鷹!堅守 2% 通膨目標揭五大重點",
+              "summary_zh": "美國聯準會主席華許（Kevin Warsh）在懷俄明州傑克森洞全球央行年會發表首次演說,表明堅守 2% 通膨目標。",
+              "relevance": "貨幣政策路徑——市場簡報宏觀主題",
+              "title": "Fed 主席華許傑克森洞首秀放鷹！堅守 2% 通膨目標揭五大重點",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/08/29/hole/",
+              "published": "2026-08-29T02:06:49Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/"
+      ]
+    },
+    {
       "date": "2026-08-29",
       "generated_utc": "2026-08-29T03:23:30Z",
       "status": "published",
@@ -1550,307 +1769,6 @@
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/"
-      ]
-    },
-    {
-      "date": "2026-08-23",
-      "generated_utc": "2026-08-22T22:01:35Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 67,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 8,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 5,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 14,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 5
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "挖角 Google TPU 創辦大將，Anthropic 以人才、技術、資金佈局自研 AI 晶片",
-              "summary_zh": "Anthropic 正式宣告進軍半導體領域，延攬 Google TPU 創始團隊要角，並以人才、技術與資金投入自研 AI 晶片。",
-              "relevance": "自研加速器與客製化晶片——AI 基礎設施運算供給主題",
-              "title": "挖角 Google TPU 創辦大將，Anthropic 以人才、技術、資金佈局自研 AI 晶片",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/08/22/anthropic-is-developing-its-own-ai-chips/",
-              "published": "2026-08-22T06:00:10Z"
-            },
-            {
-              "title_zh": "Nvidia 與資料中心開發商 Cloverleaf 合作",
-              "summary_zh": "Nvidia 宣布與資料中心開發商 Cloverleaf 建立合作關係，持續投入資料中心開發。",
-              "relevance": "AI 資料中心建置——運算基礎設施擴張主題",
-              "title": "Nvidia partners with data center developer Cloverleaf",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
-              "published": "2026-08-21T22:37:38Z"
-            },
-            {
-              "title_zh": "輝達即將公布財報，中國市場動態受市場關注",
-              "summary_zh": "Nvidia 將於 26 日公布 2027 財年第二季財報，市場關注其最新業績與中國市場相關動態。",
-              "relevance": "AI 晶片需求指標——AI 基礎設施資本支出主題",
-              "title": "輝達即將公布財報，中國市場動態受市場關注",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/22/nvidia-is-about-to-release-its-latest-financial-report/",
-              "published": "2026-08-22T02:00:30Z"
-            },
-            {
-              "title_zh": "超級電腦資料塞車有解！新壓縮術每秒可吞 60GB，速度暴增 640 倍",
-              "summary_zh": "高效能運算面臨 GPU 模擬產生的資料量快速膨脹、儲存與傳輸吃緊的問題，報導介紹一項新壓縮技術，宣稱吞吐可達每秒 60GB。",
-              "relevance": "HPC 資料 I/O 與壓縮——運算與記憶體頻寬瓶頸主題",
-              "title": "超級電腦資料塞車有解！新壓縮術每秒可吞 60GB，速度暴增 640 倍",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/08/23/covering-the-fastest-computers-in-the-world-and-the-people-who-run-them-11/",
-              "published": "2026-08-22T16:00:46Z"
-            },
-            {
-              "title_zh": "DeepMind 校友創辦的 Inherent 表示其 AI「隊友」在論文複現上勝過 Anthropic 與 OpenAI",
-              "summary_zh": "英國 AI 實驗室 Inherent 發布名為 Faraday 的 AI 代理，主打複現科學論文的能力，該公司由 DeepMind 前成員創辦。",
-              "relevance": "科學研究自動化代理——AI 用於研究流程主題",
-              "title": "Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
-              "published": "2026-08-22T19:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "10 年投資百億美元設立研究實驗室，美光罕見為記憶體產業布局下一步",
-              "summary_zh": "記憶體大廠 Micron 宣布計劃在未來十年投資高達 100 億美元設立研究實驗室，為記憶體晶片產業罕見的長期戰略布局。",
-              "relevance": "記憶體技術路線與產能投資——HBM 與記憶體約束主題",
-              "title": "10 年投資百億美元設立研究實驗室，美光罕見為記憶體產業布局下一步",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/22/micron-makes-a-rare-move-to-plan-the-next-step-in-the-memory-industry/",
-              "published": "2026-08-22T05:00:56Z"
-            },
-            {
-              "title_zh": "Amazon 調漲 Echo、Fire TV、Kindle 售價，最高達 60%",
-              "summary_zh": "Amazon 以「記憶體與儲存零組件成本大幅上升」為由，調漲 Echo、Kindle、Fire TV 與 Eero 產品售價，幅度最高 60%，其中 Echo Dot 由 49.99 美元漲至 79.99 美元。",
-              "relevance": "記憶體漲價外溢至終端裝置——記憶體供給約束主題",
-              "title": "Amazon just hiked the prices for Echo, Fire TV, and Kindle products by up to 60 percent",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/983598/amazon-price-increase-echo-kindle-fire-tv",
-              "published": "2026-08-22T13:41:01Z"
-            },
-            {
-              "title_zh": "半導體市場需求強烈，富士軟片擴建關鍵化學品產線",
-              "summary_zh": "隨著全球 AI 資料中心大舉擴建、半導體供應鏈出現瓶頸與短缺，Fujifilm 宣布擴建關鍵半導體化學品產線。",
-              "relevance": "半導體材料供應鏈——先進製程產能瓶頸主題",
-              "title": "半導體市場需求強烈，富士軟片擴建關鍵化學品產線",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/22/fujifilm-expands-key-chemical-production-line/",
-              "published": "2026-08-22T04:00:26Z"
-            },
-            {
-              "title_zh": "日月光子公司 ISE Labs 購入加州矽谷建物，加碼美國在地半導體製造布局",
-              "summary_zh": "日月光投控代全資子公司 ISE Labs 發布重訊，董事會決議於美國購入加州矽谷建物，強化美國在地布局。",
-              "relevance": "封測產能在地化——先進封裝與 HBM 供應鏈主題",
-              "title": "日月光子公司 ISE Labs 購入加州矽谷建物，為碼美國在地半導體製造布局",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/08/22/ase-technology-holding-co-ltd-ise-labs-acquires-building-in-silicon-valley-california/",
-              "published": "2026-08-22T07:00:10Z"
-            },
-            {
-              "title_zh": "日本開採南鳥島深海「釔」礦，美日聯手因應中國稀土管制",
-              "summary_zh": "面對中國收緊稀土出口管制，日本加速開發南鳥島周邊約 6,000 公尺深海的海底稀土礦藏，並強化與美國的合作。",
-              "relevance": "關鍵原物料供應——半導體上游材料地緣風險主題",
-              "title": "夠全球用 780 年！日本開採南鳥島深海「釔」礦，美日聯手打破中國稀土壟斷",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/08/22/japan-us-minamitorishima-deep-sea-rare-earths-yttrium-780-year-semiconductor-supply/",
-              "published": "2026-08-22T04:00:28Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "認識 Aletta：首款獲 FDA 核准的機器人抽血裝置",
-              "summary_zh": "FDA 核准 Vitestro 的 Aletta，成為美國首款可在無人工協助下獨立完成抽血的機器人裝置。",
-              "relevance": "醫療自主系統——機器人與自主操作主題",
-              "title": "Meet Aletta: The first FDA approved robotic blood draw device",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/meet-aletta-first-fda-approved-robotic-blood-draw-device",
-              "published": null
-            },
-            {
-              "title_zh": "Quanta Computer 與 Quantinuum 攜手打造大規模量子運算的產業基礎",
-              "summary_zh": "廣達電腦與 Quantinuum 簽署共同開發協議，合作發展大規模量子運算的產業基礎設施。",
-              "relevance": "新型運算硬體合作——先進運算平台主題",
-              "title": "Quanta Computer 與 Quantinuum 攜手打造大規模量子運算的產業基礎",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/08/22/quanta-quantinuum-sign-joint-development-agreement/",
-              "published": "2026-08-22T06:00:57Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Chai 敲定與 Bristol Myers Squibb 的 AI 抗體探索合作",
-              "summary_zh": "在完成 4 億美元 C 輪募資一個月後，AI 藥物探索公司 Chai Discovery 宣布與 Bristol Myers Squibb 合作進行 AI 抗體探索。",
-              "relevance": "AI 蛋白質/抗體設計與藥廠合作——生技×AI 主題",
-              "title": "Chai tees up Bristol Myers Squibb AI antibody discovery collab",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/chai-tees-bristol-myers-squibb-ai-antibody-discovery-collab-deal",
-              "published": null
-            },
-            {
-              "title_zh": "Merck、Moderna 個人化癌症疫苗第三期延緩復發，準備申請上市",
-              "summary_zh": "Merck 與 Moderna 的個人化 mRNA 癌症疫苗在第三期試驗中，與 Keytruda 併用可延長高風險皮膚癌患者的無復發存活期，兩家公司可能據此尋求加速核准。",
-              "relevance": "個人化 mRNA 療法設計——運算生物與精準醫療主題",
-              "title": "Merck, Moderna’s personalized cancer vaccine slows recurrence in phase 3, setting up approval push",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/merck-and-modernas-personalized-cancer-vaccine-slows-recurrence-ph-3-trial",
-              "published": null
-            },
-            {
-              "title_zh": "Craif 募得 3,300 萬美元，推進尿液癌症檢測",
-              "summary_zh": "AI 生醫公司 Craif 完成 3,300 萬美元 D 輪募資並延攬新高階主管，累計募資額達 8,800 萬美元。",
-              "relevance": "AI 驅動診斷檢測——生技×AI 主題",
-              "title": "Craif raises $33M to boost work on its urine test for cancer",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/craif-raises-33m-boost-work-its-urine-test-cancer",
-              "published": null
-            },
-            {
-              "title_zh": "Michael Polansky 正在用仍存活的皮膚訓練 AI 模型",
-              "summary_zh": "Michael Polansky 長年低調打造一家 AI 新創，能讓人類皮膚組織在體外存活數週以探索新的護膚化合物，近期才公開該計畫。",
-              "relevance": "活體組織資料訓練模型——生技×AI 主題",
-              "title": "Michael Polansky is training an AI model on skin that’s still alive",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/21/michael-polansky-is-training-an-ai-model-on-skin-thats-still-alive/",
-              "published": "2026-08-22T01:31:04Z"
-            },
-            {
-              "title_zh": "「生物醫學的文藝復興」：人腦類器官可模擬長達 5 年的發育過程",
-              "summary_zh": "報導指出科學家以人腦類器官模擬腦部發育達 5 年，突破過去難以模擬腦部完整能力與時間歷程的限制。",
-              "relevance": "人腦模型系統——神經科學與生物模擬主題",
-              "title": "A ‘renaissance for biomedicine’: human brain organoids model development for 5 years",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/research/renaissance-biomedicine-human-brain-organoids-model-development-5-years",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "Trump 提名白宮幕僚 Heidi Overton 出任下一任 FDA 局長",
-              "summary_zh": "在 FDA 空缺常任首長三個月後，Trump 提名現任白宮幕僚 Heidi Overton 醫師出任 FDA 局長，將接受參議院審查。",
-              "relevance": "藥物監管領導人事——生技法規環境主題",
-              "title": "Trump taps White House aide Heidi Overton as nominee for next FDA commissioner",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/trump-taps-white-house-aide-overton-next-fda-commissioner",
-              "published": null
-            },
-            {
-              "title_zh": "美國電池新創在國防領域找到生路",
-              "summary_zh": "美國電池新創自能源部取得 5 億美元補助，該產業先前因電動車補貼遭削減而承壓。",
-              "relevance": "能源與電池產業政策——資料中心供電與能源供應鏈主題",
-              "title": "US battery startups have found a lifeline in defense",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/22/us-battery-startups-have-found-a-lifeline-in-defense/",
-              "published": "2026-08-22T15:20:00Z"
-            },
-            {
-              "title_zh": "OpenAI 表示加州應強化其 AI 安全法案",
-              "summary_zh": "OpenAI 呼籲加州強化 AI 安全法案 SB 53，該公司先前曾反對此法案。",
-              "relevance": "AI 監管政策——前沿模型治理主題",
-              "title": "OpenAI says California should strengthen its AI safety bill",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
-              "published": "2026-08-22T16:30:34Z"
-            },
-            {
-              "title_zh": "前沿 AI 實驗室仍未說明如何圍堵失控模型",
-              "summary_zh": "一項新研究發現，領先的 AI 實驗室對於如何圍堵失控模型幾乎沒有公開記載的計畫。",
-              "relevance": "模型安全與治理揭露——AI 風險管理主題",
-              "title": "Frontier AI labs still won’t say how they’d contain a rogue model",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
-              "published": "2026-08-22T16:00:00Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-rd-benchmark-report-waste-ai-and-the-race-to-market/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems/"
       ]
     }
   ]
