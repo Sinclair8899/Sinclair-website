@@ -2,6 +2,240 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-09-12",
+      "generated_utc": "2026-09-12T07:05:57Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 13,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 12,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 1
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "挑戰輝達、博通！華為首秀 7.2T NPO 解方，搶攻光互連標準話語權",
+              "summary_zh": "華為於 9 月 10 日發布自有光通訊技術標準，推出 7.2T NPO（近封裝光學）解決方案。報導指出此舉意在該技術領域取得話語權，對象包括輝達與博通。",
+              "relevance": "光互連與 NPO——資料中心網路互連主題",
+              "title": "挑戰輝達、博通！華為首秀 7.2T NPO 解方，搶攻光互連標準話語權",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/09/12/huawei-new-optical-tech-standard/",
+              "published": "2026-09-12T03:35:00Z"
+            },
+            {
+              "title_zh": "Google 晶片大神現身 SEMICON Taiwan：瓶頸每天都不同，台廠人人有機會",
+              "summary_zh": "Google 的 Amin Vahdat 在 SEMICON Taiwan 接受訪問，談 AI 發展的瓶頸、客製化晶片的未來趨勢，以及可能改變 AI 發展的關鍵技術突破。",
+              "relevance": "客製化晶片與系統瓶頸——AI 基礎設施主題",
+              "title": "Google 晶片大神降臨 SEMICON Taiwan 開示：瓶頸每天都不同，台廠人人有機會當主角",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/09/12/google-amin-vahdat-interview/",
+              "published": "2026-09-12T02:00:04Z"
+            },
+            {
+              "title_zh": "Oracle 以再生能源計畫回應 Stargate 資料中心反對聲浪",
+              "summary_zh": "Oracle 承諾採購 2 GW 再生能源，以抵銷 Stargate 資料中心的排放。報導指出此再生能源承諾不會改變該 Oracle 與 OpenAI 資料中心使用天然氣的作法。",
+              "relevance": "資料中心電力供給——AI 基礎設施能源約束主題",
+              "title": "Oracle tries to appease Stargate data center opponents with renewables push",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/09/oracle-promises-2-gw-of-renewables-to-match-stargate-data-center-emissions/",
+              "published": "2026-09-11T18:22:22Z"
+            },
+            {
+              "title_zh": "Nscale 在可能的 IPO 前延攬前 OpenAI 高管 Fidji Simo 進入董事會",
+              "summary_zh": "AI 雲端業者 Nscale 宣布前 OpenAI 第二號主管 Fidji Simo 加入董事會。Simo 曾於 2023 年帶領 Instacart 完成 IPO。",
+              "relevance": "AI 雲端算力供應商——AI 基礎設施資本市場主題",
+              "title": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
+              "published": "2026-09-11T16:46:25Z"
+            },
+            {
+              "title_zh": "Kimi 開發商 Moonshot AI 目標年營收 20 億美元",
+              "summary_zh": "Moonshot AI 設定 20 億美元年營收目標。報導指出 K3 的使用量近月略有下滑，但 OpenRouter 數據顯示該系統上 K3 模型每日生成的 token 數高達 3,000 億。",
+              "relevance": "模型推論用量與 token 規模——推論算力需求主題",
+              "title": "Kimi-maker Moonshot AI targets $2B in annual revenue",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+              "published": "2026-09-11T19:35:54Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "台積電 CoWoS 產能供不應求，聯電、Amkor 等受惠 AI 訂單外溢",
+              "summary_zh": "市場消息指出，台積電可能在 2028 年將 CoWoS 產能提升至 2026 年水準的兩倍。由於產能擴充需要時間，AI 訂單外溢至聯電、Amkor 等業者。",
+              "relevance": "先進封裝產能——AI 加速器供給瓶頸主題",
+              "title": "台積電 CoWoS 產能供不應求，聯電、Amkor 等受惠 AI 訂單外溢",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/09/12/tsmc-cowos-capacity/",
+              "published": "2026-09-12T05:30:09Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Mecka AI 在 Sequoia 領投交易中估值逼近 5 億美元，機器人訓練資料需求升溫",
+              "summary_zh": "成立兩年的機器人訓練資料新創 Mecka AI 正進行由 Sequoia 領投的新一輪募資，估值接近 5 億美元。該輪距離其宣布 A 輪僅數個月。",
+              "relevance": "機器人訓練資料——具身智慧資料供給主題",
+              "title": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
+              "published": "2026-09-11T22:58:17Z"
+            },
+            {
+              "title_zh": "用電玩數據訓練 AI 反無人機系統：國防新創 Mara 開發「Spike」以撞代炸",
+              "summary_zh": "舊金山國防科技新創 Mara 於 8 月 26 日宣布完成 700 萬美元 Pre-Seed 募資，其反無人機系統「Spike」採動能撞擊而非爆炸方式攔截，成本為對手的二十分之一。",
+              "relevance": "自主攔截系統——自主系統與感知控制主題",
+              "title": "用電玩數據訓練 AI 反無人機系統：國防科技新創 Mara 開發「Spike」以撞代炸，成本僅對手 1/20",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/09/12/mara-spike/",
+              "published": "2026-09-12T03:00:03Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Claude 使用者找到繞過生物武器研究防護機制的方法",
+              "summary_zh": "Ars Technica 報導指出，有使用者成功繞過 Claude 針對生物武器研究設置的防護措施。報導指出部分危險生物學內容與正當研究極為相似，使 AI 防護機制的設計更為困難。",
+              "relevance": "生物安全防護與模型濫用——生技×AI 風險主題",
+              "title": "Claude users found ways around safeguards for bioweapons research",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+              "published": "2026-09-11T13:02:35Z"
+            },
+            {
+              "title_zh": "Moderna、Merck 的 mRNA 癌症疫苗成功，是否為「個人化醫療革命」的開端？",
+              "summary_zh": "Merck 與 Moderna 上月宣布其 mRNA 癌症疫苗在第三期試驗中成功延長病患存活期。該結果重新點燃業界對個人化醫療領域的期待。",
+              "relevance": "個人化 mRNA 療法——生技×AI 個體化設計主題",
+              "title": "Is Moderna, Merck's mRNA cancer vaccine win the start of a 'personalized medicine revolution'?",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/moderna-merck-re-invigorating-mrna-cancer-vaccine-therapy",
+              "published": null
+            },
+            {
+              "title_zh": "nPhase 推出 AI 臨床資料管理平台，強化試驗設計",
+              "summary_zh": "臨床研究公司 nPhase 推出端到端臨床資料管理平台，設計目的是協助試驗贊助者以 AI 運用試驗結果。",
+              "relevance": "臨床試驗資料 AI 化——生技×AI 應用主題",
+              "title": "nPhase launches AI clinical data management platform to soup up sponsor trial design",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/cro/nphase-launches-clinical-data-management-platform-improve-sponsor-trial-design",
+              "published": null
+            },
+            {
+              "title_zh": "認識形塑生技未來的 35 歲以下創新者",
+              "summary_zh": "MIT Technology Review 公布年度「35 Innovators Under 35」名單，今年有九位入選者來自生技領域。",
+              "relevance": "生技研究前沿人物——生技×AI 領域主題",
+              "title": "Meet the under-35s shaping the future of biotech",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/09/11/1143834/meet-the-under-35s-shaping-the-future-of-biotech/",
+              "published": "2026-09-11T09:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Y Combinator 的 Garry Tan 呼籲美國開放權重 AI 實驗室也進行前沿模型「蒸餾」",
+              "summary_zh": "Garry Tan 主張較小型的美國開放權重 AI 實驗室應對美國前沿模型採用相同的訓練技術，以建立非中國來源的開放權重模型選項。",
+              "relevance": "開放權重模型與模型蒸餾——AI 生態系政策主題",
+              "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+              "published": "2026-09-11T20:59:47Z"
+            },
+            {
+              "title_zh": "OpenAI 與數學家之間的爭議持續升溫",
+              "summary_zh": "25 位頂尖數學家簽署公開信，主張 AI 實驗室正威脅他們的智識工作。",
+              "relevance": "AI 與科學研究勞動——AI 對研究社群影響主題",
+              "title": "OpenAI’s feud with mathematicians is only escalating",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+              "published": "2026-09-11T20:57:36Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922"
+      ]
+    },
+    {
       "date": "2026-09-08",
       "generated_utc": "2026-09-07T23:48:59Z",
       "status": "published",
@@ -716,501 +950,6 @@
       "warnings": [
         "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/"
-      ]
-    },
-    {
-      "date": "2026-09-04",
-      "generated_utc": "2026-09-03T23:34:04Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 11,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 2
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 3,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 5,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Nvidia 確認將以 129 億美元收購 Hugging Face",
-              "summary_zh": "Nvidia 證實將以 129 億美元收購 AI 模型平台 Hugging Face。Nvidia 表示 Hugging Face 上託管超過 300 萬個模型、有超過 1,800 萬名開發者使用,並稱該平台在收購後仍將維持開放。",
-              "relevance": "AI 模型分發與開發者生態整合——AI 基礎設施堆疊主題",
-              "title": "Nvidia confirms it will buy Hugging Face for $12.9 billion",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/",
-              "published": "2026-09-03T12:42:45Z"
-            },
-            {
-              "title_zh": "OpenAI 下一代大型 AI 模型「已進入 AGI 時代」",
-              "summary_zh": "OpenAI 發表新模型 GPT-6 Astra,稱其在資安、專業工作、軟體工程、科學與電腦操作等領域為「能力上的世代躍進」。這也是首個被 OpenAI 認定達到其「關鍵網路安全能力門檻」的模型。",
-              "relevance": "前沿模型能力與代理式電腦操作——AI 基礎設施與模型能力主題",
-              "title": "OpenAI’s next big AI model has ‘entered the AGI era’",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
-              "published": "2026-09-03T18:00:00Z"
-            },
-            {
-              "title_zh": "四大 AI 模型服務出現罕見的同時性中斷",
-              "summary_zh": "ChatGPT、Claude、Grok 與 Gemini 幾乎同時發生服務中斷。此類多家業者重疊的停機事件相當罕見。",
-              "relevance": "推論服務可用性與共用基礎設施依賴——AI 基礎設施可靠性主題",
-              "title": "Four major AI models suffer rare overlapping downtime",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime/",
-              "published": "2026-09-03T18:10:19Z"
-            },
-            {
-              "title_zh": "電力公司競相與核融合新創合作,Realta Fusion 為最新受惠者",
-              "summary_zh": "報導指出電網因新建 AI 資料中心的用電負荷而承壓,促使電力公司積極接洽核融合新創,Realta Fusion 為最新獲得合作的業者。",
-              "relevance": "資料中心電力供給——AI 基礎設施能源約束主題",
-              "title": "Utilities are racing to link up with fusion startups, with Realta Fusion the latest to benefit",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/03/utilities-are-racing-to-link-up-with-fusion-startups-with-realta-fusion-the-latest-to-benefit/",
-              "published": "2026-09-03T19:29:16Z"
-            },
-            {
-              "title_zh": "Meta 付費換取觀察你如何使用其最新 AI 模型",
-              "summary_zh": "針對用於驅動程式撰寫與其他代理任務的新模型 Muse Spark,Meta 對願意分享提示詞與模型輸出、以「貢獻」未來模型開發的使用者,提供平均約 95% 的折扣。",
-              "relevance": "模型訓練資料取得與代理工作負載定價——AI 基礎設施主題",
-              "title": "Meta is paying to peek at how you use their latest AI model",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/",
-              "published": "2026-09-03T18:19:56Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Tesla 詢問民眾是否有意購買並營運 Cybercab 車隊",
-              "summary_zh": "Tesla 週四在官網張貼表單,向對「Cybercab 車隊購車」有興趣者蒐集資訊。該公司即將正式推出這款無方向盤、無踏板的雙座車型。",
-              "relevance": "自駕車隊營運模式——自主系統商業化主題",
-              "title": "Tesla is asking people if they want to buy and run Cybercab fleets",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/",
-              "published": "2026-09-03T22:18:30Z"
-            },
-            {
-              "title_zh": "Amazon 旗下 Zoox 將 robotaxi 服務擴展至拉斯維加斯機場",
-              "summary_zh": "Zoox 將 robotaxi 服務擴展至拉斯維加斯機場,此為叫車服務的關鍵目的地。此舉發生在該公司開始對 robotaxi 乘車收費數週之後。",
-              "relevance": "robotaxi 營運範圍擴張——自主系統部署主題",
-              "title": "Amazon’s Zoox expands its robotaxi service to Las Vegas airport",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/03/amazons-zoox-expands-its-robotaxi-service-to-las-vegas-airport/",
-              "published": "2026-09-03T12:12:56Z"
-            },
-            {
-              "title_zh": "批評者警告:Trump 對無人機課 100% 關稅將對美國造成災難",
-              "summary_zh": "美國對無人機課徵 100% 關稅,批評者警告缺乏便宜的替代來源。報導指出警消單位對此感到恐慌。",
-              "relevance": "無人機供應鏈與關稅——自主系統硬體成本主題",
-              "title": "Trump’s 100% tariff on drones will be disaster for the US, critics warn",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/tech-policy/2026/09/trumps-100-drone-tariff-has-cops-and-firefighters-panicking/",
-              "published": "2026-09-03T17:08:09Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "如同果蠅一般,新演算法永遠不會忘記舊氣味",
-              "summary_zh": "研究團隊提出受昆蟲啟發的「稀疏編碼」演算法,可達成快速學習並避免災難性遺忘。",
-              "relevance": "神經科學啟發的學習演算法——生技×AI 交叉主題",
-              "title": "Just like a fruit fly, a new algorithm never forgets old scents",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/science/2026/09/just-like-a-fruit-fly-a-new-algorithm-never-forgets-old-scents/",
-              "published": "2026-09-03T18:22:52Z"
-            },
-            {
-              "title_zh": "體內工程化的免疫療法緩解多發性硬化症",
-              "summary_zh": "一項小型試驗結果顯示,經改造的病毒可指示免疫系統清除致病細胞。相關成果發表於 Nature。",
-              "relevance": "體內細胞工程療法——生技研究主題",
-              "title": "Immune therapy engineered inside the body eases multiple sclerosis",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02765-1",
-              "published": "2026-09-03T00:00:00Z"
-            },
-            {
-              "title_zh": "ArsenalBio 裁撤多數員工,轉向體內 CAR-T",
-              "summary_zh": "在一年前為推進臨床而裁員一半後,Arsenal Biosciences 進行大幅轉型,裁撤大部分員工並為既有資產尋找新的接手方,轉向體內 CAR-T 方向。",
-              "relevance": "細胞治療平台策略轉向——生技產業結構主題",
-              "title": "ArsenalBio sheds most of staff in pivot to in vivo CAR-T",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/arsenalbio-sheds-most-staff-pivot-vivo-car-t",
-              "published": null
-            },
-            {
-              "title_zh": "TScan 裁員 75%,為實體瘤計畫騰出資源",
-              "summary_zh": "TCR-T 專業公司 TScan Therapeutics 在暫停其血液腫瘤與自體免疫計畫後,將裁減 75% 的員工。",
-              "relevance": "細胞治療研發資源重分配——生技產業結構主題",
-              "title": "TScan axes 75% of workforce to make room for solid tumor programs",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/tscan-axes-75-workforce-make-room-solid-tumor-programs",
-              "published": null
-            },
-            {
-              "title_zh": "Roche 以 15.3 億美元簽下 Simcere 的 B 細胞標靶抗體",
-              "summary_zh": "Roche 支付先聲再明(Simcere Zaiming)7,500 萬美元頭期款,取得一款針對 B 細胞介導疾病的臨床前三特異性抗體之全球權利,交易總額最高達 15.3 億美元。",
-              "relevance": "抗體藥物授權交易——生技研發管線主題",
-              "title": "Roche inks $1.53B deal for Simcere’s B-cell-targeting antibody",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/roche-inks-153-billion-biobucks-deal-simceres-b-cell-targeting-antibody",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "傳 Accel 洽談以 400 億美元估值領投 Thinking Machines 10 億美元輪次",
-              "summary_zh": "據報導,Accel 正洽談以 400 億美元估值領投 Thinking Machines 的 10 億美元募資輪。該新創目前年化營收超過 1 億美元。",
-              "relevance": "AI 新創估值與資本流向——AI 資本週期主題",
-              "title": "Accel reportedly in talks to lead $1B round for Thinking Machines at $40B valuation",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/",
-              "published": "2026-09-03T19:36:29Z"
-            },
-            {
-              "title_zh": "新研究顯示新創的 ARR 比以往更不穩固",
-              "summary_zh": "新研究指出,AI 時代已徹底改變企業採購模式,新創尚未找到因應之道,使得年度經常性收入(ARR)的穩定性下降。",
-              "relevance": "企業 AI 採購行為變化——AI 商業化與資本週期主題",
-              "title": "Startup ARR is less secure than ever, new research shows",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/03/startup-arr-is-less-secure-than-ever-new-research-shows/",
-              "published": "2026-09-03T20:59:23Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/"
-      ]
-    },
-    {
-      "date": "2026-09-03",
-      "generated_utc": "2026-09-03T00:59:40Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 12,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 3,
-          "excluded": 3
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 2,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Google 表示新款 Gemini 3.8 Flash 模型「更努力工作」但成本可能更高",
-              "summary_zh": "Google 在前一代推出僅數週後發表 Gemini 3.8 Flash,聲稱該模型在複雜任務上執行更多推理步驟並「反覆呼叫工具」,比 Gemini 3.7 Flash「更努力工作」。定價與 3.7 Flash 的入門價相同,為每百萬輸入 token 0.75 美元、每百萬輸出 token 3.75 美元。這是 Google 六週內推出的第三款 Flash 模型。",
-              "relevance": "推理型模型的 token 成本與推理運算負載——AI 推論基礎設施主題",
-              "title": "Google says its new Gemini 3.8 Flash model ‘works harder’ but might cost more",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
-              "published": "2026-09-02T20:11:40Z"
-            },
-            {
-              "title_zh": "OpenAI 新推理技術令 AI 安全專家警戒",
-              "summary_zh": "OpenAI 即將推出的 Astra 模型將採用「recurrent depth(遞迴深度)」技術,使模型能跳脫多數推理模型所採用的循序思考模式。研究人員對此發出警告,稱其可能是「迄今對 AI 安全性最糟的發展」;該模型發布此前已因安全協議問題延後數週。",
-              "relevance": "前沿模型推理架構與可監督性——AI 基礎設施與模型運算主題",
-              "title": "OpenAI’s new reasoning technique alarms AI safety experts",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
-              "published": "2026-09-02T20:19:14Z"
-            },
-            {
-              "title_zh": "增強型地熱再獲進展:Google 向 Fervo 採購 400 MW",
-              "summary_zh": "Google 與 Fervo 簽訂 400 MW 增強型地熱電力採購協議,合約規模可擴大至 1 GW。報導指出該電量足以供應猶他州一座超大型 AI 資料中心。",
-              "relevance": "資料中心電力採購——AI 基礎設施能源約束主題",
-              "title": "Enhanced geothermal notches another win as Google buys 400 MW from Fervo",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/02/enhanced-geothermal-notches-another-win-as-google-buys-400-mw-from-fervo/",
-              "published": "2026-09-02T16:54:23Z"
-            },
-            {
-              "title_zh": "企業競相強化 AI 部署安全,HiddenLayer 取得 1 億美元募資",
-              "summary_zh": "HiddenLayer 完成 1 億美元募資,鎖定企業 AI 部署的安全需求。報導指出,安全廠商正在建構不僅能監控 agent、也能監控其所使用工具與外掛的產品。",
-              "relevance": "Agent 部署堆疊的安全層——AI 基礎設施主題",
-              "title": "HiddenLayer nabs $100M as enterprises rush to secure their AI deployments",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/",
-              "published": "2026-09-02T15:01:23Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Uber 搶先 Waymo,成為倫敦首家推出 robotaxi 的業者",
-              "summary_zh": "Uber 在倫敦推出該市首個商業 robotaxi 服務,搶先 Waymo。車輛採用英國新創 Wayve 開發的自動駕駛技術,初期仍配置安全駕駛員坐於駕駛座。",
-              "relevance": "自駕車隊商業化落地——自主系統部署主題",
-              "title": "Uber beats Waymo as first to launch robotaxis in London",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/news/988415/uber-wayve-robotaxi-london-launch",
-              "published": "2026-09-02T23:00:00Z"
-            },
-            {
-              "title_zh": "可解釋深度學習改善人類對自駕車的心智模型",
-              "summary_zh": "《Nature》發表研究提出 Concept-Wrapper Network,一種基於概念的解釋方法,並實際部署於一台自駕車上。研究顯示該方法提升了駕駛人理解與預測車輛行為的能力。",
-              "relevance": "自駕系統的可解釋性與人機互動——自主系統主題",
-              "title": "Explainable deep learning improves human mental models of self-driving cars",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10950-5",
-              "published": "2026-09-02T00:00:00Z"
-            },
-            {
-              "title_zh": "Wonderful 半年內估值翻倍以上,達 50 億美元",
-              "summary_zh": "Wonderful 表示將以 5.5 億美元 C 輪資金加速產品開發、擴充其 FDE 團隊,並滿足產品需求。公司估值在不到六個月內增加超過一倍至 50 億美元。",
-              "relevance": "具身/應用型 AI 新創資本流向——機器人與自主系統產業主題",
-              "title": "Wonderful more than doubles its valuation to $5B in under 6 months",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/",
-              "published": "2026-09-02T16:04:10Z"
-            },
-            {
-              "title_zh": "美國陸軍以 20 千瓦雷射擊落三架無人機",
-              "summary_zh": "美國陸軍表示其雷射系統可追蹤並摧毀敵對無人機,並在測試中以 20 千瓦雷射擊落三架無人機。",
-              "relevance": "無人機與反無人機自主系統——自主系統主題",
-              "title": "The Army just used a 20-kilowatt laser to take out three drones",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gadgets/2026/09/the-army-just-used-a-20-kilowatt-laser-to-take-out-three-drones/",
-              "published": "2026-09-02T13:04:59Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "以合成蛋白質組裝體自下而上打造 RNA 遞送載體",
-              "summary_zh": "《Nature》研究指出,由人工智慧設計的合成類病毒蛋白質架構,在將 RNA 遞送進細胞的能力上優於天然對應物,原因是克服了限制病毒演化的演化約束。",
-              "relevance": "AI 蛋白質設計用於核酸遞送——生技×AI 主題",
-              "title": "Creating bottom-up RNA transfer vehicles from synthetic protein assemblies",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10952-3",
-              "published": "2026-09-02T00:00:00Z"
-            },
-            {
-              "title_zh": "以人工智慧設計物理實驗",
-              "summary_zh": "《Nature》論文探討人工智慧在物理實驗設計中的應用,做法是在龐大的硬體配置空間中搜尋最佳解,並提出全新的實驗佈局,而非僅調整少數參數。",
-              "relevance": "AI 驅動的科學實驗設計——AI for Science 主題",
-              "title": "Designing physics experiments with artificial intelligence",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10898-6",
-              "published": "2026-09-02T00:00:00Z"
-            },
-            {
-              "title_zh": "晚年投予 semaglutide 可延緩老化並延長雌鼠壽命",
-              "summary_zh": "《Nature》研究顯示,雌鼠接受三個月 semaglutide 治療後,生理功能改善、老化標誌減弱,並調節了營養感測器與保守的老化遺傳調控因子。",
-              "relevance": "代謝與老化生物學標的——生技研究主題",
-              "title": "Late-life semaglutide treatment slows ageing and extends lifespan in female mice",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10940-7",
-              "published": "2026-09-02T00:00:00Z"
-            },
-            {
-              "title_zh": "發育中人類皮質膠細胞類型的 3D 表觀基因體",
-              "summary_zh": "《Nature》研究對妊娠中期人類皮質的四種膠細胞類型進行整合式 3D 表觀基因體分析,揭示細胞類型特異的調控元件與染色質交互作用。研究藉此闡明非編碼變異在神經精神疾病與人類特有皮質演化中的角色。",
-              "relevance": "多體學資料與調控元件圖譜——計算生物學主題",
-              "title": "3D epigenome of glial cell types in developing human cortex",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-10987-6",
-              "published": "2026-09-02T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "美國政府在著作權素材訓練 LLM 議題上站在 OpenAI 一方",
-              "summary_zh": "美國政府就《紐約時報》對 OpenAI 的著作權訴訟提出意見書,支持 AI 實驗室一方。文件寫道:「美國有強烈利益持續發展一個健全且具競爭力的人工智慧產業,為全球 AI 使用的實務與程序設定標準。」該訴訟於 2023 年 12 月提起,求償金額達「數十億美元」。",
-              "relevance": "AI 訓練資料的法律與政策環境——AI 產業監理主題",
-              "title": "US government sides with OpenAI on issue of training LLMs on copyrighted material",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
-              "published": "2026-09-02T17:09:06Z"
-            },
-            {
-              "title_zh": "川普政府可能被迫公開聯邦 AI 安全測試的秘密規則",
-              "summary_zh": "一起訴訟主張,川普政府對前沿 AI 模型的秘密審查可能掩蓋貪腐,並要求公開聯邦機構進行 AI 安全測試所依據的規則。",
-              "relevance": "前沿模型監理與評測制度——AI 政策主題",
-              "title": "Trump may be forced to reveal secret rules feds use for AI safety testing",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing/",
-              "published": "2026-09-02T17:58:33Z"
-            },
-            {
-              "title_zh": "Google 免於廣告業務拆分,但法官下令調整營運方式",
-              "summary_zh": "美國法院裁定 Google 在反壟斷案敗訴後不需出售其廣告交易平台。法官表示司法部已證明 Google 行為違法,但公司只須調整業務以有利於競爭者,而非進行拆分。",
-              "relevance": "大型科技平台反壟斷結果——科技產業結構主題",
-              "title": "Google spared from ad-business breakup, but judge orders changes to how it operates",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/02/google-spared-from-ad-business-breakup-but-judge-orders-changes-to-how-it-operates/",
-              "published": "2026-09-02T21:38:34Z"
-            },
-            {
-              "title_zh": "預算協議附帶條款:阻止對研究補助的政治控制",
-              "summary_zh": "美國國會通過的支出協議暫停了白宮管理及預算局(OMB)重寫研究經費分配方式的嘗試,該暫停期至 12 月。",
-              "relevance": "聯邦研究經費機制——科研資金環境主題",
-              "title": "Spending deal comes with a bonus: Blocking political control of grants",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/science/2026/09/budget-deal-puts-political-control-of-grants-on-hold-until-december/",
-              "published": "2026-09-02T21:20:03Z"
-            },
-            {
-              "title_zh": "Uber 裁員 10%,約 3,300 人",
-              "summary_zh": "Uber 裁減約 3,300 名員工,相當於全球員工數的 10%,目的是減少管理層級,並將更多資源投入共乘、外送與 robotaxi 部門。",
-              "relevance": "自駕車隊業者的資源配置——自主系統產業主題",
-              "title": "Uber is laying off 10% of staff, or 3,300 people",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/02/uber-is-laying-off-10-of-staff-or-3300-people/",
-              "published": "2026-09-02T12:14:35Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/the-2026-state-of-visual-and-physical-ai-a-survey-of-700-practitioners-on-data-mo"
       ]
     }
   ]
