@@ -2,6 +2,249 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-09-15",
+      "generated_utc": "2026-09-15T00:01:00Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 14,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 17,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 1
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 4,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 9,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "AI 基礎設施公司 Cornelis 募得 2.05 億美元,力圖撼動 Nvidia 主導地位",
+              "summary_zh": "Cornelis 完成 2.05 億美元募資,並發表名為 Active Compute Fabric 的網路技術產品。該產品鎖定 GPU 大量時間浪費在等待資料抵達的問題。",
+              "relevance": "互連網路與 GPU 資料搬移瓶頸——AI 基礎設施主題",
+              "title": "AI infrastructure company Cornelis raises $205M to chip away at Nvidia’s dominance",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/",
+              "published": "2026-09-14T20:07:37Z"
+            },
+            {
+              "title_zh": "Nvidia 執行長黃仁勳向川普表示「我們不會讓(AI 減速)發生」",
+              "summary_zh": "在 Anthropic 執行長 Dario Amodei 發表〈We Must Pace the Frontier〉一文呼籲放慢 LLM 開發速度後,Elon Musk 與 Sam Altman 表態支持,黃仁勳則表達不同立場。",
+              "relevance": "前沿模型開發節奏與算力需求論述——AI 基礎設施主題",
+              "title": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+              "published": "2026-09-14T21:51:02Z"
+            },
+            {
+              "title_zh": "川普政府廢除發電廠氣候污染規範",
+              "summary_zh": "美國環保署宣布計畫取消現行對發電廠溫室氣體排放量的所有標準。此舉出現在 AI、電動車與本土製造復甦推升電力需求之際。",
+              "relevance": "資料中心電力供給與能源政策——AI 基礎設施主題",
+              "title": "Trump throws out power plant climate pollution rules",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/news/995051/epa-power-plant-climate-pollution-rollback-ai-data-centers",
+              "published": "2026-09-14T20:45:00Z"
+            },
+            {
+              "title_zh": "微軟新版 AI「行為準則」要求模型不得駭入系統或欺騙人類",
+              "summary_zh": "微軟公布的行為準則列出其 AI 模型應遵守的通則,例如支援而非取代人類、促進人類福祉,並附上落實這些原則的具體安全限制。",
+              "relevance": "模型對齊與安全規範——AI 基礎設施主題",
+              "title": "Microsoft’s new AI ‘code of conduct’ tells models not to hack systems or trick humans",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
+              "published": "2026-09-14T16:27:53Z"
+            },
+            {
+              "title_zh": "AI 代理人揭發同儕作弊行為",
+              "summary_zh": "Google DeepMind 的實驗中,一群被要求解數學題的 AI 代理人分裂成對立陣營,部分代理人作弊時,其他代理人試圖阻止。研究者指此為首次觀察到的吹哨行為,可能影響自主代理人群體的對齊研究。",
+              "relevance": "多代理人系統與對齊——AI 基礎設施主題",
+              "title": "AI agents blew the whistle on their cheating colleagues",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
+              "published": "2026-09-14T16:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "Valve 的 VR 計畫撞上現實",
+              "summary_zh": "Steam Frame 頭戴裝置售價 1,059 美元。Valve 表示原本設定要推出價格親民得多的裝置,但全球 RAM 市場與儲存市場的狀況對其造成與其他業者相同的衝擊。",
+              "relevance": "記憶體與儲存價格上漲外溢至終端裝置——記憶體約束主題",
+              "title": "Valve’s virtual reality plans hit actual reality",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/995055/valve-steam-frame-price-ram-impact",
+              "published": "2026-09-14T19:48:06Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "創辦人的成本控管執念造就 Unitree 在廉價人形機器人的領先",
+              "summary_zh": "報導指 Unitree 創辦人王興興以微觀管理方式帶領公司在低價人形機器人取得領先地位,並提出其領導風格能否隨規模擴張的問題。",
+              "relevance": "人形機器人成本結構與量產——機器人主題",
+              "title": "Founder’s cost-cutting obsession drove Unitree lead in cheap humanoid robots",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/",
+              "published": "2026-09-14T19:38:46Z"
+            },
+            {
+              "title_zh": "Waymo 在拉斯維加斯開放 robotaxi 服務",
+              "summary_zh": "Waymo 於拉斯維加斯啟動商業 robotaxi 服務,為其第 15 個商業營運市場。",
+              "relevance": "自駕車隊商業化擴張——自主系統主題",
+              "title": "Waymo opens robotaxi service in Las Vegas",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/14/waymo-opens-robotaxi-service-in-las-vegas/",
+              "published": "2026-09-14T16:04:16Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "藥廠機密資料大幅強化 AI 蛋白質模型",
+              "summary_zh": "一套以逾 20,000 個來自製藥公司的蛋白質結構訓練的 AI 系統,表現優於僅使用公開資料的 AlphaFold 類模型。",
+              "relevance": "蛋白質結構預測與專有訓練資料——生技×AI 主題",
+              "title": "Drug firms’ secret data supercharge AI protein models",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02882-x",
+              "published": "2026-09-14T00:00:00Z"
+            },
+            {
+              "title_zh": "「多功能」腦部植入物即時轉譯語音與手勢",
+              "summary_zh": "一款神經裝置運用人工智慧讀取腦部活動,可同時解讀使用者意圖中的詞語與手勢。",
+              "relevance": "腦機介面與 AI 解碼——生技×AI 主題",
+              "title": "‘Multifunctional’ brain implant translates speech and gestures in real time",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02895-6",
+              "published": "2026-09-14T00:00:00Z"
+            },
+            {
+              "title_zh": "編碼型與非遺傳型蛋白質變異體擴展人類功能性蛋白質體",
+              "summary_zh": "《Nature》刊出研究,指編碼型與非遺傳型蛋白質變異體擴展了人類功能性蛋白質體的範圍。",
+              "relevance": "蛋白質體圖譜——生技×AI 的資料基礎主題",
+              "title": "Encoded and non-genetic protein variants expand human functional proteome",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-11124-z",
+              "published": "2026-09-14T00:00:00Z"
+            },
+            {
+              "title_zh": "捐贈肝臟可被回復至生物學上更年輕的狀態",
+              "summary_zh": "報導指器官自捐贈者體內取出後即開始劣化,外科醫師通常以保存液沖洗、裝袋冰存,並僅有數小時可移植至受贈者體內;文中介紹另一種正在成長的替代作法。",
+              "relevance": "器官保存與生物年齡逆轉——生技主題",
+              "title": "Donated livers can be made biologically younger",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/09/14/1144010/donated-livers-can-be-made-biologically-younger/",
+              "published": "2026-09-14T16:11:42Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "AI 產業轉向末日論,接下來會如何?",
+              "summary_zh": "Anthropic 執行長 Dario Amodei 發表文章呼籲為 LLM 開發速度踩煞車,理由包括他所認為該技術帶來的迫近風險。文章檢視此一產業論述轉向的後續影響。",
+              "relevance": "AI 開發步調與監管論述——總體環境主題",
+              "title": "The AI industry has taken a doomer turn. What now?",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
+              "published": "2026-09-14T17:54:22Z"
+            },
+            {
+              "title_zh": "大型科技公司的 AI 減速:安全協議還是卡特爾?",
+              "summary_zh": "OpenAI 的 Sam Altman、Anthropic 的 Dario Amodei、Google DeepMind 共同創辦人 Demis Hassabis 與 Elon Musk 在週末大致同意放慢 AI 開發,並宣稱目標是「調節前沿步調」;懷疑者則指出其中可能存在其他動機。",
+              "relevance": "前沿實驗室協調行為與潛在反壟斷爭議——總體環境主題",
+              "title": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+              "published": "2026-09-14T22:59:41Z"
+            },
+            {
+              "title_zh": "「便宜得離譜」:太陽能持續走揚",
+              "summary_zh": "報導指中國製太陽能板在全球各地屋頂普及,正在改變大型公用事業業者面對的基本condition。",
+              "relevance": "電力供給結構變化——資料中心能源的總體背景",
+              "title": "\"Offensively cheap\": Solar power is looking up",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/09/offensively-cheap-solar-power-is-looking-up/",
+              "published": "2026-09-14T16:29:18Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
+      ]
+    },
+    {
       "date": "2026-09-14",
       "generated_utc": "2026-09-13T23:40:13Z",
       "status": "published",
@@ -695,226 +938,6 @@
       ],
       "warnings": [
         "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922"
-      ]
-    },
-    {
-      "date": "2026-09-08",
-      "generated_utc": "2026-09-07T23:48:59Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 59,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 7,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 1,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 3,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 2
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 1,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 6,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "一座 32 億美元 AI 資料中心背後的複雜企業網絡",
-              "summary_zh": "報導剖析一座造價 32 億美元的 AI 資料中心，背後牽涉多家公司共同參與開發。文章提出當專案出現問題時責任歸屬不清的課題。",
-              "relevance": "AI 資料中心建設與治理——AI 基礎設施主題",
-              "title": "The complex corporate web behind a $3.2 billion AI data center",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
-              "published": "2026-09-07T11:00:03Z"
-            },
-            {
-              "title_zh": "偉創力砸 44 億美元收購 EPC Power，下一步攻 SST",
-              "summary_zh": "偉創力（Flex）宣布以 44 億美元收購電力轉換解決方案業者 EPC Power，擴大 AI 資料中心相關佈局。下一步將切入 SST（固態變壓器）。",
-              "relevance": "資料中心電力供應鏈整併——AI 基礎設施電力主題",
-              "title": "偉創力砸 44 億美元收購 EPC Power，下一步攻 SST",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/07/flex-acquires-epc-power-4-4-billion-targets-sst/",
-              "published": "2026-09-07T10:20:41Z"
-            },
-            {
-              "title_zh": "Anthropic 的 AI 僅用 11 天「形式化」費馬最後定理的證明",
-              "summary_zh": "Nature 報導 Claude 產出一份 1,300 萬行、可由電腦驗證的費馬最後定理證明。報導稱此為數學領域的重要里程碑。",
-              "relevance": "大型模型的形式化推理能力——AI 能力評估主題",
-              "title": "Anthropic AI ‘formalizes’ proof of Fermat’s last theorem in just 11 days",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02822-9",
-              "published": "2026-09-07T00:00:00Z"
-            },
-            {
-              "title_zh": "《西雅圖時報》與《Newsday》控告 OpenAI 與 Microsoft 侵權",
-              "summary_zh": "兩家媒體指控 OpenAI 未經授權將其新聞報導用於訓練 AI 模型，且模型在回應使用者查詢時常重現其報導段落。此案與先前其他新聞機構提起的訴訟性質類似。",
-              "relevance": "訓練資料版權訴訟——AI 模型資料來源主題",
-              "title": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
-              "published": "2026-09-06T23:36:04Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "你的手機變貴的真正原因",
-              "summary_zh": "報導指出記憶體成本飆升已成為手機價格上漲的主因，並稱記憶體短缺目前尚看不到結束跡象。文中將此現象稱為「chipflation」，並提及 Apple 新一代 iPhone 可能因此調漲售價。",
-              "relevance": "DRAM／記憶體供給緊縮——記憶體約束主題",
-              "title": "The real reason your phone is getting more expensive",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/988225/ram-shortage-supply-chain-micron-apple-iphone",
-              "published": "2026-09-07T12:00:00Z"
-            },
-            {
-              "title_zh": "解鎖 3D 堆疊挑戰 HBM 痛點！南亞科旗下補丁科 9/16 以 740 元登興櫃",
-              "summary_zh": "南亞科轉投資的補丁科技預計 9 月 16 日以每股參考價 740 元登錄興櫃，聚焦 3D 堆疊相關技術與 HBM 痛點。董事長丁達剛提及目前 NRE（委託設計）業務狀況。",
-              "relevance": "3D 堆疊與 HBM 供應鏈——記憶體約束主題",
-              "title": "解鎖 3D 堆疊挑戰 HBM 痛點！南亞科旗下補丁科 9/16 以 740 元登興櫃",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/09/07/processor/",
-              "published": "2026-09-07T09:25:00Z"
-            },
-            {
-              "title_zh": "SEMICON Taiwan 2026：台積電領銜矽光子論壇，CPO 預計下半年邁入量產",
-              "summary_zh": "SEMICON Taiwan 2026 於 9 月 2～4 日在台北南港舉行，本屆主題為「Trans…」，台積電領銜矽光子論壇。報導指出 CPO（共同封裝光學）預計於下半年進入量產。",
-              "relevance": "矽光子與 CPO 封裝——AI 資料中心互連頻寬主題",
-              "title": "SEMICON Taiwan 2026：台積電領銜矽光子論壇，CPO 預計下半年邁入量產",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/08/semicon-taiwan-2026-tsmc-silicon-photonics-forum-cpo-mass-production-h2/",
-              "published": "2026-09-07T23:00:03Z"
-            },
-            {
-              "title_zh": "封測及測試介面廠 8 月營收創新高，AI 和 HPC 晶片助攻",
-              "summary_zh": "力成、京元電子、矽格、穎崴、漢民測試等封測廠與測試介面廠 8 月營收均創單月新高。報導將成長歸因於 AI 與 HPC 晶片需求。",
-              "relevance": "先進封裝與測試產能——AI 晶片供應鏈主題",
-              "title": "封測及測試介面廠 8 月營收創新高，AI 和 HPC 晶片助攻",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/09/07/osat-test-interface-firms-record-august-revenue-ai-hpc-chips/",
-              "published": "2026-09-07T10:00:30Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "AI 破解竹節蟲移動密碼，六足機器人斷腳也能穿梭崎嶇災區",
-              "summary_zh": "日本東北大學與泰國 VISTEC 研究團隊開發出以人工智慧剖析生物步態的技術。該技術應用於六足機器人，使其在缺損肢體的情況下仍能行走於崎嶇地形。",
-              "relevance": "仿生步態學習與容錯運動控制——機器人自主系統主題",
-              "title": "AI 破解竹節蟲移動密碼，六足機器人斷腳也能穿梭崎嶇災區",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/08/six-legged-ai-robot/",
-              "published": "2026-09-07T23:40:06Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "以細胞尺度探測蛋白質體",
-              "summary_zh": "Nature 報導指出，快速的技術進展讓研究人員能在單一細胞中鑑定數千種蛋白質。這些方法正揭示發育與疾病背後的機制。",
-              "relevance": "單細胞蛋白質體大規模量測資料——生技×AI 資料層主題",
-              "title": "Probing the proteome at cellular scale",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02805-w",
-              "published": "2026-09-07T00:00:00Z"
-            },
-            {
-              "title_zh": "Novartis 的 Lp(a) 藥物在備受關注的三期試驗中未能降低心血管風險",
-              "summary_zh": "Novartis 與 Ionis 合作、旨在降低 Lp(a) 濃度的藥物，未能降低患者發生心臟病、中風或其他主要心血管事件的風險。這是首個針對 Lp(a) 此一分子的後期臨床試驗結果。",
-              "relevance": "標靶生物標記的臨床驗證結果——生技藥物開發主題",
-              "title": "Novartis Lp(a) drug fails to lower cardiovascular risk in closely watched ph. 3 trial",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/novartis-lpa-drug-fails-lower-cardiovascular-risk-closely-watched-ph-3-trial",
-              "published": null
-            },
-            {
-              "title_zh": "更多三期試驗喊停，Novo 的 CKD 計畫大藥希望消退",
-              "summary_zh": "Novo Nordisk 再放棄兩項 ziltivekimab 的三期試驗。該分子曾被分析師視為潛在重磅藥物，前景進一步受挫。",
-              "relevance": "後期臨床試驗終止——生技研發風險主題",
-              "title": "Novo’s blockbuster hopes for CKD program dwindle after more phase 3 trials scrapped",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/novos-blockbuster-hopes-ckd-program-dwindle-after-more-phase-3-trials-scrapped",
-              "published": null
-            },
-            {
-              "title_zh": "MIT 研究揭密細胞抗鐵防線，多胺扮演「分子儲庫」封鎖致命鐵離子",
-              "summary_zh": "麻省理工學院與 Whitehead 生物醫學研究所的研究發現細胞內多胺可作為「分子儲庫」，封存具毒性的鐵離子。研究揭示細胞如何馴服危險金屬。",
-              "relevance": "細胞金屬恆定分子機制——生物機制研究主題",
-              "title": "MIT 研究揭密細胞抗鐵防線，多胺扮演「分子儲庫」封鎖致命鐵離子",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/08/mystery-cells-tame-dangerous-metals-polyamines-molecular-reservoirs-iron-toxicity/",
-              "published": "2026-09-07T23:20:46Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5460332/DAFEFF7A68EE900DEA7A14356089B553?utm_source=IEEE&utm_medium=site&utm_campaign=922",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/efficient-and-accurate-prediction-of-cosite-isolation-on-large-platforms/"
       ]
     }
   ]
