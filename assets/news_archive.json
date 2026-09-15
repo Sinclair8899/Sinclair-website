@@ -2,6 +2,201 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-09-16",
+      "generated_utc": "2026-09-15T23:45:47Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 14,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 2,
+          "excluded": 1
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 4,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 12,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "AI 推論革命已經到來",
+              "summary_zh": "IEEE Spectrum 指出,自 2020 年以來 AI 發展主軸是訓練更大的模型,大型語言模型參數從數百萬膨脹到數兆;報導以 GPT-3 在知識與推理基準上答對 43.9%、GPT-4o 四年後達到 88.7% 為例,說明重心正轉向推論硬體。",
+              "relevance": "推論硬體與工作負載轉移——AI 基礎設施主題",
+              "title": "The AI Inference Revolution Is Here",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/inference-hardware-revolution",
+              "published": "2026-09-15T13:00:05Z"
+            },
+            {
+              "title_zh": "獨家:付費使用前沿 AI 模型換來 4 個月領先,但成本高出 5 倍",
+              "summary_zh": "Ars Technica 搶先取得 Mozilla 報告,內容分析低成本開源模型在能力上追趕前沿模型的情況。報告指出付費前沿模型帶來約四個月的領先幅度,而成本為五倍。",
+              "relevance": "開源模型與前沿模型能力差距——AI 基礎設施與算力成本主題",
+              "title": "Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+              "published": "2026-09-15T12:00:41Z"
+            },
+            {
+              "title_zh": "到 2035 年美國資料中心天然氣用量恐超過德國與日本總和",
+              "summary_zh": "報導指出,AI 帶動的需求可能使美國資料中心成為全球最大的天然氣消費者之一,到 2035 年用量超越德國與日本合計。",
+              "relevance": "資料中心能源需求——AI 基礎設施電力約束主題",
+              "title": "US data centers could consume more natural gas than Germany and Japan combined by 2035",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
+              "published": "2026-09-15T18:29:20Z"
+            },
+            {
+              "title_zh": "AI 兆美元豪賭的關鍵所在",
+              "summary_zh": "MIT Technology Review 報導賓州大學華頓商學院金融學教授 Jessica Wachter 對 AI 未來數年經濟影響的評估,她以少數幾家大型企業投入巨額 AI 基礎設施投資這項「顯著事實」作為分析起點。",
+              "relevance": "AI 資本支出與投資風險——AI 基礎設施總體主題",
+              "title": "What’s at stake in AI’s trillion-dollar gamble",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
+              "published": "2026-09-15T10:00:00Z"
+            },
+            {
+              "title_zh": "AI 資料中心熱潮與曾受重工業衝擊的城市正面相撞",
+              "summary_zh": "反對資料中心興建的聲浪已蔓延至費城,當地官員曾提議在一個已受廢棄煉油廠影響的社區興建資料中心。另有 NYT/Siena 民調顯示 61% 受訪選民反對為 AI 興建資料中心。",
+              "relevance": "資料中心選址與地方阻力——AI 基礎設施部署主題",
+              "title": "The AI data center boom is colliding with cities scarred by big industry",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
+              "published": "2026-09-15T21:47:38Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Agility 新款人形機器人會為避免傷害人類同事而停步、蹲下",
+              "summary_zh": "Agility Robotics 發表的新人形機器人具備停止與蹲下等避讓動作,使機器人可在不需實體圍籠與安全護欄的環境中作業。",
+              "relevance": "人機協作安全機制——機器人與自主系統主題",
+              "title": "Agility’s new humanoid robot will stop, squat to avoid harming human coworkers",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers/",
+              "published": "2026-09-15T18:33:02Z"
+            },
+            {
+              "title_zh": "Anthropic 早期員工與前 METR 營運長找到約束失控 AI 代理的方法",
+              "summary_zh": "新創公司 Artificial Intelligence Underwriting Company(AIUC)完成 4,000 萬美元 A 輪募資,由 Ribbit Capital 領投,First Harmonic 參與投資。",
+              "relevance": "AI 代理行為約束與承保機制——自主系統治理主題",
+              "title": "Early Anthropic hire, former METR COO have found a way to rein in rogue AI agents",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
+              "published": "2026-09-15T13:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "AI 模型需要更多生物學資料,OpenAI 出錢創造",
+              "summary_zh": "MIT Technology Review 報導 OpenAI 正出資產生生物學資料以供 AI 模型使用。文中提及政策分析師 Ruxandra Teslo 曾提議透過競標破產生技公司的資產,取得法規申報文件、製造策略與安全資料等通常屬於商業機密的資訊。",
+              "relevance": "生物資料取得與模型訓練——生技×AI 主題",
+              "title": "AI models need more data about biology, and OpenAI is paying to create it",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
+              "published": "2026-09-15T12:00:00Z"
+            },
+            {
+              "title_zh": "Mayo Clinic 攜手 Thermo Fisher 成立生醫資料公司 Precure",
+              "summary_zh": "Mayo Clinic 與 Thermo Fisher Scientific 合作成立新組織,專注於收集大規模資料,用於理解疾病並開發新療法、醫材與診斷產品。",
+              "relevance": "大規模生醫資料平台——生技×AI 主題",
+              "title": "Mayo Clinic teams with Thermo Fisher to form biomedical data group Precure",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/mayo-clinic-teams-thermo-fisher-form-biomedical-data-group-precure",
+              "published": null
+            },
+            {
+              "title_zh": "FDA 推出試辦計畫加速進度緩慢的一期臨床試驗",
+              "summary_zh": "FDA 開放新藥臨床試驗申請(IND)加速審查的試辦計畫,目標是讓美國一期臨床試驗速度與中國、澳洲相當。",
+              "relevance": "臨床試驗法規流程——生技研發環境主題",
+              "title": "FDA launches pilot program to speed up sluggish phase 1 trials",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/fda-launches-pilot-program-speed-sluggish-phase-1-trials",
+              "published": null
+            },
+            {
+              "title_zh": "遭拒一年後,FDA 核准 Telix 的 Pixclara,首個腦癌 FET-PET 顯影藥物",
+              "summary_zh": "FDA 核准了史上第一個神經膠質瘤藥物顯影診斷產品,距離該藥最初被拒已超過一年。",
+              "relevance": "影像診斷產品審查——生技×AI 醫學影像主題",
+              "title": "After rejection, FDA approves Telix’s Pixclara, the first FET-PET imaging drug for brain cancer",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/after-rejection-fda-approves-telixs-pixclara-first-fet-pet-imaging-drug-brain-cancer",
+              "published": null
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
+      ]
+    },
+    {
       "date": "2026-09-15",
       "generated_utc": "2026-09-15T00:01:00Z",
       "status": "published",
