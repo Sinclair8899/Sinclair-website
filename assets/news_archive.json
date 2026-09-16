@@ -2,6 +2,258 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-09-17",
+      "generated_utc": "2026-09-16T23:54:42Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 15,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 1
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Apple 可能重返伺服器市場以搶進 AI 熱潮",
+              "summary_zh": "據 The Information 報導,Apple 計畫重返伺服器業務,並可能與 Nvidia 合作。Apple 自 2011 年結束 Xserve 產品線後,長期將企業級機器交由其他製造商生產。",
+              "relevance": "資料中心運算硬體供應鏈——AI 基礎設施主題",
+              "title": "Apple might make servers again to cash in on the AI rush",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
+              "published": "2026-09-16T17:20:29Z"
+            },
+            {
+              "title_zh": "伊朗攻擊 Amazon 資料中心造成客戶資料永久遺失",
+              "summary_zh": "Ars Technica 報導,針對 Amazon 資料中心的軍事攻擊造成客戶資料永久遺失。報導指出戰爭造成的損害超出 AWS 服務設計可承受的範圍。",
+              "relevance": "資料中心實體韌性與地緣風險——AI 基礎設施主題",
+              "title": "Iran strikes on Amazon data centers caused permanent loss of customer data",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/09/iran-strikes-on-amazon-data-centers-caused-permanent-loss-of-customer-data/",
+              "published": "2026-09-16T16:40:11Z"
+            },
+            {
+              "title_zh": "AI 資料中心的電子廢棄物問題龐大且持續擴大",
+              "summary_zh": "一份新報告指出,AI 熱潮產生的電子廢棄物規模遠被低估,到 2050 年可能足以裝滿 2,300 萬個貨櫃。該估計值顯著高於先前的研究。",
+              "relevance": "資料中心建置的硬體生命週期——AI 基礎設施主題",
+              "title": "The AI data center e-waste problem is huge — and getting bigger",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
+              "published": "2026-09-16T20:40:46Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "為 AI 打造材料基礎",
+              "summary_zh": "MIT Technology Review 指出,AI 熱潮正轉化為材料挑戰:半導體與資料中心在效能、散熱管理、電效率與可靠度上逼近物理極限,對新材料形成新需求。",
+              "relevance": "先進封裝與散熱材料限制——半導體與 HBM 主題",
+              "title": "Building the materials foundation for AI",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
+              "published": "2026-09-16T12:47:34Z"
+            },
+            {
+              "title_zh": "單晶奈米薄膜的異質光子整合",
+              "summary_zh": "《Nature》發表結合先進磊晶與層轉移技術的架構,透過單晶奈米薄膜的異質光子整合,為矽與氮化矽光子平台加入新功能,展示超高效率的電光與磁光調變。",
+              "relevance": "矽光子整合製程——半導體先進封裝與互連主題",
+              "title": "Heterogeneous photonic integration of single-crystalline nanomembranes",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-11000-w",
+              "published": "2026-09-16T00:00:00Z"
+            },
+            {
+              "title_zh": "電致發光光阻將微影製程微縮延伸至 OLED",
+              "summary_zh": "《Nature》報導以原子轉移自由基聚合合成的電致發光光阻,可直接以紫外光與電子束微影圖案化,用於製作單體式多色 OLED 微畫素陣列。",
+              "relevance": "微影製程與材料——半導體製造主題",
+              "title": "Electroluminescent photoresists extending lithographic scaling to OLEDs",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-11042-0",
+              "published": "2026-09-16T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "May Mobility 以 14 億美元 SPAC 交易上市",
+              "summary_zh": "輕資產 robotaxi 業者 May Mobility 宣布透過 SPAC 交易上市,估值 14 億美元。該交易可為公司帶來逾 3 億美元資金。",
+              "relevance": "自駕車商業化與資本市場——機器人與自主系統主題",
+              "title": "May Mobility is going public in a $1.4B SPAC deal",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/16/may-mobility-is-going-public-in-a-1-4b-spac-deal/",
+              "published": "2026-09-16T15:27:13Z"
+            },
+            {
+              "title_zh": "前 Waymo 財務長轉任自駕新創 Wayve",
+              "summary_zh": "今年 1 月卸任 Alphabet 旗下自駕公司 Waymo 財務長的 Elisa de Martel,將加入自駕新創 Wayve,並駐點矽谷。",
+              "relevance": "自駕產業人才流動——機器人與自主系統主題",
+              "title": "Former Waymo CFO jumps to self-driving startup Wayve",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/16/former-waymo-cfo-jumps-to-self-driving-startup-wayve/",
+              "published": "2026-09-16T19:02:49Z"
+            },
+            {
+              "title_zh": "重新思考 AI 時代的機器人安全",
+              "summary_zh": "IEEE Spectrum 專文指出,傳統機器人安全探討的是機器故障時能否維持安全;Physical AI 則提出更難的問題:當攻擊者改變機器的感知、決策或行為,且外觀上看不出任何失效時,機器能否維持安全。現代機器人透過多重感測模態進行感知。",
+              "relevance": "具身 AI 的安全與資安——機器人與自主系統主題",
+              "title": "Rethinking Robot Safety in the Age of AI",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/physical-ai-robot-cybersecurity-vicone",
+              "published": "2026-09-16T16:51:02Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "把研究論文重新想像成互動且可靠的 AI 代理",
+              "summary_zh": "《Nature》發表的 Paper2Agent 將論文、程式碼與資料轉換為基於 Model Context Protocol 的工具調用系統,使論文成為互動式 AI 代理,可重現原始結果、回答新的科學問題並協作產生新見解。",
+              "relevance": "科學代理與 MCP 工具鏈——生技×AI 主題",
+              "title": "Reimagining research papers as interactive and reliable AI agents",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-11044-y",
+              "published": "2026-09-16T00:00:00Z"
+            },
+            {
+              "title_zh": "以人源類器官在小鼠中進行發育性異種皮質化",
+              "summary_zh": "《Nature》研究以人類神經元進行異種皮質化,使小鼠可在迴路與行為層級分析神經發育。相關報導指出該小鼠近半腦容積已被人類細胞取代。",
+              "relevance": "人源神經組織平台——生技×AI 的實驗模型主題",
+              "title": "Developmental xenocortication using human-derived organoids in mice",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-11032-2",
+              "published": "2026-09-16T00:00:00Z"
+            },
+            {
+              "title_zh": "用於 X 光到體積影像配準的快速病人專屬神經網路",
+              "summary_zh": "《Nature》發表 xvr 方法,讓泛解剖部位的 2D/3D 剛體影像配準能為廣泛的臨床與研究社群所用。",
+              "relevance": "醫學影像深度學習——生技×AI 主題",
+              "title": "Rapid patient-specific neural networks for X-ray to volume registration",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-11045-x",
+              "published": "2026-09-16T00:00:00Z"
+            },
+            {
+              "title_zh": "粒線體分裂因子感測並調控鐵死亡",
+              "summary_zh": "《Nature》研究指出粒線體—過氧化體分裂接頭蛋白 MFF 是選擇性的促鐵死亡媒介,並開發 MFF–SPARK 感測器,可進行鐵死亡增敏化合物的高內涵篩選並找出 MFF 的上游調控因子。",
+              "relevance": "高通量篩選平台——生技×AI 的藥物發現主題",
+              "title": "Mitochondrial fission factor senses and governs ferroptosis",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-11020-6",
+              "published": "2026-09-16T00:00:00Z"
+            },
+            {
+              "title_zh": "建立隨機背景以理解配體最佳化",
+              "summary_zh": "《Nature》描述一種方法,用以提升效率並為配體效價最佳化建立背景期望值。",
+              "relevance": "配體最佳化基準——生技×AI 的藥物設計主題",
+              "title": "Development of a random background to understand ligand optimization",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-11013-5",
+              "published": "2026-09-16T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Anthropic 與 OpenAI 想在內部設置安全評估者,但他們真的獨立嗎?",
+              "summary_zh": "Anthropic 與 OpenAI 計畫在自家 AI 實驗室內部嵌入獨立安全評估者。研究人員歡迎這種前所未有的存取權限,但警告有意義的監督需要透明度、獨立性,以及最終的法規規範。",
+              "relevance": "AI 治理與評估機制——AI 產業政策主題",
+              "title": "Anthropic and OpenAI want to embed safety evaluators. Will they really be independent?",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent/",
+              "published": "2026-09-16T21:07:24Z"
+            },
+            {
+              "title_zh": "AI 的兆美元豪賭與 OpenAI 的生物資料布局",
+              "summary_zh": "MIT Technology Review 報導中,賓州大學金融學教授 Jessica Wachter 評估 AI 對未來數年經濟的影響;同日內容亦涵蓋 OpenAI 的生物資料計畫。",
+              "relevance": "AI 資本支出與總體經濟——宏觀主題",
+              "title": "The Download: AI’s trillion-dollar gamble and OpenAI’s biology data bid",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/09/16/1144205/the-download-ai-trillion-dollar-build-openai-biological-data/",
+              "published": "2026-09-16T12:10:00Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
+      ]
+    },
+    {
       "date": "2026-09-16",
       "generated_utc": "2026-09-15T23:45:47Z",
       "status": "published",
