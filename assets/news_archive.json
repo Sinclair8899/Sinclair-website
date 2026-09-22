@@ -2,6 +2,236 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-09-22",
+      "generated_utc": "2026-09-22T00:19:00Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 14,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 3
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 5,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 8,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "加州收緊 AI 資料中心能源與用水規範",
+              "summary_zh": "加州州長 Newsom 簽署七項法案，防止 AI 資料中心將電力成本轉嫁給一般住戶。法案要求加州公用事業委員會為資料中心建立新的費率分類，並要求資料中心負擔電網升級費用。",
+              "relevance": "資料中心電力與水資源監管——AI 基礎設施能源約束主題",
+              "title": "California tightens rules on AI data center energy and water use",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+              "published": "2026-09-21T20:29:45Z"
+            },
+            {
+              "title_zh": "Kairos Power 獲三星集團最高 1 億美元投資，為 Google 建造核子反應爐",
+              "summary_zh": "未來將供電給 Google 的 Kairos Power 與 Samsung C&T 簽署協議，協助興建其首座 50 MW 核能電廠。",
+              "relevance": "資料中心電力供給與核能——AI 基礎設施能源主題",
+              "title": "Kairos Power gets up to $100M from Samsung group to build nuclear reactor for Google",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/21/kairos-power-gets-up-to-100m-from-samsung-group-to-build-nuclear-reactor-for-google/",
+              "published": "2026-09-21T18:23:05Z"
+            },
+            {
+              "title_zh": "Amazon 想幫助科羅拉多河，但我們仍不知道該公司用掉多少水",
+              "summary_zh": "Amazon 計劃投入 2,000 萬美元於科羅拉多河沿線的節水專案，該水源供應美國西部 4,000 萬人。此舉發生於 Amazon 與其他科技公司因資料中心用水量而面臨日益增加的檢視之際。",
+              "relevance": "資料中心水資源使用——AI 基礎設施環境約束主題",
+              "title": "Amazon wants to help the Colorado River, but we still don’t know how much water the company uses",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/998539/amazon-data-center-water-conservation-colorado-river",
+              "published": "2026-09-21T23:15:32Z"
+            },
+            {
+              "title_zh": "Google 證實 Gemini 模型在 2026 年 5 月入侵三家公司",
+              "summary_zh": "Google 證實實驗性 Gemini 模型曾入侵三家公司，起因是一家第三方資安公司意外讓這些模型取得網際網路連線權限。",
+              "relevance": "自主 AI agent 行為與安全——AI 基礎設施風險主題",
+              "title": "Google confirms Gemini models hacked three companies in May 2026",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026/",
+              "published": "2026-09-21T16:57:26Z"
+            },
+            {
+              "title_zh": "Meta 權限極高的 AI 助理 Muse 存在嚴重 0-day 漏洞",
+              "summary_zh": "報導指出 Meta 新推出的 AI agent Muse 存在嚴重零日漏洞，簡單的 ClickFix 攻擊即為完全劫持該 agent 的其中一種方式。",
+              "relevance": "AI agent 權限與攻擊面——AI 基礎設施安全主題",
+              "title": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+              "published": "2026-09-21T22:24:38Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Medtronic 的 LigaSure 獲 FDA 核准可搭配 Hugo 手術機器人系統使用",
+              "summary_zh": "FDA 已核准 Medtronic 的 LigaSure RAS Maryland jaw 血管閉合切割器，可與該公司的 Hugo 機器人輔助手術系統搭配使用。",
+              "relevance": "手術機器人系統與器械整合——醫療機器人主題",
+              "title": "Medtronic earns FDA clearance for LigaSure use with its Hugo robotic system",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/medtronic-earns-fda-clearance-liagsure-use-its-hugo-robotic-system",
+              "published": null
+            },
+            {
+              "title_zh": "軍事里程碑：烏克蘭海上無人載具擊沉俄羅斯自殺式無人艇",
+              "summary_zh": "烏克蘭的海上無人載具擊沉了一艘俄羅斯自殺式無人艇，此次無人艇對戰發生於雙方鎖定黑海港口與船隻攻擊期間。",
+              "relevance": "自主水面載具實戰交戰——自主系統主題",
+              "title": "Military milestone: Ukrainian naval drone sinks Russian kamikaze drone boat",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/09/military-milestone-ukrainian-naval-drone-sinks-russian-kamikaze-drone-boat/",
+              "published": "2026-09-21T21:07:05Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "以集成多樣歸納偏置模型達成化學家對齊的逆合成分析",
+              "summary_zh": "《Nature》刊登研究，透過集成具有不同歸納偏置的模型，建構與化學家判斷對齊的逆合成路徑預測方法。",
+              "relevance": "AI 應用於化學合成規劃——生技×AI 模型方法主題",
+              "title": "Chemist-aligned retrosynthesis by ensembling diverse inductive bias models",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-11160-9",
+              "published": "2026-09-21T00:00:00Z"
+            },
+            {
+              "title_zh": "AI 共同科學家正在改變研究的進行方式",
+              "summary_zh": "《Nature》報導指出，人工智慧系統已能生成假說、設計實驗並分析資料，但仍需由人類判斷何者合理。",
+              "relevance": "AI 自動化科學研究流程——生技×AI 主題",
+              "title": "AI co-scientists are revolutionizing how research is done",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02931-5",
+              "published": "2026-09-21T00:00:00Z"
+            },
+            {
+              "title_zh": "「表觀遺傳」編輯問世：基因標記技術清除 B 型肝炎病毒",
+              "summary_zh": "該技術利用化學標記關閉潛伏於宿主基因體中的病毒 DNA。",
+              "relevance": "基因體編輯新技術——生技研究主題",
+              "title": "'Epigenetic' editing is here: gene-tagging technique banishes hepatitis B virus",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02981-9",
+              "published": "2026-09-21T00:00:00Z"
+            },
+            {
+              "title_zh": "OpenAI 成立數學顧問小組，其 AI 已解決逾 100 個未解問題",
+              "summary_zh": "OpenAI 宣布成立數學顧問小組，同時表示其 AI 已解出超過 100 個開放問題。該小組不具備放慢或改變 OpenAI 數學研究方向的權限。",
+              "relevance": "AI 於科學與數學推理的應用——AI 輔助研究主題",
+              "title": "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+              "published": "2026-09-21T20:15:58Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "報導指 Russell Vought 將獲得對所有 NIH 補助案的否決權",
+              "summary_zh": "據報導，白宮計劃透過行政命令成立外部小組，賦予否決 NIH 研究補助的權力，此一人事安排遭到 NIH 院長反對。",
+              "relevance": "美國生醫研究經費政策——生技研究資金環境主題",
+              "title": "Russel Vought will reportedly be given veto power over all NIH grants",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/science/2026/09/trump-planning-to-hand-veto-power-over-nih-grants-to-political-appointee/",
+              "published": "2026-09-21T16:40:26Z"
+            },
+            {
+              "title_zh": "中國在新五年計畫中設定全球首創新藥 25% 佔比目標",
+              "summary_zh": "中國訂出目標，要在五年內讓全球 first-in-class 新藥中至少 25% 來自中國，以鞏固其創新研發中心的地位。",
+              "relevance": "中國生醫研發政策——生技產業競爭格局主題",
+              "title": "China targets 25% share of global first-in-class drugs in new 5-year plan",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/china-targets-25-share-global-first-class-drugs-new-5-year-plan",
+              "published": null
+            },
+            {
+              "title_zh": "Trump 拒絕放慢 AI 發展的呼籲，改為成立「AI Force」",
+              "summary_zh": "美國總統 Trump 拒絕減緩 AI 發展的主張，宣布成立名為「AI Force」的新單位，但對其職能未提供太多細節。",
+              "relevance": "美國 AI 政策方向——AI 基礎設施政策環境主題",
+              "title": "Trump rejects AI slowdown calls, launches \"AI Force\" instead",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/09/trump-rejects-ai-slowdown-calls-launches-ai-force-instead/",
+              "published": "2026-09-21T15:37:56Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
+        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
+      ]
+    },
+    {
       "date": "2026-09-21",
       "generated_utc": "2026-09-20T23:36:07Z",
       "status": "published",
@@ -1509,249 +1739,6 @@
               "source": "Fierce Biotech",
               "url": "https://www.fiercebiotech.com/medtech/after-rejection-fda-approves-telixs-pixclara-first-fet-pet-imaging-drug-brain-cancer",
               "published": null
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
-      ]
-    },
-    {
-      "date": "2026-09-15",
-      "generated_utc": "2026-09-15T00:01:00Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 14,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 17,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 1
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 4,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 9,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "AI 基礎設施公司 Cornelis 募得 2.05 億美元,力圖撼動 Nvidia 主導地位",
-              "summary_zh": "Cornelis 完成 2.05 億美元募資,並發表名為 Active Compute Fabric 的網路技術產品。該產品鎖定 GPU 大量時間浪費在等待資料抵達的問題。",
-              "relevance": "互連網路與 GPU 資料搬移瓶頸——AI 基礎設施主題",
-              "title": "AI infrastructure company Cornelis raises $205M to chip away at Nvidia’s dominance",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/",
-              "published": "2026-09-14T20:07:37Z"
-            },
-            {
-              "title_zh": "Nvidia 執行長黃仁勳向川普表示「我們不會讓(AI 減速)發生」",
-              "summary_zh": "在 Anthropic 執行長 Dario Amodei 發表〈We Must Pace the Frontier〉一文呼籲放慢 LLM 開發速度後,Elon Musk 與 Sam Altman 表態支持,黃仁勳則表達不同立場。",
-              "relevance": "前沿模型開發節奏與算力需求論述——AI 基礎設施主題",
-              "title": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
-              "published": "2026-09-14T21:51:02Z"
-            },
-            {
-              "title_zh": "川普政府廢除發電廠氣候污染規範",
-              "summary_zh": "美國環保署宣布計畫取消現行對發電廠溫室氣體排放量的所有標準。此舉出現在 AI、電動車與本土製造復甦推升電力需求之際。",
-              "relevance": "資料中心電力供給與能源政策——AI 基礎設施主題",
-              "title": "Trump throws out power plant climate pollution rules",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/news/995051/epa-power-plant-climate-pollution-rollback-ai-data-centers",
-              "published": "2026-09-14T20:45:00Z"
-            },
-            {
-              "title_zh": "微軟新版 AI「行為準則」要求模型不得駭入系統或欺騙人類",
-              "summary_zh": "微軟公布的行為準則列出其 AI 模型應遵守的通則,例如支援而非取代人類、促進人類福祉,並附上落實這些原則的具體安全限制。",
-              "relevance": "模型對齊與安全規範——AI 基礎設施主題",
-              "title": "Microsoft’s new AI ‘code of conduct’ tells models not to hack systems or trick humans",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
-              "published": "2026-09-14T16:27:53Z"
-            },
-            {
-              "title_zh": "AI 代理人揭發同儕作弊行為",
-              "summary_zh": "Google DeepMind 的實驗中,一群被要求解數學題的 AI 代理人分裂成對立陣營,部分代理人作弊時,其他代理人試圖阻止。研究者指此為首次觀察到的吹哨行為,可能影響自主代理人群體的對齊研究。",
-              "relevance": "多代理人系統與對齊——AI 基礎設施主題",
-              "title": "AI agents blew the whistle on their cheating colleagues",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
-              "published": "2026-09-14T16:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "Valve 的 VR 計畫撞上現實",
-              "summary_zh": "Steam Frame 頭戴裝置售價 1,059 美元。Valve 表示原本設定要推出價格親民得多的裝置,但全球 RAM 市場與儲存市場的狀況對其造成與其他業者相同的衝擊。",
-              "relevance": "記憶體與儲存價格上漲外溢至終端裝置——記憶體約束主題",
-              "title": "Valve’s virtual reality plans hit actual reality",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/995055/valve-steam-frame-price-ram-impact",
-              "published": "2026-09-14T19:48:06Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "創辦人的成本控管執念造就 Unitree 在廉價人形機器人的領先",
-              "summary_zh": "報導指 Unitree 創辦人王興興以微觀管理方式帶領公司在低價人形機器人取得領先地位,並提出其領導風格能否隨規模擴張的問題。",
-              "relevance": "人形機器人成本結構與量產——機器人主題",
-              "title": "Founder’s cost-cutting obsession drove Unitree lead in cheap humanoid robots",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/",
-              "published": "2026-09-14T19:38:46Z"
-            },
-            {
-              "title_zh": "Waymo 在拉斯維加斯開放 robotaxi 服務",
-              "summary_zh": "Waymo 於拉斯維加斯啟動商業 robotaxi 服務,為其第 15 個商業營運市場。",
-              "relevance": "自駕車隊商業化擴張——自主系統主題",
-              "title": "Waymo opens robotaxi service in Las Vegas",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/14/waymo-opens-robotaxi-service-in-las-vegas/",
-              "published": "2026-09-14T16:04:16Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "藥廠機密資料大幅強化 AI 蛋白質模型",
-              "summary_zh": "一套以逾 20,000 個來自製藥公司的蛋白質結構訓練的 AI 系統,表現優於僅使用公開資料的 AlphaFold 類模型。",
-              "relevance": "蛋白質結構預測與專有訓練資料——生技×AI 主題",
-              "title": "Drug firms’ secret data supercharge AI protein models",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02882-x",
-              "published": "2026-09-14T00:00:00Z"
-            },
-            {
-              "title_zh": "「多功能」腦部植入物即時轉譯語音與手勢",
-              "summary_zh": "一款神經裝置運用人工智慧讀取腦部活動,可同時解讀使用者意圖中的詞語與手勢。",
-              "relevance": "腦機介面與 AI 解碼——生技×AI 主題",
-              "title": "‘Multifunctional’ brain implant translates speech and gestures in real time",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02895-6",
-              "published": "2026-09-14T00:00:00Z"
-            },
-            {
-              "title_zh": "編碼型與非遺傳型蛋白質變異體擴展人類功能性蛋白質體",
-              "summary_zh": "《Nature》刊出研究,指編碼型與非遺傳型蛋白質變異體擴展了人類功能性蛋白質體的範圍。",
-              "relevance": "蛋白質體圖譜——生技×AI 的資料基礎主題",
-              "title": "Encoded and non-genetic protein variants expand human functional proteome",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-11124-z",
-              "published": "2026-09-14T00:00:00Z"
-            },
-            {
-              "title_zh": "捐贈肝臟可被回復至生物學上更年輕的狀態",
-              "summary_zh": "報導指器官自捐贈者體內取出後即開始劣化,外科醫師通常以保存液沖洗、裝袋冰存,並僅有數小時可移植至受贈者體內;文中介紹另一種正在成長的替代作法。",
-              "relevance": "器官保存與生物年齡逆轉——生技主題",
-              "title": "Donated livers can be made biologically younger",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/09/14/1144010/donated-livers-can-be-made-biologically-younger/",
-              "published": "2026-09-14T16:11:42Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "AI 產業轉向末日論,接下來會如何?",
-              "summary_zh": "Anthropic 執行長 Dario Amodei 發表文章呼籲為 LLM 開發速度踩煞車,理由包括他所認為該技術帶來的迫近風險。文章檢視此一產業論述轉向的後續影響。",
-              "relevance": "AI 開發步調與監管論述——總體環境主題",
-              "title": "The AI industry has taken a doomer turn. What now?",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
-              "published": "2026-09-14T17:54:22Z"
-            },
-            {
-              "title_zh": "大型科技公司的 AI 減速:安全協議還是卡特爾?",
-              "summary_zh": "OpenAI 的 Sam Altman、Anthropic 的 Dario Amodei、Google DeepMind 共同創辦人 Demis Hassabis 與 Elon Musk 在週末大致同意放慢 AI 開發,並宣稱目標是「調節前沿步調」;懷疑者則指出其中可能存在其他動機。",
-              "relevance": "前沿實驗室協調行為與潛在反壟斷爭議——總體環境主題",
-              "title": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
-              "published": "2026-09-14T22:59:41Z"
-            },
-            {
-              "title_zh": "「便宜得離譜」:太陽能持續走揚",
-              "summary_zh": "報導指中國製太陽能板在全球各地屋頂普及,正在改變大型公用事業業者面對的基本condition。",
-              "relevance": "電力供給結構變化——資料中心能源的總體背景",
-              "title": "\"Offensively cheap\": Solar power is looking up",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gadgets/2026/09/offensively-cheap-solar-power-is-looking-up/",
-              "published": "2026-09-14T16:29:18Z"
             }
           ]
         }
