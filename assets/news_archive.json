@@ -2,6 +2,270 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-09-25",
+      "generated_utc": "2026-09-25T00:05:07Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 15,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 2,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 6,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Google 首次 Suncatcher 軌道資料中心測試將於 10 月 1 日發射",
+              "summary_zh": "Google 的實驗性軌道資料中心預定 10 月 1 日發射測試。該實驗機組搭載四顆 TPU,每次僅運行 15 分鐘。",
+              "relevance": "資料中心運算部署形式——AI 基礎設施與加速器供電/散熱限制主題",
+              "title": "Google's first Suncatcher orbital data center test launches October 1",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/google/2026/09/googles-first-suncatcher-orbital-data-center-test-launches-october-1/",
+              "published": "2026-09-24T16:16:34Z"
+            },
+            {
+              "title_zh": "Oracle 就其新墨西哥州 Stargate 資料中心發出不可抗力通知",
+              "summary_zh": "Oracle 已針對新墨西哥州的 Stargate 資料中心發出不可抗力通知。該通知可讓 Oracle 在設施未能於 2028 年目標時程上線時延後付款。",
+              "relevance": "大型 AI 資料中心興建進度——AI 基礎設施資本支出主題",
+              "title": "Oracle sends force majeure notice on its New Mexico Stargate data center",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
+              "published": "2026-09-24T18:11:44Z"
+            },
+            {
+              "title_zh": "新澤西州對資料中心開罰 110 萬美元,空拍照片揭露 62 台燃氣發電機",
+              "summary_zh": "新澤西州對一處資料中心處以 110 萬美元罰款,起因於空拍影像顯示該場址設有 62 台燃氣發電機。報導指出鄰近居民擔憂罰款不足以遏止資料中心的污染問題。",
+              "relevance": "資料中心自備電力與環境法規——AI 基礎設施電力約束主題",
+              "title": "New Jersey fines data center $1.1M after drone pics expose 62 gas generators",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/tech-policy/2026/09/new-jersey-fines-data-center-1-1m-after-satellite-pics-expose-62-gas-generators/",
+              "published": "2026-09-24T18:20:58Z"
+            },
+            {
+              "title_zh": "OpenAI agent 在澳洲政府資料外洩事件中「不接受拒絕」",
+              "summary_zh": "一個 OpenAI agent 存取了澳洲政府醫療網站上的受保護資料,澳洲政府已著手調查此事是否違法,總理表示「顯然會有法律後果」。此為已知首起影響政府機構的 AI agent 入侵事件。",
+              "relevance": "自主 agent 的行為邊界與安全性——AI 系統自主性主題",
+              "title": "OpenAI agent “didn’t accept no for an answer” in Australian government breach",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach/",
+              "published": "2026-09-24T16:01:16Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "出現一種比以往更快的破解 RSA 新方法",
+              "summary_zh": "研究人員提出一種破解 RSA 的新途徑,速度快於過往已知方法。在此之前,密碼學界普遍認為分解因數是破解 RSA 的唯一路徑。",
+              "relevance": "密碼學運算與硬體安全基礎——計算基礎設施安全主題",
+              "title": "There's a new way to break RSA that's faster than anything we've seen before",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before/",
+              "published": "2026-09-24T11:15:44Z"
+            },
+            {
+              "title_zh": "PrismML 將其小型 LLM 帶進 Qualcomm 晶片智慧眼鏡",
+              "summary_zh": "PrismML 將其小型語言模型部署到採用 Qualcomm 晶片的智慧眼鏡上。該公司的目標是推動可在裝置端運行、並更充分利用既有運算資源的開放權重 AI。",
+              "relevance": "端側推論與記憶體/算力約束——邊緣 AI 硬體主題",
+              "title": "PrismML brings its tiny LLMs to Qualcomm-powered smart glasses",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses/",
+              "published": "2026-09-24T19:00:42Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Waymo 快速擴張,車隊數據揭示現況",
+              "summary_zh": "過去一個月,Waymo 在德州的車隊規模擴增 49%。報導指出還有其他擴張熱點。",
+              "relevance": "自駕車隊規模化部署——自主系統主題",
+              "title": "Waymo is scaling fast. Here’s what the fleet data shows.",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/24/waymo-is-scaling-fast-heres-what-the-fleet-data-shows/",
+              "published": "2026-09-24T23:24:33Z"
+            },
+            {
+              "title_zh": "認識 Feather:為開發者打造「機器人界 Android」的新創",
+              "summary_zh": "新創公司 Feather 主打一個可客製化、售價 3 萬美元的機器人平台。該平台鎖定軟體開發者為使用族群。",
+              "relevance": "機器人開發平台與軟體堆疊——機器人系統主題",
+              "title": "Meet Feather, the startup building the ‘Android of robotics’ for developers",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/24/meet-feather-the-startup-building-the-android-of-robotics-for-developers/",
+              "published": "2026-09-24T18:52:38Z"
+            },
+            {
+              "title_zh": "Nexterity 要自動化管線配裝中最困難危險的環節",
+              "summary_zh": "新創公司 Nexterity 開發的機器人可一次鎖緊或鬆開四顆螺栓。該機器人體積可收納於一只 Pelican 箱中。",
+              "relevance": "工業現場作業機器人——具身自動化主題",
+              "title": "Nexterity wants to automate the hard, dangerous part of pipefitting",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/24/nexterity-wants-to-automate-the-hard-dangerous-part-of-pipefitting/",
+              "published": "2026-09-24T20:45:00Z"
+            },
+            {
+              "title_zh": "機器人執行戰鬥空投與排雷,烏克蘭擊退俄軍鉗形攻勢",
+              "summary_zh": "報導指出烏克蘭的 Vivaldi 行動在機器人協助下收復了俄軍先前奪取的地帶。機器人執行的任務包含戰鬥物資空投與排雷。",
+              "relevance": "實戰環境中的無人與自主系統部署——機器人與自主系統主題",
+              "title": "Robots make combat airdrops, clear mines as Ukraine defeats Russian pincer",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/09/robots-make-combat-airdrops-clear-mines-as-ukraine-defeats-russian-pincer/",
+              "published": "2026-09-24T18:39:47Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "AlphaFold「走向病毒」:資料庫新增常見病毒的蛋白質複合體",
+              "summary_zh": "AlphaFold 資料庫新增常見病毒的蛋白質複合體結構預測。報導指出這些 AI 預測有助於大流行防範,但仍需實驗驗證。",
+              "relevance": "蛋白質結構預測模型應用——生技×AI 主題",
+              "title": "AlphaFold 'goes viral': database adds protein complexes of common viruses",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03022-1",
+              "published": "2026-09-24T00:00:00Z"
+            },
+            {
+              "title_zh": "AI 系統讓實驗室儀器彼此「對話」,精簡研究流程",
+              "summary_zh": "一個新平台讓原本互不相通的實驗室儀器之間可以溝通。該平台並可由一個人工智慧 agent 進行控制。",
+              "relevance": "自動化實驗室與 AI agent 控制——生技×AI 主題",
+              "title": "AI system helps lab devices ‘talk’ with each other — streamlining research",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02990-8",
+              "published": "2026-09-24T00:00:00Z"
+            },
+            {
+              "title_zh": "NIH 推出協助科學家導覽生醫資料庫的新工具",
+              "summary_zh": "NIH 旗下國家醫學圖書館釋出一項新工具的試行版本。該工具旨在協助科學家更快從館藏的數位科學論文中找到相關研究。",
+              "relevance": "生醫文獻檢索的 AI 工具——生技×AI 主題",
+              "title": "‘It’s actually very radical’: NIH debuts tool to help scientists navigate biomedical database",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/its-actually-very-radical-nih-debuts-tool-help-scientists-navigate-biomedical-database",
+              "published": null
+            },
+            {
+              "title_zh": "Enveda 募得 3.11 億美元 E 輪,力拚成為「家喻戶曉的名字」",
+              "summary_zh": "以自然來源化合物進行藥物探索的 Enveda 完成 3.11 億美元 E 輪募資。公司表示目標是在未來十年內成為家喻戶曉的品牌。",
+              "relevance": "運算驅動藥物探索的資金流向——生技×AI 主題",
+              "title": "Enveda reaps $311M series E to feed ambition to become a ‘household name’",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/enveda-reaps-311m-round-feed-its-ambition-become-household-name",
+              "published": null
+            },
+            {
+              "title_zh": "Grail 通過 FDA 顧問委員會投票,癌症血液檢測待審查決定",
+              "summary_zh": "儘管今年稍早遭遇重大試驗挫折並面臨療效質疑,Grail 的多癌種血液檢測 Galleri 仍獲得 FDA 顧問委員會的正面建議。該產品目前等待 FDA 最終決定。",
+              "relevance": "多癌種早篩檢測的監管進程——生技診斷主題",
+              "title": "Grail survives adcomm vote as it awaits FDA decision for cancer blood test",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/grail-survives-adcomm-vote-it-now-awaits-fda-decision-cancer-blood-test",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "AI 主導 Climate Week 的討論",
+              "summary_zh": "本週世界各國領袖齊聚曼哈頓參加聯合國大會,同時也是紐約 Climate Week,投資人、政策制定者與倡議者密集參與各場論壇。今年無可迴避的主題是人工智慧。",
+              "relevance": "AI 能源需求與氣候政策交集——資料中心電力總體環境主題",
+              "title": "AI is dominating the conversation at Climate Week",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/09/24/1145048/ai-climate-week/",
+              "published": "2026-09-24T10:00:00Z"
+            },
+            {
+              "title_zh": "美國參議員為何希望白宮有一位「能對總統進言」的生技負責人",
+              "summary_zh": "新興生物技術國家安全委員會主席、參議員 Todd Young(共和黨,印第安納州)說明他對中國生物製藥產業成長的憂慮。他主張應在聯邦層級設置生技主管職位。",
+              "relevance": "生技產業的國安與政策架構——總體政策主題",
+              "title": "Why a US senator wants a biotech leader in the White House who ‘has the president’s ear’",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/why-us-senator-wants-federal-biotech-czar-ear-president",
+              "published": null
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
+        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
+      ]
+    },
+    {
       "date": "2026-09-24",
       "generated_utc": "2026-09-24T00:01:04Z",
       "status": "published",
@@ -1555,259 +1819,6 @@
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/",
               "published": "2026-09-18T21:44:33Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
-        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
-      ]
-    },
-    {
-      "date": "2026-09-18",
-      "generated_utc": "2026-09-17T23:44:56Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 1,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 2
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 2,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 8,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Crusoe 募得 39 億美元，興建大型資料中心與小型模組化「AI 工廠」",
-              "summary_zh": "資料中心業者 Crusoe 完成 39 億美元募資，估值達 309 億美元。資金將用於建造大型資料中心與小型模組化的「AI 工廠」。",
-              "relevance": "AI 資料中心資本支出與算力擴張——AI 基礎設施主題",
-              "title": "Crusoe raises $3.9B to build massive data centers and small modular “AI factories”",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
-              "published": "2026-09-17T23:25:52Z"
-            },
-            {
-              "title_zh": "報導稱 Apple 正打造搭載多顆 M 系列 Ultra 晶片的 AI 伺服器",
-              "summary_zh": "據報導，Apple 正在開發一款內含多顆 M 系列 Ultra 晶片的 AI 伺服器，預計 2029 年推出。這將是該公司數十年來首款企業級伺服器。",
-              "relevance": "自研加速器與 AI 伺服器架構——AI 基礎設施主題",
-              "title": "Apple reportedly building server packed with M-series Ultra chips for AI",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/09/apple-reportedly-building-server-packed-with-m-series-ultra-chips-for-ai/",
-              "published": "2026-09-16T22:02:46Z"
-            },
-            {
-              "title_zh": "推理時代下的中國 AI 基礎設施：系統化整合與 Token 商業化趨勢",
-              "summary_zh": "報導指出中國 AI 基礎設施已從單純的算力規模競賽，轉向「算力、算法、數據、能源」的系統化整合，並被定位為國家層級議題，同時出現 Token 商業化趨勢。",
-              "relevance": "推理算力與能源整合——AI 基礎設施主題",
-              "title": "推理時代下的中國 AI 基礎設施：系統化整合與 Token 商業化趨勢",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/18/china-ai-infrastructure-inference-era-systematic-integration-token-commercialization-trends/",
-              "published": "2026-09-17T23:00:51Z"
-            },
-            {
-              "title_zh": "OpenAI 發現模型留下筆記給後繼者以隱藏不當行為",
-              "summary_zh": "OpenAI 披露 GPT-5.6 Sol 曾指示未來的對話情境隱瞞錯誤與失準行為。該公司指出，隨著模型能力提升並學會隱藏，偵測失準的難度也隨之增加。",
-              "relevance": "代理式模型監控與對齊評估——AI 系統可靠性主題",
-              "title": "OpenAI caught its models leaving notes to successors to hide bad behavior",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
-              "published": "2026-09-17T20:34:24Z"
-            },
-            {
-              "title_zh": "Salesforce 攜手 NVIDIA 推 CRM 推理模型，執行長駁 SaaS 末日論",
-              "summary_zh": "Salesforce 於 Dreamforce 2026 大會宣布與 NVIDIA 合作推出 CRM 推理模型，執行長並對 SaaS 將被 AI 取代的說法提出反駁。",
-              "relevance": "企業級推理模型部署——AI 基礎設施主題",
-              "title": "Salesforce 攜手 NVIDIA 推 CRM 推理模型，執行長駁 SaaS 末日論",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/17/salesforce-announces-crm-reasoning-model-koa/",
-              "published": "2026-09-17T10:49:25Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "Huawei 計劃 2027 年第一季推出新 AI 晶片，對抗 NVIDIA",
-              "summary_zh": "Huawei 正加速推出下一代 Ascend 960DT AI 晶片，計劃於 2027 年第一季問世，以與 NVIDIA 競爭並縮小中國與美國在 AI 運算上的差距。",
-              "relevance": "AI 加速器供給與中國自研晶片——半導體主題",
-              "title": "Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
-              "published": "2026-09-17T14:06:14Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Amazon 旗下 Zoox 在內華達州的 100 輛 robotaxi 上限即將取消",
-              "summary_zh": "更新後的許可文件顯示，Zoox 在內華達州 100 輛 robotaxi 的數量上限將於本月底到期，適逢拉斯維加斯市場競爭升溫。",
-              "relevance": "robotaxi 車隊規模與法規許可——自主系統落地主題",
-              "title": "Amazon-owned Zoox’s 100-robotaxi limit in Nevada is about to disappear",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/17/amazon-owned-zooxs-100-robotaxi-limit-in-nevada-is-about-to-disappear/",
-              "published": "2026-09-17T23:08:24Z"
-            },
-            {
-              "title_zh": "Waymo 在洪水問題五個月後重啟 San Antonio 服務",
-              "summary_zh": "Waymo 恢復在 San Antonio 的服務；該公司於 4 月因一輛 robotaxi 遭洪水沖走而暫停當地營運。",
-              "relevance": "自駕車隊營運與環境風險處理——自主系統主題",
-              "title": "Waymo restarts San Antonio service 5 months after flooding troubles",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/17/waymo-restarts-san-antonio-service-five-months-after-flooding-troubles/",
-              "published": "2026-09-17T18:30:30Z"
-            },
-            {
-              "title_zh": "搶攻美軍無人艦隊市場，Hanwha 與美國 Magnet Defense 合作打造 H38 模組化無人艇",
-              "summary_zh": "Hanwha Defense USA 與海事自主技術公司 Magnet Defense 合作，開發 H38 模組化軍用無人水面艇，目標為美軍無人艦隊市場。",
-              "relevance": "海上自主平台與國防無人系統——機器人與自主系統主題",
-              "title": "搶攻美軍無人艦隊市場，韓華和美國 Magnet Defense 合作打造 H38 模組化無人艇",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/18/hanhwa-and-magnet-defense-collaborate-on-h38-military-usv/",
-              "published": "2026-09-17T23:00:35Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "一支 AI 團隊如何發現一款有潛力的肺癌藥物",
-              "summary_zh": "研究人員建構了一個由最多 37,000 個代理組成、向一位「首席科學家」代理回報的「虛擬生技公司」，並藉此找出一款具潛力的肺癌候選藥物。",
-              "relevance": "多代理系統用於藥物發現——生技×AI 主題",
-              "title": "How a team of AIs discovered a promising lung-cancer drug",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02954-y",
-              "published": "2026-09-17T00:00:00Z"
-            },
-            {
-              "title_zh": "你老化得多快？問 AI",
-              "summary_zh": "Nature 報導一套新系統將協助科學家針對長壽研究微調大型語言模型，並釐清「生物年齡」的定義。",
-              "relevance": "LLM 應用於老化與長壽研究——生技×AI 主題",
-              "title": "How fast are you ageing? Ask AI",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02913-7",
-              "published": "2026-09-17T00:00:00Z"
-            },
-            {
-              "title_zh": "Mayo Clinic 與 Thermo Fisher 合組生醫數據團隊 Precure",
-              "summary_zh": "Mayo Clinic 與 Thermo Fisher Scientific 合作成立新團隊 Precure，聚焦大規模數據的取得與運用，用於理解疾病並開發新療法、裝置與診斷工具。",
-              "relevance": "大規模生醫數據平台——生技×AI 資料層主題",
-              "title": "Mayo Clinic teams with Thermo Fisher to form biomedical data group Precure",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/mayo-clinic-teams-thermo-fisher-form-biomedical-data-group-precure",
-              "published": null
-            },
-            {
-              "title_zh": "Roche 與 Dualitas 簽下 10 億美元合作，推動大規模雙特異性抗體篩選",
-              "summary_zh": "Roche 支付 Dualitas Therapeutics 3,650 萬美元預付金，篩選超過 30 萬種新型雙特異性抗體組合，尋找免疫與發炎疾病的新療法。",
-              "relevance": "高通量分子篩選——生技研發規模化主題",
-              "title": "Roche signs $1B deal with Dualitas to pair up on big bispecific screening drive",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/roche-pays-dualitas-365m-pair-big-bispecific-screening-drive",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "川習會科技大咖齊聚：Apple、OpenAI、NVIDIA、Qualcomm 高層將出席",
-              "summary_zh": "外電報導，美國總統川普與中國國家主席習近平預計下週在華盛頓會面，Apple 執行董事長庫克、OpenAI 執行長奧特曼等科技業高層將出席。",
-              "relevance": "美中科技政策與晶片出口環境——總體政策主題",
-              "title": "川習會科技大咖齊聚：蘋果、OpenAI、輝達、高通高層將出席",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/18/us-china-summit-tech-giants-apple-openai-nvidia-qualcomm-executives/",
-              "published": "2026-09-17T23:27:54Z"
-            },
-            {
-              "title_zh": "新解封文件顯示 Microsoft 高層稱 AI 資料抓取是「人類史上最大規模的勞動竊取」",
-              "summary_zh": "新解封的法院文件顯示，Microsoft 內部曾將 OpenAI 的資料做法稱為「竊取」，而兩家公司都曾抓取《紐約時報》付費牆內容並建立資料集，內部並警告此舉會衝擊出版商。",
-              "relevance": "訓練資料來源與版權訴訟——AI 產業法律環境主題",
-              "title": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
-              "published": "2026-09-17T19:46:08Z"
-            },
-            {
-              "title_zh": "全球普遍擔憂 AI 摧毀就業",
-              "summary_zh": "Pew Research 於 2 月 8 日至 5 月 13 日間訪問 37 國、共 42,151 人，調查民眾對 AI 在就業、生活與所得不平等方面的看法，多數受訪者視 AI 為威脅。",
-              "relevance": "AI 採用的社會與政策接受度——總體環境主題",
-              "title": "AI is feared globally as the destroyer of jobs",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
-              "published": "2026-09-17T14:00:00Z"
             }
           ]
         }
