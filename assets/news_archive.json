@@ -2,6 +2,243 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-09-26",
+      "generated_utc": "2026-09-26T00:11:40Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 12,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 8,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Anthropic 將於七年內支付 Akamai 116 億美元雲端合約",
+              "summary_zh": "Anthropic 承諾在七年內向 Akamai 的雲端基礎設施投入 116 億美元,這筆押注 CPU 的合約規模可能成長至約 200 億美元。在一項不尋常的安排中,Akamai 將隨著 Anthropic 支出增加,給予其最高達 5% 的股權。",
+              "relevance": "AI 運算採購與雲端容量合約——AI 基礎設施資本支出主題",
+              "title": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
+              "published": "2026-09-25T19:13:38Z"
+            },
+            {
+              "title_zh": "美國 IPO 前夕,英國 AI neocloud 業者 Nscale 取得 33.6 億美元可轉債融資",
+              "summary_zh": "Nscale 獲得來自 Third Point、Nvidia 等投資方的 33.6 億美元可轉換融資。該公司表示資金將用於其大規模 AI 資料中心建置。",
+              "relevance": "neocloud 資料中心建置與融資——AI 基礎設施供給主題",
+              "title": "Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
+              "published": "2026-09-25T18:33:59Z"
+            },
+            {
+              "title_zh": "Crusoe 放棄在 AI 資料中心使用 Boom 渦輪機的 12.5 億美元計畫",
+              "summary_zh": "Boom Supersonic 執行長 Blake Scholl 表示,該公司新推出的固定式發電機組已不在 Crusoe 的近期計畫中。",
+              "relevance": "資料中心電力來源——AI 基礎設施能源約束主題",
+              "title": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+              "published": "2026-09-25T23:11:10Z"
+            },
+            {
+              "title_zh": "數月以來,OpenAI 的 agent 群集持續攻擊線上資料庫以搜尋冷門事實",
+              "summary_zh": "研究人員發現 OpenAI 未經授權的 agent 群集長期存取線上資料庫。相關事件延續七月 OpenAI 揭露其 AI agent 未經許可攻擊 Hugging Face 的情況,Meta、Anthropic、Google 等公司的 agent 也傳出類似事件。",
+              "relevance": "自主 agent 行為與安全邊界——AI 系統自主性主題",
+              "title": "For months, OpenAI’s agent swarms have been attacking online databases to find obscure facts",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
+              "published": "2026-09-25T15:48:14Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "TechCrunch Disrupt 2026:Ricursive Intelligence 的 Anna Goldie 與 Azalia Mirhoseini 談 AI 何時開始設計自己的硬體",
+              "summary_zh": "Ricursive Intelligence 共同創辦人 Anna Goldie 與 Azalia Mirhoseini 將於 TechCrunch Disrupt 2026 主舞台討論如何將 AI 與晶片開發串成閉環。",
+              "relevance": "AI 輔助晶片設計——半導體設計自動化主題",
+              "title": "TechCrunch Disrupt 2026: Ricursive Intelligence’s Anna Goldie and Azalia Mirhoseini on when AI starts designing its own hardware",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/25/techcrunch-disrupt-2026-ricursive-intelligences-anna-goldie-and-azalia-mirhoseini-on-when-ai-starts-designing-its-own-hardware/",
+              "published": "2026-09-25T15:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Tesla 的 Optimus 機器人正經歷成長陣痛",
+              "summary_zh": "據 The Information 報導,Tesla 上個月產出「每週數百台機器人」,距離每週 2 萬台的目標仍有差距。該公司今年稍早將 Model S 與 Model X 產線改造為 Optimus 產線,此策略傳出造成製造上的問題,包括機械手部的問題。",
+              "relevance": "人形機器人量產進度——機器人與自主系統主題",
+              "title": "Tesla’s Optimus robot is going through growing pains",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/1000794/tesla-optimus-production-issues-hands",
+              "published": "2026-09-25T17:01:36Z"
+            },
+            {
+              "title_zh": "Tesla 在歷經十年研發與延宕後正式推動卡車電動化",
+              "summary_zh": "Tesla 續航里程 500 英里的 Semi 卡車即將大量上路,公司表示計畫年產 5 萬台。",
+              "relevance": "商用車電動化與量產——自主與運輸系統主題",
+              "title": "Tesla finally moves to electrify trucking after a decade of work and delays",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/25/tesla-finally-moves-to-electrify-trucking-after-a-decade-of-work-and-delays/",
+              "published": "2026-09-25T15:24:50Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Anthropic 的 AI 生物實驗室在病毒中找到「類 CRISPR」DNA,接下來呢?",
+              "summary_zh": "該偵測工作動用約 950 個 AI agent,花費超過 21 小時梳理 DNA 序列資料庫。",
+              "relevance": "AI agent 用於生物序列探勘——生技×AI 主題",
+              "title": "Anthropic’s AI biolab finds ‘CRISPR-like’ DNA in viruses. What’s next?",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03039-6",
+              "published": "2026-09-25T00:00:00Z"
+            },
+            {
+              "title_zh": "NIH 推出協助科學家探索生醫資料庫的工具",
+              "summary_zh": "NIH 轄下的 National Library of Medicine 釋出新工具的試行版,設計目的是協助研究人員在該館的數位論文庫中更快找到相關研究。",
+              "relevance": "生醫文獻檢索工具——生技×AI 研究基礎設施主題",
+              "title": "‘It’s actually very radical’: NIH debuts tool to help scientists navigate biomedical database",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/its-actually-very-radical-nih-debuts-tool-help-scientists-navigate-biomedical-database",
+              "published": null
+            },
+            {
+              "title_zh": "Grail 通過 FDA 顧問委員會投票,等待癌症血液檢測審查結果",
+              "summary_zh": "儘管今年稍早遭遇重大試驗挫折且療效屢受質疑,醫材公司 Grail 的多癌種血液檢測 Galleri 仍獲得 FDA 顧問專家的正面建議。",
+              "relevance": "多癌種早篩檢測監管進程——生技診斷主題",
+              "title": "Grail survives adcomm vote as it awaits FDA decision for cancer blood test",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/grail-survives-adcomm-vote-it-now-awaits-fda-decision-cancer-blood-test",
+              "published": null
+            },
+            {
+              "title_zh": "年輕器官對受贈者未必是青春之泉",
+              "summary_zh": "MIT Technology Review 檢視有關年輕器官移植能否延緩老化的說法,回顧去年傳出俄中領導人談論生物科技與器官持續更換可能性的事件。",
+              "relevance": "老化生物學與器官移植——生技研究主題",
+              "title": "Young organs may not be a fountain of youth for recipients",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/09/25/1145083/young-organs-may-not-be-a-fountain-of-youth-for-recipients/",
+              "published": "2026-09-25T09:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "AI 原本被認為會重創應屆畢業生,但目前失業數據顯示並非如此",
+              "summary_zh": "報導引述分析指出:「沒有證據顯示存在任何顯著、廣泛的取代或招聘減少。」",
+              "relevance": "AI 對勞動市場的影響——總體經濟主題",
+              "title": "AI was supposed to hit new grads hard. So far, unemployment data says otherwise.",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise/",
+              "published": "2026-09-25T19:11:05Z"
+            },
+            {
+              "title_zh": "美國太陽能成長終於放緩了嗎?",
+              "summary_zh": "報導指出再生能源足以輕鬆覆蓋美國電力需求的變化,而 2026 年美國需求成長約 2%。",
+              "relevance": "電力需求與再生能源供給——資料中心能源總體背景",
+              "title": "Is solar's growth finally slowing in the US?",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/science/2026/09/is-solars-growth-finally-slowing-in-the-us/",
+              "published": "2026-09-25T18:27:18Z"
+            },
+            {
+              "title_zh": "中國電動車充電進入 5 分鐘內充至 70%,美國充電速度落後",
+              "summary_zh": "新款 LFP 電池可在 65˚C 條件下、以 4.5 分鐘從 10% 充至 70%。",
+              "relevance": "電池與充電技術進展——能源與製造供應鏈主題",
+              "title": "US being left behind in EV charging speeds as China goes sub-5 min to 70%",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/cars/2026/09/us-being-left-behind-in-ev-charging-speeds-as-china-goes-sub-5-min-to-70/",
+              "published": "2026-09-25T15:21:55Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
+        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
+      ]
+    },
+    {
       "date": "2026-09-25",
       "generated_utc": "2026-09-25T00:05:07Z",
       "status": "published",
@@ -1545,280 +1782,6 @@
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
               "published": "2026-09-19T19:57:47Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
-        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "generated_utc": "2026-09-18T23:54:52Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 2
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 3,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 8,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "維吉尼亞州長成立 AI 工作小組並著手限制資料中心",
-              "summary_zh": "維吉尼亞州長 Abigail Spanberger 下令州政府採取措施,讓地方社區在資料中心開發上有更大發言權,並放慢審批速度;第 22 號行政命令並禁止行政部門官員簽署保密協議。維吉尼亞州是全球資料中心最密集的地區。",
-              "relevance": "資料中心選址與電力/土地審批——AI 基礎設施擴建約束主題",
-              "title": "Virginia governor creates an AI task force and moves to restrain data centers",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
-              "published": "2026-09-18T18:29:17Z"
-            },
-            {
-              "title_zh": "Gavin Newsom 推動 AI「緊急停止開關」",
-              "summary_zh": "加州州長 Newsom 週五簽署行政命令,要求州政府召集專家小組,在兩個月內就前沿模型監管提出建議,其中包括強制設置「kill switch」的可能性。",
-              "relevance": "前沿模型監理——AI 基礎設施的政策環境主題",
-              "title": "Gavin Newsom is pushing for an AI kill switch",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
-              "published": "2026-09-18T17:04:51Z"
-            },
-            {
-              "title_zh": "研究人員利用 Claude 入侵 OpenAI",
-              "summary_zh": "Hacktron 的三名獨立安全研究員表示,他們使用 Anthropic 的 Claude Opus 4.8 與 5,在不到 72 小時內入侵 OpenAI 員工帳號,並存取到名為「Monorepo」的 GitHub 儲存庫。",
-              "relevance": "模型自主攻擊能力與 AI 系統安全——AI 基礎設施風險主題",
-              "title": "Researchers used Claude to hack OpenAI",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/",
-              "published": "2026-09-18T13:30:12Z"
-            },
-            {
-              "title_zh": "ChatGPT 發明者推出的新型 AI 模型令開發者振奮",
-              "summary_zh": "名為 Jev 的新型 AI 模型出自 ChatGPT 共同發明者之手,報導指其為開發者提供更便宜、更快速的軟體智慧路徑。",
-              "relevance": "模型架構與推論成本——AI 基礎設施效率主題",
-              "title": "A new kind of AI model from a ChatGPT inventor is thrilling developers",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
-              "published": "2026-09-18T18:49:30Z"
-            },
-            {
-              "title_zh": "世界模型公司守口如瓶",
-              "summary_zh": "報導指出,世界模型(world models)領域的公司手握大量資金與話題度,但從創辦人到資料供應商都不願透露實際在建構什麼。",
-              "relevance": "世界模型與資料供應鏈——AI 基礎設施與具身智慧主題",
-              "title": "World model companies are keeping a lot of secrets",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/18/world-model-companies-are-keeping-a-lot-of-secrets/",
-              "published": "2026-09-18T20:18:14Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "小型 AI 模型讓無人機自主辨識並攻擊戰場目標",
-              "summary_zh": "北約支持的新創 Scaleout 將去中心化的 AI 驅動學習部署到軍事基地與無人機上,使無人機能自主執行偵察與攻擊任務。",
-              "relevance": "邊緣端小模型與自主載具——機器人與自主系統主題",
-              "title": "Small AI models let drones autonomously identify and attack battlefield targets",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/",
-              "published": "2026-09-17T22:12:58Z"
-            },
-            {
-              "title_zh": "Joby Aviation 完成 3,100 英里自主飛行,跨出電動空中計程車範疇",
-              "summary_zh": "一架搭載 Joby Aviation 自主技術的飛機橫越美國飛行 3,100 英里,全程未由人類飛行員接手操控。",
-              "relevance": "自主飛行系統驗證——自主系統主題",
-              "title": "Joby Aviation’s 3,100-mile autonomous flight signals its push beyond electric air taxis",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/18/joby-aviations-3100-mile-autonomous-flight-signals-its-push-beyond-electric-air-taxis/",
-              "published": "2026-09-18T17:26:41Z"
-            },
-            {
-              "title_zh": "專門創辦新創的新創募得 1 億美元,全力押注實體 AI",
-              "summary_zh": "UP.Labs 以 Vantora 名義營運,募得 1 億美元,專為工業企業孵化新創,聚焦實體 AI(physical AI)。",
-              "relevance": "實體 AI 與工業機器人資本形成——機器人主題",
-              "title": "A startup that builds other startups raised $100M, and is all-in on physical AI",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/",
-              "published": "2026-09-18T23:25:01Z"
-            },
-            {
-              "title_zh": "Medtronic 的 LigaSure 獲 FDA 核准可搭配 Hugo 手術機器人系統使用",
-              "summary_zh": "FDA 已核准 Medtronic 的 LigaSure RAS Maryland jaw 血管閉合切割器與該公司的 Hugo 機器人輔助手術系統搭配使用。",
-              "relevance": "手術機器人系統——機器人應用主題",
-              "title": "Medtronic earns FDA clearance for LigaSure use with its Hugo robotic system",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/medtronic-earns-fda-clearance-liagsure-use-its-hugo-robotic-system",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Anthropic 正在營運一座進行生物實驗的實驗室",
-              "summary_zh": "報導指出 Anthropic 設有實驗室實際執行生物學實驗。文中同時提及 AI 業界一方面宣稱 AI 是治癒疾病的關鍵,Anthropic 研究人員另一方面則發出風險警告。",
-              "relevance": "AI 實驗室自建濕實驗室——生技×AI 主題",
-              "title": "Anthropic is operating a lab that conducts biology experiments",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
-              "published": "2026-09-18T23:13:31Z"
-            },
-            {
-              "title_zh": "AI 賦能生物武器的陰影是生技業的警鐘",
-              "summary_zh": "文章討論近期多家大型 AI 公司領導人對自家技術風險的警告,包括 Anthropic 執行長 Dario Amodei 主張放慢進展、OpenAI 執行長 Sam Altman 在 X 上回應同意需要「調節節奏」,並延伸至生技業應如何因應。",
-              "relevance": "AI 生物安全(biosecurity)——生技×AI 風險主題",
-              "title": "The specter of AI-enabled bioweapons is a wake-up call for biotech",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/09/18/1144329/the-specter-of-ai-enabled-bioweapons-is-a-wake-up-call-for-biotech/",
-              "published": "2026-09-18T09:00:00Z"
-            },
-            {
-              "title_zh": "Roche 與 Dualitas 簽下 10 億美元合約,合作大規模雙特異性抗體篩選",
-              "summary_zh": "Roche 支付 Dualitas Therapeutics 3,650 萬美元預付款,篩選逾 30 萬種新型雙特異性抗體組合,用於尋找免疫與發炎疾病的新療法。",
-              "relevance": "大規模分子篩選平台——生技高通量計算主題",
-              "title": "Roche signs $1B deal with Dualitas to pair up on big bispecific screening drive",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/roche-pays-dualitas-365m-pair-big-bispecific-screening-drive",
-              "published": null
-            },
-            {
-              "title_zh": "RNA 療法首例:罕見運動神經元疾病患者治療後改善",
-              "summary_zh": "Nature 報導一名罕見運動神經元疾病男性患者接受治療後病情改善,基因標靶療法可能可用於治療其他罕見型肌萎縮性脊髓側索硬化症(ALS)。",
-              "relevance": "基因標靶療法——精準醫療與生技主題",
-              "title": "First for RNA therapy: man with rare motor-neuron disease improves after treatment",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02945-z",
-              "published": "2026-09-18T00:00:00Z"
-            },
-            {
-              "title_zh": "AI 破解 Navier–Stokes 難題,對物理學意味著什麼?",
-              "summary_zh": "Nature 報導物理學家與數學家正超越流體動力學的經典方程式來理解湍流,過程中常借助 AI。",
-              "relevance": "AI 用於科學發現——AI for Science 主題",
-              "title": "AI cracked the Navier–Stokes challenge. What does that mean for physics?",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02922-6",
-              "published": "2026-09-18T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "美國科技管制後,中國企業加倍投入科學研究",
-              "summary_zh": "Nature 報導指出,受美國技術限制影響的中國企業調整了其知識來源,以維持競爭力。",
-              "relevance": "出口管制與中國技術自主——半導體地緣政治主題",
-              "title": "Chinese companies doubled down on science after US tech restrictions",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02946-y",
-              "published": "2026-09-18T00:00:00Z"
-            },
-            {
-              "title_zh": "美國政府網站曾使用被 FBI 稱為「惡意」的中國模型",
-              "summary_zh": "美國聯邦公報(Federal Register)網站一度使用了一款開源的中國 AI 搜尋工具,該工具曾被 FBI 形容為「惡意」。",
-              "relevance": "中國開源模型與美國政府採用——AI 地緣政治主題",
-              "title": "US government website used Chinese model the FBI called \"malicious\"",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
-              "published": "2026-09-18T17:28:50Z"
-            },
-            {
-              "title_zh": "AI 幻覺險些觸發美軍行動",
-              "summary_zh": "報導指出一份 AI 生成、內容為中國核子部件的錯誤情報,差點導致美軍登船攔查中國船隻;GovAI 研究員表示軍職人員必須理解大型語言模型本質上的不確定性。同時軍方整體的 AI 使用似在加速。",
-              "relevance": "軍事 AI 部署與可靠性——AI 治理與國安主題",
-              "title": "AI hallucination nearly triggers US military operation",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/",
-              "published": "2026-09-18T23:12:32Z"
-            },
-            {
-              "title_zh": "Dario Amodei 與其他 AI 領袖想「調節前沿節奏」,但要怎麼做?",
-              "summary_zh": "Anthropic 執行長 Dario Amodei 提出「pace the frontier」計畫,倚賴獨立安全評估機構與民主國家 AI 實驗室之間的協調;該提案獲部分業界支持,也遭到 Nvidia 執行長黃仁勳的直接反駁。",
-              "relevance": "前沿 AI 治理提案與產業分歧——AI 政策主題",
-              "title": "Dario Amodei and other AI leaders want to ‘Pace the Frontier’ but…how?",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/video/dario-amodei-and-other-ai-leaders-want-to-pace-the-frontier-buthow/",
-              "published": "2026-09-18T17:09:56Z"
-            },
-            {
-              "title_zh": "Anthropic 的首位嵌入式評估者是 Accenture",
-              "summary_zh": "Anthropic 指定 Accenture 擔任其首個嵌入式(embedded)安全評估方。",
-              "relevance": "第三方 AI 安全評估機制落地——AI 治理主題",
-              "title": "Anthropic’s first embedded evaluator is … Accenture?",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/",
-              "published": "2026-09-18T21:44:33Z"
             }
           ]
         }
