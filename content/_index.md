@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "黃柏松 Sinclair Huang｜企業成長與轉型顧問"
 description: "資深產業經營者，聚焦企業成長、轉型與重大決策。Senior Industry Executive | Growth & Transformation Advisor | Independent Researcher."
 htmlLang: "zh-Hant"
 locale: "zh_TW"

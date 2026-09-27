@@ -2,6 +2,7 @@
 title: "企業成長、轉型與重大決策"
 description: "協助董事會與經營團隊處理跨越財務、營運與組織、無法由單一部門獨立解決的企業問題。立足台灣企業的經營現場，納入跨國供應鏈、資本市場與產業競爭的國際視角。"
 hideDescription: true
+htmlLang: "zh-Hant"
 locale: "zh_TW"
 contentLang: "zh-Hant"
 inLanguage: ["zh-Hant", "en"]
