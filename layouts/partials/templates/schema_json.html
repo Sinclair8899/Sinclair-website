@@ -2,22 +2,15 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
-  "name": {{ site.Title }},
+  "@type": "ProfilePage",
+  "@id": {{ printf "%s#profilepage" site.Home.Permalink }},
   "url": {{ site.Home.Permalink }},
-  "description": {{ site.Params.description | plainify | truncate 180 | safeHTML }},
-  {{- if (eq site.Params.schema.publisherType "Person") }}
-  "image": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }},
-  {{- else }}
-  "logo": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }},
-  {{- end }}
-  "sameAs": [
-    {{- if site.Params.schema.sameAs }}
-      {{ range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " }}{{ end }}
-    {{- else}}
-      {{ range $i, $e := site.Params.SocialIcons }}{{ if $i }}, {{ end }}{{ trim $e.url " " | safeURL }}{{ end }}
-    {{- end}}
-  ]
+  "name": {{ site.Title }},
+  "description": {{ .Description | plainify | safeHTML }},
+  "inLanguage": {{ .Params.inLanguage | jsonify | safeJS }},
+  "mainEntity": {
+    "@id": {{ printf "%s#person" site.Home.Permalink }}
+  }
 }
 </script>
 {{- else if (or .IsPage .IsSection) }}
