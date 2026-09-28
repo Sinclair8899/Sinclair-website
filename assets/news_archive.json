@@ -2,6 +2,234 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-09-28",
+      "generated_utc": "2026-09-28T00:01:21Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 55,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 6,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 1,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 7,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "AI 越成功硬體越稀缺：晶片、能源成 AI 擴張瓶頸，創投重新看好硬科技",
+              "summary_zh": "報導指出，ChatGPT 問世後大量創投資本湧向 AI 軟體新創，如今晶片與能源供給成為 AI 擴張的瓶頸，矽谷創投轉而重新關注硬科技領域。",
+              "relevance": "算力與能源供給限制——AI 基礎設施的實體約束主題",
+              "title": "AI 越成功硬體越稀缺：晶片、能源成 AI 擴張瓶頸，創投重新看好硬科技",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/09/27/silicon-valley-sees-hard-tech-revival/",
+              "published": "2026-09-27T03:00:33Z"
+            },
+            {
+              "title_zh": "OpenAI agents 試圖「暴力破解」聯合國網站",
+              "summary_zh": "資安研究員 Rowan Howard-Jones 表示，OpenAI 的 agents 在 4 月至 6 月間對聯合國貿易和發展會議（UNCTAD）統計網站掃描超過 16,000 次。",
+              "relevance": "自主 agent 行為與網路基礎設施負載——AI agent 系統主題",
+              "title": "OpenAI agents tried to ‘bruteforce’ a UN website",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
+              "published": "2026-09-27T17:21:07Z"
+            },
+            {
+              "title_zh": "台積電麥寮外海祕密計畫獨家曝光，全新台灣能源之路隱然成形",
+              "summary_zh": "報導指出，面對 AI 浪潮引發的用電需求與國際供應鏈減碳壓力，台積電低調進行碳捕捉封存（CCS）相關布局。",
+              "relevance": "晶圓製造的能源與減碳配套——半導體產能與電力主題",
+              "title": "台積電麥寮外海祕密計畫獨家曝光，全新台灣能源之路隱然成形",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/09/27/tsmc-ccs/",
+              "published": "2026-09-27T03:00:23Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "從供需失衡到高壓規格戰，解析全球 PMIC 市場新格局",
+              "summary_zh": "文章指出 AI 晶片功耗逼近甚至超越 1kW，傳統 PCB 走線的寄生電阻與 IR 壓降成為算力發揮的瓶頸，並解析全球 PMIC 市場供需與規格演進。",
+              "relevance": "AI 晶片供電架構與電源管理 IC——半導體供應鏈主題",
+              "title": "從供需失衡到高壓規格戰，解析全球 PMIC 市場新格局",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/09/28/global-pmic-market-new-landscape-from-supply-demand-imbalance-to-high-pressure-spec-war/",
+              "published": "2026-09-27T23:00:53Z"
+            },
+            {
+              "title_zh": "電池材料大廠康普收服特斯拉與豐田，跨足半導體化學品三箭齊發大啖非紅商機",
+              "summary_zh": "動力電池材料廠康普在非紅供應鏈趨勢下成為日歐系車廠合作夥伴，今年獲利大幅成長，並鎖定半導體與被動元件相關化學品業務。",
+              "relevance": "半導體材料與非紅供應鏈重組——供應鏈地緣主題",
+              "title": "電池材料大廠康普收服特斯拉與豐田，跨足半導體化學品三箭齊發大啖非紅商機",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/09/28/coremax-corporation/",
+              "published": "2026-09-28T00:00:28Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "TechCrunch Mobility：自駕車公司各自選定賽道",
+              "summary_zh": "TechCrunch Mobility 專欄整理自駕車（AV）業者的發展路線分化，以及 AI 在交通運輸領域扮演的角色。",
+              "relevance": "自駕與自主系統產業動態——機器人與自主系統主題",
+              "title": "TechCrunch Mobility: AV companies pick their lanes",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/27/techcrunch-mobility-av-companies-pick-their-lanes/",
+              "published": "2026-09-27T16:02:00Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "中國首座「AI 眼科門診」實測，直擊醫療 AI 落地的三大痛點",
+              "summary_zh": "北京視覺科學與轉化醫學相關單位近期進行 AI 眼科門診實測，報導整理 AI 從實驗室環境進入真實病患與病歷情境時所遭遇的三大痛點。",
+              "relevance": "醫療 AI 臨床落地評估——生技×AI 主題",
+              "title": "中國首座「AI 眼科門診」實測，直擊醫療 AI 落地的三大痛點",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/09/27/china-test-ai-eye-clinic/",
+              "published": "2026-09-27T07:00:52Z"
+            },
+            {
+              "title_zh": "NIH 推出協助科學家檢索生醫資料庫的新工具",
+              "summary_zh": "美國 NIH 旗下國家醫學圖書館釋出新工具的試行版本，用於協助研究人員在其數位論文庫中更快找到相關研究。",
+              "relevance": "生醫文獻檢索工具——生技×AI 的研究基礎建設主題",
+              "title": "‘It’s actually very radical’: NIH debuts tool to help scientists navigate biomedical database",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/its-actually-very-radical-nih-debuts-tool-help-scientists-navigate-biomedical-database",
+              "published": null
+            },
+            {
+              "title_zh": "AI 研發生化武器消滅人類？專家：比起末日幻想，現有病原體威脅性更高",
+              "summary_zh": "近期研究與專家討論指出，外界關注 AI 是否能協助設計生物武器，但多數科學家認為現有病原體的威脅程度更高。",
+              "relevance": "AI 生物安全風險評估——生技×AI 的安全性主題",
+              "title": "AI 研發生化武器消滅人類？專家：比起末日幻想，現有病原體威脅性更高",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/09/27/why-ai-isnt-likely-to-wipe-out-humanity-with-bioweapons/",
+              "published": "2026-09-27T00:30:01Z"
+            },
+            {
+              "title_zh": "Enveda 募得 3.11 億美元 E 輪，目標成為「家喻戶曉」的品牌",
+              "summary_zh": "以自然來源化合物進行藥物探索的 Enveda 完成 3.11 億美元 E 輪募資，公司表示目標是在未來十年成為家喻戶曉的名字。",
+              "relevance": "計算驅動的藥物探索平台募資——生技×AI 主題",
+              "title": "Enveda reaps $311M series E to feed ambition to become a ‘household name’",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/enveda-reaps-311m-round-feed-its-ambition-become-household-name",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "10 月還會再升息嗎？油價、PCE 與下次 FOMC 會議三大關鍵一次看",
+              "summary_zh": "聯準會聲明除升息外並釋出進一步緊縮訊號，美股、黃金、油價下跌，美元指數走高，短天期利率同步反應。",
+              "relevance": "利率與流動性環境——市場簡報的總體主題",
+              "title": "10 月還會再升息嗎？油價、PCE 與下次 FOMC 會議三大關鍵一次看",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/09/27/fed-hikes-rates-3-key-indicators-to-watch/",
+              "published": "2026-09-27T02:00:30Z"
+            },
+            {
+              "title_zh": "出口失速、17 萬人集體罷工，解析重創德國經濟兩大支柱的「中國衝擊 2.0」",
+              "summary_zh": "報導引述歐洲改革中心（CER）政策報告，分析德國出口成長放緩、對中貿易逆差擴大，以及大規模罷工對經濟的衝擊。",
+              "relevance": "歐洲製造業與中國競爭——全球供應鏈總體主題",
+              "title": "出口失速、17 萬人集體罷工，解析重創德國經濟兩大支柱的「中國衝擊 2.0」",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/09/27/china-shock-2-0-germany-export-slowdown-widening-trade-deficit-china-analysis/",
+              "published": "2026-09-27T03:00:54Z"
+            },
+            {
+              "title_zh": "為何一位美國參議員希望白宮裡有一位「能對總統進言」的生技領袖",
+              "summary_zh": "美國國家新興生物科技安全委員會主席、印第安納州共和黨參議員 Todd Young 表示，他對中國生技製藥產業的成長感到憂心，並主張設立聯邦生技負責人職位。",
+              "relevance": "生技產業政策與中美競爭——生技×AI 的政策環境主題",
+              "title": "Why a US senator wants a biotech leader in the White House who ‘has the president’s ear’",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/why-us-senator-wants-federal-biotech-czar-ear-president",
+              "published": null
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
+        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
+      ]
+    },
+    {
       "date": "2026-09-27",
       "generated_utc": "2026-09-26T23:56:06Z",
       "status": "published",
@@ -1509,250 +1737,6 @@
       ],
       "warnings": [
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
-        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
-      ]
-    },
-    {
-      "date": "2026-09-21",
-      "generated_utc": "2026-09-20T23:36:07Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 61,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 9,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 3,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 9,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 2
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Google 為何甘願分食 Gemini 的算力？把 AI 晶片賣給 Anthropic 的理由",
-              "summary_zh": "Google Cloud 執行長 Thomas Kurian 在近期活動中，說明在 AI 資本支出偏高的背景下，Google 將自研 AI 晶片算力提供給 Anthropic 等外部客戶的考量。",
-              "relevance": "自研加速器與雲端算力分配——AI 基礎設施資本支出主題",
-              "title": "Google 為何甘願分食 Gemini 的算力？自己用最划算卻把 AI 晶片賣給 Anthropic 的答案是這個",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/21/why-google-willing-share-geminis-computing-power/",
-              "published": "2026-09-20T23:30:38Z"
-            },
-            {
-              "title_zh": "世界模型公司守口如瓶",
-              "summary_zh": "TechCrunch 報導，世界模型（world models）領域的新創手握大量資金與關注度，但從創辦人到其資料供應商都不願透露實際在開發什麼。",
-              "relevance": "世界模型與資料供應鏈——AI 基礎設施與具身智慧主題",
-              "title": "World model companies are keeping a lot of secrets",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
-              "published": "2026-09-20T20:29:07Z"
-            },
-            {
-              "title_zh": "從開天價搶地到全美九州喊卡，AI 資料中心掀起的投資風險與政治警訊",
-              "summary_zh": "報導指出開發商以高於市價數倍的價格搶購資料中心用地，並在美國多州遭遇在地反對與計畫中止。",
-              "relevance": "資料中心選址與電力／土地限制——AI 基礎設施擴建主題",
-              "title": "從開天價搶地到全美九州喊卡，AI 資料中心掀起的投資風險與政治警訊",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/09/20/developers-pay-10-times-market-price-data-centers-land-rush-ai-investment-risk/",
-              "published": "2026-09-20T02:00:07Z"
-            },
-            {
-              "title_zh": "對能源系統而言，最大的資安風險仍是人類而非失控的 AI",
-              "summary_zh": "The Verge 報導指出，在近期高知名度入侵事件之前，能源系統早已面臨嚴重的網路攻擊脆弱性，且風險持續升高。",
-              "relevance": "資料中心與電網資安——AI 基礎設施電力供應主題",
-              "title": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
-              "published": "2026-09-20T12:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "不當縮小版日月光，台灣「封測小巨人」狂吃 AI 外溢訂單的突圍之道",
-              "summary_zh": "2026 年全球封測業展開資本競賽，日月光、Amkor、力成、長電科技、通富微電與京元電子等業者擴大投資，台灣中小型封測廠承接 AI 外溢訂單。",
-              "relevance": "先進封裝與 OSAT 產能——半導體供應鏈主題",
-              "title": "不當縮小版日月光，台灣「封測小巨人」狂吃 AI 外溢訂單的突圍之道",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/09/21/taiwanese-osat-little-giants-ase-spil-chipmos-niche-battlegrounds-tsmc-ase-advanced-packaging-investment/",
-              "published": "2026-09-20T23:10:16Z"
-            },
-            {
-              "title_zh": "CPO 產品結構持續演進，均英精密 FAU 客製檢測從抽樣導入量產測試",
-              "summary_zh": "均英精密擴大共同封裝光學（CPO）檢測布局，針對光纖陣列單元（FAU）及其零配件的高精度客製化檢測需求，由抽樣檢測導入量產測試。",
-              "relevance": "CPO 光學封裝與檢測——資料中心互連與半導體封裝主題",
-              "title": "CPO 產品結構持續演進，均英精密 FAU 客製檢測從抽樣導入量產測試",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/20/gen-precision-brings-custom-fau-testing-into-mass-production-testing/",
-              "published": "2026-09-20T06:00:08Z"
-            },
-            {
-              "title_zh": "不需電力、沒有邏輯電路，科學家開發史上算術最快的 DNA 分子電腦",
-              "summary_zh": "愛爾蘭國立梅努斯大學團隊發表目前最複雜、速度最快的分子電腦，僅需一滴水與少量熱能即可驅動水中數十億條 DNA 進行運算。",
-              "relevance": "非矽基運算架構——計算基礎技術主題",
-              "title": "不需電力、沒有邏輯電路，科學家開發史上算術最快的 DNA 分子電腦",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/20/scaffolded-dna-molecular-computer-basic-operation/",
-              "published": "2026-09-20T06:59:42Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Medtronic 的 LigaSure 獲 FDA 核准可搭配 Hugo 手術機器人系統使用",
-              "summary_zh": "FDA 已核准 Medtronic 的 LigaSure RAS Maryland jaw 血管封合切割器與該公司 Hugo 機器人輔助手術系統併用。",
-              "relevance": "手術機器人系統與器械整合——醫療機器人主題",
-              "title": "Medtronic earns FDA clearance for LigaSure use with its Hugo robotic system",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/medtronic-earns-fda-clearance-liagsure-use-its-hugo-robotic-system",
-              "published": null
-            },
-            {
-              "title_zh": "TechCrunch Mobility：我們如何知道自駕車已經夠安全？",
-              "summary_zh": "TechCrunch Mobility 電子報探討自駕車安全性的判定標準，以及 AI 在交通運輸中扮演的角色。",
-              "relevance": "自駕車安全評估——自主系統主題",
-              "title": "TechCrunch Mobility: How do we know when an AV is safe enough?",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/20/techcrunch-mobility-how-do-we-know-when-an-av-is-safe-enough/",
-              "published": "2026-09-20T16:02:00Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Roche 與 Dualitas 簽下 10 億美元合作，展開大規模雙特異性抗體篩選",
-              "summary_zh": "Roche 支付 Dualitas Therapeutics 3,650 萬美元頭期款，篩選超過 30 萬種新型雙特異性組合，尋找免疫與發炎疾病的新療法。",
-              "relevance": "大規模分子篩選平台——生技×AI 藥物發現主題",
-              "title": "Roche signs $1B deal with Dualitas to pair up on big bispecific screening drive",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/roche-pays-dualitas-365m-pair-big-bispecific-screening-drive",
-              "published": null
-            },
-            {
-              "title_zh": "腫瘤完全消失！美男童接受實驗性 CAR-T 療法，肝癌治癒且一年未復發",
-              "summary_zh": "德州兒童醫院、貝勒醫學院與西雅圖兒童醫院團隊公布個案，一名 3 歲男童的轉移性肝母細胞瘤在接受實驗性 CAR-T 療法後腫瘤消失，且一年未復發。",
-              "relevance": "細胞療法臨床進展——生技主題",
-              "title": "腫瘤完全消失！美男童接受實驗性 CAR-T 療法，肝癌治癒且一年未復發",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/20/a-3-year-olds-metastatic-cancer-disappeared-after-two-doses-of-experimental-therapy/",
-              "published": "2026-09-20T05:30:26Z"
-            },
-            {
-              "title_zh": "罕見 EGFR 突變使從未吸菸者肺癌風險增加 62 倍",
-              "summary_zh": "研究發現一種罕見的遺傳性生殖細胞突變使肺癌風險增加 25 倍，而吸菸僅使風險增加 4 倍。",
-              "relevance": "基因體變異與疾病風險——生技×AI 基因資料分析主題",
-              "title": "Rare EGFR mutation increases lung cancer risk 62 times in never smokers",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/research/rare-egfr-mutation-increases-lung-cancer-risk-25-times-62-times-never-smokers",
-              "published": null
-            },
-            {
-              "title_zh": "大腦其實是兩個器官？研究指人腦由 2 個獨立神經系統拼裝而成",
-              "summary_zh": "史丹佛大學醫學院主導的新研究，推翻人腦源自發育初期單一祖細胞、為單一發展器官的既有看法。",
-              "relevance": "神經系統發育結構——神經科學與腦啟發運算主題",
-              "title": "大腦其實是兩個器官？震撼發現：人腦由 2 個獨立神經系統拼裝而成",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/09/20/brain-organ-progenitor-cell-brainstem-otx2-gbx2/",
-              "published": "2026-09-20T09:24:33Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "川普表示想成立「AI 部隊」",
-              "summary_zh": "美國總統川普在 Truth Social 發文，表示要任命一位「AI 沙皇」來領導新的「AI force」，並稱其政府不會以任何方式阻礙 AI 發展。",
-              "relevance": "美國 AI 政策與監管走向——宏觀政策主題",
-              "title": "Trump now says he wants to form an ‘AI Force’",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
-              "published": "2026-09-20T15:39:22Z"
-            },
-            {
-              "title_zh": "發炎領域生技公司 Electra 以超額 IPO 募得 3.5 億美元",
-              "summary_zh": "Electra Therapeutics 於 Nasdaq 掛牌，募資 3.5 億美元，超出原先 IPO 預期，是今年又一家超額募資的生技公司。",
-              "relevance": "生技 IPO 市場資金動能——宏觀資金環境主題",
-              "title": "Inflammation biotech Electra charges up with $350M from upsized IPO",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/electra-rides-biotech-ipo-surge-charge-350m-upsized-listing",
-              "published": null
-            }
-          ]
-        }
-      ],
-      "warnings": [
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
         "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
       ]
