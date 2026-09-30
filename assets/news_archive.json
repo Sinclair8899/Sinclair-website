@@ -2,6 +2,239 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-09-30",
+      "generated_utc": "2026-09-30T00:47:36Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 12,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 6
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 14,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "AMD 收購 AI 新創 World Labs,加碼與 Nvidia 競爭",
+              "summary_zh": "AMD 宣布收購由李飛飛創辦、專注世界模型(world models)的新創 World Labs,交易金額 82 億美元。該交易預計於今年底前完成。",
+              "relevance": "AI 加速器與模型堆疊整合——AI 基礎設施競爭格局主題",
+              "title": "AMD acquires World Labs AI startup, upping the ante against Nvidia",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/09/amd-acquires-world-labs-ai-pioneer-fei-fei-lis-world-models-startup/",
+              "published": "2026-09-29T21:14:49Z"
+            },
+            {
+              "title_zh": "OpenAI 推出 GPT-6.1 Sol,稱效能接近 GPT-6 Astra 且成本更低",
+              "summary_zh": "OpenAI 表示 GPT-6.1 Sol 相較 GPT-6 Sol 在複雜專業任務上有顯著改進,包括程式碼撰寫與除錯、文件理解,以及執行多步驟商業工作流程。",
+              "relevance": "前沿模型效能/成本曲線——推論成本與算力需求主題",
+              "title": "OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
+              "published": "2026-09-29T17:15:00Z"
+            },
+            {
+              "title_zh": "OpenAI 表示原定的 GPT-6.1 過於不安全而無法釋出",
+              "summary_zh": "OpenAI 指出原規劃中的 GPT-6.1 因安全性問題未能發布,並提到目前公開模型也存在類似的效能與安全取捨。",
+              "relevance": "模型發布與安全性取捨——前沿模型部署主題",
+              "title": "OpenAI says planned GPT-6.1 is too insecure to release",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/09/openai-says-planned-gpt-6-1-is-too-insecure-to-release/",
+              "published": "2026-09-29T14:22:31Z"
+            },
+            {
+              "title_zh": "OpenAI 為何缺席 Nvidia 全產業防範失控 AI 代理的行動",
+              "summary_zh": "Nvidia 推動的 Open Agent Safety Platform 未見 OpenAI 公開表態支持,但據 TechCrunch 了解,OpenAI 正私下與 Nvidia 合作。",
+              "relevance": "代理式 AI 安全標準與 Nvidia 生態系——AI 基礎設施主題",
+              "title": "Here’s why OpenAI is absent from Nvidia’s industry-wide effort to end rogue AI agents",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/29/heres-why-openai-is-absent-from-nvidias-industry-wide-effort-to-end-rogue-ai-agents/",
+              "published": "2026-09-29T18:35:00Z"
+            },
+            {
+              "title_zh": "傳 OpenAI 洽談以 1.4 兆美元估值募資 300 億美元",
+              "summary_zh": "報導指出 OpenAI 正在洽談新一輪 300 億美元募資,估值達 1.4 兆美元。此輪預期是該公司延後至 2027 年上市前的最後一輪私募。",
+              "relevance": "AI 資本支出資金來源——AI 基礎設施投資循環主題",
+              "title": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/",
+              "published": "2026-09-29T19:52:37Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Tesla 取得 300 億美元新信用額度,以擴大 Cybercab 與 Optimus 產能",
+              "summary_zh": "Tesla 宣布取得 300 億美元新信用額度,用於擴大 Cybercab 與 Optimus 的規模。公司表示今年不會動用這些債務額度,因已規劃至少 250 億美元資本支出。",
+              "relevance": "人形機器人與自駕車量產資金——機器人與自主系統主題",
+              "title": "Tesla secures $30B in new credit lines as it looks to scale Cybercab, Optimus",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/09/29/tesla-secures-30b-in-new-credit-lines-as-it-looks-to-scale-cybercab-optimus/",
+              "published": "2026-09-29T21:20:12Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "取代動物實驗的技術幾乎就緒,科學家卻尚未準備好",
+              "summary_zh": "報導回顧哈佛 Wyss Institute 的 Donald Ingber 團隊十七年前發表的人體肺臟晶片模型——比 USB 隨身碟還小的透明聚合物板,內含襯有肺泡與血管細胞的微通道,並檢視此類技術取代動物實驗的現況。",
+              "relevance": "器官晶片等非動物模型——生技實驗平台主題",
+              "title": "Tech to Replace Animal Testing Is Almost Ready. Scientists Are Not",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/alternatives-to-animal-testing",
+              "published": "2026-09-29T13:00:02Z"
+            },
+            {
+              "title_zh": "AI 醫療器材必須在真實世界場域中測試",
+              "summary_zh": "Nature 評論指出,輔助臨床決策的工具需要接受與藥物、自駕車核准流程同等嚴謹的評估。",
+              "relevance": "AI 醫材驗證規範——生技×AI 主題",
+              "title": "AI-powered medical devices must be tested in real-world settings",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03046-7",
+              "published": "2026-09-29T00:00:00Z"
+            },
+            {
+              "title_zh": "迄今最強效的減重藥:試驗中受試者體重最多減少 25%",
+              "summary_zh": "Retatrutide 是一款同時模擬 GLP-1、GIP 與升糖素(glucagon)的三重荷爾蒙減重藥物,試驗中受試者體重最多下降 25%。",
+              "relevance": "代謝疾病藥物開發——生技研發管線主題",
+              "title": "Most powerful obesity drug yet: People lost up to 25% of weight in trial",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/health/2026/09/most-powerful-obesity-drug-yet-people-lost-up-to-25-of-weight-in-trial/",
+              "published": "2026-09-29T22:30:37Z"
+            },
+            {
+              "title_zh": "uniQure 股價重挫,亨丁頓舞蹈症基因治療數據轉弱",
+              "summary_zh": "uniQure 的亨丁頓舞蹈症基因治療在 48 個月時未能顯著減緩疾病進程,開盤股價下跌 41%。但分析師因試驗的干擾因素與次要終點持續表現,仍對 AMT-130 的核准路徑保持樂觀。",
+              "relevance": "基因治療臨床讀數——生技研發風險主題",
+              "title": "uniQure stock crashes as Huntington’s gene therapy data weaken",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/uniqure-stock-crashes-huntingtons-gene-therapy-data-weaken",
+              "published": null
+            },
+            {
+              "title_zh": "ai3Bio 帶著 4,800 萬美元資金走出隱形期",
+              "summary_zh": "ai3Bio 宣布完成 4,800 萬美元募資並結束隱形營運,其平台鎖定自體免疫疾病中的 T 細胞。",
+              "relevance": "AI 驅動免疫治療平台——生技×AI 主題",
+              "title": "ai3Bio emerging from stealth to ‘take the gun out of the hands of the immune system’",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/ai3bio-emerging-stealth-take-gun-out-hands-immune-system",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Anthropic 的 IPO 說明中包含人類滅絕警告",
+              "summary_zh": "Anthropic 在其 IPO 文件中警告,自家模型可能抗拒被關閉並造成災難性傷害。",
+              "relevance": "AI 公司上市與風險揭露——AI 產業資本市場主題",
+              "title": "Anthropic’s IPO pitch includes a warning about human extinction",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/09/anthropics-ipo-pitch-includes-a-warning-about-human-extinction/",
+              "published": "2026-09-29T14:10:00Z"
+            },
+            {
+              "title_zh": "Sam Altman 表示 OpenAI 在模型安全達標前不會上市",
+              "summary_zh": "OpenAI 執行長 Sam Altman 表示,公司要能對模型安全做出更好的承諾後才會上市,目前沒有明確時間表。他提到公司打算持續推進 AI 進展,同時模型能力出現大幅躍升。",
+              "relevance": "AI 公司上市時程——AI 產業資本市場主題",
+              "title": "Sam Altman says OpenAI won’t go public until its models are safe",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety",
+              "published": "2026-09-30T00:19:13Z"
+            },
+            {
+              "title_zh": "光靠專利無法解開關鍵礦產供應鏈",
+              "summary_zh": "Nature 評論文章討論關鍵礦產供應鏈的解方,指出專利並非充分條件。",
+              "relevance": "關鍵礦產供應鏈——半導體上游原料主題",
+              "title": "Patents alone won’t unlock critical-mineral supply chains",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03054-7",
+              "published": "2026-09-29T00:00:00Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
+        "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
+        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
+      ]
+    },
+    {
       "date": "2026-09-29",
       "generated_utc": "2026-09-29T01:18:22Z",
       "status": "published",
@@ -1502,269 +1735,6 @@
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/09/23/even-americans-who-use-ai-every-day-are-worried-about-it/",
               "published": "2026-09-23T16:49:58Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
-        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
-      ]
-    },
-    {
-      "date": "2026-09-23",
-      "generated_utc": "2026-09-22T23:52:32Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 16,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 3,
-          "excluded": 3
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 3,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 14,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "OpenAI 推出 GPT-6 Sol 與 Luna,主打更低成本與更少錯誤",
-              "summary_zh": "OpenAI 發表兩款新模型 GPT-6 Sol 與 Luna,公司表示兩者與 Astra 系出同源,並強調更低的成本與更少的錯誤。",
-              "relevance": "前沿模型推論成本結構——AI 基礎設施需求主題",
-              "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
-              "published": "2026-09-22T18:00:00Z"
-            },
-            {
-              "title_zh": "Anthropic 發布 Opus 5.5,降價並達到 Fable 等級效能",
-              "summary_zh": "Anthropic 推出 Opus 5.5,價格較前代更低,效能達 Fable 等級。公司稱其為「我們測試過表現最強的模型」。",
-              "relevance": "前沿模型迭代與定價——AI 基礎設施需求主題",
-              "title": "Anthropic releases Opus 5.5 with lower prices and Fable-level performance",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
-              "published": "2026-09-22T16:30:07Z"
-            },
-            {
-              "title_zh": "未來是無風扇的:液冷 AI 伺服器的 100% 熱能捕捉",
-              "summary_zh": "文章指出當機櫃功率超過 250 kW 後,液冷與氣冷混合方案已不敷使用;以 70/30 液氣比例計算仍留下 75 kW 的氣冷負載,對應的氣冷系統帶來成本與複雜度,因此需要近乎全量的熱能捕捉。",
-              "relevance": "資料中心散熱與機櫃功率密度——AI 基礎設施主題",
-              "title": "The Future Is Fanless: 100% Heat Capture for Liquid Cooled AI Servers",
-              "source": "IEEE Spectrum",
-              "url": "https://spectrum.ieee.org/fanless-liquid-cooled-ai-servers-coolit",
-              "published": "2026-09-22T12:22:50Z"
-            },
-            {
-              "title_zh": "Snorkel AI 估值翻三倍至 35 億美元,AI 訓練資料需求大增",
-              "summary_zh": "成立七年的 Snorkel AI 完成 3.5 億美元 E 輪募資,估值提升至 35 億美元,資金將用於推進其資料即服務(data-as-a-service)模式。",
-              "relevance": "訓練資料供應鏈——AI 基礎設施主題",
-              "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
-              "published": "2026-09-22T21:56:43Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "新加坡 Nexstrom 要把 2D 半導體帶進晶圓廠",
-              "summary_zh": "總部位於新加坡的 Nexstrom 取得新一輪募資,用於開發可協助晶片製造商大規模量產 2D 半導體材料的設備。",
-              "relevance": "次世代材料與製程設備——半導體主題",
-              "title": "Singapore’s Nexstrom wants to bring 2D semiconductors to chip fabs",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/22/singapores-nexstrom-wants-to-bring-2d-semiconductors-to-chip-fabs/",
-              "published": "2026-09-22T13:20:00Z"
-            },
-            {
-              "title_zh": "Qualcomm 推出兩款主打 AI 的新款智慧型手機晶片",
-              "summary_zh": "Qualcomm 發表 Snapdragon 8 Elite Gen 6 與 8 Elite Extreme Gen 6,表示其最高階晶片可在本地端執行 300 億參數的 mixture-of-experts 模型。",
-              "relevance": "端側推論與晶片記憶體需求——半導體主題",
-              "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
-              "published": "2026-09-22T20:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Toyota 要求員工訓練人形機器人,但強調不會取代人類",
-              "summary_zh": "Toyota 要求工廠員工參與人形機器人的訓練工作,並表示相關計畫不會取代人類勞工。報導指出此舉正值車廠競相開發與部署人形機器人之際。",
-              "relevance": "人形機器人在製造現場的部署——機器人與自主系統主題",
-              "title": "Toyota orders workers to train humanoid robots but says humans won't be replaced",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/09/toyota-claims-plan-for-400000-factory-robots-wont-replace-human-workers/",
-              "published": "2026-09-22T17:06:16Z"
-            },
-            {
-              "title_zh": "Waymo 最新擴張策略:青少年",
-              "summary_zh": "Waymo 在 Nashville 開放 13 至 17 歲青少年使用其 robotaxi 服務,這是該公司第二個向未成年人提供乘車服務的城市。",
-              "relevance": "自駕車隊營運擴張——自主系統主題",
-              "title": "Waymo’s latest expansion strategy: teenagers",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/22/waymos-latest-expansion-strategy-teenagers/",
-              "published": "2026-09-22T17:36:06Z"
-            },
-            {
-              "title_zh": "AstroForge 讓 AI 接掌下一艘太空船",
-              "summary_zh": "AstroForge 的 Autonomy-1 任務將由一個小型、以 transformer 為基礎的 AI 模型主導控制太空探測器。",
-              "relevance": "端到端自主控制模型——自主系統主題",
-              "title": "AstroForge is putting AI in command of its next spacecraft",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/",
-              "published": "2026-09-22T15:00:00Z"
-            },
-            {
-              "title_zh": "Barbara Mazzolai 想開創機器人學的新領域",
-              "summary_zh": "機器人學家 Barbara Mazzolai 長期從自然取得設計靈感,由生物學轉入工程領域後成為仿生機器人的早期開拓者;她現在希望所打造的技術也能回饋環境。",
-              "relevance": "仿生機器人研究方向——機器人主題",
-              "title": "Barbara Mazzolai Wants to Build a New Field of Robotics",
-              "source": "IEEE Spectrum",
-              "url": "https://spectrum.ieee.org/sustainability-robotics-barbara-mazzolai",
-              "published": "2026-09-22T14:00:04Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Novartis 以 9 億美元交易取得新放射配體,競爭加劇",
-              "summary_zh": "放射性藥物領域領導者 Novartis 自一家中國生技公司授權引進一款臨床前放射配體療法,以強化其產品線。",
-              "relevance": "放射性藥物研發管線——生技主題",
-              "title": "Novartis secures new radioligand in $900M deal as competition strengthens",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/novartis-secures-new-radioligand-900m-deal-competition-strengthens",
-              "published": null
-            },
-            {
-              "title_zh": "Vertex 中期數據擴大腎臟病市場機會",
-              "summary_zh": "Vertex 公布腎臟病候選藥物 inaxaplin 的正面 2b 期數據,有助其擴展至關鍵試驗所鎖定族群以外的病患。",
-              "relevance": "臨床試驗讀出——生技主題",
-              "title": "Vertex’s midstage data amplify kidney disease market opportunity",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/vertexs-midstage-data-amplify-kidney-disease-market-opportunity",
-              "published": null
-            },
-            {
-              "title_zh": "Amgen 自 Horizon 併購取得的融合蛋白於三期試驗緩解 Sjögren's 症狀",
-              "summary_zh": "針對自體免疫疾病 Sjögren's disease 的試驗性藥物為 Amgen 拿下三期試驗成功,是其收購 Horizon Therapeutics 所得管線的正面訊號。",
-              "relevance": "併購取得管線的臨床驗證——生技主題",
-              "title": "Amgen’s Horizon-acquired fusion protein eases Sjögren's severity in ph. 3 win",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/amgens-horizon-acquired-fusion-protein-eases-sjogrens-severity-ph-3-win",
-              "published": null
-            },
-            {
-              "title_zh": "Celldex 單株抗體以兩項三期試驗成功重返賽道",
-              "summary_zh": "Celldex 公布其單株抗體在治療難治型慢性自發性蕁麻疹病患的兩項三期試驗皆取得成功。",
-              "relevance": "抗體藥物臨床結果——生技主題",
-              "title": "Celldex monoclonal antibody rebounds with pair of phase 3 wins for chronic skin condition",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/celldex-redeems-monoclonal-antibody-pair-phase-3-wins-chronic-skin-condition",
-              "published": null
-            },
-            {
-              "title_zh": "AI 真的會毀滅人類嗎?炒作背後的科學",
-              "summary_zh": "《Nature》檢視 AI 技術是否可能對人類構成生存威脅,並探討 AI 公司為何呼籲放慢發展速度。",
-              "relevance": "AI 風險與治理論述——AI 安全主題",
-              "title": "Will AI really kill us all? The science behind the hype",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02941-3",
-              "published": "2026-09-22T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "德國汽車業面臨裁員陰影,勞工發起抗議",
-              "summary_zh": "德國汽車產業出現抗議行動,報導指出中國競爭與美國關稅的雙重因素正對該產業造成問題。",
-              "relevance": "關稅與產業競爭——總體經濟主題",
-              "title": "Protests for Germany’s car industry as job losses loom",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/cars/2026/09/protests-for-germanys-car-industry-as-job-losses-loom/",
-              "published": "2026-09-22T14:40:47Z"
-            },
-            {
-              "title_zh": "Bill Gates 的 Breakthrough Energy 押注這 21 家新創將形塑能源未來",
-              "summary_zh": "Breakthrough Energy 的投資人認為,即將到來的電氣化浪潮會讓資料中心的能源需求相形見絀,並據此布局投資組合。",
-              "relevance": "電力需求與資料中心能源——AI 基礎設施的總體約束主題",
-              "title": "Bill Gates’ Breakthrough Energy bets these 21 startups will shape energy’s future",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/22/bill-gates-breakthrough-energy-bets-these-21-startups-will-shape-energys-future/",
-              "published": "2026-09-22T13:00:00Z"
             }
           ]
         }
