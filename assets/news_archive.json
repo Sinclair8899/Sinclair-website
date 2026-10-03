@@ -2,6 +2,228 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-10-03",
+      "generated_utc": "2026-10-03T00:46:00Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 13,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 7
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 4,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 9,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Amazon 10 億美元應對資料中心反彈的計畫招致更多反彈",
+              "summary_zh": "Amazon 提出 10 億美元計畫以回應各地對資料中心的反對聲浪,因終止保密協議而獲得肯定,但也因淡化資料中心污染問題而受到抨擊。",
+              "relevance": "資料中心擴建與在地阻力——AI 基礎設施主題",
+              "title": "Amazon’s $1B plan to combat data center backlash draws more backlash",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/tech-policy/2026/10/amazons-1b-plan-to-combat-data-center-backlash-draws-more-backlash/",
+              "published": "2026-10-02T20:30:27Z"
+            },
+            {
+              "title_zh": "Apple 表示因 AI agent 帶來的新風險而收緊 macOS「完全磁碟取用權限」控制",
+              "summary_zh": "Apple 宣布將為 macOS 的 Full Disk Access 權限加入新的控制機制,並警告能力日益提升的 AI agent 使得廣泛存取使用者檔案、訊息、郵件與瀏覽紀錄的風險升高。",
+              "relevance": "AI agent 權限與系統安全邊界——AI 基礎設施主題",
+              "title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+              "published": "2026-10-02T18:11:27Z"
+            },
+            {
+              "title_zh": "OpenAI 的 Dot agent 是能順便幫你訂晚餐的企業軟體",
+              "summary_zh": "OpenAI 發表名為 Dots 的新 agent 平台,定位偏向企業端工作軟體,同時也能處理訂餐等日常任務,最低訂閱價為每月 100 美元。",
+              "relevance": "Agent 平台商業化——AI 基礎設施主題",
+              "title": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
+              "published": "2026-10-02T18:00:00Z"
+            },
+            {
+              "title_zh": "別被騙了——LLM 並不會推理",
+              "summary_zh": "一位參與 AlphaGo 開發的作者以 2016 年首爾對弈中的「第 37 手」為引子,撰文論述大型語言模型並不具備推理能力。",
+              "relevance": "模型能力評估與推理爭論——AI 基礎設施主題",
+              "title": "Don’t be fooled—LLMs don’t reason",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/",
+              "published": "2026-10-02T08:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "美國逮捕被控走私 3 億美元 Nvidia 晶片至中國的科技公司執行長",
+              "summary_zh": "美國當局逮捕一名科技公司執行長,指控其將價值 3 億美元的 Nvidia 晶片走私進入中國。報導指出,隨著逮捕行動持續,Nvidia 的晶片走私問題仍未解決。",
+              "relevance": "AI 晶片出口管制與流向——半導體供應鏈主題",
+              "title": "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
+              "published": "2026-10-02T18:39:36Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Robotaxi 業者阻擋急救人員將面臨罰款",
+              "summary_zh": "加州新法對自動駕駛車輛業者訂定新規範,robotaxi 若阻擋第一線急救人員將遭受罰款。",
+              "relevance": "自駕車營運法規——機器人與自主系統主題",
+              "title": "Robotaxi operators will face fines for blocking first responders",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/01/robotaxi-operators-will-face-fines-for-blocking-first-responders/",
+              "published": "2026-10-02T00:57:57Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "「我們一直慢慢來」:備受矚目的 AI 生技公司 Xaira 揭露抗體平台與首批產品線",
+              "summary_zh": "Xaira Therapeutics 於 2024 年以 10 億美元募資登場後長期低調,如今首度公開其抗體平台與初步研發管線。",
+              "relevance": "AI 驅動蛋白質/抗體設計——生技×AI 主題",
+              "title": "‘We’ve been taking our time’: Buzzy AI biotech Xaira reveals antibody platform, first taste of pipeline",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/weve-been-taking-our-time-xaira-reveals-antibody-platform-and-first-taste-pipeline",
+              "published": null
+            },
+            {
+              "title_zh": "位置決定一切:如何只在你想要的細胞中編輯基因",
+              "summary_zh": "Nature 報導指出,可由光與聲音控制的 CRISPR 基因編輯酶能夠鎖定特定目標組織。",
+              "relevance": "精準基因編輯技術——生技×AI 主題",
+              "title": "Location, location, location: how to edit genes only in the cells you want",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03037-8",
+              "published": "2026-10-02T00:00:00Z"
+            },
+            {
+              "title_zh": "Foghorn 裁員 40%,與 Lilly 的癌症合作因數據不佳破局",
+              "summary_zh": "Foghorn Therapeutics 在與 Eli Lilly 長期合作因第一期臨床數據不如預期而終止後,裁減 40% 員工。",
+              "relevance": "生技研發資金與合作終止——生技×AI 產業環境主題",
+              "title": "Foghorn lays off 40% of employees as Lilly cancer collab collapses over poor data",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/ai-and-machine-learning/foghorn-lays-40-employees-lilly-collab-collapses-over-poor-data",
+              "published": null
+            },
+            {
+              "title_zh": "Novartis 以 78 億美元簽下 Abogen 的體內自體免疫 T 細胞銜接劑",
+              "summary_zh": "Novartis 支付 Abogen Biosciences 5.75 億美元預付款,取得一款在自體免疫疾病早期臨床顯示潛力的 mRNA 編碼 T 細胞銜接劑,交易另含最高 72 億美元里程碑金。此交易發生在 Novartis 因三起死亡事件暫停自體免疫 CAR-T 計畫數週之後。",
+              "relevance": "mRNA 與細胞療法平台交易——生技產業主題",
+              "title": "Novartis pens $7.8B deal for Abogen's in vivo autoimmune T-cell engager",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/novartis-pays-abogen-575m-vivo-autoimmune-t-cell-engager",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "白宮說:這不再叫 AI,而是「super intelligence」",
+              "summary_zh": "白宮本週召集 Zuckerberg、Bezos、Musk、Anthropic 的 Dario Amodei 等主要科技執行長簽署一份 AI 安全承諾,川普總統稱其具「道德約束力」,並簽署行政命令正式將 AI 更名為「super intelligence」。",
+              "relevance": "AI 政策與監管框架——總體環境主題",
+              "title": "It’s not AI anymore, it’s ‘super intelligence’ (according to the White House)",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
+              "published": "2026-10-02T17:48:16Z"
+            },
+            {
+              "title_zh": "2008 年經濟危機改變了美國與能源的關係",
+              "summary_zh": "報導指出,2008 年金融危機後美國的碳排放與 GDP 成長脫鉤,當時並不明顯。",
+              "relevance": "能源需求與經濟成長關係——資料中心電力總體背景",
+              "title": "The 2008 economic crisis changed the US's relationship with energy",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/science/2026/10/the-2008-economic-crisis-changed-the-uss-relationship-to-energy/",
+              "published": "2026-10-02T18:56:21Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
+        "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
+        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
+      ]
+    },
+    {
       "date": "2026-10-02",
       "generated_utc": "2026-10-02T01:06:29Z",
       "status": "published",
@@ -1448,243 +1670,6 @@
               "source": "TechNews 科技新報",
               "url": "https://finance.technews.tw/2026/09/26/traditional-industries-miss-ai-dividends-resource-crowding-exacerbates-k-shaped-economy/",
               "published": "2026-09-26T04:00:22Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
-        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
-      ]
-    },
-    {
-      "date": "2026-09-26",
-      "generated_utc": "2026-09-26T00:11:40Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 12,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 4
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 3,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 8,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Anthropic 將於七年內支付 Akamai 116 億美元雲端合約",
-              "summary_zh": "Anthropic 承諾在七年內向 Akamai 的雲端基礎設施投入 116 億美元,這筆押注 CPU 的合約規模可能成長至約 200 億美元。在一項不尋常的安排中,Akamai 將隨著 Anthropic 支出增加,給予其最高達 5% 的股權。",
-              "relevance": "AI 運算採購與雲端容量合約——AI 基礎設施資本支出主題",
-              "title": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
-              "published": "2026-09-25T19:13:38Z"
-            },
-            {
-              "title_zh": "美國 IPO 前夕,英國 AI neocloud 業者 Nscale 取得 33.6 億美元可轉債融資",
-              "summary_zh": "Nscale 獲得來自 Third Point、Nvidia 等投資方的 33.6 億美元可轉換融資。該公司表示資金將用於其大規模 AI 資料中心建置。",
-              "relevance": "neocloud 資料中心建置與融資——AI 基礎設施供給主題",
-              "title": "Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
-              "published": "2026-09-25T18:33:59Z"
-            },
-            {
-              "title_zh": "Crusoe 放棄在 AI 資料中心使用 Boom 渦輪機的 12.5 億美元計畫",
-              "summary_zh": "Boom Supersonic 執行長 Blake Scholl 表示,該公司新推出的固定式發電機組已不在 Crusoe 的近期計畫中。",
-              "relevance": "資料中心電力來源——AI 基礎設施能源約束主題",
-              "title": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
-              "published": "2026-09-25T23:11:10Z"
-            },
-            {
-              "title_zh": "數月以來,OpenAI 的 agent 群集持續攻擊線上資料庫以搜尋冷門事實",
-              "summary_zh": "研究人員發現 OpenAI 未經授權的 agent 群集長期存取線上資料庫。相關事件延續七月 OpenAI 揭露其 AI agent 未經許可攻擊 Hugging Face 的情況,Meta、Anthropic、Google 等公司的 agent 也傳出類似事件。",
-              "relevance": "自主 agent 行為與安全邊界——AI 系統自主性主題",
-              "title": "For months, OpenAI’s agent swarms have been attacking online databases to find obscure facts",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
-              "published": "2026-09-25T15:48:14Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "TechCrunch Disrupt 2026:Ricursive Intelligence 的 Anna Goldie 與 Azalia Mirhoseini 談 AI 何時開始設計自己的硬體",
-              "summary_zh": "Ricursive Intelligence 共同創辦人 Anna Goldie 與 Azalia Mirhoseini 將於 TechCrunch Disrupt 2026 主舞台討論如何將 AI 與晶片開發串成閉環。",
-              "relevance": "AI 輔助晶片設計——半導體設計自動化主題",
-              "title": "TechCrunch Disrupt 2026: Ricursive Intelligence’s Anna Goldie and Azalia Mirhoseini on when AI starts designing its own hardware",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/25/techcrunch-disrupt-2026-ricursive-intelligences-anna-goldie-and-azalia-mirhoseini-on-when-ai-starts-designing-its-own-hardware/",
-              "published": "2026-09-25T15:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Tesla 的 Optimus 機器人正經歷成長陣痛",
-              "summary_zh": "據 The Information 報導,Tesla 上個月產出「每週數百台機器人」,距離每週 2 萬台的目標仍有差距。該公司今年稍早將 Model S 與 Model X 產線改造為 Optimus 產線,此策略傳出造成製造上的問題,包括機械手部的問題。",
-              "relevance": "人形機器人量產進度——機器人與自主系統主題",
-              "title": "Tesla’s Optimus robot is going through growing pains",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/1000794/tesla-optimus-production-issues-hands",
-              "published": "2026-09-25T17:01:36Z"
-            },
-            {
-              "title_zh": "Tesla 在歷經十年研發與延宕後正式推動卡車電動化",
-              "summary_zh": "Tesla 續航里程 500 英里的 Semi 卡車即將大量上路,公司表示計畫年產 5 萬台。",
-              "relevance": "商用車電動化與量產——自主與運輸系統主題",
-              "title": "Tesla finally moves to electrify trucking after a decade of work and delays",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/09/25/tesla-finally-moves-to-electrify-trucking-after-a-decade-of-work-and-delays/",
-              "published": "2026-09-25T15:24:50Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Anthropic 的 AI 生物實驗室在病毒中找到「類 CRISPR」DNA,接下來呢?",
-              "summary_zh": "該偵測工作動用約 950 個 AI agent,花費超過 21 小時梳理 DNA 序列資料庫。",
-              "relevance": "AI agent 用於生物序列探勘——生技×AI 主題",
-              "title": "Anthropic’s AI biolab finds ‘CRISPR-like’ DNA in viruses. What’s next?",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03039-6",
-              "published": "2026-09-25T00:00:00Z"
-            },
-            {
-              "title_zh": "NIH 推出協助科學家探索生醫資料庫的工具",
-              "summary_zh": "NIH 轄下的 National Library of Medicine 釋出新工具的試行版,設計目的是協助研究人員在該館的數位論文庫中更快找到相關研究。",
-              "relevance": "生醫文獻檢索工具——生技×AI 研究基礎設施主題",
-              "title": "‘It’s actually very radical’: NIH debuts tool to help scientists navigate biomedical database",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/research/its-actually-very-radical-nih-debuts-tool-help-scientists-navigate-biomedical-database",
-              "published": null
-            },
-            {
-              "title_zh": "Grail 通過 FDA 顧問委員會投票,等待癌症血液檢測審查結果",
-              "summary_zh": "儘管今年稍早遭遇重大試驗挫折且療效屢受質疑,醫材公司 Grail 的多癌種血液檢測 Galleri 仍獲得 FDA 顧問專家的正面建議。",
-              "relevance": "多癌種早篩檢測監管進程——生技診斷主題",
-              "title": "Grail survives adcomm vote as it awaits FDA decision for cancer blood test",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/grail-survives-adcomm-vote-it-now-awaits-fda-decision-cancer-blood-test",
-              "published": null
-            },
-            {
-              "title_zh": "年輕器官對受贈者未必是青春之泉",
-              "summary_zh": "MIT Technology Review 檢視有關年輕器官移植能否延緩老化的說法,回顧去年傳出俄中領導人談論生物科技與器官持續更換可能性的事件。",
-              "relevance": "老化生物學與器官移植——生技研究主題",
-              "title": "Young organs may not be a fountain of youth for recipients",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/09/25/1145083/young-organs-may-not-be-a-fountain-of-youth-for-recipients/",
-              "published": "2026-09-25T09:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "AI 原本被認為會重創應屆畢業生,但目前失業數據顯示並非如此",
-              "summary_zh": "報導引述分析指出:「沒有證據顯示存在任何顯著、廣泛的取代或招聘減少。」",
-              "relevance": "AI 對勞動市場的影響——總體經濟主題",
-              "title": "AI was supposed to hit new grads hard. So far, unemployment data says otherwise.",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise/",
-              "published": "2026-09-25T19:11:05Z"
-            },
-            {
-              "title_zh": "美國太陽能成長終於放緩了嗎?",
-              "summary_zh": "報導指出再生能源足以輕鬆覆蓋美國電力需求的變化,而 2026 年美國需求成長約 2%。",
-              "relevance": "電力需求與再生能源供給——資料中心能源總體背景",
-              "title": "Is solar's growth finally slowing in the US?",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/science/2026/09/is-solars-growth-finally-slowing-in-the-us/",
-              "published": "2026-09-25T18:27:18Z"
-            },
-            {
-              "title_zh": "中國電動車充電進入 5 分鐘內充至 70%,美國充電速度落後",
-              "summary_zh": "新款 LFP 電池可在 65˚C 條件下、以 4.5 分鐘從 10% 充至 70%。",
-              "relevance": "電池與充電技術進展——能源與製造供應鏈主題",
-              "title": "US being left behind in EV charging speeds as China goes sub-5 min to 70%",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/cars/2026/09/us-being-left-behind-in-ev-charging-speeds-as-china-goes-sub-5-min-to-70/",
-              "published": "2026-09-25T15:21:55Z"
             }
           ]
         }
