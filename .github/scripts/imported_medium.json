@@ -1,6 +1,9 @@
 {
   "identities": [
     {
+      "canonical": "https://sinclairhuang.substack.com/p/ai-1a5"
+    },
+    {
       "canonical": "https://sinclairhuang.substack.com/p/ai-2c9"
     },
     {
@@ -127,6 +130,10 @@
     {
       "canonical": "https://medium.com/@sinclairhuang/when-ai-starts-predicting-the-next-scientific-question-d3430bddaa5c",
       "medium_id": "d3430bddaa5c"
+    },
+    {
+      "canonical": "https://medium.com/@sinclairhuang/how-ai-gains-experience-in-the-real-world-d63b589b00a0",
+      "medium_id": "d63b589b00a0"
     },
     {
       "canonical": "https://medium.com/@sinclairhuang/why-jobs-are-no-longer-enough-in-the-ai-economy-dd8e6cf2fc8c",

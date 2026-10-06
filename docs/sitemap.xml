@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sinclairhuang.org/privacy/</loc>
-    <lastmod>2026-08-04T00:00:00+08:00</lastmod>
+    <loc>https://sinclairhuang.org/blog/2026-10-01-how-ai-gains-experience-zh/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/blog/2026-10-01-how-ai-gains-experience-in-the-real-world/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sinclairhuang.org/privacy/</loc>
     <lastmod>2026-08-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/insights/</loc>
@@ -25,9 +34,6 @@
   </url><url>
     <loc>https://sinclairhuang.org/research/semiconductors/</loc>
     <lastmod>2026-08-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sinclairhuang.org/blog/</loc>
-    <lastmod>2026-07-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sinclairhuang.org/blog/2026-07-21-everyone-is-counting-tokens-watch-the-bandwidth-that-gets-pa/</loc>
     <lastmod>2026-07-21T00:00:00+00:00</lastmod>

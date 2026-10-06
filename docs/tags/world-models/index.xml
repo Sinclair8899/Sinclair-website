@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Agentic-Ai on Sinclair Huang, HEC Liège, Executive DBA</title>
-    <link>https://sinclairhuang.org/tags/agentic-ai/</link>
-    <description>Recent content in Agentic-Ai on Sinclair Huang, HEC Liège, Executive DBA</description>
+    <title>World-Models on Sinclair Huang, HEC Liège, Executive DBA</title>
+    <link>https://sinclairhuang.org/tags/world-models/</link>
+    <description>Recent content in World-Models on Sinclair Huang, HEC Liège, Executive DBA</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sinclairhuang.org/tags/agentic-ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sinclairhuang.org/tags/world-models/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI 的經驗如何在真實世界養成</title>
       <link>https://sinclairhuang.org/blog/2026-10-01-how-ai-gains-experience-zh/</link>
@@ -21,13 +21,6 @@
       <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://sinclairhuang.org/blog/2026-10-01-how-ai-gains-experience-in-the-real-world/</guid>
       <description>To work in the physical world, it also needs an environment in which it can observe, act, receive feedback, and test the results.</description>
-    </item>
-    <item>
-      <title>AI Is Getting a Ticker, an Agent, and a Body</title>
-      <link>https://sinclairhuang.org/blog/2026-06-08-ai-is-getting-a-ticker-an-agent-and-a-body/</link>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://sinclairhuang.org/blog/2026-06-08-ai-is-getting-a-ticker-an-agent-and-a-body/</guid>
-      <description>AI is acquiring a ticker, an agent, and a body—becoming tradable, operational, and physical. This second revolution may be larger and riskier than the first.</description>
     </item>
   </channel>
 </rss>
