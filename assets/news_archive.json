@@ -2,6 +2,284 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-10-09",
+      "generated_utc": "2026-10-09T01:30:10Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 15,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 6
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 5,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Google 將代理式 AI 帶入 Gemini,先從企業市場開始",
+              "summary_zh": "Google 把 Gemini 轉為可規劃、執行任務並跨企業應用程式與系統運作的 AI 代理。該代理可將工作委派給子代理、使用多種 AI 模型,並擁有自己的職場身分與電子郵件地址。",
+              "relevance": "代理式 AI 系統架構——AI 基礎設施與工作負載主題",
+              "title": "Google brings agentic AI to Gemini, starting with businesses",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+              "published": "2026-10-08T18:18:00Z"
+            },
+            {
+              "title_zh": "報導稱 OpenAI 營收比先前預估少 200 億美元",
+              "summary_zh": "先前有報導指該 AI 實驗室的年化營收約為 700 億美元,新的報導則稱實際數字遠低於此。",
+              "relevance": "前沿模型業者財務規模——AI 資本支出與基礎設施投資主題",
+              "title": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
+              "published": "2026-10-08T18:19:42Z"
+            },
+            {
+              "title_zh": "Goodfire 稱新的「由內而外」監測器能以極低成本抓出失控 AI 代理",
+              "summary_zh": "Goodfire 推出其所稱更便宜的 AI 代理監控方式:不再支付第二個 AI 閱讀代理的所有行為,而是在模型運作時直接檢視其內部狀態,僅在出現異常時才呼叫後援。",
+              "relevance": "模型可解釋性與代理監控——AI 基礎設施安全層主題",
+              "title": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
+              "published": "2026-10-08T16:00:00Z"
+            },
+            {
+              "title_zh": "Anthropic 為開源專案推出免費 AI 資安掃描",
+              "summary_zh": "Anthropic 推出名為 OSS Scanner 的新服務,協助開源專案找出安全漏洞。該公司表示,選擇加入的開源專案將免費獲得「由我們最強模型進行的徹底、定期安全掃描」。",
+              "relevance": "模型應用於程式碼安全分析——AI 基礎設施軟體供應鏈主題",
+              "title": "Anthropic launches free AI security scans for open-source projects",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+              "published": "2026-10-08T21:53:51Z"
+            },
+            {
+              "title_zh": "熱門 AI 排行榜 Arena 估值 10 個月內近乎翻倍至 31 億美元",
+              "summary_zh": "營運 LMArena 排行榜的公司完成 2 億美元募資,由 Lightspeed 與 Khosla 領投。該公司現也在衡量 AI 模型在說謊等對齊議題上的表現。",
+              "relevance": "模型評測基準與對齊量測——AI 評估方法論主題",
+              "title": "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+              "published": "2026-10-08T18:19:45Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Nvidia 押注實體 AI,目標是更安全的 robotaxi 與人形機器人",
+              "summary_zh": "Nvidia 推出針對實體 AI 的全堆疊安全解決方案,目前已有機器人公司採用,應用方向包括 robotaxi 與人形機器人。",
+              "relevance": "實體 AI 安全堆疊——機器人與自主系統主題",
+              "title": "Nvidia's big bet on physical AI aims for safer robotaxis, humanoid robots",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/10/nvidias-big-bet-on-physical-ai-aims-for-safer-robotaxis-humanoid-robots/",
+              "published": "2026-10-08T11:15:33Z"
+            },
+            {
+              "title_zh": "機器人領域的 AI 突破短期內不會改變你的生活",
+              "summary_zh": "MIT Technology Review 與非營利研究基金會 Aventine 合作的報導,檢視人形機器人熱度攀升背後的現況,以及「同一套 AI 可泛用於機器人」這個想法所面臨的阻礙。",
+              "relevance": "人形機器人泛化能力的侷限——機器人基礎模型主題",
+              "title": "AI breakthroughs in robotics won’t change your life any time soon",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
+              "published": "2026-10-08T09:00:00Z"
+            },
+            {
+              "title_zh": "Waymo 取得 Blackstone、PIMCO 50 億美元貸款,支應 robotaxi 擴張",
+              "summary_zh": "Waymo 鎖定來自 Blackstone 與 PIMCO 的 50 億美元貸款以推進 robotaxi 擴張,這是這家 Alphabet 旗下公司首次採用債務融資。",
+              "relevance": "自駕車隊規模化資金——自主系統商業化主題",
+              "title": "Waymo locks in $5B loan from Blackstone, PIMCO to fuel robotaxi expansion",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion/",
+              "published": "2026-10-08T14:16:56Z"
+            },
+            {
+              "title_zh": "打造通往自主工業 AI 的更安全路徑",
+              "summary_zh": "文章指出工業 AI 進入新階段,基礎模型、實體 AI 與代理式 AI 的進展使跨工業環境的複雜任務自動化成為可能。與純數位環境的 AI 不同,工業 AI 可直接與實體系統互動。",
+              "relevance": "工業環境中的實體 AI 與代理式 AI——自主系統安全主題",
+              "title": "Building a safer path to autonomous industrial AI",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
+              "published": "2026-10-08T08:17:32Z"
+            },
+            {
+              "title_zh": "加州試圖叫停機器人對人類的格鬥賽",
+              "summary_zh": "加州州體育委員會向一家上月舉辦人機對戰的新創公司發出停止通知。該場比賽於 9 月 18 日舉行,由人類 Frankie LaPenna 對上科技新創 Rek 所有的人形機器人。",
+              "relevance": "人形機器人實體互動的監管介入——機器人法規主題",
+              "title": "California is trying to shut down robot vs. human cage matches",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
+              "published": "2026-10-08T20:06:56Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "圓桌對談:與 AI 設計病毒的創造者對話",
+              "summary_zh": "2025 年,史丹佛大學博士生 Samuel King 使用生成式 AI 模型提出微型病毒的基因藍圖。報導指出這尚非 AI 生成生命的案例,但可能是下一步。",
+              "relevance": "生成式模型用於基因組設計——生技×AI 主題",
+              "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+              "published": "2026-10-09T00:08:24Z"
+            },
+            {
+              "title_zh": "AI 生技公司 Iambic 擬 IPO 募資 1.35 億美元推進癌症藥物臨床",
+              "summary_zh": "Iambic Therapeutics 計畫透過 IPO 募得 1.35 億美元淨額,用於資助其主力癌症藥物的臨床開發。",
+              "relevance": "AI 藥物發現公司資本市場——生技×AI 主題",
+              "title": "AI biotech Iambic aims for $135M IPO to push cancer drugs through clinic",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/ai-biotech-iambic-aims-135m-ipo-push-cancer-drugs-through-clinic",
+              "published": null
+            },
+            {
+              "title_zh": "AI 會搶先發表你的科學成果嗎?部分研究者看法悲觀",
+              "summary_zh": "Nature 報導指出,科學家擔憂能力日益增強的大型語言模型會比他們更早做出發現。",
+              "relevance": "LLM 用於科學發現——AI 驅動研究流程主題",
+              "title": "Will AI scoop your science? Some researchers see a gloomy future",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03128-6",
+              "published": "2026-10-08T00:00:00Z"
+            },
+            {
+              "title_zh": "如何建造一隻小鼠:胚胎發育被以驚人細節記錄下來",
+              "summary_zh": "基因編輯技術讓研究人員得以逐細胞追蹤單一受精小鼠卵發育至晚期胚胎的全過程。",
+              "relevance": "高解析度細胞譜系資料——生物基礎模型訓練資料主題",
+              "title": "How to build a mouse: embryo development captured in stunning detail",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03193-x",
+              "published": "2026-10-08T00:00:00Z"
+            },
+            {
+              "title_zh": "ARPA-H 公布 Surpass 計畫,加速並擴大臨床試驗",
+              "summary_zh": "美國衛生及公共服務部宣布啟動新計畫,目標是移除拖慢臨床開發的障礙,並改變臨床試驗的設計與執行方式。",
+              "relevance": "臨床試驗基礎建設改革——生技研發流程主題",
+              "title": "ARPA-H unveils Surpass program to accelerate and expand clinical trials",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/cro/arpa-h-unveils-surpass-program-accelerate-and-expand-clinical-trials",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "美國禁止 Microsoft、Adobe 及主要 IT 公司參與技術外籍勞工綠卡計畫",
+              "summary_zh": "其他被暫停參與該計畫的公司包括 Capgemini、Cognizant、HCL、Infosys、Tata 與 Wipro。",
+              "relevance": "科技業人才流動政策——AI 人力供給主題",
+              "title": "US bars Microsoft, Adobe, and major IT firms from green card program for skilled foreign workers",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/08/us-bars-microsoft-adobe-and-major-it-firms-from-green-card-program-for-skilled-foreign-workers/",
+              "published": "2026-10-08T15:42:26Z"
+            },
+            {
+              "title_zh": "美國擬對國際學生從事畢業後工作收取 10 萬美元費用",
+              "summary_zh": "Nature 報導,政策專家表示該擬議規則將切斷關鍵的 STEM 人才管道。",
+              "relevance": "STEM 人才管道政策——研究人力供給主題",
+              "title": "US proposes $100,000 charge for international students to do post-graduate work",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-02921-7",
+              "published": "2026-10-08T00:00:00Z"
+            },
+            {
+              "title_zh": "「現在只是求生存」:為何波士頓近三分之一的生技實驗室空間閒置?",
+              "summary_zh": "麻州實驗室與製造空間的空置率在 2021 至 2026 年間增加 11 倍,達到 31%。",
+              "relevance": "生技產業資本循環與產能利用——生技景氣主題",
+              "title": "‘It’s just survival now’: Why is almost a third of Boston’s life sciences lab space sitting vacant?",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/its-just-survival-now-why-third-bostons-lab-space-vacant",
+              "published": null
+            },
+            {
+              "title_zh": "Ambrosia Energy 與 Bloom Energy 高層談 AI 基礎設施熱潮帶來的機會",
+              "summary_zh": "Ambrosia Energy 執行長 Ben Longmier 與 Bloom Energy 資深副總裁 Bill Thayer 將出席 TechCrunch Disrupt 的 Smart Systems Stage,討論 AI 基礎設施熱潮在何處創造機會。",
+              "relevance": "資料中心電力供給——AI 基礎設施能源約束主題",
+              "title": "Hear from Ambrosia Energy and Bloom Energy execs on where the AI infrastructure boom is creating opportunity at TechCrunch Disrupt 2026",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/08/hear-from-ambrosia-energy-and-bloom-energy-execs-on-where-the-ai-infrastructure-boom-is-creating-opportunity-at-disrupt-2026/",
+              "published": "2026-10-08T15:00:00Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
+        "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/"
+      ]
+    },
+    {
       "date": "2026-10-08",
       "generated_utc": "2026-10-08T01:21:46Z",
       "status": "published",
@@ -1041,227 +1319,6 @@
       ],
       "warnings": [
         "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
-        "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c",
-        "IEEE Spectrum: excluded url (host 'webinars.on24.com' not under approved domain 'spectrum.ieee.org'): https://webinars.on24.com/wileyevents/ResponsibleAI"
-      ]
-    },
-    {
-      "date": "2026-10-02",
-      "generated_utc": "2026-10-02T01:06:29Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 12,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 6
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 3,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 7,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Google 認為 SpaceX Starship 須發射 1,800 次,太空資料中心才可能成真",
-              "summary_zh": "Google 已將其首顆先進晶片送上軌道,為太空資料中心鋪路。該公司評估,SpaceX Starship 需累積約 1,800 次發射,太空資料中心才具備起步條件。",
-              "relevance": "資料中心運算部署與能源/發射成本——AI 基礎設施主題",
-              "title": "Google thinks SpaceX’s Starship has to launch 1,800 times before space data centers get off the ground",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/",
-              "published": "2026-10-01T19:18:03Z"
-            },
-            {
-              "title_zh": "全球首座增強型地熱電廠於 23 個月內完工",
-              "summary_zh": "Fervo Energy 在不到兩年內完成其首座增強型地熱發電廠,後續階段預計能更快併入電網。",
-              "relevance": "資料中心電力供給——AI 基礎設施能源主題",
-              "title": "World’s first enhanced geothermal power plant completed in just 23 months",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/01/worlds-first-enhanced-geothermal-power-plant-completed-in-just-23-months/",
-              "published": "2026-10-01T18:35:55Z"
-            },
-            {
-              "title_zh": "分散式小型電池如何協助電網",
-              "summary_zh": "報導指出,在紐約市安裝大型電池須面對繁複法規,使大型儲能專案難以併網;部分新創轉而將相對小型的電池部署在非預期的場所。",
-              "relevance": "電網與儲能——資料中心供電約束主題",
-              "title": "How smaller, distributed batteries could help the grid",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/10/01/1145435/distributed-batteries/",
-              "published": "2026-10-01T10:00:00Z"
-            },
-            {
-              "title_zh": "資訊多半隱藏的 Stratego 長期難倒 AI——如今被攻克",
-              "summary_zh": "研究者指出,新增第二個用於猜測隱藏棋子身分的神經網路是關鍵,使 AI 得以在不完全資訊的 Stratego 中擊敗史上最強人類棋手,且運算成本有限。",
-              "relevance": "不完全資訊決策與強化學習方法——AI 模型與自主決策主題",
-              "title": "With most information hidden, the game Stratego had stumped AI—until now",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
-              "published": "2026-10-01T16:28:04Z"
-            },
-            {
-              "title_zh": "決策模型大量湧現,Amazon 推出自家 Jev 複製版",
-              "summary_zh": "AWS 旗下 Strand Labs 發布最新的 Jev 類決策模型 Strands Decider 2B。",
-              "relevance": "代理式決策模型釋出——AI 基礎設施與模型層主題",
-              "title": "Amazon releases its own Jev clone as decision models flood the web",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
-              "published": "2026-10-01T16:49:22Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "記憶體高層預期 RAM 短缺將延續至 2028 年",
-              "summary_zh": "Micron 執行長等記憶體業者高層表示,記憶體供給只會愈來愈緊俏,短缺情況預期持續到 2028 年。報導指出,2027 年出售的記憶體價格「遠高於 2026 年的價格」。",
-              "relevance": "DRAM/HBM 供給與價格——記憶體約束主題",
-              "title": "Memory executives expect RAM shortage to continue through 2028",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/information-technology/2026/10/memory-supplies-are-only-getting-tighter-micron-ceo-says/",
-              "published": "2026-10-01T17:49:56Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Robotaxi 業者阻礙急救人員將面臨罰款",
-              "summary_zh": "加州新法對自動駕駛車輛營運商訂出新規定,若阻擋第一線急救人員將遭罰款。",
-              "relevance": "自駕車監管——自主系統部署主題",
-              "title": "Robotaxi operators will face fines for blocking first responders",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/01/robotaxi-operators-will-face-fines-for-blocking-first-responders/",
-              "published": "2026-10-02T00:57:57Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "AI「讀心」工具可從腦部掃描重建你正在看的影像",
-              "summary_zh": "MIT Technology Review 報導,一項新的 AI 工具能分析腦部掃描並以高精確度重建受試者所見的影像,亦可反向依據觀看內容預測腦部活動。",
-              "relevance": "神經影像與生成模型——生技×AI 主題",
-              "title": "An AI “mind-reading” tool can reconstruct what you’re looking at from a brain scan",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/10/01/1145588/ai-mind-reading-reconstructs-what-youre-looking-at/",
-              "published": "2026-10-01T10:32:24Z"
-            },
-            {
-              "title_zh": "Beam Therapeutics 控告鹼基編輯對手,指前科學家竊取機密",
-              "summary_zh": "鹼基編輯生技公司 Beam Therapeutics 對一家新興競爭對手提告,指其竊取 Beam 主力專案的機密並用以打造競品療法。",
-              "relevance": "基因編輯技術與 IP——生技研發主題",
-              "title": "Beam Therapeutics sues base editing rival, claims former scientist stole secrets",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/beam-therapeutics-sues-base-editing-rival-claims-former-scientist-stole-secrets",
-              "published": null
-            },
-            {
-              "title_zh": "Lilly 癌症合作因數據不佳破局,Foghorn 裁員 40%",
-              "summary_zh": "Foghorn Therapeutics 在與 Eli Lilly 長期合作因第一期臨床數據令人失望而終止後,裁減 40% 員工。",
-              "relevance": "生技研發資金與管線——生技×AI 產業環境主題",
-              "title": "Foghorn lays off 40% of employees as Lilly cancer collab collapses over poor data",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/ai-and-machine-learning/foghorn-lays-40-employees-lilly-collab-collapses-over-poor-data",
-              "published": null
-            },
-            {
-              "title_zh": "Sanofi 支付 Regeneron 10 億美元預付款取得 4 項早期資產",
-              "summary_zh": "Sanofi 以 10 億美元預付款與 Regeneron 合作四項早期免疫學專案,雙方長期夥伴關係意在複製 Dupixent 的成功。",
-              "relevance": "藥物研發合作與資本配置——生技產業主題",
-              "title": "Sanofi pays Dupixent partner Regeneron $1B upfront for 4 early-stage assets to ignite R&D",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/sanofi-pays-regeneron-1b-4-early-stage-assets-ignite-rd",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "一個月內兩個聯邦機構遭駭,大量敏感資料外洩",
-              "summary_zh": "Ars Technica 報導,美國聯邦政府資安在一個月內接連發生兩起機構遭駭事件,外洩大量敏感資料。",
-              "relevance": "政府資安事件——科技政策與風險環境主題",
-              "title": "Hacks of 2 federal agencies in a month have spilled a bonanza of sensitive data",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/security/2026/10/hacks-of-2-federal-agencies-in-a-month-have-spilled-a-bonanza-of-sensitive-data/",
-              "published": "2026-10-01T20:28:45Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
         "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
         "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
