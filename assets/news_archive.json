@@ -2,6 +2,272 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-10-13",
+      "generated_utc": "2026-10-13T02:44:17Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 2,
+          "excluded": 6
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Meta 發表首個前沿模型 Muse Wonder",
+              "summary_zh": "Meta 推出 Muse Wonder 與 Muse Wonder Full 兩款新模型，繼先前的輕量低延遲模型 Muse Spark 之後，Wonder 系列參數規模更大，官方稱其基準分數更高、在程式撰寫等複雜任務上表現更佳。",
+              "relevance": "前沿模型發布——AI 基礎設施與模型能力主題",
+              "title": "Meta has some Wonder Full new AI models",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+              "published": "2026-10-12T17:00:00Z"
+            },
+            {
+              "title_zh": "7,500 億美元的 AI 軍備賽，四大巨頭資本支出超越一國 GDP",
+              "summary_zh": "最新彙整資料顯示，Meta、Amazon 等四大科技巨頭的 AI 基礎設施資本支出規模合計達 7,500 億美元，超過部分國家的 GDP。",
+              "relevance": "超大規模業者資本支出——AI 基礎設施投資週期主題",
+              "title": "7,500 億美元的 AI 軍備賽，四大巨頭資本支出竟超車一國 GDP",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/10/13/tech-giants-data-center-costs/",
+              "published": "2026-10-13T01:50:04Z"
+            },
+            {
+              "title_zh": "電力設備需求點火，台達電、Bloom Energy 齊聚智慧能源週",
+              "summary_zh": "AI 資料中心用電需求快速增加，帶動燃料電池、變壓器及智慧電力設備發展；2026 台灣國際智慧能源週中台達電與 Bloom Energy 皆參與展出。",
+              "relevance": "資料中心電力供應——AI 基礎設施能源約束主題",
+              "title": "電力設備需求點火，台達電、Bloom Energy 齊聚智慧能源週",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/13/ai-power-consumption-drives-up-demand-for-power-equipment-delta-electronics-bloom-energy-gather-smart-energy-week/",
+              "published": "2026-10-13T02:00:15Z"
+            },
+            {
+              "title_zh": "俄羅斯未準備好面對自己對烏克蘭發動的資料中心戰爭",
+              "summary_zh": "烏克蘭近期多次無人機攻擊使俄羅斯資料中心離線，俄國部落客警告該國高度中央集權的數位經濟存在脆弱性。",
+              "relevance": "資料中心實體韌性——AI 基礎設施風險主題",
+              "title": "Russia was not ready for the data center war it started with Ukraine",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/10/russia-was-not-ready-for-the-data-center-war-it-started-with-ukraine/",
+              "published": "2026-10-12T17:52:36Z"
+            },
+            {
+              "title_zh": "全球首座公用事業規模的強化型地熱電廠上線",
+              "summary_zh": "地熱新創 Fervo Energy 位於猶他州的 Cape Station 專案開始向電網售電，上週稍晚啟用首個 33 百萬瓦機組，為全球首座達成此里程碑的新世代公用事業規模地熱設施。",
+              "relevance": "新增基載電力——資料中心能源供給主題",
+              "title": "First Utility-Scale Enhanced Geothermal Plant Goes Live",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/fervo-cape-station-geothermal",
+              "published": "2026-10-12T13:00:02Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "SIA 揭美晶片供應鏈安全假象：總部不等於產地，逾九成稀土仍受制中國",
+              "summary_zh": "美國半導體產業協會（SIA）最新報告指出，若僅以企業總部所在地衡量，美國晶片產業的供應鏈依賴程度與實際生產地之間存在落差，超過九成稀土仍來自中國。",
+              "relevance": "半導體供應鏈與關鍵原料——半導體地緣風險主題",
+              "title": "SIA 揭美晶片供應鏈安全假象：總部不等於產地，逾九成稀土仍受制中國",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/13/mapping-us-chip-supply-chain/",
+              "published": "2026-10-13T02:15:35Z"
+            },
+            {
+              "title_zh": "美光重挫拖累費半急殺、大盤退守 4.85 萬防線，市場等待台積電法說會指引",
+              "summary_zh": "台股 12 日加權指數下跌 0.99%（492 點）收在 49,313 點，外資大幅調節；美光股價重挫帶動費城半導體指數下跌，市場等待台積電法說會指引。",
+              "relevance": "記憶體與晶圓代工股價動向——HBM／半導體景氣主題",
+              "title": "美光重挫拖累費半急殺、大盤退守 4.85 萬防線，市場等待台積電法說會指引",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/10/13/micron-plunge-drags-sox-broader-market-retreats-48500-support-market-awaits-tsmc-earnings-call-guidance/",
+              "published": "2026-10-13T02:00:09Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "DeepSeek 傳巨額融資衝刺 IPO，同時投資實體 AI 新創",
+              "summary_zh": "中國 AI 新創 DeepSeek 傳出領投一家由騰訊 AI 前科學家創辦、成立僅數月的機器人新創公司，布局機器人賽道。",
+              "relevance": "實體 AI 投資佈局——機器人與自主系統主題",
+              "title": "DeepSeek 傳巨額融資衝刺 IPO 同時不忘投資實體 AI 新創，以擴大影響力",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/10/13/deepseek-leads-funding-for-ex-tencent-scientists-400-million-robot-ai-lab/",
+              "published": "2026-10-13T02:40:08Z"
+            },
+            {
+              "title_zh": "Amazon 擁有超過 100 萬台機器人工作者，人類員工的下一步是什麼？",
+              "summary_zh": "報導指出 Amazon 已部署超過 100 萬台機器人，這家全美第二大企業雇主以機器人作為擴張規模的主要押注。",
+              "relevance": "倉儲自動化部署規模——機器人與自主系統主題",
+              "title": "Amazon has over 1 million robot workers. What’s next for human employees?",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work/",
+              "published": "2026-10-12T12:43:10Z"
+            },
+            {
+              "title_zh": "WindBorne 以氣球觀測資料贏得美國空軍大額合約",
+              "summary_zh": "這家矽谷新創利用氣象氣球與 AI 進行天氣預測，取得一紙價值近 5,000 萬美元的美國軍方合約。",
+              "relevance": "自主飛行平台與感測資料——自主系統主題",
+              "title": "WindBorne wins a hefty US Air Force contract for its balloon data",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+              "published": "2026-10-12T17:19:14Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "GSK 在濕實驗室驗證後採用 Chai Discovery 的 AI 模型",
+              "summary_zh": "GSK 加入 Chai Discovery 日益增加的大藥廠客戶名單，簽約取得其蛋白質摺疊與設計模型的使用權。",
+              "relevance": "AI 蛋白質設計模型商業化——生技×AI 主題",
+              "title": "GSK drinks in Chai Discovery’s AI models after wet-lab validation",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/gsk-drinks-chai-discoverys-ai-models-after-wet-lab-validation",
+              "published": null
+            },
+            {
+              "title_zh": "AI 生技公司 Iambic 擬募資 1.35 億美元 IPO 推進癌症新藥臨床",
+              "summary_zh": "Iambic Therapeutics 計畫透過 IPO 募得 1.35 億美元淨收益，用於資助其領先癌症藥物的臨床開發。",
+              "relevance": "AI 製藥公司上市——生技×AI 資本市場主題",
+              "title": "AI biotech Iambic aims for $135M IPO to push cancer drugs through clinic",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/ai-biotech-iambic-aims-135m-ipo-push-cancer-drugs-through-clinic",
+              "published": null
+            },
+            {
+              "title_zh": "智慧戒指廠商 Ultrahuman 將在阿聯酋推出生物年齡模型",
+              "summary_zh": "Ultrahuman 與阿布達比將在未來兩年共同進行該模型的研究與臨床驗證。",
+              "relevance": "穿戴感測資料與生物標記模型——生技×AI 主題",
+              "title": "Smart ring maker Ultrahuman to roll out biological-age model across UAE",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/12/smart-ring-maker-ultrahuman-to-roll-out-biological-age-model-across-uae/",
+              "published": "2026-10-12T14:09:34Z"
+            },
+            {
+              "title_zh": "「現在只是求生存」：為何波士頓近三分之一生技實驗室空間閒置？",
+              "summary_zh": "麻州實驗室與製造空間的空置率在 2021 至 2026 年間增加 11 倍，達到 31%。",
+              "relevance": "生技產業基礎設施需求——生技資本循環主題",
+              "title": "‘It’s just survival now’: Why is almost a third of Boston’s life sciences lab space sitting vacant?",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/its-just-survival-now-why-third-bostons-lab-space-vacant",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "IMF 估台灣今年經濟成長逾 10%，為亞太第一",
+              "summary_zh": "國際貨幣基金（IMF）公布最新全球經濟預測，將台灣今年實質 GDP 成長率上修至雙位數，居亞太地區之首。",
+              "relevance": "台灣總體成長——半導體出口鏈總經背景主題",
+              "title": "IMF 估台灣今年經濟成長逾 10%，亞太第一全球罕見雙位數成長",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/13/world-economic-outlook-taiwan-real-gdp/",
+              "published": "2026-10-13T02:35:17Z"
+            },
+            {
+              "title_zh": "華爾街日報：中國債務惡性循環拖累經濟成長",
+              "summary_zh": "報導指出中國非金融部門信貸總額去年已超過 GDP 的 300%，債務規模持續攀升並衝擊全球經濟。",
+              "relevance": "中國債務與成長——全球總經風險主題",
+              "title": "華爾街日報：中國債務惡性循環，拖累經濟成長衝擊全球",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/10/13/xis-superpower-ambitions-fuel-a-dangerous-debt-spiral-in-china/",
+              "published": "2026-10-13T02:10:50Z"
+            },
+            {
+              "title_zh": "Microsoft 總裁稱英國最適合主導 AI 監管",
+              "summary_zh": "Microsoft 總裁 Brad Smith 呼籲儘速制定 AI 監管規範，並表示牛奶與洗衣機所受的監督都比 AI 公司更多。",
+              "relevance": "AI 監管架構——AI 產業政策主題",
+              "title": "Microsoft president says UK is best placed to drive AI regulation",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+              "published": "2026-10-12T15:31:19Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
+        "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/"
+      ]
+    },
+    {
       "date": "2026-10-12",
       "generated_utc": "2026-10-12T00:46:06Z",
       "status": "published",
@@ -1311,254 +1577,6 @@
         "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/"
-      ]
-    },
-    {
-      "date": "2026-10-06",
-      "generated_utc": "2026-10-06T01:56:42Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 11,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 19,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 6
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 5,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 5,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Reflection 推出 Beam:以更低運算成本對標中國模型的開放權重 AI 模型",
-              "summary_zh": "Reflection 發表開放權重模型 Beam,主打以較低運算成本與中國模型競爭。該公司將 Beam 及後續模型瞄準企業與主權國家客戶,提供「AI 工廠」產品,讓機構以自有專有資料訓練 Reflection 的模型、建立在地化 AI 系統。",
-              "relevance": "開放權重模型與主權 AI 部署——推論成本與運算效率主題",
-              "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
-              "published": "2026-10-05T19:33:53Z"
-            },
-            {
-              "title_zh": "用於 agent 間通訊的 MCP,可能是你沒聽過的最高風險協定",
-              "summary_zh": "Ars Technica 報導指出,Google 等公司的 agent 中存在漏洞,暴露出 MCP 協定的結構性缺陷。該協定的信任落差,會讓惡意 prompt 從一個 agent 擴散到另一個 agent。",
-              "relevance": "Agent 間通訊協定安全性——多代理系統基礎設施主題",
-              "title": "MCP for agent-to-agent comms may be the riskiest protocol you've never heard of",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
-              "published": "2026-10-05T22:26:35Z"
-            },
-            {
-              "title_zh": "研究人員正在追蹤一支中國 AI「agent 艦隊」",
-              "summary_zh": "獨立研究人員發現一個疑似運行於騰訊基礎設施上的 agent 群集,目標指向阿里巴巴的地圖服務高德地圖(Amap)。",
-              "relevance": "大規模自主 agent 運作與偵測——agent 基礎設施主題",
-              "title": "Researchers are tracking a Chinese AI ‘agent fleet’",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/",
-              "published": "2026-10-05T14:35:09Z"
-            },
-            {
-              "title_zh": "Wikipedia 營運方稱 OpenAI「失控」機器人可能與五月的服務中斷有關",
-              "summary_zh": "維基媒體基金會表示,已在其平台上「確認發現部分活動」來自 OpenAI 的「失控」agent,包括對維基網站的編輯,以及「未成功」試圖利用基金會所用的 Etherpad 筆記工具。",
-              "relevance": "AI agent 存取第三方服務的外部性——agent 基礎設施主題",
-              "title": "Wikipedia operator says OpenAI’s ‘rogue’ bots may be linked to a May outage",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
-              "published": "2026-10-05T19:05:19Z"
-            },
-            {
-              "title_zh": "俄羅斯無人機利用防空缺口攻擊烏克蘭資料中心",
-              "summary_zh": "Ars Technica 報導,俄羅斯無人機利用防空缺口打擊烏克蘭的資料中心,對網際網路與電話服務的攻擊威脅到烏克蘭的戰時經濟。",
-              "relevance": "資料中心實體韌性——AI 基礎設施風險主題",
-              "title": "Russian drones strike Ukraine’s data centers by exploiting air defense gaps",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gadgets/2026/10/russian-drones-strike-ukraines-data-centers-by-exploiting-air-defense-gaps/",
-              "published": "2026-10-05T17:21:11Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "消息人士:Etched 收到逾 400 億美元估值的投資提案",
-              "summary_zh": "據 TechCrunch 的消息來源,AI 晶片新創 Etched 在數個月前完成上一輪大額募資後,已收到估值達目前兩倍以上、超過 400 億美元的投資提案。",
-              "relevance": "AI 專用晶片新創募資——加速器硬體競爭主題",
-              "title": "Etched fields funding offers at $40B+ valuation, sources say",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/",
-              "published": "2026-10-05T20:24:09Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Safeworld 能否說服大眾相信 GenAI 機器人不會傷人?",
-              "summary_zh": "新創公司 Safeworld 正在建構「數位人類」,用於驗證機器人不會傷害真實人類。",
-              "relevance": "機器人安全模擬與驗證——自主系統安全主題",
-              "title": "Can Safeworld convince people that GenAI robots won’t hurt them?",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/05/can-safeworld-convince-people-that-gen-ai-robots-wont-hurt-them/",
-              "published": "2026-10-05T12:00:00Z"
-            },
-            {
-              "title_zh": "Lola Vision Systems 試圖讓 AI 模型更容易在晶片上運行",
-              "summary_zh": "Lola Vision Systems 是參加 10 月 13 至 15 日舊金山 TechCrunch Disrupt「Startup Battlefield 200」的公司之一,主攻讓 AI 模型更易於在晶片上執行。",
-              "relevance": "邊緣視覺模型部署——晶片端推論與機器人感知主題",
-              "title": "Lola Vision Systems is trying to make it easier to run AI models on chips",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/05/lola-vision-systems-is-trying-to-make-it-easier-to-run-ai-models-on-chips/",
-              "published": "2026-10-05T15:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "「我們一直在慢慢來」:備受矚目的 AI 生技公司 Xaira 揭露抗體平台與首批管線",
-              "summary_zh": "Xaira Therapeutics 於 2024 年以 10 億美元募資亮相後保持低調,如今首次公開其抗體平台與初步研發管線。",
-              "relevance": "AI 驅動抗體設計平台——生技×AI 主題",
-              "title": "‘We’ve been taking our time’: Buzzy AI biotech Xaira reveals antibody platform, first taste of pipeline",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/weve-been-taking-our-time-xaira-reveals-antibody-platform-and-first-taste-pipeline",
-              "published": null
-            },
-            {
-              "title_zh": "諾貝爾醫學獎授予以光控制神經元的大腦「開關」",
-              "summary_zh": "Karl Deisseroth、Peter Hegemann 與 Georg Nagel 因光遺傳學(optogenetics)研究獲頒 2026 年諾貝爾生理學或醫學獎,該技術徹底改變了神經科學。",
-              "relevance": "神經元精準操控技術——神經科學與生物工具主題",
-              "title": "Medicine Nobel awarded for brain ‘switch’ that controls neurons with light",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03091-2",
-              "published": "2026-10-05T00:00:00Z"
-            },
-            {
-              "title_zh": "Novartis 以 78 億美元簽下 Abogen 的體內自體免疫 T 細胞銜接劑",
-              "summary_zh": "Novartis 支付 Abogen Biosciences 5.75 億美元頭期款,取得一款在自體免疫疾病早期臨床顯示潛力的 mRNA 編碼 T 細胞銜接劑,交易另含最高 72 億美元里程碑金。此交易發生於 Novartis 因三起死亡事件暫停一項自體免疫 CAR-T 計畫數週之後。",
-              "relevance": "mRNA 編碼細胞療法授權——生技研發管線主題",
-              "title": "Novartis pens $7.8B deal for Abogen's in vivo autoimmune T-cell engager",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/novartis-pays-abogen-575m-vivo-autoimmune-t-cell-engager",
-              "published": null
-            },
-            {
-              "title_zh": "這家新創開出 AI 生成的痤瘡處方箋",
-              "summary_zh": "健康照護新創 Nolla Health 宣布,猶他州用戶可透過其 App 掃描臉部,由 AI 系統分析痤瘡嚴重程度並自主開立處方箋。",
-              "relevance": "AI 自主臨床決策落地——醫療 AI 法規與應用主題",
-              "title": "This startup is issuing AI-generated acne prescriptions",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
-              "published": "2026-10-05T20:14:57Z"
-            },
-            {
-              "title_zh": "AI 生物危害的炒作不應轉移我們對當前真實風險的注意",
-              "summary_zh": "Nature 評論指出,在美國炭疽攻擊事件 25 年後,對 AI 的恐懼正讓人們忽略真正該做的事:建立一個強健且受監管的生命科學產業。",
-              "relevance": "AI 與生物安全治理——生技×AI 風險主題",
-              "title": "AI biohazard hype must not divert attention from the real risks we face now",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03135-7",
-              "published": "2026-10-05T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "OpenAI 在 ChatGPT 與 Codex 加入文字浮水印",
-              "summary_zh": "OpenAI 開始在 ChatGPT 與 Codex 的文字輸出中加入隱形、機器可讀的浮水印,初期僅限歐盟用戶,以符合歐盟 AI Act。OpenAI 表示其 textGrain 浮水印技術「達到或超越」Google DeepMind 的 SynthID for text 等其他方案。",
-              "relevance": "歐盟 AI Act 合規與內容溯源——AI 治理法規主題",
-              "title": "OpenAI is adding text watermarking in ChatGPT and Codex",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
-              "published": "2026-10-05T18:08:39Z"
-            },
-            {
-              "title_zh": "AI 眼鏡面臨首次重大政府取締",
-              "summary_zh": "挪威希望爭取時間,為可錄下旁人影像的 AI 眼鏡制定永久性規範。",
-              "relevance": "穿戴式 AI 裝置監管——AI 治理法規主題",
-              "title": "AI glasses face their first major government crackdown",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/10/ai-glasses-face-their-first-major-government-crackdown/",
-              "published": "2026-10-05T13:39:30Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
-        "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-c"
       ]
     }
   ]
