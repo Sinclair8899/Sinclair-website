@@ -2,6 +2,221 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-10-15",
+      "generated_utc": "2026-10-15T00:09:04Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 16,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 6
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Anthropic 警告小型 AI 模型可能透過 IoT 裝置自我複製",
+              "summary_zh": "Anthropic 提出警告,指小型 AI 模型有可能藉由物聯網裝置進行自我複製。報告以「小型權重式複製體」(small weight-based replicators)形容此類風險,並指其可能帶來新一代電腦蠕蟲。",
+              "relevance": "模型部署與邊緣推論安全——AI 基礎設施主題",
+              "title": "Anthropic warns small AI models could self-replicate through IoT devices",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+              "published": "2026-10-14T12:55:06Z"
+            },
+            {
+              "title_zh": "CedarDB 要以單一資料庫同時處理交易與分析,AI 代理讓賭注更高",
+              "summary_zh": "資料庫引擎 CedarDB 主張以單一系統同時支援分析型與營運型資料,而非傳統的分流設計。該公司表示,其做法隨著代理式 AI 的興起而更具相關性。",
+              "relevance": "資料層與代理式工作負載——AI 基礎設施堆疊主題",
+              "title": "CedarDB wants one database to handle both transactions and analytics, as AI agents raise the stakes",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/",
+              "published": "2026-10-14T22:00:00Z"
+            },
+            {
+              "title_zh": "Ambrosia Energy 將在德州興建 10 GWh 電池工廠,供應離網資料中心",
+              "summary_zh": "新創公司 Ambrosia Energy 宣布將建造大型電池工廠,生產用於搭配太陽能板的電池。該公司表示此組合可構成全天候運轉的潔淨電力來源,供應離網資料中心。",
+              "relevance": "資料中心電力與儲能——AI 基礎設施能源約束主題",
+              "title": "Ambrosia Energy will build a 10 GWh factory in Texas to make batteries for off-grid data centers",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/14/ambrosia-energy-will-build-a-10-gwh-factory-in-texas-to-make-batteries-for-off-grid-data-centers/",
+              "published": "2026-10-14T19:51:34Z"
+            },
+            {
+              "title_zh": "中國 AI 研究蓬勃發展:第一線的實況",
+              "summary_zh": "《Nature》訪談分析師與科學家,比較中國與美國的 AI 研究現況。報導指出中國培養的 AI 人才數量居全球之首。",
+              "relevance": "AI 研發人才與地緣分布——AI 基礎設施生態主題",
+              "title": "China’s AI research is booming: what it’s like to be on the front line",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03223-8",
+              "published": "2026-10-14T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "作者更正:高遷移率 p 型氮化硼碳之晶圓級磊晶成長",
+              "summary_zh": "《Nature》刊出針對「晶圓級磊晶成長高遷移率 p 型氮化硼碳(boron carbon nitride)」一文的作者更正。",
+              "relevance": "晶圓級新材料磊晶——半導體材料主題",
+              "title": "Author Correction: Wafer-scale epitaxy growth of high-mobility p-type boron carbon nitride",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/s41586-026-11267-z",
+              "published": "2026-10-14T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "黑海航運遇襲增加,NATO 可能重新部署反無人機防禦",
+              "summary_zh": "報導指出疑似俄羅斯無人機已在保加利亞與羅馬尼亞附近擊沉或損傷 5 艘船舶。NATO 可能因此重新部署反無人機防禦系統。",
+              "relevance": "無人機與反無人機系統——自主系統主題",
+              "title": "NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/10/nato-may-redeploy-anti-drone-defenses-as-attacks-sink-more-black-sea-shipping/",
+              "published": "2026-10-14T21:03:11Z"
+            },
+            {
+              "title_zh": "Mosqitter 把捕蚊設備轉為 AI 監測網路",
+              "summary_zh": "Mosqitter 正將其捕蚊硬體轉型為 AI 驅動的監測網路,用於辨識蚊種與監控族群數量。該系統目標是對蚊媒傳染病風險提供更早期的預警。",
+              "relevance": "感測硬體結合 AI 辨識——自主感測系統主題",
+              "title": "Mosqitter is turning its mosquito traps into an AI-powered surveillance network",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/14/mosqitter-is-turning-its-mosquito-traps-into-an-ai-powered-surveillance-network/",
+              "published": "2026-10-14T17:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "研究人員以 AI 設計能切割其他蛋白質的蛋白質",
+              "summary_zh": "研究團隊使用 AI 設計工具,做出可切斷其他蛋白質的蛋白質。報導指出這些被切斷的化學鍵在自然狀態下可穩定存在數百年。",
+              "relevance": "AI 蛋白質設計——生技×AI 主題",
+              "title": "Researchers use AI to design proteins that cut up other proteins",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/",
+              "published": "2026-10-14T17:10:15Z"
+            },
+            {
+              "title_zh": "Intero Biosystems 要讓藥廠改用迷你人體腸道進行測試,而非動物",
+              "summary_zh": "Intero Biosystems 向藥廠銷售實驗室培養的人體腸道類器官,正值監管機構推動動物試驗替代方案之際。該新創公司正設法擴大產量並拓展其類器官技術。",
+              "relevance": "類器官與新藥測試平台——生技×AI 主題",
+              "title": "Intero Biosystems wants drugmakers to test on mini human intestines, not animals",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/14/intero-biosystems-wants-drugmakers-to-test-on-mini-human-intestines-not-animals/",
+              "published": "2026-10-14T23:00:00Z"
+            },
+            {
+              "title_zh": "Colossal Biosciences 發表新 AI 平台以加速去滅絕計畫",
+              "summary_zh": "Colossal 宣布推出新的 AI 平台,用於加速其去滅絕(de-extinction)工作。Peter Diamandis 同時成立新基金,投資使用該平台的新創公司。",
+              "relevance": "AI 驅動的基因體工程平台——生技×AI 主題",
+              "title": "Colossal Biosciences announces new AI platform to help accelerate de-extinction efforts",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/14/colossal-biosciences-announces-new-ai-platform-to-help-accelerate-de-extinction-efforts/",
+              "published": "2026-10-14T21:00:00Z"
+            },
+            {
+              "title_zh": "肺泡幹細胞不只生成氣體交換細胞,還能修復受損氣道",
+              "summary_zh": "研究追蹤第二型肺泡細胞(AT2)後發現,氣道受損後這些細胞能在肺部不同區室間遷移,並轉變為細支氣管細胞以協助修復。AT2 細胞原本被認為主要負責維持肺泡結構與氣體交換。",
+              "relevance": "幹細胞與組織修復生物學——生技研究主題",
+              "title": "Alveolar stem cells go beyond making gas-exchange cells to repair damaged airways",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03085-0",
+              "published": "2026-10-14T00:00:00Z"
+            },
+            {
+              "title_zh": "這個點子來自 AI 還是人類?有偵測器宣稱能分辨",
+              "summary_zh": "一款名為 IdeaLens 的工具宣稱可判斷科學論文中的概念(而不只是文字)是否由 AI 生成。",
+              "relevance": "AI 生成內容偵測與科研誠信——AI 於科學研究的應用主題",
+              "title": "Is this idea from AI or humans? A detector claims it can tell",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03247-0",
+              "published": "2026-10-14T00:00:00Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
+        "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/"
+      ]
+    },
+    {
       "date": "2026-10-14",
       "generated_utc": "2026-10-14T00:39:28Z",
       "status": "published",
@@ -1557,272 +1772,6 @@
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/10/08/hear-from-ambrosia-energy-and-bloom-energy-execs-on-where-the-ai-infrastructure-boom-is-creating-opportunity-at-disrupt-2026/",
               "published": "2026-10-08T15:00:00Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
-        "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/76-faster-replication-same-infrastructure/"
-      ]
-    },
-    {
-      "date": "2026-10-08",
-      "generated_utc": "2026-10-08T01:21:46Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 13,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 2,
-          "excluded": 6
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 1,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Microsoft 推出搭載 Nvidia 晶片的新款 AI PC 與改版 Windows 11",
-              "summary_zh": "Microsoft 公布 Surface Laptop Ultra 的規格與售價,這款 AI PC 搭載 Nvidia 晶片,設計用於在本機執行 AI 模型與代理程式。同場亦發表改版的 Windows 11。",
-              "relevance": "端側 AI 運算硬體——AI 基礎設施的推論佈署主題",
-              "title": "Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
-              "published": "2026-10-07T20:22:37Z"
-            },
-            {
-              "title_zh": "首批 Nvidia RTX Spark 筆電售價最高達 7,000 美元",
-              "summary_zh": "搭載 Nvidia 新款 RTX Spark 晶片的首批筆電來自 Dell、Lenovo、MSI、HP 與 Asus,以及旗艦款 Surface Laptop Ultra,18 核心配置起價 2,599 美元。",
-              "relevance": "Nvidia 運算平台延伸至終端裝置——AI 基礎設施主題",
-              "title": "The first Nvidia RTX Spark laptops cost up to $7,000",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/gadgets/1007040/nvidias-powerful-rtx-spark-laptops-can-cost-up-to-7000",
-              "published": "2026-10-07T19:05:52Z"
-            },
-            {
-              "title_zh": "Microsoft 讓 Copilot 取得對 Windows 與檔案的更多控制權",
-              "summary_zh": "Microsoft 在 Windows 與 Surface 發表會上展示 Copilot 升級,讓其可存取 PC 本機檔案並在作業系統中執行動作。該公司將此概念稱為「Hybrid Intelligence」,由應用與工具混合運用本機與雲端資源。",
-              "relevance": "本機與雲端混合推論架構——AI 基礎設施主題",
-              "title": "Microsoft is giving Copilot more control over Windows and your files",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
-              "published": "2026-10-07T18:01:20Z"
-            },
-            {
-              "title_zh": "Mistral 稱「Le Chonk」可挑戰最頂尖的 AI 模型",
-              "summary_zh": "Mistral 表示其新模型 Le Chonk 在維持開放權重的同時,效能可與頂尖閉源模型相匹敵。",
-              "relevance": "開放權重前沿模型——模型訓練與運算需求主題",
-              "title": "Mistral says \"Le Chonk\" can challenge the best AI models",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
-              "published": "2026-10-07T14:12:37Z"
-            },
-            {
-              "title_zh": "OpenAI 上傳 700 篇數學預印本,數學界群起反彈",
-              "summary_zh": "據 Nature 報導,OpenAI 使用尚未發布的模型處理數百個知名數學問題,並將 700 篇預印本張貼至線上,引發數學家不滿。",
-              "relevance": "前沿模型推理能力評估——AI 能力評測主題",
-              "title": "OpenAI posts 700 maths preprints online: mathematicians are up in arms",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03196-8",
-              "published": "2026-10-07T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "如何控制半導體晶體的成核起始位置",
-              "summary_zh": "半導體晶體由微小晶核生長而成,但晶核位置難以精確控制且會影響晶體性質。研究提出一種使用「蝕刻通量」的方法來限制晶核形成位置,實現大型單晶的空間可程式化生長。",
-              "relevance": "半導體材料製程——先進製程與材料主題",
-              "title": "How to control where semiconductor crystals start growing",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02934-2",
-              "published": "2026-10-07T00:00:00Z"
-            },
-            {
-              "title_zh": "原被視為絕緣體的材料被推入半導體領域",
-              "summary_zh": "一種先前被認為是電絕緣體的材料,已被證實為半導體,具備在電子與光學領域的潛在應用。",
-              "relevance": "新型半導體材料——半導體材料主題",
-              "title": "Semiconductors pushed into insulator territory",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-02968-6",
-              "published": "2026-10-07T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "機器人資料新創 Mecka AI 獲 Sequoia 投資 6,000 萬美元",
-              "summary_zh": "Mecka AI 蒐集並分析人類動作資料,用於訓練人形機器人及其他類型機器人,並付費請人們錄製日常任務。",
-              "relevance": "機器人訓練資料採集——具身智慧資料瓶頸主題",
-              "title": "Robot data startup Mecka AI nabs $60M from Sequoia",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/07/robot-data-startup-mecka-ai-nabs-60m-from-sequoia/",
-              "published": "2026-10-07T23:36:57Z"
-            },
-            {
-              "title_zh": "SpaceX 校友募得 1 億美元,以自主貨運列車重新設計貨運",
-              "summary_zh": "Parallel Systems 募資 1 億美元以擴大其自主電動軌道車輛的產能,該車輛可載運數千磅貨物、行駛最遠 500 英里。",
-              "relevance": "自主運輸系統商業化——自主系統主題",
-              "title": "SpaceX alumni nab $100M to rethink shipping with autonomous freight trains",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/07/spacex-alumni-nab-100m-to-rethink-shipping-with-autonomous-freight-trains/",
-              "published": "2026-10-07T15:00:00Z"
-            },
-            {
-              "title_zh": "Bloom 募資 360 萬美元,目標成為美國製造業的「阿里巴巴」",
-              "summary_zh": "這家底特律新創將業務範圍從移動出行擴大,協助無人機與機器人公司尋找美國本地的製造商與貨運業者。",
-              "relevance": "機器人供應鏈與製造——機器人產業化主題",
-              "title": "Bloom raises $3.6M to become the ‘Alibaba’ of American manufacturing",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/07/bloom-raises-3-6m-to-become-the-alibaba-of-american-manufacturing/",
-              "published": "2026-10-07T15:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Healthleap 募資 3,800 萬美元,開發標示需進一步關注住院病患的 AI",
-              "summary_zh": "該輪融資包含由 Sequoia Capital 與 First Round Capital 共同領投的 800 萬美元種子輪,以及由 Hummingbird Ventures 領投的 3,000 萬美元 A 輪。",
-              "relevance": "臨床 AI 應用——生技×AI 主題",
-              "title": "Healthleap raises $38M for its AI that flags hospital patients who may need a closer look",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
-              "published": "2026-10-07T15:07:08Z"
-            },
-            {
-              "title_zh": "基因體可及性揭示基因表現所遺漏的疾病風險",
-              "summary_zh": "研究同時分析來自 1,108 人的 1,000 萬個免疫細胞的基因表現與基因體可及性,將疾病相關變化相互連結。多數疾病相關遺傳變異並不改變基因本身,而是透過改變基因體可及性影響其表現強度。",
-              "relevance": "大規模單細胞多體學資料——生物資料與運算分析主題",
-              "title": "Genome accessibility reveals disease risk that gene expression misses",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03072-5",
-              "published": "2026-10-07T00:00:00Z"
-            },
-            {
-              "title_zh": "ARPA-H 發表 Surpass 計畫以加速並擴大臨床試驗",
-              "summary_zh": "美國衛生及公共服務部宣布啟動新計畫,目標是移除拖慢臨床開發的障礙,並改變臨床試驗的設計與執行方式。",
-              "relevance": "臨床試驗基礎建設——生技研發流程主題",
-              "title": "ARPA-H unveils Surpass program to accelerate and expand clinical trials",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/cro/arpa-h-unveils-surpass-program-accelerate-and-expand-clinical-trials",
-              "published": null
-            },
-            {
-              "title_zh": "IEEE 報告預測將改變生活的技術",
-              "summary_zh": "根據 IEEE 最新發布的《2030 Technology Megatrends Report》,受惠於人工智慧的進展,到 2028 年基因工程與基因治療將被頻繁用於治療多種疾病。",
-              "relevance": "AI 驅動基因治療——生技×AI 主題",
-              "title": "IEEE Report Predicts Tech That Will Transform Lives",
-              "source": "IEEE Spectrum",
-              "url": "https://spectrum.ieee.org/ieee-report-predicts-tech",
-              "published": "2026-10-07T18:00:02Z"
-            },
-            {
-              "title_zh": "TCGX 成立 6 億美元基金投資亞洲生技公司",
-              "summary_zh": "投資機構 TCGX 擴大在亞洲布局,募集 6 億美元投入新興藥物發現重鎮的生技公司。",
-              "relevance": "生技資本流向亞洲——生技產業資金主題",
-              "title": "TCGX launches $600M fund to bankroll Asian biotechs",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/tcgx-launches-600m-fund-bankroll-asian-biotechs",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "產業團體試算 Trump 推動 100% 美國製造科技產品的成本",
-              "summary_zh": "消費科技協會(CTA)估計,Trump 的積極回流製造政策可能使科技業付出 2,300 億美元代價。",
-              "relevance": "供應鏈回流與關稅成本——半導體與硬體供應鏈總經主題",
-              "title": "Trade group crunches numbers on Trump’s impossible push for 100% US-made tech",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/tech-policy/2026/10/trade-group-crunches-numbers-on-trumps-impossible-push-for-100-us-made-tech/",
-              "published": "2026-10-07T15:19:05Z"
-            },
-            {
-              "title_zh": "TP-Link 在美國的問題加劇,面臨 FCC 路由器禁令與四州訴訟",
-              "summary_zh": "TP-Link 最新款路由器無法在美國販售,仍需取得 FCC 禁令的豁免,同時面臨包含佛州在內的多州訴訟。",
-              "relevance": "美中科技供應鏈管制——地緣政治與硬體供應鏈主題",
-              "title": "TP-Link problems in US grow amid FCC router ban and four state lawsuits",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/tech-policy/2026/10/florida-sues-tp-link-claiming-it-hides-router-security-risks-and-links-to-china/",
-              "published": "2026-10-07T19:53:42Z"
             }
           ]
         }
