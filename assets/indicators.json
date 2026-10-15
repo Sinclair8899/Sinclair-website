@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-15T00:02:33Z",
+  "generated_utc": "2026-10-15T23:46:17Z",
   "date": "2026-10-15",
   "indicators": [
     {
@@ -59,7 +59,7 @@
         },
         {
           "label": "2026",
-          "value": 27.97,
+          "value": 26.97,
           "count": 21,
           "partial": true
         }
