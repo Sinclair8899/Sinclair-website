@@ -2,6 +2,299 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-10-19",
+      "generated_utc": "2026-10-18T23:44:07Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 56,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 1,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 5,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 6
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "拒絕無止盡擴建資料中心，新創 Ricursive 讓 AI 設計整顆晶片、盼一週完成一款新設計",
+              "summary_zh": "由 Anna Goldie 與 Azalia Mirhoseini 共同創辦的新創 Ricursive Intelligence，押注以 AI 設計整顆晶片，目標將一款新設計的完成時間縮短至一週。",
+              "relevance": "AI 輔助晶片設計——運算供給與設計流程自動化主題",
+              "title": "拒絕無止盡擴建資料中心，新創 Ricursive 讓 AI 設計整顆晶片、盼一週完成一款新設計",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/19/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+              "published": "2026-10-18T23:40:25Z"
+            },
+            {
+              "title_zh": "CSP 自研晶片對傳統網通 IC 廠的衝擊",
+              "summary_zh": "報導指出雲端服務供應商（CSP）優先投入高毛利、高規模效應且具高度客製化潛力的晶片領域，已成為明確且不可逆的產業趨勢，並分析其對傳統網通 IC 廠的影響。",
+              "relevance": "自研 ASIC 與客製化晶片——AI 基礎設施供應鏈主題",
+              "title": "CSP 自研晶片對傳統網通 IC 廠的衝擊",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/19/csp-self-developed-chips-impact-traditional-netcom-ic-firms/",
+              "published": "2026-10-18T23:00:52Z"
+            },
+            {
+              "title_zh": "優達科技於 2026 OCP 全球高峰會展示 1.6T AI 網路架構，動態實測液冷平台驗證散熱可行性",
+              "summary_zh": "UfiSpace 於 2026 年 OCP 全球高峰會展示 1.6T AI 網路架構，並以動態實測液冷平台驗證散熱可行性。",
+              "relevance": "高速網路與液冷——資料中心互連與散熱約束主題",
+              "title": "優達科技於 2026 OCP 全球高峰會展示 1.6T AI 網路架構，動態實測液冷平台驗證散熱可行性",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/18/ufispace-s9331-64ho3l/",
+              "published": "2026-10-18T06:00:29Z"
+            },
+            {
+              "title_zh": "AI 破解理論科學問題比例兩年從 2% 升至 35%，MIT 研究指多領域將迎巨變",
+              "summary_zh": "MIT 學者 Neil Thompson 於演講中發表研究，指 AI 解出理論科學問題的比例在兩年內由 2% 上升至 35%。",
+              "relevance": "AI 於科學研究的能力評測——模型能力評估主題",
+              "title": "AI 破解理論科學問題比例兩年從 2% 升至 35%，MIT 研究指多領域將迎巨變",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/19/ai-came-for-math-now-its-chasing-the-rest-of-science/",
+              "published": "2026-10-18T23:20:29Z"
+            },
+            {
+              "title_zh": "Anthropic 給予外部 AI 監督機構「近似員工」的存取權限",
+              "summary_zh": "Anthropic 開放外部監督機構取得近似員工等級的存取權限，該機構可在未經 Anthropic 核可的情況下發表其調查結果。",
+              "relevance": "前沿模型安全與外部稽核——AI 治理主題",
+              "title": "Anthropic gives outside AI watchdog “employee-like” access",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+              "published": "2026-10-18T16:25:19Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "台灣人在柏林做 AI 資料中心想吃的「漢堡肉」，NextGO Epi 押注下代省電材料氧化鎵",
+              "summary_zh": "報導介紹位於柏林、由台灣人創辦的磊晶公司 NextGO Epi，押注下一代節能材料氧化鎵，鎖定 AI 資料中心應用。",
+              "relevance": "寬能隙半導體磊晶——資料中心電力效率與材料供應鏈主題",
+              "title": "台灣人在柏林做 AI 資料中心想吃的「漢堡肉」，NextGO Epi 押注下代省電材料氧化鎵",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/18/nextgo-epi/",
+              "published": "2026-10-18T03:10:31Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "猛禽帶隊，F-22 首度在空中指揮 YFQ-44A 無人僚機",
+              "summary_zh": "美國空軍與 Anduril 宣布，F-22 戰機飛行員已首度於空中向預量產型 YFQ-44A Fury 協同作戰無人機下達指令。",
+              "relevance": "有人／無人協同控制——自主系統主題",
+              "title": "猛禽帶隊，F-22 首度在空中指揮 YFQ-44A 無人僚機",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/18/f-22-gave-order-to-yfq-44a-in-air-for-the-first-time/",
+              "published": "2026-10-18T02:17:51Z"
+            },
+            {
+              "title_zh": "德國放棄直接採購 MQ-28，無人僚機競爭重新洗牌",
+              "summary_zh": "德國國防部已正式通知 Boeing，將不再直接採購 MQ-28「Ghost Bat」無人僚機，並重新調整相關協同作戰計畫。",
+              "relevance": "無人僚機採購——自主系統市場結構主題",
+              "title": "德國放棄直接採購 MQ-28，無人僚機競爭重新洗牌",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/18/germany-canceled-mq-28-purchase-and-reconsider-other-options/",
+              "published": "2026-10-18T08:56:14Z"
+            },
+            {
+              "title_zh": "城市想對 robotaxi 上鎖",
+              "summary_zh": "The Verge 專欄回顧自駕車法規演進，說明各州立法歷程與城市對 robotaxi 營運管制的態度。",
+              "relevance": "自駕車法規——自主系統部署主題",
+              "title": "Cities want to put the boot on robotaxis",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws",
+              "published": "2026-10-18T12:00:00Z"
+            },
+            {
+              "title_zh": "要能隨插即用新技術，美軍將開放式架構列為 XM30 裝甲車決選重點",
+              "summary_zh": "美國陸軍地面機動組合採購執行官 Troy Denomy 准將表示，陸軍在 XM30 新一代步兵戰鬥車的決選中，將開放式架構列為重點要求。",
+              "relevance": "開放式架構與可升級自主模組——軍用自主平台主題",
+              "title": "要能隨插即用新技術，美軍將開放式架構列為 XM30 裝甲車決選重點",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/18/us-army-said-open-architecture-will-be-key-point-for-xm30-bid/",
+              "published": "2026-10-18T06:23:00Z"
+            },
+            {
+              "title_zh": "費城一名女子因阻擋外送機器人遭逮捕",
+              "summary_zh": "Carolyn Marvin 因阻擋一台 Uber 外送機器人去路並拒絕讓開，被依行為失序罪逮捕起訴；她向當地媒體表示自己一直在抗議這些機器人。",
+              "relevance": "外送機器人在公共空間的部署——自主系統落地主題",
+              "title": "A woman was arrested in Philly for blocking a delivery robot",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+              "published": "2026-10-18T18:28:10Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "AstraZeneca 與 insitro 簽下 15 億美元協議，以 AI 進行肝病與心臟病藥物標靶發現",
+              "summary_zh": "AstraZeneca 支付 insitro 4,000 萬美元前期款，運用人工智慧尋找肝臟與心臟疾病的新穎藥物標靶，交易總值達 15 億美元。",
+              "relevance": "AI 藥物標靶發現合作——生技×AI 主題",
+              "title": "AstraZeneca inks $1.5B insitro deal for AI-enabled target discovery of liver, heart disease drugs",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/astrazeneca-inks-15b-insitro-deal-ai-enabled-target-discovery",
+              "published": null
+            },
+            {
+              "title_zh": "SimBioSys 取得 FDA 核准，推出 Nvidia 技術驅動、以 MRI 為基礎的乳癌復發評估工具",
+              "summary_zh": "SimBioSys 的 TumorSight Risk 獲得 FDA 核准，該工具結合 AI 與 MRI 影像，用於評估乳癌復發風險。",
+              "relevance": "醫療影像 AI 與加速運算——生技×AI 主題",
+              "title": "SimBioSys nabs FDA clearance for Nvidia-powered, MRI-derived breast cancer recurrence tool",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/simbiosys-nabs-fda-clearance-nvidia-powered-mri-derived-breast-cancer-recurrence-tool",
+              "published": null
+            },
+            {
+              "title_zh": "Iambic 以 1.5 億美元 IPO 上市，加速腫瘤管線臨床開發",
+              "summary_zh": "AI 藥物開發公司 Iambic Therapeutics 完成 1.5 億美元的 IPO，資金將用於推進其腫瘤產品管線的臨床開發。",
+              "relevance": "AI 製藥公司資本市場——生技×AI 主題",
+              "title": "Iambic goes public with $150M IPO to accelerate clinical development of oncology pipeline",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/iambic-goes-public-150m-ipo-accelerate-clinical-development-oncology-pipeline",
+              "published": null
+            },
+            {
+              "title_zh": "中國擬禁止外資併購關鍵生物製藥平台",
+              "summary_zh": "在華盛頓收緊涉及中國資產的跨境生命科學交易之際，北京推出草案政策，擬禁止或限制關鍵生物製藥技術出口。",
+              "relevance": "生技技術出口管制——跨境生技供應鏈主題",
+              "title": "China looks to ban foreign acquisitions of critical biopharma platforms",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/china-looks-ban-foreign-acquisitions-critical-biopharma-platforms",
+              "published": null
+            },
+            {
+              "title_zh": "思想不再是祕密？AI「讀心術」竟能看見你腦中的畫面",
+              "summary_zh": "以色列 Weizmann Institute of Science 的研究團隊開發出以 AI 重建腦中影像的技術。",
+              "relevance": "神經解碼模型——生技×AI 主題",
+              "title": "思想不再是祕密？AI「讀心術」竟能看見你腦中的畫面",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/18/ai-mind-reading-reconstructs-brain-imagery/",
+              "published": "2026-10-18T07:00:40Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Fed 主席華許：AI 是我一生中影響最深遠的經濟變革",
+              "summary_zh": "美國聯準會主席 Kevin Warsh 於 10 月 16 日表示，人工智慧是他所見過對全球經濟「影響最深遠的變革」。",
+              "relevance": "央行對 AI 的總體評估——宏觀政策與 AI 資本支出主題",
+              "title": "Fed 主席華許：AI 是我一生中影響最深遠經濟變革",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/18/kevin-warsh-calls-ai-the-most-consequential-economic-shift/",
+              "published": "2026-10-18T05:00:13Z"
+            },
+            {
+              "title_zh": "波士頓生技如何因應種子輪資金池變淺？",
+              "summary_zh": "報導指出波士頓臨床前新創過去一年取得的平均種子輪金額下滑 40%，業者描述募資環境「確實不容易」。",
+              "relevance": "早期生技募資環境——生技資本循環主題",
+              "title": "‘It’s certainly not easy’: How are Boston biotechs coping with a shallower pool of seed funding?",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/why-bostons-early-stage-funding-drop-may-be-good-thing",
+              "published": null
+            },
+            {
+              "title_zh": "OrbiMed 史上最大亞洲基金助攻，募得 30 億美元資金",
+              "summary_zh": "OrbiMed 完成 30 億美元募資，將投資美國、歐洲與亞洲的生技與生命科學公司，其中包含該機構歷來最大的亞洲基金。",
+              "relevance": "生命科學創投資金規模——生技資本循環主題",
+              "title": "OrbiMed’s largest-ever Asian fund contributes to $3B war chest",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/orbimeds-largest-ever-asian-fund-contributes-3b-war-chest",
+              "published": null
+            },
+            {
+              "title_zh": "Anthropic 表示將把 5% 股份投入「公共利益基金」",
+              "summary_zh": "Anthropic 宣布將承諾把公司 5% 的股份投入一個公共利益基金。",
+              "relevance": "前沿 AI 公司股權結構安排——AI 產業治理主題",
+              "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+              "published": "2026-10-18T20:37:40Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
+        "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp"
+      ]
+    },
+    {
       "date": "2026-10-18",
       "generated_utc": "2026-10-17T23:31:08Z",
       "status": "published",
@@ -1512,271 +1805,6 @@
       ],
       "warnings": [
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
-        "IEEE Spectrum: excluded url (host 'robotsguide.com' not under approved domain 'spectrum.ieee.org'): https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/aerial-cable-systems-for-substation-exit-construction/"
-      ]
-    },
-    {
-      "date": "2026-10-12",
-      "generated_utc": "2026-10-12T00:46:06Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 62,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 2,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 5
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "雲端巨頭首度入股台灣 PCB 廠：亞馬遜押寶金像電",
-              "summary_zh": "PCB 大廠金像電 9 月 29 日公告一筆 15.89 億元私募案，美國亞馬遜（Amazon）參與其中，為雲端巨頭首度入股台灣 PCB 廠。",
-              "relevance": "AI 伺服器供應鏈垂直整合——資料中心基礎設施主題",
-              "title": "雲端巨頭首度入股台灣 PCB 廠！亞馬遜為何押寶金像電？",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/12/why-is-amazon-betting-on-gold-circuit/",
-              "published": "2026-10-12T00:00:28Z"
-            },
-            {
-              "title_zh": "台達等大廠遭美 337 調查，台達電稱產品未受影響",
-              "summary_zh": "美國國際貿易委員會（USITC）10 月 9 日宣布，針對特定垂直供電系統及相關運算設備啟動 337 調查，鴻海、廣達、台達電等台廠在列，各公司表示營運與產品未受影響。",
-              "relevance": "AI 伺服器垂直供電架構與專利爭議——資料中心供電主題",
-              "title": "台達等大廠遭美 337 調查，台達電：產品未受影響",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/12/ai-vertical-power-patent-storm-delta-others-us-337-probe-delta-products-unaffected/",
-              "published": "2026-10-11T22:00:30Z"
-            },
-            {
-              "title_zh": "AI 業界能靠取消 NDA 說服資料中心反對者嗎？",
-              "summary_zh": "TechCrunch 的 Equity 節目討論資料中心暫停令（moratorium）的影響，以及 AI 產業在對外溝通上是否存在問題。",
-              "relevance": "資料中心選址與地方阻力——AI 基礎設施擴建主題",
-              "title": "Can the AI industry persuade data center opponents by getting rid of NDAs?",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
-              "published": "2026-10-11T16:52:33Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "三星擬以記憶體交換晶圓代工訂單，AMD 認為仍有風險不鬆手",
-              "summary_zh": "AMD 執行長蘇姿丰造訪韓國，為其 AI 加速器爭取高頻寬記憶體（HBM）供給。報導指三星有意以記憶體供應交換晶圓代工業務，AMD 則被認為仍存在風險考量。",
-              "relevance": "HBM 供給與代工綁定——記憶體約束主題",
-              "title": "三星要用記憶體換晶圓代工，AMD 認為仍存在風險不放手",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/12/samsung-to-trade-memory-chips-for-chip-manufacturing-services/",
-              "published": "2026-10-11T23:00:58Z"
-            },
-            {
-              "title_zh": "三星、SK 海力士記憶體獲利豐厚，ASML 調漲零組件價格 10% 並獲同意",
-              "summary_zh": "半導體微影設備龍頭 ASML 將對銷往韓國的設備替換備品全面調漲 10% 價格，涵蓋極紫外光（EUV）等機台相關零組件。",
-              "relevance": "記憶體資本支出與設備成本——半導體供應鏈主題",
-              "title": "三星、SK 海力士記憶體賺太多，ASML 調漲零組件 10% 價格分享利潤獲同意",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/12/asml-raises-component-prices-by-10-to-share-profits/",
-              "published": "2026-10-11T23:30:57Z"
-            },
-            {
-              "title_zh": "台積電 15 日公布第三季財報，市場聚焦三大關鍵",
-              "summary_zh": "台積電將於 10 月 15 日公布第三季財報，公司先前已揭露第三季營收較 2025 年同期大幅成長。市場關注焦點將影響股價與產業走向。",
-              "relevance": "先進製程產能與 AI 晶片需求——半導體景氣主題",
-              "title": "台積電 15 日將公布第三季財報，市場聚焦三大關鍵將影響股價與產業走向",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/10/12/tsmc-will-release-its-third-quarter-financial-report-on-the-15th/",
-              "published": "2026-10-11T23:00:46Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "特斯拉 Optimus 加速量產，靈巧手與任務通用性成商用關鍵考驗",
-              "summary_zh": "據 The Information 9 月底報導，特斯拉 Optimus 週產量已由第二季的數十台提高至約 8 倍水準。報導指靈巧手與任務通用性仍是商業化的關鍵課題。",
-              "relevance": "人形機器人量產與操作能力——自主系統主題",
-              "title": "特斯拉 Optimus 加速量產，惟靈巧手與任務通用性成商用關鍵考驗",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/12/tesla-optimus-ramps-up-mass-production-dexterity-task-versatility-key-commercialization-challenges/",
-              "published": "2026-10-11T23:00:04Z"
-            },
-            {
-              "title_zh": "TechCrunch Mobility：自駕卡車的一道障礙已排除",
-              "summary_zh": "TechCrunch 交通科技專欄報導自駕卡車領域一項監管或營運障礙獲得排除，並探討 AI 在運輸未來中扮演的角色。",
-              "relevance": "自駕貨運監管進展——自主系統落地主題",
-              "title": "TechCrunch Mobility: A roadblock clears for self-driving trucks",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/11/techcrunch-mobility-a-roadblock-clears-for-self-driving-trucks/",
-              "published": "2026-10-11T16:02:00Z"
-            },
-            {
-              "title_zh": "蘋果前設計師操刀，Hark 推出主動式 AI 程式 Hark Pro，為明年硬體上市鋪路",
-              "summary_zh": "由 Figure AI 創辦人 Brett Adcock 領軍的 AI 新創 Hark 於 6 日推出主動式 AI 應用程式 Hark Pro，為 2027 年硬體上市預作準備。",
-              "relevance": "機器人創辦人跨足 AI 代理硬體——具身智慧與代理系統主題",
-              "title": "目標成為 AI 代理界的麥金塔！蘋果前設計師操刀 Hark 推出主動式 AI 程式 Hark Pro，為硬體明年上市鋪路",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/11/ai-startup-hark-debuts-proactive-hark-pro-app-ahead-of-2027-hardware-launch/",
-              "published": "2026-10-11T08:30:41Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "經濕實驗驗證後，GSK 採用 Chai Discovery 的 AI 模型",
-              "summary_zh": "GSK 加入 Chai Discovery 日益擴大的大藥廠客戶名單，簽約取得其蛋白質摺疊與設計模型的使用權。該合作在濕實驗室驗證之後敲定。",
-              "relevance": "蛋白質結構預測模型商業化——生技×AI 主題",
-              "title": "GSK drinks in Chai Discovery’s AI models after wet-lab validation",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/gsk-drinks-chai-discoverys-ai-models-after-wet-lab-validation",
-              "published": null
-            },
-            {
-              "title_zh": "AI 生技公司 Iambic 擬 IPO 募資 1.35 億美元推進癌症藥物臨床",
-              "summary_zh": "Iambic Therapeutics 計劃透過 IPO 募得 1.35 億美元淨額，用於資助其主力癌症藥物的臨床開發。",
-              "relevance": "AI 藥物研發公司資本市場動向——生技×AI 主題",
-              "title": "AI biotech Iambic aims for $135M IPO to push cancer drugs through clinic",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/ai-biotech-iambic-aims-135m-ipo-push-cancer-drugs-through-clinic",
-              "published": null
-            },
-            {
-              "title_zh": "ARPA-H 推出 Surpass 計畫，加速並擴大臨床試驗",
-              "summary_zh": "美國衛生及公共服務部宣布啟動新計畫，目標在於移除拖慢臨床開發的障礙，並改變臨床試驗的設計與執行方式。",
-              "relevance": "臨床試驗流程改造——生技研發基礎設施主題",
-              "title": "ARPA-H unveils Surpass program to accelerate and expand clinical trials",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/cro/arpa-h-unveils-surpass-program-accelerate-and-expand-clinical-trials",
-              "published": null
-            },
-            {
-              "title_zh": "「現在只是求生存」：為何波士頓近三分之一的生科實驗室空間閒置？",
-              "summary_zh": "報導指出，麻州實驗室與製造空間的空置率在 2021 至 2026 年間成長 11 倍，達到 31%。",
-              "relevance": "生技產業資本循環與產能——生技景氣主題",
-              "title": "‘It’s just survival now’: Why is almost a third of Boston’s life sciences lab space sitting vacant?",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/its-just-survival-now-why-third-bostons-lab-space-vacant",
-              "published": null
-            },
-            {
-              "title_zh": "「我們正取得許多進展」：諾貝爾獎光遺傳學如何被生技業運用",
-              "summary_zh": "史丹佛精神科醫師暨生物工程學者 Karl Deisseroth 獲諾貝爾獎後，報導檢視光遺傳學技術如何被生技公司用於視力喪失與思覺失調症等潛在療法開發。",
-              "relevance": "神經技術工具轉化應用——生技研究主題",
-              "title": "‘We’re making a lot of progress’: How Nobel-winning optogenetics is being harnessed by biotechs",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/how-nobel-winning-optogenetics-went-pond-potential-treatments-vision-loss-and-schizophrenia",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "「AI 美元」時代來臨，科技巨頭獲利能力成霸權新考驗",
-              "summary_zh": "分析指出，美元長期地位的討論因 AI 投資熱潮出現新變化；過去美元霸權主要建立在石油貿易與美國金融體系之上。",
-              "relevance": "AI 資本支出與全球資金流動——總經主題",
-              "title": "「AI 美元」時代來臨，科技巨頭獲利能力將成霸權新考驗",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/10/12/how-ai-could-scupper-the-dollar/",
-              "published": "2026-10-11T23:40:42Z"
-            },
-            {
-              "title_zh": "麥肯錫估美國每年 77 萬人須完全轉換跑道",
-              "summary_zh": "麥肯錫全球研究院報告指出，AI 與自動化未來十年可能為美國帶來更多新職缺，真正的難題不在於工作消失，而在於大規模的職涯轉換需求。",
-              "relevance": "AI 對勞動市場結構的影響——總經主題",
-              "title": "AI 搶工作不再是重點，麥肯錫估美國每年 77 萬人得完全轉換跑道",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/12/mckinsey-ai-will-create-more-jobs-than-it-kills-after-destroying-11-million/",
-              "published": "2026-10-11T23:20:26Z"
-            },
-            {
-              "title_zh": "需求遜於預期，蘋果傳砍 iPhone 18 Pro 零件訂單至少 15%",
-              "summary_zh": "因需求低於預期，蘋果傳出縮減 iPhone 18 Pro 與 iPhone 18 Pro Max 的零件訂單，幅度至少 15%。",
-              "relevance": "消費性電子零組件需求——半導體下游景氣主題",
-              "title": "需求遜預期  蘋果傳砍 iPhone 18 Pro 零件訂單至少 15%",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/12/apple-reportedly-cuts-iphone-18-pro-component-orders-at-least-15-percent-weaker-demand/",
-              "published": "2026-10-12T00:40:56Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
         "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
         "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
