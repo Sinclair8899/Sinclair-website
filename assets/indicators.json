@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-22T00:08:23Z",
-  "date": "2026-10-22",
+  "generated_utc": "2026-10-23T00:05:30Z",
+  "date": "2026-10-23",
   "indicators": [
     {
       "key": "frontier_compute",
@@ -108,8 +108,8 @@
       "key": "us_electricity",
       "title": "美國電力需求",
       "subtitle": "US electricity sales to ultimate customers",
-      "headline": "2025 年 4,058 TWh",
-      "note": "近 5 年年均成長 1.77%,明顯脫離過去十餘年的持平型態;最近一年年增 2.08%。美國電力需求在過去約十五年幾乎零成長;它是否正在轉折向上,是《After Memory》中「電力成為下一個約束」那條分支最關鍵的實測變數——這是電表量到的事實,不是興建計畫的宣告。",
+      "headline": "2025 年 4,080 TWh",
+      "note": "近 5 年年均成長 1.88%,明顯脫離過去十餘年的持平型態;最近一年年增 2.63%。美國電力需求在過去約十五年幾乎零成長;它是否正在轉折向上,是《After Memory》中「電力成為下一個約束」那條分支最關鍵的實測變數——這是電表量到的事實,不是興建計畫的宣告。",
       "series": [
         {
           "label": "2011",
@@ -197,7 +197,7 @@
         },
         {
           "label": "2025",
-          "value": 4058.0,
+          "value": 4079.9,
           "count": null,
           "partial": false
         }
