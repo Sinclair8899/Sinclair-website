@@ -1,13 +1,13 @@
 ---
 title: "Executive & Research Profile"
-description: "Senior industry executive with 30+ years in publicly listed companies; advisory focus on growth, transformation and major decisions; independent research on AI, semiconductors and capital allocation."
+description: "Industry executive and strategist with 30+ years of leadership experience; active in industry strategy, business transformation, independent research and teaching."
 ---
 
 ## About
 
-Po-Sung (Sinclair) Huang is a senior industry executive with more than 30 years of cross-industry leadership experience spanning electronics, industrial materials, chemicals and life sciences. His advisory focus is growth, transformation and major business decisions. As an independent researcher, he writes on AI, semiconductors, advanced materials and capital allocation.
+Po-Sung (Sinclair) Huang is a senior industry executive with more than 30 years of cross-industry leadership experience spanning electronics, industrial materials, chemicals and life sciences. He remains active in industry strategy, business transformation, research and teaching, with interests spanning AI, semiconductors, advanced materials and capital allocation.
 
-Over his career, he has held senior roles including CFO, Executive Vice President and General Manager, as well as group-level leadership roles in finance and business management, across major publicly listed companies — including Foxconn (Hon Hai), E Ink (PVI), and Continental Carbon (CSRC). His experience sits at the intersection of finance, strategy, operations, technology, and industrial transformation, with deep exposure to cross-border management, capital markets, M&A, and high-stakes decision-making in highly competitive environments.
+Over his career, he has held senior roles including CFO, Executive Vice President and General Manager, as well as group-level leadership roles in finance and business management, across major publicly listed companies — including Foxconn (Hon Hai), E Ink (PVI), and International CSRC Investment Holdings (CSRC). His experience sits at the intersection of finance, strategy, operations, technology, and industrial transformation, with deep exposure to cross-border management, capital markets, M&A, and high-stakes decision-making in highly competitive environments.
 
 He holds an Executive Doctorate in Business Administration (EDBA) from HEC Liège, an EMBA from National Chengchi University, and an accounting degree from Soochow University. His current work focuses on AI, semiconductors, advanced materials, industrial competitiveness, and capital allocation. Rather than approaching AI primarily as a model-building discipline, his research examines how AI reshapes industrial structure, value distribution, and strategic positioning in the real economy.
 
@@ -66,7 +66,7 @@ Exploring computational and conceptual applications of AI in life-science resear
 
 ## 關於我
 
-黃柏松（Po-Sung / Sinclair Huang）是一位資深產業經營者，擁有逾三十年橫跨電子、工業材料、化工與生命科學等領域的高階經營經驗。其顧問服務聚焦於企業成長、轉型與重大決策，並以獨立研究者身分持續研究 AI、半導體、先進材料與資本配置。
+黃柏松（Po-Sung / Sinclair Huang）是一位資深產業經營者，擁有逾三十年橫跨電子、工業材料、化工與生命科學等領域的高階經營經驗。目前持續參與產業策略、企業轉型、研究與實務教學，關注 AI、半導體、先進材料及資本配置。
 
 其職涯歷任多家上市公司之財務長、執行副總、總經理與事業群財務經管主管，服務過的企業包括鴻海科技集團（Foxconn）、元太科技（E Ink）、國際中橡（CSRC）等。長期工作於財務、策略、營運、技術與產業轉型的交會點，並累積了跨國管理、資本市場、併購與高度競爭環境下複雜決策的實務歷練。
 

@@ -19,13 +19,13 @@ aliases:
 
 <a id="chinese"></a>
 
-## 顧問服務 {#projects}
+## 產業策略與企業決策參與 {#projects}
 
 我曾於多家上市公司擔任財務長、執行副總與總經理等高階經營職務，累積三十餘年橫跨電子、工業材料、生技與工業製造的實務經驗，任職期間歷經企業從成長、規模化到轉型的不同階段。
 
-我的顧問工作聚焦於企業成長、轉型與重大決策：從企業希望取得的市場位置與經營成果出發，連結產品與技術方向、資本配置、營運能力及組織執行。財務分析、流程改善、資料分析與 AI 是用來驗證判斷、解除瓶頸的工具，而不是顧問工作的起點或邊界。
+我的工作聚焦於企業成長、轉型與重大決策：從企業希望取得的市場位置與經營成果出發，連結產品與技術方向、資本配置、營運能力及組織執行。財務分析、流程改善、資料分析與 AI 是用來驗證判斷、解除瓶頸的工具，而不是顧問工作的起點或邊界。
 
-這項服務的對象是董事會與經營團隊，所處理的是跨越上述面向、無法由單一部門獨立解決的問題。重點不是提供一份標準答案，而是找出真正限制獲利與成長的條件，釐清決策的連鎖影響，並將策略轉化為可執行的行動。
+合作與交流的主要對象是董事會與經營團隊，所處理的是跨越上述面向、無法由單一部門獨立解決的問題。重點不是提供一份標準答案，而是找出真正限制獲利與成長的條件，釐清決策的連鎖影響，並將策略轉化為可執行的行動。
 
 對 AI 的判斷也遵循相同原則。價值不在導入工具本身，而在是否能改善重要的經營結果。顧問工作的重點，是辨識值得優先處理的應用、判斷所需的資料與組織條件、事先約定可驗證的成效指標，並協助企業連結適當的內部團隊或外部技術夥伴；技術建置由相應團隊負責。
 
@@ -84,7 +84,7 @@ aliases:
 
 <section lang="en">
 <h2 id="english">English Summary</h2>
-<h3>Advisory Profile</h3>
+<h3>Strategic Engagement</h3>
 <p>My advisory work focuses on growth, transformation and major business decisions. It starts from the market position and business results a company is trying to achieve, and connects these to product and technology direction, capital allocation, operating capability and organisational execution.</p>
 <p>Having served as CFO, Executive Vice President and General Manager of publicly listed companies, I bring more than three decades of operating experience across electronics, industrial materials, biotechnology and manufacturing. The work is grounded in the operating realities of Taiwanese businesses while incorporating an international perspective on supply chains, capital markets and industry competition.</p>
 <p>Financial analysis, process improvement, data analysis and AI are tools used to test judgement and clear bottlenecks — not the starting point or the boundary of the work. For AI, the same principle applies: value comes not from adopting a tool, but from improving a business outcome that matters. The advisory focus is to identify priority applications, assess the required data and organisational conditions, agree measurable outcomes in advance, and connect the company with the appropriate internal team or external technology partner. Technical implementation remains with those teams.</p>
