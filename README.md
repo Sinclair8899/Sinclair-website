@@ -1,23 +1,21 @@
-# Dr. Sinclair Huang - Professional Research Website
+# Sinclair Huang — Professional Website
 
-This is the personal academic website of Dr. Po-Sung (Sinclair) Huang.
+Personal website of Po-Sung (Sinclair) Huang, an industry executive and strategist with over three decades of cross-industry leadership experience.
 
-## About
+## Focus
 
-Special Advisor to the Chairman at Continental Carbon Co., Ltd. and EDBA candidate at HEC Liège, Belgium.
+Industry strategy, business growth and transformation, capital allocation, independent research and practice-based teaching.
 
-Research interests:
-- AI semiconductor valuation
-- Precision oncology using AlphaFold 3
-- Carbon black industry optimization
+Career experience includes senior executive roles at listed companies across electronics, industrial materials, chemicals and life sciences. Current positioning is not tied to any specific employer or advisory contract.
 
-## Built With
+## Technical stack
 
-- Hugo static site generator
+- Hugo static site generator, pinned to version 0.152.2
 - PaperMod theme
-- Deployed on Cloudflare Pages
+- GitHub Pages deployment from the generated `docs/` folder
+- Required build and validation: `scripts/build_and_check.sh`
 
 ## Contact
 
+- Website: https://sinclairhuang.org
 - ORCID: 0009-0007-8173-5672
-- Medium: Technical publications
