@@ -18,13 +18,13 @@ inLanguage:
 
 ## 關於
 
-黃柏松（Po-Sung / Sinclair Huang）擁有逾三十年於上市公司的高階經營經驗，產業橫跨電子、工業材料、化工與生命科學。
+黃柏松（Po-Sung / Sinclair Huang）擁有逾三十年於上市公司的高階經營經驗。職涯早期曾任職於製藥業，之後長期投入電子科技產業，並於後期擔任碳黑產業的高階經營職務。
 
 其職涯歷任多家上市公司之財務長、執行副總、總經理與事業群財務經管主管，曾任職於鴻海科技集團（Foxconn）、元太科技（E Ink）、國際中橡（CSRC）等企業，任職期間歷經企業從成長、規模化到轉型的不同階段。這些職務的共同點，是必須同時面對市場位置、產品與技術方向、資本配置、營運能力與組織執行——策略能否成立，取決於這幾件事能否接得起來。
 
 卸下全職經營職務後，他仍透過企業策略諮詢、產業研究及實務教學，持續參與企業成長、重大投資與產業轉型相關議題。財務分析、流程改善、資料分析與 AI 是支持判斷與驗證假設的工具；企業的決策權及執行責任仍由管理團隊承擔。
 
-他持續研究 AI、半導體、先進材料與資本配置，並將產業觀察與高階經營經驗帶入教學和公開寫作，讓研究與企業實務相互啟發。
+他持續研究 AI、產業競爭力、半導體供應鏈、新興技術與資本配置，並將產業觀察與高階經營經驗帶入教學和公開寫作，讓研究與企業實務相互啟發。
 
 ---
 
@@ -53,11 +53,11 @@ inLanguage:
 
 *Actively engaged in industry strategy and transformation—connecting technology, capital allocation, competitive advantage and execution.*
 
-Po-Sung (Sinclair) Huang is a senior industry executive with more than 30 years of senior management experience in publicly listed companies, across electronics, industrial materials, chemicals and life sciences. He has served as CFO, Executive Vice President and General Manager, as well as in group-level finance and business-management leadership roles, through periods of growth, scaling and transformation.
+Po-Sung (Sinclair) Huang is a senior industry executive with more than 30 years of senior management experience in publicly listed companies. His career spans early experience in pharmaceuticals, extensive leadership in electronics and technology hardware, and later executive responsibilities in the carbon black industry. He has served as CFO, Executive Vice President and General Manager, as well as in group-level finance and business-management leadership roles, through periods of growth, scaling and transformation.
 
 Having stepped away from full-time executive management, he remains engaged in industry strategy, business transformation and major investment questions through executive advisory work, independent analysis and teaching. Financial analysis, process improvement, data analysis and AI help test assumptions and inform decisions. Decision rights and implementation remain with each company's management team.
 
-His independent research focuses on AI, semiconductors, advanced materials and capital allocation, connecting emerging industrial change with practical business judgement.
+His independent research explores AI, industrial competitiveness, semiconductor value chains, emerging technologies, and capital allocation, connecting emerging industrial change with practical business judgement.
 
 ---
 
