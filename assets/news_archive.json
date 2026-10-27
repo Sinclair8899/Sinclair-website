@@ -2,6 +2,246 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-10-27",
+      "generated_utc": "2026-10-27T00:54:57Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 12,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 13,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 2,
+          "excluded": 4
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 9,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Anthropic 正式遞件申請公開上市",
+              "summary_zh": "Anthropic 已正式向 SEC 遞交 IPO 申請文件，揭露營收快速成長、虧損擴大、企業客戶採用情況，以及為保留創辦人控制權與 AI 安全使命而設計的特殊治理結構。申請書超過 300 頁，其中約 100 頁聚焦於風險揭露。",
+              "relevance": "前沿模型公司財務與治理——AI 基礎設施資本結構主題",
+              "title": "Anthropic officially files for its public debut",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+              "published": "2026-10-26T14:35:22Z"
+            },
+            {
+              "title_zh": "Anthropic 在 S-1 中揭露資料中心對天然氣的依賴",
+              "summary_zh": "Anthropic 於週一向 SEC 遞交的文件中指出，資料中心日益依賴「天然氣」，並表示「取得電力供應與具備充足電力的資料中心選址競爭相當激烈」。",
+              "relevance": "資料中心電力與能源限制——AI 基礎設施瓶頸主題",
+              "title": "Anthropic is burning gas to feed the AI boom",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+              "published": "2026-10-26T21:45:31Z"
+            },
+            {
+              "title_zh": "SpaceX 與 Apollo 敲定 400 億美元 GPU 融資案",
+              "summary_zh": "SpaceX 與 Apollo 達成 400 億美元的 GPU 融資協議，為其擴張中的 AI 布局提供傳統債券市場之外的資金來源。",
+              "relevance": "GPU 資本支出融資結構——AI 運算基礎設施主題",
+              "title": "SpaceX locks in $40B GPU financing deal with Apollo",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+              "published": "2026-10-26T16:46:36Z"
+            },
+            {
+              "title_zh": "OpenAI 公布三項科學發現，並推出與學界合作的新模式",
+              "summary_zh": "在大量釋出宣稱解決長年數學問題的手稿不到一個月後，OpenAI 再度發表數學、電腦科學與物理領域的三項「重大」發現。與先前不同的是，這次由 OpenAI 稱為「shepherds」的外部專家引導研究結果。",
+              "relevance": "模型於科學研究的應用與驗證流程——AI for Science 主題",
+              "title": "OpenAI announces three big science discoveries and a new way to work with academics",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+              "published": "2026-10-26T23:34:58Z"
+            },
+            {
+              "title_zh": "塔塔通訊投資 150 億元，於印度各地建設 AI 相關基礎設施",
+              "summary_zh": "塔塔通訊於 26 日宣布投入 435 億盧比（約新台幣 150 億元），建設跨資料中心連結所需的 AI 光纖網路基礎設施。",
+              "relevance": "跨資料中心網路互連投資——AI 基礎設施建設主題",
+              "title": "塔塔通訊投資 150 億元，印度各地建設 AI 相關基礎設施",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/27/tata-communications-to-invest-450-million-in-10000-km-ai-fibre-network/",
+              "published": "2026-10-27T00:50:23Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "自駕挖土機新創獲 6 億美元新融資",
+              "summary_zh": "Bedrock Robotics 完成 6 億美元募資，估值達 41 億美元，公司特別聚焦於自主挖土機，部分原因在於熟練操作員短缺日益嚴重。",
+              "relevance": "工程機械自主化與勞動力替代——機器人與自主系統主題",
+              "title": "This startup’s self-driving excavators help dig up $600M in new funding",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/26/this-startups-self-driving-excavators-help-dig-up-600m-in-new-funding/",
+              "published": "2026-10-26T17:45:00Z"
+            },
+            {
+              "title_zh": "ICE 採購機器狗計畫引發逾三百名 Boston Dynamics 員工抗議",
+              "summary_zh": "美國移民及海關執法局（ICE）採購機器狗的計畫，引發超過 300 名 Boston Dynamics 員工連署警告風險，該公司則維持此項交易。",
+              "relevance": "機器人部署的應用場域與治理爭議——自主系統主題",
+              "title": "ICE plan to buy robot dogs spurs protest from hundreds of Boston Dynamics employees",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/",
+              "published": "2026-10-26T18:50:41Z"
+            },
+            {
+              "title_zh": "Tesla 讓出電動車王座，轉而押注自駕競賽",
+              "summary_zh": "Tesla 期望以自動駕駛訂閱服務帶來汽車銷售無法提供的利潤率，將 AI 與軟體視為下一個獲利引擎。",
+              "relevance": "自駕商業模式轉向——自主系統產業化主題",
+              "title": "Tesla gave up the EV crown. Now it wants to win the autonomy race.",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/",
+              "published": "2026-10-26T14:30:27Z"
+            },
+            {
+              "title_zh": "Tesla 攜手 Turo 推動 Full Self-Driving（Supervised）採用",
+              "summary_zh": "Tesla 與租車平台 Turo 合作推廣其 Full Self-Driving（Supervised）軟體，符合資格的 Turo 車主可獲得一個月免費試用。",
+              "relevance": "自駕軟體通路擴散——自主系統部署主題",
+              "title": "Tesla turns to Turo to boost adoption of Full Self-Driving (Supervised)",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/26/tesla-turns-to-turo-to-boost-adoption-of-full-self-driving-supervised/",
+              "published": "2026-10-26T12:58:40Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Anthropic 在龐大的 IPO 文件中闡述藥物研發企圖與風險",
+              "summary_zh": "根據 IPO 申請文件，Anthropic 正更深入投入藥物發現領域，自建分子生物學實驗室，並投資可能最終產出候選藥物的研究。",
+              "relevance": "AI 公司自建濕實驗室投入藥物發現——生技×AI 主題",
+              "title": "Anthropic lays out drug R&D ambitions, risks in mammoth IPO filing",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/anthropic-extols-ais-drug-rd-potential-including-risks-mammoth-ipo-filing",
+              "published": null
+            },
+            {
+              "title_zh": "Boehringer 與 Microsoft 合作探索臨床試驗的數位病患分身",
+              "summary_zh": "Boehringer Ingelheim 與 Microsoft 展開合作，探索以 AI 驅動的數位病患分身（digital patient twins）改善臨床試驗設計。",
+              "relevance": "AI 模擬應用於臨床試驗設計——生技×AI 主題",
+              "title": "Boehringer, Microsoft team up to explore digital patient twins for clinical trials",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/cro/microsoft-bi-team-launch-digital-patient-twins-trial-design-improvements",
+              "published": null
+            },
+            {
+              "title_zh": "EQT 以 108 億歐元收購分子診斷廠商 Qiagen",
+              "summary_zh": "EQT 將收購總部位於荷蘭的 Qiagen，企業價值達 108 億歐元（121 億美元），其中包含 11 億美元淨負債。",
+              "relevance": "分子診斷產業整併——生技資料與工具平台主題",
+              "title": "EQT buys molecular diagnostics specialist Qiagen in a €10.8B deal",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/eqt-buys-molecular-diagnostics-specialist-qiagen-eur108b-deal",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Microsoft 向約 6 萬名員工提供買斷方案",
+              "summary_zh": "Microsoft 向美國、加拿大、印度與英國的員工提出自願離職買斷方案，涉及約 6 萬人，相當於其四分之一的員工數。",
+              "relevance": "大型科技業人力結構調整——總體科技產業資本配置主題",
+              "title": "Microsoft offers buyouts to around 60,000 employees",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/26/microsoft-offers-buyouts-to-around-60000-employees-reports-say/",
+              "published": "2026-10-26T15:58:25Z"
+            },
+            {
+              "title_zh": "核融合新創以股權換取政府補助，是否值得？",
+              "summary_zh": "核融合新創面臨與電漿物理無關的新課題：是要以公司股份換取政府資金獎助，還是獨力前行。",
+              "relevance": "能源供給端新創融資模式——AI 資料中心電力需求主題",
+              "title": "Fusion startups are giving the government shares in exchange for awards. Is it worth it?",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/26/fusion-startups-are-giving-the-government-shares-in-exchange-for-awards-is-it-worth-it/",
+              "published": "2026-10-26T18:59:52Z"
+            },
+            {
+              "title_zh": "公路竊賊以 GPS 欺騙手法竊取運往資料中心的貨物",
+              "summary_zh": "調查人員說明公路竊賊如何透過 GPS 欺騙（spoofing）手法，竊取價值 1 億美元的資料中心設備貨物。",
+              "relevance": "資料中心設備供應鏈安全——AI 基礎設施建置主題",
+              "title": "Highway thieves are spoofing GPS to steal millions in data center-bound cargo",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/tech-policy/2026/10/highway-thieves-are-spoofing-gps-to-steal-millions-in-data-center-bound-cargo/",
+              "published": "2026-10-26T17:26:36Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact"
+      ]
+    },
+    {
       "date": "2026-10-26",
       "generated_utc": "2026-10-25T23:37:11Z",
       "status": "published",
@@ -1266,263 +1506,6 @@
               "source": "Nature News",
               "url": "https://www.nature.com/articles/d41586-026-03352-0",
               "published": "2026-10-20T00:00:00Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32"
-      ]
-    },
-    {
-      "date": "2026-10-20",
-      "generated_utc": "2026-10-20T00:45:00Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 14,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 17,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 2,
-          "excluded": 6
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 6,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 15,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "傳 Nscale 與 Anthropic 正洽談另一筆 450 億美元運算合約",
-              "summary_zh": "Nscale 與 Anthropic 在今年 8 月宣布一筆 450 億美元的運算合約,據報導雙方正在討論另一筆相同規模的交易。",
-              "relevance": "大型運算採購合約——AI 基礎設施資本支出主題",
-              "title": "Nscale and Anthropic are reportedly in talks for yet another $45 billion compute deal",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
-              "published": "2026-10-19T23:39:38Z"
-            },
-            {
-              "title_zh": "CoreWeave 的債務正成為整個 AI 產業的問題",
-              "summary_zh": "CoreWeave 的債券殖利率較公債高出逾 1,000 個基點,依常見定義已落入不良債務區間。此事引發對 AI 建置是否為私募信貸泡沫的討論。",
-              "relevance": "新雲業者融資結構——AI 資料中心建置與資金面主題",
-              "title": "CoreWeave’s debt is becoming the whole AI industry’s problem",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
-              "published": "2026-10-19T21:28:20Z"
-            },
-            {
-              "title_zh": "Amazon 以新開發工具 TorchNeuron 向 Nvidia 發動至今最大挑戰",
-              "summary_zh": "Amazon 推出 TorchNeuron,目標是鬆動 Nvidia 在 PyTorch 生態的主導地位,讓更多開發者能在自家晶片等替代硬體上執行應用。",
-              "relevance": "加速器軟體生態與 CUDA 替代方案——AI 基礎設施主題",
-              "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
-              "published": "2026-10-19T20:09:24Z"
-            },
-            {
-              "title_zh": "Nvidia 推出新開放模型,用於企業與 PC 端執行代理程式",
-              "summary_zh": "Nvidia 發布新的開放模型,瞄準企業在自有資料中心執行自家開放模型的趨勢,同時推動裝置端的私有 AI 代理程式。",
-              "relevance": "開放權重模型與端側推論——AI 基礎設施主題",
-              "title": "Nvidia launches new open models to run agents in the enterprise and on PCs",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-              "published": "2026-10-19T15:37:09Z"
-            },
-            {
-              "title_zh": "Amazon 將出資在印第安納州前燃煤電廠興建 12 座小型核反應爐",
-              "summary_zh": "Amazon 與 X-energy、American Electric Power 簽約,於印第安納州 Sullivan County 已停用的 Breed 燃煤電廠舊址興建核能設施,規劃提供最高 960 百萬瓦的無碳電力。",
-              "relevance": "資料中心電力供給——AI 基礎設施能源約束主題",
-              "title": "Amazon to fund 12 small nuclear reactors at former Indiana coal plant",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/19/amazon-to-fund-12-small-nuclear-reactors-at-former-indiana-coal-plant/",
-              "published": "2026-10-19T16:55:56Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "Tenstorrent 估值達 62 億美元,擴大開放權重 AI 晶片布局",
-              "summary_zh": "這家 Nvidia 挑戰者在今年稍早引來收購興趣後,募得 15 億美元以維持獨立營運,估值來到 62 億美元。",
-              "relevance": "AI 加速器新進業者融資——半導體競爭格局主題",
-              "title": "Tenstorrent hits $6.2B valuation to scale open-weight AI chips",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
-              "published": "2026-10-19T18:37:27Z"
-            },
-            {
-              "title_zh": "光與鏡面讓大型量子電腦更接近現實",
-              "summary_zh": "科學家改良了光子收集元件,該裝置可用於連接多組量子運算陣列。",
-              "relevance": "運算硬體路線——先進運算架構主題",
-              "title": "Light and mirrors move large quantum computers closer to reality",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03237-2",
-              "published": "2026-10-19T00:00:00Z"
-            },
-            {
-              "title_zh": "運算的極限能推到多遠?",
-              "summary_zh": "MIT Technology Review 解析系列回顧自 1959 年 Feynman 於加州理工的演講以來的脈絡,探討運算能力可推進的物理極限。",
-              "relevance": "運算微縮極限——半導體製程與架構主題",
-              "title": "How far can we push computing?",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/10/19/1145904/tr-explains-how-far-can-we-push-computing/",
-              "published": "2026-10-19T09:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "我沒預期會打造出的那個機器人",
-              "summary_zh": "2015 年自奧勒岡州立大學機器人實驗室分拆成立的 Agility Robotics 推出 Digit 5,設計目標為能安全且具經濟效益地大規模執行工作,可將 23 公斤的料箱搬上高層貨架。",
-              "relevance": "人形機器人量產設計——機器人與自主系統主題",
-              "title": "The Robot I Didn’t Expect to Build",
-              "source": "IEEE Spectrum",
-              "url": "https://spectrum.ieee.org/agility-robotics-digit-5-redesign",
-              "published": "2026-10-19T13:00:03Z"
-            },
-            {
-              "title_zh": "Laplace Intelligence 在機器人與自駕車上路前對其進行紅隊測試",
-              "summary_zh": "密西根大學衍生新創 Laplace Intelligence 以 AI 代理程式與互動式模擬,在部署前對機器人與自駕車進行壓力測試;該公司已獲利,並參與 TechCrunch Disrupt 的 Startup Battlefield。",
-              "relevance": "自主系統模擬驗證——機器人安全評測主題",
-              "title": "Laplace Intelligence red-teams robots and self-driving cars before they hit the real world",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/19/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
-              "published": "2026-10-19T12:30:00Z"
-            },
-            {
-              "title_zh": "Rivian 執行長表示自駕將帶來「截然不同」的車輛設計",
-              "summary_zh": "創辦人暨執行長 RJ Scaringe 表示,他認為自動駕駛將讓公司能打造與目前戶外取向 SUV 和貨卡截然不同的車型。",
-              "relevance": "自駕對車輛形態的影響——自主系統主題",
-              "title": "Rivian’s CEO says autonomy will enable ‘dramatically different’ vehicle designs",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/19/rivians-ceo-says-autonomy-will-enable-dramatically-different-vehicle-designs/",
-              "published": "2026-10-19T17:39:51Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Lilly 與香港 Metis 簽署 11 億美元合作,強化 AI 奈米顆粒藥物探索",
-              "summary_zh": "Eli Lilly 與香港 Metis 達成價值 11 億美元的合作案,屬該公司在藥物遞送與 AI 技術領域一系列合作中的最新一筆。",
-              "relevance": "AI 驅動藥物探索與遞送——生技×AI 主題",
-              "title": "Lilly partners with Hong Kong's Metis in $1.1B deal to bolster AI nanoparticle discovery",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/lilly-partners-hong-kongs-metis-11b-deal-bolster-ai-nanoparticle-discovery",
-              "published": null
-            },
-            {
-              "title_zh": "以 1 公克無線 mesoscope 對自然行為小鼠進行全皮質成像",
-              "summary_zh": "《Nature》刊出研究,使用重量 1 公克的無線 mesoscope,在自然行為狀態下的小鼠身上進行全皮質範圍成像。",
-              "relevance": "神經影像量測儀器——生物資料擷取與 AI 分析主題",
-              "title": "Cortex-wide imaging in naturally behaving mice with 1-gram wireless mesoscopes",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-11293-x",
-              "published": "2026-10-19T00:00:00Z"
-            },
-            {
-              "title_zh": "siRNA 藥物血癌二期告捷後,Merck KGaA 以 13 億美元收購 Silence",
-              "summary_zh": "在英國生技公司 Silence Therapeutics 的 siRNA 藥物取得中期試驗成功、挑戰 Takeda 的 Mimrylo 之後,德國 Merck KGaA 以 13 億美元將其收購。",
-              "relevance": "核酸藥物平台併購——生技產業資本流向主題",
-              "title": "Merck KGaA buys Silence in $1.3B deal after siRNA drug's phase 2 blood cancer win",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/merck-kgaa-buys-silence-13b-deal-biotechs-blood-cancer-sirna-drug",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "化石燃料捲土重來",
-              "summary_zh": "一份新報告顯示,美國正在建設十年來最多的化石燃料基礎設施,而再生能源成長放緩;隨著更多資料中心、工廠與電動車接入電網,電力需求攀升速度亦為十多年來最快。",
-              "relevance": "電力需求與電網供給——資料中心能源約束的總體背景",
-              "title": "The fossil fuel comeback is here",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
-              "published": "2026-10-19T21:48:01Z"
-            },
-            {
-              "title_zh": "美國政府對博士後簽證的調查令科學界憂心",
-              "summary_zh": "美國政府稱受調查的大學以該類簽證壓低美國公民薪資,研究人員則表示限制國際申請者可能損害科學研究。",
-              "relevance": "研究人力與簽證政策——科研體系總體環境",
-              "title": "US government probe into postdoc visas worries scientists",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03345-z",
-              "published": "2026-10-19T00:00:00Z"
             }
           ]
         }
