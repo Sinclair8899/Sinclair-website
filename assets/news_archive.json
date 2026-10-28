@@ -2,6 +2,260 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-10-28",
+      "generated_utc": "2026-10-28T00:46:05Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 16,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 2,
+          "excluded": 3
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 16,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "前沿 AI 實驗室稱其模型推翻了指數時間假設(Exponential Time Hypothesis)。這是什麼意思?",
+              "summary_zh": "TechCrunch 訪問受託解釋 OpenAI 最新發現的 MIT 電腦科學家,說明前沿 AI 實驗室宣稱其模型推翻指數時間假設一事的內容。此前 OpenAI 於週一宣布在數學、電腦科學與物理領域的進展。",
+              "relevance": "AI 模型於數學與理論計算科學的應用——前沿模型能力主題",
+              "title": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+              "published": "2026-10-27T17:08:08Z"
+            },
+            {
+              "title_zh": "研究人員逐漸厭倦 OpenAI 對其突破成果的把關",
+              "summary_zh": "OpenAI 週一宣布在數學、電腦科學與物理領域的突破,並表示其成果溝通方式正在調整。但受訪於 The Verge 的研究人員表示,對該公司的作法日益感到厭倦。",
+              "relevance": "前沿實驗室研究成果公開程度——AI 研究生態主題",
+              "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+              "published": "2026-10-27T20:48:58Z"
+            },
+            {
+              "title_zh": "Google 的 Genie 4 世界模型加入音訊、更真實的世界與即時操控",
+              "summary_zh": "DeepMind 發表 Genie 4 世界模型,場景一致性可維持至兩分鐘,為 Genie 3 的兩倍,並提供更佳的物理模擬與更擬人的角色。該模型將陸續開放給開發者與 Google AI Ultra 訂閱者。",
+              "relevance": "世界模型與模擬環境——具身智慧與自主系統訓練主題",
+              "title": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+              "published": "2026-10-27T16:30:57Z"
+            },
+            {
+              "title_zh": "資料中心熱潮的另一面:美國電網的創新",
+              "summary_zh": "TechCrunch 報導,AI 熱潮對既有電網造成壓力的同時,業界人士指出也帶來電網現代化的各種新機會。",
+              "relevance": "資料中心電力供給——AI 基礎設施能源約束主題",
+              "title": "The data center boom has an upside: innovation for the US grid",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+              "published": "2026-10-27T22:55:41Z"
+            },
+            {
+              "title_zh": "固態變壓器如何助力 AI 熱潮的供電",
+              "summary_zh": "MIT Technology Review 指出,變壓器是電網中關鍵但不易察覺的設備,結構複雜且供應短缺,基本設計約一個世紀未有大幅改變。文章探討在電力需求上升下固態變壓器的升級潛力。",
+              "relevance": "電網設備供應瓶頸——資料中心電力基礎設施主題",
+              "title": "How solid-state transformers could help power the AI boom",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/10/27/1147684/solid-state-transformers/",
+              "published": "2026-10-27T09:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "Anduril 與 Qualcomm 推出 BlueChip,一款新型美國製筆電",
+              "summary_zh": "Anduril 創辦人 Palmer Luckey 表示要將電腦製造帶回美國,且不只是組裝,而是包含目前僅在中國生產的每一項零組件。該產品與 Qualcomm 合作推出,名為 BlueChip。",
+              "relevance": "半導體與電子供應鏈在地化——地緣政治與製造主題",
+              "title": "Anduril, Qualcomm launch BlueChip, a new kind of US-made laptop",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/27/anduril-qualcomm-launch-bluechip-a-new-kind-of-us-made-laptop/",
+              "published": "2026-10-27T13:00:00Z"
+            },
+            {
+              "title_zh": "UEFI 韌體的程式碼執行漏洞影響地球上多數伺服器",
+              "summary_zh": "EDK2 中的一項重大漏洞可讓攻擊者在開機流程早期執行程式碼,影響範圍涵蓋全球多數伺服器。",
+              "relevance": "伺服器韌體層安全——資料中心硬體基礎設施主題",
+              "title": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
+              "published": "2026-10-27T20:25:55Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "你的機器人安全功能本來就能運作。但如果輸入訊號在說謊呢?",
+              "summary_zh": "文章指出,移動機器人減速避人、協作手臂在工人接近時放慢、人形機器人停下讓人通過,這些反應都依賴距離讀數、位置估計或停止訊號等資訊。文中探討當其中一項輸入出錯時會發生什麼狀況。",
+              "relevance": "機器人感測輸入可信度與安全機制——自主系統安全主題",
+              "title": "Your Robot’s Safety Functions Already Work. What If the Input Lies?",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/ai-robot-safety-cybersecurity-vicone",
+              "published": "2026-10-27T16:14:39Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Vibe 基因?近自然語言進入蛋白質與基因體設計軟體",
+              "summary_zh": "Ars Technica 報導,目前已可用自然語言向 AI 工具描述想要產生何種蛋白質,相關能力已進入蛋白質與基因體設計軟體。",
+              "relevance": "生成式 AI 用於蛋白質與基因體設計——生技×AI 主題",
+              "title": "Vibe genes? Natural(ish) language comes to protein, genome design software",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/science/2026/10/vibe-genes-naturalish-language-comes-to-protein-genome-design-software/",
+              "published": "2026-10-27T18:49:08Z"
+            },
+            {
+              "title_zh": "導致男童死亡的基因療法療效有限",
+              "summary_zh": "Nature 報導,由中國生技公司 HuidaGene 開發的基因療法在動物實驗中顯示潛力,但在一名兒童身上引發致命反應。",
+              "relevance": "基因療法臨床安全性——生技研發主題",
+              "title": "Gene therapy that led to boy’s death had limited efficacy",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03449-6",
+              "published": "2026-10-27T00:00:00Z"
+            },
+            {
+              "title_zh": "Artiva 在死亡案例與持久性不佳重創自體免疫細胞療法後裁員 94%",
+              "summary_zh": "Artiva Biotherapeutics 已停止一項自體免疫疾病細胞療法的開發,並裁減 94% 員工。該決定發生在兩名病患死亡、且持久性數據未達預期之後。",
+              "relevance": "細胞療法臨床結果與生技產業動態——生技研發主題",
+              "title": "Artiva lays off 94% of staff after deaths and durability sink autoimmune cell therapy",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/artiva-lays-94-staff-after-deaths-and-durability-sink-autoimmune-cell-therapy",
+              "published": null
+            },
+            {
+              "title_zh": "量測免疫健康能否重塑醫療照護?",
+              "summary_zh": "Nature 探討若能找到實用方法分析個人免疫系統狀態,將可用於指導治療決策,並創造疾病預防的機會。",
+              "relevance": "免疫系統量化分析——生醫資料與精準醫療主題",
+              "title": "Could measuring immune health reshape medical care?",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03396-2",
+              "published": "2026-10-27T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Anthropic IPO 文件警告其 AI 可能勒索他人、產生意識、終結人類",
+              "summary_zh": "Ars Technica 整理自 Anthropic 長達 93 頁的「風險因子」章節,列出其中提及的七項潛在 AI 風險情境。Anthropic 已提交 IPO 公開說明書,全文 335 頁,其中約 100 頁聚焦於風險。",
+              "relevance": "前沿 AI 實驗室資本市場動向與風險揭露——AI 產業結構主題",
+              "title": "Anthropic IPO warns its AI could blackmail people, become sentient, end humanity",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/",
+              "published": "2026-10-27T21:31:14Z"
+            },
+            {
+              "title_zh": "Disruptive 募得 100 億美元基金,將重押至少 10 家公司",
+              "summary_zh": "Disruptive 近年因投資晶片新創 Groq 與 AI 語音生成新創 ElevenLabs 等公司而受關注,如今募得 100 億美元新基金。",
+              "relevance": "AI 與晶片新創資金流向——AI 基礎設施投資主題",
+              "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+              "published": "2026-10-27T18:55:35Z"
+            },
+            {
+              "title_zh": "「無人掌舵」:德拉瓦州計畫允許 AI 代理人經營整間公司",
+              "summary_zh": "德拉瓦州的一項計畫將允許 AI 代理人經營整間企業。美國眾議員 Comer 表示,AI 經營公司的所有人將可規避「魯莽」AI 所造成的責任。",
+              "relevance": "AI 代理人的法律主體與責任歸屬——AI 治理主題",
+              "title": "\"No human at the helm\": Delaware plan would let AI agents run entire businesses",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/",
+              "published": "2026-10-27T21:50:04Z"
+            },
+            {
+              "title_zh": "分拆出 Slate Auto 的 Re:Build 募資 21 億美元",
+              "summary_zh": "製造業加速器 Re:Build 完成 21 億美元募資,該公司自稱為「美國版的深圳」。",
+              "relevance": "先進製造產能投資——供應鏈與製造基礎主題",
+              "title": "Re:Build, which spun out Slate Auto, raises $2.1B",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/27/rebuild-which-spun-out-slate-auto-raises-2-1b/",
+              "published": "2026-10-27T20:31:17Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro"
+      ]
+    },
+    {
       "date": "2026-10-27",
       "generated_utc": "2026-10-27T00:54:57Z",
       "status": "published",
@@ -1251,272 +1505,6 @@
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
         "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE"
-      ]
-    },
-    {
-      "date": "2026-10-21",
-      "generated_utc": "2026-10-21T00:11:00Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 18,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 6
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 14,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Anthropic 的雲端合作關係正變得複雜",
-              "summary_zh": "報導指出,Anthropic 在向雲端服務商取得足夠運算資源上遇到困難,這些業者日益將其視為競爭對手。該公司基礎設施支出同時持續擴大,並規劃於 11 月進行 IPO。",
-              "relevance": "運算資源取得與雲端供應關係——AI 基礎設施容量約束主題",
-              "title": "Anthropic’s cloud partnerships are getting messy",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
-              "published": "2026-10-20T21:25:22Z"
-            },
-            {
-              "title_zh": "Google 加入 Amazon 行列,挑戰 Nvidia 在 AI 應用開發者的優勢地位",
-              "summary_zh": "Google 推出開發者工具,讓 PyTorch 使用者更容易將應用程式從 Nvidia GPU 遷移至其他硬體。Amazon 先前已釋出類似工具。",
-              "relevance": "加速器軟體生態與 CUDA 替代路徑——AI 運算堆疊主題",
-              "title": "Google has joined Amazon in attacking Nvidia’s stronghold with AI app developers",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
-              "published": "2026-10-20T18:38:24Z"
-            },
-            {
-              "title_zh": "SpaceX 的 AI 業務表現超出預期",
-              "summary_zh": "SpaceX 第三季營收 146 億美元、年增 161%,淨利 44 億美元,公司表示成長由其 Super Intelligence(SI)部門與 Connectivity 業務加速帶動。太空部門營運虧損 700 萬美元,Connectivity 部門營運收益 24 億美元。",
-              "relevance": "新進業者的 AI 運算與連網營收結構——AI 基礎設施主題",
-              "title": "SpaceX’s AI business is beating expectations",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
-              "published": "2026-10-20T20:40:41Z"
-            },
-            {
-              "title_zh": "美國下令聯邦機構自系統中移除中國 DeepSeek AI",
-              "summary_zh": "美國要求聯邦文職機構移除 DeepSeek 產品,以及使用其技術建構的第三方服務,理由為國家安全疑慮。",
-              "relevance": "模型部署的出口與採購管制——AI 基礎設施地緣政治主題",
-              "title": "US orders federal agencies to remove China’s DeepSeek AI from their systems",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
-              "published": "2026-10-20T13:07:24Z"
-            },
-            {
-              "title_zh": "Anthropic 提出 AI 安全法案,可能在模型恐致 50 人以上死亡時予以阻擋",
-              "summary_zh": "Anthropic 提出政策草案,內容包含在模型可能造成 50 人以上死亡時加以阻擋的機制。報導指出,該草案同時規定聯邦機構未經法官許可不得阻止模型發布。",
-              "relevance": "前沿模型治理與發布規範——AI 基礎設施政策主題",
-              "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
-              "published": "2026-10-20T23:01:23Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "量子糾錯大幅超越損益平衡點",
-              "summary_zh": "一項糾錯量子位元的實驗展示顯示,隨著系統規模擴大,錯誤率出現大幅下降。",
-              "relevance": "下一世代運算硬體——半導體與運算基礎主題",
-              "title": "Quantum error correction goes well beyond breakeven",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/science/2026/10/quantum-error-correction-goes-well-beyond-breakeven/",
-              "published": "2026-10-20T18:08:57Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Eka 憑藉令專家驚艷的 physical AI 模型,估值達 14.5 億美元",
-              "summary_zh": "Eka Robotics 的機器手臂能夠抓取多種不同物件,動作流暢且近似人類。報導指出其估值達 14.5 億美元。",
-              "relevance": "通用抓取與 physical AI 模型——機器人與自主系統主題",
-              "title": "Eka is worth $1.45B thanks to a physical AI model that has experts raving",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
-              "published": "2026-10-20T13:00:00Z"
-            },
-            {
-              "title_zh": "SpaceX 出身團隊的航空新創 Reliable Robotics 募得 1.15 億美元,估值突破 10 億美元",
-              "summary_zh": "Reliable Robotics 以 1.15 億美元股權與 2,500 萬美元債權延長其 D 輪募資,估值超過 10 億美元。",
-              "relevance": "自主飛行系統商業化——自主系統主題",
-              "title": "SpaceX alum’s aviation startup, Reliable Robotics, lands $115M, topping $1B valuation",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/20/spacex-alums-aviation-startup-reliable-robotics-lands-115m-topping-1b-valuation/",
-              "published": "2026-10-20T13:17:36Z"
-            },
-            {
-              "title_zh": "是鳥?是飛機?還是機器海鸚?",
-              "summary_zh": "MIT 與瑞士洛桑 EPFL 的工程團隊打造可模仿海鸚與海鷗的機器人,能在空中飛行、俯衝入水、水下游動後再躍出水面飛走。水的密度約為空氣的 1,000 倍,兩種介質中的運動機制差異極大。",
-              "relevance": "跨介質移動載具設計——機器人與自主系統主題",
-              "title": "It’s a bird, it’s a plane … it’s a robo-puffin?",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/10/20/1145205/its-a-bird-its-a-plane-its-a-robo-puffin/",
-              "published": "2026-10-20T21:00:00Z"
-            },
-            {
-              "title_zh": "中風患者的機器人復健治療",
-              "summary_zh": "每年有 500 萬人因中風留下長期功能損傷,物理治療師短缺使其難以獲得照護。前 MIT 博士後研究員 Johannes Lachner 提出結合人工智慧與人類治療的新方法。",
-              "relevance": "醫療照護機器人與 AI 結合——機器人應用主題",
-              "title": "Robotic therapy for stroke patients",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/10/20/1145282/robotic-therapy-for-stroke-patients/",
-              "published": "2026-10-20T21:00:00Z"
-            },
-            {
-              "title_zh": "前 Nvidia 成員、現任創投 Amulya Vishwanath:「Physical AI 正處於樂高時代」",
-              "summary_zh": "Amulya Vishwanath 在 TechCrunch Equity 節目中表示,業界正在等待機器人領域的「ChatGPT 時刻」,並形容 physical AI 目前處於「樂高時代」。",
-              "relevance": "physical AI 發展階段的產業觀點——機器人主題",
-              "title": "Ex-Nvidia-turned-VC Amulya Vishwanath: ‘Physical AI is in it’s LEGO era’",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/20/ex-nvidia-turned-vc-amulya-vishwanath-physical-ai-is-in-its-lego-era/",
-              "published": "2026-10-20T16:20:06Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "OpenAI 收購新創 Orchestra Bio 強化其生技業務",
-              "summary_zh": "OpenAI 表示將把 Orchestra 的團隊與技術納入 Rosalind——其生命科學研究用 AI 模型——以及相關的 Rosalind Workbench 工具,後者旨在協助研究人員規劃實驗與分析結果。",
-              "relevance": "基礎模型業者進入生命科學研究——生技 × AI 主題",
-              "title": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
-              "published": "2026-10-20T20:35:10Z"
-            },
-            {
-              "title_zh": "龐大的新化石資料集挑戰地球「五大」生物大滅絕的敘事",
-              "summary_zh": "一個以近 400 萬筆化石資料訓練的人工智慧模型指出,其中三次滅絕事件的發生可能比先前認為的更為漸進。",
-              "relevance": "大規模科學資料集上的 AI 模型推論——生技 × AI 主題",
-              "title": "Vast new fossil record challenges story of Earth’s ‘big five’ mass extinctions",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03316-4",
-              "published": "2026-10-20T00:00:00Z"
-            },
-            {
-              "title_zh": "植物會用電訊號「說話」,這家新創打造 AI 模型解讀其語言",
-              "summary_zh": "Electric Plant 建立了一套 AI 驅動的轉譯工具,用以解讀流經植物莖部的微弱電訊號。",
-              "relevance": "生物電訊號的 AI 解碼——生技 × AI 主題",
-              "title": "Plants can speak using electricity, so this startup built an AI model to decipher their language",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/20/plants-can-speak-using-electricity-so-this-startup-built-an-ai-model-to-decipher-their-language/",
-              "published": "2026-10-20T16:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "中國為 15 年期大型研究補助挑選首批研究人員",
-              "summary_zh": "獲選科學家先取得五年期補助,之後可再延長十年。",
-              "relevance": "國家級研發資金配置——科研總體環境主題",
-              "title": "China picks first researchers for 15-year mega grants",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03151-7",
-              "published": "2026-10-20T00:00:00Z"
-            },
-            {
-              "title_zh": "Nature 工作滿意度調查凸顯科學版圖的變化",
-              "summary_zh": "調查顯示,中國與印度科學家對未來感到樂觀的比例,高於美國與數個歐洲國家。",
-              "relevance": "全球研究人力分布——科研總體環境主題",
-              "title": "Nature ’s job-satisfaction survey highlights the changing geography of science",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03327-1",
-              "published": "2026-10-20T00:00:00Z"
-            },
-            {
-              "title_zh": "歐洲與世界其他地區必須對美國科學戰略提出回應",
-              "summary_zh": "Nature 社論討論歐洲及其他地區應如何因應美國的科學戰略。",
-              "relevance": "科學政策競爭格局——科研總體環境主題",
-              "title": "Europe and the rest of the world must come up with an answer to US science strategy",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03352-0",
-              "published": "2026-10-20T00:00:00Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32"
       ]
     }
   ]
