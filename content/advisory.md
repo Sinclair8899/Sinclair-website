@@ -1,6 +1,6 @@
 ---
-title: "企業成長、轉型與重大決策"
-description: "協助董事會與經營團隊處理跨越財務、營運與組織、無法由單一部門獨立解決的企業問題。立足台灣企業的經營現場，納入跨國供應鏈、資本市場與產業競爭的國際視角。"
+title: "策略參與與合作"
+description: "以跨產業經營經驗，共同探索產品競爭力、技術創新、新事業機會與重大策略投資的商業可行性。"
 hideDescription: true
 htmlLang: "zh-Hant"
 locale: "zh_TW"
@@ -11,91 +11,54 @@ aliases:
   - /consulting/
 ---
 
-<em lang="en">Growth, Transformation &amp; Critical Business Decisions</em>
+<em lang="en">Strategic Engagement · Product Competitiveness · Technology Innovation</em>
 
-立足台灣企業的經營現場，納入跨國供應鏈、資本市場與產業競爭的國際視角。
-
-<em lang="en">Grounded in the operating realities of Taiwanese businesses, with an international perspective on supply chains, capital markets and industry competition.</em>
+**從產品與市場機會出發，結合經營判斷，評估哪些新技術、新產品與新事業真正值得投入。**
 
 <a id="chinese"></a>
 
-## 產業策略與企業決策參與 {#projects}
+## 經營視角與專業背景 {#projects}
 
-我曾於多家上市公司擔任財務長、執行副總與總經理等高階經營職務，累積三十餘年橫跨電子、工業材料、生技與工業製造的實務經驗，任職期間歷經企業從成長、規模化到轉型的不同階段。
+企業的長期競爭力，首先取決於能否持續提供市場需要、具有差異化及經濟價值的產品與服務。新技術會改變既有產品的競爭位置，也可能創造全新的客戶需求、產業分工與商業模式。
 
-我的工作聚焦於企業成長、轉型與重大決策：從企業希望取得的市場位置與經營成果出發，連結產品與技術方向、資本配置、營運能力及組織執行。財務分析、流程改善、資料分析與 AI 是用來驗證判斷、解除瓶頸的工具，而不是顧問工作的起點或邊界。
+過去三十餘年，我在不同產業及大型跨國企業擔任財務與高階經營職務，參與產品策略、技術與市場機會評估、商業模式創新、投資管理、營運及組織發展。這些經驗跨越多個產品世代，早於近年的 AI 熱潮；研究與新技術則讓這條探索路徑持續延伸。
 
-合作與交流的主要對象是董事會與經營團隊，所處理的是跨越上述面向、無法由單一部門獨立解決的問題。重點不是提供一份標準答案，而是找出真正限制獲利與成長的條件，釐清決策的連鎖影響，並將策略轉化為可執行的行動。
+我關注的不是一份看起來完整的策略簡報，而是構想能否成為可行的生意：產品是否真正滿足需求，企業有哪些可延伸的能力，哪些能力必須重新建立，以及資金、人才、客戶驗證與執行條件是否支持這項選擇。
 
-對 AI 的判斷也遵循相同原則。價值不在導入工具本身，而在是否能改善重要的經營結果。顧問工作的重點，是辨識值得優先處理的應用、判斷所需的資料與組織條件、事先約定可驗證的成效指標，並協助企業連結適當的內部團隊或外部技術夥伴；技術建置由相應團隊負責。
+## 關注的核心議題
 
-## 適合討論的情境
+- **產品與市場機會**：技術變革之下，既有產品如何保持相關性？新的客戶需求與競爭位置在哪裡？
+- **技術與系統整合**：從 AI Agent、Physical AI、機器人到智慧製造，哪些能力值得自建、合作或透過外部生態系取得？
+- **商業模式與價值取得**：產品創新能否帶來可持續的收入、差異化及利潤，而不只是增加研發與導入成本？
+- **策略投資與組織能力**：產品方向、資本配置、人才、供應鏈與組織執行，是否彼此配合？
+- **產業與投資研究**：從實際技術條件、產業競爭及財務證據，評估機會、風險與假設。
 
-- 公司持續成長，獲利、流程或組織能力卻沒有同步提升；
-- 既有事業或產品成長趨緩，下一階段的市場、產品或技術投資方向尚未形成共識；
-- 客戶、供應商或供應鏈問題反覆發生，跨部門始終難以解決；
-- 面臨重大投資、融資、產能、組織或轉型決策，需要獨立的全局判斷；
-- 策略方向已定，但組織能力、權責或人才配置尚未接上執行；
-- 企業已開始嘗試 AI，但尚未釐清最值得優先處理的問題、必要的資料與組織條件，以及如何衡量成效；
-- 董事會知道公司必須改變，但尚未釐清真正瓶頸與行動順序。
+AI 是重要的技術變革，但不是預設答案。價值不在於使用了多少 AI 工具，而在於企業能否藉由新的技術與能力，建立可驗證、可持續的競爭優勢。
 
-## 服務對象
+## 適合交流與合作的對象
 
-台灣中小企業、成長型與家族企業，以及面臨重大成長或轉型課題的上市櫃公司董事會與經營團隊；亦為投資機構及企業投資團隊提供結合財務、營運與產業現場的決策支援。
+主要面向中大型企業、上市櫃公司之董事會與高階經營團隊，以及企業投資部門、專業投資機構與具有明確產業議題的合作夥伴。是否合作，不以公司規模或產業標籤為唯一條件，而看議題是否值得深入研究、雙方是否願意以事實檢驗彼此的判斷。
 
-<a id="retainer"></a>
-<a id="briefings"></a>
+## 參與方式與界線
 
-## 合作方式
+交流可從一個具體的產品、技術、競爭或投資問題開始。視議題需要，可以是策略討論、獨立分析，或範圍清楚的專案型合作；先釐清重要假設與可驗證的商業條件，再決定是否值得進一步投入。
 
-合作從一個具體的經營問題開始，而不是從全公司訪談或大量資料蒐集開始。
-
-第一階段先確認決策背景、已知事實、不可改變的限制，以及企業真正希望改善的結果。我會以既有產業與經營經驗提出初步假設，僅要求判斷所必要的資料與少數關鍵訪談，不讓企業為顧問的產業學習支付成本。
-
-在雙方確認問題值得繼續後，再共同約定工作範圍、交付成果、時程、費用及保密界線。每一階段都應產生可供決策的結果，也保留停止、調整或進入下一階段的選擇。
-
-## 合作原則
-
-### 從問題開始，不從全面盤點開始
-
-先處理一項真正影響獲利、成長或重大決策的問題。除非確有必要，不以全公司訪談或大規模資料蒐集作為合作起點。
-
-### 先辨識不能改的條件
-
-任何方案都必須建立在企業的客戶承諾、製程限制、組織能力、資金條件及決策權責之上。無法落地的理想方案，不具有實際價值。
-
-### 只取得必要資訊
-
-資料與訪談遵循最小必要原則；敏感資訊的用途、接觸範圍與保存方式在啟動前確認。沒有必要知道的商業秘密，不要求提供。
-
-### 分階段投入，成果先於擴大
-
-先用有限範圍驗證判斷與合作價值，再決定是否擴大。企業不必一開始就承擔長期、開放式的顧問費用。
-
-### 不取代管理團隊
-
-顧問提供獨立判斷、決策架構與跨部門推動方法；企業保有決策權，執行責任與關鍵知識也留在企業內部。
-
-## 顧問價值如何衡量
-
-顧問價值不在訪談次數、報告頁數或投入工時，而在是否能更早辨識錯誤假設、避免無效投資、縮短問題停滯的時間，並提高重大決策真正落地的可能性。
-
-是否繼續合作，應由每一階段帶來的決策價值決定，而不是由長期合約或顧問依賴關係決定。
+我提供跨功能的經營視角、獨立判斷與研究方法，不取代企業管理團隊，不承接日常營運責任，也不以技術導入作為必然成果。資料使用遵循最小必要原則，保密、工作範圍及交付方式在合作前確認。
 
 <section lang="en">
 <h2 id="english">English Summary</h2>
 <h3>Strategic Engagement</h3>
-<p>My advisory work focuses on growth, transformation and major business decisions. It starts from the market position and business results a company is trying to achieve, and connects these to product and technology direction, capital allocation, operating capability and organisational execution.</p>
-<p>Having served as CFO, Executive Vice President and General Manager of publicly listed companies, I bring more than three decades of operating experience across electronics, industrial materials, biotechnology and manufacturing. The work is grounded in the operating realities of Taiwanese businesses while incorporating an international perspective on supply chains, capital markets and industry competition.</p>
-<p>Financial analysis, process improvement, data analysis and AI are tools used to test judgement and clear bottlenecks — not the starting point or the boundary of the work. For AI, the same principle applies: value comes not from adopting a tool, but from improving a business outcome that matters. The advisory focus is to identify priority applications, assess the required data and organisational conditions, agree measurable outcomes in advance, and connect the company with the appropriate internal team or external technology partner. Technical implementation remains with those teams.</p>
-<h3>How I Work</h3>
-<p>Engagements begin with a specific business problem—not a company-wide discovery exercise. I use prior operating and industry experience to form an initial view, then request only the information and interviews necessary to test it.</p>
-<p>Scope, deliverables, confidentiality and decision gates are agreed before the work expands. Each stage must create decision value on its own; the client retains the choice to stop, adjust or proceed, and keeps decision rights and execution responsibility throughout.</p>
+<p><strong>Product Competitiveness · Technology Innovation · Strategic Investment</strong></p>
+<p>A compelling strategy is not necessarily a viable business. My interest lies in the choices that connect emerging technologies and product opportunities to real customer demand, competitive advantage, sustainable economics, and execution capability.</p>
+<p>Drawing on more than three decades of financial and executive management experience across pharmaceuticals, electronics and technology hardware, and later the carbon black industry, I engage selectively with business leaders and investment teams on product strategy, technology integration, new business models, and major investment decisions.</p>
+<p>AI agents, physical AI, robotics, and intelligent manufacturing can reshape products and value chains. They are opportunities to evaluate, not solutions to prescribe. The questions are what a company can build, what it should partner for, who will pay, and whether the expected value justifies the capital and organisational commitment.</p>
+<h3>How I Engage</h3>
+<p>Conversations begin with a specific strategic question and the assumptions behind it. Participation may take the form of executive dialogue, independent analysis, or a bounded project. I respect the management team's decision rights, use only necessary information, and do not assume an operating or implementation role.</p>
 </section>
 
 ## 開始對話 {#start}
 
-最好的第一步，是簡短說明您的情境——正在面對的成長、投資或技術決策、轉型瓶頸、盡職調查疑問，或希望深入討論的主題。來信由我本人回覆，初步對話不涉及任何義務。
+如果你正在思考下一代產品、技術路線、新市場、事業模式或重大投資，可以先簡要說明議題與希望釐清的問題。初步交流不涉及合作義務，請勿傳送機密資料。
 
 <form action="https://formspree.io/f/xkjwwoqg" method="POST" class="enquiry-form">
   <p><label for="enq-name">Name <span class="enquiry-required">(required)</span></label>
