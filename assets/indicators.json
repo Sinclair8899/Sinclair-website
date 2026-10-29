@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-28T00:40:20Z",
-  "date": "2026-10-28",
+  "generated_utc": "2026-10-29T01:09:31Z",
+  "date": "2026-10-29",
   "indicators": [
     {
       "key": "frontier_compute",
@@ -60,7 +60,7 @@
         {
           "label": "2026",
           "value": 26.97,
-          "count": 21,
+          "count": 22,
           "partial": true
         }
       ],
@@ -95,7 +95,7 @@
         },
         {
           "label": "2026",
-          "value": 5,
+          "value": 6,
           "count": null,
           "partial": true
         }
