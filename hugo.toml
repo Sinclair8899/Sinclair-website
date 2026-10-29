@@ -1,7 +1,7 @@
 publishDir = "docs"
 baseURL = "https://sinclairhuang.org/"
 languageCode = "en-us"
-title = "Sinclair Huang, HEC Liège, Executive DBA"
+title = "Sinclair Huang"
 theme = "PaperMod"
 
 [params]
