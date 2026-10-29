@@ -25,6 +25,12 @@ aliases:
 
 我關注的不是一份看起來完整的策略簡報，而是構想能否成為可行的生意：產品是否真正滿足需求，企業有哪些可延伸的能力，哪些能力必須重新建立，以及資金、人才、客戶驗證與執行條件是否支持這項選擇。
 
+## 跨產業的產品與新事業實務
+
+在不同電子科技與製造企業，曾以財務及高階經營職務直接參與產品方向、新市場與技術可行性評估、研發資源協調、策略投資及新事業討論。這些工作需要與業務、研發、工程、製造與財務團隊一起面對不確定性，而不只是從財務報表評價已經發生的結果。
+
+對我而言，值得追問的是：有潛力的技術如何成為有競爭力的產品，而有競爭力的產品又如何成為可持續經營的生意？
+
 ## 關注的核心議題
 
 - **產品與市場機會**：技術變革之下，既有產品如何保持相關性？新的客戶需求與競爭位置在哪裡？
@@ -52,6 +58,8 @@ AI 是重要的技術變革，但不是預設答案。價值不在於使用了�
 <p>A compelling strategy is not necessarily a viable business. My interest lies in the choices that connect emerging technologies and product opportunities to real customer demand, competitive advantage, sustainable economics, and execution capability.</p>
 <p>Drawing on more than three decades of financial and executive management experience across pharmaceuticals, electronics and technology hardware, and later the carbon black industry, I engage selectively with business leaders and investment teams on product strategy, technology integration, new business models, and major investment decisions.</p>
 <p>AI agents, physical AI, robotics, and intelligent manufacturing can reshape products and value chains. They are opportunities to evaluate, not solutions to prescribe. The questions are what a company can build, what it should partner for, who will pay, and whether the expected value justifies the capital and organisational commitment.</p>
+<h3>Experience in Practice</h3>
+<p>Across electronics and industrial manufacturing, my financial and executive roles have included direct participation in product direction, market and technology feasibility, R&amp;D resource discussions, strategic investment, and new business evaluation. Working across sales, engineering, manufacturing, and finance has shaped how I assess opportunities under uncertainty.</p>
 <h3>How I Engage</h3>
 <p>Conversations begin with a specific strategic question and the assumptions behind it. Participation may take the form of executive dialogue, independent analysis, or a bounded project. I respect the management team's decision rights, use only necessary information, and do not assume an operating or implementation role.</p>
 </section>
