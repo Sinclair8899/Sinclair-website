@@ -1,6 +1,6 @@
 ---
-title: "黃柏松 Sinclair Huang｜產業經營、策略與轉型"
-description: "以跨國企業高階經營經驗，持續參與產業策略、企業轉型與資本配置議題，結合企業實務、研究與教學。"
+title: "黃柏松 Sinclair Huang｜產業經營、競爭力與創新"
+description: "結合跨國企業經營、產品與技術機會評估、策略投資及獨立研究，探索產業競爭力與創新。"
 htmlLang: "zh-Hant"
 locale: "zh_TW"
 inLanguage:
@@ -10,9 +10,9 @@ inLanguage:
 
 # 黃柏松 Po-Sung (Sinclair) Huang
 
-### 產業經營與策略｜企業成長與轉型｜獨立研究
+### 產業經營與策略｜企業競爭力與創新｜獨立研究
 
-*持續參與產業策略與技術變革的研究及實務交流，連結市場機會、競爭優勢、資本配置與組織執行。*
+*從產品與市場機會出發，連結技術創新、資本配置與經營判斷，探索可持續的競爭優勢。*
 
 ---
 
@@ -20,9 +20,9 @@ inLanguage:
 
 黃柏松（Po-Sung / Sinclair Huang）擁有逾三十年於上市公司的高階經營經驗。職涯早期曾任職於製藥業，之後長期投入電子科技產業，並於後期擔任碳黑產業的高階經營職務。
 
-其職涯歷任多家上市公司之財務長、執行副總、總經理與事業群財務經管主管，曾任職於鴻海科技集團（Foxconn）、元太科技（E Ink）、國際中橡（CSRC）等企業，任職期間歷經企業從成長、規模化到轉型的不同階段。這些職務的共同點，是必須同時面對市場位置、產品與技術方向、資本配置、營運能力與組織執行——策略能否成立，取決於這幾件事能否接得起來。
+歷任財務長、執行副總、總經理與事業群財務經管主管等職務，長期參與產品方向、新市場與技術可行性、研發資源、策略投資及新事業評估。跨越不同產品世代與組織規模，這些工作的共同核心，是在市場與技術尚不確定時，連結產品競爭力、資本配置與組織能力，判斷哪些機會真正值得投入。
 
-卸下全職經營職務後，他仍透過企業策略諮詢、產業研究及實務教學，持續參與企業成長、重大投資與產業轉型相關議題。財務分析、流程改善、資料分析與 AI 是支持判斷與驗證假設的工具；企業的決策權及執行責任仍由管理團隊承擔。
+卸下全職經營職務後，他持續透過獨立研究、實務教學及選擇性的策略合作，探索新技術如何轉化為產品、新事業與長期競爭力。財務分析、資料分析與 AI 是檢驗商業假設的工具；企業的決策權及執行責任仍由管理團隊承擔。
 
 他持續研究 AI、產業競爭力、半導體供應鏈、新興技術與資本配置，並將產業觀察與高階經營經驗帶入教學和公開寫作，讓研究與企業實務相互啟發。
 
@@ -30,14 +30,14 @@ inLanguage:
 
 ## 策略視角
 
-**企業經營與跨功能判斷**
-歷任上市公司之財務、策略、營運與組織管理等高階職務，責任範圍涵蓋市場與客戶、產品與技術方向、資本配置、營運能力與組織執行。具備在證據尚不完整時界定問題並作出決策的實務判斷。
+**產品競爭力與跨功能經營判斷**
+在財務與高階經營職務中，直接參與產品方向、市場機會、技術可行性、新事業與投資評估，結合業務、研發、工程、製造與財務的觀點，辨識值得投入的方向與必要條件。
 
-**成長、轉型與重大決策**
-持續關注跨部門、無法由單一功能獨立解決的問題：獲利成長、競爭位置、重大投資與融資、產能與布局，以及執行所需的組織能力。透過獨立分析及企業端討論支持決策，尊重管理團隊的決策權與執行責任。
+**技術創新與策略投資**
+關注既有能力如何延伸至新產品與新市場，以及哪些技術、客戶驗證、資本及組織條件尚待建立。技術前景與產品競爭力，仍須通過商業可行性的檢驗。
 
-**AI、資本與產業轉型**
-持續研究 AI 與產業變遷如何重新分配價值、改變競爭格局，探索其對資本配置、產品技術路線與營運決策的影響。AI 是支持判斷與改善決策的工具；實際技術建置由適當團隊或合作夥伴負責。
+**AI 與產業競爭的演變**
+持續研究 AI Agent、Physical AI 及其他新興技術如何改變產品、價值鏈與競爭格局。重點不在導入工具本身，而在新能力是否能帶來客戶價值、合理回報及可持續的競爭優勢。
 
 ---
 
@@ -49,13 +49,13 @@ inLanguage:
 
 ## English Summary
 
-**Industry Executive & Strategist | Business Growth & Transformation | Independent Research**
+**Industry Executive & Strategist | Competitiveness & Innovation | Independent Research**
 
-*Actively engaged in industry strategy and transformation—connecting technology, capital allocation, competitive advantage and execution.*
+*Connecting product opportunities, technology innovation, capital allocation, and executive judgment.*
 
-Po-Sung (Sinclair) Huang is a senior industry executive with more than 30 years of senior management experience in publicly listed companies. His career spans early experience in pharmaceuticals, extensive leadership in electronics and technology hardware, and later executive responsibilities in the carbon black industry. He has served as CFO, Executive Vice President and General Manager, as well as in group-level finance and business-management leadership roles, through periods of growth, scaling and transformation.
+Po-Sung (Sinclair) Huang is a senior industry executive with more than 30 years of management experience in publicly listed companies. His career spans early experience in pharmaceuticals, extensive roles in electronics and technology hardware, and later executive responsibilities in the carbon black industry. As CFO, Executive Vice President, General Manager, and in group-level finance and business management roles, his work has included product strategy, market and technology feasibility, R&D resource discussions, strategic investment, and new business evaluation.
 
-Having stepped away from full-time executive management, he remains engaged in industry strategy, business transformation and major investment questions through executive advisory work, independent analysis and teaching. Financial analysis, process improvement, data analysis and AI help test assumptions and inform decisions. Decision rights and implementation remain with each company's management team.
+Having stepped away from full-time executive management, he continues to explore product competitiveness, innovation, and strategic investment through independent research, teaching, and selective strategic engagement. Financial analysis, data analysis, and AI help test commercial assumptions; decision rights and execution remain with each company's management team.
 
 His independent research explores AI, industrial competitiveness, semiconductor value chains, emerging technologies, and capital allocation, connecting emerging industrial change with practical business judgement.
 
