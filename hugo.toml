@@ -7,7 +7,7 @@ theme = "PaperMod"
 [params]
     env = "production"
     title = "Sinclair Huang"
-    description = "Senior industry executive and growth & transformation advisor, with independent research on AI, semiconductors, advanced materials and capital allocation."
+    description = "Industry executive and independent researcher focused on product competitiveness, technology innovation, strategic investment and industrial change."
     
 
 
@@ -43,7 +43,7 @@ theme = "PaperMod"
     url = "/market-brief"
     weight = 7
   [[menu.main]]
-    name = "Advisory"
+    name = "Strategic Engagement"
     url = "/advisory"
     weight = 8
 
