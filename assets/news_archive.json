@@ -2,6 +2,218 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-10-29",
+      "generated_utc": "2026-10-29T01:18:13Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 15,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 2,
+          "excluded": 3
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Google 推出 Gemini 4 Carbon,網路安全能力「大幅躍進」",
+              "summary_zh": "Google 發布最新前沿模型 Gemini 4 Carbon,宣稱在程式撰寫、代理式任務與網路安全上取得顯著進步。該模型在 Artificial Analysis Intelligence Index (v5.0) 基準上位居第一,Claude Opus 5.5 與 GPT-6 Astra 緊隨其後。",
+              "relevance": "前沿模型能力與基準評測——AI 基礎設施的模型層主題",
+              "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+              "published": "2026-10-28T20:03:00Z"
+            },
+            {
+              "title_zh": "Microsoft 首度揭露 Azure 實際營收:332 億美元",
+              "summary_zh": "Microsoft 過去從未以美元金額揭露 Azure 單季營收,此次首次公布為 332 億美元。報導指出這使外界得以比較 Azure 與市場最大競爭者 AWS 的規模差距。",
+              "relevance": "雲端資本支出與算力需求——AI 基礎設施營收結構主題",
+              "title": "Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+              "published": "2026-10-28T21:58:32Z"
+            },
+            {
+              "title_zh": "Microsoft 認列來自 OpenAI 的 100 億美元營收",
+              "summary_zh": "Microsoft 表示,在截至 9 月 30 日的該季,來自與 OpenAI 商業安排(含營收分潤支付)的營收達 100 億美元。報導指出這凸顯雙方合作在財務上的依存程度。",
+              "relevance": "模型廠與雲端供應商的資金循環——AI 基礎設施商業模式主題",
+              "title": "Microsoft recorded $10 billion in revenue from OpenAI",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+              "published": "2026-10-28T21:34:30Z"
+            },
+            {
+              "title_zh": "川普政府能源部貸款 50 億美元給供電資料中心的核電廠",
+              "summary_zh": "Constellation Energy 將取得 50 億美元政府貸款,用於核反應爐現代化。新增容量多數已承諾供應給 Google、Amazon 與 Meta。",
+              "relevance": "資料中心電力供給——AI 基礎設施能源約束主題",
+              "title": "Trump DOE loans $5B to nuclear plants that will power data centers",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/28/trump-doe-loans-5b-to-nuclear-plants-that-will-power-data-centers/",
+              "published": "2026-10-28T15:53:21Z"
+            },
+            {
+              "title_zh": "Nvidia 釋出新的開放語音轉文字模型",
+              "summary_zh": "Nvidia 發布可轉寫多達 40 種語言的免費語音轉文字模型。該模型僅支援錄音檔、不支援即時音訊,即時應用仍由 ElevenLabs 等競爭者提供。",
+              "relevance": "開源模型釋出與語音 AI 堆疊——AI 基礎設施模型生態主題",
+              "title": "Voice AI in vogue: Nvidia releases new open transcription model",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+              "published": "2026-10-28T15:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "外國產品禁令:FCC 對中國科技產品管制的最新進展",
+              "summary_zh": "報導彙整美國政府針對無人機、路由器與 Roomba 等掃地機器人的事實上進口禁令進展。這些是首批因美國政府立場而面臨此類限制的消費性裝置。",
+              "relevance": "無人機與服務型機器人供應鏈管制——機器人與自主系統政策主題",
+              "title": "Foreign gadget bans: all the news about the FCC’s clampdown on Chinese tech",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/policy/1019851/fcc-foreign-gadget-ban-drone-robot-roomba-storystream",
+              "published": "2026-10-28T19:37:31Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "細胞週期酵素的意外功能,或可解釋其抑制劑的毒性",
+              "summary_zh": "研究結合數學建模與細胞實驗,指出酵素 WEE1 會關閉一個蛋白質降解複合體,以啟動細胞增殖,此為先前未知的機制。該發現對目前進入臨床試驗的 WEE1 抑制劑具有意義。",
+              "relevance": "數學建模結合實驗驗證的機制研究——生技×計算生物主題",
+              "title": "An unexpected function of a cell-cycle enzyme might explain the toxic effects of its inhibitors",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03288-5",
+              "published": "2026-10-28T00:00:00Z"
+            },
+            {
+              "title_zh": "精神醫學的宏大計畫——走向個人化心理健康照護",
+              "summary_zh": "Nature 報導探討以血液樣本、腦部掃描與手機資料改變精神科治療方式的構想。文章檢視個人化精神醫學的進展與其應用條件。",
+              "relevance": "多模態生理與行為資料用於臨床決策——生技×AI 資料主題",
+              "title": "The grand plan to transform psychiatry — by personalizing mental-health care",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03391-7",
+              "published": "2026-10-28T00:00:00Z"
+            },
+            {
+              "title_zh": "大腦在出生前後清除數十億個帶突變的神經元",
+              "summary_zh": "研究人員發現一套可能清除有缺陷神經元的系統。這類異常神經元被認為與多種神經系統疾病有關。",
+              "relevance": "神經發育機制研究——生技研究基礎主題",
+              "title": "The brain liquidates billions of mutant neurons around the time we’re born",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03444-x",
+              "published": "2026-10-28T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Google 將 AI 搜尋廣告擴展至全球,核心廣告成長放緩",
+              "summary_zh": "此公告與母公司 Alphabet 第三季財報同時發布,該季營收年增 25% 至 1,276 億美元。",
+              "relevance": "大型科技平台營收結構——總體市場主題",
+              "title": "Google expands AI Search ads globally as core ad growth slows",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+              "published": "2026-10-28T21:48:37Z"
+            },
+            {
+              "title_zh": "中國在太平洋海底電纜周邊的活動為大型科技業帶來風險",
+              "summary_zh": "報導指出美資跨太平洋海底電纜面臨破壞與來自中國的風險升高。Google 與 Meta 的海纜被列為太平洋區域風險最高者之一。",
+              "relevance": "跨洋連線基礎設施風險——AI 基礎設施地緣環境主題",
+              "title": "China’s snooping around Pacific undersea cables raises risks for Big Tech",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/10/google-and-meta-subsea-cables-among-most-at-risk-from-sabotage-in-pacific/",
+              "published": "2026-10-28T11:00:49Z"
+            },
+            {
+              "title_zh": "隨著美歐關係緊張,歐洲規劃首條通往格陵蘭的海底電纜",
+              "summary_zh": "歐洲的 Pan-Arctic Cable 計畫將繞過美國,連結加拿大、日本與南韓。",
+              "relevance": "國際資料連線路由重組——基礎設施地緣布局主題",
+              "title": "As US ties fray, Europe plans first undersea cable link to Greenland",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/10/as-us-ties-fray-europe-plans-first-undersea-cable-link-to-greenland/",
+              "published": "2026-10-28T22:35:50Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro"
+      ]
+    },
+    {
       "date": "2026-10-28",
       "generated_utc": "2026-10-28T00:46:05Z",
       "status": "published",
@@ -1227,274 +1439,6 @@
               "source": "Ars Technica",
               "url": "https://arstechnica.com/science/2026/10/un-accepts-the-obvious-were-not-going-to-avoid-a-1-5o-c-warming/",
               "published": "2026-10-22T11:15:36Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE"
-      ]
-    },
-    {
-      "date": "2026-10-22",
-      "generated_utc": "2026-10-22T00:16:03Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 14,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 2,
-          "excluded": 5
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 8,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Meta 將發行新類別股票以支應 AI 投資",
-              "summary_zh": "Meta 在第三季財報中表示,將發行無投票權的新類別股票,用於 AI 計畫、潛在併購與員工薪酬,預計 2027 年開始交易。公司指出這是為了因應競爭、維持成長與擴充基礎設施所需的投資規模。",
-              "relevance": "AI 資本支出融資結構——AI 基礎設施建置資金來源主題",
-              "title": "Meta to create a new class of shares to fund AI push",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
-              "published": "2026-10-21T21:30:02Z"
-            },
-            {
-              "title_zh": "資料中心恐抹去數十年的空氣品質改善成果",
-              "summary_zh": "一份報告指出,德州大量新建與規劃中的資料中心帶來龐大電力需求,可能使當地空氣污染回到 2000 年代的水準。報告聚焦開發商與電力公司以何種方式(包含天然氣)滿足這些需求。",
-              "relevance": "資料中心電力與環境外部性——AI 基礎設施能源約束主題",
-              "title": "Data centers could erase decades of air quality gains",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
-              "published": "2026-10-21T22:33:44Z"
-            },
-            {
-              "title_zh": "Blackstone 的 Jas Khaira 稱市場對 AI 建置債務的擔憂被誇大",
-              "summary_zh": "Blackstone 的 AI 業務負責人表示,這家私募巨頭並未對 AI 建置相關債務引發的市場波動感到恐慌。",
-              "relevance": "AI 資料中心債務融資——AI 基礎設施資本循環主題",
-              "title": "Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
-              "published": "2026-10-21T22:51:22Z"
-            },
-            {
-              "title_zh": "OpenAI 最新模型將登上 Google Cloud 與 Antigravity",
-              "summary_zh": "Google Cloud 將在未來數週內提供 OpenAI 的 GPT 6.1 Astra、Sol 與 Luna 模型。",
-              "relevance": "模型跨雲分發——AI 基礎設施與算力供應鏈主題",
-              "title": "OpenAI's latest AI models are coming to Google Cloud and Antigravity",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/",
-              "published": "2026-10-21T18:51:42Z"
-            },
-            {
-              "title_zh": "Recursive 推出 Flint,宣稱為 AI 大幅自主打造的筆電級程式模型",
-              "summary_zh": "新創公司 Recursive 發布免費的筆電尺寸程式撰寫模型 Flint,表示該模型大部分由其自有 AI 研究系統建構,作為 AI 自我改進的早期測試。",
-              "relevance": "AI 自動化模型研發——自我改進系統與 AI 基礎設施主題",
-              "title": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
-              "published": "2026-10-21T20:27:41Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Tesla 在加州啟動 Optimus 機器人生產,同期獲利下滑 43%",
-              "summary_zh": "Tesla 第三季營收持平、支出大增,公司同時加速投入 Optimus 機器人、AI 與自動駕駛。獲利較去年同期下滑 43%。",
-              "relevance": "人形機器人量產——機器人與自主系統主題",
-              "title": "Tesla starts Optimus robot production in California as profit falls 43%",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43/",
-              "published": "2026-10-21T20:33:09Z"
-            },
-            {
-              "title_zh": "Tesla 稱客戶明年可將自有車輛加入 robotaxi 車隊",
-              "summary_zh": "在第三季財報電話會議上,Tesla 自動駕駛副總裁 Ashok Elluswamy 表示,車主將於明年可把自己的車輛加入公司的 robotaxi 車隊。",
-              "relevance": "自駕車隊營運模式——自主系統部署主題",
-              "title": "Tesla says customers can add their own vehicles to the robotaxi fleet next year — will it happen?",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/transportation/1016118/tesla-robotaxi-customer-owned-vehicle-fleet-network-q3-2026-earnings",
-              "published": "2026-10-21T23:36:31Z"
-            },
-            {
-              "title_zh": "Waymo 開始提供拉斯維加斯機場接送服務",
-              "summary_zh": "Waymo 九月才在拉斯維加斯對公眾開放載客服務,目前服務範圍已達 24 平方英里,並新增機場接送。",
-              "relevance": "自駕計程車服務擴張——自主系統商業化主題",
-              "title": "Waymo starts offering rides at the Las Vegas airport",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/21/waymo-starts-offering-rides-at-the-las-vegas-airport/",
-              "published": "2026-10-21T16:59:44Z"
-            },
-            {
-              "title_zh": "GM 押注運算與 AI 以對抗中國車廠",
-              "summary_zh": "GM 第四代電動車平台將導入全新中央電腦與電子電氣架構,預計 2028 年在 Cadillac Escalade IQ 首發,用以與 Tesla、Rivian 及多家中國車廠競爭。",
-              "relevance": "車載中央運算架構——自主系統車端算力主題",
-              "title": "GM is betting compute and AI will help it compete with Chinese automakers",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/21/gm-is-betting-compute-and-ai-will-help-it-compete-with-chinese-automakers/",
-              "published": "2026-10-21T19:52:20Z"
-            },
-            {
-              "title_zh": "SpaceX 下次飛行將嘗試接回 Starship,目標提升發射頻率",
-              "summary_zh": "SpaceX 表示下一次飛行將嘗試捕捉 Starship,並以 2027 年初達成每週發射為目標,公司並稱與 FAA 已有「實質且具建設性的溝通」。",
-              "relevance": "可回收載具自主控制——自主系統主題",
-              "title": "SpaceX to attempt Starship catch on next flight, with eye on rapid cadence increase",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/",
-              "published": "2026-10-21T16:46:19Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "從頭設計具鏡像選擇性的人工金屬酶光催化劑",
-              "summary_zh": "《Nature》發表研究,報告以 de novo 設計方式打造具對映選擇性的人工金屬酶光催化劑。",
-              "relevance": "蛋白質從頭設計——生技×AI 的計算設計主題",
-              "title": "De novo  design of enantioselective artificial metalloenzyme photocatalysts",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-11317-6",
-              "published": "2026-10-21T00:00:00Z"
-            },
-            {
-              "title_zh": "運用 AI 提供個人化健康建議",
-              "summary_zh": "《Nature》文章討論 AI 工具在醫學中的應用日益增加,探討未來可能出現的技術型態,以及這類健康建議工具應如何進行測試。",
-              "relevance": "醫療 AI 評估方法——生技×AI 主題",
-              "title": "Using AI to offer personalized health advice",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03065-4",
-              "published": "2026-10-21T00:00:00Z"
-            },
-            {
-              "title_zh": "估值 150 億美元、靠廣告營收的 AI 新創,你的醫師可能已在使用",
-              "summary_zh": "OpenEvidence 業務快速成長,但其準確性與廣告模式仍引發疑問。",
-              "relevance": "臨床決策支援 AI——生技×AI 應用主題",
-              "title": "The $15 billion ad-powered AI startup your doctor may already be using",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/10/the-15-billion-ad-powered-ai-startup-your-doctor-may-already-be-using/",
-              "published": "2026-10-21T15:14:07Z"
-            },
-            {
-              "title_zh": "AI 工具可改善長達一個月的天氣預報",
-              "summary_zh": "《Nature》報導一項 AI 應用改善了困難的次季節尺度天氣預報,能在 3 至 5 週前準確預測降水、溫度與氣壓,並同時優化物理模式與 AI 模式,提升極端高溫與寒冷事件的早期預測能力。",
-              "relevance": "科學領域 AI 預測模型——AI for Science 方法論主題",
-              "title": "An AI tool improves weather forecasts up to a month ahead",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03077-0",
-              "published": "2026-10-21T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "Meta 因劍橋分析相關案件被判賠 250 億美元",
-              "summary_zh": "在一樁涉及資料隱私作法的審判後,Meta 被判支付 250 億美元賠償。",
-              "relevance": "大型科技公司法律責任——影響 AI 資本支出能力的總體因素",
-              "title": "Meta ordered to pay $25B in case related to Cambridge Analytica scandal",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/21/meta-ordered-to-pay-25-billion-in-case-related-to-cambridge-analytica-scandal/",
-              "published": "2026-10-21T19:42:32Z"
-            },
-            {
-              "title_zh": "法官駁回川普政府主張 EPA 可逕行撤銷資料中心污染訴訟",
-              "summary_zh": "法院裁定,川普政府的 EPA 不能單方面撤銷針對 SpaceXAI 的污染訴訟。",
-              "relevance": "資料中心環境監管訴訟——AI 基礎設施政策環境主題",
-              "title": "Judge rejects Trump’s wild claim EPA can dismiss data center pollution lawsuits",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/tech-policy/2026/10/judge-rejects-trumps-wild-claim-epa-can-dismiss-data-center-pollution-lawsuits/",
-              "published": "2026-10-21T18:20:40Z"
-            },
-            {
-              "title_zh": "PHP 重大漏洞:OpenAI 與 Google Wiz 發現陳年漏洞,引發網路恐慌",
-              "summary_zh": "由 AI 協助發現的 PHP 重大漏洞造成大範圍網站受影響,報導指出這類安全問題既是被 AI 找出並預防,也因 AI 而風險升高。",
-              "relevance": "AI 輔助漏洞發掘——AI 系統安全與基礎設施風險主題",
-              "title": "PHP Armageddon: OpenAI, Google’s Wiz find ancient holes, panicking the internet",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
-              "published": "2026-10-21T17:59:12Z"
-            },
-            {
-              "title_zh": "成立一年的 AI 實驗室 Flapping Airplanes 以 60 億美元估值募得 10 億美元",
-              "summary_zh": "在完成 1.8 億美元種子輪僅九個月後,Flapping Airplanes 完成 10 億美元 A 輪募資,其目標是建構「不需吞下半個網際網路」的 AI 模型。",
-              "relevance": "AI 實驗室募資估值——AI 資本市場主題",
-              "title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-              "published": "2026-10-21T20:57:40Z"
             }
           ]
         }
