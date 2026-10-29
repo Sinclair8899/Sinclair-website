@@ -1,90 +1,68 @@
 ---
-title: "Executive & Research Profile"
-description: "Industry executive and strategist with 30+ years of leadership experience; active in industry strategy, business transformation, independent research and teaching."
+title: "Executive Experience & Research"
+description: "Cross-industry executive experience in product competitiveness, technology innovation and strategic investment, connected to independent research and teaching."
 ---
 
 ## About
 
-Po-Sung (Sinclair) Huang is a senior industry executive with more than 30 years of cross-industry leadership experience spanning electronics, industrial materials, chemicals and life sciences. He remains active in industry strategy, business transformation, research and teaching, with interests spanning AI, semiconductors, advanced materials and capital allocation.
+Po-Sung (Sinclair) Huang brings several decades of experience in finance, business management, and executive leadership. His early career began in the pharmaceutical industry; subsequent roles spanned electronics and technology hardware, followed by senior executive responsibilities in the carbon black industry.
 
-Over his career, he has held senior roles including CFO, Executive Vice President and General Manager, as well as group-level leadership roles in finance and business management, across major publicly listed companies — including Foxconn (Hon Hai), E Ink (PVI), and International CSRC Investment Holdings (CSRC). His experience sits at the intersection of finance, strategy, operations, technology, and industrial transformation, with deep exposure to cross-border management, capital markets, M&A, and high-stakes decision-making in highly competitive environments.
+He has served as CFO, Executive Vice President, General Manager, and in business-group finance and management roles at publicly listed companies. His responsibilities have extended beyond financial oversight to direct participation in product direction, new market opportunities, technology feasibility, R&D priorities, strategic investment, and new business evaluation. Much of this work involved discussions across sales, engineering, manufacturing, and finance, often before the commercial outcome was clear.
 
-He holds an Executive Doctorate in Business Administration (EDBA) from HEC Liège, an EMBA from National Chengchi University, and an accounting degree from Soochow University. His current work focuses on AI, semiconductors, advanced materials, industrial competitiveness, and capital allocation. Rather than approaching AI primarily as a model-building discipline, his research examines how AI reshapes industrial structure, value distribution, and strategic positioning in the real economy.
+The common thread is a long-standing question: how can technology and product opportunities become sustainable sources of business value? Financial analysis, information systems, and, more recently, AI are tools for examining that question—not its origin.
 
-Through writing, research, advisory work, and teaching, he is developing a body of work that connects real-world executive experience with managerial judgment and strategic insight.
-
----
+Huang studied accounting at Soochow University and earned a master's degree through National Chengchi University's Executive MBA program (Finance) in 2004, building on years of business practice. He later completed an Executive Doctorate in Business Administration (EDBA) at HEC Liège in 2025. His academic work has extended, rather than initiated, a continuing interest in management judgment, industrial competitiveness, and innovation.
 
 ## Professional Background
 
-With over three decades of senior leadership experience across publicly listed companies, Huang brings a rare combination of executive leadership, strategic finance, operational judgment, and industrial perspective.
+Across successive technology and product cycles—including displays, notebook computers, digital storage, consumer electronics, and electronic paper—his work has involved evaluating market possibilities, product capabilities, investment choices, and the organizational requirements of execution.
 
-His career spans foundational corporate finance training at a multinational (Cyanamid), overseas financial systems and capital-market work in listed electronics companies, business-group financial and operational leadership within a major technology manufacturing group (Foxconn), capital-market and restructuring roles as CFO/EVP, and the transformation of a listed materials enterprise as General Manager. Across these roles, he has worked on product and competitive strategy, major investment and M&A evaluation, post-merger integration, cross-border financing, corporate governance, and the strategic positioning of business units operating under real competitive pressure.
+Experience in multinational manufacturing and listed-company leadership has reinforced the difference between a promising technology, a competitive product, and a viable business. These assessments require evidence from customers, engineering, economics, and organizational capacity; none can be settled by financial models or strategic presentations alone.
 
-Much of this work — including specific projects, clients, and proprietary strategic initiatives — remains confidential. What carries over into his current research and advisory work is not those particulars, but the level of judgment they required: framing decisions under uncertainty, weighing competitive trade-offs, and bearing accountability for outcomes at the senior management level.
-
----
+Specific company projects and internal decisions are not discussed here. The relevant experience lies in working through uncertainty and trade-offs with operating teams, rather than claiming sole credit for collective outcomes.
 
 ## Teaching & Knowledge Transfer
 
-Huang is increasingly focused on knowledge transfer — translating real-world executive experience into frameworks for managers, students, and future industry leaders. He has been invited to teach and lecture in the areas of corporate governance, financial management, and technology-industry strategy at the university level, drawing on both academic frameworks and first-hand observation of listed-company management.
-
----
+Huang teaches financial management at the university level and contributes to practice-oriented lectures and professional learning. His teaching brings together foundational concepts, real-world decision constraints, and the perspectives of finance, product development, operations, and strategy.
 
 ## Research Focus
 
-His current research centers on four closely connected areas:
+His independent work currently connects four areas:
 
-**AI, Industrial Structure, and Capital Allocation**
-Understanding how AI changes value distribution, competitive dynamics, and investment logic across industries.
-
-**Semiconductors and Infrastructure Strategy**
-Examining the role of compute, packaging, supply-chain bottlenecks, and industrial capacity in shaping the AI economy.
-
-**Advanced Materials and Industrial Transformation**
-Studying how materials innovation, manufacturing capability, and process economics interact with broader industrial change.
-
-**AI-Enabled Biological Systems Modeling**
-Exploring computational and conceptual applications of AI in life-science research in non-clinical, non-medical contexts.
-
----
+- **Industrial Competitiveness & Product Innovation** — How product capabilities, market demand, business models, and organizational execution sustain competitive advantage.
+- **AI, Semiconductors & Infrastructure Economics** — How compute, advanced packaging, supply-chain constraints, and industrial investment shape the AI economy.
+- **Technology Commercialization & Capital Allocation** — How emerging technology opportunities translate into customer value, investable businesses, and financial outcomes.
+- **AI & Biotechnology Innovation** — Analysis of public research, patents, and innovation economics in biotechnology and life sciences; not clinical or medical practice.
 
 ## Research Identity
 
 | | |
 |---|---|
 | **Full Name** | Po-Sung (Sinclair) Huang｜黃柏松 |
-| **Degree** | Executive Doctorate in Business Administration (EDBA), HEC Liège |
+| **Education** | National Chengchi University, Executive MBA (Finance), 2004; HEC Liège, EDBA, 2025; Soochow University, Accounting |
 | **ORCID** | [0009-0007-8173-5672](https://orcid.org/0009-0007-8173-5672) |
 | **Email** | [research@sinclairhuang.org](mailto:research@sinclairhuang.org) |
 
 **Research Platforms:** [SSRN](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1044018) · [Google Scholar](https://scholar.google.com/citations?user=rtOBjQkAAAAJ) · [Zenodo](https://zenodo.org/search?q=sinclair+huang) · [ORCID](https://orcid.org/0009-0007-8173-5672) · [Medium](https://medium.com/@sinclairhuang)
 
-*Note: Research involving biological systems is conducted at a computational and conceptual level and does not constitute clinical or medical practice.*
-
 ---
 
 ## 關於我
 
-黃柏松（Po-Sung / Sinclair Huang）是一位資深產業經營者，擁有逾三十年橫跨電子、工業材料、化工與生命科學等領域的高階經營經驗。目前持續參與產業策略、企業轉型、研究與實務教學，關注 AI、半導體、先進材料及資本配置。
+黃柏松（Po-Sung / Sinclair Huang）的財務與企業經營經驗，始於早期製藥業，之後長期投入電子科技產業，並於後期擔任碳黑產業的高階經營職務。曾歷任上市公司財務長、執行副總、總經理及事業群財務經管主管等職務。
 
-其職涯歷任多家上市公司之財務長、執行副總、總經理與事業群財務經管主管，服務過的企業包括鴻海科技集團（Foxconn）、元太科技（E Ink）、國際中橡（CSRC）等。長期工作於財務、策略、營運、技術與產業轉型的交會點，並累積了跨國管理、資本市場、併購與高度競爭環境下複雜決策的實務歷練。
+工作不僅限於財務管理，也包括直接參與產品方向、新市場與技術可行性、研發資源、策略投資及新事業評估。長期與業務、研發、工程、製造及財務團隊共同面對市場與技術的不確定性，逐步形成跨功能的經營判斷。
 
-他擁有比利時 HEC Liège 企業管理高階博士（EDBA）、國立政治大學 EMBA（財管組）與東吳大學會計系學位。目前的研究與寫作聚焦於 AI、半導體、先進材料、產業競爭力與資本配置。
+這些思考早於近年的 AI 熱潮。從財務分析、預算及資訊整合，到今天的 AI 與產業研究，工具不斷演進，關注的始終是如何讓技術與產品機會轉化為具有經濟價值、可持續發展的事業。
 
----
+## 專業與學習歷程
 
-## 專業背景
+早期經歷跨越顯示器、筆記型電腦、數位儲存、消費電子及電子紙等不同產品世代，後續在跨國製造及上市企業高階經營環境中，持續深化產品競爭力、投資判斷與組織執行的實務經驗。個別公司的未公開專案及內部決策不在此揭露。
 
-其職涯涵蓋：外商的財務管理基礎訓練、上市電子公司的海外財務制度與資本市場操作、大型科技製造集團（鴻海）的事業群財務與經營管理、CFO／EVP 層級的資本市場與財務重整工作，以及帶領上市材料企業轉型的總經理職務。歷程中參與過產品與競爭策略、重大投資與併購評估、投後整合、跨國融資、公司治理，以及在真實競爭壓力下的事業布局與決策。
+在多年實務工作基礎上，於 2004 年取得國立政治大學經營管理碩士學程財務管理組商學碩士，進一步整合財務、金融與管理理論；2025 年完成 HEC Liège EDBA，延伸既有的產業競爭力與創新研究。另具東吳大學會計學背景。
 
-其中許多工作——包括特定專案、客戶與涉及機密的策略行動——基於保密義務不便公開細節。但真正延續到目前研究與顧問工作的，並非這些細節，而是這些經歷所要求的判斷層級：在不確定中界定問題並作出決策、權衡競爭取捨，並在高階管理層級承擔後果與責任。
+## 教學與研究
 
----
+目前從事大學財務管理教學、產業研究與實務交流，重視將理論與真實經營中的產品、市場、技術、資本及組織限制連結起來。
 
-## 教學與知識傳承
-
-黃柏松日益專注於知識傳承——將真實的高階經營經驗，轉化為可供管理者、學生與未來產業領導者學習的框架。他受邀於大學層級教授公司治理、財務管理與科技產業策略等領域，結合學理框架與第一手的上市公司經營觀察。
-
-**研究主軸：** AI 與產業結構｜半導體與基礎設施策略｜先進材料與產業轉型｜AI 賦能的生物系統建模
-
+**研究方向：** 產業競爭力與產品創新｜AI、半導體與基礎設施經濟｜技術商業化與資本配置｜AI 與生技創新（限非臨床研究與產業分析）
