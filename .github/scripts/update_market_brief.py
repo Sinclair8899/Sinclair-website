@@ -16,22 +16,172 @@ Design rules that matter here:
     which could be falsified by the close.
   * The generated prose states what moved. It never invents causation --
     interpretation is bounded to phrasing templates tied to published theses.
-  * Any symbol that fails to fetch is dropped and reported in `warnings`,
-    never silently rendered as zero.
+  * Missing/ambiguous data fails the whole generation, leaving the previous
+    dated brief intact. Never publish a newly dated partial basket.
 """
 from __future__ import annotations
 
 import json
+import math
 import os
 import sys
 import time
 import urllib.parse
 import urllib.request
+from dataclasses import dataclass, replace
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Sinclair-website-brief/1.0"
 # range=2y because the 240-session 年線 needs ~1 year of sessions plus buffer.
 CHART = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=2y&interval=1d"
+# Yahoo exposes per-date regular tradingPeriods in intraday chart metadata.
+# Daily metadata only has currentTradingPeriod: applying today's hours to an
+# older date guesses holidays/DST/early closes. Fetch actual recent periods.
+PERIODS = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=1mo&interval=1h&includePrePost=true"
+# A delivery buffer, not a guarantee of official settlement or no later revision.
+CLOSE_DELAY = 30 * 60
+
+
+def iso_utc(timestamp):
+    return datetime.fromtimestamp(timestamp, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+@dataclass
+class Series:
+    closes: list
+    dates: list
+    timestamps: list
+    highs: list
+    lows: list
+    ends: dict
+    exchange_timezone: str
+
+    def through(self, date):
+        n = sum(d <= date for d in self.dates)
+        return replace(self, closes=self.closes[:n], dates=self.dates[:n],
+                       timestamps=self.timestamps[:n], highs=self.highs[:n], lows=self.lows[:n])
+
+    def provenance(self):
+        return {"source_date": self.dates[-1],
+                "d1_start_date": self.dates[-2],
+                "w1_start_date": self.dates[-6] if len(self.dates) >= 6 else None,
+                "source_timestamp_utc": iso_utc(self.timestamps[-1]),
+                "session_end_utc": iso_utc(self.ends[self.dates[-1]]),
+                "exchange_timezone": self.exchange_timezone}
+
+
+def finite_number(value):
+    return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
+
+
+def completed_series(daily, schedule, now):
+    """Filter aligned daily bars against Yahoo's per-date regular sessions.
+
+    Recent bars need an unambiguous provider period whose end + delivery buffer
+    has passed. No timezone-offset/calendar extrapolation. Older daily history
+    preceding the schedule is retained for MAs, but cannot be the newest price:
+    that price MUST have a verified period. Unknown coverage fails closed.
+    """
+    if not finite_number(now):
+        raise ValueError("invalid observation cutoff")
+    meta = daily["meta"]
+    timezone_name = meta["exchangeTimezoneName"]
+    tz = ZoneInfo(timezone_name)
+    if schedule["meta"]["symbol"] != meta["symbol"]:
+        raise ValueError("inconsistent symbols")
+    if schedule["meta"]["exchangeTimezoneName"] != timezone_name:
+        raise ValueError("inconsistent exchange timezones")
+    if meta.get("dataGranularity") != "1d":
+        raise ValueError("not daily data")
+    groups = schedule["meta"]["tradingPeriods"]
+    if isinstance(groups, dict):
+        groups = groups["regular"]  # Never use pre/post hours as the daily close.
+    periods = []
+    for group in groups:
+        for period in group:
+            start, end = period["start"], period["end"]
+            if not all(finite_number(x) for x in (start, end)) or not 0 < end - start <= 26 * 3600:
+                raise ValueError("invalid trading period")
+            date = datetime.fromtimestamp(start, tz).date().isoformat()
+            periods.append((start, end, date))
+    periods = sorted(set(periods))
+    if not periods or periods[0][0] > now:
+        raise ValueError("no elapsed trading-period coverage")
+    if any(a[1] > b[0] for a, b in zip(periods, periods[1:])):
+        raise ValueError("overlapping trading periods")
+    if len({p[2] for p in periods}) != len(periods):
+        raise ValueError("ambiguous trading dates")
+
+    timestamps = daily["timestamp"]
+    quote = daily["indicators"]["quote"][0]
+    closes = quote["close"]
+    if len(timestamps) != len(closes) or not timestamps:
+        raise ValueError("unaligned daily arrays")
+    if any(not finite_number(t) or t <= 0 for t in timestamps) or any(
+            a >= b for a, b in zip(timestamps, timestamps[1:])):
+        raise ValueError("invalid or unordered timestamps")
+    selected = []
+    ends = {}
+    for i, (stamp, close) in enumerate(zip(timestamps, closes)):
+        local = datetime.fromtimestamp(stamp, tz)
+        date = local.date().isoformat()
+        matches = [p for p in periods if p[0] <= stamp < p[1]]
+        # Some daily feeds label a bar at local midnight instead of the open.
+        if local.hour == local.minute == local.second == 0:
+            matches = list(set(matches + [p for p in periods if p[2] == date and stamp <= p[0]]))
+        if len(matches) > 1:
+            raise ValueError("ambiguous daily bar")
+        if stamp > now:
+            if (matches and matches[0][0] > now and close is None and all(
+                    i >= len(quote.get(k) or []) or (quote.get(k) or [])[i] is None
+                    for k in ("open", "high", "low", "volume"))):
+                continue  # Explicit upcoming-session placeholder, not a price.
+            raise ValueError("future daily bar")
+        if matches:
+            start, end, date = matches[0]
+            if now < end + CLOSE_DELAY:
+                continue
+            ends[date] = end
+        elif not (stamp < periods[0][0] and date < periods[0][2]):
+            # A wholly empty placeholder on a date with NO provider session
+            # is not an observed trading day. Never invent weekend calendars.
+            if close is None and all(
+                    i >= len(quote.get(k) or []) or (quote.get(k) or [])[i] is None
+                    for k in ("open", "high", "low", "volume")):
+                continue
+            raise ValueError("daily bar outside verified session coverage")
+        # Preserve holes in aligned history: metrics crossing a missing close
+        # become unavailable, never a compacted multi-session "1D" return.
+        if close is not None and (not finite_number(close) or close <= 0):
+            raise ValueError("invalid completed close")
+        ranges = []
+        for key in ("high", "low"):
+            values = quote.get(key) or []
+            value = values[i] if i < len(values) else None
+            if value is not None and not finite_number(value):
+                raise ValueError("invalid session range")
+            ranges.append(value)
+        selected.append((date, stamp, close, *ranges))
+    # A missing historical timestamp is also a hole. Insert an unavailable
+    # observation only where the provider explicitly lists a completed period;
+    # never fabricate rows for ordinary calendar gaps/holidays.
+    present = {row[0] for row in selected}
+    expected = [p for p in periods if p[1] + CLOSE_DELAY <= now]
+    for start, end, date in expected:
+        ends[date] = end
+        if date not in present:
+            selected.append((date, start, None, None, None))
+    selected.sort(key=lambda row: row[0])
+    if (len(selected) < 2 or not expected or selected[-1][0] != expected[-1][2]
+            or selected[-1][2] is None):
+        raise ValueError("no recent verified completed close")
+    dates = [x[0] for x in selected]
+    if any(a >= b for a, b in zip(dates, dates[1:])):
+        raise ValueError("duplicate or unordered daily dates")
+    return Series([x[2] for x in selected], dates, [x[1] for x in selected],
+                  [x[3] for x in selected], [x[4] for x in selected], ends, timezone_name)
+
 
 # Macro pricing variables: facts-only rows, no generated interpretation.
 # `kind` picks the display unit -- yields move in basis points, VIX in points,
@@ -131,32 +281,24 @@ BASKETS = [
 ]
 
 
-def fetch_series(symbol: str, retries: int = 3):
-    """Return (closes, day_high, day_low) for a symbol, or None after retries.
-
-    day_high/day_low are the latest completed session's range. Close-only data
-    hides sessions like "broke below the yearly line intraday, recovered by the
-    close", so the range of the last bar is kept; either may be None if the
-    feed omits it.
-    """
-    url = CHART.format(sym=urllib.parse.quote(symbol, safe=""))
+def fetch_series(symbol: str, retries: int = 3, *, now=None):
+    """Fetch daily prices plus provider schedules; return verified Series or None."""
+    if now is None:
+        now = time.time()
+    sym = urllib.parse.quote(symbol, safe="")
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                payload = json.load(resp)
-            quote = payload["chart"]["result"][0]["indicators"]["quote"][0]
-            closes = [c for c in quote["close"] if c is not None]
-            if len(closes) < 2:
-                raise ValueError("not enough closes")
-            last_i = max(i for i, c in enumerate(quote["close"]) if c is not None)
-            highs = quote.get("high") or []
-            lows = quote.get("low") or []
-            day_high = highs[last_i] if last_i < len(highs) else None
-            day_low = lows[last_i] if last_i < len(lows) else None
-            return closes, day_high, day_low
-        except Exception:
+            results = []
+            for url in (CHART.format(sym=sym), PERIODS.format(sym=sym)):
+                req = urllib.request.Request(url, headers={"User-Agent": UA})
+                with urllib.request.urlopen(req, timeout=15) as resp:
+                    results.append(json.load(resp)["chart"]["result"][0])
+            if any(result["meta"]["symbol"] != symbol for result in results):
+                raise ValueError("unexpected provider symbol")
+            return completed_series(*results, now)
+        except Exception as exc:
             if attempt == retries - 1:
+                print(f"ERROR {symbol}: {type(exc).__name__}: {exc}", file=sys.stderr)
                 return None
             time.sleep(1.5 * (attempt + 1))
     return None
@@ -169,13 +311,13 @@ def pct(new: float, old: float):
 def move(closes):
     """1-day and 1-week (5 sessions) percentage moves plus a sparkline series."""
     last = closes[-1]
-    d1 = pct(last, closes[-2]) if len(closes) >= 2 else None
-    w1 = pct(last, closes[-6]) if len(closes) >= 6 else None
+    d1 = pct(last, closes[-2]) if len(closes) >= 2 and closes[-2] is not None else None
+    w1 = pct(last, closes[-6]) if len(closes) >= 6 and all(c is not None for c in closes[-6:]) else None
     return {
         "last": round(last, 2),
         "d1": None if d1 is None else round(d1, 2),
         "w1": None if w1 is None else round(w1, 2),
-        "spark": [round(c, 4) for c in closes[-15:]],
+        "spark": [None if c is None else round(c, 4) for c in closes[-15:]],
     }
 
 
@@ -189,7 +331,7 @@ def moving_averages(closes):
     """
     out = {}
     for label, window in (("ma20", 20), ("ma60", 60), ("ma120", 120), ("ma240", 240)):
-        if len(closes) >= window:
+        if len(closes) >= window and all(c is not None for c in closes[-window:]):
             avg = sum(closes[-window:]) / window
             out[label] = round(avg, 2)
             out[label + "_gap"] = round((closes[-1] - avg) / avg * 100.0, 2)
@@ -206,6 +348,8 @@ def drawdown_52w(closes):
     number on the page. This is what turns "many AI stocks halved" from an
     impression into a countable statement.
     """
+    if len(closes) < 252 or any(c is None for c in closes[-252:]):
+        return None
     high = max(closes[-252:])
     return round((closes[-1] - high) / high * 100.0, 2)
 
@@ -213,21 +357,21 @@ def drawdown_52w(closes):
 def macro_row(name, code, kind, closes):
     """One macro table row with display strings preformatted per unit kind."""
     last, prev = closes[-1], closes[-2]
-    week = closes[-6] if len(closes) >= 6 else None
+    week = closes[-6] if len(closes) >= 6 and all(c is not None for c in closes[-6:]) else None
     if kind == "yield":
         value = f"{last:.2f}%"
-        d1 = f"{(last - prev) * 100:+.0f} bp"
+        d1 = None if prev is None else f"{(last - prev) * 100:+.0f} bp"
         w1 = None if week is None else f"{(last - week) * 100:+.0f} bp"
     elif kind == "points":
         value = f"{last:.1f}"
-        d1 = f"{last - prev:+.1f}"
+        d1 = None if prev is None else f"{last - prev:+.1f}"
         w1 = None if week is None else f"{last - week:+.1f}"
     else:
         value = f"{last:,.2f}"
-        d1 = f"{pct(last, prev):+.1f}%"
+        d1 = None if prev is None else f"{pct(last, prev):+.1f}%"
         w1 = None if week is None else f"{pct(last, week):+.1f}%"
     return {"name": name, "code": code, "value": value, "d1": d1, "w1": w1,
-            "sign": 1 if last > prev else (-1 if last < prev else 0),
+            "sign": 0 if prev is None else (1 if last > prev else (-1 if last < prev else 0)),
             "wsign": 0 if week is None else (1 if last > week else (-1 if last < week else 0))}
 
 
@@ -271,7 +415,8 @@ def build_summary(indices, baskets, warnings):
 
     if sox and sox["d1"] is not None:
         line = f"費城半導體指數{describe(sox['d1'])}"
-        if ixic and ixic["d1"] is not None:
+        if (ixic and ixic["d1"] is not None
+                and (sox["source_date"], sox["d1_start_date"]) == (ixic["source_date"], ixic["d1_start_date"])):
             gap = sox["d1"] - ixic["d1"]
             rel = "領先" if gap > 0.15 else ("落後" if gap < -0.15 else "同步")
             line += f",相對 Nasdaq({describe(ixic['d1'])}){rel}"
@@ -279,6 +424,7 @@ def build_summary(indices, baskets, warnings):
 
     asia = [by_code[c] for c in ("TAIEX", "N225", "KS11") if c in by_code and by_code[c]["d1"] is not None]
     if asia:
+        facts.append("亞洲市場以下列各自最新已完成資料日為準。")
         ups = [a for a in asia if a["d1"] > 0.05]
         downs = [a for a in asia if a["d1"] < -0.05]
         # "全面" must mean every tracked market moved that way -- a flat index
@@ -286,10 +432,10 @@ def build_summary(indices, baskets, warnings):
         if ups and downs:
             facts.append(f"亞洲市場分歧:{'、'.join(a['name'] for a in ups)}收高,{'、'.join(a['name'] for a in downs)}收低。")
         elif ups:
-            scope = "亞洲主要市場全面收高" if len(ups) == len(asia) else "亞洲市場收高的有"
+            scope = "可計算日變動的亞洲市場全面收高" if len(ups) == len(asia) else "亞洲市場收高的有"
             facts.append(f"{scope}({'、'.join(a['name'] for a in ups)})。")
         elif downs:
-            scope = "亞洲主要市場全面收低" if len(downs) == len(asia) else "亞洲市場收低的有"
+            scope = "可計算日變動的亞洲市場全面收低" if len(downs) == len(asia) else "亞洲市場收低的有"
             facts.append(f"{scope}({'、'.join(a['name'] for a in downs)})。")
 
     # Breadth against the 20-session line: a position statement, not a level.
@@ -297,11 +443,11 @@ def build_summary(indices, baskets, warnings):
     if with_ma:
         below = [i for i in with_ma if i["ma20_gap"] < 0]
         if len(below) == len(with_ma):
-            facts.append(f"追蹤的 {len(with_ma)} 個指數全數位於月線之下。")
+            facts.append(f"有完整月線資料的 {len(with_ma)} 個指數全數位於月線之下。")
         elif not below:
-            facts.append(f"追蹤的 {len(with_ma)} 個指數全數位於月線之上。")
+            facts.append(f"有完整月線資料的 {len(with_ma)} 個指數全數位於月線之上。")
         else:
-            facts.append(f"{len(with_ma)} 個追蹤指數中,{len(below)} 個位於月線之下({'、'.join(i['name'] for i in below[:4])}{'等' if len(below) > 4 else ''})。")
+            facts.append(f"有完整月線資料的 {len(with_ma)} 個指數中,{len(below)} 個位於月線之下({'、'.join(i['name'] for i in below[:4])}{'等' if len(below) > 4 else ''})。")
 
     # Sessions whose intraday range crossed a key MA but closed back on the
     # other side -- invisible in close-only numbers, yet exactly the days
@@ -310,8 +456,12 @@ def build_summary(indices, baskets, warnings):
     if events:
         facts.append(";".join(events[:3]) + "。")
 
+    basket_scope = "研究籃子" if all(b["d1"] is not None for b in baskets) else "可計算日變動的研究籃子"
     ranked = sorted([b for b in baskets if b["d1"] is not None], key=lambda b: b["d1"], reverse=True)
-    if ranked:
+    comparable_baskets = len({(b["source_date"], b["d1_start_date"]) for b in ranked}) == 1
+    if ranked and not comparable_baskets:
+        facts.append("研究籃子的已完成資料區間不同,本次不直接比較強弱。")
+    if ranked and comparable_baskets:
         top, bottom = ranked[0], ranked[-1]
         # Prose uses the Chinese short names; the English basket names stay in
         # the basket section where they render as secondary labels.
@@ -319,16 +469,17 @@ def build_summary(indices, baskets, warnings):
             facts.append(f"{top['zh_short']}{describe(top['d1'])}。")
         elif top["d1"] < -0.05:
             # Everything is down: rank by damage, not by "strength".
-            facts.append(f"研究籃子全數收低,{bottom['zh_short']}跌幅最大({describe(bottom['d1'])}),{top['zh_short']}跌幅最小({describe(top['d1'])})。")
+            facts.append(f"{basket_scope}全數收低,{bottom['zh_short']}跌幅最大({describe(bottom['d1'])}),{top['zh_short']}跌幅最小({describe(top['d1'])})。")
         elif bottom["d1"] > 0.05:
-            facts.append(f"研究籃子全數收高,{top['zh_short']}漲幅最大({describe(top['d1'])}),{bottom['zh_short']}漲幅最小({describe(bottom['d1'])})。")
+            facts.append(f"{basket_scope}全數收高,{top['zh_short']}漲幅最大({describe(top['d1'])}),{bottom['zh_short']}漲幅最小({describe(bottom['d1'])})。")
         else:
-            facts.append(f"研究籃子中,{top['zh_short']}表現最強({describe(top['d1'])}),{bottom['zh_short']}最弱({describe(bottom['d1'])})。")
+            facts.append(f"{basket_scope}中,{top['zh_short']}表現最強({describe(top['d1'])}),{bottom['zh_short']}最弱({describe(bottom['d1'])})。")
 
     lens = None
     infra = next((b for b in baskets if b["key"] == "ai_infra"), None)
     semis = next((b for b in baskets if b["key"] == "semis_hbm"), None)
-    if infra and semis and infra["d1"] is not None and semis["d1"] is not None:
+    if (infra and semis and infra["d1"] is not None and semis["d1"] is not None
+            and (infra["source_date"], infra["d1_start_date"]) == (semis["source_date"], semis["d1_start_date"])):
         spread = infra["d1"] - semis["d1"]
         # "Relative" language must survive days when both legs fall, so phrase it
         # as outperformance/resilience rather than "strength".
@@ -348,18 +499,21 @@ def build_summary(indices, baskets, warnings):
     return {"facts": facts, "lens": lens, "warnings": warnings}
 
 
-def main() -> int:
-    repo = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+def main(repo=None, now=None) -> int:
+    if repo is None:
+        repo = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    if now is None:
+        now = time.time()
     warnings = []
 
     indices = []
     for symbol, name, code in INDICES:
-        series = fetch_series(symbol)
+        series = fetch_series(symbol, now=now)
         if not series:
             warnings.append(f"指數 {code} 取得失敗,已略過")
             continue
-        closes, day_high, day_low = series
-        indices.append({"name": name, "code": code,
+        closes, day_high, day_low = series.closes, series.highs[-1], series.lows[-1]
+        indices.append({"name": name, "code": code, **series.provenance(),
                         "day_high": None if day_high is None else round(day_high, 2),
                         "day_low": None if day_low is None else round(day_low, 2),
                         "dd52": drawdown_52w(closes),
@@ -367,60 +521,98 @@ def main() -> int:
 
     macro = []
     for symbol, name, code, kind in MACRO:
-        series = fetch_series(symbol)
+        series = fetch_series(symbol, now=now)
         if not series:
             warnings.append(f"宏觀變數 {code} 取得失敗,已略過")
             continue
-        macro.append(macro_row(name, code, kind, series[0]))
+        macro.append({**macro_row(name, code, kind, series.closes), **series.provenance()})
 
     baskets = []
     for spec in BASKETS:
         moves, members, missing = [], [], []
+        fetched = []
         for ticker, label in spec["members"]:
-            series = fetch_series(ticker)
+            series = fetch_series(ticker, now=now)
             if not series:
                 missing.append(ticker)
                 continue
-            closes = series[0]
-            m = move(closes)
-            if m["d1"] is None:
+            fetched.append((ticker, label, series))
+        if missing:
+            warnings.append(f"{spec['name']} 缺少成分:{', '.join(missing)}")
+            continue
+        # All members in a basket use the same completed source dates, never
+        # mix today's Korean move with yesterday's US move under a fresh label.
+        common = sorted(set.intersection(*(set(s.dates) for _, _, s in fetched)))
+        if len(common) < 6 or any(common[-1] not in s.ends for _, _, s in fetched):
+            warnings.append(f"{spec['name']} 缺少共同已完成交易日期")
+            continue
+        for ticker, label, series in fetched:
+            series = series.through(common[-1])
+            closes = series.closes
+            by_date = dict(zip(series.dates, closes))
+            if closes[-1] is None:
+                warnings.append(f"{spec['name']} {ticker} 共同資料日缺值")
                 continue
+            m = move([by_date[d] for d in common])
             moves.append(m)
             # Constituents are published so the basket number is auditable
             # rather than a black box the reader has to take on trust. The
             # per-member 年線 gap turns "many stocks broke their yearly line"
             # from an impression into a countable statement.
-            members.append({"ticker": ticker, "label": label,
+            members.append({"ticker": ticker, "label": label, **series.provenance(),
+                            "d1_start_date": common[-2], "w1_start_date": common[-6],
                             "d1": m["d1"], "w1": m["w1"],
                             "dd52": drawdown_52w(closes),
                             "ma240_gap": moving_averages(closes).get("ma240_gap")})
-        if missing:
-            warnings.append(f"{spec['name']} 缺少成分:{', '.join(missing)}")
         if not moves:
             warnings.append(f"{spec['name']} 無可用成分,已略過")
             continue
-        d1 = sum(m["d1"] for m in moves) / len(moves)
+        d1_vals = [m["d1"] for m in moves if m["d1"] is not None]
+        d1 = sum(d1_vals) / len(moves) if len(d1_vals) == len(moves) else None
         w1_vals = [m["w1"] for m in moves if m["w1"] is not None]
-        members.sort(key=lambda x: x["d1"], reverse=True)
+        members.sort(key=lambda x: x["d1"] if x["d1"] is not None else -math.inf, reverse=True)
         baskets.append({
             "key": spec["key"], "name": spec["name"],
             "zh_short": spec["zh_short"], "zh": spec["zh"],
             "note": spec.get("note", ""),
             "thesis": spec["thesis"], "thesis_url": spec["thesis_url"],
             "count": len(moves),
-            "d1": round(d1, 2),
-            "w1": round(sum(w1_vals) / len(w1_vals), 2) if w1_vals else None,
-            "advancers": sum(1 for m in moves if m["d1"] > 0),
-            "decliners": sum(1 for m in moves if m["d1"] < 0),
+            "source_date": common[-1], "d1_start_date": common[-2], "w1_start_date": common[-6],
+            "d1": None if d1 is None else round(d1, 2),
+            "w1": round(sum(w1_vals) / len(w1_vals), 2) if len(w1_vals) == len(moves) else None,
+            "return_covered": len(d1_vals),
+            "advancers": sum(1 for m in moves if m["d1"] is not None and m["d1"] > 0),
+            "decliners": sum(1 for m in moves if m["d1"] is not None and m["d1"] < 0),
+            "ma240_covered": sum(mm["ma240_gap"] is not None for mm in members),
+            "dd52_covered": sum(mm["dd52"] is not None for mm in members),
             "below_ma240": sum(1 for mm in members
                                if mm["ma240_gap"] is not None and mm["ma240_gap"] < 0),
-            "halved": sum(1 for mm in members if mm["dd52"] <= -50.0),
+            "halved": sum(1 for mm in members if mm["dd52"] is not None and mm["dd52"] <= -50.0),
             "members": members,
         })
 
-    if not indices and not baskets:
-        print("ERROR: no market data could be fetched; leaving previous brief in place", file=sys.stderr)
+    if warnings or len(indices) != len(INDICES) or len(macro) != len(MACRO) or len(baskets) != len(BASKETS):
+        print("ERROR: incomplete/unverified market data; leaving previous dated brief in place", file=sys.stderr)
+        for warning in warnings:
+            print(f"  {warning}", file=sys.stderr)
         return 1
+
+    # Missing historical metrics are explicitly qualified, not a failed/latest
+    # quote and never a reason to remove/reweight an otherwise valid member.
+    for row in indices:
+        unavailable = [label for key, label in (("d1", "1D"), ("w1", "1W"), ("ma20", "月線"),
+                       ("ma60", "季線"), ("ma120", "半年線"), ("ma240", "年線"), ("dd52", "52週回撤"))
+                       if row.get(key) is None]
+        if unavailable:
+            warnings.append(f"{row['code']} 歷史資料不足或缺值:{'、'.join(unavailable)} 留空")
+    for row in macro:
+        unavailable = [label for key, label in (("d1", "1D"), ("w1", "1W")) if row[key] is None]
+        if unavailable:
+            warnings.append(f"{row['code']} 歷史資料不足或缺值:{'、'.join(unavailable)} 留空")
+    for basket in baskets:
+        if (basket["d1"] is None or basket["w1"] is None
+                or basket["ma240_covered"] < basket["count"] or basket["dd52_covered"] < basket["count"]):
+            warnings.append(f"{basket['name']} 部分歷史指標無法計算;未重加權,涵蓋數另列")
 
     # FCN knock-in stress PROXY, tied to "When Winning Streaks Mislead".
     # Typical FCN knock-in barriers sit at 55-65% of the initial fixing, but
@@ -431,10 +623,11 @@ def main() -> int:
     for b in baskets:
         for mm in b["members"]:
             seen.setdefault(mm["ticker"], mm)
-    stressed = sorted((mm for mm in seen.values() if mm["dd52"] <= -35.0),
+    stressed = sorted((mm for mm in seen.values() if mm["dd52"] is not None and mm["dd52"] <= -35.0),
                       key=lambda mm: mm["dd52"])
     fcn = {
         "tracked": len(seen),
+        "assessed": sum(mm["dd52"] is not None for mm in seen.values()),
         "dd35": len(stressed),
         "dd45": sum(1 for mm in stressed if mm["dd52"] <= -45.0),
         "dd50": sum(1 for mm in stressed if mm["dd52"] <= -50.0),
@@ -445,6 +638,9 @@ def main() -> int:
     out = {
         "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        "observation_cutoff_utc": iso_utc(now),
+        "source_date_min": min(row["source_date"] for row in indices + macro + baskets),
+        "source_date_max": max(row["source_date"] for row in indices + macro + baskets),
         "indices": indices,
         "macro": macro,
         "baskets": baskets,
@@ -454,8 +650,15 @@ def main() -> int:
 
     data_path = os.path.join(repo, "assets", "market_brief.json")
     os.makedirs(os.path.dirname(data_path), exist_ok=True)
-    with open(data_path, "w", encoding="utf-8") as fh:
-        json.dump(out, fh, ensure_ascii=False, indent=2)
+    temporary = data_path + ".tmp"
+    try:
+        with open(temporary, "w", encoding="utf-8") as fh:
+            json.dump(out, fh, ensure_ascii=False, indent=2, allow_nan=False)
+            fh.write("\n")
+        os.replace(temporary, data_path)
+    finally:
+        if os.path.exists(temporary):
+            os.unlink(temporary)
 
     print(f"wrote {data_path}: {len(indices)} indices, {len(macro)} macro, "
           f"{len(baskets)} baskets, {len(warnings)} warnings")
