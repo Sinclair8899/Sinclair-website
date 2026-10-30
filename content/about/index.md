@@ -21,7 +21,7 @@ Experience in multinational manufacturing and listed-company leadership has rein
 
 Specific company projects and internal decisions are not discussed here. The relevant experience lies in working through uncertainty and trade-offs with operating teams, rather than claiming sole credit for collective outcomes.
 
-## Teaching & Knowledge Transfer
+## Teaching & Knowledge Transfer {#teaching-knowledge-transfer}
 
 Huang teaches financial management at the university level and contributes to practice-oriented lectures and professional learning. His teaching brings together foundational concepts, real-world decision constraints, and the perspectives of finance, product development, operations, and strategy.
 

@@ -10,6 +10,9 @@ inLanguage:
 
 # 黃柏松 Po-Sung (Sinclair) Huang
 
+<!-- Preserve the former paginated-home heading bookmark without restoring its old wording. -->
+<div id="產業經營與策略企業成長與轉型獨立研究" aria-hidden="true"></div>
+
 ### 產業經營與策略｜企業競爭力與創新｜獨立研究
 
 *從產品與市場機會出發，連結技術創新、資本配置與經營判斷，探索可持續的競爭優勢。*
