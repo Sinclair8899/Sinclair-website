@@ -26,6 +26,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Test completed-session filtering (offline)
+        run: python3 .github/scripts/test_market_brief.py
+
       - name: Fetch market data and generate brief
         run: python3 .github/scripts/update_market_brief.py
 

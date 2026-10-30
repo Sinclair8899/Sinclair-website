@@ -24,6 +24,7 @@
   .mb-table th:first-child{text-align:left;padding-left:0}
   .mb-table td{padding:.5rem .55rem;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap}
   .mb-table td:first-child{text-align:left;padding-left:0}
+  .mb-asof{display:block;color:var(--secondary);font-size:.7rem;font-weight:400}
   .mb-code{color:var(--secondary);font-size:.76rem;margin-left:.35rem}
   .mb-up{color:#1a7f4b}.mb-down{color:#b3403a}.mb-flat{color:var(--secondary)}
   .dark .mb-up{color:#4cc38a}.dark .mb-down{color:#e5726b}
@@ -77,13 +78,14 @@
 
   {{- if $d }}
   <p class="mb-meta">
-    {{ $d.date }}<span class="sep">·</span>收盤後自動生成<span class="mb-tag">auto</span>
+    產生時間 {{ $d.generated_utc }}<span class="sep">·</span>已完成時段資料<span class="mb-tag">auto</span>
   </p>
 
   <div class="post-content">
     {{ .Content }}
 
-    <div class="mb-eyebrow">今日摘要 Summary</div>
+    <p class="mb-indintro">產生時間不是共同收盤日。行情採各市場已完成的資料時段,日期列於各項;本次涵蓋 {{ $d.source_date_min }} 至 {{ $d.source_date_max }}。籃子成分採共同資料日。</p>
+    <div class="mb-eyebrow">本次摘要 Summary</div>
     <blockquote class="mb-brief">
       {{- with $d.summary.facts }}<p>{{ delimit . " " }}</p>{{ end }}
       {{- with $d.summary.lens }}<p class="mb-lens"><strong>研究視角</strong> — {{ . }}</p>{{ end }}
@@ -97,7 +99,7 @@
         <tbody>
           {{- range . }}
           <tr>
-            <td>{{ .name }}<span class="mb-code">{{ .code }}</span></td>
+            <td>{{ .name }}<span class="mb-code">{{ .code }}</span><small class="mb-asof">資料日 {{ .source_date }}</small></td>
             <td>{{ lang.FormatNumber 0 .last }}</td>
             <td class="{{ if eq .d1 nil }}mb-flat{{ else if gt .d1 0.0 }}mb-up{{ else if lt .d1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
               {{ if eq .d1 nil }}—{{ else }}{{ if gt .d1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .d1 }}%{{ end }}</td>
@@ -132,9 +134,9 @@
         <tbody>
           {{- range . }}
           <tr>
-            <td>{{ .name }}<span class="mb-code">{{ .code }}</span></td>
+            <td>{{ .name }}<span class="mb-code">{{ .code }}</span><small class="mb-asof">資料日 {{ .source_date }}</small></td>
             <td>{{ .value }}</td>
-            <td class="{{ if gt .sign 0 }}mb-up{{ else if lt .sign 0 }}mb-down{{ else }}mb-flat{{ end }}">{{ .d1 }}</td>
+            <td class="{{ if gt .sign 0 }}mb-up{{ else if lt .sign 0 }}mb-down{{ else }}mb-flat{{ end }}">{{ if eq .d1 nil }}—{{ else }}{{ .d1 }}{{ end }}</td>
             <td class="{{ if gt .wsign 0 }}mb-up{{ else if lt .wsign 0 }}mb-down{{ else }}mb-flat{{ end }}">{{ if .w1 }}{{ .w1 }}{{ else }}—{{ end }}</td>
           </tr>
           {{- end }}
@@ -152,26 +154,28 @@
            drops to a secondary label. `or` keeps pre-zh_short JSON rendering. */}}
       {{- $primary := or .zh_short .name }}
       <span class="nm">{{ $primary }}{{ if ne $primary .name }}<span class="zh">{{ .name }}</span>{{ end }}</span>
-      <span class="chg {{ if gt .d1 0.0 }}mb-up{{ else if lt .d1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
-        {{ if gt .d1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .d1 }}%</span>
+      <span class="chg {{ if eq .d1 nil }}mb-flat{{ else if gt .d1 0.0 }}mb-up{{ else if lt .d1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
+        {{ if eq .d1 nil }}—{{ else }}{{ if gt .d1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .d1 }}%{{ end }}</span>
       <span class="note">
         {{- with .note }}{{ . }}<br>{{ end }}
-        {{ .count }} 檔成分 · 漲 {{ .advancers }} / 跌 {{ .decliners }}
-        {{- with .w1 }} · 週 {{ if gt . 0.0 }}+{{ end }}{{ lang.FormatNumber 1 . }}%{{ end }}
+        共同資料日 {{ .source_date }} · 1D 自 {{ .d1_start_date }} / 1W 自 {{ .w1_start_date }}<br>
+        {{ .count }} 檔成分 · 可計算日變動 {{ .return_covered }} 檔 · 漲 {{ .advancers }} / 跌 {{ .decliners }}
+        · 年線資料完整 {{ .ma240_covered }} 檔 / 回撤資料完整 {{ .dd52_covered }} 檔
+         · 1W {{ if eq .w1 nil }}—{{ else }}{{ if gt .w1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .w1 }}%{{ end }}
         {{- with .below_ma240 }} · {{ . }} 檔位於年線之下{{ end }}
         {{- with .halved }} · {{ . }} 檔回撤逾 50%{{ end }}
         · 相關論述:<a href="{{ .thesis_url }}">{{ .thesis }}</a>
         {{- with .members }}
         <details class="mb-members">
-          <summary>成分股與當日表現</summary>
+          <summary>成分股與共同資料日表現</summary>
           <table class="mb-mtable">
             <tbody>
               <tr><td></td><td class="mb-code">1D</td><td class="mb-code">1W</td><td class="mb-code">距年線</td><td class="mb-code">距高點</td></tr>
               {{- range . }}
               <tr>
-                <td>{{ .label }}<span class="mb-code">{{ .ticker }}</span></td>
-                <td class="{{ if gt .d1 0.0 }}mb-up{{ else if lt .d1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
-                  {{ if gt .d1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .d1 }}%</td>
+                <td>{{ .label }}<span class="mb-code">{{ .ticker }}</span><small class="mb-asof">資料日 {{ .source_date }}</small></td>
+                <td class="{{ if eq .d1 nil }}mb-flat{{ else if gt .d1 0.0 }}mb-up{{ else if lt .d1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
+                  {{ if eq .d1 nil }}—{{ else }}{{ if gt .d1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .d1 }}%{{ end }}</td>
                 <td class="{{ if eq .w1 nil }}mb-flat{{ else if gt .w1 0.0 }}mb-up{{ else if lt .w1 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
                   {{ if eq .w1 nil }}—{{ else }}{{ if gt .w1 0.0 }}+{{ end }}{{ lang.FormatNumber 1 .w1 }}%{{ end }}</td>
                 <td class="{{ if eq .ma240_gap nil }}mb-flat{{ else if gt .ma240_gap 0.0 }}mb-up{{ else if lt .ma240_gap 0.0 }}mb-down{{ else }}mb-flat{{ end }}">
@@ -182,7 +186,7 @@
               {{- end }}
             </tbody>
           </table>
-          <p class="mb-mnote">等權重平均,非市值加權。成分為研究用途之固定名單,不定期檢視。</p>
+          <p class="mb-mnote">等權重平均,非市值加權。1D / 1W 為前 1 / 5 個共同資料日的變化;遇休市不等同日曆日或日曆週。成分為研究用途之固定名單,不定期檢視。</p>
         </details>
         {{- end }}
       </span>
@@ -196,7 +200,7 @@
     {{- with $d.fcn }}
     <div class="mb-eyebrow">深度回撤觀察 Deep Drawdown Watch<span class="mb-tag">代理指標</span></div>
     <p>
-      追蹤 {{ .tracked }} 檔成分股中,<strong>{{ .dd35 }}</strong> 檔距 52 週高點回撤逾 35%,{{ .dd45 }} 檔逾 45%,{{ .dd50 }} 檔逾 50%。
+      追蹤 {{ .tracked }} 檔成分股,其中 {{ .assessed }} 檔回撤資料完整;在可計算者中,<strong>{{ .dd35 }}</strong> 檔距 52 週高點回撤逾 35%,{{ .dd45 }} 檔逾 45%,{{ .dd50 }} 檔逾 50%。
       {{- with .stressed }}<br>回撤逾 35% 名單:{{ range $i, $s := . }}{{ if $i }}、{{ end }}{{ index (split $s.label " · ") 0 }}({{ lang.FormatNumber 0 $s.dd52 }}%){{ end }}。{{ end }}
     </p>
     <p class="mb-indintro">註:此回撤區間正是典型 FCN 的 knock-in 障礙所在(多設於期初價的 55–65%;各合約期初點位為私有資訊,本欄為區間代理,非實際接股統計)。相關論述:<a href="/blog/">When Winning Streaks Mislead</a>——長期無接股紀錄不代表低風險,狀態轉換才是主要定價變數。</p>
@@ -204,7 +208,7 @@
 
     {{- with $ind }}{{ with .indicators }}
     <div class="mb-eyebrow">約束指標 Constraint Indicators<span class="mb-tag">緩慢變動</span></div>
-    <p class="mb-indintro">價格每天動,約束不會。這一節追蹤的是論述真正依賴的變數——變化以年計,但決定其他一切。</p>
+    <p class="mb-indintro">價格每天動,約束不會。這一節追蹤的是論述真正依賴的變數——變化以年計,但決定其他一切。此區資料更新時間:{{ $ind.generated_utc }};各指標觀測期另列,不代表當日新值。</p>
     {{- range . }}
     {{- $ind_item := . }}
     <div class="mb-ind">
@@ -234,8 +238,8 @@
     {{- end }}{{ end }}
 
     <p class="mb-foot">
-      本頁於每個交易日收盤後由自動管線生成:數值由管線計算,「研究視角」段落僅以已發表論述之框架描述當日型態,不構成新的因果主張。
-      內容為研究性質整理,<strong>不構成投資建議</strong>。資料來源為公開市場收盤價,可能有延遲或誤差。
+      本頁由自動管線生成:數值由管線計算,「研究視角」段落僅以已發表論述之框架描述當日型態,不構成新的因果主張。
+      內容為研究性質整理,<strong>不構成投資建議</strong>。資料來源為 Yahoo Finance 日線,依提供者的各日交易時段結束後另候 30 分鐘才採用;不是即時行情,也不保證期貨官方結算價或免於後續修訂。1D / 1W 分別比較前 1 / 5 個資料時段;各市場休市日不同。— 表示所需歷史資料不足或缺值,不以跨缺值的變化冒充單日變化;籃子有任一成分缺少所需歷史值時,該整體報酬亦留空。資料可能有延遲或誤差。
       {{- with $d.summary.warnings }}
       <span class="mb-warn">資料警示:{{ delimit . ";" }}</span>
       {{- end }}

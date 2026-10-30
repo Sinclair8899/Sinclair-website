@@ -148,6 +148,39 @@ with `git -c core.quotePath=false`.
 - **Never let `public/` exist** — publishDir is `docs/`; `public/` is
   gitignored and its presence fails the build gate.
 
+## Market Brief completed-session contract
+
+Run `python3 .github/scripts/test_market_brief.py` (offline, socket-disabled)
+when changing the generator; Daily Market Brief runs it before any network fetch.
+The provider adapter uses Yahoo's two-year daily chart plus one-month hourly
+chart **metadata only** (`tradingPeriods.regular`, or the regular list form).
+Each recent daily bar is matched to its own provider session, with a 30-minute
+post-end delivery buffer and one fixed UTC cutoff per generation. No US/global
+calendar, current UTC offset, or `currentTradingPeriod` extrapolation is used.
+Missing/ambiguous metadata or missing newest completed close fails generation
+and preserves the previous dated brief; files are replaced atomically only on
+success. All configured symbols and basket members are required.
+
+Older history stays aligned, including null observations; a metric crossing a
+missing value is unavailable (`—`), never compacted/reweighted to conceal a gap.
+Wholly empty placeholders **without** a provider session are omitted as
+non-observations; an empty future placeholder is ignored only when tied to an
+explicit upcoming provider session. Future non-null prices always fail. Explicit provider sessions without a daily record are retained
+as unknown history. Basket returns use common dates across all members; any
+member's missing history makes the aggregate return unavailable, and drawdown/
+MA counts disclose their known-data denominator. Comparative prose requires
+matching return intervals. The generation date is not a shared closing date:
+source dates, period endpoints and timezones are stored per series and source
+dates are displayed. Constraint indicators retain their separate vintage.
+
+Yahoo is a delayed/revisable source, not an official futures-settlement feed.
+Primary references: [Yahoo market coverage and delays](https://help.yahoo.com/kb/SLN2310.html)
+and the actual [daily chart](https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?range=2y&interval=1d)
+/ [session metadata](https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?range=1mo&interval=1h&includePrePost=true).
+The buffer is conservative, not a guarantee against later revisions. Yahoo may
+include historical empty scheduled observations (e.g. DXY Sundays and TAIEX
+2026-10-23); do not guess these away as holidays to restore a desired metric.
+
 ## File placement
 
 - **Anything that must exist at the site root lives in `static/`** — CNAME,
