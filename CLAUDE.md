@@ -33,6 +33,9 @@ production baseURL, then `scripts/check_site.sh docs <prev-inventory>`:
   2026-08-01 as risk isolation and as the causal test — if junk recurs at
   the new path, the hypothesis is wrong)
 - `/advisory/` fixed anchors (english/chinese/retainer/projects/briefings/start)
+  — `retainer` and `briefings` are legacy bookmark aliases at the current
+  engagement approach, not active service offerings. Preserve these IDs
+  when editing the page; do not remove them from the acceptance gate.
 - `scripts/check_links.py`: internal links, assets, cross-page anchors, sitemap
   `<loc>`s; **relative or malformed URLs are a hard failure** (they are broken
   Markdown links in disguise — see the 42-link Medium-import incident)
@@ -78,10 +81,10 @@ concurrency group.
 An unattended build that hits a new warning fails and leaves the live site as
 it was — that is the safe outcome, not an inconvenience.
 
-The checker itself is negative-tested: `scripts/test_checks.sh` runs 51
-cases — 1 pristine (must pass), 32 seeded tree faults through the FULL
-check_site.sh (including a Publications page stripped of a basket SSRN
-id, and a duplicated source canonical failing the harness via
+The checker itself is negative-tested: `scripts/test_checks.sh` runs 53
+cases — 1 pristine (must pass), 34 seeded tree faults through the FULL
+check_site.sh (including either legacy advisory alias removed, a Publications
+page stripped of a basket SSRN id, and a duplicated source canonical failing the harness via
 CONTENT_ROOT) plus 5 source-side CTA/canonical faults against throwaway
 trees
 (must each fail, the newer ones asserted on their specific error

@@ -35,6 +35,28 @@ fresh() { rm -rf "$TMP/case"; cp -R "$TMP/base" "$TMP/case"; }
 fresh
 expect pristine pass "$TMP/case"
 
+# Legacy bookmarks must still reach the current engagement approach after
+# editorial changes. Test each through the full harness with its exact
+# diagnostic, and fail if the fixture mutation itself did not happen.
+for anchor in retainer briefings; do
+  fresh
+  if python3 - "$TMP/case/advisory/index.html" "$anchor" <<'PYANCHOR'
+import sys, pathlib
+p = pathlib.Path(sys.argv[1])
+anchor = sys.argv[2]
+t = p.read_text(encoding='utf-8')
+needle = f'id="{anchor}"'
+assert t.count(needle) == 1, f'expected exactly one legacy anchor: {anchor}'
+p.write_text(t.replace(needle, f'id="removed-{anchor}"', 1), encoding='utf-8')
+PYANCHOR
+  then
+    expect "missing-legacy-advisory-$anchor" fail "$TMP/case" "MISSING ANCHOR #$anchor on /advisory/"
+  else
+    echo "FAIL missing-legacy-advisory-$anchor — fixture mutation failed"
+    RESULT=1
+  fi
+done
+
 fresh
 printf '<p><a href="%%5Bhttps://example.com%%5D(https://example.com)">x</a></p>\n' >> "$TMP/case/$ARTICLE"
 expect malformed-relative-link fail "$TMP/case"
