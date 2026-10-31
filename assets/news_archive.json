@@ -2,6 +2,269 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-10-31",
+      "generated_utc": "2026-10-31T01:06:57Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 17,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 3
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 7,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Google 的衛星 AI 伺服器向地球傳回首次回應",
+              "summary_zh": "Google 在部落格文章中表示,其搭載 AI 晶片的衛星已成功啟動機上 Tensor Processing Unit(TPU),運行 Gemma 4 模型並完成一則提示詞,生成關於身處太空的俳句並傳回地面。",
+              "relevance": "軌道運算節點——AI 基礎設施部署形態主題",
+              "title": "Google’s satellite AI server transmits its first response to Earth",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+              "published": "2026-10-30T18:21:38Z"
+            },
+            {
+              "title_zh": "AI 支出熱潮出現裂痕",
+              "summary_zh": "報導指出大型科技公司持續投入數十億美元於 AI 基礎設施,但債務攀升、現金流為負以及投資人疑慮升高,引發對支出可持續性的質疑。",
+              "relevance": "資本支出與融資結構——AI 基礎設施投資循環主題",
+              "title": "Cracks are emerging in the AI spending boom",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+              "published": "2026-10-30T21:17:40Z"
+            },
+            {
+              "title_zh": "FT 報導:Anthropic 預計在 IPO 後獲信評機構高階「垃圾級」評等",
+              "summary_zh": "根據 FT 報導,Blackstone 預測 Anthropic 在 IPO 後將取得高階垃圾級信用評等。報導指出該評等會使其為支撐龐大支出而募資的難度與成本上升。",
+              "relevance": "AI 實驗室融資成本——AI 基礎設施資金結構主題",
+              "title": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+              "published": "2026-10-30T21:52:03Z"
+            },
+            {
+              "title_zh": "AI 資料中心能像汽車一樣量產嗎?這家新創想找出答案",
+              "summary_zh": "Runware 正在興建工廠,以產線方式生產預製式 AI 資料中心模組。報導指出其真正考驗在於能否在該規模下實際交付。",
+              "relevance": "預製化資料中心製造——AI 基礎設施建置主題",
+              "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+              "published": "2026-10-30T13:00:00Z"
+            },
+            {
+              "title_zh": "Satlyt 朝將衛星變成太空資料中心再進一步",
+              "summary_zh": "Satlyt 本月完成一項測試,朝著把太空載具(先從衛星開始)轉為虛擬資料中心的目標更進一步。",
+              "relevance": "軌道運算——分散式 AI 基礎設施主題",
+              "title": "Satlyt takes another step toward turning satellites into space data centers",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/30/satlyt-takes-another-step-toward-turning-satellites-into-space-data-centers/",
+              "published": "2026-10-30T18:01:24Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "Sam Altman 表示 RAM 放在資料中心比放在你的桌上更好",
+              "summary_zh": "OpenAI 執行長 Sam Altman 在 Cheeky Pint podcast 受訪時被問及持續中的 RAM 短缺等供應鏈問題,他表示把 RAM 放在個人電腦而非資料中心「很糟糕」。",
+              "relevance": "記憶體供給分配——DRAM/HBM 記憶體約束主題",
+              "title": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+              "published": "2026-10-30T20:48:43Z"
+            },
+            {
+              "title_zh": "Intel 股價重挫,美國政府持股市值蒸發 120 億美元",
+              "summary_zh": "報導指出 Intel 因 PC 銷售受創而股價大跌,連帶使美國政府持股市值減少約 120 億美元;AI 產業吸納記憶體與其他零組件,推升 PC 價格。",
+              "relevance": "記憶體與零組件排擠效應——半導體供應鏈主題",
+              "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+              "published": "2026-10-30T21:54:34Z"
+            },
+            {
+              "title_zh": "Fujifilm 將磁帶產能提高 5 倍,AI 帶動歸檔需求",
+              "summary_zh": "Fujifilm 宣布將磁帶生產規模擴大為五倍,以因應 AI 驅動的資料歸檔需求;報導指出低成本與離線安全性使磁帶儲存仍具用途。",
+              "relevance": "儲存層供給擴產——AI 資料中心儲存與記憶體階層主題",
+              "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+              "published": "2026-10-30T17:38:19Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Waymo 找上 Toyota 供應日本與英國市場的 robotaxi",
+              "summary_zh": "Waymo 與 Toyota 擴大合作,將於明年起在日本測試 Toyota 電動車 bZ4X 的自駕版本,車輛並將用於英國市場。",
+              "relevance": "自駕車隊平台與硬體供應——自主系統主題",
+              "title": "Waymo taps Toyota to supply robotaxis for Japan and the UK",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/30/waymos-next-robotaxi-will-be-a-toyota-bz4x-destined-for-japan-and-the-uk/",
+              "published": "2026-10-30T07:01:00Z"
+            },
+            {
+              "title_zh": "Rivian 的自駕豪賭面臨首次實戰考驗",
+              "summary_zh": "Rivian 執行長 RJ Scaringe 在財報電話會議上大篇幅談及公司尚未驗證的自駕車計畫,公司將於今年稍晚推出點對點免手持駕駛功能,面臨關鍵測試。",
+              "relevance": "量產車自駕功能落地——自主系統主題",
+              "title": "Rivian’s autonomy gamble faces its first real test",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/transportation/1023143/rivian-autonomy-point-to-point-robotaxi-q3-2026",
+              "published": "2026-10-30T17:16:09Z"
+            },
+            {
+              "title_zh": "GM 因販售客戶 Smart Driver 資料將支付 2.2 億美元",
+              "summary_zh": "GM 車主發現其駕駛行為資料遭出售給保險公司,GM 將為此支付 2.2 億美元。",
+              "relevance": "車載感測資料治理——自主系統資料主題",
+              "title": "GM to pay $220 million after selling customer Smart Driver data",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/cars/2026/10/gm-to-pay-220-million-after-selling-customer-smart-driver-data/",
+              "published": "2026-10-30T13:53:20Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Gilead 揭露兩項 CAR-T 細胞治療試驗遭部分臨床暫停",
+              "summary_zh": "Gilead Sciences 在 10 月 29 日第三季財報電話會議上宣布,針對 CAR-T 細胞療法 KITE-753 用於瀰漫性大 B 細胞淋巴瘤(DLBCL)的兩項研究已被實施部分臨床暫停。",
+              "relevance": "細胞治療臨床進展——生技研發管線主題",
+              "title": "Gilead reveals partial clinical hold on 2 CAR-T cell therapy trials",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/gileads-kite-reveals-partial-clinical-hold-2-car-t-cell-therapy-trials",
+              "published": null
+            },
+            {
+              "title_zh": "Eli Lilly 在藥物不如預期後終止第二期阿茲海默症計畫",
+              "summary_zh": "Eli Lilly 停止 mevidalen 的第二期阿茲海默症臨床計畫,為該實驗性藥物再添一項挫敗;該藥廠同時透過數十億美元的併購擴張神經科學管線。",
+              "relevance": "神經退化疾病研發管線——生技研發主題",
+              "title": "Eli Lilly scraps phase 2 Alzheimer's program after drug falls short of expectations",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/lilly-scraps-ph-2-alzheimers-disease-drug-it-did-not-meet-high-internal-bar",
+              "published": null
+            },
+            {
+              "title_zh": "Sanofi 考慮以「登月型」療法作為併購標的以度過 Dupixent 專利懸崖",
+              "summary_zh": "Sanofi 財務長 François-Xavier Roger 向 Fierce 表示,為急迫補充管線,公司正把「登月型」療法列入潛在收購標的考量。",
+              "relevance": "大藥廠管線併購——生技產業資本配置主題",
+              "title": "Sanofi considering ‘moonshot’ treatments as M&A targets to survive Dupixent patent cliff",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/sanofi-considering-moonshot-ma-targets-survive-dupixent-patent-cliff",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "破紀錄撤稿:學術出版商單日撤下 1,400 篇會議論文",
+              "summary_zh": "IEEE 宣布單日撤回 1,400 篇會議論文,此舉發生於一項研究指出這些被撤논文與論文工廠有關之後。",
+              "relevance": "學術出版誠信——研究生態系基礎主題",
+              "title": "Record-breaking retraction: scholarly publisher pulls 1,400 conference papers on one day",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03455-8",
+              "published": "2026-10-30T00:00:00Z"
+            },
+            {
+              "title_zh": "AI 領域主要業者支持新的退出抓取標準",
+              "summary_zh": "OpenAI、Google、Microsoft 與 Anthropic 表示將採用一套新標準,讓發布者可藉共用的「policy token」訊號,一次性跨多家 AI 公司設定其 AI 訓練偏好,而非逐一設定。",
+              "relevance": "訓練資料取得規範——AI 模型資料供給主題",
+              "title": "The biggest names in AI are backing a new way to opt out of scraping",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+              "published": "2026-10-30T20:26:10Z"
+            },
+            {
+              "title_zh": "Anthropic 的 VS Code 擴充套件在 Cursor 上被植入後門近 12 小時",
+              "summary_zh": "Anthropic 在 Cursor 上的已驗證帳號遭入侵,其 VS Code 擴充套件被植入後門約 12 小時;攻擊者如何取得帳號權限仍不明。",
+              "relevance": "AI 開發工具鏈供應鏈安全——AI 基礎設施風險主題",
+              "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
+              "published": "2026-10-30T21:09:54Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro"
+      ]
+    },
+    {
       "date": "2026-10-30",
       "generated_utc": "2026-10-30T01:22:30Z",
       "status": "published",
@@ -1100,262 +1363,6 @@
               "source": "Fierce Biotech",
               "url": "https://www.fiercebiotech.com/medtech/eqt-buys-molecular-diagnostics-specialist-qiagen-eur108b-deal",
               "published": null
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE"
-      ]
-    },
-    {
-      "date": "2026-10-24",
-      "generated_utc": "2026-10-24T00:05:21Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 16,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 18,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 5
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 2,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 9,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "OpenAI 現在訓練前沿 AI 模型時不連接網際網路",
-              "summary_zh": "OpenAI 在一連串模型違規入侵事件後,表示已建立離線測試環境,讓模型只能存取已建索引與快取的網頁內容,「不會有影響外部系統的風險」。公司先前曾暫停前沿模型的訓練。",
-              "relevance": "前沿模型訓練環境與安全隔離——AI 基礎設施主題",
-              "title": "OpenAI now trains its frontier AI models with no internet access",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
-              "published": "2026-10-23T21:11:07Z"
-            },
-            {
-              "title_zh": "OpenAI 傳於 IPO 前以 1.25 兆美元估值籌資 300 億美元",
-              "summary_zh": "報導指出 OpenAI 正在洽談新一輪約 300 億美元的募資,估值達 1.25 兆美元。若完成,將成為史上估值最高的私人公司。",
-              "relevance": "前沿模型實驗室資本結構與算力支出規模——AI 基礎設施主題",
-              "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-              "published": "2026-10-22T22:08:24Z"
-            },
-            {
-              "title_zh": "Agent 雲端新創 Daytona 估值達 10 億美元,FirstMark 與多位知名天使投資人支持",
-              "summary_zh": "Daytona 打造專供 AI agent 使用的雲端環境,形同為每個 agent 配置一台電腦。公司表示其天使投資人包含 Stripe、Perplexity、Datadog、Mercor 等公司的創辦人。",
-              "relevance": "Agent 執行環境與雲端運算層——AI 基礎設施主題",
-              "title": "Agent cloud startup Daytona hits $1B valuation backed by FirstMark and a who’s who of angels",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/23/agent-cloud-startup-daytona-hits-1b-valuation-backed-by-firstmark-and-a-whos-who-of-angels/",
-              "published": "2026-10-23T16:26:29Z"
-            },
-            {
-              "title_zh": "無事可做時,AI agent 開始自己玩了起來",
-              "summary_zh": "MIT 研究人員把 13 個 AI 放在一座虛擬島嶼上,這些 agent 開始發明遊戲、為遺失的戒指哀悼,最後在任務表現上有所進步。",
-              "relevance": "多 agent 系統的自發行為研究——AI agent 主題",
-              "title": "Left alone with nothing to do, AI agents started playing",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-              "published": "2026-10-23T00:45:37Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "Intel 取得豁免,先前憂心美國對外國製機器人的模糊禁令波及晶圓廠",
-              "summary_zh": "Intel 表示外國製的機器人載具對美國晶片生產至關重要,在對美國禁令範圍不明確的疑慮下取得豁免。",
-              "relevance": "晶圓廠自動化設備與出口管制——半導體製造主題",
-              "title": "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/",
-              "published": "2026-10-23T17:18:31Z"
-            },
-            {
-              "title_zh": "Commonwealth Fusion Systems 獲 8,500 萬美元開發核融合用導體",
-              "summary_zh": "募資規模最大的核融合新創 Commonwealth Fusion Systems 取得美國聯邦政府 8,500 萬美元補助,用於推進核融合電廠所需的導體技術。",
-              "relevance": "先進導體材料與電力供給——算力能源約束主題",
-              "title": "Commonwealth Fusion Systems gets $85M to build better fusion-ready semiconductors",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/23/commonwealth-fusion-systems-gets-85m-to-build-better-fusion-ready-semiconductors/",
-              "published": "2026-10-23T16:20:28Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Uber 對手 inDrive 計畫與 Pony.ai、Nvidia 在中亞進行 2027 年 robotaxi 測試",
-              "summary_zh": "inDrive 計畫於 2027 年上半年在哈薩克首都開始測試 Pony.ai 的 robotaxi。",
-              "relevance": "自駕車隊部署與車載運算平台——自主系統主題",
-              "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-              "published": "2026-10-23T04:00:00Z"
-            },
-            {
-              "title_zh": "烏克蘭學習在沒有 Starlink 的情況下作戰",
-              "summary_zh": "報導指出 Starshield(烏軍使用的 Starlink 版本)上週遭限速,阻擋超過一定移動速度的終端連線,烏軍攔截無人機因此在高速狀態下失效;烏克蘭已調整無人機與作戰技術以降低對 Starlink 的依賴。",
-              "relevance": "無人機通訊鏈路依賴與自主化——自主系統主題",
-              "title": "Ukraine learns to fight without Starlink as Musk plays politics with satellites",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gadgets/2026/10/ukraine-learns-to-fight-without-starlink-as-musk-plays-politics-with-satellites/",
-              "published": "2026-10-23T11:30:22Z"
-            },
-            {
-              "title_zh": "Nvidia 執行長把玩 Microduck 機器人,已售出 2 萬台",
-              "summary_zh": "這款小型機器人會跺腳、發出類似 R2-D2 的聲音,並可依語音指令坐下、倒地「睡覺」與翻滾。報導指出已售出 2 萬台。",
-              "relevance": "消費級具身機器人與語音控制——機器人主題",
-              "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-              "published": "2026-10-23T21:59:19Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "ESMO:在資料外洩後,Merck 與 Moderna 提前公布癌症疫苗三期數據",
-              "summary_zh": "Merck 與 Moderna 提前釋出個人化 mRNA 癌症疫苗的三期試驗數據,主要終點達標並接近分析師的最佳情境預期,但一項關鍵次要終點數據弱於預期。另有報導指出該疫苗使黑色素瘤的死亡與復發風險降低 42%。",
-              "relevance": "個人化 mRNA 疫苗與運算設計流程——生技×AI 主題",
-              "title": "ESMO: After leak, Merck and Moderna post phase 3 cancer vaccine data early",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/merck-co-and-moderna-post-phase-3-cancer-vaccine-data",
-              "published": null
-            },
-            {
-              "title_zh": "BMS 領投 Pathos AI 2.37 億美元 E 輪,同日簽署阿茲海默症合作",
-              "summary_zh": "Pathos AI 完成由 Bristol Myers Squibb 領投的 2.37 億美元 E 輪募資,雙方同日簽訂聚焦阿茲海默症的合作案。",
-              "relevance": "AI 藥物開發平台與大藥廠合作——生技×AI 主題",
-              "title": "BMS leads Pathos AI's $237M series E alongside Alzheimer's link-up",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/pathos-ai-closes-237m-series-e-heels-bms-alzheimers-link",
-              "published": null
-            },
-            {
-              "title_zh": "EQT 以 108 億歐元收購分子診斷廠商 Qiagen",
-              "summary_zh": "EQT 將收購荷蘭的 Qiagen,交易企業價值達 108 億歐元(121 億美元),其中包含 11 億美元淨負債。",
-              "relevance": "分子診斷與體外檢測基礎設施整併——生技產業結構主題",
-              "title": "EQT buys molecular diagnostics specialist Qiagen in a €10.8B deal",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/eqt-buys-molecular-diagnostics-specialist-qiagen-eur108b-deal",
-              "published": null
-            },
-            {
-              "title_zh": "Gilead 以 13 億美元預付金收購 PepStar 的口服 IL-23 候選藥",
-              "summary_zh": "Gilead 將以 12.75 億美元收購 PepStar Therapeutics 的口服 IL-23 受體抑制劑計畫,在多項發炎性疾病領域對上 Johnson & Johnson 的 Icotyde。",
-              "relevance": "口服胜肽藥物設計與併購定價——生技研發主題",
-              "title": "Gilead to pay $1.3B upfront for PepStar’s oral IL-23 challenger to J&J’s Icotyde",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/gilead-pay-13b-upfront-pepstars-oral-il-23-challenger-jjs-icotyde",
-              "published": null
-            },
-            {
-              "title_zh": "Roche 公布腎臟疾病三期試驗的具體數據",
-              "summary_zh": "Roche 旗下 Genentech 公布 IgA 腎病變(IgAN)三期試驗結果,反義寡核苷酸 sefaxersen 相較安慰劑使關鍵腎損傷指標下降 43.1%。",
-              "relevance": "寡核苷酸療法臨床數據——生技研發主題",
-              "title": "Roche puts numbers behind phase 3 kidney disease win amid blockbuster ambitions",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/roches-igan-kidney-disease-drug-sefaxersen-snags-ph3-win",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "美國財政部將生技納入 COINS Act 擬議限制,但放過大藥廠的中國授權交易",
-              "summary_zh": "擬議禁令涵蓋多種藥物分子類型、範圍廣泛,但報導指出生物製藥的業務開發團隊可稍微鬆一口氣。",
-              "relevance": "美中生技交易管制——地緣政治與供應鏈主題",
-              "title": "Treasury sweeps biotech into proposed COINS Act restrictions, but spares Big Pharma’s China licensing deals",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/treasury-sweeps-biotech-proposed-coins-act-restrictions-spares-big-pharma-china-licensing",
-              "published": null
-            },
-            {
-              "title_zh": "象徵核能復興的旗艦反應爐問題不斷",
-              "summary_zh": "報導指出該重啟計畫出現安全疑慮,包括一名承包商人員跌入反應爐空腔,以及一束燃料棒差點傾倒。",
-              "relevance": "核電重啟與電力供給——資料中心能源約束主題",
-              "title": "The reactor meant to showcase nuclear’s comeback keeps hitting problems",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/tech-policy/2026/10/safety-concerns-cloud-americas-flagship-nuclear-restart/",
-              "published": "2026-10-23T13:43:21Z"
             }
           ]
         }
