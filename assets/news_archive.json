@@ -2,6 +2,242 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-01",
+      "generated_utc": "2026-11-01T00:28:24Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 65,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 4,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 3
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Nvidia 考慮為 Nscale 位於西維吉尼亞的 AI 資料中心擔任連帶保證人",
+              "summary_zh": "報導指出，Nvidia 正評估為 Nscale 在西維吉尼亞州的 AI 資料中心貸款提供擔保。該做法出現在投資人對 AI 支出轉趨謹慎的背景下。",
+              "relevance": "AI 資料中心融資結構——算力擴建資本循環主題",
+              "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+              "published": "2026-10-31T01:20:05Z"
+            },
+            {
+              "title_zh": "報導稱 OpenAI 調降新一輪募資目標",
+              "summary_zh": "據報導，OpenAI 最新一輪融資的募資目標已被下修，未達原先預期。",
+              "relevance": "前沿模型公司資本供給——AI 基礎設施投資主題",
+              "title": "OpenAI reportedly lowers funding target for new round",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+              "published": "2026-10-31T16:12:55Z"
+            },
+            {
+              "title_zh": "法官裁定 NAACP 控告 xAI 資料中心污染訴訟可繼續進行",
+              "summary_zh": "NAACP 指控 xAI 的資料中心違反《清潔空氣法》（Clean Air Act），法官裁定該訴訟可繼續審理。",
+              "relevance": "資料中心能源與環境限制——AI 基建部署約束主題",
+              "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+              "published": "2026-10-31T21:17:03Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "Sam Altman：PC 配置大量 DRAM「相當糟糕」，應優先供給 AI 資料中心",
+              "summary_zh": "OpenAI 執行長 Sam Altman 談及運算資源配置時表示，一般消費者 PC 配置大量 DRAM 並不理想，記憶體資源應優先配置於 AI 資料中心。",
+              "relevance": "DRAM／記憶體供給排擠——記憶體約束主題",
+              "title": "批 PC 配大量 DRAM「相當糟糕」！Sam Altman：應優先配置 AI 資料中心",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/31/openai-ceo-sam-altman-talk-about-dram/",
+              "published": "2026-10-31T01:23:40Z"
+            },
+            {
+              "title_zh": "Lam Research 與 imec 擴大合作，布局 High-NA EUV 乾式光阻",
+              "summary_zh": "科林研發（Lam Research）與 imec 擴大合作，聚焦 High-NA EUV 乾式光阻技術以加速量產進程。報導提及半導體技術競爭已從電晶體微縮延伸至先進封裝與 3D 整合。",
+              "relevance": "先進微影與封裝製程——半導體製造節點主題",
+              "title": "科林研發、imec 擴大合作！布局 High-NA EUV 乾式光阻，加速量產進程",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/31/lam-imec-collaboration/",
+              "published": "2026-10-31T08:18:58Z"
+            },
+            {
+              "title_zh": "鎖定 AI 伺服器 MLCC 需求，村田製作所未來五年擬投入 1 兆日圓擴產",
+              "summary_zh": "據日經報導，村田製作所計畫在未來五年投入 1 兆日圓（約 63 億美元），因應 AI 伺服器等需求擴大電容器產能。",
+              "relevance": "AI 伺服器被動元件供應鏈——半導體與硬體供給主題",
+              "title": "鎖定 AI 伺服器 MLCC 需求！村田製作所未來五年擬砸 1 兆日圓擴產",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/31/murata-invest-6-3bn-in-capacitor-production/",
+              "published": "2026-10-31T06:27:04Z"
+            },
+            {
+              "title_zh": "台達電 AI 訂單能見度高但出貨時點變動大，鄭平稱庫存增加為階段性現象",
+              "summary_zh": "台達電表示 AI 訂單能見度高，惟出貨時點變動幅度大；董事長鄭平指庫存增加屬階段性現象。該公司股價自上半年高點回落約四成。",
+              "relevance": "AI 伺服器電源與散熱供應鏈——AI 基建硬體主題",
+              "title": "台達電 AI 訂單能見度高但出貨時點變動大，鄭平稱庫存增加屬階段性現象",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/10/31/delta-electronics-ai-orders-high-visibility-shipment-timing-highly-variable/",
+              "published": "2026-10-31T06:00:19Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "思靈機器人於 Nvidia GTC 柏林大會發表 Agile ONE SN 人形機器人，並與 Audi 展開試點",
+              "summary_zh": "思靈機器人（Agile Robots）10 月 21 日在 Nvidia GTC 柏林大會與 Nvidia 聯合發表研究型人形機器人 Agile ONE SN，並與奧迪（Audi）展開人形機器人試點合作。",
+              "relevance": "人形機器人平台與車廠導入——具身智慧主題",
+              "title": "思靈機器人在輝達 GTC 柏林大會發表 Agile ONE SN 人型機器人，並與奧迪開展人形機器人試點",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/31/agile-robots-se_agile-one-sn/",
+              "published": "2026-10-31T06:00:30Z"
+            },
+            {
+              "title_zh": "印度勞工化身 AI 導師：配戴攝影機記錄日常動作，用於訓練機器人",
+              "summary_zh": "印度出現新型態工作：基層勞工在工作時配戴頭戴式攝影機，完整記錄自身動作，供科技公司訓練機器人使用。",
+              "relevance": "機器人操作資料採集——具身智慧訓練資料主題",
+              "title": "印度勞工化身 AI 導師，配戴攝影機記錄日常、親手訓練未來機器人",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/10/31/indian-workers-transform-into-ai-tutors/",
+              "published": "2026-10-31T07:00:28Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Flagship 整合三個生技平台，推出 AI 藥物探索公司 Etcelera",
+              "summary_zh": "Flagship Pioneering 公布結束隱形期的新公司 Etcelera，整合三項生技平台，目標為預測候選藥物在病人體內的作用表現。",
+              "relevance": "AI 驅動藥物探索平台——生技×AI 主題",
+              "title": "Flagship brings 3 biotech platforms together to launch AI drug discovery player Etcelera",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/flagship-reveals-new-causal-intelligence-merger-biotech-etcelera",
+              "published": null
+            },
+            {
+              "title_zh": "Oura 與 UC San Diego Health 合作，以智慧戒指連續數據研究 GLP-1 治療結果",
+              "summary_zh": "Oura 展開首項臨床試驗，與加州大學聖地牙哥分校健康中心合作，研究智慧戒指連續生理數據與肥胖治療結果之間的關聯。",
+              "relevance": "穿戴式連續生理數據與臨床試驗——生醫數據主題",
+              "title": "Oura, UC San Diego Health collaborate to study GLP-1 outcomes using continuous smart ring data",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/health-tech/oura-uc-san-diego-health-study-glp-1-outcomes-using-continuous-smart-ring-data",
+              "published": null
+            },
+            {
+              "title_zh": "Genmab 80 億美元併購 Merus 見效，雙特異性抗體組合於三期試驗將死亡風險減半",
+              "summary_zh": "Genmab 公布一項三期試驗首次期中分析結果，其雙特異性抗體 petosemtamab 加上 Merck 的 Keytruda，在 PD-L1 陽性復發或轉移性頭頸部鱗狀細胞癌病人中，相較單用 Keytruda 將死亡風險降低 50%。",
+              "relevance": "腫瘤臨床試驗讀數——生技研發主題",
+              "title": "Genmab's $8B Merus bet delivers as bispecific combo halves risk of death in phase 3",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/genmabs-head-and-neck-cancer-bispecific-cuts-risk-death-half-ph3",
+              "published": null
+            },
+            {
+              "title_zh": "Gilead 揭露兩項 CAR-T 細胞療法試驗遭部分臨床暫停",
+              "summary_zh": "Gilead Sciences 於 10 月 29 日第三季財報電話會議上宣布，其 CAR-T 細胞療法 KITE-753 用於瀰漫性大 B 細胞淋巴瘤（DLBCL）的兩項研究被實施部分臨床暫停。",
+              "relevance": "細胞療法臨床監管——生技研發風險主題",
+              "title": "Gilead reveals partial clinical hold on 2 CAR-T cell therapy trials",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/gileads-kite-reveals-partial-clinical-hold-2-car-t-cell-therapy-trials",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "SpaceX 與特斯拉證實各自成立特別委員會研議合併",
+              "summary_zh": "SpaceX 與特斯拉證實已分別成立特別委員會評估合併案。若成案，兩者市值合計約 3.5 兆美元。",
+              "relevance": "大型科技併購與資本市場——總經與產業結構主題",
+              "title": "「在地雷區跳舞」的世紀交易：SpaceX 合併特斯拉，馬斯克必須跨越的兩大高牆",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/10/31/spacex-tesla-merger-largest-earth-who-benefits-who-pays/",
+              "published": "2026-10-31T02:00:46Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro"
+      ]
+    },
+    {
       "date": "2026-10-31",
       "generated_utc": "2026-10-31T01:06:57Z",
       "status": "published",
