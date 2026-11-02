@@ -2,6 +2,277 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-02",
+      "generated_utc": "2026-11-02T01:03:36Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 56,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 8,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 7,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 2
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Google 測試在太空部署 AI 伺服器，每 15 分鐘須關機散熱成關鍵",
+              "summary_zh": "Google 先前已在外太空部署一台 AI 伺服器進行實驗，測試在太空建置 AI 資料中心的可行性。報導指出散熱為此實驗的關鍵限制。",
+              "relevance": "資料中心散熱與新型部署形式——AI 基礎設施主題",
+              "title": "Google 測試在太空部屬 AI 伺服器，每 15 分鐘要關機散熱關鍵",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/02/google-tests-deploying-ai-servers-in-space/",
+              "published": "2026-11-02T01:00:36Z"
+            },
+            {
+              "title_zh": "AI 回報疑慮衝擊，OpenAI 融資目標大縮水百億美元",
+              "summary_zh": "外媒報導，在 AI 投資回報疑慮浮現、AI 概念股賣壓沉重之際，OpenAI 將其募資目標下調 100 億美元。",
+              "relevance": "AI 資本支出與融資條件——AI 基礎設施投資主題",
+              "title": "AI 回報疑慮衝擊  OpenAI 融資目標大縮水百億美元",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/02/openai-slashes-funding-target-by-10bn-as-tech-anxieties-mount/",
+              "published": "2026-11-02T00:25:32Z"
+            },
+            {
+              "title_zh": "加州第 45 號提案可能暗藏資料中心漏洞",
+              "summary_zh": "環保倡議者警告，被宣傳為「必要」基礎設施快速通道的加州第 45 號提案，可能讓資料中心開發商規避公眾監督。該提案將縮短州定環境評估時程，並使居民更難於法院挑戰相關專案。",
+              "relevance": "資料中心選址與能源法規——AI 基礎設施建置主題",
+              "title": "Prop 45 in California could be hiding a loophole for data centers",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/policy/1023877/prop-45-california-data-centers-energy",
+              "published": "2026-11-01T13:00:00Z"
+            },
+            {
+              "title_zh": "資料中心成為期中選舉議題，連布魯克林也不例外",
+              "summary_zh": "在選舉日前五天的布魯克林期中選舉活動上，從市議員爐邊談話到民主黨路線辯論，話題一再回到 AI 與資料中心。",
+              "relevance": "資料中心社會接受度——AI 基礎設施擴張主題",
+              "title": "Data centers are now a midterm issue, even in Brooklyn",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
+              "published": "2026-11-01T02:22:10Z"
+            },
+            {
+              "title_zh": "OpenAI 可能將其資料中心改名為「AI 運算園區」",
+              "summary_zh": "報導指出 OpenAI 可能把旗下資料中心重新命名為「AI compute campuses」（AI 運算園區）。",
+              "relevance": "資料中心敘事與公眾觀感——AI 基礎設施主題",
+              "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+              "published": "2026-11-01T21:55:23Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "NAND Flash 廠鎧俠純益估飆 14 倍、2027 年產能「售罄」",
+              "summary_zh": "記憶體價格上漲帶動日本 NAND Flash 大廠鎧俠（Kioxia）7-9 月純益大增 32 倍，本季純益預估成長 14 倍。報導指出其 2027 年產能已「售罄」。",
+              "relevance": "記憶體價格與產能供給——記憶體約束主題",
+              "title": "NAND Flash 廠鎧俠純益估飆 14 倍、2027 年產能「售罄」",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/02/kioxia-consolidated-financial-results-for-the-six-months-ended-september-30-2026/",
+              "published": "2026-11-02T00:15:33Z"
+            },
+            {
+              "title_zh": "長鑫存儲正面回應美光質疑，指第六代 4F² DRAM 工程樣品年底前送樣",
+              "summary_zh": "針對美光（Micron）質疑 4F² 架構缺乏實質密度效益，中國記憶體廠長鑫存儲（CXMT）公開回應，並表示第六代 4F² DRAM 工程樣品將於年底前送樣。",
+              "relevance": "DRAM 架構與中國記憶體供給——記憶體技術路線主題",
+              "title": "長鑫存儲正面回應美光質疑，指第六代 4F² DRAM 工程樣品年底前送樣",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/02/changxin-memory-responds-directly-to-microns-accusations/",
+              "published": "2026-11-01T23:00:59Z"
+            },
+            {
+              "title_zh": "CPO 產值大爆發，思渤科技助攻企業搶攻市場商機",
+              "summary_zh": "生成式 AI 與大型語言模型推升運算規模，資料中心資料傳輸量快速增加，帶動晶片與晶片、伺服器與交換器間的互連需求。報導聚焦共同封裝光學（CPO）相關市場發展。",
+              "relevance": "CPO 與資料中心互連——AI 基礎設施頻寬主題",
+              "title": "CPO 產值大爆發 思渤科技助攻企業搶攻市場商機",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/02/cybernet-cpo-npo-ansys-optimus/",
+              "published": "2026-11-02T01:00:47Z"
+            },
+            {
+              "title_zh": "從股價剩 8 元到打入輝達供應鏈，一詮靠黑手功夫擠進 AI 散熱賽道",
+              "summary_zh": "隨 AI 晶片算力提升、發熱量增加，散熱元件設計由外掛式轉向更貼近晶片的方案。報導介紹台廠一詮切入 AI 散熱供應鏈的過程。",
+              "relevance": "先進封裝與散熱供應鏈——AI 伺服器熱管理主題",
+              "title": "從股價剩 8 元到打入輝達供應鏈，一詮靠黑手功夫擠進 AI 散熱賽道",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/02/ichiun/",
+              "published": "2026-11-01T23:50:44Z"
+            },
+            {
+              "title_zh": "量子運算邁入分子時代，NVision 攜手 HyperLight 將分子量子位元整合至光子晶片",
+              "summary_zh": "德國烏爾姆的量子技術公司 NVision 於 10 月 28 日宣布，其分子量子位元（molecular qubit）技術將與 HyperLight 合作整合至光子晶片。",
+              "relevance": "量子位元與光子晶片整合——下一代運算硬體主題",
+              "title": "量子運算邁入分子時代，NVision 攜手 HyperLight 將分子量子位元整合至光子晶片",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/02/nvision-breakthrough-molecular-qubit-technology/",
+              "published": "2026-11-02T00:45:54Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "TechCrunch Mobility：新一波更大規模的自駕車熱潮來臨",
+              "summary_zh": "TechCrunch Mobility 專欄指出自動駕駛領域正進入新一波更大規模的成長期，並討論 AI 在交通運輸中扮演的角色。",
+              "relevance": "自駕車商業化——自主系統主題",
+              "title": "TechCrunch Mobility: A new, bigger AV boom is here",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/01/techcrunch-mobility-a-new-bigger-av-boom-is-here/",
+              "published": "2026-11-01T17:04:00Z"
+            },
+            {
+              "title_zh": "Palantir 前高層創立 Dream 獲 a16z 領投 1,700 萬美元，以 AI 世界模型自動設計建築",
+              "summary_zh": "由兩名 Palantir 前高層創立的新創公司 Dream 結束隱身模式，宣布完成 1,700 萬美元種子輪募資，由 a16z 領投，主打以 AI 世界模型自動化建築設計。",
+              "relevance": "世界模型應用——具身智慧與自主系統主題",
+              "title": "Palantir 前高層創立 Dream 獲 a16z 領投 1,700 萬美元，以 AI 世界模型自動設計建築",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/02/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+              "published": "2026-11-02T00:30:07Z"
+            },
+            {
+              "title_zh": "經寶精密深耕泰國培育機器人專才，鍾國松喊能源機構件訂單年底量產",
+              "summary_zh": "經寶精密（JPP-KY）與泰國北欖府帕克薩鎮公所合辦「2026 年 JINPAO–PRAKSA 自動化與機器人」相關活動，培育當地機器人人才；公司表示能源機構件訂單將於年底量產。",
+              "relevance": "機器人製造供應鏈——機器人產業化主題",
+              "title": "經寶精密深耕泰國培育機器人專才，鍾國松喊能源機構件訂單年底量產",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/02/robotics-specialist/",
+              "published": "2026-11-02T00:32:06Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Flagship 整合 3 個生技平台，推出 AI 藥物探索公司 Etcelera",
+              "summary_zh": "Flagship Pioneering 宣布 Etcelera 結束隱身模式，這家以 AI 驅動的新生技公司由三個生技平台整合而成，目標是預測候選藥物在病人體內的作用。",
+              "relevance": "AI 驅動藥物探索平台——生技×AI 主題",
+              "title": "Flagship brings 3 biotech platforms together to launch AI drug discovery player Etcelera",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/flagship-reveals-new-causal-intelligence-merger-biotech-etcelera",
+              "published": null
+            },
+            {
+              "title_zh": "Oura 與 UC San Diego Health 合作，以智慧戒指連續數據研究 GLP-1 療效",
+              "summary_zh": "Oura 展開首個臨床試驗，與加州大學聖地牙哥分校醫療體系合作，研究智慧戒指連續生理數據與肥胖治療成效之間的關聯。",
+              "relevance": "穿戴式連續生理數據與臨床試驗——生技×AI 數據主題",
+              "title": "Oura, UC San Diego Health collaborate to study GLP-1 outcomes using continuous smart ring data",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/health-tech/oura-uc-san-diego-health-study-glp-1-outcomes-using-continuous-smart-ring-data",
+              "published": null
+            },
+            {
+              "title_zh": "Genmab 80 億美元併購 Merus 見效，雙特異性抗體組合在三期試驗將死亡風險減半",
+              "summary_zh": "Genmab 公布一項三期試驗首次期中分析結果：在 PD-L1 陽性復發或轉移性頭頸部鱗狀細胞癌病人中，其雙特異性抗體 petosemtamab 加上默沙東 Keytruda，相較單用 Keytruda 將死亡風險降低 50%。",
+              "relevance": "腫瘤臨床試驗結果——生技研發主題",
+              "title": "Genmab's $8B Merus bet delivers as bispecific combo halves risk of death in phase 3",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/genmabs-head-and-neck-cancer-bispecific-cuts-risk-death-half-ph3",
+              "published": null
+            },
+            {
+              "title_zh": "Gilead 揭露兩項 CAR-T 細胞療法試驗遭部分臨床暫停",
+              "summary_zh": "Gilead Sciences 在 10 月 29 日第三季財報電話會議上宣布，其 CAR-T 細胞療法 KITE-753 針對瀰漫性大 B 細胞淋巴瘤（DLBCL）的兩項研究遭部分臨床暫停。",
+              "relevance": "細胞療法監管動態——生技研發主題",
+              "title": "Gilead reveals partial clinical hold on 2 CAR-T cell therapy trials",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/gileads-kite-reveals-partial-clinical-hold-2-car-t-cell-therapy-trials",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "住宅用電年年增電價卻凍漲，國會審撥補台電預算應「循證治理」",
+              "summary_zh": "文章討論台灣住宅用電量逐年增加但電價凍漲、國會審查台電撥補預算的議題，並提及美國 11 月 3 日期中選舉及 CPI 年增率超過 3% 的背景。",
+              "relevance": "電力價格與能源政策——資料中心用電與總經主題",
+              "title": "住宅用電年年增電價卻凍漲，國會審撥補台電預算應「循證治理」",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/02/taipower-electricity-price-freeze-central-bank-interest-rate-hike-congress-subsidy-budget-evidence-based-governance/",
+              "published": "2026-11-02T00:20:58Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec"
+      ]
+    },
+    {
       "date": "2026-11-01",
       "generated_utc": "2026-11-01T00:28:24Z",
       "status": "published",
@@ -1413,202 +1684,6 @@
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact"
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "generated_utc": "2026-10-25T23:37:11Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 53,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 7,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 5,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 5
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 1,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Supermicro 攜手 Nokia，將 NVIDIA Aerial RAN Computer 解決方案引入網路邊緣，支援低延遲 AI 服務",
-              "summary_zh": "Supermicro 與 Nokia 合作，將 NVIDIA Aerial RAN Computer 解決方案導入網路邊緣。Supermicro 為提供 AI、企業運算、儲存及 5G／邊緣整體 IT 解決方案的供應商。",
-              "relevance": "邊緣 AI 運算與加速基礎設施部署——AI infra 主題",
-              "title": "Supermicro 攜手 Nokia，將 NVIDIA Aerial RAN Computer 解決方案引入網絡邊緣，支援低延遲 AI 服務",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/25/supermicro-nokia-nvidia-aerial-ran-computer/",
-              "published": "2026-10-25T06:00:51Z"
-            },
-            {
-              "title_zh": "Apollo 經濟學家：AI 對多數企業帶來「零財務回報」",
-              "summary_zh": "Apollo 經濟學家表示，儘管投入大量資金且話題熱度高，AI 在科技業之外並未為美國企業帶來財務回報。",
-              "relevance": "AI 資本支出與投資回報——AI infra 需求面主題",
-              "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-              "published": "2026-10-25T16:57:32Z"
-            },
-            {
-              "title_zh": "AI 也會「腦腐」？研究警告：吸收過多農場文將導致 AI 推理退化且難以逆轉",
-              "summary_zh": "德州農工大學研究團隊指出，大型語言模型若長期接觸大量低品質但在社群平台高度受歡迎的內容，可能出現類似人類「腦腐」的推理能力退化現象。",
-              "relevance": "訓練資料品質與模型能力退化——AI 模型訓練主題",
-              "title": "AI 也會「腦腐」？研究警告：吸收過多農場文將導致 AI 推理退化且難以逆轉",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/25/ai-brain-rot/",
-              "published": "2026-10-25T08:00:47Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "南亞科 Q3 獲利創紀錄股價卻重挫！長鑫存儲擴產來襲，台灣記憶體廠該怕嗎",
-              "summary_zh": "南亞科公布 2026 年第三季財報，單季稅後淨利達 876.3 億元，較去年同期大幅成長，但股價下挫。報導同時關注中國長鑫存儲擴產對台灣記憶體廠的影響。",
-              "relevance": "DRAM 供需與記憶體廠產能擴張——HBM／記憶體約束主題",
-              "title": "南亞科 Q3 獲利創紀錄股價卻重挫！長鑫存儲擴產來襲，台灣記憶體廠該怕嗎",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/25/nanya-2028/",
-              "published": "2026-10-25T02:00:12Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "TechCrunch Mobility：藍綠色是自主駕駛的顏色",
-              "summary_zh": "TechCrunch Mobility 電子報整理交通運輸未來發展動態，並聚焦 AI 在其中扮演的角色。",
-              "relevance": "自駕與自主系統產業動態——機器人與自主系統主題",
-              "title": "TechCrunch Mobility: Blue-green is the color of autonomy",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/10/25/techcrunch-mobility-blue-green-is-the-color-of-autonomy/",
-              "published": "2026-10-25T16:05:00Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "ESMO：資料外洩後，Merck 與 Moderna 提前公布癌症疫苗第三期數據",
-              "summary_zh": "Merck 與 Moderna 提前公布備受期待的癌症疫苗第三期數據，主要療效指標達標並接近分析師最佳預期情境，但一項關鍵次要指標數據弱於預期。",
-              "relevance": "個人化 mRNA 癌症疫苗（含計算設計流程）——生技×AI 主題",
-              "title": "ESMO: After leak, Merck and Moderna post phase 3 cancer vaccine data early",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/merck-co-and-moderna-post-phase-3-cancer-vaccine-data",
-              "published": null
-            },
-            {
-              "title_zh": "BMS 領投 Pathos AI 2.37 億美元 E 輪，同日宣布阿茲海默症合作",
-              "summary_zh": "Pathos AI 完成由 Bristol Myers Squibb 領投的 2.37 億美元 E 輪募資，雙方並於同日簽署聚焦阿茲海默症的合作協議。",
-              "relevance": "AI 藥物開發平台募資與藥廠合作——生技×AI 主題",
-              "title": "BMS leads Pathos AI's $237M series E alongside Alzheimer's link-up",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/pathos-ai-closes-237m-series-e-heels-bms-alzheimers-link",
-              "published": null
-            },
-            {
-              "title_zh": "NeoCOAST-2 試驗中可切除肺癌的 ctDNA 清除與臨床結果",
-              "summary_zh": "《Nature》刊出 NeoCOAST-2 研究，報告可切除肺癌患者的 ctDNA 清除情形與治療結果之關聯。",
-              "relevance": "液態切片生物標記與治療反應預測——生技資料分析主題",
-              "title": "ctDNA clearance and outcomes for resectable lung cancer from NeoCOAST-2",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-11328-3",
-              "published": "2026-10-25T00:00:00Z"
-            },
-            {
-              "title_zh": "偵測癌細胞留下的 RNA，尿液也能驗出膀胱癌",
-              "summary_zh": "研究利用尿液中的游離 RNA（cell-free RNA）偵測膀胱癌並預測治療反應，可望減少患者反覆接受侵入性膀胱鏡檢查的需求。",
-              "relevance": "非侵入性分子診斷與治療反應預測——生技資料分析主題",
-              "title": "偵測癌細胞留下的 RNA，尿液也能驗出膀胱癌？",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/10/25/urine-cell-free-rna-for-bladder-cancer-detection-and-treatment-response-prediction/",
-              "published": "2026-10-25T07:30:15Z"
-            },
-            {
-              "title_zh": "EQT 以 108 億歐元收購分子診斷廠商 Qiagen",
-              "summary_zh": "EQT 將以企業價值 108 億歐元（121 億美元，含 11 億美元淨負債）收購總部位於荷蘭的分子診斷公司 Qiagen。",
-              "relevance": "分子診斷產業整併——生技平台與資料基礎設施主題",
-              "title": "EQT buys molecular diagnostics specialist Qiagen in a €10.8B deal",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/eqt-buys-molecular-diagnostics-specialist-qiagen-eur108b-deal",
-              "published": null
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-rec",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-ro",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interact",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE"
       ]
     }
   ]
