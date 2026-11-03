@@ -4,6 +4,8 @@ on:
   schedule:
     # 21:30 UTC on weekdays — after the US close, before Asia opens.
     - cron: '30 21 * * 1-5'
+    # 05:45 UTC Tue-Sat (13:45 Taipei): retry after provider session cutoff.
+    - cron: '45 5 * * 2-6'
   workflow_dispatch:
 
 # Prevent this job from racing the other content workflows onto main.
