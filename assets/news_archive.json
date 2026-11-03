@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-03",
-      "generated_utc": "2026-11-03T02:44:21Z",
+      "generated_utc": "2026-11-03T03:05:59Z",
       "status": "published",
       "model": "claude-opus-5",
       "candidates": 70,
@@ -79,49 +79,49 @@
           "name": "AI 基礎設施",
           "items": [
             {
-              "title_zh": "Marvell 以 1,150 億美元收購 Lumentum，為科技史上最大交易之一",
-              "summary_zh": "Marvell 宣布計劃收購光通訊元件商 Lumentum，交易金額達 1,150 億美元，為科技業史上規模最大的併購案之一。報導指出兩家公司擁有同一位策略投資人 Nvidia。",
-              "relevance": "資料中心光互連與網路供應鏈——AI 基礎設施主題",
-              "title": "Apple is ‘not able to predict’ when it’ll have enough iPhone Duos to go around",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/1024915/apple-iphone-duo-supply-chain-constraints",
-              "published": "2026-11-02T22:56:11Z"
+              "title_zh": "科技史上最大交易之一：Marvell 以 1,150 億美元收購 Lumentum",
+              "summary_zh": "Marvell 宣布計畫以 1,150 億美元收購光通訊元件商 Lumentum，為科技業史上規模最大的併購案之一。報導指出，兩家公司擁有同一位策略投資人 Nvidia。",
+              "relevance": "光互連與資料中心網路供應鏈——AI 基礎設施主題",
+              "title": "In one of the largest deals in tech history, Marvell buys Lumentum for $115B",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/",
+              "published": "2026-11-02T17:54:11Z"
             },
             {
-              "title_zh": "OpenAI 提出資料中心發電廠方案以保護鄰近區域電網",
-              "summary_zh": "OpenAI 宣布將在喬治亞州 Effingham County 的新資料中心試行「Grid Protectors Program」，承諾在極端天候或緊急狀況下釋出最多 1,000 百萬瓦電力。該計畫公布之際，當地對資料中心的反對聲浪升高。",
-              "relevance": "資料中心電力供應與選址——AI 基礎設施主題",
-              "title": "Apple set an iPhone sales record even without a new standard iPhone",
+              "title_zh": "OpenAI 提出資料中心電廠方案，供鄰近地區電力支援",
+              "summary_zh": "OpenAI 宣布將在喬治亞州 Effingham County 的新資料中心試行「Grid Protectors Program」，承諾在極端天氣或緊急狀況下釋出最高 1,000 百萬瓦電力。該公告發布之際，各地對資料中心的反對聲浪升高。",
+              "relevance": "資料中心電力與電網約束——AI 基礎設施主題",
+              "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
               "source": "The Verge",
-              "url": "https://www.theverge.com/tech/1024748/apple-q4-2026-iphone-sales-earnings",
-              "published": "2026-11-02T22:02:36Z"
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+              "published": "2026-11-02T18:01:30Z"
             },
             {
-              "title_zh": "Anthropic 警告自身已非常接近 RSI（遞迴自我改進）能力",
-              "summary_zh": "Anthropic 表示其模型已非常接近遞迴自我改進（RSI）能力，即 AI 擅長訓練自身、進而大幅加速 AI 能力成長的階段。",
-              "relevance": "前沿模型能力與訓練自動化——AI 基礎設施主題",
-              "title": "Meta will end Quest 2 OS updates in 2027",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/1024835/meta-vr-quest-2-pro-os-end-updates",
-              "published": "2026-11-02T21:04:20Z"
+              "title_zh": "Anthropic 警告已非常接近 RSI（遞迴自我改進）能力，即自我建構的 AI",
+              "summary_zh": "Anthropic 表示其模型已非常接近遞迴自我改進（RSI）能力。RSI 指 AI 擅長訓練自己、進而大幅加速 AI 能力發展的節點。",
+              "relevance": "前沿模型能力與自動化訓練——AI 基礎設施主題",
+              "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+              "published": "2026-11-02T22:14:50Z"
             },
             {
-              "title_zh": "Musk 因成本「高到無法持續」而限縮 Grok Bot 使用額度",
-              "summary_zh": "Elon Musk 宣布調降 Grok Bot 的使用上限，理由是營運成本高到無法持續。他先前曾稱 Grok Bot 是他見過成長最快的產品。",
-              "relevance": "推論成本與算力約束——AI 基礎設施主題",
-              "title": "One of Google’s Android partners turned 1.3 million set-top boxes into a botnet",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
-              "published": "2026-11-02T20:37:49Z"
+              "title_zh": "成本「高到不可持續」，Musk 調降 Grok Bot 使用上限",
+              "summary_zh": "Elon Musk 以成本「高到不可持續」為由，限縮 Grok Bot 的使用額度。他先前曾形容 Grok Bot 是他見過成長最快的產品。",
+              "relevance": "推論成本與服務擴張——AI 基礎設施主題",
+              "title": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+              "published": "2026-11-02T16:23:21Z"
             },
             {
               "title_zh": "Omen AI 以 1,600 萬美元收購 Aquatic Labs，補強液冷技術",
-              "summary_zh": "兩家處理資料中心水資源問題的新創公司以 1,600 萬美元的交易合併，Omen AI 藉此取得液冷相關技術能力。",
-              "relevance": "資料中心散熱與水資源——AI 基礎設施主題",
-              "title": "BMW is taking on Tesla’s FSD with urban driver assist starting in 2027",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/transportation/1024616/bmw-level-2-city-driver-assist-2027",
-              "published": "2026-11-02T20:03:52Z"
+              "summary_zh": "兩家處理資料中心用水問題的新創公司以 1,600 萬美元的交易結合。",
+              "relevance": "資料中心散熱與用水——AI 基礎設施主題",
+              "title": "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+              "published": "2026-11-02T15:00:00Z"
             }
           ]
         },
@@ -130,22 +130,22 @@
           "name": "半導體/HBM",
           "items": [
             {
-              "title_zh": "Apple 庫存暴增 154%，記憶體晶片成本攀升",
-              "summary_zh": "Apple 表示空前的記憶體晶片成本將持續上升，其庫存金額已升至 145 億美元，年增 154%。",
-              "relevance": "記憶體價格與供給緊縮——HBM／記憶體約束主題",
-              "title": "The Apple Watch Ultra 4 is $100 off, matching its best price to date",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/gadgets/1024416/apple-watch-ultra-4-ugreen-finetrack-2-bluetooth-tracker-deal-sale",
-              "published": "2026-11-02T19:24:09Z"
+              "title_zh": "記憶體晶片成本攀升，Apple 庫存暴增 154%",
+              "summary_zh": "Apple 表示空前的記憶體晶片成本將持續上升，其庫存同時攀升至 145 億美元。報導指出此一情形引發對未來裝置價格的疑問。",
+              "relevance": "記憶體價格與供給緊俏——HBM／記憶體約束主題",
+              "title": "Apple’s inventory surges 154% as memory chip costs climb",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/",
+              "published": "2026-11-02T23:04:57Z"
             },
             {
-              "title_zh": "Apple「無法預測」iPhone Duo 供應何時能滿足需求",
-              "summary_zh": "Apple 執行長 John Ternus 在接受 Reuters 訪問時表示，公司正努力加快供貨，但目前無法預測供需何時能平衡，出貨延遲已延伸至明年。",
-              "relevance": "零組件供應限制與終端裝置出貨——半導體供應鏈主題",
-              "title": "Ford promises not to sell your driving habits to data brokers",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/transportation/1024386/ford-customer-driving-data-privacy-promise-data-brokers",
-              "published": "2026-11-02T19:05:46Z"
+              "title_zh": "AI 記憶體熱潮助攻，南韓今年出口有望突破 1 兆美元",
+              "summary_zh": "根據南韓產業通商資源部資料，在 AI 記憶體需求帶動下，南韓出口可望達成全球僅三國達到的 1 兆美元貿易里程碑。",
+              "relevance": "記憶體出口與需求週期——HBM 供給鏈主題",
+              "title": "AI 記憶體熱潮助攻！韓今年出口有望破 1 兆美元，全球僅三國達成",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/03/south-korea-exports-ai-memory-boom/",
+              "published": "2026-11-03T02:58:17Z"
             }
           ]
         },
@@ -154,40 +154,40 @@
           "name": "機器人與自主",
           "items": [
             {
-              "title_zh": "BMW 將於 2027 年推出都市駕駛輔助，對標 Tesla FSD",
-              "summary_zh": "BMW 表示將自 2027 年起把導航引導的部分自動化駕駛能力擴展到都市環境，首先在德國推出，其他市場隨後跟進。該系統可在高速公路與市區道路上協助轉向、加速與減速。",
-              "relevance": "自動駕駛與自主系統部署——機器人與自主系統主題",
-              "title": "Anthropic clamps down on Claude’s AI video game clones",
+              "title_zh": "BMW 將於 2027 年推出城市道路駕駛輔助，對標 Tesla FSD",
+              "summary_zh": "BMW 表示將自 2027 年起把導航輔助的部分自動化駕駛功能擴展至城市環境，首先在德國推出，其他市場陸續跟進。該系統可依據內建 GPS 導航，在高速公路與市區道路上協助轉向、加速與減速。",
+              "relevance": "自駕與駕駛輔助系統部署——自主系統主題",
+              "title": "BMW is taking on Tesla’s FSD with urban driver assist starting in 2027",
               "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
-              "published": "2026-11-02T18:56:02Z"
+              "url": "https://www.theverge.com/transportation/1024616/bmw-level-2-city-driver-assist-2027",
+              "published": "2026-11-02T20:03:52Z"
             },
             {
-              "title_zh": "Apple 傳於 2027 年推出 1,000 美元家用機器人，可用於 FaceTime 與開燈",
-              "summary_zh": "報導指出 Apple 正開發一款由執行長 John Ternus 支持的可移動家用機器人，售價可能偏高且用途有限，功能包括 FaceTime 與開燈等。",
+              "title_zh": "2027 年登場：Apple 要價約 1,000 美元的家用機器人，可做 FaceTime 與開燈",
+              "summary_zh": "報導指出，由執行長 John Ternus 支持的 Apple 可移動家用機器人預計於 2027 年推出，售價可能不低，用途相對有限，包括 FaceTime 通話與控制燈光。",
               "relevance": "消費級家用機器人產品化——機器人主題",
-              "title": "Xbox’s former COO has ‘serious concerns’ about her abrupt departure",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/news/1024649/xbox-chief-operating-officer-helen-chiang-depature-comments",
-              "published": "2026-11-02T18:43:24Z"
-            },
-            {
-              "title_zh": "烏克蘭口袋型裝置可反向擷取俄軍無人機的攝影畫面",
-              "summary_zh": "基輔一家新創開發出重約 10 盎司的口袋型接收器，讓烏克蘭部隊能看到俄軍無人機的影像傳輸。報導指出俄方轉向數位影像與不發射訊號的 AI 導引無人機可能使此優勢短暫。",
-              "relevance": "無人機自主導航與電子戰——自主系統主題",
-              "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-              "published": "2026-11-02T18:01:30Z"
-            },
-            {
-              "title_zh": "42AI 以 6,250 萬美元結束隱密期，推出可「預測人類行為」的世界模型",
-              "summary_zh": "新創 42AI 宣布結束隱密開發階段並募得 6,250 萬美元，其世界模型宣稱能在全新情境中預測人類接下來的行動。",
-              "relevance": "世界模型與行為預測——機器人與自主系統主題",
-              "title": "\"At Home in Space\" opens, caps Air and Space Museum renovation",
+              "title": "Coming in 2027: Apple’s $1,000 home robot for FaceTime and switching on lights",
               "source": "Ars Technica",
-              "url": "https://arstechnica.com/space/2026/11/at-home-in-space-opens-caps-air-and-space-museum-renovation/",
-              "published": "2026-11-02T23:30:16Z"
+              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/",
+              "published": "2026-11-02T18:32:21Z"
+            },
+            {
+              "title_zh": "烏克蘭新型口袋裝置可反向擷取俄軍無人機攝影畫面",
+              "summary_zh": "一家基輔新創開發出重約 10 盎司的口袋型接收器，讓烏克蘭部隊能觀看俄軍無人機的影像傳輸。報導指出，俄方轉向數位影像與不發射訊號的 AI 導引無人機，可能使此優勢短暫。",
+              "relevance": "無人機自主導引與訊號對抗——自主系統主題",
+              "title": "Ukraine’s new pocket-sized gadget turns Russian drones’ cameras against them",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/02/ukraines-new-pocket-sized-gadget-turns-russian-drones-cameras-against-them/",
+              "published": "2026-11-03T01:12:55Z"
+            },
+            {
+              "title_zh": "42AI 帶著 6,250 萬美元與可「預測人類行為」的世界模型走出隱形模式",
+              "summary_zh": "新創 42AI 結束隱形階段，宣布募得 6,250 萬美元，並推出宣稱能在全新情境中預測人類行為的世界模型。",
+              "relevance": "世界模型與行為預測——自主系統主題",
+              "title": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+              "published": "2026-11-02T16:30:00Z"
             }
           ]
         },
@@ -196,49 +196,55 @@
           "name": "生技×AI",
           "items": [
             {
-              "title_zh": "OpenAI 投資的 Biossil 以最高 9,100 萬美元收購 Theriva 的抗生素降解酵素組合",
-              "summary_zh": "加拿大的 OpenAI 支持新創 Biossil Labs 持續其製藥併購動作，以最高 9,100 萬美元收購 Theriva Biologics 已被降低優先序的早中期抗生素降解酵素產品組合。",
-              "relevance": "AI 公司跨入藥物開發資產——生技×AI 主題",
-              "title": "Why large dogs age faster than small ones, and other October research highlights",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/science/2026/11/research-roundup-6-cool-science-stories-we-almost-missed-7/",
-              "published": "2026-11-02T22:54:35Z"
+              "title_zh": "OpenAI 投資的 Biossil 以最高 9,100 萬美元收購 Theriva 的抗生素降解酶組合",
+              "summary_zh": "加拿大新創、獲 OpenAI 支持的 Biossil Labs 再度出手，以最高 9,100 萬美元收購 Theriva Biologics 已降低優先順序的早期至中期抗生素降解酶產品組合。",
+              "relevance": "AI 業者涉入藥物開發資產——生技×AI 主題",
+              "title": "OpenAI-funded Biossil snags Theriva's unwanted antibiotic degrader portfolio for up to $91M",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/openai-funded-biossil-snags-therivas-antibiotic-degrader-portfolio-91m",
+              "published": null
             },
             {
               "title_zh": "FDA 給予 uniQure 亨丁頓舞蹈症基因療法優先審查",
-              "summary_zh": "FDA 已受理 uniQure 針對亨丁頓舞蹈症基因療法的申請並給予優先審查資格，公司稱之為「決定性里程碑」。",
+              "summary_zh": "FDA 已受理 uniQure 亨丁頓舞蹈症基因療法的上市申請並給予優先審查。",
               "relevance": "基因療法臨床與法規進展——生技主題",
-              "title": "Third person dies of bird flu since virus started jumping to livestock",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/health/2026/11/third-person-dies-of-bird-flu-since-virus-started-jumping-to-livestock/",
-              "published": "2026-11-02T21:21:43Z"
+              "title": "FDA grants uniQure’s Huntington’s gene therapy priority review, teeing up ‘defining milestone’",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/fda-grants-uniqure-review-its-huntingtons-drug-approval-would-be-defining-milestone",
+              "published": null
             },
             {
-              "title_zh": "Gilead 揭露兩項 CAR-T 細胞療法試驗遭部分臨床暫停",
-              "summary_zh": "Gilead Sciences 在 10 月 29 日第三季財報電話會議上宣布，其 CAR-T 細胞療法 KITE-753 用於瀰漫性大 B 細胞淋巴瘤（DLBCL）的兩項研究遭部分臨床暫停。",
-              "relevance": "細胞療法臨床風險——生技主題",
-              "title": "Googling \"Zelda\" today offers a glimpse of how search worked in 1998",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gaming/2026/11/googles-legend-of-zelda-easter-egg-transports-you-back-to-1998/",
-              "published": "2026-11-02T19:52:23Z"
+              "title_zh": "Gilead 揭露兩項 CAR-T 細胞療法試驗部分臨床暫停",
+              "summary_zh": "Gilead Sciences 在 10 月 29 日第三季財報電話會議上宣布，已對 CAR-T 細胞療法 KITE-753 治療瀰漫性大 B 細胞淋巴瘤（DLBCL）的兩項研究實施部分臨床暫停。",
+              "relevance": "細胞療法臨床安全性監管——生技主題",
+              "title": "Gilead reveals partial clinical hold on 2 CAR-T cell therapy trials",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/gileads-kite-reveals-partial-clinical-hold-2-car-t-cell-therapy-trials",
+              "published": null
             },
             {
-              "title_zh": "Eli Lilly 在藥物未達預期後終止 mevidalen 的第二期阿茲海默症計畫",
-              "summary_zh": "Eli Lilly 已放棄 mevidalen 的第二期阿茲海默症臨床計畫，表示該藥未達公司內部的高標準；同時該藥廠正透過數十億美元併購擴張神經科學管線。",
+              "title_zh": "藥效不如預期，Eli Lilly 中止阿茲海默症二期計畫",
+              "summary_zh": "Eli Lilly 放棄 mevidalen 治療阿茲海默症的二期臨床計畫，為該實驗藥物再添挫折；同期該公司正透過數十億美元規模的併購擴張神經科學管線。",
               "relevance": "神經退化疾病藥物開發——生技主題",
-              "title": "Most of our measures of a key cognitive process don't agree",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/science/2026/11/most-of-our-measures-of-a-key-cognitive-process-dont-agree/",
-              "published": "2026-11-02T19:13:26Z"
-            },
+              "title": "Eli Lilly scraps phase 2 Alzheimer's program after drug falls short of expectations",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/lilly-scraps-ph-2-alzheimers-disease-drug-it-did-not-meet-high-internal-bar",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
             {
-              "title_zh": "自禽流感跨物種傳入家畜以來第三例人類死亡",
-              "summary_zh": "報導指出，自該病毒開始傳入家畜以來已有第三人因禽流感死亡，病毒持續擴散，但整體威脅程度仍被評為低。",
-              "relevance": "病原體監測與公共衛生資料——生技主題",
-              "title": "Coming in 2027: Apple’s $1,000 home robot for FaceTime and switching on lights",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/",
-              "published": "2026-11-02T18:32:21Z"
+              "title_zh": "人口老化與製造業優勢不再，IMF：明年日本 GDP 跌至全球第六",
+              "summary_zh": "根據 IMF 最新《世界經濟展望》，日本經濟排名將持續下滑，明年 GDP 將跌至全球第六位。",
+              "relevance": "主要經濟體排名變化——總經背景",
+              "title": "人口老化與製造業優勢不再，IMF：明年日本 GDP 跌至全球第六",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/03/with-an-aging-population-and-the-erosion-of-its-manufacturing-edge-the-imf-forecasts-that-the-countrys-gdp-will-fall-to-sixth-place-globally-next-year/",
+              "published": "2026-11-03T03:01:13Z"
             }
           ]
         }
