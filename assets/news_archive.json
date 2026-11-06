@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-06",
-      "generated_utc": "2026-11-05T23:36:32Z",
+      "generated_utc": "2026-11-06T01:50:35Z",
       "status": "published",
       "model": "claude-opus-5",
       "candidates": 70,
@@ -21,7 +21,7 @@
           "ok": true,
           "error": null,
           "entries": 20,
-          "kept": 17,
+          "kept": 16,
           "excluded": 0
         },
         {
@@ -79,9 +79,18 @@
           "name": "AI 基礎設施",
           "items": [
             {
-              "title_zh": "Meta 警告:選舉後對資料中心的反彈可能使 AI 擴張更困難",
-              "summary_zh": "Meta 表示,針對資料中心日益升高的政治反對聲浪,可能威脅未來的 AI 投資。報導指出各地社群正對大型基礎設施專案提出抗議。",
-              "relevance": "資料中心選址與擴建阻力——AI 基礎設施擴張約束主題",
+              "title_zh": "OpenAI 在資料中心專案上退出保密協議作法",
+              "summary_zh": "OpenAI 宣布對其資料中心專案所在社區做出新承諾,包括不再與公職人員簽署保密協議(NDA)。此前期中選舉中選民表達了對資料中心擴張的反對。",
+              "relevance": "資料中心擴建與在地許可阻力——AI 基礎設施建置主題",
+              "title": "OpenAI is stepping back from NDAs for data center projects",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+              "published": "2026-11-06T00:37:56Z"
+            },
+            {
+              "title_zh": "Meta 警告:選舉對資料中心的反彈可能讓 AI 擴張更困難",
+              "summary_zh": "Meta 表示,社區對大型基礎設施專案的反對聲浪升高,針對資料中心的政治阻力可能影響未來的 AI 投資。",
+              "relevance": "資料中心選址與擴張限制——AI 基礎設施建置主題",
               "title": "Meta warns that election backlash against data centers could make AI expansion harder",
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
@@ -89,54 +98,30 @@
             },
             {
               "title_zh": "The Download:德州脆弱的 AI 榮景與能源政策轉向",
-              "summary_zh": "MIT Technology Review 報導指出,德州是美國成長最快的資料中心市場,也是大型科技公司建設潮的核心地帶,但該地的 AI 資料中心榮景前景出現變數。",
-              "relevance": "資料中心電力與選址——AI 基礎設施供給側主題",
+              "summary_zh": "MIT Technology Review 報導指出,德州是美國成長最快的資料中心市場,也是大型科技公司建置的核心地帶,並探討其 AI 資料中心建設前景的變化。",
+              "relevance": "資料中心電力供給與區域集中度——AI 基礎設施建置主題",
               "title": "The Download: Texas’s fragile AI boom and energy policy shifts",
               "source": "MIT Technology Review",
               "url": "https://www.technologyreview.com/2026/11/05/1144908/the-download-texas-fragile-ai-boom-us-energy-policy/",
               "published": "2026-11-05T13:10:00Z"
             },
             {
-              "title_zh": "Dropbox 以 3.5 億美元收購 Tigris Data 以強化其 AI 基礎設施",
-              "summary_zh": "Dropbox 宣布以 3.5 億美元收購 Tigris Data。該交易預計支援 DBX Agent Cloud 的開發,這是一個面向建構 AI 模型與代理的開發者的新儲存平台。",
-              "relevance": "AI 儲存與代理平台整合——AI 基礎設施堆疊主題",
+              "title_zh": "Dropbox 以 3.5 億美元收購 Tigris Data 以強化 AI 基礎設施",
+              "summary_zh": "Dropbox 宣布收購 Tigris Data,交易金額 3.5 億美元。該交易預期將支援 DBX Agent Cloud 的開發,這是一個針對建置 AI 模型與代理的開發者所設計的儲存平台。",
+              "relevance": "AI 儲存與代理運算平台——AI 基礎設施堆疊主題",
               "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
               "published": "2026-11-05T15:19:05Z"
             },
             {
-              "title_zh": "OpenAI 發布新的資安模型",
-              "summary_zh": "OpenAI 推出最新的網路安全模型,此時各 AI 實驗室在保護數位基礎設施方面的工作正受到外界檢視。",
-              "relevance": "模型能力與基礎設施安全——AI 基礎設施主題",
-              "title": "OpenAI released a new cybersecurity model. Is that enough?",
+              "title_zh": "Axiom Math 想把 AI 垃圾內容擋在數學之外",
+              "summary_zh": "新創公司 Axiom Math 聚焦於形式化驗證,其 AI 代理已完成對 Stacks Project 的形式驗證,該專案是數學領域最大的函式庫之一。",
+              "relevance": "AI 推理與形式化驗證——模型可靠性研究主題",
+              "title": "Axiom Math wants to keep AI slop out of mathematics",
               "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
-              "published": "2026-11-05T19:06:12Z"
-            },
-            {
-              "title_zh": "OpenAI 總裁 Greg Brockman 表示公司可能在 2027 年做好 IPO 準備",
-              "summary_zh": "Brockman 於週三華爾街日報科技會議上發言,稱 OpenAI 最快可能在 2027 年具備 IPO 條件,並強調公司在企業市場的進展,該市場的競爭對手 Anthropic 已先行布局。",
-              "relevance": "AI 實驗室資本結構與募資——AI 基礎設施資金面主題",
-              "title": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
-              "published": "2026-11-05T18:02:27Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "任天堂最大的 ROM 晶片供應商退出該業務",
-              "summary_zh": "Ars Technica 報導,任天堂主要的 ROM 卡匣晶片供應商將退出此業務,並探討這對 Switch 實體遊戲成本可能造成的影響,背景為當前的記憶體短缺。",
-              "relevance": "記憶體產能排擠與供給緊縮——記憶體約束主題",
-              "title": "Nintendo's biggest ROM chip supplier is bowing out of the business",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gaming/2026/11/the-tech-memory-shortage-comes-for-nintendos-cartridge-supply-chain/",
-              "published": "2026-11-04T22:47:51Z"
+              "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
+              "published": "2026-11-05T16:16:45Z"
             }
           ]
         },
@@ -145,9 +130,9 @@
           "name": "機器人與自主",
           "items": [
             {
-              "title_zh": "Agility Robotics 於 Nasdaq 掛牌,引發對人形機器人市場的檢視",
-              "summary_zh": "美國人形機器人部署的領先業者 Agility Robotics 在 Nasdaq 公開上市。此次掛牌使外界對人形機器人市場展開審視。",
-              "relevance": "人形機器人商業化與資本市場——機器人與自主系統主題",
+              "title_zh": "Agility Robotics 登上那斯達克,人形機器人市場受檢視",
+              "summary_zh": "美國部署人形機器人的領先業者 Agility Robotics 在那斯達克掛牌上市,其公開發行讓外界開始檢視人形機器人市場。",
+              "relevance": "人形機器人商業化與部署規模——機器人與自主系統主題",
               "title": "Agility Robotics' Nasdaq debut invites scrutiny of humanoid robot market",
               "source": "Ars Technica",
               "url": "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/",
@@ -155,26 +140,26 @@
             },
             {
               "title_zh": "Serve Robotics 推出新業務,要成為機器人界的 AWS",
-              "summary_zh": "Serve Robotics 在公布第三季財報的同時宣布推出名為 Physical AI Services 的新業務線,向客戶提供其連線與資料工具。",
-              "relevance": "實體 AI 平台化服務——機器人與自主系統基礎設施主題",
+              "summary_zh": "Serve Robotics 在第三季財報中同時宣布推出名為 Physical AI Services 的新業務線,向客戶提供其連線與資料工具。",
+              "relevance": "機器人基礎設施即服務——實體 AI 與自主系統主題",
               "title": "Serve Robotics launches new business to become the AWS for robots",
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/11/05/serve-robotics-launches-new-business-to-become-the-aws-for-robots/",
               "published": "2026-11-05T21:15:00Z"
             },
             {
-              "title_zh": "Zipline 估值達 215 億美元,Walmart 擴大無人機配送押注",
-              "summary_zh": "Zipline 完成 15 億美元募資,估值達 215 億美元,並擴大與 Walmart 的合作。",
-              "relevance": "自主配送系統規模化——自主系統部署主題",
+              "title_zh": "Zipline 估值達 215 億美元,Walmart 加碼無人機配送",
+              "summary_zh": "Zipline 募得 15 億美元,估值達 215 億美元,並擴大與 Walmart 的無人機配送合作。",
+              "relevance": "自主飛行載具商業部署——自主系統主題",
               "title": "Zipline hits $21.5B valuation as Walmart expands bet on drone delivery",
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/11/05/zipline-hits-21-5b-valuation-as-walmart-expands-bet-on-drone-delivery/",
               "published": "2026-11-05T15:40:34Z"
             },
             {
-              "title_zh": "Harbinger 擴展至國防領域後募得 2.4 億美元",
-              "summary_zh": "這家洛杉磯新創累計募資已超過 6.5 億美元,業務涵蓋電動卡車、緊急應變車輛,以及一套供軍方使用的無人駕駛平台。",
-              "relevance": "無人駕駛平台與國防應用——自主系統主題",
+              "title_zh": "Harbinger 拓展至國防領域後募得 2.4 億美元",
+              "summary_zh": "位於洛杉磯的 Harbinger 累計募資已超過 6.5 億美元,正在開發電動卡車、緊急應變車輛,以及供軍方使用的無人駕駛平台。",
+              "relevance": "無人駕駛平台與國防自主系統——自主系統主題",
               "title": "Harbinger raises $240M after expanding into defense",
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/11/05/harbinger-raises-240m-after-expanding-into-defense/",
@@ -187,36 +172,36 @@
           "name": "生技×AI",
           "items": [
             {
-              "title_zh": "以消費型智慧手錶機會性偵測高血壓徵兆",
-              "summary_zh": "《Nature》於 11 月 5 日線上發表研究,提出以消費型智慧手錶機會性偵測高血壓徵兆的方法。",
-              "relevance": "穿戴式裝置感測與機器學習健康偵測——生技×AI 主題",
+              "title_zh": "以消費級智慧手錶機會性偵測高血壓徵兆",
+              "summary_zh": "《Nature》刊出研究,說明如何利用消費級智慧手錶機會性偵測高血壓的徵兆。",
+              "relevance": "穿戴式感測器與健康訊號推論——生技×AI 主題",
               "title": "Opportunistically Detecting Signs of Hypertension on a Consumer Smartwatch",
               "source": "Nature News",
               "url": "https://www.nature.com/articles/s41586-026-11336-3",
               "published": "2026-11-05T00:00:00Z"
             },
             {
-              "title_zh": "Charles River 與 Ipsen 合作,在毒理學研究中採用虛擬對照組",
-              "summary_zh": "Charles River Laboratories 的虛擬對照組(VCG)資料庫,將用於法國生技製藥公司 Ipsen 執行的一項毒理學研究。",
-              "relevance": "計算模型取代實驗對照組——生技×AI 臨床前應用主題",
+              "title_zh": "nPhase 募得 3,000 萬美元擴展 AI 原生臨床資料平台",
+              "summary_zh": "臨床研究公司 nPhase 完成 3,000 萬美元 D 輪融資,用於擴展其 AI 原生的臨床資料平台。",
+              "relevance": "臨床試驗資料的 AI 化——生技×AI 主題",
+              "title": "nPhase rakes in $30M to expand AI-native clinical data platform",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/cro/nphase-rakes-30m-expand-ai-native-clinical-data-platform",
+              "published": null
+            },
+            {
+              "title_zh": "Charles River 與 Ipsen 合作在毒理學研究中採用虛擬對照組",
+              "summary_zh": "Charles River Laboratories 的虛擬對照組(VCG)資料庫將用於法國生技藥廠 Ipsen 執行的毒理學研究。",
+              "relevance": "計算模型取代實驗對照組——生技×AI 主題",
               "title": "Charles River teams up with Ipsen to use virtual control groups in toxicology studies",
               "source": "Fierce Biotech",
               "url": "https://www.fiercebiotech.com/cro/charles-river-teams-ipsen-use-virtual-control-groups-toxicology-studies",
               "published": null
             },
             {
-              "title_zh": "Axiom Math 要把 AI 垃圾內容擋在數學之外",
-              "summary_zh": "在 AI 產出大量未經檢核的證明湧入數學領域之際,Axiom Math 押注於形式化驗證。該新創的 AI 代理已完成對該領域最大型函式庫之一 Stacks Project 的形式化驗證。",
-              "relevance": "AI 自動化形式驗證——AI 科學推理與驗證主題",
-              "title": "Axiom Math wants to keep AI slop out of mathematics",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
-              "published": "2026-11-05T16:16:45Z"
-            },
-            {
-              "title_zh": "傳 AstraZeneca 出價 100 億美元收購 Rhythm,分析師議論競標戰",
-              "summary_zh": "據《華爾街日報》報導,AstraZeneca 對罕見肥胖疾病業者 Rhythm Pharmaceuticals 提出約 100 億美元的收購提案。至少三組分析師團隊認為可能出現競標戰,且 Rhythm 不太可能接受目前的出價。",
-              "relevance": "生技併購與資本流向——生技產業結構主題",
+              "title_zh": "傳 AstraZeneca 出價 100 億美元收購 Rhythm,分析師談論競標戰",
+              "summary_zh": "據《華爾街日報》報導,AstraZeneca 已對罕見肥胖疾病藥廠 Rhythm Pharmaceuticals 提出約 100 億美元的收購提議。至少三組分析師認為可能出現競標戰,且 Rhythm 不太可能接受目前的出價。",
+              "relevance": "生技併購資金流向——生技產業結構主題",
               "title": "AstraZeneca said to offer $10B to acquire Rhythm, analysts whisper of a bidding war",
               "source": "Fierce Biotech",
               "url": "https://www.fiercebiotech.com/pharma/astrazeneca-offers-10b-acquire-rhythm-analysts-whisper-bidding-war",
@@ -230,17 +215,17 @@
           "items": [
             {
               "title_zh": "新法案可能改變美國建設能源基礎設施的方式",
-              "summary_zh": "一項旨在削減繁文縟節的大規模立法可能加速美國能源基礎設施的建設。參議院預計於 11 月 9 日就《Bipartisan American Affordability and Jobs Act》(BAAJA)進行表決。",
-              "relevance": "能源許可改革與電力供給——AI 資料中心電力約束的總體背景",
+              "summary_zh": "美國參議院預定於 11 月 9 日表決《Bipartisan American Affordability and Jobs Act》(BAAJA),這項旨在削減繁瑣程序的立法可能加速美國能源基礎設施的建置。",
+              "relevance": "電力與併網許可改革——AI 資料中心能源約束的總經背景",
               "title": "A new bill could change how the US builds energy infrastructure",
               "source": "MIT Technology Review",
               "url": "https://www.technologyreview.com/2026/11/05/1148062/permitting-reform/",
               "published": "2026-11-05T10:00:00Z"
             },
             {
-              "title_zh": "州議會選舉勝利讓民主黨取得推動潔淨能源的新權力",
-              "summary_zh": "民主黨抹除了共和黨在州層級的三權全控優勢,並在能源政策上取得新的主導權。",
-              "relevance": "州級能源政策轉向——資料中心電力供給的政策背景",
+              "title_zh": "州議會席次斬獲讓民主黨握有推動潔淨能源的新權力",
+              "summary_zh": "民主黨在期中選舉中抹平共和黨在州層級「三連勝」的優勢,取得對能源政策的新主導權。",
+              "relevance": "州級能源政策走向——資料中心電力供給的總經背景",
               "title": "Statehouse wins give Democrats new power to push clean energy",
               "source": "Ars Technica",
               "url": "https://arstechnica.com/science/2026/11/statehouse-wins-give-democrats-new-power-to-push-clean-energy/",
