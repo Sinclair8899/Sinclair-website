@@ -2,6 +2,251 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-11",
+      "generated_utc": "2026-11-11T01:30:01Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 18,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 3
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 12,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Google 以兩款新專用晶片擴大 AI 硬體產品線",
+              "summary_zh": "Google 推出兩款新的張量處理器(TPU),將其晶片產品線擴展至更多使用情境,包括機密模型訓練與更大的記憶體容量。",
+              "relevance": "自研加速器與記憶體容量——AI 基礎設施算力供給主題",
+              "title": "Google broadens its AI hardware portfolio with two new specialized chips",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+              "published": "2026-11-10T15:54:08Z"
+            },
+            {
+              "title_zh": "烏克蘭光纖無人機供應受 AI 資料中心需求擠壓",
+              "summary_zh": "報導指出,烏克蘭在取得中國光纖供給上,同時面臨來自俄羅斯與 AI 資料中心需求的競爭。",
+              "relevance": "光纖供應鏈——資料中心建設的實體瓶頸主題",
+              "title": "Ukraine’s fiber-optic drones get squeezed by AI data center demand",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/11/ukraines-fiber-optic-drones-get-squeezed-by-ai-data-center-demand/",
+              "published": "2026-11-10T12:15:32Z"
+            },
+            {
+              "title_zh": "X-energy 取得建造首批小型模組化核反應爐的許可",
+              "summary_zh": "X-energy 獲得美國核能管理委員會(NRC)的建造許可,將在德州興建四座反應爐。",
+              "relevance": "電力供給與 SMR——資料中心能源約束主題",
+              "title": "X-energy gets green light to build its first small modular nuclear reactors",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/10/x-energy-gets-green-light-to-build-its-first-small-modular-nuclear-reactors/",
+              "published": "2026-11-10T20:43:55Z"
+            },
+            {
+              "title_zh": "紐約州 AI 安全法上路,OpenAI、Anthropic 面臨新監管",
+              "summary_zh": "紐約州即將開始執行其 AI 安全法,要求 OpenAI、Anthropic 等主要開發商登記、揭露安全作法並通報重大事件,違者將面臨罰款。",
+              "relevance": "前沿模型監管——AI 基礎設施政策環境主題",
+              "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+              "published": "2026-11-10T20:52:13Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "Nvidia 面臨黃仁勳問題——且無明顯接班人",
+              "summary_zh": "報導指出黃仁勳面臨董事會調查,投資人則對 Nvidia 缺乏明確接班安排感到憂慮。",
+              "relevance": "Nvidia 治理——AI 加速器供應鏈核心廠商主題",
+              "title": "Nvidia has a Jensen Huang problem—and no obvious successor",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/11/nvidia-has-a-jensen-huang-problem-and-no-obvious-successor/",
+              "published": "2026-11-10T14:53:05Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "DeepMind 發表 Gemini Robotics 2.5 與開放安全基準「ASIMOV-jailbreak」",
+              "summary_zh": "DeepMind 公布新版機器人模型 Gemini Robotics 2.5,在部分任務上的成功率最高可達前代的兩倍,並同時釋出開放安全基準 ASIMOV-jailbreak。",
+              "relevance": "VLA 機器人基礎模型與安全評測——機器人與自主系統主題",
+              "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+              "published": "2026-11-10T15:00:39Z"
+            },
+            {
+              "title_zh": "Ring 攝影機走向移動化:Amazon 推出 AI 保全無人機與機器人",
+              "summary_zh": "Amazon 發表由 AI 驅動的保全無人機與機器人產品 Ring Robotics,預計於 2026 年底至 2027 年初推出。",
+              "relevance": "家用自主移動平台——機器人商業化部署主題",
+              "title": "Ring cameras go mobile as Amazon debuts AI-powered security drone and robot",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/",
+              "published": "2026-11-10T22:35:01Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Beam 鐮刀型貧血療法數據,為與 Casgevy、Lyfgenia 對決鋪路",
+              "summary_zh": "Beam Therapeutics 公布鹼基編輯細胞療法 risto-cel 的 1/2 期試驗結果,顯示該療法在一整年內減少了鐮刀型紅血球疾病最痛苦的併發症;公司準備在年底前向 FDA 遞件。",
+              "relevance": "基因編輯療法臨床數據——生技療法平台主題",
+              "title": "Beam’s sickle cell therapy results tee up potential Casgevy, Lyfgenia showdown",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/beams-sickle-cell-therapy-risto-cels-phase-12-results-position-potential-casgevy-lyfgenia",
+              "published": null
+            },
+            {
+              "title_zh": "PSI 嘗試將 AI 驅動的科學發現變成一門生意",
+              "summary_zh": "PSI 使用一個尚未發表的 Anthropic 模型,回答了科學家追尋近二十年的量子運算基礎問題。",
+              "relevance": "AI 用於科學發現——AI×科學研究主題",
+              "title": "PSI is trying to make a business out of AI-driven scientific discovery",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
+              "published": "2026-11-10T19:03:52Z"
+            },
+            {
+              "title_zh": "Proximal Ventures 募得首支基金,投資將 AI 導入藥物開發的新創",
+              "summary_zh": "前 SignalFire 投資人 Sahir Raoof 募得 2750 萬美元的新基金,鎖定製藥領域的 AI 應用。",
+              "relevance": "AI 製藥資本流向——生技×AI 主題",
+              "title": "Proximal Ventures raises debut fund to back startups bringing AI to drug development",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/10/proximal-ventures-raises-debut-fund-to-back-startups-bringing-ai-to-drug-development/",
+              "published": "2026-11-10T20:47:05Z"
+            },
+            {
+              "title_zh": "Oura 以 6.25 億美元收購 AI 原生基層醫療新創 Counsel Health",
+              "summary_zh": "Oura 宣布以 6.25 億美元收購 Counsel Health,雙方自今年稍早已將其 AI 聊天機器人整合進 Oura app;該交易發生在 Oura 無限期推遲最高 22 億美元 IPO 數週之後。",
+              "relevance": "AI 醫療應用併購——生技×AI 商業化主題",
+              "title": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+              "published": "2026-11-10T19:23:34Z"
+            },
+            {
+              "title_zh": "Fierce Biotech 2026 募資追蹤:Oyster A 輪突破 6000 萬美元、Delix 募得 1 億美元",
+              "summary_zh": "Fierce Biotech 募資追蹤記錄生技公司 5000 萬美元以上的創投輪次,近期包括 Oyster 的 A 輪逾 6000 萬美元與 Delix 的 1 億美元。",
+              "relevance": "生技創投資金動能——產業融資環境主題",
+              "title": "Fierce Biotech Fundraising Tracker '26: Oyster cracks $60M in series A; Delix drums up $100M",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/fierce-biotech-fundraising-tracker-26",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Anthropic 七位創辦人將在 IPO 中各套現約 2.5 億美元",
+              "summary_zh": "Anthropic 七位共同創辦人計畫在 IPO 中各自出售相同股數,以定價區間中值計算每人可取得約 2.5 億美元現金,同時該群體仍保有公司控制權。",
+              "relevance": "前沿 AI 實驗室上市——AI 資本市場主題",
+              "title": "All 7 Anthropic founders will each cash out about $250M in IPO",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+              "published": "2026-11-10T19:57:52Z"
+            },
+            {
+              "title_zh": "「盲飛」:專家為何擔心財政部的中國生技投資管制會適得其反",
+              "summary_zh": "美國財政部的 COINS Act 提案意在保護美國生技免於中國競爭,但業內人士警告將造成反效果;律師正試圖釐清對跨境「合資」的模糊禁令範圍。",
+              "relevance": "跨境投資管制——生技供應鏈與地緣政治主題",
+              "title": "‘Flying blind’: Why experts fear Treasury’s China biotech investment crackdown will backfire",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/treasury-coins-act-proposal-pharmaceuticals-china-newco-legal-maze-biotech-vc-warnings",
+              "published": null
+            },
+            {
+              "title_zh": "加州投票通過撥款創紀錄的 84 億美元給醫學研究",
+              "summary_zh": "這筆專款指定用於免疫學研究,是美國公民投票授權的史上最大科學經費,但也招致批評。",
+              "relevance": "公共研究經費——生醫研究資金環境主題",
+              "title": "California votes to give record $8.4 billion to medical research",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03635-6",
+              "published": "2026-11-10T00:00:00Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_"
+      ]
+    },
+    {
       "date": "2026-11-10",
       "generated_utc": "2026-11-10T03:50:52Z",
       "status": "published",
