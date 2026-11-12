@@ -2,6 +2,277 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-12",
+      "generated_utc": "2026-11-12T02:33:08Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 11,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 16,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 2
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "傳 Nvidia 董事會準備撤換執行長黃仁勳，股價下跌",
+              "summary_zh": "據報導，Nvidia 董事會最快於週三晚間決定是否解除創辦人暨執行長黃仁勳的職務，他已任職 33 年；消息傳出後 Nvidia 股價下跌。此前有報導指黃仁勳涉及婚外情，其中一名女性被指為中國情報人員，FBI 正在調查，美國眾議院共和黨人也要求他出席閉門簡報。",
+              "relevance": "AI 晶片供應鏈領導層與治理變動——AI 基礎設施主題",
+              "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
+              "published": "2026-11-11T23:28:45Z"
+            },
+            {
+              "title_zh": "黃仁勳捲外遇醜聞，Nvidia 遭罕見降評、目標價砍 60%",
+              "summary_zh": "在黃仁勳外遇風波、AI 資本支出成長前景與美國晶片出口管制不確定性之下，Baird 與 Morgan Stanley 對 Nvidia 轉趨保守，出現罕見降評並大幅下修目標價。",
+              "relevance": "AI 資本支出與出口管制預期——AI 基礎設施與半導體主題",
+              "title": "黃仁勳捲外遇醜聞  輝達遭罕見降評、目標價砍 60%",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/12/baird-morgan-stanley-sour-on-nvidia-as-ceo-affair-controversy-deepens/",
+              "published": "2026-11-12T01:55:29Z"
+            },
+            {
+              "title_zh": "台灣晶片大廠台積電將投資 10 億美元於 Anthropic 與 OpenAI",
+              "summary_zh": "台積電宣布將投資 10 億美元入股 Anthropic 與 OpenAI，被視為 AI 熱潮中循環式融資的最新案例，發生於 AI 交易動能轉趨動盪之際。",
+              "relevance": "晶圓代工與模型廠商資本連結——AI 基礎設施與半導體主題",
+              "title": "Taiwan’s chipmaking giant TSMC to invest $1B in Anthropic, OpenAI",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/",
+              "published": "2026-11-11T18:16:40Z"
+            },
+            {
+              "title_zh": "CoreWeave 轉向客戶預付款與較短期合約以支應 AI 成長",
+              "summary_zh": "根據第三季財報，CoreWeave 愈來愈多要求客戶預先付款、以特定合約為標的舉債，並開始考慮可能帶來更高價格的短期合約。",
+              "relevance": "AI 算力租賃商的融資結構——AI 基礎設施資本開支主題",
+              "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
+              "published": "2026-11-11T19:54:00Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "英國 Fractile 完成 7.2 億美元募資，躋身 AI 晶片競賽前段班",
+              "summary_zh": "專攻 AI 專用晶片的英國新創 Fractile 完成 7.2 億美元募資，成為該領域資金最充裕的業者之一。",
+              "relevance": "AI 推論專用晶片架構——半導體與記憶體約束主題",
+              "title": "With $720M round, Britain’s Fractile gets a leg up in the race for AI chips",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
+              "published": "2026-11-11T19:34:55Z"
+            },
+            {
+              "title_zh": "Sandisk 高毛利不拚降價搶市、長約加持，券商看多",
+              "summary_zh": "快閃記憶體模組供應商 Sandisk 股價近期大幅回檔，但華爾街分析師認為市場可能低估記憶體產業的景氣狀況。",
+              "relevance": "NAND／記憶體價格與長約結構——記憶體供給主題",
+              "title": "Sandisk 高毛利不拚降價搶市＋長約加持  券商唱多",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/12/sandisks-stock-just-staged-a-big-gain/",
+              "published": "2026-11-12T02:05:39Z"
+            },
+            {
+              "title_zh": "IBM 發表新一代量子晶片 Nighthawk r3，2027 年將挑戰千級量子位元",
+              "summary_zh": "IBM 發表新一代量子晶片 Nighthawk r3，設計目標為在 520 個量子位元上執行 1 萬次運算。該公司並計畫在 2027 年前串接兩顆 520 量子位元晶片，提供雙處理器量子系統的存取。",
+              "relevance": "先進運算晶片與封裝互連——半導體主題",
+              "title": "IBM 發表新一代量子晶片 Nighthawk r3，2027 年將挑戰突破千級量子位元",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/12/ibm-quantum-nighthawk-demonstrates-new-levels-of-speed-and-quality/",
+              "published": "2026-11-12T02:30:22Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Anduril 稱其首顆衛星可在軌道夜側觀測對手的機動",
+              "summary_zh": "Anduril 展示其首顆衛星搭載的夜視感測器，公司表示該感測器具備極大的動態範圍，可在全黑環境下追蹤衛星目標。",
+              "relevance": "自主感測與軌道監視系統——自主系統主題",
+              "title": "Anduril says its first satellite can see adversaries maneuver in orbital night",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/space/2026/11/anduril-demos-night-vision-sensor-for-tracking-satellites-in-darkness/",
+              "published": "2026-11-11T20:22:03Z"
+            },
+            {
+              "title_zh": "德國新創 Helsing 發表 AI 情報軟體 Clarity",
+              "summary_zh": "德國國防科技公司 Helsing 於 11 日在柏林正式發表新一代 AI 軍事軟體「Clarity」，鎖定與 Palantir 競爭並推動歐洲國防自主。",
+              "relevance": "國防自主系統的 AI 軟體堆疊——自主系統主題",
+              "title": "德國新創 Helsing 發表 AI 情報軟體 Clarity，挑戰 Palantir 霸權力拚歐洲國防自主",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/12/german-startup-ai-military-software-challenges-us-rivals/",
+              "published": "2026-11-12T02:20:42Z"
+            },
+            {
+              "title_zh": "Plurai 想用自駕車的方法讓 AI 代理人運作得更好",
+              "summary_zh": "Plurai 主張，如同以端到端模型訓練的自駕系統，AI 代理人同樣是在不可預測環境中運作的機率性系統，並以此方法改善代理人表現。",
+              "relevance": "自駕端到端訓練方法移轉至代理人系統——自主系統主題",
+              "title": "Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+              "published": "2026-11-11T14:00:00Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Google 的 AlphaGenome 2 聚焦疾病的細胞層級根源",
+              "summary_zh": "Google DeepMind 推出新 AI 模型 AlphaGenome 2，為 AlphaGenome 的後繼版本，用於解析 DNA 變化如何影響不同細胞類型，提供更細緻的視角。",
+              "relevance": "基因體序列模型——生技×AI 主題",
+              "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+              "published": "2026-11-11T15:00:00Z"
+            },
+            {
+              "title_zh": "Valo 與 Montai 合併，Flagship 旗下兩家 AI 生技整合為一",
+              "summary_zh": "由 Flagship Pioneering 創立的兩家 AI 藥物發現與開發公司 Valo Health 與 Montai Therapeutics 宣布合併，目標是推進 Montai 的早期與臨床前管線，並延續既有的多項大廠合作。",
+              "relevance": "AI 藥物發現平台整合——生技×AI 主題",
+              "title": "Valo and Montai become one as the Flagship AI-based biotechs tie the knot",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/flagship-ai-based-biotechs-valo-montai-tie-knot",
+              "published": null
+            },
+            {
+              "title_zh": "Deerfield Management 與 Amazon AWS 合作推動生命科學 AI",
+              "summary_zh": "Deerfield Management 宣布與 Amazon Web Services 合作，目標是加速其投資組合中 AI 原生醫療與生命科學公司的開發與規模化。",
+              "relevance": "雲端算力與生技 AI 結合——生技×AI 與 AI 基礎設施主題",
+              "title": "Deerfield Management Partners with Amazon’s AWS for AI drive in life sciences",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/deerfield-management-partners-amazons-aws-ai-drive-life-sciences",
+              "published": null
+            },
+            {
+              "title_zh": "Rivia 推出 AI 臨床試驗資料審查模組，Scancell 為早期採用者",
+              "summary_zh": "瑞士資料引擎公司 Rivia 推出新的 AI 資料審查模組，用於加速臨床資料清理，Scancell 為早期採用者。",
+              "relevance": "臨床試驗資料流程自動化——生技×AI 主題",
+              "title": "Rivia launches AI-powered clinical trial data review module, with Scancell as early adopter",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/cro/rivia-launches-ai-powered-automated-clinical-trial-data-review-platform",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "專家憂美國財政部對中國生技投資的管制將適得其反",
+              "summary_zh": "美國財政部的 COINS Act 提案旨在保護美國生技業免於中國競爭，但業內人士警告可能反效果；律師正試圖釐清對跨境「合資」的模糊禁令，並指出華府的國安優先範圍已擴大。",
+              "relevance": "跨境投資管制與國安審查——總體與政策主題",
+              "title": "‘Flying blind’: Why experts fear Treasury’s China biotech investment crackdown will backfire",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/treasury-coins-act-proposal-pharmaceuticals-china-newco-legal-maze-biotech-vc-warnings",
+              "published": null
+            },
+            {
+              "title_zh": "你擔心的那座資料中心，可能根本不會蓋起來",
+              "summary_zh": "報導指出資料中心熱潮面臨地方反對、許可延宕與電力取得等現實阻礙，而更基本的問題是：許多已宣布的專案可能從未真正動工。",
+              "relevance": "資料中心實體落地與電力約束——AI 基礎設施總體主題",
+              "title": "Why the data center you dread might never even be built",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
+              "published": "2026-11-11T20:15:15Z"
+            },
+            {
+              "title_zh": "OpenAI 單季營收傳首度突破 100 億美元",
+              "summary_zh": "據報導 OpenAI 單季營收達 100 億美元，較第二季的 67 億美元成長近 50%。",
+              "relevance": "AI 應用層營收規模——AI 資本循環主題",
+              "title": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
+              "published": "2026-11-11T16:14:44Z"
+            },
+            {
+              "title_zh": "AWS 執行長看衰太空資料中心，馬斯克以 1TW 能源藍圖回應",
+              "summary_zh": "AWS 執行長 Matt Garman 表示太空資料中心十年內難以落地，馬斯克則以 SpaceX 的 1TW 能源藍圖回應。",
+              "relevance": "AI 運算的能源與部署選址辯論——AI 基礎設施總體主題",
+              "title": "AWS 執行長看衰太空資料中心十年內難落地，馬斯克霸氣反擊曝 1TW 能源藍圖",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/12/amazon-dismisses-space-data-centers/",
+              "published": "2026-11-12T02:00:23Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
+      ]
+    },
+    {
       "date": "2026-11-11",
       "generated_utc": "2026-11-11T01:30:01Z",
       "status": "published",
