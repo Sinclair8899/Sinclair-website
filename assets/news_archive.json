@@ -2,6 +2,232 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-13",
+      "generated_utc": "2026-11-13T02:10:08Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 15,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 2
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Nvidia 執行長黃仁勳請辭，由 CFO 暫代領導",
+              "summary_zh": "Nvidia 宣布黃仁勳因外遇相關報導請辭執行長一職，公司目前由財務長 Colette Kress 暫代領導。報導指出外遇對象之一為涉嫌中國間諜人士，另一位為公司內部直屬下屬。",
+              "relevance": "GPU 供應商治理與領導層變動——AI 基礎設施供應鏈主題",
+              "title": "Donald Trump really wants Tim Cook to run Nvidia",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang",
+              "published": "2026-11-13T00:46:07Z"
+            },
+            {
+              "title_zh": "民主黨啟動 Nvidia 調查，致函抨擊黃仁勳與 Trump 的「計畫」",
+              "summary_zh": "美國國會民主黨人對 Nvidia 的中國銷售及其與 Trump 政府的往來展開調查，並發出措辭嚴厲的信函。這是間諜外遇消息曝光以來的第二起國會調查。",
+              "relevance": "晶片出口管制與中國銷售——AI 晶片地緣政治主題",
+              "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+              "published": "2026-11-12T22:42:51Z"
+            },
+            {
+              "title_zh": "黃仁勳同意出席國會作證",
+              "summary_zh": "在多位資深議員威脅發出傳票後，已卸任 Nvidia 執行長的黃仁勳同意於週三出席國會作證。",
+              "relevance": "AI 晶片政策監管——半導體出口管制主題",
+              "title": "Jensen Huang agrees to testify before Congress",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/",
+              "published": "2026-11-12T16:36:37Z"
+            },
+            {
+              "title_zh": "Nebius 以 400 億美元支出計畫測試 neocloud 模式",
+              "summary_zh": "Nebius 計畫透過客戶預付款與貸款支應 400 億美元的 AI 基礎設施擴張。報導指出一座 Microsoft 資料中心的延誤，為其融資模式帶來疑問。",
+              "relevance": "AI 資料中心資本支出與融資結構——AI 基礎設施主題",
+              "title": "Nebius tests the neocloud playbook with $40 billion in planned spending",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+              "published": "2026-11-12T21:27:10Z"
+            },
+            {
+              "title_zh": "United Airlines 以資安風險為由封鎖 AI agent 訂票",
+              "summary_zh": "United Airlines 表示將不允許顧客使用 AI agent 訂購機票與管理訂位，理由為網路安全風險。",
+              "relevance": "AI agent 對外部系統的存取限制——agent 基礎設施主題",
+              "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
+              "published": "2026-11-12T17:17:58Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "Nvidia 私下確認可追蹤晶片以打擊走私，業界公開場合則質疑可行性",
+              "summary_zh": "伊利諾州眾議員 Bill Foster 向 MIT Technology Review 表示，Nvidia 代表告知他，《Chip Security Act》要求的反走私措施在技術上可行，而同時某產業團體公開宣稱這些措施「可能不可行」。",
+              "relevance": "晶片追蹤與出口管制技術——半導體供應鏈管制主題",
+              "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+              "published": "2026-11-12T20:16:24Z"
+            },
+            {
+              "title_zh": "AI 記憶體出貨兩個月救援，美而快第三季每股大賺 1.53 元、訂單看到 2027 年",
+              "summary_zh": "美而快國際公告第三季合併營收 9.04 億元，季增 68.67%、年增 28.39%。公司表示訂單能見度已延伸至 2027 年。",
+              "relevance": "記憶體模組需求與訂單能見度——HBM 與記憶體供給主題",
+              "title": "AI 記憶體出貨 2 個月神救援！美而快第三季大賺 1.53 元訂單至 2027 年",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/13/v-color/",
+              "published": "2026-11-13T02:09:56Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "FAA 將 AI 輔助建議擴大至全美空域以管理空中交通壅塞",
+              "summary_zh": "美國聯邦航空總署把用於管理空中交通壅塞的 AI 建議工具擴大適用至全美空域。航空公司對該工具給予正面評價，航管員工會則未參與其中。",
+              "relevance": "AI 於安全關鍵自主系統的部署——自主系統主題",
+              "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+              "published": "2026-11-12T22:28:47Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Valo 與 Montai 合併，Flagship 旗下兩家 AI 生技公司結合",
+              "summary_zh": "Flagship Pioneering 創立的兩家 AI 藥物發現與開發公司 Valo Health 與 Montai Therapeutics 宣布合併，目標為推進 Montai 的早期與臨床前管線，並延續既有的大型合作案。",
+              "relevance": "AI 驅動藥物發現平台整併——生技×AI 主題",
+              "title": "Valo and Montai become one as the Flagship AI-based biotechs tie the knot",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/flagship-ai-based-biotechs-valo-montai-tie-knot",
+              "published": null
+            },
+            {
+              "title_zh": "Rivia 推出 AI 臨床試驗資料審查模組，Scancell 為早期採用者",
+              "summary_zh": "瑞士資料引擎公司 Rivia 推出新的 AI 資料審查模組，用於加速臨床資料清理，Scancell 為早期採用客戶。",
+              "relevance": "AI 應用於臨床試驗資料流程——生技×AI 主題",
+              "title": "Rivia launches AI-powered clinical trial data review module, with Scancell as early adopter",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/cro/rivia-launches-ai-powered-automated-clinical-trial-data-review-platform",
+              "published": null
+            },
+            {
+              "title_zh": "Oura 將以 6.25 億美元收購 AI 虛擬初級照護夥伴 Counsel Health",
+              "summary_zh": "Oura 宣布以 6.25 億美元收購 Counsel Health。兩家公司自 6 月起合作，近期並曾公布共同參與 CMS 十年期 ACCESS Model 的計畫。",
+              "relevance": "穿戴式生理資料與 AI 醫療服務整合——生技×AI 主題",
+              "title": "Oura to acquire AI virtual primary care partner Counsel Health for $625M",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/digital-health/oura-acquire-ai-virtual-primary-care-partner-counsel-health-625m",
+              "published": null
+            },
+            {
+              "title_zh": "Beam 鐮刀型貧血療法結果，鋪陳與 Casgevy、Lyfgenia 的對決",
+              "summary_zh": "Beam Therapeutics 公布鹼基編輯細胞療法 risto-cel 的 1/2 期研究結果，顯示該療法在整整一年內減少了該血液疾病最疼痛的併發症。公司預計在年底前向 FDA 遞件。",
+              "relevance": "基因編輯療法臨床數據——生技主題",
+              "title": "Beam’s sickle cell therapy results tee up potential Casgevy, Lyfgenia showdown",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/beams-sickle-cell-therapy-risto-cels-phase-12-results-position-potential-casgevy-lyfgenia",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "SoftBank 十億美元級虧損，可能為 AI 天然氣發電野心設下上限",
+              "summary_zh": "SoftBank 因預訂供 AI 資料中心使用的天然氣渦輪機而虧損逾 30 億美元。報導分析此一虧損對電力市場的意涵。",
+              "relevance": "資料中心電力供給與能源成本——AI 基礎設施電力約束主題",
+              "title": "SoftBank’s billion-dollar loss may have put a cap on AI’s natural gas ambitions",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
+              "published": "2026-11-12T17:00:52Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
+      ]
+    },
+    {
       "date": "2026-11-12",
       "generated_utc": "2026-11-12T02:33:08Z",
       "status": "published",
@@ -1466,244 +1692,6 @@
               "source": "Nature News",
               "url": "https://www.nature.com/articles/d41586-026-03622-x",
               "published": "2026-11-06T00:00:00Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_"
-      ]
-    },
-    {
-      "date": "2026-11-06",
-      "generated_utc": "2026-11-06T01:50:35Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 16,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 2,
-          "excluded": 2
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 2,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 3,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "OpenAI 在資料中心專案上退出保密協議作法",
-              "summary_zh": "OpenAI 宣布對其資料中心專案所在社區做出新承諾,包括不再與公職人員簽署保密協議(NDA)。此前期中選舉中選民表達了對資料中心擴張的反對。",
-              "relevance": "資料中心擴建與在地許可阻力——AI 基礎設施建置主題",
-              "title": "OpenAI is stepping back from NDAs for data center projects",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
-              "published": "2026-11-06T00:37:56Z"
-            },
-            {
-              "title_zh": "Meta 警告:選舉對資料中心的反彈可能讓 AI 擴張更困難",
-              "summary_zh": "Meta 表示,社區對大型基礎設施專案的反對聲浪升高,針對資料中心的政治阻力可能影響未來的 AI 投資。",
-              "relevance": "資料中心選址與擴張限制——AI 基礎設施建置主題",
-              "title": "Meta warns that election backlash against data centers could make AI expansion harder",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
-              "published": "2026-11-05T19:12:39Z"
-            },
-            {
-              "title_zh": "The Download:德州脆弱的 AI 榮景與能源政策轉向",
-              "summary_zh": "MIT Technology Review 報導指出,德州是美國成長最快的資料中心市場,也是大型科技公司建置的核心地帶,並探討其 AI 資料中心建設前景的變化。",
-              "relevance": "資料中心電力供給與區域集中度——AI 基礎設施建置主題",
-              "title": "The Download: Texas’s fragile AI boom and energy policy shifts",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/11/05/1144908/the-download-texas-fragile-ai-boom-us-energy-policy/",
-              "published": "2026-11-05T13:10:00Z"
-            },
-            {
-              "title_zh": "Dropbox 以 3.5 億美元收購 Tigris Data 以強化 AI 基礎設施",
-              "summary_zh": "Dropbox 宣布收購 Tigris Data,交易金額 3.5 億美元。該交易預期將支援 DBX Agent Cloud 的開發,這是一個針對建置 AI 模型與代理的開發者所設計的儲存平台。",
-              "relevance": "AI 儲存與代理運算平台——AI 基礎設施堆疊主題",
-              "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
-              "published": "2026-11-05T15:19:05Z"
-            },
-            {
-              "title_zh": "Axiom Math 想把 AI 垃圾內容擋在數學之外",
-              "summary_zh": "新創公司 Axiom Math 聚焦於形式化驗證,其 AI 代理已完成對 Stacks Project 的形式驗證,該專案是數學領域最大的函式庫之一。",
-              "relevance": "AI 推理與形式化驗證——模型可靠性研究主題",
-              "title": "Axiom Math wants to keep AI slop out of mathematics",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
-              "published": "2026-11-05T16:16:45Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Agility Robotics 登上那斯達克,人形機器人市場受檢視",
-              "summary_zh": "美國部署人形機器人的領先業者 Agility Robotics 在那斯達克掛牌上市,其公開發行讓外界開始檢視人形機器人市場。",
-              "relevance": "人形機器人商業化與部署規模——機器人與自主系統主題",
-              "title": "Agility Robotics' Nasdaq debut invites scrutiny of humanoid robot market",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/",
-              "published": "2026-11-05T12:00:41Z"
-            },
-            {
-              "title_zh": "Serve Robotics 推出新業務,要成為機器人界的 AWS",
-              "summary_zh": "Serve Robotics 在第三季財報中同時宣布推出名為 Physical AI Services 的新業務線,向客戶提供其連線與資料工具。",
-              "relevance": "機器人基礎設施即服務——實體 AI 與自主系統主題",
-              "title": "Serve Robotics launches new business to become the AWS for robots",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/05/serve-robotics-launches-new-business-to-become-the-aws-for-robots/",
-              "published": "2026-11-05T21:15:00Z"
-            },
-            {
-              "title_zh": "Zipline 估值達 215 億美元,Walmart 加碼無人機配送",
-              "summary_zh": "Zipline 募得 15 億美元,估值達 215 億美元,並擴大與 Walmart 的無人機配送合作。",
-              "relevance": "自主飛行載具商業部署——自主系統主題",
-              "title": "Zipline hits $21.5B valuation as Walmart expands bet on drone delivery",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/05/zipline-hits-21-5b-valuation-as-walmart-expands-bet-on-drone-delivery/",
-              "published": "2026-11-05T15:40:34Z"
-            },
-            {
-              "title_zh": "Harbinger 拓展至國防領域後募得 2.4 億美元",
-              "summary_zh": "位於洛杉磯的 Harbinger 累計募資已超過 6.5 億美元,正在開發電動卡車、緊急應變車輛,以及供軍方使用的無人駕駛平台。",
-              "relevance": "無人駕駛平台與國防自主系統——自主系統主題",
-              "title": "Harbinger raises $240M after expanding into defense",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/05/harbinger-raises-240m-after-expanding-into-defense/",
-              "published": "2026-11-05T17:52:44Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "以消費級智慧手錶機會性偵測高血壓徵兆",
-              "summary_zh": "《Nature》刊出研究,說明如何利用消費級智慧手錶機會性偵測高血壓的徵兆。",
-              "relevance": "穿戴式感測器與健康訊號推論——生技×AI 主題",
-              "title": "Opportunistically Detecting Signs of Hypertension on a Consumer Smartwatch",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-11336-3",
-              "published": "2026-11-05T00:00:00Z"
-            },
-            {
-              "title_zh": "nPhase 募得 3,000 萬美元擴展 AI 原生臨床資料平台",
-              "summary_zh": "臨床研究公司 nPhase 完成 3,000 萬美元 D 輪融資,用於擴展其 AI 原生的臨床資料平台。",
-              "relevance": "臨床試驗資料的 AI 化——生技×AI 主題",
-              "title": "nPhase rakes in $30M to expand AI-native clinical data platform",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/cro/nphase-rakes-30m-expand-ai-native-clinical-data-platform",
-              "published": null
-            },
-            {
-              "title_zh": "Charles River 與 Ipsen 合作在毒理學研究中採用虛擬對照組",
-              "summary_zh": "Charles River Laboratories 的虛擬對照組(VCG)資料庫將用於法國生技藥廠 Ipsen 執行的毒理學研究。",
-              "relevance": "計算模型取代實驗對照組——生技×AI 主題",
-              "title": "Charles River teams up with Ipsen to use virtual control groups in toxicology studies",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/cro/charles-river-teams-ipsen-use-virtual-control-groups-toxicology-studies",
-              "published": null
-            },
-            {
-              "title_zh": "傳 AstraZeneca 出價 100 億美元收購 Rhythm,分析師談論競標戰",
-              "summary_zh": "據《華爾街日報》報導,AstraZeneca 已對罕見肥胖疾病藥廠 Rhythm Pharmaceuticals 提出約 100 億美元的收購提議。至少三組分析師認為可能出現競標戰,且 Rhythm 不太可能接受目前的出價。",
-              "relevance": "生技併購資金流向——生技產業結構主題",
-              "title": "AstraZeneca said to offer $10B to acquire Rhythm, analysts whisper of a bidding war",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/pharma/astrazeneca-offers-10b-acquire-rhythm-analysts-whisper-bidding-war",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "新法案可能改變美國建設能源基礎設施的方式",
-              "summary_zh": "美國參議院預定於 11 月 9 日表決《Bipartisan American Affordability and Jobs Act》(BAAJA),這項旨在削減繁瑣程序的立法可能加速美國能源基礎設施的建置。",
-              "relevance": "電力與併網許可改革——AI 資料中心能源約束的總經背景",
-              "title": "A new bill could change how the US builds energy infrastructure",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/11/05/1148062/permitting-reform/",
-              "published": "2026-11-05T10:00:00Z"
-            },
-            {
-              "title_zh": "州議會席次斬獲讓民主黨握有推動潔淨能源的新權力",
-              "summary_zh": "民主黨在期中選舉中抹平共和黨在州層級「三連勝」的優勢,取得對能源政策的新主導權。",
-              "relevance": "州級能源政策走向——資料中心電力供給的總經背景",
-              "title": "Statehouse wins give Democrats new power to push clean energy",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/science/2026/11/statehouse-wins-give-democrats-new-power-to-push-clean-energy/",
-              "published": "2026-11-05T15:59:51Z"
             }
           ]
         }
