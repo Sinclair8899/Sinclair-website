@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-13T13:26:06Z",
-  "date": "2026-11-13",
+  "generated_utc": "2026-11-14T12:31:44Z",
+  "date": "2026-11-14",
   "indicators": [
     {
       "key": "frontier_compute",
@@ -105,108 +105,6 @@
       "source_url": "https://epoch.ai/data/notable-ai-models"
     },
     {
-      "key": "us_electricity",
-      "title": "美國電力需求",
-      "subtitle": "US electricity sales to ultimate customers",
-      "headline": "2025 年 4,080 TWh",
-      "note": "近 5 年年均成長 1.88%,明顯脫離過去十餘年的持平型態;最近一年年增 2.63%。美國電力需求在過去約十五年幾乎零成長;它是否正在轉折向上,是《After Memory》中「電力成為下一個約束」那條分支最關鍵的實測變數——這是電表量到的事實,不是興建計畫的宣告。",
-      "series": [
-        {
-          "label": "2011",
-          "value": 3749.8,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2012",
-          "value": 3694.6,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2013",
-          "value": 3724.9,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2014",
-          "value": 3764.7,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2015",
-          "value": 3759.0,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2016",
-          "value": 3762.5,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2017",
-          "value": 3723.4,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2018",
-          "value": 3859.2,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2019",
-          "value": 3811.2,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2020",
-          "value": 3717.7,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2021",
-          "value": 3805.9,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2022",
-          "value": 3927.2,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2023",
-          "value": 3874.3,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2024",
-          "value": 3975.4,
-          "count": null,
-          "partial": false
-        },
-        {
-          "label": "2025",
-          "value": 4079.9,
-          "count": null,
-          "partial": false
-        }
-      ],
-      "value_unit": "TWh",
-      "source": "U.S. Energy Information Administration, Electricity Retail Sales (public domain)",
-      "source_url": "https://www.eia.gov/electricity/data.php"
-    },
-    {
       "key": "tw_leading",
       "title": "台灣景氣領先指標",
       "subtitle": "Taiwan NDC leading index (detrended)",
@@ -291,5 +189,7 @@
       "source_url": "https://data.gov.tw/dataset/6099"
     }
   ],
-  "warnings": []
+  "warnings": [
+    "EIA 電力資料取得失敗"
+  ]
 }
