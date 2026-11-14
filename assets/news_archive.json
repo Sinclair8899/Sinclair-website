@@ -2,6 +2,269 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-14",
+      "generated_utc": "2026-11-14T01:52:17Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 14,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 13,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 3
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 5,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "遭出口禁令管制的 Nvidia 晶片，是中國最強 AI 模型背後的推手",
+              "summary_zh": "新研究指出，中國最先進的 AI 模型是在受出口管制禁令的 Nvidia 晶片上訓練而成。",
+              "relevance": "算力出口管制與訓練用加速器取得——AI 基礎設施供應鏈主題",
+              "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+              "published": "2026-11-13T18:40:30Z"
+            },
+            {
+              "title_zh": "創投與創辦人表示：黃仁勳離任在 AI 新創募資上炸出大洞",
+              "summary_zh": "報導指出，Nvidia 在黃仁勳任內投入數百億美元於 AI 新創；在他卸任後，創辦人與創投預期支票金額縮小、估值下修。",
+              "relevance": "AI 基礎設施資本流向——算力投資週期主題",
+              "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+              "published": "2026-11-13T22:43:00Z"
+            },
+            {
+              "title_zh": "這家年輕新創想用海洋熱能驅動海上浮動資料中心，投資人已經上船",
+              "summary_zh": "新創 Drogue 計畫擷取海洋熱能，為浮動船體上的資料中心供電，首個原型預計在兩年內下水運作。",
+              "relevance": "資料中心電力與散熱——AI 基礎設施能源約束主題",
+              "title": "This young startup wants to power floating data centers with the ocean’s heat, and investors are already on board",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/",
+              "published": "2026-11-13T20:07:24Z"
+            },
+            {
+              "title_zh": "微軟最新一次郵件中斷演變為全球雲端危機",
+              "summary_zh": "微軟為期一天的服務中斷自 Outlook 與 Teams 開始，最終使公司大部分雲端服務離線；微軟表示正逐步恢復服務。微軟說明主因為伺服器健康檢查失敗，而非駭客攻擊。",
+              "relevance": "雲端服務可靠性——AI 基礎設施營運風險主題",
+              "title": "Microsoft’s latest email outage turned into a full-blown global cloud crisis",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/13/microsoft-latest-email-outage-turned-into-a-full-blown-global-cloud-crisis/",
+              "published": "2026-11-13T13:15:20Z"
+            },
+            {
+              "title_zh": "AI 代理新創 LangChain 估值達 30 億美元",
+              "summary_zh": "LangChain 宣稱其模型與平台無關的代理管理工具 LangSmith 目前擁有 7,000 家客戶。",
+              "relevance": "Agent 框架與工具鏈——AI 應用層基礎設施主題",
+              "title": "AI agent startup LangChain hits $3B valuation",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+              "published": "2026-11-13T19:37:57Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "黃仁勳風波延燒！黃樂參與創立的 Megaspeed 是中國取得輝達 GPU 的祕密管道？",
+              "summary_zh": "《財訊》報導，輝達執行長黃仁勳 8 日發信向員工坦承婚外情並致歉；外媒指出相關人士曾在新加坡任職，並點名其參與創立的 Megaspeed 與中國取得輝達 GPU 的管道有關。",
+              "relevance": "GPU 流向與出口管制——半導體供應鏈主題",
+              "title": "黃仁勳風波延燒！黃樂參與創立的 Megaspeed 是中國取得輝達 GPU 的祕密管道？",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/14/what-is-megaspeed/",
+              "published": "2026-11-14T01:00:34Z"
+            },
+            {
+              "title_zh": "黃仁勳在環境議題上同樣輕率",
+              "summary_zh": "報導指出，Nvidia 在黃仁勳任內成為 AI 榮景的引擎，同時帶動耗水與耗化學品的晶圓廠擴建、資料中心電網負擔，以及電子廢棄物問題。",
+              "relevance": "晶片製造的水電與化學品耗用——半導體產能擴張外部成本主題",
+              "title": "Jensen Huang was reckless with the environment, too",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/1033051/nvidia-jensen-huang-chips-gpu-supply-chain-climate-pollution",
+              "published": "2026-11-13T17:44:22Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Virtuoso Surgical 的膀胱病灶機器人系統取得 FDA 授權",
+              "summary_zh": "FDA 已對 Virtuoso Surgical 的 Virtuoso Endoscopy System 授予 De Novo 認可。",
+              "relevance": "手術機器人法規通過——醫療自主系統主題",
+              "title": "Virtuoso Surgical nabs FDA authorization for robotic bladder lesions system",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/virtuoso-surgical-nabs-fda-authorization-robotic-bladder-lesions-system",
+              "published": null
+            },
+            {
+              "title_zh": "FAA 將 AI 建議系統擴大至全美空域以管理空中交通壅塞",
+              "summary_zh": "FAA 將用於管理空中交通壅塞的 AI 建議工具擴大至整個美國空域；航空公司給予正面評價，但航管人員工會未參與該決策。",
+              "relevance": "大規模自主決策輔助部署——自主系統與人機協作主題",
+              "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+              "published": "2026-11-13T21:20:47Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "更多自主權、更少保密協議：腦植入試驗受試者提出新訴求",
+              "summary_zh": "報導指出，科學家數十年來開發可解碼腦部活動的植入裝置，用於控制機械肢體、電腦甚至「說話」；參與試驗的志願者提出希望獲得更多自主權與更少保密協議的要求。",
+              "relevance": "腦機介面臨床試驗治理——神經技術與自主系統主題",
+              "title": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/",
+              "published": "2026-11-13T10:00:00Z"
+            },
+            {
+              "title_zh": "這個 AI「技師」能窺看其他神經網路的黑箱內部",
+              "summary_zh": "《Nature》報導一套能針對其他神經網路進行定位與除錯的 AI 系統，可望改善人工智慧的安全性與實用性。",
+              "relevance": "可解釋性與模型除錯——AI 方法論主題",
+              "title": "This AI ‘mechanic’ can peer inside the black box of other neural networks",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03679-8",
+              "published": "2026-11-13T00:00:00Z"
+            },
+            {
+              "title_zh": "研究人員以 10 種蛋白質組合提升 ALS 偵測率",
+              "summary_zh": "研究團隊指出，神經退化疾病確診時往往已造成不可逆損害，因而開發血液中的 10 蛋白質面板，以更早辨識生物線索並追蹤病程。",
+              "relevance": "多體學生物標記與疾病早期偵測——生技×AI 主題",
+              "title": "‘They’ve been misdiagnosed for too long’: Researchers use 10-protein panel to improve ALS detection",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/researchers-identify-protein-panel-blood-improve-als-detection",
+              "published": null
+            },
+            {
+              "title_zh": "輝瑞向 Blackstone 取得最高 15 億美元資金，為 GLP-1 肥胖症上市鋪路",
+              "summary_zh": "輝瑞自 Blackstone Life Sciences 取得最高 15 億美元資金，用於開發其每月一次的 GLP-1 受體促效劑。",
+              "relevance": "代謝藥物研發資金——生技產業資本結構主題",
+              "title": "Pfizer taps Blackstone for up to $1.5B to pave path to GLP-1's obesity launch",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/pfizer-taps-blackstone-15b-pave-path-glp-1-launch",
+              "published": null
+            },
+            {
+              "title_zh": "FDA 似已暫停爭議性快速審查計畫與完整回覆信揭露",
+              "summary_zh": "據路透報導，FDA 已悄悄擱置「Commissioner's National Priority Voucher（CNPV）」試辦計畫；該機構同時似乎也暫停公布完整回覆信（CRL）。",
+              "relevance": "藥證審查制度變動——生技研發法規環境主題",
+              "title": "FDA appears to pause controversial speedy review program, complete response letter disclosures",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/pharma/fda-appears-pause-controversial-speedy-review-program-complete-response-letter-disclosures",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "赴美國際學生人數驟降——科學界憂心",
+              "summary_zh": "《Nature》報導，赴美國際學生人數下滑，主要由中國與印度學生減少所驅動；研究人員表示此趨勢可能拖慢美國科學進展。",
+              "relevance": "研究人才流動——科研人力供給主題",
+              "title": "Number of international students arriving in US plunges — worrying scientists",
+              "source": "Nature News",
+              "url": "https://www.nature.com/articles/d41586-026-03668-x",
+              "published": "2026-11-13T00:00:00Z"
+            },
+            {
+              "title_zh": "FAA 發布史上第三次全美停飛令",
+              "summary_zh": "FAA 因多個航路交通管制中心通訊異常發布全國性地面停飛令，為該機構史上第三次；報導指出排除故障期間停飛可能持續一段時間。",
+              "relevance": "關鍵基礎設施中斷——系統韌性主題",
+              "title": "FAA orders third nationwide ground stop in its history",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/tech-policy/2026/11/faa-orders-third-nationwide-ground-stop-in-its-history/",
+              "published": "2026-11-13T23:17:38Z"
+            },
+            {
+              "title_zh": "數百萬美國人未依處方使用 GLP-1 藥物",
+              "summary_zh": "報導指出，成本與取得障礙促使民眾改變用法，或使用未經核准的 GLP-1 版本。",
+              "relevance": "藥物可近性與需求——生技市場終端需求主題",
+              "title": "Millions of Americans are not taking their GLP-1 drugs as prescribed",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/health/2026/11/millions-in-us-use-unapproved-glp-1s-and-use-them-in-unapproved-ways/",
+              "published": "2026-11-13T21:59:01Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
+      ]
+    },
+    {
       "date": "2026-11-13",
       "generated_utc": "2026-11-13T02:10:08Z",
       "status": "published",
@@ -1472,226 +1735,6 @@
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
               "published": "2026-11-07T22:07:22Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_"
-      ]
-    },
-    {
-      "date": "2026-11-07",
-      "generated_utc": "2026-11-07T01:18:24Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 18,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 16,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 2
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 2,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 9,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "OpenAI 傳以 1.25 兆美元估值再募資 110 億美元",
-              "summary_zh": "據報導,OpenAI 在一輪尚未完成的募資中再取得 110 億美元,估值達 1.25 兆美元。該輪預計在未來數週內完成。",
-              "relevance": "前沿模型業者資本規模——AI 基礎設施資本支出主題",
-              "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
-              "published": "2026-11-06T22:53:46Z"
-            },
-            {
-              "title_zh": "Ramp 數據顯示 AI 支出停滯,適逢 Anthropic 接近 IPO",
-              "summary_zh": "Ramp 的數據顯示,AI 使用量持續攀升,但支出已趨於停滯。報導指出降價與大型支出者更精細的成本控管是其中因素。",
-              "relevance": "AI 應用端支出與算力需求——AI 基礎設施需求主題",
-              "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
-              "published": "2026-11-06T15:54:47Z"
-            },
-            {
-              "title_zh": "期中選舉後,AI 產業將面臨艱難的兩年?",
-              "summary_zh": "本週美國期中選舉共有 41 項與資料中心相關的公投案付諸表決,其中除一項外,多數選民都支持對資料中心開發施加更多限制。",
-              "relevance": "資料中心選址與電力限制——AI 基礎設施建置約束主題",
-              "title": "After the midterms, is the AI industry in for a rough two years?",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
-              "published": "2026-11-06T17:23:52Z"
-            },
-            {
-              "title_zh": "跛腳鴨國會可能有所作為:加速能源專案審批",
-              "summary_zh": "一項大規模的許可改革法案正以兩黨支持推進,可讓能源專案更快上線;報導指出該法案也可能加速污染性專案並限縮對新建資料中心的監督。",
-              "relevance": "電力與併網許可——AI 資料中心能源供給主題",
-              "title": "Lame-duck Congress might actually do something: speed up energy projects",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/policy/1028228/energy-infrastructure-permitting-reform-bill-congress-vote",
-              "published": "2026-11-06T18:42:30Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "Nvidia 執行長黃仁勳因中國間諜疑慮遭國會傳喚",
-              "summary_zh": "美國國會議員要求黃仁勳就其與一名涉嫌中國情報人員的往來作出說明。另據《紐約時報》報導,中國國家安全部吸收 Megaspeed 主管 Alice Huang 蒐集美國 AI 晶片相關資訊。",
-              "relevance": "AI 晶片出口管制與地緣政治——半導體供應鏈主題",
-              "title": "Nvidia CEO Jensen Huang summoned by Congress over Chinese espionage concerns",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/tech-policy/2026/11/nvidia-ceo-jensen-huang-summoned-by-congress-over-chinese-espionage-concerns/",
-              "published": "2026-11-06T14:13:32Z"
-            },
-            {
-              "title_zh": "The Download:人形機器人打掃住家,Samsung 為 AI 熱潮擴建",
-              "summary_zh": "MIT Technology Review 每日簡報涵蓋舊金山新推出的人形機器人清潔服務,以及 Samsung 因應 AI 晶片需求的建設動向。",
-              "relevance": "記憶體廠產能擴張——HBM 供給主題",
-              "title": "The Download: a humanoid cleans house and Samsung builds for the AI boom",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/11/06/1148154/the-download-humanoid-robot-cleaner-samsung-ai-chip-boom/",
-              "published": "2026-11-06T13:10:00Z"
-            },
-            {
-              "title_zh": "價值 1140 萬美元的 Nvidia 硬體在 Oakland 至德州途中失竊",
-              "summary_zh": "六棧板運往德州的 Nvidia 硬體在運送途中消失,價值約 1140 萬美元,事發兩個月後仍無人遭逮捕。",
-              "relevance": "AI 加速器實體供應鏈——半導體流通主題",
-              "title": "Nvidia hardware worth $11.4M vanished between Oakland and Texas",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gadgets/2026/11/nvidia-hardware-worth-11-4m-vanished-between-oakland-and-texas/",
-              "published": "2026-11-06T20:05:30Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "我看著人形機器人打掃我的公寓,感覺像是未來的預演",
-              "summary_zh": "MIT Technology Review 記者試用舊金山一項新的人形機器人居家清潔服務,記錄機器人實際執行家務的過程。",
-              "relevance": "人形機器人實地部署——機器人與自主系統主題",
-              "title": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
-              "published": "2026-11-06T10:00:00Z"
-            },
-            {
-              "title_zh": "Physicl 募資 1000 萬美元,要讓數位世界真實到足以訓練機器人",
-              "summary_zh": "Physicl 以原本為線上商品行銷打造的流程切入 sim-to-real 落差問題,完成 1000 萬美元募資。",
-              "relevance": "模擬到真實轉移——機器人學習資料主題",
-              "title": "Physicl raises $10M to make the digital world real enough for robots",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
-              "published": "2026-11-06T13:00:00Z"
-            },
-            {
-              "title_zh": "這些 AI 代理人為你設計並運行機器人實驗室",
-              "summary_zh": "《Nature》報導一組 AI 代理人團隊可模擬由機器人與儀器組成的實驗室,確保實體工作空間運作順暢,並進一步指揮該空間的實際operations。",
-              "relevance": "自主實驗室與 AI 代理人——機器人×科學自動化主題",
-              "title": "These AI agents design your perfect robot-powered lab — and run it for you",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03587-x",
-              "published": "2026-11-06T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Generate 執行長認為使用 Claude 縮短 CAR-T 細胞引擎帶來「巨大機會」",
-              "summary_zh": "Generate Biomedicines 運用 Anthropic 的 Claude 平台縮小 CAR-T 細胞引擎的尺寸,其執行長表示 AI 工具帶來「巨大機會」。",
-              "relevance": "大型語言模型用於蛋白質/細胞療法設計——生技×AI 主題",
-              "title": "Generate CEO sees ‘huge opportunity’ from using Claude to shorten CAR-T cell engines",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/research/anthropic-extends-its-biological-footprint-generates-car-t-cells",
-              "published": null
-            },
-            {
-              "title_zh": "針對 ANGPTL3 的體內 CRISPR 鹼基編輯可達成持久降脂",
-              "summary_zh": "《Nature》刊出研究,報告以體內 CRISPR 鹼基編輯 ANGPTL3 基因達成持久的血脂降低效果。",
-              "relevance": "基因編輯療法——生技研究主題",
-              "title": "In Vivo CRISPR Base Editing of  ANGPTL3  for Durable Lipid Lowering",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/s41586-026-11233-9",
-              "published": "2026-11-06T00:00:00Z"
-            },
-            {
-              "title_zh": "「數學不只是機械過程」——為何我認為這個領域能撐過 OpenAI 的衝擊",
-              "summary_zh": "《Nature》評論文章指出,AI 可能將數學帶往新領域,但研究者必須建立讓人類保持核心地位的規則與制度。",
-              "relevance": "AI 對科學研究方法的影響——AI×科學主題",
-              "title": "‘Mathematics is more than a mechanical process’ — why I think the field will survive OpenAI’s disruption",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03622-x",
-              "published": "2026-11-06T00:00:00Z"
             }
           ]
         }
