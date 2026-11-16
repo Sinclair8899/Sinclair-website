@@ -2,6 +2,263 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-16",
+      "generated_utc": "2026-11-16T01:26:15Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 60,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 7,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 3
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Nvidia 間諜醜聞後，美國國會擬收緊 AI 晶片出口規定",
+              "summary_zh": "在涉及已卸任的 Nvidia 執行長黃仁勳與一名疑似中國間諜的醜聞後，美國國會兩黨議員表態支持多項收緊 AI 晶片出口規則的措施與法案，並要求黃仁勳及其他 Nvidia 高層出席國會作證。",
+              "relevance": "AI 晶片出口管制——運算資源取得與地緣政治約束主題",
+              "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+              "published": "2026-11-15T19:15:43Z"
+            },
+            {
+              "title_zh": "貝森特質疑輝達銷售數據與內控，籲從外部延攬 CEO",
+              "summary_zh": "美國財政部長貝森特呼籲輝達進行「徹底改革」，並質疑公司是否為美化銷售數字而推動相關行為，主張新任執行長應自公司外部尋找。",
+              "relevance": "Nvidia 治理與領導層變動——AI 基礎設施供應鏈主題",
+              "title": "貝森特質疑輝達銷售數據、內控  籲從外部延攬 CEO",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/16/bessent-says-nvidia-must-go-outside-the-company-to-find-new-ceo/",
+              "published": "2026-11-16T00:35:39Z"
+            },
+            {
+              "title_zh": "外資點出輝達股價復甦關鍵：接班人、財報與美國後續監管力道",
+              "summary_zh": "輝達在創辦人兼執行長黃仁勳因個人因素請辭後遭遇市場劇烈震盪，外資機構指出後續觀察重點為接班人選、財報表現與美國監管動向。",
+              "relevance": "Nvidia 領導層交接——AI 基礎設施投資循環主題",
+              "title": "外資點出輝達股價復甦關鍵點，接班人、財報、以及美國後續監管力道",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/16/foreign-investors-point-out-the-key-to-nvidias-stock-price-recovery/",
+              "published": "2026-11-16T00:00:52Z"
+            },
+            {
+              "title_zh": "美國期中選舉後「反資料中心」聲浪升溫，AI 基建進度與台灣供應鏈受關注",
+              "summary_zh": "美國期中選舉於 11 月 4 日開票，民主黨在眾議院與參議院皆取得過半席次；報導指出美國出現反資料中心的政治浪潮，並分析對 AI 基礎建設進度與台灣供應鏈的影響。",
+              "relevance": "資料中心建置與政策環境——AI 基礎設施擴張主題",
+              "title": "民主黨掀「反資料中心」浪潮！美 AI 基建急煞車，台灣供應鏈為何迎來「短痛長穩」？",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/16/nvidia-short-term-loser-us-midterm-elections-data-centers-slowdown-taiwanese-manufacturers-rebound/",
+              "published": "2026-11-15T23:50:26Z"
+            },
+            {
+              "title_zh": "TechCrunch Mobility：中國自駕產業的 Nvidia 備案",
+              "summary_zh": "TechCrunch Mobility 專欄報導中國自動駕駛產業在 Nvidia 晶片供應之外的替代方案，以及 AI 在交通運輸領域扮演的角色。",
+              "relevance": "自駕運算平台與晶片替代方案——自主系統與 AI 基礎設施主題",
+              "title": "TechCrunch Mobility: The Nvidia backup plan for China’s self-driving industry",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/15/techcrunch-mobility-the-nvidia-backup-plan-for-chinas-self-driving-industry/",
+              "published": "2026-11-15T17:05:00Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "DRAM 三大廠聯合壟斷訴訟撤案申請遭駁回",
+              "summary_zh": "美光、三星與 SK 海力士面臨的聯合反壟斷訴訟中，法官駁回了三家公司的撤案申請，並在裁定中以老鷹成群尋找獵物形容其行為。",
+              "relevance": "DRAM／HBM 供應商動態——記憶體市場結構主題",
+              "title": "DRAM 三大廠聯合壟斷訴訟撤案申請遭駁回，法官指行為如老鷹成群尋找獵物",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/16/the-dram-manufacturers-joint-antitrust-lawsuit-has-been-dismissed/",
+              "published": "2026-11-16T01:10:47Z"
+            },
+            {
+              "title_zh": "Rapidus：未延後，2027 年底至 2028 年初量產 2 奈米",
+              "summary_zh": "日本官民合作設立的晶圓代工廠 Rapidus 表示其 2 奈米製程量產時程未延後，目標落在 2027 年度下半年（2027 年 10 月至 2028 年初）。",
+              "relevance": "先進製程產能布局——半導體供給主題",
+              "title": "沒有延後  Rapidus：2027 年底至 2028 年初量產 2 奈米",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/16/rapidus-no-delays-2nm-mass-production-late-2027-early-2028/",
+              "published": "2026-11-16T00:25:06Z"
+            },
+            {
+              "title_zh": "蘋果前 CPU 架構師創業，Nuvacore 瞄準 AI 資料中心處理器",
+              "summary_zh": "蘋果前首席 CPU 架構師 Gerard Williams III 受訪表示，其創辦的新創公司 Nuvacore 鎖定 AI 資料中心處理器，並談及 AI 可縮短 CPU 早期設計所需時間。",
+              "relevance": "資料中心處理器新進業者——AI 運算晶片主題",
+              "title": "蘋果前 CPU 大將創業，Nuvacore 瞄準 AI 資料中心處理器",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/16/former-apple-chip-architect-says-ai-cuts-months-from-early-cpu-design/",
+              "published": "2026-11-16T00:45:00Z"
+            },
+            {
+              "title_zh": "印度晶片新創 Bharat Semi 完成 2,400 萬美元種子輪，瞄準全球 AI 感測器市場",
+              "summary_zh": "Bharat Semi 宣布完成 2,400 萬美元種子輪募資，並表示其 AI 感測器技術已取得包括 General Atomics 在內的客戶設計導入（design win）。",
+              "relevance": "AI 感測晶片新創——半導體產業鏈主題",
+              "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+              "published": "2026-11-15T23:30:00Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "Serve Robotics 開放 API，讓商家直接叫機器人送貨",
+              "summary_zh": "美國人行道送貨機器人公司 Serve Robotics 推出開發者入口（AV Delivery Developer Portal），開放 API 讓商家繞過外送平台直接調度機器人配送。",
+              "relevance": "自主配送機器人商業化——機器人與自主系統主題",
+              "title": "繞過外送平台抽成，Serve Robotics 開放 API 讓商家直接叫機器人送貨",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/16/serve-robotics-wants-to-democratize-sidewalk-delivery-robots/",
+              "published": "2026-11-16T01:15:51Z"
+            },
+            {
+              "title_zh": "Virtuoso Surgical 取得 FDA 膀胱病灶手術機器人系統授權",
+              "summary_zh": "美國 FDA 核准 Virtuoso Surgical 的 Virtuoso Endoscopy System 取得 De Novo 授權，用於膀胱病灶處置。",
+              "relevance": "手術機器人法規核准——醫療機器人與自主系統主題",
+              "title": "Virtuoso Surgical nabs FDA authorization for robotic bladder lesions system",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/medtech/virtuoso-surgical-nabs-fda-authorization-robotic-bladder-lesions-system",
+              "published": null
+            },
+            {
+              "title_zh": "北京無人機新規上路，禁飛、禁售、禁運",
+              "summary_zh": "中國北京自 11 月 15 日起實施新修訂的無人機規定，除全域禁飛、禁售、禁運外，並進一步禁止在北京持有與存放無人機。",
+              "relevance": "無人機法規環境——自主系統部署主題",
+              "title": "北京無人機新規上路，禁飛、禁售、禁運",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/16/beijing-drone-new-regulations-ban-flight-sales-transport/",
+              "published": "2026-11-16T00:50:00Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "研究人員以 10 種蛋白質組成的檢測組合改善 ALS 偵測",
+              "summary_zh": "研究團隊提出以血液中 10 種蛋白質構成的檢測組合，用於提升肌萎縮性脊髓側索硬化症（ALS）的偵測能力；報導指出神經退化疾病確診時往往已造成不可逆損傷，促使各界尋找更早期的生物線索與病程追蹤方式。",
+              "relevance": "蛋白質生物標記與疾病偵測——生技×AI 資料分析主題",
+              "title": "‘They’ve been misdiagnosed for too long’: Researchers use 10-protein panel to improve ALS detection",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/researchers-identify-protein-panel-blood-improve-als-detection",
+              "published": null
+            },
+            {
+              "title_zh": "FDA 否決 Summit 的 ivonescimab，PD-1xVEGF 新藥類別進入美國受阻",
+              "summary_zh": "FDA 對 Summit Therapeutics 發出完整回覆函（CRL），使這一被業界視為可能挑戰默沙東 Keytruda 的 PD-1xVEGF 藥物類別無法立即在美國上市。",
+              "relevance": "腫瘤免疫療法法規決策——生技研發管線主題",
+              "title": "FDA rejects Summit’s ivonescimab, derailing US arrival of much-hyped PD-1xVEGF class",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/pharma/fda-rejects-summit-therapeutics-pd-1-vegf-ivonescimab-nsclc",
+              "published": null
+            },
+            {
+              "title_zh": "FDA 似已暫停爭議性快速審查計畫與完整回覆函揭露",
+              "summary_zh": "根據路透報導，FDA 已悄然擱置「委員國家優先審查憑證」（CNPV）試辦計畫；該機構同時似乎也暫停公布完整回覆函，此前相關作法曾於 7 月一度中止後恢復。",
+              "relevance": "藥品審查制度變動——生技研發法規環境主題",
+              "title": "FDA appears to pause controversial speedy review program, complete response letter disclosures",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/pharma/fda-appears-pause-controversial-speedy-review-program-complete-response-letter-disclosures",
+              "published": null
+            },
+            {
+              "title_zh": "Cellectis 轉向 in vivo 療法，將裁減 70% 員工",
+              "summary_zh": "Cellectis 宣布從異體 CAR-T 轉向體內（in vivo）療法，並將因此裁減 70% 的員工。",
+              "relevance": "細胞療法技術路線轉向——生技研發主題",
+              "title": "Cellectis will shed 70% of workforce as part of in vivo pivot",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/cellectis-will-shed-70-workforce-part-vivo-pivot",
+              "published": null
+            },
+            {
+              "title_zh": "輝瑞向 Blackstone 取得最高 15 億美元資金，推進 GLP-1 肥胖症上市",
+              "summary_zh": "輝瑞自 Blackstone Life Sciences 取得最高 15 億美元資金，用於其每月一次 GLP-1 受體促效劑的開發。",
+              "relevance": "生技研發資金結構——生技產業資本主題",
+              "title": "Pfizer taps Blackstone for up to $1.5B to pave path to GLP-1's obesity launch",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/pfizer-taps-blackstone-15b-pave-path-glp-1-launch",
+              "published": null
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
+      ]
+    },
+    {
       "date": "2026-11-15",
       "generated_utc": "2026-11-15T01:21:11Z",
       "status": "published",
@@ -1531,226 +1788,6 @@
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/",
               "published": "2026-11-09T22:23:42Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/edge-ai-for-smart-cities-from-real-time-insights-to-cognitive-urban-systems/?utm_"
-      ]
-    },
-    {
-      "date": "2026-11-09",
-      "generated_utc": "2026-11-09T01:15:04Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 59,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 9,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 1,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 9,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 2
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "微軟傳未續租 AI 算力，甲骨文股價劇烈震盪",
-              "summary_zh": "據報導，微軟未續租甲骨文的 AI 運算資源，並重新評估數十億美元的雲端支出。消息傳出後甲骨文股價出現劇烈震盪。",
-              "relevance": "雲端 AI 算力租賃與資料中心資本支出——AI 基礎設施需求主題",
-              "title": "微軟傳未續租 AI 算力  甲骨文股價劇烈震盪",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/11/09/microsoft-winding-down-oracle-deal-to-rent-ai-cloud-capacity/",
-              "published": "2026-11-09T01:10:48Z"
-            },
-            {
-              "title_zh": "德州新科州長牽動 AI 發展，CoreWeave 致信求合作",
-              "summary_zh": "AI 雲端服務商 CoreWeave 已致信德州候任州長希諾霍薩（Gina Hinojosa），尋求合作。德州政壇變動牽動當地 AI 基礎建設前景。",
-              "relevance": "資料中心選址與電力政策——AI 基礎設施落地條件主題",
-              "title": "德新科州長牽動 AI 發展  CoreWeave 致信求合作",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/09/governor-dexinke-influences-ai-development-coreweave-seeks-collaboration/",
-              "published": "2026-11-09T00:50:39Z"
-            },
-            {
-              "title_zh": "Nvidia 將調查執行長黃仁勳與疑似中國間諜的關係",
-              "summary_zh": "Nvidia 董事會宣布啟動獨立調查，針對執行長黃仁勳與 Megaspeed 高層 Alice Huang 的關係；據報導該名高層遭中國國家安全部吸收。黃仁勳已發出內部信承認婚外情。",
-              "relevance": "GPU 供應商治理與中美技術管制——AI 基礎設施供應鏈主題",
-              "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
-              "published": "2026-11-08T21:00:11Z"
-            },
-            {
-              "title_zh": "用說的就能查維修數據，韓國研發對話式 AI 強化海陸空武器後勤支援",
-              "summary_zh": "韓國航空宇宙產業（KAI）於 11 月 4 日宣布著手開發 AI 代理人，以提升武器系統效率。該系統可透過對話方式查詢維修數據，支援海陸空武器後勤。",
-              "relevance": "自主代理系統在實體裝備維運的部署——AI agent 應用主題",
-              "title": "用說的就能查維修數據，韓國研發對話式 AI 強化海陸空武器後勤支援",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/09/kai-to-develop-ai-agent-to-improve-weapon-system-efficiency/",
-              "published": "2026-11-09T00:10:47Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "布朗大學破解晶片微縮「死層」難題，指向超低功耗 AI 運算",
-              "summary_zh": "美國布朗大學研究團隊宣布找到方法，解決長期阻礙多鐵（multiferroic）材料進入超低功耗電腦晶片的關鍵問題，研究聚焦於薄膜微縮時出現的「死層」現象。",
-              "relevance": "新材料與低功耗邏輯元件——半導體微縮與能耗約束主題",
-              "title": "AI 運算迎超省電曙光，布朗大學破解晶片微縮「死層」魔咒",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/09/magnetic-material-breakthrough-reduces-chip-power-consumption/",
-              "published": "2026-11-09T00:45:10Z"
-            },
-            {
-              "title_zh": "物理學家透過聆聽電雜訊破解超導體之謎",
-              "summary_zh": "研究人員利用電子雜訊訊號判斷電子是否已配對，藉此釐清超導體中的一項長期疑問。",
-              "relevance": "超導與量子材料量測——先進元件物理基礎主題",
-              "title": "Physicists listened to electrical noise to crack a superconductor mystery",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/science/2026/11/physicists-listened-to-electrical-noise-to-crack-a-superconductor-mystery/",
-              "published": "2026-11-08T12:15:31Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Generate 執行長稱運用 Claude 縮短 CAR-T 細胞引擎帶來「巨大機會」",
-              "summary_zh": "Generate Biomedicines 表示，公司使用 Anthropic 的 Claude 平台縮小了 CAR-T 細胞引擎的尺寸。執行長形容 AI 工具帶來「巨大機會」。",
-              "relevance": "大型語言模型用於蛋白質／細胞療法設計——生技×AI 主題",
-              "title": "Generate CEO sees ‘huge opportunity’ from using Claude to shorten CAR-T cell engines",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/research/anthropic-extends-its-biological-footprint-generates-car-t-cells",
-              "published": null
-            },
-            {
-              "title_zh": "Google DeepMind 導入尖端 AI 攻克抗藥性危機",
-              "summary_zh": "Google DeepMind 正將 AI 技術應用於抗微生物抗藥性（AMR）這項醫療挑戰。",
-              "relevance": "AI 應用於抗生素與病原研究——生技×AI 主題",
-              "title": "迎戰超級細菌威脅，Google DeepMind 導入尖端 AI 攻克抗藥性危機",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/09/ai-aids-combating-superviruses/",
-              "published": "2026-11-09T01:00:16Z"
-            },
-            {
-              "title_zh": "新型基因寫入技術，讓 CAR-T 細胞有機會在人體內直接製造",
-              "summary_zh": "報導指出一項新的基因寫入技術，可望讓 CAR-T 細胞直接在體內生成，取代傳統「體外改造細胞再回輸」的流程。",
-              "relevance": "細胞療法製造流程革新——生技平台技術主題",
-              "title": "新型基因寫入技術，讓 CAR-T 細胞有機會人體直接製造",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/09/new-gene-writing-technology-could-generate-car-t-cells-inside-the-body/",
-              "published": "2026-11-08T23:10:47Z"
-            },
-            {
-              "title_zh": "Charles River 與 Ipsen 合作，在毒理研究中使用虛擬對照組",
-              "summary_zh": "Charles River Laboratories 的虛擬對照組（VCG）資料庫將用於法國生技藥廠 Ipsen 執行的毒理學研究。",
-              "relevance": "計算模型取代實驗對照組——資料驅動藥物開發主題",
-              "title": "Charles River teams up with Ipsen to use virtual control groups in toxicology studies",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/cro/charles-river-teams-ipsen-use-virtual-control-groups-toxicology-studies",
-              "published": null
-            },
-            {
-              "title_zh": "Novartis 的 Lp(a) 藥物顯示零效益，為 Amgen 與 Lilly 計畫蒙上陰影",
-              "summary_zh": "Novartis 公布其失敗的心血管結果試驗數據，報告顯示完全沒有療效。此結果可能加深外界對 Amgen 與 Eli Lilly 即將公布之數據的疑問。",
-              "relevance": "心血管標靶臨床驗證——藥物標的可成藥性主題",
-              "title": "Novartis’ Lp(a) drug shows zero benefit, casting shadow over Amgen and Lilly programs",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/novartis-lpa-drug-shows-zero-benefit-casting-shadow-over-amgen-and-lilly-programs",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "全球電網的協同擾動之謎，研究人員找出元兇",
-              "summary_zh": "全球電網長期出現協同性的電力驟降現象，一支德國研究團隊找出了造成此現象的原因。",
-              "relevance": "電網穩定性——資料中心電力供給約束主題",
-              "title": "Coordinated disturbances haunt grids worldwide. Here’s how researchers solved the mystery.",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/08/coordinated-disturbances-haunt-grids-worldwide-heres-how-researchers-solved-the-mystery/",
-              "published": "2026-11-08T20:30:00Z"
-            },
-            {
-              "title_zh": "中國新能源汽車出口大增有隱憂，未來 3 年售後服務壓力湧現",
-              "summary_zh": "預測顯示 2026 年中國新能源汽車出口將超過 500 萬輛，呈爆發式成長。報導指出背後隱憂包括中歐貿易摩擦增加，以及未來三年湧現的售後服務壓力。",
-              "relevance": "電動車供應鏈與貿易——自主系統產業鏈主題",
-              "title": "中國新能源汽車出口大增有隱憂，未來 3 年售後服務壓力湧現",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/09/china-nev-exports-surging-hidden-concerns-after-sales-service-pressure-next-3-years/",
-              "published": "2026-11-09T00:40:59Z"
             }
           ]
         }
