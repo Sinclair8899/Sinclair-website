@@ -2,6 +2,229 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-20",
+      "generated_utc": "2026-11-20T02:40:52Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 2,
+          "excluded": 5
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "Anthropic 掛牌 Nasdaq 開盤報 111 美元，較 IPO 價高出 33%",
+              "summary_zh": "Anthropic 的 IPO 定價為每股 83 美元，募集超過 800 億美元新資金，首日在 Nasdaq 以 111 美元開出，較發行價高約 33%。另據報導，七位創辦人在此次 IPO 中共套現將近 20 億美元。",
+              "relevance": "前沿模型實驗室資本市場動向——AI 基礎設施資金來源主題",
+              "title": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
+              "published": "2026-11-19T16:59:23Z"
+            },
+            {
+              "title_zh": "Anthropic IPO 考驗 AI 的循環融資熱潮",
+              "summary_zh": "報導指出 Anthropic 上市之際背負龐大的運算採購承諾，而其最大基礎設施夥伴包括 Amazon 與 Google。文中並提到，即使 Anthropic 失去技術領先地位，這些夥伴仍可能持續自 AI 獲利。",
+              "relevance": "算力採購承諾與雲端夥伴關係——AI 基礎設施循環融資主題",
+              "title": "Anthropic’s IPO puts AI’s circular financing boom to the test",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
+              "published": "2026-11-19T14:54:39Z"
+            },
+            {
+              "title_zh": "Google 讓 Gemini 能代你操作 Mac",
+              "summary_zh": "Google 最新 Gemini 更新在 Mac 上推出可代為操作的 AI agent，能整理檔案、填寫表單並處理多步驟工作流程。",
+              "relevance": "電腦操作型 agent 部署——AI agent 系統主題",
+              "title": "Google gives Gemini the ability to use your Mac for you",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+              "published": "2026-11-19T18:09:11Z"
+            },
+            {
+              "title_zh": "報導：Meta AI agent Muse 混淆對話，可能外洩私人資料",
+              "summary_zh": "據報導，Meta 的 AI agent Muse 出現跨使用者的對話混淆情形。員工表示 Muse 曾顯示他們從未提出的育兒請求、未詢問的職涯建議、未下過的商品訂單，以及不屬於自己的銀行帳戶餘額。",
+              "relevance": "agent 系統的資料隔離失效——AI agent 可靠性主題",
+              "title": "Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+              "published": "2026-11-19T17:38:40Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "Nvidia 近期股價波動回顧",
+              "summary_zh": "報導指出,Nvidia 代理執行長 Colette Kress 在第三季財報電話會議結束時表示「我們沒問題」。至週四,該公司股價約在每股 150 美元,較 10 月 6 日的歷史高點下跌近 40%,抹去財報後的短暫漲幅。",
+              "relevance": "AI 加速器供應商股價與財報——半導體週期主題",
+              "title": "A brief history of Nvidia’s recent stock fluctuations",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
+              "published": "2026-11-19T21:59:35Z"
+            },
+            {
+              "title_zh": "英特爾再掀裁員潮：全球 IT 部門傳大砍雙位數，陳立武接管兩年已砍近 2.8 萬人",
+              "summary_zh": "依英特爾公布的員工人數推算,總員工數自 2024 年底以來已減少約 27,800 人。市場再傳出英特爾將對全球 IT 部門進行雙位數比例的裁員。",
+              "relevance": "晶圓代工與 IDM 業者組織調整——半導體產業結構主題",
+              "title": "英特爾再掀裁員潮！全球 IT 部門傳大砍雙位數，陳立武接管兩年已砍近 2.8 萬人",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/20/intel-ceo-lip-bu-tan-cuts-jobs/",
+              "published": "2026-11-20T02:37:55Z"
+            },
+            {
+              "title_zh": "Steam Machine 現在不必排候補名單即可購買",
+              "summary_zh": "Valve 宣布 512GB 版 Steam Machine 已開放直接購買,無需加入候補名單。該公司同時提到未來供應可能因記憶體價格飆漲(「RAMaggedon」)而受影響。",
+              "relevance": "記憶體供給緊俏對終端裝置的影響——記憶體約束主題",
+              "title": "You can now buy a Steam Machine without getting on a waitlist",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/games/1038010/valve-steam-machine-waitlist-supply",
+              "published": "2026-11-19T19:33:22Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Isomorphic Labs 於 50 億美元募資數日後將 Merck 納入 AI 藥物發現合作名單",
+              "summary_zh": "Isomorphic Labs 在完成 50 億美元募資後數日,新增 Merck & Co. 為合作夥伴。其合作名單現已包含以營收計前四大藥廠中的三家。",
+              "relevance": "AI 驅動藥物發現平台的產業合作——生技×AI 主題",
+              "title": "Isomorphic adds Merck to AI drug discovery roster days after $5B raise",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/isomorphic-labs-adds-merck-ai-drug-discovery-roster-days-after-5b-raise",
+              "published": null
+            },
+            {
+              "title_zh": "Anthropic 董事 Vas Narasimhan 押注 AI 能協助 Novartis 解決「生物延遲」",
+              "summary_zh": "在 Anthropic 於 Nasdaq 完成破紀錄 IPO 的同一天,身兼 Anthropic 唯一製藥業董事的 Novartis 執行長 Vas Narasimhan 在倫敦向投資人說明該公司如何運用 AI 縮短藥物開發時程,並期望有朝一日解決「生物延遲」問題。",
+              "relevance": "AI 應用於藥物開發時程——生技×AI 主題",
+              "title": "Anthropic board director Vas Narasimhan bets AI can help Novartis solve ‘biological latency’",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/anthropic-board-director-vas-narasimhan-bets-ai-can-help-novartis-solve-biological-latency",
+              "published": null
+            },
+            {
+              "title_zh": "人類肝臟在體外存活達七週創下紀錄",
+              "summary_zh": "澳洲研究人員宣稱,他們在雪梨以體外生命維持系統讓一具捐贈的人類肝臟存活七週,研究細節尚待發表。該團隊由外科醫師暨發明人 Carlo Pulitano 領導。",
+              "relevance": "體外器官維持技術——生醫工程主題",
+              "title": "A human liver has been kept alive outside the body for a record seven weeks",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/",
+              "published": "2026-11-19T12:00:00Z"
+            },
+            {
+              "title_zh": "Pfizer 以 3 項計畫、26 億美元與中國 Starna 達成交易,進軍體內 CAR-T 領域",
+              "summary_zh": "Pfizer 決定投入體內(in vivo)CAR-T 競賽,與中國 Starna Therapeutics 簽訂價值 26 億美元的協議,取得三項臨床前候選藥物。",
+              "relevance": "細胞治療平台技術授權——生技研發主題",
+              "title": "Pfizer enters in vivo CAR-T space via 3-program, $2.6B deal with China’s Starna",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/pfizer-enters-vivo-car-t-space-3-program-26b-deal-chinas-starna",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "AI 繁榮物極必反,牛津:下次經濟衰退恐更深更長",
+              "summary_zh": "牛津經濟研究院指出,雖然美國經濟持續成長、AI 投資熱潮帶動企業獲利與股市上漲,但繁榮背後可能正醞釀下一場經濟危機,下一次衰退恐更深、更長。",
+              "relevance": "AI 資本支出週期與總體經濟風險——宏觀主題",
+              "title": "AI 繁榮物極必反，牛津：下次經濟衰退恐更深更長",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/20/ai-boom-may-reach-a-tipping-point-oxford-warns-next-recession-could-be-deeper-and-longer/",
+              "published": "2026-11-20T02:35:39Z"
+            },
+            {
+              "title_zh": "微軟執行長 Satya Nadella 說明為何請 6 萬名員工自願離職",
+              "summary_zh": "Nadella 解釋微軟 10 月對 6 萬名員工提供買斷方案、鼓勵自願離職而非再次大規模裁員的原因,報導指出核心原因與 AI 有關。",
+              "relevance": "AI 對大型科技公司人力結構的影響——勞動市場主題",
+              "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+              "published": "2026-11-19T00:42:56Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-nr-ntn-design-and-test-challenges-for-satellite-connected-iot/",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaig",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
+      ]
+    },
+    {
       "date": "2026-11-19",
       "generated_utc": "2026-11-19T02:50:52Z",
       "status": "published",
@@ -1559,232 +1782,6 @@
       ],
       "warnings": [
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
-      ]
-    },
-    {
-      "date": "2026-11-13",
-      "generated_utc": "2026-11-13T02:10:08Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 15,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 2
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 2,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Nvidia 執行長黃仁勳請辭，由 CFO 暫代領導",
-              "summary_zh": "Nvidia 宣布黃仁勳因外遇相關報導請辭執行長一職，公司目前由財務長 Colette Kress 暫代領導。報導指出外遇對象之一為涉嫌中國間諜人士，另一位為公司內部直屬下屬。",
-              "relevance": "GPU 供應商治理與領導層變動——AI 基礎設施供應鏈主題",
-              "title": "Donald Trump really wants Tim Cook to run Nvidia",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang",
-              "published": "2026-11-13T00:46:07Z"
-            },
-            {
-              "title_zh": "民主黨啟動 Nvidia 調查，致函抨擊黃仁勳與 Trump 的「計畫」",
-              "summary_zh": "美國國會民主黨人對 Nvidia 的中國銷售及其與 Trump 政府的往來展開調查，並發出措辭嚴厲的信函。這是間諜外遇消息曝光以來的第二起國會調查。",
-              "relevance": "晶片出口管制與中國銷售——AI 晶片地緣政治主題",
-              "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
-              "published": "2026-11-12T22:42:51Z"
-            },
-            {
-              "title_zh": "黃仁勳同意出席國會作證",
-              "summary_zh": "在多位資深議員威脅發出傳票後，已卸任 Nvidia 執行長的黃仁勳同意於週三出席國會作證。",
-              "relevance": "AI 晶片政策監管——半導體出口管制主題",
-              "title": "Jensen Huang agrees to testify before Congress",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/",
-              "published": "2026-11-12T16:36:37Z"
-            },
-            {
-              "title_zh": "Nebius 以 400 億美元支出計畫測試 neocloud 模式",
-              "summary_zh": "Nebius 計畫透過客戶預付款與貸款支應 400 億美元的 AI 基礎設施擴張。報導指出一座 Microsoft 資料中心的延誤，為其融資模式帶來疑問。",
-              "relevance": "AI 資料中心資本支出與融資結構——AI 基礎設施主題",
-              "title": "Nebius tests the neocloud playbook with $40 billion in planned spending",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
-              "published": "2026-11-12T21:27:10Z"
-            },
-            {
-              "title_zh": "United Airlines 以資安風險為由封鎖 AI agent 訂票",
-              "summary_zh": "United Airlines 表示將不允許顧客使用 AI agent 訂購機票與管理訂位，理由為網路安全風險。",
-              "relevance": "AI agent 對外部系統的存取限制——agent 基礎設施主題",
-              "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
-              "published": "2026-11-12T17:17:58Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "Nvidia 私下確認可追蹤晶片以打擊走私，業界公開場合則質疑可行性",
-              "summary_zh": "伊利諾州眾議員 Bill Foster 向 MIT Technology Review 表示，Nvidia 代表告知他，《Chip Security Act》要求的反走私措施在技術上可行，而同時某產業團體公開宣稱這些措施「可能不可行」。",
-              "relevance": "晶片追蹤與出口管制技術——半導體供應鏈管制主題",
-              "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
-              "published": "2026-11-12T20:16:24Z"
-            },
-            {
-              "title_zh": "AI 記憶體出貨兩個月救援，美而快第三季每股大賺 1.53 元、訂單看到 2027 年",
-              "summary_zh": "美而快國際公告第三季合併營收 9.04 億元，季增 68.67%、年增 28.39%。公司表示訂單能見度已延伸至 2027 年。",
-              "relevance": "記憶體模組需求與訂單能見度——HBM 與記憶體供給主題",
-              "title": "AI 記憶體出貨 2 個月神救援！美而快第三季大賺 1.53 元訂單至 2027 年",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/11/13/v-color/",
-              "published": "2026-11-13T02:09:56Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "FAA 將 AI 輔助建議擴大至全美空域以管理空中交通壅塞",
-              "summary_zh": "美國聯邦航空總署把用於管理空中交通壅塞的 AI 建議工具擴大適用至全美空域。航空公司對該工具給予正面評價，航管員工會則未參與其中。",
-              "relevance": "AI 於安全關鍵自主系統的部署——自主系統主題",
-              "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
-              "published": "2026-11-12T22:28:47Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Valo 與 Montai 合併，Flagship 旗下兩家 AI 生技公司結合",
-              "summary_zh": "Flagship Pioneering 創立的兩家 AI 藥物發現與開發公司 Valo Health 與 Montai Therapeutics 宣布合併，目標為推進 Montai 的早期與臨床前管線，並延續既有的大型合作案。",
-              "relevance": "AI 驅動藥物發現平台整併——生技×AI 主題",
-              "title": "Valo and Montai become one as the Flagship AI-based biotechs tie the knot",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/flagship-ai-based-biotechs-valo-montai-tie-knot",
-              "published": null
-            },
-            {
-              "title_zh": "Rivia 推出 AI 臨床試驗資料審查模組，Scancell 為早期採用者",
-              "summary_zh": "瑞士資料引擎公司 Rivia 推出新的 AI 資料審查模組，用於加速臨床資料清理，Scancell 為早期採用客戶。",
-              "relevance": "AI 應用於臨床試驗資料流程——生技×AI 主題",
-              "title": "Rivia launches AI-powered clinical trial data review module, with Scancell as early adopter",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/cro/rivia-launches-ai-powered-automated-clinical-trial-data-review-platform",
-              "published": null
-            },
-            {
-              "title_zh": "Oura 將以 6.25 億美元收購 AI 虛擬初級照護夥伴 Counsel Health",
-              "summary_zh": "Oura 宣布以 6.25 億美元收購 Counsel Health。兩家公司自 6 月起合作，近期並曾公布共同參與 CMS 十年期 ACCESS Model 的計畫。",
-              "relevance": "穿戴式生理資料與 AI 醫療服務整合——生技×AI 主題",
-              "title": "Oura to acquire AI virtual primary care partner Counsel Health for $625M",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/digital-health/oura-acquire-ai-virtual-primary-care-partner-counsel-health-625m",
-              "published": null
-            },
-            {
-              "title_zh": "Beam 鐮刀型貧血療法結果，鋪陳與 Casgevy、Lyfgenia 的對決",
-              "summary_zh": "Beam Therapeutics 公布鹼基編輯細胞療法 risto-cel 的 1/2 期研究結果，顯示該療法在整整一年內減少了該血液疾病最疼痛的併發症。公司預計在年底前向 FDA 遞件。",
-              "relevance": "基因編輯療法臨床數據——生技主題",
-              "title": "Beam’s sickle cell therapy results tee up potential Casgevy, Lyfgenia showdown",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/beams-sickle-cell-therapy-risto-cels-phase-12-results-position-potential-casgevy-lyfgenia",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "SoftBank 十億美元級虧損，可能為 AI 天然氣發電野心設下上限",
-              "summary_zh": "SoftBank 因預訂供 AI 資料中心使用的天然氣渦輪機而虧損逾 30 億美元。報導分析此一虧損對電力市場的意涵。",
-              "relevance": "資料中心電力供給與能源成本——AI 基礎設施電力約束主題",
-              "title": "SoftBank’s billion-dollar loss may have put a cap on AI’s natural gas ambitions",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/",
-              "published": "2026-11-12T17:00:52Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
         "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
         "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
       ]
