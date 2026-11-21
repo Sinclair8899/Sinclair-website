@@ -62,12 +62,12 @@ AI 可以把故障碼講清楚、列出可能原因、比價找零件，這些�
 
 - 這是**單一車輛、回溯式**的個案研究，我同時是車主、參與者與分析者。
 - 五個關卡是**待驗證的設計框架**，還沒有在工作室或企業現場測試過效果。
-- 這是 working paper，**沒有經過期刊同儕審查**；修訂過程用過多輪 AI 協助的審閱，也不等同同儕審查。
+- 這是放在 Zenodo 的 working paper，**沒有經過期刊同儕審查**；修訂過程用過多輪 AI 協助的審閱，也不等同同儕審查。
 - 文中金額是**車主自述**，不能加總成「AI 造成的損失」：氣囊是車主、AI、供應商共同的決定；換模組有工作室經驗與避免拋錨的考量。
 - 修線後 26 天沒有警示，**不等於永久修好**，也不證明單一根因。
 - 工作室、供應商與 AI 產品都不具名，研究不是要指責任何一方。
 
 ## 延伸閱讀
 
-- 研究全文（英文，65 頁）：*From Plausible Explanation to Physical Verification: Evidence-to-Action Gates in AI-Assisted Automotive Diagnosis*, Working paper v1.3.4。〔連結待填〕
+- 研究全文（英文，65 頁）：*From Plausible Explanation to Physical Verification: Evidence-to-Action Gates in AI-Assisted Automotive Diagnosis*, Working paper v1.3.4，Zenodo 預印本（2026-11-20）：https://doi.org/10.5281/zenodo.24391389
 - 公開重現資料（Harvard Dataverse）：https://doi.org/10.7910/DVN/3LIIB9 （振動記錄、分析程式、編碼表、去識別化證據帳本摘錄）
