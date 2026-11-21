@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-21T02:42:29Z",
+  "generated_utc": "2026-11-21T13:42:49Z",
   "date": "2026-11-21",
-  "observation_cutoff_utc": "2026-11-21T02:42:15Z",
-  "source_date_min": "2026-11-19",
+  "observation_cutoff_utc": "2026-11-21T13:42:43Z",
+  "source_date_min": "2026-11-20",
   "source_date_max": "2026-11-20",
   "indices": [
     {
@@ -35,7 +35,7 @@
         9642.8799,
         9652.7998,
         9419.7197,
-        8408.5908
+        8408.5898
       ],
       "ma20": 10201.99,
       "ma20_gap": -17.58,
@@ -76,7 +76,7 @@
         24328.3809,
         24429.8809,
         23879.1992,
-        22617.7324
+        22617.7305
       ],
       "ma20": 25101.93,
       "ma20_gap": -9.9,
@@ -353,16 +353,16 @@
     {
       "name": "美元指數",
       "code": "DXY",
-      "value": "103.90",
-      "d1": "+0.0%",
+      "value": "103.81",
+      "d1": "-0.1%",
       "w1": null,
-      "sign": 1,
+      "sign": -1,
       "wsign": 0,
-      "source_date": "2026-11-19",
-      "d1_start_date": "2026-11-18",
-      "w1_start_date": "2026-11-13",
-      "source_timestamp_utc": "2026-11-19T05:00:00Z",
-      "session_end_utc": "2026-11-20T04:59:00Z",
+      "source_date": "2026-11-20",
+      "d1_start_date": "2026-11-19",
+      "w1_start_date": "2026-11-15",
+      "source_timestamp_utc": "2026-11-20T05:00:00Z",
+      "session_end_utc": "2026-11-21T04:59:00Z",
       "exchange_timezone": "America/New_York"
     },
     {
@@ -383,16 +383,16 @@
     {
       "name": "黃金期貨",
       "code": "GOLD",
-      "value": "3,685.50",
-      "d1": "-1.5%",
+      "value": "3,515.40",
+      "d1": "-4.6%",
       "w1": null,
       "sign": -1,
       "wsign": 0,
-      "source_date": "2026-11-19",
-      "d1_start_date": "2026-11-18",
-      "w1_start_date": "2026-11-13",
-      "source_timestamp_utc": "2026-11-19T05:00:00Z",
-      "session_end_utc": "2026-11-20T04:59:00Z",
+      "source_date": "2026-11-20",
+      "d1_start_date": "2026-11-19",
+      "w1_start_date": "2026-11-15",
+      "source_timestamp_utc": "2026-11-20T05:00:00Z",
+      "session_end_utc": "2026-11-21T04:59:00Z",
       "exchange_timezone": "America/New_York"
     },
     {
@@ -654,8 +654,8 @@
       "source_date": "2026-11-20",
       "d1_start_date": "2026-11-19",
       "w1_start_date": "2026-11-13",
-      "d1": -6.83,
-      "w1": -13.02,
+      "d1": -6.82,
+      "w1": -13.01,
       "return_covered": 6,
       "advancers": 0,
       "decliners": 6,
@@ -673,10 +673,10 @@
           "source_timestamp_utc": "2026-11-20T14:30:00Z",
           "session_end_utc": "2026-11-20T21:00:00Z",
           "exchange_timezone": "America/New_York",
-          "d1": -3.5,
-          "w1": -8.45,
-          "dd52": -30.13,
-          "ma240_gap": -16.83
+          "d1": -3.49,
+          "w1": -8.44,
+          "dd52": -30.12,
+          "ma240_gap": -16.82
         },
         {
           "ticker": "OSIS",
@@ -701,10 +701,10 @@
           "source_timestamp_utc": "2026-11-20T14:30:00Z",
           "session_end_utc": "2026-11-20T21:00:00Z",
           "exchange_timezone": "America/New_York",
-          "d1": -5.57,
-          "w1": -11.23,
-          "dd52": -42.69,
-          "ma240_gap": -24.81
+          "d1": -5.51,
+          "w1": -11.18,
+          "dd52": -42.65,
+          "ma240_gap": -24.77
         },
         {
           "ticker": "TSLA",
@@ -910,7 +910,7 @@
       {
         "ticker": "FANUY",
         "label": "FANUC · 工業機器人與控制",
-        "dd52": -42.69
+        "dd52": -42.65
       },
       {
         "ticker": "OSIS",
