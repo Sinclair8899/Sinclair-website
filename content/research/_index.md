@@ -15,4 +15,6 @@ Research here is organized by thesis and open questions, not by publication date
 
 - [Semiconductors](/research/semiconductors/) — *HBM, CoWoS, advanced packaging, and the manufacturing logic of competitive leverage.*
 
+**Case study (中文導讀)** — [AI 說得有道理，何時才足以讓我們採取行動？](/research/ai-diagnosis-evidence-gates/) — evidence-to-action gates in AI-assisted physical diagnosis ([working paper on Zenodo](https://doi.org/10.5281/zenodo.24391389)).
+
 **Doctoral dissertation** — [Industrial Competitiveness and Innovation: A Comprehensive Analysis of Globally Engaged Taiwan-Listed Companies](https://doi.org/10.5281/zenodo.17718665) (EDBA, HEC Liège, 2025).

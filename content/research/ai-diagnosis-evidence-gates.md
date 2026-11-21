@@ -1,7 +1,8 @@
 ---
 title: "AI 說得有道理，何時才足以讓我們採取行動？"
 date: 2026-11-21
-draft: true
+htmlLang: "zh-Hant"
+locale: "zh_TW"
 hideDescription: true
 description: "一次汽車維修的長期追蹤：人與 AI 如何確認設備條件、分辨故障原因，並在採購與維修前做證據檢查。研究提出五個「證據到行動」關卡。"
 ---

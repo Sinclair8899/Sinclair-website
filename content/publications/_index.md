@@ -5,6 +5,20 @@ description: "Academic publications, working papers, and research outputs by Sin
 
 ## Academic Publications
 
+### Zenodo Working Papers
+
+---
+
+**From Plausible Explanation to Physical Verification: Evidence-to-Action Gates in AI-Assisted Automotive Diagnosis**
+
+*Huang, Po-Sung (Sinclair)* (2026) | Working Paper v1.3.4, Zenodo | *Published: November 20, 2026 | Not peer-reviewed* | DOI: [10.5281/zenodo.24391389](https://doi.org/10.5281/zenodo.24391389)
+
+An exploratory longitudinal single-case study of AI-assisted repair decisions on a 12-year-old vehicle, process-traced from a provenance-graded evidence ledger and archived AI dialogues. It shows how a retracted configuration claim still reached a non-returnable purchase, and how a normal spot reading coexisted with an intermittent upstream fault, then proposes five evidence-to-action gates as a design framework still to be tested. Replication package: [Harvard Dataverse, 10.7910/DVN/3LIIB9](https://doi.org/10.7910/DVN/3LIIB9).
+
+[View on Zenodo →](https://doi.org/10.5281/zenodo.24391389) ｜ [中文案例導讀 →](/research/ai-diagnosis-evidence-gates/)
+
+---
+
 ### SSRN Working Papers
 
 ---
