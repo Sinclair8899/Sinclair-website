@@ -44,6 +44,16 @@ inLanguage:
 
 ---
 
+## 精選研究
+
+**[AI 說得有道理，何時才足以讓我們採取行動？](/research/ai-diagnosis-evidence-gates/)**
+
+從一次汽車維修的長期追蹤，看人與 AI 如何確認設備條件、分辨故障原因，並在採購與維修前做證據檢查。研究提出五個「證據到行動」關卡，也保留尚未解決的疑問。
+
+[閱讀案例導讀 →](/research/ai-diagnosis-evidence-gates/) ｜ [查看研究全文（Zenodo）→](https://doi.org/10.5281/zenodo.24391389)
+
+---
+
 [了解策略參與方式 →](/advisory/) ｜ [查看研究發表 →](/publications/)
 
 ---

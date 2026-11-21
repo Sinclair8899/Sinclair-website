@@ -6,8 +6,15 @@
     <description>Recent content in Research on Sinclair Huang</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sinclairhuang.org/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 說得有道理，何時才足以讓我們採取行動？</title>
+      <link>https://sinclairhuang.org/research/ai-diagnosis-evidence-gates/</link>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://sinclairhuang.org/research/ai-diagnosis-evidence-gates/</guid>
+      <description>一次汽車維修的長期追蹤：人與 AI 如何確認設備條件、分辨故障原因，並在採購與維修前做證據檢查。研究提出五個「證據到行動」關卡。</description>
+    </item>
     <item>
       <title>AI Infrastructure</title>
       <link>https://sinclairhuang.org/research/ai-infrastructure/</link>
