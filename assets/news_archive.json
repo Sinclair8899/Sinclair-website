@@ -2,6 +2,247 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-21",
+      "generated_utc": "2026-11-21T02:52:25Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 16,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 12,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 5
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "川普威脅對將 AI 資料中心移往美國境外者課徵「巨額稅負」",
+              "summary_zh": "美國總統川普表示將對在美國境外興建資料中心的企業課徵「巨額稅負」，稱「我們不會允許我們的公司把資料中心蓋到國外」。報導同時指出，美國各州與城市正對新建資料中心的申請設下限制。",
+              "relevance": "資料中心選址與政策——AI 基礎設施建置主題",
+              "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+              "published": "2026-11-20T18:50:19Z"
+            },
+            {
+              "title_zh": "AI 資料中心排放創新高，Meta 重新評估 2030 淨零目標",
+              "summary_zh": "Meta 表示正在「重新評估」其 2030 年永續目標，背景是 AI 資料中心帶來的排放量創下新高。報導並探討其他業者是否會跟進。",
+              "relevance": "資料中心能源與排放約束——AI 基礎設施主題",
+              "title": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
+              "published": "2026-11-20T21:47:10Z"
+            },
+            {
+              "title_zh": "超高溫岩層地熱或可解決資料中心能源難題",
+              "summary_zh": "新創地熱公司主張其技術可跳過現有業者的路線，在幾乎任何地點提供達兆瓦級的電力，以因應資料中心的用電需求。",
+              "relevance": "資料中心電力供給——AI 基礎設施能源主題",
+              "title": "Super-hot rock geothermal could end data center energy woes",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/20/super-hot-rock-geothermal-could-end-data-center-energy-woes/",
+              "published": "2026-11-20T18:34:00Z"
+            },
+            {
+              "title_zh": "AI 界最常被誤解的那張圖表迎來重大更新",
+              "summary_zh": "AI 評測非營利組織 METR 發布時間跨度（time horizon）圖表的更新報告，指出部分 AI 能力持續沿指數軌跡進步，但模型在需要判斷力的任務上表現不如在程式撰寫任務上。",
+              "relevance": "模型能力評測方法——AI 能力量測主題",
+              "title": "The most misunderstood graph in AI just got a major update",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+              "published": "2026-11-20T18:15:15Z"
+            },
+            {
+              "title_zh": "研究人員在 AI 供應鏈植入 200 萬個「金絲雀」，揭露隱私外洩問題",
+              "summary_zh": "研究人員以帶有獨特可追蹤標記的提示詞進行測試，結果顯示使用者資料並未保持私密，秘密資料在 AI 供應鏈中以高比率外洩。",
+              "relevance": "AI 服務供應鏈與資料治理——AI 基礎設施安全主題",
+              "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+              "published": "2026-11-20T20:59:08Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "美國公布 H200 出口許可申請量：中國科技巨頭搶購百萬顆，實際獲批落差大",
+              "summary_zh": "美國依《出口管制改革法案》（ECRA）公開商務部工業與安全局（BIS）涉及 NVIDIA 的相關資料，顯示中國科技業者申請採購 H200 的數量達百萬顆等級，與實際獲批數量存在明顯落差。",
+              "relevance": "AI 加速器出口管制與供給——半導體供應鏈主題",
+              "title": "美曝 H200 出口許可申請量！中科技巨頭瘋搶百萬顆，實際獲批落差大",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/21/us-2026-h200-export-china/",
+              "published": "2026-11-21T01:12:04Z"
+            },
+            {
+              "title_zh": "路透：美國 SEC 正調查 NVIDIA 的會計處理方式",
+              "summary_zh": "據兩名知情人士向路透表示，美國證券交易委員會（SEC）正在調查 NVIDIA 的會計處理方式。此為 NVIDIA 近期接連面臨的監管動作之一。",
+              "relevance": "AI 晶片龍頭的監管風險——半導體產業主題",
+              "title": "輝達再遭政府盯上！路透：美 SEC 正調查輝達會計處理方式",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/21/nvidia-us-sec-investigation/",
+              "published": "2026-11-21T02:06:27Z"
+            },
+            {
+              "title_zh": "加州檢察長就黃仁勳的中國關係向 NVIDIA 發出傳票",
+              "summary_zh": "加州檢察長 Rob Bonta 表示，已就前執行長黃仁勳與中國的往來向 NVIDIA 發出傳票，並稱「NVIDIA 與其前執行長的行為引發明顯警訊，包括公司可能誤導投資人的方式」。",
+              "relevance": "AI 晶片供應商治理與法遵——半導體產業主題",
+              "title": "California AG subpoenas Nvidia over worries about Huang’s ties with China",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/20/california-ag-subpoenas-nvidia-over-worries-about-huangs-ties-with-china/",
+              "published": "2026-11-20T13:21:11Z"
+            },
+            {
+              "title_zh": "SpaceX 債權人不希望馬斯克把他們的抵押品射上太空",
+              "summary_zh": "報導指出，SpaceX 的債權人希望作為抵押品的高價值晶片留在地球、處於可取回範圍內。此議題牽動太空資料中心的融資安排。",
+              "relevance": "太空資料中心的晶片資產與融資——半導體與 AI 基礎設施交會主題",
+              "title": "SpaceX lenders don’t want Elon Musk launching their collateral into space",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/space/2026/11/spacex-lenders-dont-want-elon-musk-launching-their-collateral-into-space/",
+              "published": "2026-11-20T14:15:21Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Isomorphic 在募得 50 億美元數日後，將 Merck 納入 AI 藥物發現合作名單",
+              "summary_zh": "Isomorphic Labs 在完成 50 億美元募資數日後，新增 Merck & Co. 為合作夥伴，其合作名單目前已包含營收前四大藥廠中的三家。",
+              "relevance": "AI 驅動藥物發現合作——生技×AI 主題",
+              "title": "Isomorphic adds Merck to AI drug discovery roster days after $5B raise",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/isomorphic-labs-adds-merck-ai-drug-discovery-roster-days-after-5b-raise",
+              "published": null
+            },
+            {
+              "title_zh": "Anthropic 董事 Vas Narasimhan 押注 AI 可協助 Novartis 解決「生物延遲」",
+              "summary_zh": "在 Anthropic 於那斯達克完成 IPO 的同一天，身兼 Anthropic 董事的 Novartis 執行長 Vas Narasimhan 在倫敦向投資人說明該公司如何運用 AI 縮短藥物開發時程，並談及未來解決「生物延遲」（biological latency）的目標。",
+              "relevance": "AI 於新藥開發流程的導入——生技×AI 主題",
+              "title": "Anthropic board director Vas Narasimhan bets AI can help Novartis solve ‘biological latency’",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/anthropic-board-director-vas-narasimhan-bets-ai-can-help-novartis-solve-biological-latency",
+              "published": null
+            },
+            {
+              "title_zh": "Merck 的 TROP2 ADC 在胃食道癌關鍵試驗中延長存活期",
+              "summary_zh": "Merck & Co. 的 sacituzumab tirumotecan 在第三期癌症試驗中改善了整體存活期，為這款 TROP2 標靶抗體藥物複合體（ADC）拿下第二個全球關鍵性成果。",
+              "relevance": "腫瘤標靶藥物臨床數據——生技研究主題",
+              "title": "Merck’s TROP2 ADC extends survival in pivotal gastroesophageal cancer trial",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/mercks-trop2-adc-extends-survival-pivotal-gastroesophageal-cancer-trial",
+              "published": null
+            },
+            {
+              "title_zh": "Biogen tau 療法在兩年阿茲海默症數據更新中顯示更大效益",
+              "summary_zh": "Biogen 表示其標靶 tau 的反義寡核苷酸在兩年後進一步延緩臨床退化，分析師認為此結果強化了支持其後期開發的證據。",
+              "relevance": "神經退化疾病療法臨床數據——生技研究主題",
+              "title": "Biogen’s tau therapy drives bigger benefits in 2-year Alzheimer’s update",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/biogens-tau-therapy-drives-bigger-benefits-2-year-alzheimers-update",
+              "published": null
+            },
+            {
+              "title_zh": "Pfizer 以 26 億美元、三項計畫交易與中國 Starna 合作，進軍 in vivo CAR-T",
+              "summary_zh": "Pfizer 與中國 Starna Therapeutics 簽訂價值 26 億美元的協議，取得三項臨床前候選藥物，正式加入 in vivo CAR-T 競賽。",
+              "relevance": "細胞療法平台與跨國授權——生技產業主題",
+              "title": "Pfizer enters in vivo CAR-T space via 3-program, $2.6B deal with China’s Starna",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/pfizer-enters-vivo-car-t-space-3-program-26b-deal-chinas-starna",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "SpaceX Starshield 在烏克蘭的爭議可能波及其更廣泛的軍用業務",
+              "summary_zh": "報導指出，SpaceX 的 Starshield 服務於 2026 年 10 月所做的變更引發爭議，即將上任的眾議院委員會主席以資金問題向 SpaceX 施壓。",
+              "relevance": "衛星與自主系統的國防採購環境——自主系統政策主題",
+              "title": "SpaceX's Starshield troubles in Ukraine could threaten its broader military business",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
+              "published": "2026-11-20T22:16:51Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-nr-ntn-design-and-test-challenges-for-satellite-connected-iot/",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaig",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
+      ]
+    },
+    {
       "date": "2026-11-20",
       "generated_utc": "2026-11-20T02:40:52Z",
       "status": "published",
@@ -1513,269 +1754,6 @@
               "source": "Fierce Biotech",
               "url": "https://www.fiercebiotech.com/pharma/fda-appears-pause-controversial-speedy-review-program-complete-response-letter-disclosures",
               "published": null
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
-      ]
-    },
-    {
-      "date": "2026-11-14",
-      "generated_utc": "2026-11-14T01:52:17Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 14,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 13,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 3
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 3,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 5,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "遭出口禁令管制的 Nvidia 晶片，是中國最強 AI 模型背後的推手",
-              "summary_zh": "新研究指出，中國最先進的 AI 模型是在受出口管制禁令的 Nvidia 晶片上訓練而成。",
-              "relevance": "算力出口管制與訓練用加速器取得——AI 基礎設施供應鏈主題",
-              "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-              "published": "2026-11-13T18:40:30Z"
-            },
-            {
-              "title_zh": "創投與創辦人表示：黃仁勳離任在 AI 新創募資上炸出大洞",
-              "summary_zh": "報導指出，Nvidia 在黃仁勳任內投入數百億美元於 AI 新創；在他卸任後，創辦人與創投預期支票金額縮小、估值下修。",
-              "relevance": "AI 基礎設施資本流向——算力投資週期主題",
-              "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-              "published": "2026-11-13T22:43:00Z"
-            },
-            {
-              "title_zh": "這家年輕新創想用海洋熱能驅動海上浮動資料中心，投資人已經上船",
-              "summary_zh": "新創 Drogue 計畫擷取海洋熱能，為浮動船體上的資料中心供電，首個原型預計在兩年內下水運作。",
-              "relevance": "資料中心電力與散熱——AI 基礎設施能源約束主題",
-              "title": "This young startup wants to power floating data centers with the ocean’s heat, and investors are already on board",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/",
-              "published": "2026-11-13T20:07:24Z"
-            },
-            {
-              "title_zh": "微軟最新一次郵件中斷演變為全球雲端危機",
-              "summary_zh": "微軟為期一天的服務中斷自 Outlook 與 Teams 開始，最終使公司大部分雲端服務離線；微軟表示正逐步恢復服務。微軟說明主因為伺服器健康檢查失敗，而非駭客攻擊。",
-              "relevance": "雲端服務可靠性——AI 基礎設施營運風險主題",
-              "title": "Microsoft’s latest email outage turned into a full-blown global cloud crisis",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/13/microsoft-latest-email-outage-turned-into-a-full-blown-global-cloud-crisis/",
-              "published": "2026-11-13T13:15:20Z"
-            },
-            {
-              "title_zh": "AI 代理新創 LangChain 估值達 30 億美元",
-              "summary_zh": "LangChain 宣稱其模型與平台無關的代理管理工具 LangSmith 目前擁有 7,000 家客戶。",
-              "relevance": "Agent 框架與工具鏈——AI 應用層基礎設施主題",
-              "title": "AI agent startup LangChain hits $3B valuation",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
-              "published": "2026-11-13T19:37:57Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "黃仁勳風波延燒！黃樂參與創立的 Megaspeed 是中國取得輝達 GPU 的祕密管道？",
-              "summary_zh": "《財訊》報導，輝達執行長黃仁勳 8 日發信向員工坦承婚外情並致歉；外媒指出相關人士曾在新加坡任職，並點名其參與創立的 Megaspeed 與中國取得輝達 GPU 的管道有關。",
-              "relevance": "GPU 流向與出口管制——半導體供應鏈主題",
-              "title": "黃仁勳風波延燒！黃樂參與創立的 Megaspeed 是中國取得輝達 GPU 的祕密管道？",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/11/14/what-is-megaspeed/",
-              "published": "2026-11-14T01:00:34Z"
-            },
-            {
-              "title_zh": "黃仁勳在環境議題上同樣輕率",
-              "summary_zh": "報導指出，Nvidia 在黃仁勳任內成為 AI 榮景的引擎，同時帶動耗水與耗化學品的晶圓廠擴建、資料中心電網負擔，以及電子廢棄物問題。",
-              "relevance": "晶片製造的水電與化學品耗用——半導體產能擴張外部成本主題",
-              "title": "Jensen Huang was reckless with the environment, too",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/1033051/nvidia-jensen-huang-chips-gpu-supply-chain-climate-pollution",
-              "published": "2026-11-13T17:44:22Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Virtuoso Surgical 的膀胱病灶機器人系統取得 FDA 授權",
-              "summary_zh": "FDA 已對 Virtuoso Surgical 的 Virtuoso Endoscopy System 授予 De Novo 認可。",
-              "relevance": "手術機器人法規通過——醫療自主系統主題",
-              "title": "Virtuoso Surgical nabs FDA authorization for robotic bladder lesions system",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/virtuoso-surgical-nabs-fda-authorization-robotic-bladder-lesions-system",
-              "published": null
-            },
-            {
-              "title_zh": "FAA 將 AI 建議系統擴大至全美空域以管理空中交通壅塞",
-              "summary_zh": "FAA 將用於管理空中交通壅塞的 AI 建議工具擴大至整個美國空域；航空公司給予正面評價，但航管人員工會未參與該決策。",
-              "relevance": "大規模自主決策輔助部署——自主系統與人機協作主題",
-              "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
-              "published": "2026-11-13T21:20:47Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "更多自主權、更少保密協議：腦植入試驗受試者提出新訴求",
-              "summary_zh": "報導指出，科學家數十年來開發可解碼腦部活動的植入裝置，用於控制機械肢體、電腦甚至「說話」；參與試驗的志願者提出希望獲得更多自主權與更少保密協議的要求。",
-              "relevance": "腦機介面臨床試驗治理——神經技術與自主系統主題",
-              "title": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/",
-              "published": "2026-11-13T10:00:00Z"
-            },
-            {
-              "title_zh": "這個 AI「技師」能窺看其他神經網路的黑箱內部",
-              "summary_zh": "《Nature》報導一套能針對其他神經網路進行定位與除錯的 AI 系統，可望改善人工智慧的安全性與實用性。",
-              "relevance": "可解釋性與模型除錯——AI 方法論主題",
-              "title": "This AI ‘mechanic’ can peer inside the black box of other neural networks",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03679-8",
-              "published": "2026-11-13T00:00:00Z"
-            },
-            {
-              "title_zh": "研究人員以 10 種蛋白質組合提升 ALS 偵測率",
-              "summary_zh": "研究團隊指出，神經退化疾病確診時往往已造成不可逆損害，因而開發血液中的 10 蛋白質面板，以更早辨識生物線索並追蹤病程。",
-              "relevance": "多體學生物標記與疾病早期偵測——生技×AI 主題",
-              "title": "‘They’ve been misdiagnosed for too long’: Researchers use 10-protein panel to improve ALS detection",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/research/researchers-identify-protein-panel-blood-improve-als-detection",
-              "published": null
-            },
-            {
-              "title_zh": "輝瑞向 Blackstone 取得最高 15 億美元資金，為 GLP-1 肥胖症上市鋪路",
-              "summary_zh": "輝瑞自 Blackstone Life Sciences 取得最高 15 億美元資金，用於開發其每月一次的 GLP-1 受體促效劑。",
-              "relevance": "代謝藥物研發資金——生技產業資本結構主題",
-              "title": "Pfizer taps Blackstone for up to $1.5B to pave path to GLP-1's obesity launch",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/pfizer-taps-blackstone-15b-pave-path-glp-1-launch",
-              "published": null
-            },
-            {
-              "title_zh": "FDA 似已暫停爭議性快速審查計畫與完整回覆信揭露",
-              "summary_zh": "據路透報導，FDA 已悄悄擱置「Commissioner's National Priority Voucher（CNPV）」試辦計畫；該機構同時似乎也暫停公布完整回覆信（CRL）。",
-              "relevance": "藥證審查制度變動——生技研發法規環境主題",
-              "title": "FDA appears to pause controversial speedy review program, complete response letter disclosures",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/pharma/fda-appears-pause-controversial-speedy-review-program-complete-response-letter-disclosures",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "赴美國際學生人數驟降——科學界憂心",
-              "summary_zh": "《Nature》報導，赴美國際學生人數下滑，主要由中國與印度學生減少所驅動；研究人員表示此趨勢可能拖慢美國科學進展。",
-              "relevance": "研究人才流動——科研人力供給主題",
-              "title": "Number of international students arriving in US plunges — worrying scientists",
-              "source": "Nature News",
-              "url": "https://www.nature.com/articles/d41586-026-03668-x",
-              "published": "2026-11-13T00:00:00Z"
-            },
-            {
-              "title_zh": "FAA 發布史上第三次全美停飛令",
-              "summary_zh": "FAA 因多個航路交通管制中心通訊異常發布全國性地面停飛令，為該機構史上第三次；報導指出排除故障期間停飛可能持續一段時間。",
-              "relevance": "關鍵基礎設施中斷——系統韌性主題",
-              "title": "FAA orders third nationwide ground stop in its history",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/tech-policy/2026/11/faa-orders-third-nationwide-ground-stop-in-its-history/",
-              "published": "2026-11-13T23:17:38Z"
-            },
-            {
-              "title_zh": "數百萬美國人未依處方使用 GLP-1 藥物",
-              "summary_zh": "報導指出，成本與取得障礙促使民眾改變用法，或使用未經核准的 GLP-1 版本。",
-              "relevance": "藥物可近性與需求——生技市場終端需求主題",
-              "title": "Millions of Americans are not taking their GLP-1 drugs as prescribed",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/health/2026/11/millions-in-us-use-unapproved-glp-1s-and-use-them-in-unapproved-ways/",
-              "published": "2026-11-13T21:59:01Z"
             }
           ]
         }
