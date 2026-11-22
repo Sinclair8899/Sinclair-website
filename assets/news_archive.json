@@ -2,6 +2,229 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-22",
+      "generated_utc": "2026-11-22T01:41:25Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 60,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 7,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 5
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 1,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "兩個截然不同的 Nvidia",
+              "summary_zh": "TechCrunch 指出市場對 Nvidia 出現兩種不同圖像:一邊是公司最新財報,另一邊是科技業高層公開呼籲黃仁勳回任。",
+              "relevance": "Nvidia 財報與經營層變動——AI 運算供應鏈主題",
+              "title": "A tale of two Nvidias",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+              "published": "2026-11-21T21:07:42Z"
+            },
+            {
+              "title_zh": "堅持「算力留美」!川普揚言對海外建資料中心的美企課重稅",
+              "summary_zh": "美國總統川普表示將對赴海外興建資料中心的美國企業課徵高額稅負,但未說明執行方式與課徵依據。",
+              "relevance": "資料中心選址與政策——AI 基礎設施建置主題",
+              "title": "堅持「算力留美」！川普揚言對海外建資料中心的美企課重稅",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/21/trump-data-centers-abroad-tax/",
+              "published": "2026-11-21T02:22:18Z"
+            },
+            {
+              "title_zh": "Anthropic 研究員宣稱利用 Claude,解開困擾數學界超過 150 年黎曼猜想難題",
+              "summary_zh": "Anthropic 研究員聲稱藉由 Claude 處理黎曼猜想相關難題;該公司於 11 月 19 日在那斯達克掛牌上市。",
+              "relevance": "前沿模型能力與 Anthropic 動態——AI 基礎設施主題",
+              "title": "Anthropic 研究員宣稱利用 Claude，解開困擾數學界超過 150 年黎曼猜想難題",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/21/anthropic-solve-riemann-problem-with-claude/",
+              "published": "2026-11-21T03:29:13Z"
+            },
+            {
+              "title_zh": "AI 也有雙面性格,研究:AI 得知受監控時會隱藏真實意圖",
+              "summary_zh": "一項研究指出 AI 模型表現會受「是否被監看」強烈影響,在察覺受監控時展現不同行為。",
+              "relevance": "模型評測與對齊——AI 系統可靠性主題",
+              "title": "AI 也有雙面性格，研究：AI 得知受監控時會隱藏真實意圖",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/21/ai-surveillance-behavioral-differences-study/",
+              "published": "2026-11-21T06:30:16Z"
+            },
+            {
+              "title_zh": "Microsoft 聯同跨行業機構推出 AI 透明度倡議,加強企業對 AI 模型及代理的信任",
+              "summary_zh": "Microsoft 與跨行業機構共同發起 AI 透明度倡議,針對企業難以還原從請求到產生結果之間過程、無法獨立驗證的問題。",
+              "relevance": "AI 代理可驗證性——AI 基礎設施治理主題",
+              "title": "Microsoft 聯同跨行業機構推出 AI 透明度倡議，加強企業對 AI 模型及代理的信任",
+              "source": "TechNews 科技新報",
+              "url": "https://infosecu.technews.tw/2026/11/21/microsoft-launches-ai-transparency-initiative/",
+              "published": "2026-11-21T06:00:02Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "聯合國未能就規範「殺手機器人」達成共識",
+              "summary_zh": "聯合國外交官本週在日內瓦討論自主武器規範,經過一週談判後僅同意「開始討論各種選項」。",
+              "relevance": "自主系統規範——機器人與自主系統治理主題",
+              "title": "The UN fails to agree on rules regulating ‘killer robots’",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+              "published": "2026-11-21T20:03:37Z"
+            },
+            {
+              "title_zh": "強鹿推免費 AI 助理「JD」告別繁瑣數據,一句話秒解農場大小事",
+              "summary_zh": "農機大廠 John Deere 推出 AI 助理「JD」,讓農民以自然對話方式分析多年累積的農場數據。",
+              "relevance": "農業機械的 AI 介面——自主系統應用主題",
+              "title": "強鹿推免費 AI 助理「JD」告別繁瑣數據，一句話秒解農場大小事",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/21/john-deere-jd-ai-assistant/",
+              "published": "2026-11-21T05:30:16Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Isomorphic 在募得 50 億美元數日後將 Merck 納入 AI 藥物發現合作名單",
+              "summary_zh": "Isomorphic Labs 在完成 50 億美元募資數日後新增 Merck & Co. 為合作夥伴,其夥伴名單現已包含營收前四大藥廠中的三家。",
+              "relevance": "AI 藥物發現平台合作——生技×AI 主題",
+              "title": "Isomorphic adds Merck to AI drug discovery roster days after $5B raise",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/isomorphic-labs-adds-merck-ai-drug-discovery-roster-days-after-5b-raise",
+              "published": null
+            },
+            {
+              "title_zh": "Anthropic 董事 Vas Narasimhan 押注 AI 可協助 Novartis 解決「生物延遲」",
+              "summary_zh": "在 Anthropic 於那斯達克掛牌同日,身兼其董事的 Novartis 執行長 Vas Narasimhan 在倫敦向投資人說明該公司如何運用 AI 縮短藥物開發時程。",
+              "relevance": "製藥導入 AI——生技×AI 主題",
+              "title": "Anthropic board director Vas Narasimhan bets AI can help Novartis solve ‘biological latency’",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/anthropic-board-director-vas-narasimhan-bets-ai-can-help-novartis-solve-biological-latency",
+              "published": null
+            },
+            {
+              "title_zh": "280 萬人基因分析揭阿茲海默症新線索,48 個風險區域首度現身",
+              "summary_zh": "由荷蘭阿姆斯特丹自由大學主導、規模迄今最大的阿茲海默症基因關聯研究分析約 280 萬人基因資料,找出 48 個先前未見的風險區域。",
+              "relevance": "大規模基因資料分析——生物資料科學主題",
+              "title": "280 萬人基因分析揭阿茲海默症新線索，48 個風險區域首度現身",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/22/massive-study-of-2-8-million-people-reveals-new-secrets-of-alzheimers-disease/",
+              "published": "2026-11-21T16:00:05Z"
+            },
+            {
+              "title_zh": "AI 加速科學研究,資料品質與驗證機制成新瓶頸",
+              "summary_zh": "報導指出 AI 正改變科學研究運作方式,使研究資料的價值與審視標準同步提高,資料品質與驗證成為新的關注焦點。",
+              "relevance": "科研資料品質——AI for Science 主題",
+              "title": "AI 加速科學研究，資料品質與驗證機制成新瓶頸",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/22/ai-raises-the-stakes-for-discovery-data/",
+              "published": "2026-11-22T00:30:25Z"
+            },
+            {
+              "title_zh": "Biogen 的 tau 療法在兩年阿茲海默症數據更新中顯示更大效益",
+              "summary_zh": "Biogen 表示其靶向 tau 的反義寡核苷酸在兩年後進一步減緩臨床退化,分析師認為支持後期開發的證據獲得強化。",
+              "relevance": "神經退化疾病療法數據——生技研究主題",
+              "title": "Biogen’s tau therapy drives bigger benefits in 2-year Alzheimer’s update",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/biogens-tau-therapy-drives-bigger-benefits-2-year-alzheimers-update",
+              "published": null
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "台股上週崩跌 7,641 點!國安基金證實進場、金管會祭「全面禁空令」救市",
+              "summary_zh": "台股上週大幅下挫 7,641 點,報導指出黃仁勳辭任與美國 AI 監管趨嚴等因素疊加;國安基金證實進場,金管會實施全面禁空措施。",
+              "relevance": "台股與半導體供應鏈評價——總經市場主題",
+              "title": "台股上週崩跌 7,641 點！國安基金證實進場、金管會祭「全面禁空令」救市",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/22/total-no-fly-zone/",
+              "published": "2026-11-22T01:03:31Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-nr-ntn-design-and-test-challenges-for-satellite-connected-iot/",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaig",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
+      ]
+    },
+    {
       "date": "2026-11-21",
       "generated_utc": "2026-11-21T02:52:25Z",
       "status": "published",
@@ -1499,260 +1722,6 @@
               "title": "Pfizer taps Blackstone for up to $1.5B to pave path to GLP-1's obesity launch",
               "source": "Fierce Biotech",
               "url": "https://www.fiercebiotech.com/biotech/pfizer-taps-blackstone-15b-pave-path-glp-1-launch",
-              "published": null
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
-      ]
-    },
-    {
-      "date": "2026-11-15",
-      "generated_utc": "2026-11-15T01:21:11Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 61,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 4,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 7,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 0,
-          "excluded": 3
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "亞洲各國政府對 Nvidia 執行長黃仁勳離任的反應",
-              "summary_zh": "黃仁勳辭去 Nvidia 執行長後，部分亞洲政府出面確認晶片供應承諾，另有政府表示正在觀察對當地專案的影響或處理進行中的調查。",
-              "relevance": "AI 加速器供應鏈治理——AI 基礎設施主題",
-              "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
-              "published": "2026-11-14T16:34:15Z"
-            },
-            {
-              "title_zh": "Nvidia 接班人傳鎖定 Arm 執行長，昔日收購對象如今成救兵？",
-              "summary_zh": "黃仁勳因私人關係風波辭去執行長後，Nvidia 董事會正尋找接班人選，傳出已接觸 Arm 執行長 Rene Haas。",
-              "relevance": "AI 晶片龍頭領導層變動——AI 基礎設施主題",
-              "title": "Nvidia 接班人傳鎖定 Arm 執行長，昔日收購對象如今成救兵？",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/11/14/nvidia-arm-rene-haas/",
-              "published": "2026-11-14T07:21:00Z"
-            },
-            {
-              "title_zh": "光電整合進入「打群架」時代，聯發科侯上勇：CPO 路線未定，良率才是關鍵",
-              "summary_zh": "CPO（共同封裝光學）被視為 AI 突破資料傳輸與功耗瓶頸的重要技術，但聯發科侯上勇表示產業界對是否由 CPO 主導仍有不同看法，良率是關鍵。",
-              "relevance": "資料中心互連與功耗瓶頸——AI 基礎設施主題",
-              "title": "光電整合進入「打群架」時代，聯發科侯上勇：CPO路線未定，良率才是關鍵",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/15/cpo-mediatek-hou-shang-yong-optoelectronic-integration-battleground-tech-choices-not-just-cost/",
-              "published": "2026-11-15T01:00:35Z"
-            },
-            {
-              "title_zh": "「雨露均霑」時代終結！AI 狂潮首現明確減速訊號",
-              "summary_zh": "報導指出美國期中選舉後金融市場對 AI 前景的看法轉變，主張嚴控 AI 資料中心建設的一方勝選，AI 類股出現三年來首次明確減速訊號。",
-              "relevance": "資料中心建設政策與資本支出——AI 基礎設施主題",
-              "title": "「雨露均霑」時代終結！AI 狂潮首現明確減速訊號，專家示警：未來投資心臟要夠大",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/11/15/ai-sector-shows-first-signs-of-slowdown-in-three-years/",
-              "published": "2026-11-15T00:00:56Z"
-            },
-            {
-              "title_zh": "廣達梁次震看 AI 後市：無懼黃仁勳風波與政策變數，投資建設「箭在弦上」",
-              "summary_zh": "廣達副董事長梁次震表示台灣在全球 AI 供應鏈中仍具競爭優勢，對 AI 產業發展維持正面看法，投資建設持續推進。",
-              "relevance": "AI 伺服器代工產能——AI 基礎設施主題",
-              "title": "廣達梁次震看 AI 後市：無懼黃仁勳風波與政策變數，投資建設「箭在弦上」",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/14/quanta-liang-cizhen-sees-no-impact-on-ai-from-jensen-huang-controversy/",
-              "published": "2026-11-14T06:30:49Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "搶攻歐美邊緣 AI 市場！擷發科鎖定無人機、車載等應用，美國 IPO 最快估明年 Q1 底上市",
-              "summary_zh": "擷發科近年布局車載、無人機、機器人等邊緣 AI 應用，規劃赴美 IPO，最快預估明年第一季底上市。",
-              "relevance": "邊緣 AI 晶片 IP——半導體主題",
-              "title": "搶攻歐美邊緣 AI 市場！擷發科鎖定無人機、車載等應用，美 IPO 最快估明年 Q1 底上市",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/15/microip-us-and-eu-edge-ai-and-us-ipo/",
-              "published": "2026-11-15T01:08:43Z"
-            },
-            {
-              "title_zh": "26 億資金活水注入，力晶投控未上市股流動性勁揚",
-              "summary_zh": "力晶投控除自身實行庫藏股、山一投資公開購買股份合計 20 億元股權外，鈺創、晶豪等公司亦加入，為未上市股票增添流動性。",
-              "relevance": "記憶體與晶圓代工業者資本動向——半導體主題",
-              "title": "26 億資金活水注入，力晶投控未上市股流動性勁揚",
-              "source": "TechNews 科技新報",
-              "url": "https://finance.technews.tw/2026/11/15/pihc-stock-9/",
-              "published": "2026-11-15T01:15:27Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Tesla 邀請部分人士「自用」購買 Cybercab —— 但要看清細則",
-              "summary_zh": "Tesla 向「特定客戶」開放購買無方向盤雙座 Cybercab 供「個人使用」，但車輛僅能在「支援服務區域」內使用，並附帶每月 299 美元費用。",
-              "relevance": "自駕車輛部署——自主系統主題",
-              "title": "Tesla is inviting some people to buy a Cybercab ‘for personal use’ — but read the fine print",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/transportation/1033844/tesla-personal-cybercab-orders-299-subscription-fine-print",
-              "published": "2026-11-14T14:18:36Z"
-            },
-            {
-              "title_zh": "SpaceX 週六回收了 Starship 火箭——但有個但書",
-              "summary_zh": "SpaceX 在 Starship 第 15 次飛行中，首次以「Mechazilla」發射回收塔的機械手臂成功接住 Starship 本體；此前該公司僅對助推器執行過此類回收動作。",
-              "relevance": "大型載具自主回收控制——自主系統主題",
-              "title": "SpaceX returned its Starship rocket on Saturday—but there's a catch",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
-              "published": "2026-11-15T00:40:59Z"
-            },
-            {
-              "title_zh": "Rockwell Automation 推出 LogixEdge 控制器，加速軟體定義自動化",
-              "summary_zh": "工業自動化廠商 Rockwell Automation 宣布推出 LogixEdge 控制器，用於推進軟體定義自動化。",
-              "relevance": "工業自動化控制架構——機器人主題",
-              "title": "Rockwell Automation 推出 LogixEdge 控制器，加速軟體定義自動化",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/14/rockwell-automation-logixedge-controller-accelerates-software-defined-automation/",
-              "published": "2026-11-14T06:00:51Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "「他們被誤診太久了」：研究人員以 10 種蛋白質組合改善 ALS 偵測",
-              "summary_zh": "研究團隊利用血液中的 10 種蛋白質面板改善肌萎縮性脊髓側索硬化症（ALS）的偵測，目標是在不可逆損傷發生前更早找出生物線索並追蹤病程。",
-              "relevance": "生物標記面板與疾病早期偵測——生技×AI 主題",
-              "title": "‘They’ve been misdiagnosed for too long’: Researchers use 10-protein panel to improve ALS detection",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/research/researchers-identify-protein-panel-blood-improve-als-detection",
-              "published": null
-            },
-            {
-              "title_zh": "AI 加速長壽研究，科學家從血液與基因中找出延緩老化的線索",
-              "summary_zh": "報導指出 AI 與生物學結合日益深入，科學家能更精準追蹤人體老化過程，並從血液與基因資料中尋找延緩老化的線索。",
-              "relevance": "AI 應用於老化生物學研究——生技×AI 主題",
-              "title": "AI 加速長壽研究，科學家從血液與基因中找出延緩老化的線索",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/14/ai-could-help-us-live-much-longer/",
-              "published": "2026-11-14T07:00:51Z"
-            },
-            {
-              "title_zh": "Virtuoso Surgical 取得 FDA 膀胱病灶機器人系統授權",
-              "summary_zh": "FDA 授予 Virtuoso Surgical 的 Virtuoso Endoscopy System De Novo 授權。",
-              "relevance": "手術機器人法規核准——機器人×生醫交會主題",
-              "title": "Virtuoso Surgical nabs FDA authorization for robotic bladder lesions system",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/medtech/virtuoso-surgical-nabs-fda-authorization-robotic-bladder-lesions-system",
-              "published": null
-            },
-            {
-              "title_zh": "AI 問診漸成主流但侵蝕大眾信任感，醫病關係仍是最重要核心",
-              "summary_zh": "埃默里大學研究指出，民眾愈來愈常向 AI 聊天機器人詢問健康資訊，但醫療現場的人性互動仍難以被取代。",
-              "relevance": "AI 於臨床場域的採用與信任——生技×AI 主題",
-              "title": "AI 問診漸成主流但侵蝕大眾信任感，醫病關係仍是最重要核心",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/15/in-the-ai-era-can-we-preserve-humanity-in-healthcare/",
-              "published": "2026-11-14T16:00:06Z"
-            },
-            {
-              "title_zh": "Cellectis 轉向體內療法，將裁撤 70% 員工",
-              "summary_zh": "Cellectis 從異體 CAR-T 轉向 in vivo 療法的策略調整，將伴隨裁撤 70% 的員工。",
-              "relevance": "細胞療法平台轉型——生技研究主題",
-              "title": "Cellectis will shed 70% of workforce as part of in vivo pivot",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/cellectis-will-shed-70-workforce-part-vivo-pivot",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "FDA 似已暫停爭議性快速審查計畫與完整回覆信揭露",
-              "summary_zh": "據路透報導，FDA 悄悄擱置了 Commissioner's National Priority Voucher（CNPV）試辦計畫；該機構也似乎暫停公布完整回覆信（CRL）。",
-              "relevance": "藥品審查制度變動——生技政策環境",
-              "title": "FDA appears to pause controversial speedy review program, complete response letter disclosures",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/pharma/fda-appears-pause-controversial-speedy-review-program-complete-response-letter-disclosures",
               "published": null
             }
           ]
