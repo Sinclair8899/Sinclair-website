@@ -44,7 +44,7 @@ AI 可以把故障碼講清楚、列出可能原因、比價找零件，這些�
 
 **帶走的問題**：我們討論的，真的是這台設備的實際配置嗎？
 
-**本案對應**：後懸吊型式從未在下單前確認
+**本案對應**：現存紀錄未能證實，下單前已確認這台車的後懸吊型式。
 
 ### 2. 確認觀察條件
 
@@ -93,5 +93,6 @@ AI 可以把故障碼講清楚、列出可能原因、比價找零件，這些�
 
 ## 延伸閱讀
 
+- 英文故事版（Medium）：[My AI Assistant Corrected Itself. The Parts List Didn’t.](https://medium.com/@sinclairhuang/my-ai-assistant-corrected-itself-the-parts-list-didnt-39977267c676) — 從一筆不能退貨的訂單，回看為什麼 AI 已經改口，採購清單卻沒有跟著改。
 - 研究全文（英文，65 頁）：*From Plausible Explanation to Physical Verification: Evidence-to-Action Gates in AI-Assisted Automotive Diagnosis*, Working paper v1.3.4，Zenodo 預印本（2026-11-20）：[研究全文（Zenodo）](https://doi.org/10.5281/zenodo.24391389)
 - [公開重現資料（Harvard Dataverse）](https://doi.org/10.7910/DVN/3LIIB9)（振動記錄、分析程式、編碼表、去識別化證據帳本摘錄）
