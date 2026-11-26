@@ -2,6 +2,275 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-26",
+      "generated_utc": "2026-11-26T03:48:06Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 70,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 11,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 17,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 6
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "FCC 核准 SpaceX 最多部署 100 萬顆資料中心衛星的計畫",
+              "summary_zh": "FCC 週三宣布，已授權 SpaceX 在其「Starmind」計畫下部署最多 100 萬顆搭載 AI 晶片的衛星。報導指出，Google 與 Blue Origin 等業者亦在推動太空 AI 資料中心構想，這是該機關首次核准此類申請；FCC 以部分爭議（如對科學研究的潛在威脅）不屬其管轄權為由予以駁回。",
+              "relevance": "AI 資料中心部署型態——算力基礎設施主題",
+              "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+              "source": "The Verge",
+              "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+              "published": "2026-11-25T17:44:51Z"
+            },
+            {
+              "title_zh": "資料中心如何推動美國天然氣熱潮",
+              "summary_zh": "MIT Technology Review 回顧 2025 年 5 月有關 AI 將使人類持續依賴天然氣的專題報導，指出 18 個月來相關情況反覆出現。文章討論以再生能源等其他電力來源滿足全球上升電力需求的可能性。",
+              "relevance": "資料中心電力來源——AI 基礎設施能源約束主題",
+              "title": "How data centers are driving a US natural-gas boom",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/11/25/1149836/data-centers-gas-power-plants/",
+              "published": "2026-11-25T17:00:00Z"
+            },
+            {
+              "title_zh": "營收浮動、支出鎖死！Anthropic 股價跌破發行價，AI 價格戰考驗 9,000 億美元算力豪賭",
+              "summary_zh": "報導指出 Anthropic 上市後股價跌破發行價，市場正重新評估 AI 商業模式。文中提及 AI 價格戰與其算力支出規模之間的落差。",
+              "relevance": "模型廠商算力支出與營收結構——AI 基礎設施資本支出主題",
+              "title": "營收浮動、支出鎖死！Anthropic 股價跌破發行價，AI 價格戰考驗 9,000 億美元算力豪賭",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/26/anthropic-faces-ai-price-war-crisis/",
+              "published": "2026-11-26T03:20:32Z"
+            },
+            {
+              "title_zh": "OpenAI 表示隨著 Chat 與 Work 整合，重度 ChatGPT 使用者可能更快觸及用量上限",
+              "summary_zh": "OpenAI 將在 ChatGPT 導入單一用量計量機制，整合 Chat 與 Work 兩套使用體驗。重度使用者可能因此更早達到使用上限。",
+              "relevance": "推論用量計價與配額設計——AI 服務算力配置主題",
+              "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+              "published": "2026-11-25T20:03:27Z"
+            },
+            {
+              "title_zh": "Ars Live 回顧：別指望針對資料中心的軍事攻擊會停止",
+              "summary_zh": "Ars Technica 直播節目回顧指出，各國軍方在戰時有多種理由將資料中心與雲端服務列為攻擊目標。",
+              "relevance": "資料中心實體風險——AI 基礎設施韌性主題",
+              "title": "Ars Live recap: Don’t expect military attacks on data centers to stop",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/",
+              "published": "2026-11-25T16:47:14Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "S&P 因治理與「關鍵人物」風險考慮調降 Nvidia 信評",
+              "summary_zh": "信評機構 S&P 可能將 Nvidia 信用評等下調至第四高的 AA-。理由涉及公司治理與「關鍵人物」風險。",
+              "relevance": "AI 晶片龍頭信評與治理——半導體供應鏈主題",
+              "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+              "published": "2026-11-25T22:44:32Z"
+            },
+            {
+              "title_zh": "華為成立半導體與 AI 專利團隊，劍指輝達全球霸主地位",
+              "summary_zh": "華為加快在晶片與人工智慧領域的智慧財產權布局，成立專門的半導體與 AI 專利團隊。目標是為其生態系建立可與 Nvidia 抗衡的基礎。",
+              "relevance": "中國 AI 晶片生態系與專利布局——半導體競爭格局主題",
+              "title": "華為成立半導體與 AI 專利團隊，劍指輝達全球霸主地位",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/26/huawei-forms-patent-teams-for-chips-and-ai-eyeing-ecosystem-to-rival-nvidia/",
+              "published": "2026-11-26T03:40:04Z"
+            },
+            {
+              "title_zh": "有罪：華為因竊取 T-Mobile、Cisco 營業祕密面臨重罰",
+              "summary_zh": "陪審團認定華為竊取美國營業祕密並規避對伊朗制裁罪名成立。美國司法部表示，華為並未刻意掩飾其竊取美國營業祕密的行為。",
+              "relevance": "中美技術管制與訴訟——半導體地緣政治主題",
+              "title": "Guilty: Huawei faces steep penalties for stealing T-Mobile, Cisco trade secrets",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/tech-policy/2026/11/jury-convicts-huawei-of-stealing-us-trade-secrets-evading-iran-sanctions/",
+              "published": "2026-11-25T16:33:45Z"
+            },
+            {
+              "title_zh": "TEL 擴大南台灣布局！南科設台南研發中心，明年啟用高雄新辦公室",
+              "summary_zh": "東京威力科創（Tokyo Electron）深耕台灣逾 30 年，將於南科設立台南研發中心，並於明年啟用高雄新辦公室。",
+              "relevance": "半導體設備商在台產能與研發布局——晶圓製造供應鏈主題",
+              "title": "TEL 擴大南台灣布局！南科設台南研發中心，明年啟用高雄新辦公室",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/26/tel-taiwan-kaohsiung-and-tainan/",
+              "published": "2026-11-26T03:35:11Z"
+            },
+            {
+              "title_zh": "鴻勁三大成長引擎點火！Mega Tray、CPO 設備接單升溫，花旗目標價喊上萬元",
+              "summary_zh": "花旗最新報告指出，Mega Tray 測試機台、CPO 設備及主動式溫度控制（ATC）系統為鴻勁的成長動能。報告並給出萬元以上目標價。",
+              "relevance": "先進封裝測試與 CPO 設備——AI 晶片供應鏈主題",
+              "title": "鴻勁三大成長引擎點火！Mega Tray、CPO 設備接單升溫，花旗目標價喊上萬元",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/26/citi-see-hon-precision-2026/",
+              "published": "2026-11-26T03:18:56Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Schrödinger 與定序自動化公司 Enpicom 簽署 2,200 萬歐元生物製劑合作",
+              "summary_zh": "運算藥物探索生技公司 Schrödinger 已與定序自動化公司 Enpicom 完成一項全現金交易的合作案，金額為 2,200 萬歐元。",
+              "relevance": "運算藥物設計與定序自動化整合——生技×AI 主題",
+              "title": "Schrödinger signs €22M biologics collab with sequencing automation outfit Enpicom",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/schrodinger-forms-ties-sequencing-automation-outfit-enpicom-eur22m",
+              "published": null
+            },
+            {
+              "title_zh": "Iambic 執行長為何認為其臨床前癌症療法可能是 CDK 抑制劑的「聖杯」",
+              "summary_zh": "剛完成 1.5 億美元 IPO 的 Iambic Therapeutics 公布臨床前數據，鎖定腫瘤學競爭最激烈的藥物類別之一：細胞週期蛋白依賴性激酶（CDK）。",
+              "relevance": "AI 驅動藥物探索公司管線與募資——生技×AI 主題",
+              "title": "Why Iambic’s CEO believes preclinical cancer therapy could be ‘holy grail’ for CDK inhibitors",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/iambic-ceo-says-they-have-holy-grail-cdk-inhibitors-cancer-therapies",
+              "published": null
+            },
+            {
+              "title_zh": "Sanofi 以 410 億美元鉅額收購 Insmed，布局後 Dupixent 成長動能",
+              "summary_zh": "Sanofi 達成協議以 410 億美元收購 Insmed，取得三項已上市與後期呼吸道資產。此舉用以因應 Dupixent 即將到來的專利到期。",
+              "relevance": "大型製藥併購與管線重組——生技產業資本流向主題",
+              "title": "Sanofi inks massive $41B Insmed buyout for post-Dupixent growth drivers",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/pharma/sanofi-inks-41b-insmed-buyout-post-dupixent-growth-drivers",
+              "published": null
+            },
+            {
+              "title_zh": "眾議院小組推動扭轉美國生技「空洞化」，因應中國崛起",
+              "summary_zh": "美國眾議院「美中戰略競爭特別委員會」發布報告，提出政策建議以「扭轉美國藥物創新產業的空洞化」。",
+              "relevance": "生技產業政策與中美競爭——生技研發供應鏈主題",
+              "title": "House panel pushes to reverse 'hollowing out' of US biotech amid China's rise",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/select-committee-china-makes-final-push-us-biotech-vs-china",
+              "published": null
+            },
+            {
+              "title_zh": "AI 可能很快改變「理論物理學家」的定義",
+              "summary_zh": "報導指出，前沿 AI 已能解決過去需要頂尖物理學家花上一整天才能完成的問題。物理學界正在思考接下來的角色定位。",
+              "relevance": "AI 在科學計算與研究流程中的角色——AI for Science 主題",
+              "title": "AI may soon change what it means to be a theoretical physicist",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+              "published": "2026-11-25T12:00:28Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "核心 PCE 飆至 3.3% 反超 CPI，一文看懂美國兩大通膨指標關鍵差異",
+              "summary_zh": "報導說明美國核心 PCE 升至 3.3%，高於 CPI。文中比較 CPI 與 PCE 兩大通膨指標的計算與涵蓋範圍差異。",
+              "relevance": "美國通膨數據——總體利率環境主題",
+              "title": "核心 PCE 飆至 3.3% 反超 CPI，一文看懂美國兩大通膨指標關鍵差異",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/26/five-major-differences-between-us-cpi-and-pce/",
+              "published": "2026-11-26T03:30:28Z"
+            },
+            {
+              "title_zh": "SpaceX 獲准擴大部署，低軌衛星台廠供應鏈漲停表態",
+              "summary_zh": "美國批准 SpaceX 部署 100 萬顆衛星星系以打造太空資料中心後，低軌衛星台廠供應鏈包括華通、同欣電、公準精等股價漲停。",
+              "relevance": "太空資料中心題材對台股供應鏈的影響——市場反應主題",
+              "title": "SpaceX 獲准擴大部署，低軌衛星台廠供應鏈漲停表態",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/26/taiwan-low-earth-orbit-satellite-suppliers-hit-limit-up/",
+              "published": "2026-11-26T03:10:31Z"
+            },
+            {
+              "title_zh": "澳洲通過《數位注意義務法》管制科技巨頭，違規最高罰全球營收 5%",
+              "summary_zh": "澳洲國會 25 日通過《數位注意義務法》，賦予民眾提告權並要求開放關閉演算法推薦。違規最高可處全球營收 5% 的罰款。",
+              "relevance": "平台與演算法監管——科技政策環境主題",
+              "title": "澳洲重拳管科技巨頭：新法賦予民眾提告權、開放關閉演算法，違規最高罰全球營收 5%",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/26/australia-passes-digital-duty-of-care-law/",
+              "published": "2026-11-26T03:15:15Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-ntn-takes-flight-a-deep-dive-into-nr-ntn-technology-and-testing-aspects/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-nr-ntn-design-and-test-challenges-for-satellite-connected-iot/",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaig",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
+      ]
+    },
+    {
       "date": "2026-11-25",
       "generated_utc": "2026-11-25T04:37:15Z",
       "status": "published",
@@ -1172,265 +1441,6 @@
               "source": "TechCrunch",
               "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
               "published": "2026-11-19T00:42:56Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-nr-ntn-design-and-test-challenges-for-satellite-connected-iot/",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaig",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
-      ]
-    },
-    {
-      "date": "2026-11-19",
-      "generated_utc": "2026-11-19T02:50:52Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 16,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 5
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 3,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "據報導 Anthropic IPO 定價每股 83 美元,高於預估區間",
-              "summary_zh": "據報導,Anthropic 的首次公開發行定價為每股 83 美元,高於先前預估的價格區間。以完全稀釋基礎計算,該公司估值達 1.5 兆美元。",
-              "relevance": "AI 模型公司資本市場——AI 基礎設施資金循環主題",
-              "title": "Anthropic reportedly prices IPO at $83 a share, above projected range",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
-              "published": "2026-11-18T22:11:15Z"
-            },
-            {
-              "title_zh": "Nvidia 未提交例行 SEC 報告引發市場揣測",
-              "summary_zh": "Nvidia 宣布將延後數週才提交正式季度財報文件 10-Q,此舉出乎市場意料。一名華爾街分析師針對此一公告提出了解釋。",
-              "relevance": "Nvidia 財務揭露——AI 加速器供應鏈主題",
-              "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
-              "published": "2026-11-18T21:57:40Z"
-            },
-            {
-              "title_zh": "圖解 Nvidia 的崛起",
-              "summary_zh": "報導以視覺化方式呈現 Nvidia 的營收與獲利規模,指出該公司目前每秒創造約 8,300 美元的純利。文章背景為其創辦人執行長近期離職。",
-              "relevance": "Nvidia 獲利規模——AI 運算資本支出主題",
-              "title": "Nvidia’s rise, visualized",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang",
-              "published": "2026-11-18T19:30:00Z"
-            },
-            {
-              "title_zh": "Trump 最新佈局是在菲律賓設立 AI 樞紐",
-              "summary_zh": "報導指出美國與菲律賓之間涉及 AI 晶片與資料中心的合作安排(Pax Silica),於 Trump 訪問菲律賓期間成為焦點。",
-              "relevance": "跨國資料中心與晶片佈局——AI 基礎設施地緣分布主題",
-              "title": "Trump’s latest land grab is an AI hub in the Philippines",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
-              "published": "2026-11-18T19:40:36Z"
-            },
-            {
-              "title_zh": "更多銀行表示使用 AI 代理的客戶須自負風險,遭駭亦然",
-              "summary_zh": "Citi 成為最新一家對個人理財 AI 代理設限的大型金融機構。多家銀行表示,客戶若使用 AI 代理並因此遭駭,須自行承擔後果。",
-              "relevance": "AI agent 部署與責任界線——代理式 AI 系統主題",
-              "title": "More banks say customers using AI agents are on their own — even if they get hacked",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
-              "published": "2026-11-18T17:32:10Z"
-            }
-          ]
-        },
-        {
-          "key": "robotics",
-          "name": "機器人與自主",
-          "items": [
-            {
-              "title_zh": "Waymo 已停止其 robotaxi 上高速公路行駛",
-              "summary_zh": "Waymo 在加州收到關於施工區域的投訴後,暫停了 robotaxi 的高速公路行駛功能。該車隊先前已於 5 月因駛入高速公路施工區而召回。",
-              "relevance": "自駕車營運限制——自主系統安全與部署主題",
-              "title": "Waymo has stopped its robotaxis from driving on the freeway—here’s why",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/cars/2026/11/waymo-suspends-freeway-driving-after-california-construction-zone-complaint/",
-              "published": "2026-11-18T16:24:34Z"
-            },
-            {
-              "title_zh": "Tesla 售價 3 萬美元的 Cybercab 附帶每月 299 美元的條件",
-              "summary_zh": "Tesla 將以 3 萬美元銷售 Cybercab,但使用需每月支付 299 美元。報導指出 Tesla 可限制 Cybercab 的行駛區域,並可阻止車主轉售。",
-              "relevance": "robotaxi 商業模式——自主系統部署主題",
-              "title": "Tesla’s $30,000 Cybercab comes with a $299 monthly catch",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/cars/2026/11/tesla-will-sell-you-a-cybercab-for-30000-then-charge-299-a-month-to-use-it/",
-              "published": "2026-11-18T14:01:45Z"
-            },
-            {
-              "title_zh": "烏克蘭以中繼無人機繞過 Starlink 限制炸毀橋樑",
-              "summary_zh": "烏克蘭在一次攻擊行動中使用自製的中繼無人機技術,以繞過 Starlink 的使用限制。報導指出該行動同時吸收了來自對手的戰場經驗。",
-              "relevance": "無人機中繼與自主通訊鏈路——自主系統主題",
-              "title": "Ukraine blew up Putin’s bridge using relay drones to bypass Starlink limits",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/gadgets/2026/11/ukraine-blew-up-putins-bridge-using-relay-drones-to-bypass-starlink-limits/",
-              "published": "2026-11-18T23:10:39Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Isomorphic Labs 在 21 億美元輪次數月後再募 50 億美元 C 輪",
-              "summary_zh": "AI 藥物開發新創 Isomorphic Labs 完成 50 億美元的 C 輪募資,為其六個月內第二次完成數十億美元級別的融資。",
-              "relevance": "AI 驅動藥物發現募資——生技×AI 主題",
-              "title": "Isomorphic Labs raises $5B series C months after $2.1B round",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/isomorphic-labs-raises-5b-series-c-months-after-21b-round",
-              "published": null
-            },
-            {
-              "title_zh": "氣味新創宣稱其 AI 鼻子表現已達人類水準",
-              "summary_zh": "位於紐澤西的 AI 新創 Osmo 以約 30 位受訓人類嗅聞員的評語(如「堅果味」、「桃味」、「海洋味」)搭配化學分析建立訓練資料集,打造其稱為全球首個氣味基礎模型的系統。",
-              "relevance": "感官基礎模型與化學資料——生技×AI 主題",
-              "title": "This smell startup says its AI nose is as good as a human’s",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
-              "published": "2026-11-18T10:20:30Z"
-            },
-            {
-              "title_zh": "Vertex 與 Genomics 簽訂 2.2 億美元協議延續長期探索合作",
-              "summary_zh": "Vertex Pharmaceuticals 與定序專業公司 Genomics 續簽合作,金額最高達 2.2 億美元,在雙方已合作八年的基礎上再延長四年。",
-              "relevance": "基因體資料驅動藥物探索——生技×AI 主題",
-              "title": "Vertex signs $220M deal with Genomics to re-up long-running discovery pact",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/vertex-signs-genomics-220m-4-more-years-long-time-discovery-pact",
-              "published": null
-            },
-            {
-              "title_zh": "Biogen tau 療法在兩年期阿茲海默症更新數據中顯示更大效益",
-              "summary_zh": "Biogen 表示其靶向 tau 的反義寡核苷酸在兩年後進一步減緩臨床衰退。分析師認為此結果強化了支持後期開發的證據。",
-              "relevance": "神經退化疾病臨床數據——生技研發主題",
-              "title": "Biogen’s tau therapy drives bigger benefits in 2-year Alzheimer’s update",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/biogens-tau-therapy-drives-bigger-benefits-2-year-alzheimers-update",
-              "published": null
-            },
-            {
-              "title_zh": "Pfizer 以 26 億美元、三項計畫交易與中國 Starna 進軍 in vivo CAR-T",
-              "summary_zh": "Pfizer 與中國 Starna Therapeutics 簽訂價值 26 億美元的協議,取得三項臨床前候選藥物,正式投入 in vivo CAR-T 領域。",
-              "relevance": "細胞治療平台交易——生技產業結構主題",
-              "title": "Pfizer enters in vivo CAR-T space via 3-program, $2.6B deal with China’s Starna",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/pfizer-enters-vivo-car-t-space-3-program-26b-deal-chinas-starna",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "Microsoft 執行長 Satya Nadella 說明為何請 6 萬名員工離職",
-              "summary_zh": "Nadella 解釋了 Microsoft 在 10 月對 6 萬名員工提出買斷方案、鼓勵自願離職而非再次大規模裁員的原因,並表示與 AI 有關。",
-              "relevance": "科技業人力結構調整——AI 對勞動市場影響主題",
-              "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-              "published": "2026-11-19T00:42:56Z"
-            },
-            {
-              "title_zh": "在 AI 網路攻擊疑慮下,Nadella 稱許多關鍵基礎設施「無法修補」",
-              "summary_zh": "Microsoft 執行長 Nadella 淡化近期 Outlook 中斷事件,同時指出 AI 為保護連網世界帶來機會也帶來新挑戰,並稱許多關鍵基礎設施處於無法修補的狀態。",
-              "relevance": "AI 與資安基礎設施——運算基礎設施風險主題",
-              "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
-              "published": "2026-11-18T23:45:00Z"
-            },
-            {
-              "title_zh": "白宮撤回 Heidi Overton 的 FDA 局長提名",
-              "summary_zh": "白宮在參議院原訂表決確認前數小時撤回 Heidi Overton 領導 FDA 的提名。同一期間參議院也取消了對 NSF 人選的表決。",
-              "relevance": "美國藥政與科研機構人事——生技監管環境主題",
-              "title": "Heidi Overton’s FDA nomination pulled by White House",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/pharma/overtons-fda-nomination-has-been-pulled-white-house",
-              "published": null
-            },
-            {
-              "title_zh": "Nadella 預測 AI 代理將重組網路經濟結構",
-              "summary_zh": "Microsoft 執行長表示,AI 代理可能衝擊以廣告為主的商業模式,迫使 Amazon 等公司重新思考如何爭取顧客。",
-              "relevance": "代理式 AI 的產業經濟影響——AI 應用層主題",
-              "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
-              "published": "2026-11-18T22:58:11Z"
             }
           ]
         }
