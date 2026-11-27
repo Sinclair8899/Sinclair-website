@@ -2,6 +2,212 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-27",
+      "generated_utc": "2026-11-27T03:49:46Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 60,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 5,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 0,
+          "excluded": 6
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 2,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "伸縮自如的 AI 算力，模組化資料中心究竟是什麼？",
+              "summary_zh": "報導說明 AI 資料中心規模擴大後，除龐大資本支出外，還面臨電力取得、地方政府審查與居民反對等問題，並介紹模組化資料中心設計的概念。",
+              "relevance": "資料中心擴建與電力取得——AI 基礎設施供給主題",
+              "title": "伸縮自如的 AI 算力，模組化資料中心究竟是什麼？",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/27/data-centers-flexible-scalable-exploring-appeal-modular-design/",
+              "published": "2026-11-27T02:50:38Z"
+            },
+            {
+              "title_zh": "不到 3 小時奪取特權，微軟揭中國與北韓駭客濫用開源 AI 框架 ARTEX",
+              "summary_zh": "微軟發布威脅情資指出，與中國及北韓相關的國家級駭客組織，正將開源 AI 滲透測試框架 ARTEX 用於攻擊行動。",
+              "relevance": "AI 代理工具的安全外部性——AI 基礎設施風險主題",
+              "title": "不到 3 小時奪取特權，微軟揭中國與北韓駭客濫用開源 AI 框架 ARTEX",
+              "source": "TechNews 科技新報",
+              "url": "https://infosecu.technews.tw/2026/11/27/microsoft-warns-hackers-leveraging-ai-tools-cyberattacks/",
+              "published": "2026-11-27T02:50:10Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "Nvidia 暫停對東南亞的晶片出貨",
+              "summary_zh": "Nvidia 已通知製造合作夥伴，暫停向馬來西亞、新加坡、泰國與印尼出貨伺服器。報導指出此舉發生在美國加強阻止 AI 晶片流入中國之際。",
+              "relevance": "AI 加速器出口管制與供應鏈流向——運算供給約束主題",
+              "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+              "source": "TechCrunch",
+              "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+              "published": "2026-11-26T20:03:54Z"
+            },
+            {
+              "title_zh": "記憶體價格暴漲 500%，中小電子廠翻遍 eBay、聯繫數百家掮客找貨",
+              "summary_zh": "據《華爾街日報》報導，記憶體短缺迫使許多中小型電子廠成立採購戰情室，員工在 eBay 等網站搜尋貨源並聯繫數百家掮客。",
+              "relevance": "DRAM 供給短缺與漲價——記憶體約束主題",
+              "title": "記憶體價格暴漲 500%，中小電子廠翻遍 eBay、聯繫數百家掮客找貨",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/27/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history/",
+              "published": "2026-11-27T02:30:38Z"
+            },
+            {
+              "title_zh": "記憶體漲價重創 Android 陣營，iPhone 在美市占攀升至 57%",
+              "summary_zh": "據 Counterpoint Research 資料，記憶體價格持續攀升之際，美國智慧型手機市場版圖出現變化，iPhone 市占率升至 57%。",
+              "relevance": "記憶體漲價外溢至終端裝置市場——記憶體約束主題",
+              "title": "記憶體漲價重創 Android 陣營，iPhone 在美市占攀升至 57%",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/27/q326-us-smartphone-market/",
+              "published": "2026-11-27T02:36:21Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "三星半導體成立專責機器人團隊，預計 2028 年進駐晶圓廠",
+              "summary_zh": "韓媒報導，三星電子已在設備解決方案（DS）事業部成立專責機器人團隊，規劃於 2028 年前將無人搬運車、自駕機器人與機械手臂導入晶圓廠，降低產線人工依賴。",
+              "relevance": "製造自動化與晶圓廠機器人部署——自主系統落地主題",
+              "title": "三星半導體成立專責機器人團隊！預計 2028 年進駐晶圓廠，全面降低產線人工依賴",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/27/samsung-roadmap-reportedly-puts-unmanned-vehicles-self-driving-robots-and-robotic-arms-inside-its-chip-fabs-by-2028/",
+              "published": "2026-11-27T02:25:24Z"
+            },
+            {
+              "title_zh": "從造車到國防工業，底特律將成無人機製造重鎮",
+              "summary_zh": "報導指出美國五角大廈正與通用汽車、福特汽車等業者接洽，將汽車產業的量產能力轉向無人機製造。",
+              "relevance": "無人機量產與自主系統供應鏈——機器人製造主題",
+              "title": "從造車到國防工業，底特律將成無人機製造重鎮",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/27/from-automaking-to-defense-detroit-set-to-become-a-major-hub-for-drone-manufacturing/",
+              "published": "2026-11-27T03:21:11Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "新一代仿生手來了——而且能感覺",
+              "summary_zh": "報導介紹一款與前臂上部神經連接的義肢手，可讓使用者感受到壓力，並能用以處理精細物件。",
+              "relevance": "神經介面與義肢控制——生醫工程與自主控制交叉主題",
+              "title": "The next generation of bionic hands is here—and they can feel",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/11/26/1149923/the-next-generation-of-bionic-hands-is-here-and-they-can-feel/",
+              "published": "2026-11-26T09:59:00Z"
+            },
+            {
+              "title_zh": "Schrödinger 與定序自動化公司 Enpicom 簽署 2,200 萬歐元生物製劑合作",
+              "summary_zh": "計算藥物探索公司 Schrödinger 與定序自動化公司 Enpicom 完成一項全現金合作案，價值 2,200 萬歐元。",
+              "relevance": "計算藥物設計與定序自動化整合——生技×AI 主題",
+              "title": "Schrödinger signs €22M biologics collab with sequencing automation outfit Enpicom",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/schrodinger-forms-ties-sequencing-automation-outfit-enpicom-eur22m",
+              "published": null
+            },
+            {
+              "title_zh": "Iambic 執行長認為其臨床前癌症療法可能是 CDK 抑制劑的「聖杯」",
+              "summary_zh": "甫完成 1.5 億美元 IPO 的 Iambic Therapeutics 公布臨床前數據，鎖定腫瘤學中競爭最激烈的藥物類別之一「細胞週期蛋白依賴性激酶（CDK）」。",
+              "relevance": "AI 驅動藥物發現公司的資本市場與數據進展——生技×AI 主題",
+              "title": "Why Iambic’s CEO believes preclinical cancer therapy could be ‘holy grail’ for CDK inhibitors",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/iambic-ceo-says-they-have-holy-grail-cdk-inhibitors-cancer-therapies",
+              "published": null
+            },
+            {
+              "title_zh": "美國眾院委員會推動扭轉美國生技「空洞化」以因應中國崛起",
+              "summary_zh": "美國眾議院中國問題特別委員會發布報告，提出政策建議以「扭轉美國藥物創新產業的空洞化」。",
+              "relevance": "生技產業政策與中美競爭——生技研究環境主題",
+              "title": "House panel pushes to reverse 'hollowing out' of US biotech amid China's rise",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/select-committee-china-makes-final-push-us-biotech-vs-china",
+              "published": null
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-ntn-takes-flight-a-deep-dive-into-nr-ntn-technology-and-testing-aspects/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-nr-ntn-design-and-test-challenges-for-satellite-connected-iot/",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaig",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
+      ]
+    },
+    {
       "date": "2026-11-26",
       "generated_utc": "2026-11-26T03:48:06Z",
       "status": "published",
@@ -1218,229 +1424,6 @@
               "source": "Ars Technica",
               "url": "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
               "published": "2026-11-20T22:16:51Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-nr-ntn-design-and-test-challenges-for-satellite-connected-iot/",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaig",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
-      ]
-    },
-    {
-      "date": "2026-11-20",
-      "generated_utc": "2026-11-20T02:40:52Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 2,
-          "excluded": 5
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 3,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "Anthropic 掛牌 Nasdaq 開盤報 111 美元，較 IPO 價高出 33%",
-              "summary_zh": "Anthropic 的 IPO 定價為每股 83 美元，募集超過 800 億美元新資金，首日在 Nasdaq 以 111 美元開出，較發行價高約 33%。另據報導，七位創辦人在此次 IPO 中共套現將近 20 億美元。",
-              "relevance": "前沿模型實驗室資本市場動向——AI 基礎設施資金來源主題",
-              "title": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
-              "published": "2026-11-19T16:59:23Z"
-            },
-            {
-              "title_zh": "Anthropic IPO 考驗 AI 的循環融資熱潮",
-              "summary_zh": "報導指出 Anthropic 上市之際背負龐大的運算採購承諾，而其最大基礎設施夥伴包括 Amazon 與 Google。文中並提到，即使 Anthropic 失去技術領先地位，這些夥伴仍可能持續自 AI 獲利。",
-              "relevance": "算力採購承諾與雲端夥伴關係——AI 基礎設施循環融資主題",
-              "title": "Anthropic’s IPO puts AI’s circular financing boom to the test",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
-              "published": "2026-11-19T14:54:39Z"
-            },
-            {
-              "title_zh": "Google 讓 Gemini 能代你操作 Mac",
-              "summary_zh": "Google 最新 Gemini 更新在 Mac 上推出可代為操作的 AI agent，能整理檔案、填寫表單並處理多步驟工作流程。",
-              "relevance": "電腦操作型 agent 部署——AI agent 系統主題",
-              "title": "Google gives Gemini the ability to use your Mac for you",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-              "published": "2026-11-19T18:09:11Z"
-            },
-            {
-              "title_zh": "報導：Meta AI agent Muse 混淆對話，可能外洩私人資料",
-              "summary_zh": "據報導，Meta 的 AI agent Muse 出現跨使用者的對話混淆情形。員工表示 Muse 曾顯示他們從未提出的育兒請求、未詢問的職涯建議、未下過的商品訂單，以及不屬於自己的銀行帳戶餘額。",
-              "relevance": "agent 系統的資料隔離失效——AI agent 可靠性主題",
-              "title": "Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
-              "published": "2026-11-19T17:38:40Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "Nvidia 近期股價波動回顧",
-              "summary_zh": "報導指出,Nvidia 代理執行長 Colette Kress 在第三季財報電話會議結束時表示「我們沒問題」。至週四,該公司股價約在每股 150 美元,較 10 月 6 日的歷史高點下跌近 40%,抹去財報後的短暫漲幅。",
-              "relevance": "AI 加速器供應商股價與財報——半導體週期主題",
-              "title": "A brief history of Nvidia’s recent stock fluctuations",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
-              "published": "2026-11-19T21:59:35Z"
-            },
-            {
-              "title_zh": "英特爾再掀裁員潮：全球 IT 部門傳大砍雙位數，陳立武接管兩年已砍近 2.8 萬人",
-              "summary_zh": "依英特爾公布的員工人數推算,總員工數自 2024 年底以來已減少約 27,800 人。市場再傳出英特爾將對全球 IT 部門進行雙位數比例的裁員。",
-              "relevance": "晶圓代工與 IDM 業者組織調整——半導體產業結構主題",
-              "title": "英特爾再掀裁員潮！全球 IT 部門傳大砍雙位數，陳立武接管兩年已砍近 2.8 萬人",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/20/intel-ceo-lip-bu-tan-cuts-jobs/",
-              "published": "2026-11-20T02:37:55Z"
-            },
-            {
-              "title_zh": "Steam Machine 現在不必排候補名單即可購買",
-              "summary_zh": "Valve 宣布 512GB 版 Steam Machine 已開放直接購買,無需加入候補名單。該公司同時提到未來供應可能因記憶體價格飆漲(「RAMaggedon」)而受影響。",
-              "relevance": "記憶體供給緊俏對終端裝置的影響——記憶體約束主題",
-              "title": "You can now buy a Steam Machine without getting on a waitlist",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/games/1038010/valve-steam-machine-waitlist-supply",
-              "published": "2026-11-19T19:33:22Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Isomorphic Labs 於 50 億美元募資數日後將 Merck 納入 AI 藥物發現合作名單",
-              "summary_zh": "Isomorphic Labs 在完成 50 億美元募資後數日,新增 Merck & Co. 為合作夥伴。其合作名單現已包含以營收計前四大藥廠中的三家。",
-              "relevance": "AI 驅動藥物發現平台的產業合作——生技×AI 主題",
-              "title": "Isomorphic adds Merck to AI drug discovery roster days after $5B raise",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/isomorphic-labs-adds-merck-ai-drug-discovery-roster-days-after-5b-raise",
-              "published": null
-            },
-            {
-              "title_zh": "Anthropic 董事 Vas Narasimhan 押注 AI 能協助 Novartis 解決「生物延遲」",
-              "summary_zh": "在 Anthropic 於 Nasdaq 完成破紀錄 IPO 的同一天,身兼 Anthropic 唯一製藥業董事的 Novartis 執行長 Vas Narasimhan 在倫敦向投資人說明該公司如何運用 AI 縮短藥物開發時程,並期望有朝一日解決「生物延遲」問題。",
-              "relevance": "AI 應用於藥物開發時程——生技×AI 主題",
-              "title": "Anthropic board director Vas Narasimhan bets AI can help Novartis solve ‘biological latency’",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/anthropic-board-director-vas-narasimhan-bets-ai-can-help-novartis-solve-biological-latency",
-              "published": null
-            },
-            {
-              "title_zh": "人類肝臟在體外存活達七週創下紀錄",
-              "summary_zh": "澳洲研究人員宣稱,他們在雪梨以體外生命維持系統讓一具捐贈的人類肝臟存活七週,研究細節尚待發表。該團隊由外科醫師暨發明人 Carlo Pulitano 領導。",
-              "relevance": "體外器官維持技術——生醫工程主題",
-              "title": "A human liver has been kept alive outside the body for a record seven weeks",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/",
-              "published": "2026-11-19T12:00:00Z"
-            },
-            {
-              "title_zh": "Pfizer 以 3 項計畫、26 億美元與中國 Starna 達成交易,進軍體內 CAR-T 領域",
-              "summary_zh": "Pfizer 決定投入體內(in vivo)CAR-T 競賽,與中國 Starna Therapeutics 簽訂價值 26 億美元的協議,取得三項臨床前候選藥物。",
-              "relevance": "細胞治療平台技術授權——生技研發主題",
-              "title": "Pfizer enters in vivo CAR-T space via 3-program, $2.6B deal with China’s Starna",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/pfizer-enters-vivo-car-t-space-3-program-26b-deal-chinas-starna",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "AI 繁榮物極必反,牛津:下次經濟衰退恐更深更長",
-              "summary_zh": "牛津經濟研究院指出,雖然美國經濟持續成長、AI 投資熱潮帶動企業獲利與股市上漲,但繁榮背後可能正醞釀下一場經濟危機,下一次衰退恐更深、更長。",
-              "relevance": "AI 資本支出週期與總體經濟風險——宏觀主題",
-              "title": "AI 繁榮物極必反，牛津：下次經濟衰退恐更深更長",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/20/ai-boom-may-reach-a-tipping-point-oxford-warns-next-recession-could-be-deeper-and-longer/",
-              "published": "2026-11-20T02:35:39Z"
-            },
-            {
-              "title_zh": "微軟執行長 Satya Nadella 說明為何請 6 萬名員工自願離職",
-              "summary_zh": "Nadella 解釋微軟 10 月對 6 萬名員工提供買斷方案、鼓勵自願離職而非再次大規模裁員的原因,報導指出核心原因與 AI 有關。",
-              "relevance": "AI 對大型科技公司人力結構的影響——勞動市場主題",
-              "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-              "published": "2026-11-19T00:42:56Z"
             }
           ]
         }
