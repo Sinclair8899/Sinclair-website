@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-28T03:27:15Z",
+  "generated_utc": "2026-11-28T14:31:20Z",
   "date": "2026-11-28",
-  "observation_cutoff_utc": "2026-11-28T03:27:03Z",
+  "observation_cutoff_utc": "2026-11-28T14:31:13Z",
   "source_date_min": "2026-11-27",
   "source_date_max": "2026-11-27",
   "indices": [
@@ -35,7 +35,7 @@
         9588.0498,
         8832.5,
         8774.8604,
-        9186.7061
+        9186.71
       ],
       "ma20": 9732.68,
       "ma20_gap": -5.61,
@@ -383,8 +383,8 @@
     {
       "name": "黃金期貨",
       "code": "GOLD",
-      "value": "3,668.50",
-      "d1": "+3.8%",
+      "value": "3,639.60",
+      "d1": "+2.9%",
       "w1": null,
       "sign": 1,
       "wsign": 0,
@@ -654,8 +654,8 @@
       "source_date": "2026-11-27",
       "d1_start_date": "2026-11-25",
       "w1_start_date": "2026-11-19",
-      "d1": 2.76,
-      "w1": -0.04,
+      "d1": 2.88,
+      "w1": 0.06,
       "return_covered": 6,
       "advancers": 5,
       "decliners": 1,
@@ -701,10 +701,10 @@
           "source_timestamp_utc": "2026-11-27T14:30:00Z",
           "session_end_utc": "2026-11-27T18:00:00Z",
           "exchange_timezone": "America/New_York",
-          "d1": 3.16,
-          "w1": 3.1,
-          "dd52": -37.43,
-          "ma240_gap": -17.68
+          "d1": 3.72,
+          "w1": 3.65,
+          "dd52": -37.09,
+          "ma240_gap": -17.24
         },
         {
           "ticker": "OSIS",
@@ -729,10 +729,10 @@
           "source_timestamp_utc": "2026-11-27T14:30:00Z",
           "session_end_utc": "2026-11-27T18:00:00Z",
           "exchange_timezone": "America/New_York",
-          "d1": 0.71,
-          "w1": -0.65,
-          "dd52": -28.07,
-          "ma240_gap": -14.47
+          "d1": 0.83,
+          "w1": -0.54,
+          "dd52": -27.99,
+          "ma240_gap": -14.38
         },
         {
           "ticker": "MBLY",
@@ -903,14 +903,14 @@
         "dd52": -45.36
       },
       {
-        "ticker": "FANUY",
-        "label": "FANUC · 工業機器人與控制",
-        "dd52": -37.43
-      },
-      {
         "ticker": "NVDA",
         "label": "NVIDIA · 加速器",
         "dd52": -37.1
+      },
+      {
+        "ticker": "FANUY",
+        "label": "FANUC · 工業機器人與控制",
+        "dd52": -37.09
       },
       {
         "ticker": "AVGO",
