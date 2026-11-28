@@ -2,6 +2,253 @@
   "schema_version": 1,
   "days": [
     {
+      "date": "2026-11-28",
+      "generated_utc": "2026-11-28T03:35:00Z",
+      "status": "published",
+      "model": "claude-opus-5",
+      "candidates": 58,
+      "feeds": [
+        {
+          "source": "The Verge",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 10,
+          "excluded": 0
+        },
+        {
+          "source": "Ars Technica",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 4,
+          "excluded": 0
+        },
+        {
+          "source": "TechCrunch",
+          "ok": true,
+          "error": null,
+          "entries": 20,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "IEEE Spectrum",
+          "ok": true,
+          "error": null,
+          "entries": 30,
+          "kept": 1,
+          "excluded": 5
+        },
+        {
+          "source": "MIT Technology Review",
+          "ok": true,
+          "error": null,
+          "entries": 10,
+          "kept": 3,
+          "excluded": 0
+        },
+        {
+          "source": "Nature News",
+          "ok": true,
+          "error": null,
+          "entries": 75,
+          "kept": 0,
+          "excluded": 0
+        },
+        {
+          "source": "Fierce Biotech",
+          "ok": true,
+          "error": null,
+          "entries": 25,
+          "kept": 20,
+          "excluded": 0
+        },
+        {
+          "source": "TechNews 科技新報",
+          "ok": true,
+          "error": null,
+          "entries": 40,
+          "kept": 20,
+          "excluded": 0
+        }
+      ],
+      "categories": [
+        {
+          "key": "ai_infra",
+          "name": "AI 基礎設施",
+          "items": [
+            {
+              "title_zh": "野村：Rubin 量產進度低於預期，短期出貨面臨修正但長期仍看漲",
+              "summary_zh": "野村證券最新產業研究報告指出，NVIDIA 次世代 AI 晶片 Rubin 的量產進度不如原先預期，短期出貨面臨修正，長期看法仍為正向。",
+              "relevance": "NVIDIA 次世代加速器量產節奏——AI 基礎設施供應鏈主題",
+              "title": "野村：Rubin 量產進度低於預期，雖短期出貨面臨修正但長期仍看漲",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/28/rubin-mass-production-progress-falls-short-of-expectations/",
+              "published": "2026-11-28T02:00:30Z"
+            },
+            {
+              "title_zh": "矽光子、CPO 聚焦量產落地！台灣首屆矽光子應用展明年四月登場",
+              "summary_zh": "台灣電子製造設備工業同業公會（TEEIA）宣布，首屆矽光子應用展將於明年四月登場，聚焦 AI 帶動的矽光子及共同封裝光學（CPO）技術量產落地。",
+              "relevance": "光互連與 CPO——資料中心互連頻寬主題",
+              "title": "矽光子、CPO 聚焦量產落地！台灣首屆矽光子應用展明年四月登場",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/27/teeia-2027-cpo/",
+              "published": "2026-11-27T09:43:53Z"
+            },
+            {
+              "title_zh": "中企以輝達 GB300 機櫃抵押貸款現身上海，產地來自台灣受市場關注",
+              "summary_zh": "彭博社報導，一家中國企業將一組搭載 72 顆受出口管制限制的 NVIDIA Blackwell 架構晶片的 GB300 機櫃作為貸款抵押品，該設備產地為台灣。",
+              "relevance": "受管制 AI 加速器流通——算力資產與出口管制主題",
+              "title": "中企以輝達 GB300 機櫃抵押貸款現身上海，產地點名來自台灣更受市場關注",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/28/chinese-enterprises-use-nvidia-gb300-racks-as-collateral-for-loans/",
+              "published": "2026-11-28T00:30:45Z"
+            },
+            {
+              "title_zh": "黃仁勳回鍋 NVIDIA 執行長，Trump 稱自己居中協調",
+              "summary_zh": "黃仁勳在辭去執行長 11 天後重返 NVIDIA 擔任執行長；美國總統 Trump 向媒體表示自己透過一通電話與矽谷人脈促成董事會同意。",
+              "relevance": "NVIDIA 經營層變動——AI 基礎設施供應鏈治理主題",
+              "title": "川普再秀「交易的藝術」：一通電話加上矽谷人脈，輝達董事會同意黃仁勳回鍋",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/28/jensen-huang-nvidia-return-trump-behind-scenes-key-figure-board-nod/",
+              "published": "2026-11-28T01:00:58Z"
+            }
+          ]
+        },
+        {
+          "key": "semis_hbm",
+          "name": "半導體/HBM",
+          "items": [
+            {
+              "title_zh": "台積電宣布 A14 製程生態系就緒，0.9 版 PDK 登場並攜手兩大 EDA 廠完成驗證",
+              "summary_zh": "台積電在 2026 年歐洲開放創新平台（OIP）生態系研討會上宣布，1.4 奈米 A14 製程生態系已就緒，推出 0.9 版 PDK，並與兩大 EDA 廠商完成驗證。",
+              "relevance": "先進製程節點進度——AI 晶片供給端主題",
+              "title": "台積電宣布 A14 製程生態系就緒，0.9 版 PDK 登場並攜手兩大 EDA 廠完成驗證",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/28/tsmc-announces-a14-process-ecosystem-is-ready/",
+              "published": "2026-11-28T03:00:49Z"
+            },
+            {
+              "title_zh": "美出口限令加速轉變！瑞銀：中國產 AI 晶片 2028 年市占率將突破 88%",
+              "summary_zh": "瑞銀（UBS）預測，中國國產 AI 晶片在本國市場的年度市占率到 2028 年將突破 88%。報導將此與美國晶片出口管制的影響一併討論。",
+              "relevance": "出口管制與區域晶片供給分化——半導體地緣結構主題",
+              "title": "美出口限令加速轉變！瑞銀：中國產 AI 晶片 2028 年市占率將突破 88%",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/27/ubs-see-chinese-ai-chip-market-by-2028/",
+              "published": "2026-11-27T09:12:30Z"
+            },
+            {
+              "title_zh": "史丹佛研發「磷化鈮奈米帶」突破銅導線微縮瓶頸，越細反而越導電",
+              "summary_zh": "最新研究指出，磷化鈮奈米帶等特殊材料在尺寸縮小後導電能力反而提升，為晶片互連材料提供新的設計方向。",
+              "relevance": "晶片互連材料微縮——半導體元件瓶頸主題",
+              "title": "史丹佛研發「磷化鈮奈米帶」突破銅導線微縮瓶頸，越細反而越導電",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/28/unique-new-materials-redefining-future-chips/",
+              "published": "2026-11-28T00:30:06Z"
+            }
+          ]
+        },
+        {
+          "key": "robotics",
+          "name": "機器人與自主",
+          "items": [
+            {
+              "title_zh": "尖端義肢如何協助探索人類心智",
+              "summary_zh": "MIT Technology Review 報導使用者 Alexander (Avi) Davidson 的案例，說明研究人員如何利用先進仿生義肢探究人類心智運作。",
+              "relevance": "仿生義肢與人機介面——自主系統與神經控制主題",
+              "title": "How cutting-edge prosthetics can help probe the human mind",
+              "source": "MIT Technology Review",
+              "url": "https://www.technologyreview.com/2026/11/27/1149946/cutting-edge-prosthetics-allow-researchers-to-probe-the-human-mind/",
+              "published": "2026-11-27T10:00:00Z"
+            },
+            {
+              "title_zh": "整合感測通訊！Ericsson 推 ISAC 系統，將無人機偵測導入行動網路",
+              "summary_zh": "Ericsson 推出整合感測與通訊（ISAC）系統，可在大範圍內偵測並追蹤無人機等移動物體，屬其 6G 技術布局的一環。",
+              "relevance": "無人機偵測與網路化感測——自主系統基礎設施主題",
+              "title": "整合感測通訊！愛立信推 ISAC 系統，將無人機偵測導入行動網路",
+              "source": "TechNews 科技新報",
+              "url": "https://technews.tw/2026/11/27/ericsson-isac/",
+              "published": "2026-11-27T09:29:47Z"
+            }
+          ]
+        },
+        {
+          "key": "bio_ai",
+          "name": "生技×AI",
+          "items": [
+            {
+              "title_zh": "Schrödinger 與定序自動化公司 Enpicom 簽署 2,200 萬歐元生物製劑合作案",
+              "summary_zh": "運算藥物發現公司 Schrödinger 與定序自動化公司 Enpicom 敲定一項全現金合作案，金額達 2,200 萬歐元。",
+              "relevance": "運算藥物發現與定序資料自動化整合——生技×AI 主題",
+              "title": "Schrödinger signs €22M biologics collab with sequencing automation outfit Enpicom",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/biotech/schrodinger-forms-ties-sequencing-automation-outfit-enpicom-eur22m",
+              "published": null
+            },
+            {
+              "title_zh": "為何 Iambic 執行長認為臨床前癌症療法可能是 CDK 抑制劑的「聖杯」",
+              "summary_zh": "剛完成 1.5 億美元 IPO 的 Iambic Therapeutics 公布臨床前數據，鎖定腫瘤學競爭最激烈的藥物類別之一——細胞週期蛋白依賴性激酶（CDK）。",
+              "relevance": "AI 驅動藥物設計公司的臨床前成果與資本市場——生技×AI 主題",
+              "title": "Why Iambic’s CEO believes preclinical cancer therapy could be ‘holy grail’ for CDK inhibitors",
+              "source": "Fierce Biotech",
+              "url": "https://www.fiercebiotech.com/research/iambic-ceo-says-they-have-holy-grail-cdk-inhibitors-cancer-therapies",
+              "published": null
+            },
+            {
+              "title_zh": "這位急診醫師成為醫院第一位臨床 AI 工程師",
+              "summary_zh": "波士頓兒童醫院於 2023 年刊登提示工程師（prompt engineer）職缺，Dinesh Rai 應徵並獲聘，成為該院首位臨床 AI 工程師。報導回顧生成式 AI 在醫療機構中衍生的新職務。",
+              "relevance": "大型語言模型在臨床場域的部署角色——醫療 AI 落地主題",
+              "title": "This ER Doctor Became a Hospital’s First Clinical AI Engineer",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/clinical-ai-engineer-dinesh-rai",
+              "published": "2026-11-27T14:00:01Z"
+            }
+          ]
+        },
+        {
+          "key": "macro",
+          "name": "宏觀與政策",
+          "items": [
+            {
+              "title_zh": "Intel 面臨抉擇：交出 10% 股權給 Trump，否則承擔後果",
+              "summary_zh": "報導指出，Intel 面臨交出 10% 股權的壓力，以換取先前承諾的數十億美元補助款放行。",
+              "relevance": "美國政府對晶片製造商的股權與補助安排——半導體產業政策主題",
+              "title": "Intel faced a choice: Give Trump 10% or face the consequences",
+              "source": "Ars Technica",
+              "url": "https://arstechnica.com/tech-policy/2026/11/intel-faced-a-choice-give-trump-10-or-face-the-consequences/",
+              "published": "2026-11-27T12:05:01Z"
+            },
+            {
+              "title_zh": "AI 仍供不應求，主計總處估明年出口破 1 兆美元創新高",
+              "summary_zh": "主計總處公布最新經濟預測，指市場對 AI 相關產品仍供不應求，估今年商品出口突破 9,000 億美元，明年將突破 1 兆美元創新高。",
+              "relevance": "台灣出口與 AI 需求連動——AI 投資週期總體指標",
+              "title": "AI 仍供不應求，主計總處估明年出口破 1 兆美元創新高",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/27/ai-supply-shortage-dgbass-forecasts-next-year-exports-1-trillion-record-high/",
+              "published": "2026-11-27T10:10:06Z"
+            },
+            {
+              "title_zh": "10 月景氣燈號連 11 紅，刷新史上最長紅燈紀錄",
+              "summary_zh": "國發會公布 10 月景氣燈號續亮紅燈，連續 11 個月，創史上最長紀錄；國發會指 AI 應用深化及需求強勁，國內經濟維持穩健。",
+              "relevance": "台灣景氣指標——AI 供應鏈景氣循環主題",
+              "title": "10 月景氣燈號連 11 紅，刷新史上最長紅燈紀錄",
+              "source": "TechNews 科技新報",
+              "url": "https://finance.technews.tw/2026/11/27/october-economic-indicator-stays-red-for-11th-straight-month/",
+              "published": "2026-11-27T08:50:00Z"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-ntn-takes-flight-a-deep-dive-into-nr-ntn-technology-and-testing-aspects/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-nr-ntn-design-and-test-challenges-for-satellite-connected-iot/",
+        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaig",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
+        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro"
+      ]
+    },
+    {
       "date": "2026-11-27",
       "generated_utc": "2026-11-27T03:49:46Z",
       "status": "published",
@@ -1183,247 +1430,6 @@
               "source": "TechNews 科技新報",
               "url": "https://finance.technews.tw/2026/11/22/total-no-fly-zone/",
               "published": "2026-11-22T01:03:31Z"
-            }
-          ]
-        }
-      ],
-      "warnings": [
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/5g-nr-ntn-design-and-test-challenges-for-satellite-connected-iot/",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaig",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/",
-        "IEEE Spectrum: excluded url (host 'content.knowledgehub.wiley.com' not under approved domain 'spectrum.ieee.org'): https://content.knowledgehub.wiley.com/shifting-reliability-left-guided-virtual-validation-for-electronics-shock-and-dro",
-        "IEEE Spectrum: excluded url (host 'event.on24.com' not under approved domain 'spectrum.ieee.org'): https://event.on24.com/wcc/r/5546816/67D0147A8B8D057FCE11A17D61A8BB0D?utm_source=IEEE"
-      ]
-    },
-    {
-      "date": "2026-11-21",
-      "generated_utc": "2026-11-21T02:52:25Z",
-      "status": "published",
-      "model": "claude-opus-5",
-      "candidates": 70,
-      "feeds": [
-        {
-          "source": "The Verge",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 10,
-          "excluded": 0
-        },
-        {
-          "source": "Ars Technica",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 16,
-          "excluded": 0
-        },
-        {
-          "source": "TechCrunch",
-          "ok": true,
-          "error": null,
-          "entries": 20,
-          "kept": 12,
-          "excluded": 0
-        },
-        {
-          "source": "IEEE Spectrum",
-          "ok": true,
-          "error": null,
-          "entries": 30,
-          "kept": 1,
-          "excluded": 5
-        },
-        {
-          "source": "MIT Technology Review",
-          "ok": true,
-          "error": null,
-          "entries": 10,
-          "kept": 2,
-          "excluded": 0
-        },
-        {
-          "source": "Nature News",
-          "ok": true,
-          "error": null,
-          "entries": 75,
-          "kept": 0,
-          "excluded": 0
-        },
-        {
-          "source": "Fierce Biotech",
-          "ok": true,
-          "error": null,
-          "entries": 25,
-          "kept": 20,
-          "excluded": 0
-        },
-        {
-          "source": "TechNews 科技新報",
-          "ok": true,
-          "error": null,
-          "entries": 40,
-          "kept": 20,
-          "excluded": 0
-        }
-      ],
-      "categories": [
-        {
-          "key": "ai_infra",
-          "name": "AI 基礎設施",
-          "items": [
-            {
-              "title_zh": "川普威脅對將 AI 資料中心移往美國境外者課徵「巨額稅負」",
-              "summary_zh": "美國總統川普表示將對在美國境外興建資料中心的企業課徵「巨額稅負」，稱「我們不會允許我們的公司把資料中心蓋到國外」。報導同時指出，美國各州與城市正對新建資料中心的申請設下限制。",
-              "relevance": "資料中心選址與政策——AI 基礎設施建置主題",
-              "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-              "source": "The Verge",
-              "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-              "published": "2026-11-20T18:50:19Z"
-            },
-            {
-              "title_zh": "AI 資料中心排放創新高，Meta 重新評估 2030 淨零目標",
-              "summary_zh": "Meta 表示正在「重新評估」其 2030 年永續目標，背景是 AI 資料中心帶來的排放量創下新高。報導並探討其他業者是否會跟進。",
-              "relevance": "資料中心能源與排放約束——AI 基礎設施主題",
-              "title": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
-              "published": "2026-11-20T21:47:10Z"
-            },
-            {
-              "title_zh": "超高溫岩層地熱或可解決資料中心能源難題",
-              "summary_zh": "新創地熱公司主張其技術可跳過現有業者的路線，在幾乎任何地點提供達兆瓦級的電力，以因應資料中心的用電需求。",
-              "relevance": "資料中心電力供給——AI 基礎設施能源主題",
-              "title": "Super-hot rock geothermal could end data center energy woes",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/20/super-hot-rock-geothermal-could-end-data-center-energy-woes/",
-              "published": "2026-11-20T18:34:00Z"
-            },
-            {
-              "title_zh": "AI 界最常被誤解的那張圖表迎來重大更新",
-              "summary_zh": "AI 評測非營利組織 METR 發布時間跨度（time horizon）圖表的更新報告，指出部分 AI 能力持續沿指數軌跡進步，但模型在需要判斷力的任務上表現不如在程式撰寫任務上。",
-              "relevance": "模型能力評測方法——AI 能力量測主題",
-              "title": "The most misunderstood graph in AI just got a major update",
-              "source": "MIT Technology Review",
-              "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-              "published": "2026-11-20T18:15:15Z"
-            },
-            {
-              "title_zh": "研究人員在 AI 供應鏈植入 200 萬個「金絲雀」，揭露隱私外洩問題",
-              "summary_zh": "研究人員以帶有獨特可追蹤標記的提示詞進行測試，結果顯示使用者資料並未保持私密，秘密資料在 AI 供應鏈中以高比率外洩。",
-              "relevance": "AI 服務供應鏈與資料治理——AI 基礎設施安全主題",
-              "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-              "published": "2026-11-20T20:59:08Z"
-            }
-          ]
-        },
-        {
-          "key": "semis_hbm",
-          "name": "半導體/HBM",
-          "items": [
-            {
-              "title_zh": "美國公布 H200 出口許可申請量：中國科技巨頭搶購百萬顆，實際獲批落差大",
-              "summary_zh": "美國依《出口管制改革法案》（ECRA）公開商務部工業與安全局（BIS）涉及 NVIDIA 的相關資料，顯示中國科技業者申請採購 H200 的數量達百萬顆等級，與實際獲批數量存在明顯落差。",
-              "relevance": "AI 加速器出口管制與供給——半導體供應鏈主題",
-              "title": "美曝 H200 出口許可申請量！中科技巨頭瘋搶百萬顆，實際獲批落差大",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/21/us-2026-h200-export-china/",
-              "published": "2026-11-21T01:12:04Z"
-            },
-            {
-              "title_zh": "路透：美國 SEC 正調查 NVIDIA 的會計處理方式",
-              "summary_zh": "據兩名知情人士向路透表示，美國證券交易委員會（SEC）正在調查 NVIDIA 的會計處理方式。此為 NVIDIA 近期接連面臨的監管動作之一。",
-              "relevance": "AI 晶片龍頭的監管風險——半導體產業主題",
-              "title": "輝達再遭政府盯上！路透：美 SEC 正調查輝達會計處理方式",
-              "source": "TechNews 科技新報",
-              "url": "https://technews.tw/2026/11/21/nvidia-us-sec-investigation/",
-              "published": "2026-11-21T02:06:27Z"
-            },
-            {
-              "title_zh": "加州檢察長就黃仁勳的中國關係向 NVIDIA 發出傳票",
-              "summary_zh": "加州檢察長 Rob Bonta 表示，已就前執行長黃仁勳與中國的往來向 NVIDIA 發出傳票，並稱「NVIDIA 與其前執行長的行為引發明顯警訊，包括公司可能誤導投資人的方式」。",
-              "relevance": "AI 晶片供應商治理與法遵——半導體產業主題",
-              "title": "California AG subpoenas Nvidia over worries about Huang’s ties with China",
-              "source": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/20/california-ag-subpoenas-nvidia-over-worries-about-huangs-ties-with-china/",
-              "published": "2026-11-20T13:21:11Z"
-            },
-            {
-              "title_zh": "SpaceX 債權人不希望馬斯克把他們的抵押品射上太空",
-              "summary_zh": "報導指出，SpaceX 的債權人希望作為抵押品的高價值晶片留在地球、處於可取回範圍內。此議題牽動太空資料中心的融資安排。",
-              "relevance": "太空資料中心的晶片資產與融資——半導體與 AI 基礎設施交會主題",
-              "title": "SpaceX lenders don’t want Elon Musk launching their collateral into space",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/space/2026/11/spacex-lenders-dont-want-elon-musk-launching-their-collateral-into-space/",
-              "published": "2026-11-20T14:15:21Z"
-            }
-          ]
-        },
-        {
-          "key": "bio_ai",
-          "name": "生技×AI",
-          "items": [
-            {
-              "title_zh": "Isomorphic 在募得 50 億美元數日後，將 Merck 納入 AI 藥物發現合作名單",
-              "summary_zh": "Isomorphic Labs 在完成 50 億美元募資數日後，新增 Merck & Co. 為合作夥伴，其合作名單目前已包含營收前四大藥廠中的三家。",
-              "relevance": "AI 驅動藥物發現合作——生技×AI 主題",
-              "title": "Isomorphic adds Merck to AI drug discovery roster days after $5B raise",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/isomorphic-labs-adds-merck-ai-drug-discovery-roster-days-after-5b-raise",
-              "published": null
-            },
-            {
-              "title_zh": "Anthropic 董事 Vas Narasimhan 押注 AI 可協助 Novartis 解決「生物延遲」",
-              "summary_zh": "在 Anthropic 於那斯達克完成 IPO 的同一天，身兼 Anthropic 董事的 Novartis 執行長 Vas Narasimhan 在倫敦向投資人說明該公司如何運用 AI 縮短藥物開發時程，並談及未來解決「生物延遲」（biological latency）的目標。",
-              "relevance": "AI 於新藥開發流程的導入——生技×AI 主題",
-              "title": "Anthropic board director Vas Narasimhan bets AI can help Novartis solve ‘biological latency’",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/anthropic-board-director-vas-narasimhan-bets-ai-can-help-novartis-solve-biological-latency",
-              "published": null
-            },
-            {
-              "title_zh": "Merck 的 TROP2 ADC 在胃食道癌關鍵試驗中延長存活期",
-              "summary_zh": "Merck & Co. 的 sacituzumab tirumotecan 在第三期癌症試驗中改善了整體存活期，為這款 TROP2 標靶抗體藥物複合體（ADC）拿下第二個全球關鍵性成果。",
-              "relevance": "腫瘤標靶藥物臨床數據——生技研究主題",
-              "title": "Merck’s TROP2 ADC extends survival in pivotal gastroesophageal cancer trial",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/mercks-trop2-adc-extends-survival-pivotal-gastroesophageal-cancer-trial",
-              "published": null
-            },
-            {
-              "title_zh": "Biogen tau 療法在兩年阿茲海默症數據更新中顯示更大效益",
-              "summary_zh": "Biogen 表示其標靶 tau 的反義寡核苷酸在兩年後進一步延緩臨床退化，分析師認為此結果強化了支持其後期開發的證據。",
-              "relevance": "神經退化疾病療法臨床數據——生技研究主題",
-              "title": "Biogen’s tau therapy drives bigger benefits in 2-year Alzheimer’s update",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/biogens-tau-therapy-drives-bigger-benefits-2-year-alzheimers-update",
-              "published": null
-            },
-            {
-              "title_zh": "Pfizer 以 26 億美元、三項計畫交易與中國 Starna 合作，進軍 in vivo CAR-T",
-              "summary_zh": "Pfizer 與中國 Starna Therapeutics 簽訂價值 26 億美元的協議，取得三項臨床前候選藥物，正式加入 in vivo CAR-T 競賽。",
-              "relevance": "細胞療法平台與跨國授權——生技產業主題",
-              "title": "Pfizer enters in vivo CAR-T space via 3-program, $2.6B deal with China’s Starna",
-              "source": "Fierce Biotech",
-              "url": "https://www.fiercebiotech.com/biotech/pfizer-enters-vivo-car-t-space-3-program-26b-deal-chinas-starna",
-              "published": null
-            }
-          ]
-        },
-        {
-          "key": "macro",
-          "name": "宏觀與政策",
-          "items": [
-            {
-              "title_zh": "SpaceX Starshield 在烏克蘭的爭議可能波及其更廣泛的軍用業務",
-              "summary_zh": "報導指出，SpaceX 的 Starshield 服務於 2026 年 10 月所做的變更引發爭議，即將上任的眾議院委員會主席以資金問題向 SpaceX 施壓。",
-              "relevance": "衛星與自主系統的國防採購環境——自主系統政策主題",
-              "title": "SpaceX's Starshield troubles in Ukraine could threaten its broader military business",
-              "source": "Ars Technica",
-              "url": "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
-              "published": "2026-11-20T22:16:51Z"
             }
           ]
         }
